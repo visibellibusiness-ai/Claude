@@ -1,0 +1,56 @@
+name: Pubblica post Instagram
+
+on:
+  schedule:
+    # 07:40 e 18:40 ora italiana (UTC+1/+2): orari con alto engagement
+    - cron: "40 5 * * *"
+    - cron: "40 16 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: instagram-post
+  cancel-in-progress: false
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - run: pip install -r requirements.txt
+
+      - name: Genera e disegna il post
+        if: hashFiles('posts/pending.json') == ''
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python -m bot.main create
+
+      - name: Metti online le immagini
+        run: |
+          git config user.name "instagram-bot"
+          git config user.email "instagram-bot@users.noreply.github.com"
+          git add posts
+          git diff --cached --quiet || git commit -m "Nuovo post generato"
+          git push
+          sleep 20
+
+      - name: Pubblica su Instagram
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+        run: python -m bot.main publish
+
+      - name: Aggiorna lo storico
+        if: always()
+        run: |
+          git add -A posts
+          git diff --cached --quiet || git commit -m "Post pubblicato"
+          git push
