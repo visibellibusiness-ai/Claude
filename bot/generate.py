@@ -1,4 +1,4 @@
-"""Genera il contenuto di un post (carosello) con Claude."""
+"""Genera il contenuto e lo stile di un post (carosello) con Claude."""
 
 import json
 
@@ -6,56 +6,85 @@ import anthropic
 
 from bot import config
 
+HEX = {"type": "string", "description": "Colore esadecimale #RRGGBB"}
+
 SCHEMA = {
     "type": "object",
     "properties": {
+        "reasoning": {"type": "string", "description": "Why this topic, format and style, based on strategy and data"},
+        "category": {"type": "string", "description": "Short category label (e.g. space, human body)"},
         "topic": {"type": "string", "description": "Short topic label, used to avoid repeats"},
-        "hook": {"type": "string", "description": "Cover slide headline, max 9 words, irresistible"},
+        "hook": {"type": "string", "description": "Cover slide headline, max 10 words"},
         "slides": {
             "type": "array",
-            "description": "5 to 7 slides, each one fact or one step of the story",
+            "description": "3 to 9 content slides",
             "items": {
                 "type": "object",
                 "properties": {
-                    "title": {"type": "string", "description": "Max 6 words"},
-                    "body": {"type": "string", "description": "Max 32 words, short sentences"},
+                    "title": {"type": "string", "description": "Max 7 words"},
+                    "body": {"type": "string", "description": "Max 40 words"},
                 },
                 "required": ["title", "body"],
                 "additionalProperties": False,
             },
         },
-        "cta": {"type": "string", "description": "Last slide: ask to save/share/comment, max 14 words"},
-        "caption": {"type": "string", "description": "Instagram caption, 60-120 words, ending with a question for comments"},
-        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "8-12 relevant English hashtags, without #"},
+        "cta": {"type": "string", "description": "Last slide text, max 14 words"},
+        "caption": {"type": "string", "description": "Instagram caption"},
+        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "Hashtags without #"},
         "sources": {"type": "array", "items": {"type": "string"}, "description": "Authoritative sources backing the facts"},
+        "design": {
+            "type": "object",
+            "properties": {
+                "background": HEX,
+                "text": HEX,
+                "accent": HEX,
+                "cover_label": {"type": "string", "description": "Small label above the hook, max 4 words"},
+                "swipe_text": {"type": "string", "description": "Hint on the cover, max 3 words"},
+                "follow_line": {"type": "string", "description": "Tagline under 'Follow @handle' on the last slide, max 8 words"},
+                "show_numbers": {"type": "boolean", "description": "Show big 01, 02... numbers on content slides"},
+            },
+            "required": ["background", "text", "accent", "cover_label", "swipe_text", "follow_line", "show_numbers"],
+            "additionalProperties": False,
+        },
     },
-    "required": ["topic", "hook", "slides", "cta", "caption", "hashtags", "sources"],
+    "required": ["reasoning", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design"],
     "additionalProperties": False,
 }
 
-SYSTEM = f"""You are the content creator for the Instagram page "{config.PAGE_NAME}".
+SYSTEM = f"""You run the Instagram page "{config.PAGE_NAME}" ({config.PAGE_HANDLE}) completely on your own.
 Niche: {config.NICHE}.
+Format: image carousels (1080x1350). You decide topic, angle, tone, length, colors and wording.
 
-Goal: maximize saves, shares and comments, the signals Instagram's algorithm rewards most.
+Goal: grow the page fast. Maximize reach, saves, shares, comments and follows.
 
-Rules:
-- Write everything in natural, simple English (many readers are non-native speakers).
-- Use only real, well-documented, verifiable facts. No myths, urban legends or made-up
-  numbers. If a figure is approximate, say so ("about").
-- The cover slide is a hook that sparks instant curiosity (e.g. "Your body does this
-  every night without you knowing").
-- Every following slide gives a concrete payoff and makes people want to keep swiping.
-- Direct and conversational, short sentences, never encyclopedic.
-- No emoji on slides; at most 3 in the caption.
-- The caption ends with a simple question that is easy to answer in the comments."""
+You learn from results: you get your current strategy (written by you after reviewing past
+performance) and the stats of recent posts. Follow what works, drop what doesn't, and keep
+testing something new now and then so you keep discovering what works best.
+
+Hard rules:
+- English only, simple and natural.
+- Only real, well-documented, verifiable facts. No myths or invented numbers.
+- Readable colors: strong contrast between background and text."""
 
 
-def generate_post(category: str, recent_topics: list[str]) -> dict:
+def _performance_table(history: list[dict]) -> str:
+    rows = []
+    for h in history[-30:]:
+        m = h.get("metrics") or {}
+        stats = ", ".join(f"{k}={v}" for k, v in m.items()) or "stats not available yet"
+        rows.append(f"- {h['date']} | {h.get('category', '?')} | \"{h.get('hook', h['topic'])}\" | {stats}")
+    return "\n".join(rows) or "(no posts yet)"
+
+
+def generate_post(history: list[dict], strategy: str) -> dict:
     client = anthropic.Anthropic()
-    avoid = "\n".join(f"- {t}" for t in recent_topics[-60:]) or "(none)"
+    avoid = "\n".join(f"- {h['topic']}" for h in history[-80:]) or "(none)"
     prompt = (
-        f"Create a new carousel for the category: {category}.\n\n"
-        f"Topics already published, do NOT repeat:\n{avoid}"
+        f"## Your current strategy\n{strategy or '(none yet: this is the start, experiment freely)'}\n\n"
+        f"## Recent posts and stats\n{_performance_table(history)}\n\n"
+        f"## Starting ideas (optional)\n{', '.join(config.STARTING_IDEAS)}\n\n"
+        f"## Topics already published, do NOT repeat\n{avoid}\n\n"
+        "Create the next post."
     )
     response = client.beta.messages.create(
         model=config.MODEL,

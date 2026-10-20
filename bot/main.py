@@ -1,6 +1,7 @@
 """Ciclo completo: genera → disegna → pubblica → registra nello storico.
 
 Uso:
+  python -m bot.main learn       # aggiorna statistiche e, se è ora, la strategia
   python -m bot.main create      # genera e disegna, salva posts/pending.json
   python -m bot.main publish     # pubblica il post in pending.json (richiede i secret)
 """
@@ -11,7 +12,6 @@ import os
 from datetime import datetime, timezone
 from pathlib import Path
 
-from bot import config
 from bot.generate import generate_post
 from bot.render import render_post
 
@@ -19,10 +19,32 @@ ROOT = Path(__file__).resolve().parent.parent
 HISTORY = ROOT / "posts" / "history.json"
 PENDING = ROOT / "posts" / "pending.json"
 QUEUE = ROOT / "posts" / "queue"
+STRATEGY = ROOT / "posts" / "strategy.md"
+STATE = ROOT / "posts" / "state.json"
 
 
 def load_history() -> list[dict]:
     return json.loads(HISTORY.read_text()) if HISTORY.exists() else []
+
+
+def load_state() -> dict:
+    return json.loads(STATE.read_text()) if STATE.exists() else {"followers_log": []}
+
+
+def learn() -> None:
+    from bot.learn import reflect, should_reflect, update_metrics
+
+    history, state = load_history(), load_state()
+    snapshot = update_metrics(history)
+    state["followers_log"].append(snapshot)
+    HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2))
+    print(f"Statistiche aggiornate. Follower: {snapshot['followers']}")
+    if should_reflect(state, history):
+        strategy = STRATEGY.read_text() if STRATEGY.exists() else ""
+        STRATEGY.write_text(reflect(history, strategy, state["followers_log"]) + "\n")
+        state["last_reflection"] = snapshot["date"]
+        print("Strategia aggiornata in posts/strategy.md")
+    STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2))
 
 
 def build_caption(post: dict) -> str:
@@ -33,7 +55,7 @@ def build_caption(post: dict) -> str:
 def create(post_file: str | None) -> None:
     history = load_history()
     n = len(history)
-    category = config.CATEGORIES[n % len(config.CATEGORIES)]
+    strategy = STRATEGY.read_text() if STRATEGY.exists() else ""
 
     queued = sorted(QUEUE.glob("*.json")) if QUEUE.exists() else []
     if post_file:
@@ -43,7 +65,7 @@ def create(post_file: str | None) -> None:
         post = json.loads(queued[0].read_text())
         queued[0].unlink()
     else:
-        post = generate_post(category, [h["topic"] for h in history])
+        post = generate_post(history, strategy)
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
     rel_dir = Path("posts") / stamp
@@ -54,11 +76,14 @@ def create(post_file: str | None) -> None:
     PENDING.write_text(json.dumps({
         "date": stamp,
         "topic": post["topic"],
-        "category": category,
+        "category": post.get("category", "?"),
+        "hook": post["hook"],
+        "slides": len(post["slides"]),
+        "design": post["design_used"],
         "images": [f"{rel_dir.as_posix()}/{p.name}" for p in paths],
         "caption": caption,
     }, ensure_ascii=False, indent=2))
-    print(f"Categoria: {category}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
+    print(f"Categoria: {post.get('category', '?')}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
 
 
 def publish() -> None:
@@ -76,6 +101,9 @@ def publish() -> None:
         "date": pending["date"],
         "topic": pending["topic"],
         "category": pending["category"],
+        "hook": pending["hook"],
+        "slides": pending["slides"],
+        "design": pending["design"],
         "media_id": media_id,
     })
     HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2))
@@ -85,10 +113,12 @@ def publish() -> None:
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("command", choices=["create", "publish"])
+    parser.add_argument("command", choices=["learn", "create", "publish"])
     parser.add_argument("--post-file", help="usa un JSON già pronto invece di chiamare Claude")
     args = parser.parse_args()
-    if args.command == "create":
+    if args.command == "learn":
+        learn()
+    elif args.command == "create":
         create(args.post_file)
     else:
         publish()

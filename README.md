@@ -19,12 +19,20 @@ pubblicati senza intervento umano.
 Ogni giorno alle 13:40 e alle 23:40 UTC (pomeriggio in Europa / mattina e sera negli USA) GitHub Actions esegue
 `.github/workflows/post.yml`:
 
-1. `bot/generate.py` chiede a Claude un carosello nuovo (gancio, 5-7 slide, CTA,
-   caption, hashtag, fonti).
-2. `bot/render.py` disegna le slide 1080×1350.
-3. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
-4. `bot/publish.py` pubblica il carosello con l'API ufficiale di Instagram.
-5. `posts/history.json` registra cosa è uscito.
+1. `bot/learn.py` legge le statistiche dei post usciti (copertura, salvataggi,
+   condivisioni, like, commenti, follower). Una volta a settimana Claude le analizza
+   e riscrive la propria strategia in `posts/strategy.md`.
+2. `bot/generate.py`: Claude decide **tutto** del post successivo (argomento,
+   taglio, numero di slide, testi, caption, hashtag, colori, etichette), seguendo
+   la sua strategia e i dati, e provando ogni tanto qualcosa di nuovo.
+3. `bot/render.py` disegna le slide 1080×1350. Se i colori scelti non sono
+   leggibili usa un tema di riserva.
+4. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
+5. `bot/publish.py` pubblica il carosello con l'API ufficiale di Instagram.
+6. `posts/history.json` registra ogni post con stile e risultati.
+
+Nessuno stile è fissato: all'inizio Claude sperimenta, poi si concentra su quello
+che rende di più. In `posts/strategy.md` puoi leggere cosa ha imparato.
 
 I file JSON in `posts/queue/` escono per primi: c'è già il primo post pronto.
 
@@ -40,7 +48,7 @@ Questi passaggi richiedono il tuo telefono e i tuoi account, quindi vanno fatti 
 3. **Crea un'app Meta** su developers.facebook.com → Le mie app → Crea app →
    tipo "Business". Aggiungi il prodotto **Instagram** (API con login di Facebook).
 4. Da **Graph API Explorer** genera un token con i permessi
-   `instagram_basic`, `instagram_content_publish`, `pages_show_list`,
+   `instagram_basic`, `instagram_content_publish`, `instagram_manage_insights`, `pages_show_list`,
    `pages_read_engagement`, `business_management`, poi convertilo in
    **token di lunga durata** (Strumenti → Debug token di accesso → Estendi).
 5. Trova l'**ID Instagram**: in Graph API Explorer esegui
@@ -66,10 +74,9 @@ Human body · Space · Animals · History
 👉 Save posts to remember them
 ```
 
-## Personalizzare
+## Impostazioni di base
 
-- Nome, handle, categorie e colori: `bot/config.py`
-- Tono e regole dei contenuti: `SYSTEM` in `bot/generate.py`
+- Nome e handle della pagina: `bot/config.py`
 - Orari di pubblicazione: `cron` in `.github/workflows/post.yml` (orari in UTC)
 
 ## Costi indicativi

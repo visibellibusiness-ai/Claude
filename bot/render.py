@@ -51,6 +51,28 @@ def _draw_block(draw, lines, font, size, x, y, fill, spacing=1.2):
     return y
 
 
+def _luminance(hex_color: str) -> float:
+    rgb = [int(hex_color.lstrip("#")[i:i + 2], 16) / 255 for i in (0, 2, 4)]
+    lin = [c / 12.92 if c <= 0.03928 else ((c + 0.055) / 1.055) ** 2.4 for c in rgb]
+    return 0.2126 * lin[0] + 0.7152 * lin[1] + 0.0722 * lin[2]
+
+
+def _contrast(a: str, b: str) -> float:
+    la, lb = sorted((_luminance(a), _luminance(b)), reverse=True)
+    return (la + 0.05) / (lb + 0.05)
+
+
+def _theme(design: dict, index: int) -> dict:
+    """Usa i colori scelti da Claude se leggibili, altrimenti un tema di riserva."""
+    try:
+        theme = {"bg": design["background"], "fg": design["text"], "accent": design["accent"]}
+        if _contrast(theme["bg"], theme["fg"]) >= 7 and _contrast(theme["bg"], theme["accent"]) >= 3:
+            return theme
+    except (KeyError, ValueError):
+        pass
+    return config.FALLBACK_THEMES[index % len(config.FALLBACK_THEMES)]
+
+
 def _base(theme, index, total):
     img = Image.new("RGB", (config.WIDTH, config.HEIGHT), theme["bg"])
     draw = ImageDraw.Draw(img)
@@ -65,7 +87,9 @@ def _base(theme, index, total):
 
 
 def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
-    theme = config.THEMES[theme_index % len(config.THEMES)]
+    design = post.get("design", {})
+    theme = _theme(design, theme_index)
+    post["design_used"] = theme
     out_dir.mkdir(parents=True, exist_ok=True)
     total = len(post["slides"]) + 2
     width = config.WIDTH - 2 * MARGIN
@@ -79,21 +103,24 @@ def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
     # Copertina
     img, draw = _base(theme, 1, total)
     label = _font(36, "Bold")
-    draw.text((MARGIN, MARGIN + 60), config.PAGE_NAME.upper(), font=label, fill=theme["accent"])
+    draw.text((MARGIN, MARGIN + 60), design.get("cover_label", config.PAGE_NAME).upper(), font=label, fill=theme["accent"])
     font, lines, size = _fit(draw, post["hook"], "Black", width, 760, 120, 64, 1.12)
     y = (config.HEIGHT - len(lines) * size * 1.12) / 2
     _draw_block(draw, lines, font, size, MARGIN, y, theme["fg"], 1.12)
     hint = _font(34, "SemiBold")
-    draw.text((MARGIN, config.HEIGHT - MARGIN - 110), "Swipe  →", font=hint, fill=theme["accent"])
+    draw.text((MARGIN, config.HEIGHT - MARGIN - 110), design.get("swipe_text", "Swipe") + "  →", font=hint, fill=theme["accent"])
     save(img, 1)
 
     # Slide di contenuto
     for i, slide in enumerate(post["slides"], start=2):
         img, draw = _base(theme, i, total)
-        num = _font(150, "Black")
-        draw.text((MARGIN, MARGIN + 50), f"{i - 1:02d}", font=num, fill=theme["accent"])
+        top = MARGIN + 80
+        if design.get("show_numbers", True):
+            num = _font(150, "Black")
+            draw.text((MARGIN, MARGIN + 50), f"{i - 1:02d}", font=num, fill=theme["accent"])
+            top = MARGIN + 270
         tfont, tlines, tsize = _fit(draw, slide["title"], "ExtraBold", width, 260, 80, 50, 1.12)
-        y = _draw_block(draw, tlines, tfont, tsize, MARGIN, MARGIN + 270, theme["fg"], 1.12)
+        y = _draw_block(draw, tlines, tfont, tsize, MARGIN, top, theme["fg"], 1.12)
         bfont, blines, bsize = _fit(draw, slide["body"], "Medium", width, config.HEIGHT - y - 260, 52, 34, 1.4)
         _draw_block(draw, blines, bfont, bsize, MARGIN, y + 50, theme["fg"], 1.4)
         save(img, i)
@@ -106,6 +133,6 @@ def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
     _draw_block(draw, lines, font, size, MARGIN, y, theme["bg"], 1.15)
     follow = _font(42, "Bold")
     draw.text((MARGIN, config.HEIGHT - MARGIN - 140), f"Follow {config.PAGE_HANDLE}", font=follow, fill=theme["bg"])
-    draw.text((MARGIN, config.HEIGHT - MARGIN - 80), "a new mind-blowing fact every day", font=_font(32, "Medium"), fill=theme["bg"])
+    draw.text((MARGIN, config.HEIGHT - MARGIN - 80), design.get("follow_line", "a new mind-blowing fact every day"), font=_font(32, "Medium"), fill=theme["bg"])
     save(img, total)
     return paths
