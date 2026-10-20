@@ -1,16 +1,16 @@
 {
-  "topic": "Cose che il corpo fa mentre dormi",
-  "hook": "Il tuo corpo fa queste cose ogni notte",
+  "topic": "What your body does while you sleep",
+  "hook": "Your body does this every single night",
   "slides": [
-    {"title": "Il cervello si lava", "body": "Durante il sonno profondo il liquido cerebrospinale scorre più intensamente nel cervello e aiuta a eliminare le scorie accumulate durante il giorno."},
-    {"title": "Diventi più alto", "body": "Di notte i dischi della colonna si reidratano. Al mattino sei circa un centimetro più alto rispetto alla sera."},
-    {"title": "I muscoli si bloccano", "body": "Nella fase REM il corpo blocca quasi tutti i muscoli volontari, così non ti muovi mentre sogni."},
-    {"title": "Gli ormoni lavorano", "body": "Gran parte dell'ormone della crescita viene rilasciata nel sonno profondo: serve a riparare tessuti e muscoli."},
-    {"title": "La memoria si fissa", "body": "Il cervello rielabora quello che hai imparato durante il giorno e lo consolida. Dormire dopo aver studiato aiuta davvero."},
-    {"title": "La temperatura scende", "body": "Per addormentarti la temperatura interna cala di circa mezzo grado o un grado. Per questo una stanza fresca aiuta a dormire."}
+    {"title": "Your brain cleans itself", "body": "During deep sleep, more cerebrospinal fluid flows through your brain and helps wash away waste that builds up during the day."},
+    {"title": "You get taller", "body": "At night the discs in your spine rehydrate. In the morning you are about one centimeter taller than in the evening."},
+    {"title": "Your muscles switch off", "body": "During REM sleep your body blocks almost all voluntary muscles, so you don't act out your dreams."},
+    {"title": "Hormones get to work", "body": "Much of your growth hormone is released during deep sleep. It helps repair tissues and muscles."},
+    {"title": "Memories get saved", "body": "Your brain replays what you learned during the day and locks it in. Sleeping after studying really helps."},
+    {"title": "Your temperature drops", "body": "To fall asleep, your core temperature drops by about half a degree to one degree Celsius. That's why a cool room helps you sleep."}
   ],
-  "cta": "Salva questo post e mandalo a chi dorme troppo poco",
-  "caption": "Ogni notte, mentre dormi, il tuo corpo lavora più di quanto pensi: pulisce il cervello, ripara i muscoli e mette in ordine i ricordi. Ecco perché il sonno non è tempo perso. Quante ore dormi di solito?",
-  "hashtags": ["losapevi", "curiosità", "sonno", "corpoumano", "scienza", "benessere", "dormire", "factsitalia", "imparaconinstagram"],
+  "cta": "Save this and send it to someone who never sleeps enough",
+  "caption": "Every night while you sleep, your body is working harder than you think: cleaning your brain, repairing your muscles and saving your memories. Sleep is not wasted time. How many hours do you usually sleep?",
+  "hashtags": ["didyouknow", "funfacts", "sleep", "humanbody", "science", "facts", "learnsomethingnew", "mindblown", "health"],
   "sources": ["Xie et al., Science 2013", "NIH - Brain Basics: Understanding Sleep"]
 }

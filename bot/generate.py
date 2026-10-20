@@ -9,53 +9,53 @@ from bot import config
 SCHEMA = {
     "type": "object",
     "properties": {
-        "topic": {"type": "string", "description": "Argomento breve, usato per evitare ripetizioni"},
-        "hook": {"type": "string", "description": "Titolo della prima slide, max 9 parole, irresistibile"},
+        "topic": {"type": "string", "description": "Short topic label, used to avoid repeats"},
+        "hook": {"type": "string", "description": "Cover slide headline, max 9 words, irresistible"},
         "slides": {
             "type": "array",
-            "description": "Da 5 a 7 slide, ognuna una curiosità o un passaggio della storia",
+            "description": "5 to 7 slides, each one fact or one step of the story",
             "items": {
                 "type": "object",
                 "properties": {
-                    "title": {"type": "string", "description": "Max 6 parole"},
-                    "body": {"type": "string", "description": "Max 32 parole, frasi corte"},
+                    "title": {"type": "string", "description": "Max 6 words"},
+                    "body": {"type": "string", "description": "Max 32 words, short sentences"},
                 },
                 "required": ["title", "body"],
                 "additionalProperties": False,
             },
         },
-        "cta": {"type": "string", "description": "Ultima slide: invito a salvare/condividere/commentare, max 14 parole"},
-        "caption": {"type": "string", "description": "Caption Instagram 60-120 parole, con domanda finale per i commenti"},
-        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "8-12 hashtag italiani pertinenti, senza #"},
-        "sources": {"type": "array", "items": {"type": "string"}, "description": "Fonti autorevoli a supporto dei fatti"},
+        "cta": {"type": "string", "description": "Last slide: ask to save/share/comment, max 14 words"},
+        "caption": {"type": "string", "description": "Instagram caption, 60-120 words, ending with a question for comments"},
+        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "8-12 relevant English hashtags, without #"},
+        "sources": {"type": "array", "items": {"type": "string"}, "description": "Authoritative sources backing the facts"},
     },
     "required": ["topic", "hook", "slides", "cta", "caption", "hashtags", "sources"],
     "additionalProperties": False,
 }
 
-SYSTEM = f"""Sei il content creator della pagina Instagram italiana "{config.PAGE_NAME}".
-Nicchia: {config.NICHE}.
+SYSTEM = f"""You are the content creator for the Instagram page "{config.PAGE_NAME}".
+Niche: {config.NICHE}.
 
-Obiettivo: massimizzare salvataggi, condivisioni e commenti, che sono i segnali che
-l'algoritmo di Instagram premia di più.
+Goal: maximize saves, shares and comments, the signals Instagram's algorithm rewards most.
 
-Regole:
-- Usa solo fatti reali, ben documentati e verificabili. Niente miti, leggende metropolitane
-  o numeri inventati. Se un dato è approssimativo, dillo ("circa").
-- La prima slide è un gancio che crea curiosità immediata (es. "Il tuo corpo fa questo
-  ogni notte senza che tu lo sappia").
-- Ogni slide successiva dà una ricompensa concreta e fa venir voglia di scorrere.
-- Italiano naturale, diretto, frasi brevi, zero tono da enciclopedia.
-- Niente emoji nelle slide; nella caption al massimo 3.
-- La caption chiude con una domanda semplice a cui è facile rispondere nei commenti."""
+Rules:
+- Write everything in natural, simple English (many readers are non-native speakers).
+- Use only real, well-documented, verifiable facts. No myths, urban legends or made-up
+  numbers. If a figure is approximate, say so ("about").
+- The cover slide is a hook that sparks instant curiosity (e.g. "Your body does this
+  every night without you knowing").
+- Every following slide gives a concrete payoff and makes people want to keep swiping.
+- Direct and conversational, short sentences, never encyclopedic.
+- No emoji on slides; at most 3 in the caption.
+- The caption ends with a simple question that is easy to answer in the comments."""
 
 
 def generate_post(category: str, recent_topics: list[str]) -> dict:
     client = anthropic.Anthropic()
-    avoid = "\n".join(f"- {t}" for t in recent_topics[-60:]) or "(nessuno)"
+    avoid = "\n".join(f"- {t}" for t in recent_topics[-60:]) or "(none)"
     prompt = (
-        f"Crea un nuovo carosello sulla categoria: {category}.\n\n"
-        f"Argomenti già pubblicati, da NON ripetere:\n{avoid}"
+        f"Create a new carousel for the category: {category}.\n\n"
+        f"Topics already published, do NOT repeat:\n{avoid}"
     )
     response = client.beta.messages.create(
         model=config.MODEL,

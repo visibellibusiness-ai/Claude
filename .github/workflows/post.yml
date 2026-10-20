@@ -2,9 +2,10 @@ name: Pubblica post Instagram
 
 on:
   schedule:
-    # 07:40 e 18:40 ora italiana (UTC+1/+2): orari con alto engagement
-    - cron: "40 5 * * *"
-    - cron: "40 16 * * *"
+    # 13:40 UTC (pomeriggio in Europa, mattina negli USA)
+    # 23:40 UTC (sera negli USA)
+    - cron: "40 13 * * *"
+    - cron: "40 23 * * *"
   workflow_dispatch:
 
 permissions:

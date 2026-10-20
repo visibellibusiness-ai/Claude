@@ -1,25 +1,25 @@
 """Impostazioni della pagina. Cambia qui nicchia, nome e stile."""
 
-PAGE_NAME = "Lo Sapevi?"
-PAGE_HANDLE = "@losapevi.ogni.giorno"  # aggiorna con l'handle reale dell'account
+PAGE_NAME = "Did You Know?"
+PAGE_HANDLE = "@didyouknow.daily.facts"  # aggiorna con l'handle reale dell'account
 
 NICHE = (
-    "curiosità sorprendenti e verificate su scienza, corpo umano, animali, storia, "
-    "spazio, psicologia e mondo, per un pubblico italiano 18-45"
+    "surprising, verified facts about science, the human body, animals, history, "
+    "space, psychology and the world, for an international English-speaking audience aged 18-45"
 )
 
 # Rotazione delle categorie: una diversa a ogni post per varietà
 CATEGORIES = [
-    "corpo umano",
-    "animali",
-    "spazio",
-    "storia",
-    "psicologia",
-    "scienza quotidiana",
-    "geografia e luoghi assurdi",
-    "cibo",
-    "tecnologia",
-    "oceani",
+    "human body",
+    "animals",
+    "space",
+    "history",
+    "psychology",
+    "everyday science",
+    "geography and strange places",
+    "food",
+    "technology",
+    "oceans",
 ]
 
 MODEL = "claude-opus-5-5"

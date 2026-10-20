@@ -79,12 +79,12 @@ def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
     # Copertina
     img, draw = _base(theme, 1, total)
     label = _font(36, "Bold")
-    draw.text((MARGIN, MARGIN + 60), "LO SAPEVI?", font=label, fill=theme["accent"])
+    draw.text((MARGIN, MARGIN + 60), config.PAGE_NAME.upper(), font=label, fill=theme["accent"])
     font, lines, size = _fit(draw, post["hook"], "Black", width, 760, 120, 64, 1.12)
     y = (config.HEIGHT - len(lines) * size * 1.12) / 2
     _draw_block(draw, lines, font, size, MARGIN, y, theme["fg"], 1.12)
     hint = _font(34, "SemiBold")
-    draw.text((MARGIN, config.HEIGHT - MARGIN - 110), "Scorri  →", font=hint, fill=theme["accent"])
+    draw.text((MARGIN, config.HEIGHT - MARGIN - 110), "Swipe  →", font=hint, fill=theme["accent"])
     save(img, 1)
 
     # Slide di contenuto
@@ -105,7 +105,7 @@ def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
     y = (config.HEIGHT - len(lines) * size * 1.15) / 2 - 60
     _draw_block(draw, lines, font, size, MARGIN, y, theme["bg"], 1.15)
     follow = _font(42, "Bold")
-    draw.text((MARGIN, config.HEIGHT - MARGIN - 140), f"Segui {config.PAGE_HANDLE}", font=follow, fill=theme["bg"])
-    draw.text((MARGIN, config.HEIGHT - MARGIN - 80), "una curiosità nuova ogni giorno", font=_font(32, "Medium"), fill=theme["bg"])
+    draw.text((MARGIN, config.HEIGHT - MARGIN - 140), f"Follow {config.PAGE_HANDLE}", font=follow, fill=theme["bg"])
+    draw.text((MARGIN, config.HEIGHT - MARGIN - 80), "a new mind-blowing fact every day", font=_font(32, "Medium"), fill=theme["bg"])
     save(img, total)
     return paths

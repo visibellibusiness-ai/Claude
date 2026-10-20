@@ -1,6 +1,6 @@
-# Pagina Instagram automatica: "Lo Sapevi?"
+# Pagina Instagram automatica: "Did You Know?"
 
-Pagina di curiosità verificate (corpo umano, animali, spazio, storia, psicologia…)
+Pagina in inglese di curiosità verificate (corpo umano, animali, spazio, storia, psicologia…)
 che si gestisce da sola: **due caroselli al giorno**, generati, disegnati e
 pubblicati senza intervento umano.
 
@@ -11,12 +11,12 @@ pubblicati senza intervento umano.
 - **Non serve un volto né riprese**: tutto si produce in automatico.
 - **I contenuti non finiscono mai**: dieci categorie a rotazione e uno storico
   degli argomenti già usati, così i post non si ripetono.
-- **Pubblico ampio** (18-45, italiano) e argomenti adatti ai brand, utile se in
+- **Pubblico ampio e internazionale** (18-45, in inglese) e argomenti adatti ai brand, utile se in
   futuro vuoi monetizzare.
 
 ## Come funziona
 
-Ogni giorno alle 07:40 e alle 18:40 (ora italiana) GitHub Actions esegue
+Ogni giorno alle 13:40 e alle 23:40 UTC (pomeriggio in Europa / mattina e sera negli USA) GitHub Actions esegue
 `.github/workflows/post.yml`:
 
 1. `bot/generate.py` chiede a Claude un carosello nuovo (gancio, 5-7 slide, CTA,
@@ -32,7 +32,7 @@ I file JSON in `posts/queue/` escono per primi: c'è già il primo post pronto.
 
 Questi passaggi richiedono il tuo telefono e i tuoi account, quindi vanno fatti a mano.
 
-1. **Crea l'account Instagram** (es. `@losapevi.ogni.giorno`), poi in
+1. **Crea l'account Instagram** (es. `@didyouknow.daily.facts`), poi in
    Impostazioni → Tipo di account passa a **Account professionale → Creator**.
    Metti foto profilo e bio (sotto trovi una proposta).
 2. **Crea una Pagina Facebook** e collegala all'account Instagram
@@ -60,10 +60,10 @@ nel secret `IG_ACCESS_TOKEN`.
 ### Bio consigliata
 
 ```
-Lo Sapevi? 🤯
-Ogni giorno curiosità vere che non conoscevi
-Corpo umano · Spazio · Animali · Storia
-👉 Salva i post per ricordarli
+Did You Know? 🤯
+Real facts you never knew, every day
+Human body · Space · Animals · History
+👉 Save posts to remember them
 ```
 
 ## Personalizzare
