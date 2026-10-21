@@ -43,8 +43,10 @@ def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
     style = make_style(post, theme_index)
     out_dir.mkdir(parents=True, exist_ok=True)
     safe = (MARGIN, MARGIN, config.WIDTH - MARGIN, config.HEIGHT - MARGIN)
+    scenes = slide_data(post, theme_index)
+    style.plan(scenes, safe)
     paths = []
-    for i, (kind, data) in enumerate(slide_data(post, theme_index), start=1):
+    for i, (kind, data) in enumerate(scenes, start=1):
         img = flatten(*style.slide(kind, data, config.WIDTH, config.HEIGHT, safe))
         p = out_dir / f"slide_{i:02d}.jpg"
         img.save(p, "JPEG", quality=92)

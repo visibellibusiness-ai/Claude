@@ -158,6 +158,14 @@ PROGS = {
     "mystery": [[45, 48, 52], [45, 48, 53], [44, 48, 52], [45, 48, 52]],  # Am Am(b6) E+ Am
 }
 
+# Variazioni del brano "mystery": stessa atmosfera, accordi e melodie diverse
+MYSTERY_VARIANTS = [
+    (PROGS["mystery"], [0, 2, 1, 2, 0, 2, 1, 3]),
+    ([[50, 53, 57], [50, 53, 58], [49, 53, 57], [50, 53, 57]], [0, 1, 2, 1, 3, 2, 1, 2]),  # Dm Dm(b6) C#+ Dm
+    ([[45, 48, 52], [41, 45, 48], [43, 46, 50], [40, 44, 47]], [0, 2, 1, 3, 0, 2, 1, 2]),  # Am F Gm E
+    ([[52, 55, 59], [48, 52, 55], [53, 57, 60], [51, 55, 59]], [2, 1, 0, 1, 2, 3, 1, 0]),  # Em C F B+
+]
+
 
 def lofi(tr: Track, seed):
     prog = PROGS["minor_soul" if seed % 2 == 0 else "dreamy"]
@@ -249,8 +257,7 @@ def chill_house(tr: Track, seed):
 
 
 def mystery(tr: Track, seed):
-    prog = PROGS["mystery"]
-    pattern = [0, 2, 1, 2, 0, 2, 1, 3]
+    prog, pattern = MYSTERY_VARIANTS[seed % len(MYSTERY_VARIANTS)]
     for bar, s, t in tr.steps(None):
         chord = prog[bar % len(prog)]
         if s % 2 == 0:
@@ -278,7 +285,7 @@ PRESETS = {
 
 def make_track(path: Path, seconds: float, seed: int = 0, preset: str = "lofi") -> Path:
     fn, bpm = PRESETS.get(preset, PRESETS["lofi"])
-    tr = Track(seconds, bpm, seed)
+    tr = Track(seconds, bpm + (seed % 3 - 1) * 4, seed)
     out = fn(tr, seed)[: tr.n]
     # dissolvenze, compressione morbida e normalizzazione
     fade_in, fade_out = int(SR * 0.3), int(SR * 1.5)

@@ -63,6 +63,9 @@ The page has a fixed visual brand style; you pick one of its 5 color palettes pe
 the small labels, and a short "highlight" (a striking number or word shown huge) per slide
 when it makes the fact hit harder. For reels you also pick the music genre.
 You decide format, topic, angle, tone, length, palette, music and wording.
+Typography uses a fixed scale shared by all slides of a post: if one title or body is much
+longer than the others, every slide gets smaller text. Keep titles to 2-5 words and bodies
+under about 30 words, with similar lengths across slides, so the type stays big and bold.
 
 Goal: grow the page fast. Maximize reach, saves, shares, comments and follows.
 

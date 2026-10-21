@@ -31,15 +31,17 @@ def _duration(kind: str, data: dict) -> float:
 
 def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     style = make_style(post, theme_index)
+    items = slide_data(post, theme_index)
+    items[0][1]["swipe"] = "Keep watching"  # un video non si scorre
+    style.plan(items, SAFE, boost=1.18)
+    # il contenuto di tutte le slide viene spostato della stessa quantità, così il
+    # blocco più alto risulta centrato e le posizioni restano identiche tra slide
+    facts = [style.slide(k, d, W, H, SAFE)[1] for k, d in items if k == "fact"]
+    lowest = max(fg.getchannel("A").getbbox()[3] for fg in facts) if facts else SAFE[3]
+    style.content_dy = max(0, int((SAFE[3] - lowest) * 0.5))
     scenes = []
-    for kind, data in slide_data(post, theme_index):
+    for kind, data in items:
         bg, fg = style.slide(kind, data, W, H, SAFE)
-        if kind == "fact":
-            # centra il blocco di testo nell'area sicura, invece di lasciarlo in alto
-            bottom = fg.getchannel("A").getbbox()[3]
-            dy = int((SAFE[3] - bottom) * 0.45)
-            if dy > 20:
-                bg, fg = style.slide(kind, data, W, H, (SAFE[0], SAFE[1] + dy, SAFE[2], SAFE[3]))
         scenes.append((bg, fg, _duration(kind, data), style.accent(kind)))
     total = sum(s[2] for s in scenes)
 

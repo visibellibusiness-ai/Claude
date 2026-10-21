@@ -31,7 +31,7 @@ WIDTH, HEIGHT = 1080, 1350
 # Claude sceglie solo la palette (5 varianti) dentro lo stile.
 BRAND_STYLE = "riso"
 # Generi musicali dei Reel (bot/music.py) tra cui Claude può scegliere
-MUSIC_PRESETS = ["lofi", "curious_pop", "documentary", "chill_house", "mystery"]
+MUSIC_PRESETS = ["mystery"]
 
 # Ogni quanti giorni Claude rivede la strategia in base ai risultati
 REFLECT_EVERY_DAYS = 7
