@@ -87,7 +87,7 @@ Save & share ↓
 (88 caratteri: il limite di Instagram è 150, a capo compresi; il nome
 visualizzato ne ha 24 su 30.)
 
-Immagine del profilo: `assets/profile/avatar_question.jpg` (1080×1080).
+Immagine del profilo: una delle opzioni in `assets/profile/` (1080×1080, stile Riso).
 
 ## Impostazioni di base
 
