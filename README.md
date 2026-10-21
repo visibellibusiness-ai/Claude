@@ -28,9 +28,10 @@ Ogni giorno alle 13:40 e alle 23:40 UTC (pomeriggio in Europa / mattina e sera n
 3. `bot/render.py` disegna le slide 1080×1350 (carosello); `bot/reel.py` crea il
    Reel 1080×1920 con testo animato e musica generata da `bot/music.py` (niente
    problemi di copyright). La grafica segue lo stile di marca definito in
-   `bot/style.py` (stile "Riso", con scala tipografica fissa); Claude sceglie la
-   palette e i numeri o le parole da mettere in grande. Musica: "mystery" con
-   quattro variazioni.
+   `bot/style.py` (stile "Mystery": fondo scuro cinematografico, titoli serif,
+   un colore d'accento, scala tipografica fissa), in coppia con la musica
+   "mystery" (quattro variazioni). Claude sceglie la palette e i numeri o le
+   parole da mettere in grande.
 4. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
 5. `bot/publish.py` pubblica con l'API ufficiale di Instagram. I Reel vengono
    caricati direttamente; i Trial Reel li vede prima solo chi non ti segue, e
@@ -87,12 +88,12 @@ Save & share ↓
 (88 caratteri: il limite di Instagram è 150, a capo compresi; il nome
 visualizzato ne ha 24 su 30.)
 
-Immagine del profilo: `assets/profile/avatar_blu_rosa.jpg` (1080×1080, come le copertine Riso).
+Immagine del profilo: `assets/profile/avatar_nome.jpg` oppure `avatar_domanda.jpg` (1080×1080, stile Mystery).
 
 ## Impostazioni di base
 
-- Nome e handle della pagina, stile grafico (`BRAND_STYLE`) e generi musicali
-  ammessi (`MUSIC_PRESETS`): `bot/config.py`
+- Nome e handle della pagina, stile grafico (`BRAND_STYLE`) e musica
+  (`MUSIC_PRESETS`): `bot/config.py`
 - Orari di pubblicazione: `cron` in `.github/workflows/post.yml` (orari in UTC)
 
 ## Costi indicativi

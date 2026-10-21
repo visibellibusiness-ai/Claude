@@ -1,33 +1,23 @@
-"""Motore grafico: stile di marca "Riso" per slide di carosello e scene dei Reel.
+"""Motore grafico: stile di marca "Mystery" per slide di carosello e scene dei Reel.
 
-Lo stile disegna una slide come due livelli: lo sfondo (decorazioni, può
-uscire dalla zona sicura) e il primo piano (testo, sempre dentro `safe`).
-Così il Reel può animare il primo piano sopra uno sfondo fermo.
+Scuro e cinematografico, in coppia con la musica "mystery": fondo quasi nero con
+una luce soffusa e grana da pellicola, titoli serif chiari, un solo colore
+d'accento, etichette da "fascicolo". Prima di tutto la leggibilità: contrasto
+alto e una scala tipografica fissa.
+
+Lo stile disegna una slide come due livelli: lo sfondo (può uscire dalla zona
+sicura) e il primo piano con tutto il testo (sempre dentro `safe`), così il
+Reel può animare il testo sopra uno sfondo fermo.
 """
 
-import math
-import random
 from pathlib import Path
 
 import numpy as np
-from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 
 from bot import config
 
 FONTS = Path(__file__).resolve().parent.parent / "assets" / "fonts"
-
-# Inchiostri risograph reali (nomi dei colori Riso)
-RISO = {
-    "fluo_pink": "#FF48B0",
-    "blue": "#0078BF",
-    "yellow": "#FFE800",
-    "teal": "#00838A",
-    "orange": "#FF6C2F",
-    "purple": "#765BA7",
-    "red": "#F15060",
-    "green": "#00A95C",
-    "black": "#1C1C1C",
-}
 
 
 # ---------------------------------------------------------------- font
@@ -40,10 +30,9 @@ def font(name: str, size: int, **axes) -> ImageFont.FreeTypeFont:
     if key not in _cache:
         f = ImageFont.truetype(str(FONTS / f"{name}.ttf"), size)
         if axes:
-            order = [a["name"].decode().lower() for a in f.get_variation_axes()]
             values = []
-            for a, n in zip(f.get_variation_axes(), order):
-                values.append(axes.get(n.split()[0], a["default"]))
+            for a in f.get_variation_axes():
+                values.append(axes.get(a["name"].decode().lower().split()[0], a["default"]))
             f.set_variation_by_axes(values)
         _cache[key] = f
     return _cache[key]
@@ -64,96 +53,49 @@ def wrap(text: str, f, max_w: int) -> list[str]:
     return lines
 
 
-def text_block(draw, xy, lines, f, size, fill, leading=1.0, anchor="la"):
+def text_block(draw, xy, lines, f, size, fill, leading=1.0):
     x, y = xy
     for line in lines:
-        draw.text((x, y), line, font=f, fill=fill, anchor=anchor)
+        draw.text((x, y), line, font=f, fill=fill)
         y += int(size * leading)
     return y
 
 
-# ---------------------------------------------------------- texture/effetti
+def spaced(draw, xy, text, f, fill, tracking=0.12, anchor_right=False):
+    """Testo con spaziatura tra le lettere (etichette in maiuscolo)."""
+    gap = f.size * tracking
+    width = sum(draw.textlength(c, font=f) for c in text) + gap * (len(text) - 1)
+    x, y = xy
+    if anchor_right:
+        x -= width
+    for c in text:
+        draw.text((x, y), c, font=f, fill=fill)
+        x += draw.textlength(c, font=f) + gap
+    return width
 
-def paper(w, h, color, seed, grain=10, fibers=True):
+
+# ------------------------------------------------------------- sfondo
+
+def _hex(c: str) -> np.ndarray:
+    c = c.lstrip("#")
+    return np.array([int(c[i:i + 2], 16) for i in (0, 2, 4)], dtype=np.float32)
+
+
+def darkroom(w, h, base, glow, seed, light=(0.25, 0.22)):
+    """Fondo scuro con una luce soffusa, vignettatura e grana da pellicola."""
     rng = np.random.default_rng(seed)
-    base = np.array(Image.new("RGB", (w, h), color), dtype=np.float32)
-    noise = rng.normal(0, grain, (h // 2, w // 2)).astype(np.float32)
-    noise = np.array(Image.fromarray(noise).resize((w, h), Image.BILINEAR))
-    out = base + noise[..., None]
-    if fibers:
-        blotch = rng.normal(0, 1, (h // 60 + 1, w // 60 + 1)).astype(np.float32)
-        blotch = np.array(Image.fromarray(blotch).resize((w, h), Image.BICUBIC)) * 5
-        out += blotch[..., None]
-    return Image.fromarray(np.clip(out, 0, 255).astype(np.uint8))
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    lx, ly = light[0] * w, light[1] * h
+    d = np.sqrt(((xx - lx) / w) ** 2 + ((yy - ly) / h) ** 2)
+    spot = np.exp(-(d / 0.42) ** 2)
+    vign = np.clip(1 - 0.55 * (np.sqrt(((xx - w / 2) / w) ** 2 + ((yy - h / 2) / h) ** 2) / 0.7) ** 2, 0, 1)
+    img = _hex(base)[None, None, :] + (_hex(glow) - _hex(base))[None, None, :] * (0.16 * spot)[..., None]
+    img *= (0.75 + 0.25 * vign)[..., None]
+    img += rng.normal(0, 5.5, (h, w))[..., None]
+    return Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
 
 
-def grain_overlay(img: Image.Image, seed: int, amount=12) -> Image.Image:
-    rng = np.random.default_rng(seed + 99)
-    arr = np.array(img, dtype=np.float32)
-    arr += rng.normal(0, amount, arr.shape[:2])[..., None]
-    return Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
-
-
-def ink(mask: Image.Image, color: str, size) -> Image.Image:
-    """Strato d'inchiostro: colore pieno dove la maschera è bianca, bianco altrove."""
-    layer = Image.new("RGB", size, "white")
-    layer.paste(Image.new("RGB", size, color), (0, 0), mask)
-    return layer
-
-
-def overprint(base: Image.Image, mask: Image.Image, color: str, roughness=0.0, seed=0) -> Image.Image:
-    """Stampa sovrapposta (multiply), come due passaggi di inchiostro risograph."""
-    if roughness:
-        rng = np.random.default_rng(seed)
-        m = np.array(mask, dtype=np.float32)
-        speck = rng.random(m.shape) > roughness
-        m = m * speck
-        mask = Image.fromarray(m.astype(np.uint8)).filter(ImageFilter.GaussianBlur(0.6))
-    return ImageChops.multiply(base, ink(mask, color, base.size))
-
-
-def halftone(w, h, value_fn, cell=18, angle=15) -> Image.Image:
-    """Maschera a retino: value_fn(x, y) in [0,1] = intensità del punto."""
-    mask = Image.new("L", (w, h), 0)
-    d = ImageDraw.Draw(mask)
-    a = math.radians(angle)
-    ca, sa = math.cos(a), math.sin(a)
-    span = int(max(w, h) * 1.5)
-    for i in range(-span // cell, span // cell):
-        for j in range(-span // cell, span // cell):
-            u, v = i * cell, j * cell
-            x = w / 2 + u * ca - v * sa
-            y = h / 2 + u * sa + v * ca
-            if -cell < x < w + cell and -cell < y < h + cell:
-                val = value_fn(x, y)
-                if val > 0.02:
-                    r = cell * 0.62 * math.sqrt(val)
-                    d.ellipse([x - r, y - r, x + r, y + r], fill=255)
-    return mask
-
-
-def scribble_line(draw, points, fill, width, seed, jitter=3):
-    rng = random.Random(seed)
-    pts = []
-    for (x0, y0), (x1, y1) in zip(points, points[1:]):
-        steps = max(2, int(math.hypot(x1 - x0, y1 - y0) / 12))
-        for s in range(steps):
-            t = s / steps
-            pts.append((x0 + (x1 - x0) * t + rng.uniform(-jitter, jitter), y0 + (y1 - y0) * t + rng.uniform(-jitter, jitter)))
-    pts.append(points[-1])
-    draw.line(pts, fill=fill, width=width, joint="curve")
-
-
-def rotated_label(text, f, fg, bg, angle, pad=(26, 14)):
-    probe = ImageDraw.Draw(Image.new("L", (1, 1)))
-    l, t, r, b = probe.textbbox((0, 0), text, font=f)
-    w, h = r - l + pad[0] * 2, b - t + pad[1] * 2
-    tag = Image.new("RGBA", (w, h), bg)
-    ImageDraw.Draw(tag).text((pad[0] - l, pad[1] - t), text, font=f, fill=fg)
-    return tag.rotate(angle, expand=True, resample=Image.BICUBIC)
-
-
-# ------------------------------------------------------------------ stile
+# ----------------------------------------------------------- tipografia
 
 # Scala tipografica (px riferiti a una colonna di testo larga 900px).
 # Ogni ruolo ha pochi gradini: per ogni post si sceglie UN gradino per ruolo,
@@ -161,38 +103,47 @@ def rotated_label(text, f, fg, bg, angle, pad=(26, 14)):
 # tutte le slide. Così le grandezze restano coerenti.
 TYPE_SCALE = {
     "hook": [176, 150, 128, 110],
-    "highlight": [280, 236, 200],
-    "title": [96, 82, 70],
+    "highlight": [250, 212, 180],
+    "title": [92, 80, 70],
     "body": [46, 42, 38],
-    "cta": [146, 124, 106],
+    "cta": [124, 106, 92],
 }
-MAST, META, TAG, FOLLOW, TAGLINE = 26, 30, 34, 38, 32
-LEADING = {"hook": 0.98, "highlight": 0.92, "title": 1.0, "body": 1.34, "cta": 1.0}
+LABEL, META, FOLLOW, TAGLINE = 24, 28, 36, 32
+LEADING = {"hook": 1.0, "highlight": 0.95, "title": 1.02, "body": 1.38, "cta": 1.02}
 MAX_LINES = {"hook": 5, "highlight": 1, "title": 2, "cta": 5}
-GAP = {"after_meta": 56, "after_highlight": 34, "underline": 26, "after_underline": 44}
+GAP = {"after_meta": 70, "after_highlight": 40, "rule": 34, "after_rule": 40}
 
 
-def _hook_font(s):
-    return font("Anton-Regular", s)
+def _serif(s):
+    return font("InstrumentSerif-Regular", s)
 
 
-def _body_font(s):
-    return font("Archivo", s, weight=500)
+def _serif_italic(s):
+    return font("InstrumentSerif-Italic", s)
 
 
-FONT_FOR = {"hook": _hook_font, "highlight": _hook_font, "title": _hook_font, "cta": _hook_font, "body": _body_font}
+def _body(s):
+    return font("Archivo", s, weight=420)
 
 
-class Riso:
-    """Zine stampata in risograph: carta, due inchiostri sovrapposti, retino, fuori registro."""
+def _mono(s):
+    return font("SpaceMono-Regular", s)
 
-    name = "riso"
+
+FONT_FOR = {"hook": _serif, "highlight": _serif_italic, "title": _serif, "cta": _serif, "body": _body}
+
+
+class Mystery:
+    """Fascicolo notturno: fondo scuro, serif chiaro, un accento caldo o freddo."""
+
+    name = "mystery"
+    # (fondo, luce, testo, testo secondario, accento)
     PALETTES = [
-        ("blue", "fluo_pink", "#F3EEE4"),
-        ("teal", "orange", "#F1ECE2"),
-        ("purple", "yellow", "#F4EFE6"),
-        ("red", "blue", "#F2EEE6"),
-        ("green", "fluo_pink", "#F3EFE5"),
+        ("#0B0C10", "#3A3F52", "#F2EEE6", "#C9C4BA", "#E6B65C"),  # ambra
+        ("#091014", "#28434A", "#EEF3F2", "#BFCACA", "#6FD6C9"),  # acqua
+        ("#100D14", "#43324F", "#F4EEF3", "#CBC1CB", "#D99BCB"),  # orchidea
+        ("#0D0D0B", "#3E3A2C", "#F2F0E6", "#C9C6B9", "#D4DB78"),  # lime
+        ("#0E0B0B", "#4A2E28", "#F4EDE9", "#CCC1BC", "#EE7A5E"),  # brace
     ]
 
     def __init__(self, palette: int, seed: int):
@@ -202,14 +153,17 @@ class Riso:
         # spostamento verticale del contenuto delle slide (la testata resta ferma)
         self.content_dy = 0
 
+    def colors(self):
+        return self.PALETTES[self.palette % len(self.PALETTES)]
+
+    def accent(self, kind) -> str:
+        """Colore per dettagli come la barra di avanzamento dei Reel."""
+        return self.colors()[4]
+
     # ---------------------------------------------------------- tipografia
 
-    @staticmethod
-    def _upper(role, text):
-        return text if role == "body" else text.upper()
-
     def _lines(self, role, text, size, width):
-        return wrap(self._upper(role, text), FONT_FOR[role](size), width)
+        return wrap(text, FONT_FOR[role](size), width)
 
     def _fits(self, role, text, size, width, max_lines):
         f = FONT_FOR[role](size)
@@ -220,7 +174,7 @@ class Riso:
     def _fact_layout(self, sizes, safe):
         """Posizioni fisse delle slide di contenuto, uguali per tutto il post."""
         l, t, r, btm = safe
-        y_meta = t + 74 + self.content_dy
+        y_meta = t + 70 + self.content_dy
         y_hl = y_meta + META + GAP["after_meta"]
         y_title = y_hl + int(sizes["highlight"] * LEADING["highlight"]) + GAP["after_highlight"]
         return y_meta, y_hl, y_title
@@ -255,7 +209,7 @@ class Riso:
 
         def body_fits(s, txt):
             _, _, y_title = self._fact_layout(sizes, safe)
-            y_body = y_title + 2 * sizes["title"] * LEADING["title"] + GAP["underline"] + GAP["after_underline"]
+            y_body = y_title + 2 * sizes["title"] * LEADING["title"] + GAP["rule"] + GAP["after_rule"]
             return len(self._lines("body", txt, s, width)) * s * LEADING["body"] <= btm - y_body
 
         # se il testo non sta, si scende prima col corpo, poi col numero in evidenza
@@ -269,114 +223,78 @@ class Riso:
         self.sizes = sizes
         return sizes
 
-    # ------------------------------------------------------------ colori
-
-    def inks(self):
-        a, b, p = self.PALETTES[self.palette % len(self.PALETTES)]
-        return RISO[a], RISO[b], p
-
-    def accent(self, kind):
-        """Colore per dettagli come la barra di avanzamento dei Reel."""
-        return RISO["black"] if kind == "cta" else self.inks()[0]
-
     # ------------------------------------------------------------ disegno
 
     def slide(self, kind, data, w, h, safe):
-        bg = self.background(kind, data, w, h, safe)
+        base, glow, *_ = self.colors()
+        light = {"cover": (0.3, 0.3), "fact": (0.2, 0.25), "cta": (0.7, 0.35)}[kind]
+        bg = darkroom(w, h, base, glow, self.seed + data.get("n", 0), light)
         fg = Image.new("RGBA", (w, h), (0, 0, 0, 0))
-        getattr(self, kind)(bg, fg, data, w, h, safe)
+        getattr(self, kind)(fg, data, safe)
         return bg, fg
 
-    def background(self, kind, data, w, h, safe):
-        a, b, p = self.inks()
-        img = paper(w, h, p if kind != "cta" else "#FFFFFF", self.seed)
-        rng = random.Random(self.seed + data.get("n", 0))
-        if kind == "cta":
-            img = overprint(img, Image.new("L", (w, h), 255), b)
-        # il retino sta negli angoli, lontano dal testo lungo
-        if kind == "cover":
-            # dietro al titolo, sotto la testata
-            cx, cy, rad = w * rng.uniform(0.8, 0.92), h * rng.uniform(0.48, 0.55), w * rng.uniform(0.4, 0.46)
-        else:
-            # nell'angolo in basso a destra, sotto al testo
-            cx, cy, rad = w * rng.uniform(1.0, 1.08), h * rng.uniform(1.02, 1.08), w * rng.uniform(0.34, 0.4)
-
-        def blob(x, y):
-            dist = math.hypot(x - cx, y - cy) / rad
-            return max(0.0, 1 - dist) ** 0.8
-
-        img = overprint(img, halftone(w, h, blob, cell=22, angle=rng.choice([15, 30, 45])), b if kind != "cta" else a, roughness=0.06, seed=self.seed)
-        if kind == "cover":
-            band = Image.new("L", (w, h), 0)
-            ImageDraw.Draw(band).rectangle([0, safe[3] - 40, w, h], fill=255)
-            grad = halftone(w, h, lambda x, y: max(0, (y - (safe[3] - 140)) / (h - safe[3] + 140)), cell=14, angle=45)
-            img = overprint(img, ImageChops.multiply(band, grad), a, roughness=0.08, seed=self.seed + 1)
-        return grain_overlay(img, self.seed, 6)
-
-    def _masthead(self, d, data, safe, color):
+    def _masthead(self, d, data, safe):
+        _, _, text, muted, acc = self.colors()
         l, t, r, _ = safe
-        mono = font("SpaceMono-Bold", MAST)
-        d.text((l, t), config.PAGE_NAME.upper(), font=mono, fill=color)
-        d.text((r, t), f"FACT FILE Nº {data.get('index', 1):04d}", font=mono, fill=color, anchor="ra")
-        d.line([l, t + 44, r, t + 44], fill=color, width=3)
+        spaced(d, (l, t), config.PAGE_NAME.upper(), _mono(LABEL), muted)
+        spaced(d, (r, t), f"CASE Nº {data.get('index', 1):04d}", _mono(LABEL), acc, anchor_right=True)
+        d.line([l, t + 44, r, t + 44], fill=muted + "55", width=2)
 
-    def cover(self, bg, fg, data, w, h, safe):
-        a, b, _ = self.inks()
+    def cover(self, fg, data, safe):
+        _, _, text, muted, acc = self.colors()
         l, t, r, btm = safe
         d = ImageDraw.Draw(fg)
-        self._masthead(d, data, safe, a)
-        d.text((l, t + 74), data.get("label", "").upper(), font=font("SpaceMono-Regular", META), fill=a)
+        self._masthead(d, data, safe)
+        spaced(d, (l, t + 70), data.get("label", "").upper(), _mono(META), acc)
         size = self.sizes["hook"]
-        f = _hook_font(size)
         lines = self._lines("hook", data["hook"], size, r - l)
         block = len(lines) * size * LEADING["hook"]
-        y = t + 74 + META + (btm - 120 - (t + 74 + META) - block) / 2
-        # passaggio "fuori registro" del titolo nel secondo inchiostro
-        shadow = Image.new("L", (w, h), 0)
-        off = max(5, size // 20)
-        text_block(ImageDraw.Draw(shadow), (l + off, y + off * 0.8), lines, f, size, 255, LEADING["hook"])
-        bg.paste(overprint(bg, shadow, b), (0, 0))
-        text_block(d, (l, y), lines, f, size, a, LEADING["hook"])
-        tag = rotated_label(data.get("swipe", "Swipe").upper() + " →", font("SpaceMono-Bold", TAG), RISO["black"], RISO["yellow"], 6)
-        fg.alpha_composite(tag, (int(r - tag.width), int(btm - tag.height)))
+        y = t + 70 + META + (btm - 110 - (t + 70 + META) - block) / 2
+        # l'ultima riga in corsivo e nel colore d'accento: la "rivelazione"
+        for i, line in enumerate(lines):
+            last = i == len(lines) - 1
+            d.text((l, y), line, font=_serif_italic(size) if last else _serif(size), fill=acc if last else text)
+            y += int(size * LEADING["hook"])
+        d.line([l, btm - 70, l + 80, btm - 70], fill=acc, width=3)
+        spaced(d, (l + 104, btm - 84), data.get("swipe", "Swipe").upper() + "  →", _mono(META), text)
 
-    def fact(self, bg, fg, data, w, h, safe):
-        a, b, _ = self.inks()
+    def fact(self, fg, data, safe):
+        _, _, text, muted, acc = self.colors()
         l, t, r, btm = safe
         sz = self.sizes
         d = ImageDraw.Draw(fg)
-        self._masthead(d, data, safe, a)
+        self._masthead(d, data, safe)
         y_meta, y_hl, y_title = self._fact_layout(sz, safe)
-        d.text((l, y_meta), f"{data['n']:02d} / {data['total']:02d}", font=font("SpaceMono-Regular", META), fill=a)
+        spaced(d, (l, y_meta), f"FILE {data['n']:02d} / {data['total']:02d}", _mono(META), muted)
         # zona del numero in evidenza: sempre presente (se manca, il numero della slide)
         hl = (data.get("highlight") or "").strip() or f"{data['n']:02d}"
-        mask = Image.new("L", (w, h), 0)
-        md = ImageDraw.Draw(mask)
-        hf = _hook_font(sz["highlight"])
-        top_pad = md.textbbox((0, 0), "H", font=hf)[1]
-        md.text((l, y_hl - top_pad), hl.upper(), font=hf, fill=255)
-        bg.paste(overprint(bg, mask, b, roughness=0.05, seed=self.seed + data["n"]), (0, 0))
-
-        tf = _hook_font(sz["title"])
+        hf = _serif_italic(sz["highlight"])
+        top_pad = d.textbbox((0, 0), "H", font=hf)[1]
+        d.text((l - 4, y_hl - top_pad), hl, font=hf, fill=acc)
         tl = self._lines("title", data["title"], sz["title"], r - l)
-        y = text_block(d, (l, y_title), tl, tf, sz["title"], a, LEADING["title"]) + GAP["underline"]
-        scribble_line(d, [(l, y), (l + 220, y + 4)], b, 8, self.seed + data["n"])
+        y = text_block(d, (l, y_title), tl, _serif(sz["title"]), sz["title"], text, LEADING["title"]) + GAP["rule"]
+        d.line([l, y, l + 80, y], fill=acc, width=3)
         bl = self._lines("body", data["body"], sz["body"], r - l)
-        text_block(d, (l, y + GAP["after_underline"]), bl, _body_font(sz["body"]), sz["body"], RISO["black"], LEADING["body"])
+        text_block(d, (l, y + GAP["after_rule"]), bl, _body(sz["body"]), sz["body"], muted, LEADING["body"])
 
-    def cta(self, bg, fg, data, w, h, safe):
+    def cta(self, fg, data, safe):
+        _, _, text, muted, acc = self.colors()
         l, t, r, btm = safe
         d = ImageDraw.Draw(fg)
-        ink_c = RISO["black"]
-        self._masthead(d, data, safe, ink_c)
+        self._masthead(d, data, safe)
         size = self.sizes["cta"]
         lines = self._lines("cta", data["cta"], size, r - l)
-        text_block(d, (l, t + 74 + META + GAP["after_meta"]), lines, _hook_font(size), size, ink_c, LEADING["cta"])
-        d.text((l, btm - 110), f"FOLLOW {data['handle']}".upper(), font=font("SpaceMono-Bold", FOLLOW), fill=ink_c)
-        d.text((l, btm - 58), data.get("follow_line", ""), font=font("Archivo", TAGLINE, weight=500), fill=ink_c)
+        y = t + 70 + META + GAP["after_meta"]
+        for i, line in enumerate(lines):
+            last = i == len(lines) - 1
+            d.text((l, y), line, font=_serif_italic(size) if last else _serif(size), fill=acc if last else text)
+            y += int(size * LEADING["cta"])
+        d.line([l, btm - 140, l + 80, btm - 140], fill=acc, width=3)
+        spaced(d, (l, btm - 110), f"FOLLOW {data['handle']}".upper(), _mono(FOLLOW), text, tracking=0.06)
+        d.text((l, btm - 58), data.get("follow_line", ""), font=_body(TAGLINE), fill=muted)
 
 
-STYLES = {s.name: s for s in (Riso,)}
+STYLES = {s.name: s for s in (Mystery,)}
 
 
 def flatten(bg: Image.Image, fg: Image.Image) -> Image.Image:

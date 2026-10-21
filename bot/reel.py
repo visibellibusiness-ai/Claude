@@ -12,7 +12,7 @@ from PIL import Image, ImageDraw
 
 from bot import config
 from bot.music import make_track
-from bot.render import make_style, slide_data
+from bot.render import center_content, make_style, slide_data
 from bot.style import flatten
 
 W, H = 1080, 1920
@@ -34,11 +34,7 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     items = slide_data(post, theme_index)
     items[0][1]["swipe"] = "Keep watching"  # un video non si scorre
     style.plan(items, SAFE, boost=1.18)
-    # il contenuto di tutte le slide viene spostato della stessa quantità, così il
-    # blocco più alto risulta centrato e le posizioni restano identiche tra slide
-    facts = [style.slide(k, d, W, H, SAFE)[1] for k, d in items if k == "fact"]
-    lowest = max(fg.getchannel("A").getbbox()[3] for fg in facts) if facts else SAFE[3]
-    style.content_dy = max(0, int((SAFE[3] - lowest) * 0.5))
+    center_content(style, items, W, H, SAFE)
     scenes = []
     for kind, data in items:
         bg, fg = style.slide(kind, data, W, H, SAFE)

@@ -39,12 +39,23 @@ def slide_data(post: dict, index: int) -> list[tuple[str, dict]]:
     return scenes
 
 
+def center_content(style, scenes, w, h, safe) -> None:
+    """Sposta il contenuto di tutte le slide della stessa quantità, così il blocco
+    più alto risulta centrato e le posizioni restano identiche tra le slide."""
+    style.content_dy = 0
+    facts = [style.slide(k, d, w, h, safe)[1] for k, d in scenes if k == "fact"]
+    if facts:
+        lowest = max(fg.getchannel("A").getbbox()[3] for fg in facts)
+        style.content_dy = max(0, int((safe[3] - lowest) * 0.5))
+
+
 def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
     style = make_style(post, theme_index)
     out_dir.mkdir(parents=True, exist_ok=True)
     safe = (MARGIN, MARGIN, config.WIDTH - MARGIN, config.HEIGHT - MARGIN)
     scenes = slide_data(post, theme_index)
     style.plan(scenes, safe)
+    center_content(style, scenes, config.WIDTH, config.HEIGHT, safe)
     paths = []
     for i, (kind, data) in enumerate(scenes, start=1):
         img = flatten(*style.slide(kind, data, config.WIDTH, config.HEIGHT, safe))

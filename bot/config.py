@@ -27,9 +27,9 @@ MODEL = "claude-opus-5-5"
 
 # Grafica carosello (formato 4:5 consigliato da Instagram per il feed)
 WIDTH, HEIGHT = 1080, 1350
-# Stile di marca (bot/style.py): "riso", "museum" o "tabloid".
+# Stile di marca (bot/style.py): "mystery", in coppia con la musica.
 # Claude sceglie solo la palette (5 varianti) dentro lo stile.
-BRAND_STYLE = "riso"
+BRAND_STYLE = "mystery"
 # Generi musicali dei Reel (bot/music.py) tra cui Claude può scegliere
 MUSIC_PRESETS = ["mystery"]
 
