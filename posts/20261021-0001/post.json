@@ -44,5 +44,10 @@
     "Xie et al., Science 2013",
     "NIH - Brain Basics: Understanding Sleep"
   ],
-  "category": "human body"
+  "category": "human body",
+  "design_used": {
+    "bg": "#0E1116",
+    "fg": "#FFFFFF",
+    "accent": "#FFD23F"
+  }
 }
