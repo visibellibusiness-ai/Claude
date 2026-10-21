@@ -28,16 +28,18 @@ Ogni giorno alle 13:40 e alle 23:40 UTC (pomeriggio in Europa / mattina e sera n
 3. `bot/render.py` disegna le slide 1080×1350 (carosello); `bot/reel.py` crea il
    Reel 1080×1920 con testo animato e musica generata da `bot/music.py` (niente
    problemi di copyright). La grafica segue lo stile di marca definito in
-   `bot/style.py` ("riso", "museum" o "tabloid"); Claude sceglie la palette, i
-   numeri o le parole da mettere in grande e, per i Reel, il genere musicale.
+   `bot/style.py` (stile "Riso", con scala tipografica fissa); Claude sceglie la
+   palette e i numeri o le parole da mettere in grande. Musica: "mystery" con
+   quattro variazioni.
 4. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
 5. `bot/publish.py` pubblica con l'API ufficiale di Instagram. I Reel vengono
    caricati direttamente; i Trial Reel li vede prima solo chi non ti segue, e
    Instagram li condivide con i follower se vanno bene.
 6. `posts/history.json` registra ogni post con stile e risultati.
 
-Nessuno stile è fissato: all'inizio Claude sperimenta, poi si concentra su quello
-che rende di più. In `posts/strategy.md` puoi leggere cosa ha imparato.
+Lo stile grafico è fisso; argomenti, formati e testi li sceglie Claude, che all'inizio
+sperimenta e poi si concentra su quello che rende di più. In `posts/strategy.md` puoi
+leggere cosa ha imparato.
 
 I file JSON in `posts/queue/` escono per primi: c'è già il primo post pronto.
 
@@ -56,9 +58,11 @@ Questi passaggi richiedono il tuo telefono e i tuoi account, quindi vanno fatti 
    `instagram_basic`, `instagram_content_publish`, `instagram_manage_insights`, `pages_show_list`,
    `pages_read_engagement`, `business_management`, poi convertilo in
    **token di lunga durata** (Strumenti → Debug token di accesso → Estendi).
-5. Trova l'**ID Instagram**: in Graph API Explorer esegui
-   `me/accounts?fields=instagram_business_account` e copia l'`id`
-   dentro `instagram_business_account`.
+5. Con il token di lunga durata, in Graph API Explorer esegui
+   `me/accounts?fields=name,access_token,instagram_business_account` e copia:
+   - l'`id` dentro `instagram_business_account` → è `IG_USER_ID`;
+   - l'`access_token` della Pagina → è `IG_ACCESS_TOKEN`. Ottenuto da un token
+     di lunga durata, **non scade** (verificalo nel Debug token: "Scade: mai").
 6. Crea una **chiave API Anthropic** su console.anthropic.com.
 7. Nel repo GitHub: Settings → Secrets and variables → Actions → aggiungi
    `ANTHROPIC_API_KEY`, `IG_USER_ID`, `IG_ACCESS_TOKEN`.
@@ -67,8 +71,8 @@ Questi passaggi richiedono il tuo telefono e i tuoi account, quindi vanno fatti 
 9. Unisci questo branch nel branch principale. Da lì il workflow parte da solo;
    per il primo post subito vai su Actions → "Pubblica post Instagram" → Run workflow.
 
-Il token di lunga durata scade dopo circa 60 giorni: va rinnovato e aggiornato
-nel secret `IG_ACCESS_TOKEN`.
+Se usi il token utente invece di quello della Pagina, scade dopo circa 60 giorni
+e va rinnovato nel secret `IG_ACCESS_TOKEN`.
 
 ### Bio consigliata
 
