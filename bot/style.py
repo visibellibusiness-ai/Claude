@@ -102,16 +102,16 @@ def darkroom(w, h, base, glow, seed, light=(0.25, 0.22)):
 # il più grande in cui stanno tutti i testi di quel ruolo, e lo si usa su
 # tutte le slide. Così le grandezze restano coerenti.
 TYPE_SCALE = {
-    "hook": [176, 150, 128, 110],
-    "highlight": [250, 212, 180],
-    "title": [92, 80, 70],
-    "body": [46, 42, 38],
-    "cta": [124, 106, 92],
+    "hook": [210, 184, 160, 140],
+    "highlight": [300, 256, 220],
+    "title": [124, 108, 94],
+    "body": [54, 50, 46],
+    "cta": [150, 130, 114],
 }
-LABEL, META, FOLLOW, TAGLINE = 24, 28, 36, 32
+LABEL, META, FOLLOW, TAGLINE = 28, 32, 40, 36
 LEADING = {"hook": 1.0, "highlight": 0.95, "title": 1.02, "body": 1.38, "cta": 1.02}
 MAX_LINES = {"hook": 5, "highlight": 1, "title": 2, "cta": 5}
-GAP = {"after_meta": 70, "after_highlight": 40, "rule": 34, "after_rule": 40}
+GAP = {"after_meta": 60, "after_highlight": 36, "rule": 34, "after_rule": 40}
 
 
 def _serif(s):
@@ -123,7 +123,7 @@ def _serif_italic(s):
 
 
 def _body(s):
-    return font("Archivo", s, weight=420)
+    return font("Archivo", s, weight=470)
 
 
 def _mono(s):
@@ -139,11 +139,11 @@ class Mystery:
     name = "mystery"
     # (fondo, luce, testo, testo secondario, accento)
     PALETTES = [
-        ("#0B0C10", "#3A3F52", "#F2EEE6", "#C9C4BA", "#E6B65C"),  # ambra
-        ("#091014", "#28434A", "#EEF3F2", "#BFCACA", "#6FD6C9"),  # acqua
-        ("#100D14", "#43324F", "#F4EEF3", "#CBC1CB", "#D99BCB"),  # orchidea
-        ("#0D0D0B", "#3E3A2C", "#F2F0E6", "#C9C6B9", "#D4DB78"),  # lime
-        ("#0E0B0B", "#4A2E28", "#F4EDE9", "#CCC1BC", "#EE7A5E"),  # brace
+        ("#0B0C10", "#3A3F52", "#F4F0E8", "#DAD5CB", "#E6B65C"),  # ambra
+        ("#091014", "#28434A", "#F0F5F4", "#D0DADA", "#6FD6C9"),  # acqua
+        ("#100D14", "#43324F", "#F6F0F5", "#DCD2DC", "#D99BCB"),  # orchidea
+        ("#0D0D0B", "#3E3A2C", "#F4F2E8", "#DAD7CA", "#D4DB78"),  # lime
+        ("#0E0B0B", "#4A2E28", "#F6EFEB", "#DDD2CD", "#EE7A5E"),  # brace
     ]
 
     def __init__(self, palette: int, seed: int):
@@ -203,9 +203,22 @@ class Mystery:
                     return size
             return steps[role][-1]
 
+        # altezza disponibile per titolo di copertina e chiusura (vedi cover() e cta())
+        room = {
+            "hook": (btm - 170) - (t + 70 + META) - 40,
+            "cta": (btm - 170) - (t + 70 + META + GAP["after_meta"]),
+        }
+
+        def ok(role, s, txt):
+            if not self._fits(role, txt, s, width, MAX_LINES[role]):
+                return False
+            if role in room:
+                return len(self._lines(role, txt, s, width)) * s * LEADING[role] <= room[role]
+            return True
+
         sizes = {}
         for role in ("hook", "highlight", "title", "cta"):
-            sizes[role] = first_fit(role, lambda s, txt, role=role: self._fits(role, txt, s, width, MAX_LINES[role]))
+            sizes[role] = first_fit(role, lambda s, txt, role=role: ok(role, s, txt))
 
         def body_fits(s, txt):
             _, _, y_title = self._fact_layout(sizes, safe)
@@ -249,14 +262,14 @@ class Mystery:
         size = self.sizes["hook"]
         lines = self._lines("hook", data["hook"], size, r - l)
         block = len(lines) * size * LEADING["hook"]
-        y = t + 70 + META + (btm - 110 - (t + 70 + META) - block) / 2
+        y = t + 70 + META + (btm - 170 - (t + 70 + META) - block) / 2
         # l'ultima riga in corsivo e nel colore d'accento: la "rivelazione"
         for i, line in enumerate(lines):
             last = i == len(lines) - 1
             d.text((l, y), line, font=_serif_italic(size) if last else _serif(size), fill=acc if last else text)
             y += int(size * LEADING["hook"])
-        d.line([l, btm - 70, l + 80, btm - 70], fill=acc, width=3)
-        spaced(d, (l + 104, btm - 84), data.get("swipe", "Swipe").upper() + "  →", _mono(META), text)
+        d.line([l, btm - 18, l + 80, btm - 18], fill=acc, width=3)
+        spaced(d, (l + 104, btm - 34), data.get("swipe", "Swipe").upper() + "  →", _mono(META), text)
 
     def fact(self, fg, data, safe):
         _, _, text, muted, acc = self.colors()
