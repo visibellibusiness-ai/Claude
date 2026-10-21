@@ -13,6 +13,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from bot.generate import generate_post
+from bot.reel import render_reel
 from bot.render import render_post
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -70,36 +71,57 @@ def create(post_file: str | None) -> None:
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
     rel_dir = Path("posts") / stamp
     out_dir = ROOT / rel_dir
-    paths = render_post(post, out_dir, theme_index=n)
+    fmt = post.get("format", "carousel")
+    if fmt == "reel":
+        render_reel(post, out_dir, theme_index=n)
+        paths = [out_dir / "cover.jpg"]
+    else:
+        paths = render_post(post, out_dir, theme_index=n)
     (out_dir / "post.json").write_text(json.dumps(post, ensure_ascii=False, indent=2))
     caption = build_caption(post)
     PENDING.write_text(json.dumps({
         "date": stamp,
+        "format": fmt,
+        "trial": fmt == "reel" and post.get("trial", False),
+        "theme_index": n,
         "topic": post["topic"],
         "category": post.get("category", "?"),
         "hook": post["hook"],
         "slides": len(post["slides"]),
-        "design": post["design_used"],
+        "design": post.get("design_used") or post.get("design", {}),
         "images": [f"{rel_dir.as_posix()}/{p.name}" for p in paths],
         "caption": caption,
     }, ensure_ascii=False, indent=2))
-    print(f"Categoria: {post.get('category', '?')}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
+    print(f"Formato: {fmt}\nCategoria: {post.get('category', '?')}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
 
 
 def publish() -> None:
-    from bot.publish import publish_carousel
+    from bot.publish import publish_carousel, publish_reel
 
     pending = json.loads(PENDING.read_text())
-    # Le immagini devono essere raggiungibili pubblicamente: il workflow le
-    # committa nel repo prima di questo passo (vedi .github/workflows/post.yml).
-    base = os.environ["MEDIA_BASE_URL"].rstrip("/")
-    urls = [f"{base}/{path}" for path in pending["images"]]
-    media_id = publish_carousel(urls, pending["caption"])
+    fmt = pending.get("format", "carousel")
+    trial = False
+    if fmt == "reel":
+        # il video non è nel repo: se manca (giro precedente fallito) lo ricrea
+        out_dir = ROOT / Path(pending["images"][0]).parent
+        video = out_dir / "reel.mp4"
+        if not video.exists():
+            post = json.loads((out_dir / "post.json").read_text())
+            render_reel(post, out_dir, theme_index=pending.get("theme_index", 0))
+        media_id, trial = publish_reel(video, pending["caption"], pending.get("trial", False))
+    else:
+        # Le immagini devono essere raggiungibili pubblicamente: il workflow le
+        # committa nel repo prima di questo passo (vedi .github/workflows/post.yml).
+        base = os.environ["MEDIA_BASE_URL"].rstrip("/")
+        urls = [f"{base}/{path}" for path in pending["images"]]
+        media_id = publish_carousel(urls, pending["caption"])
 
     history = load_history()
     history.append({
         "date": pending["date"],
         "topic": pending["topic"],
+        "format": fmt,
+        "trial": trial,
         "category": pending["category"],
         "hook": pending["hook"],
         "slides": pending["slides"],

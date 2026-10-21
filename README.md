@@ -1,8 +1,8 @@
 # Pagina Instagram automatica: "Did You Know?"
 
 Pagina in inglese di curiosità verificate (corpo umano, animali, spazio, storia, psicologia…)
-che si gestisce da sola: **due caroselli al giorno**, generati, disegnati e
-pubblicati senza intervento umano.
+che si gestisce da sola: **due post al giorno**, caroselli o Reel (anche Trial Reel),
+generati, disegnati e pubblicati senza intervento umano.
 
 ## Perché questa nicchia
 
@@ -22,13 +22,16 @@ Ogni giorno alle 13:40 e alle 23:40 UTC (pomeriggio in Europa / mattina e sera n
 1. `bot/learn.py` legge le statistiche dei post usciti (copertura, salvataggi,
    condivisioni, like, commenti, follower). Una volta a settimana Claude le analizza
    e riscrive la propria strategia in `posts/strategy.md`.
-2. `bot/generate.py`: Claude decide **tutto** del post successivo (argomento,
-   taglio, numero di slide, testi, caption, hashtag, colori, etichette), seguendo
+2. `bot/generate.py`: Claude decide **tutto** del post successivo (formato,
+   argomento, taglio, numero di slide, testi, caption, hashtag, colori, etichette), seguendo
    la sua strategia e i dati, e provando ogni tanto qualcosa di nuovo.
-3. `bot/render.py` disegna le slide 1080×1350. Se i colori scelti non sono
-   leggibili usa un tema di riserva.
+3. `bot/render.py` disegna le slide 1080×1350 (carosello); `bot/reel.py` crea il
+   Reel 1080×1920 con testo animato e musica generata da `bot/music.py` (niente
+   problemi di copyright). Se i colori scelti non sono leggibili usa un tema di riserva.
 4. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
-5. `bot/publish.py` pubblica il carosello con l'API ufficiale di Instagram.
+5. `bot/publish.py` pubblica con l'API ufficiale di Instagram. I Reel vengono
+   caricati direttamente; i Trial Reel li vede prima solo chi non ti segue, e
+   Instagram li condivide con i follower se vanno bene.
 6. `posts/history.json` registra ogni post con stile e risultati.
 
 Nessuno stile è fissato: all'inizio Claude sperimenta, poi si concentra su quello

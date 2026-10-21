@@ -76,7 +76,7 @@ def reflect(history: list[dict], strategy: str, followers_log: list[dict]) -> st
     lines = []
     for h in history[-60:]:
         lines.append(
-            f"- {h['date']} | {h.get('category', '?')} | hook: \"{h.get('hook', h['topic'])}\" | "
+            f"- {h['date']} | {h.get('format', 'carousel')}{' (trial)' if h.get('trial') else ''} | {h.get('category', '?')} | hook: \"{h.get('hook', h['topic'])}\" | "
             f"slides: {h.get('slides', '?')} | design: {h.get('design', {})} | metrics: {h.get('metrics', 'n/a')}"
         )
     followers = "\n".join(f"- {f['date']}: {f['followers']}" for f in followers_log[-30:] if f.get("followers") is not None)
@@ -87,7 +87,8 @@ def reflect(history: list[dict], strategy: str, followers_log: list[dict]) -> st
         f"## Posts\n" + "\n".join(lines) + "\n\n"
         f"## Followers over time\n{followers or '(n/a)'}\n\n"
         "Write the new strategy in Markdown (max 400 words): what is working (with numbers), "
-        "what is not, which topics/hooks/lengths/colors/captions to use more or less, and 1-2 "
+        "what is not, which formats (carousel vs reel vs trial reel), topics, hooks, lengths, colors "
+        "and captions to use more or less, how to split formats, and 1-2 "
         "experiments to run next. Judge mainly saves, shares and reach relative to the average. "
         "Be honest when there is too little data to draw conclusions. Output only the document."
     )

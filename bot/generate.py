@@ -12,6 +12,8 @@ SCHEMA = {
     "type": "object",
     "properties": {
         "reasoning": {"type": "string", "description": "Why this topic, format and style, based on strategy and data"},
+        "format": {"type": "string", "enum": ["carousel", "reel"], "description": "Carousel (swipeable images) or Reel (short video made from the same slides, with music)"},
+        "trial": {"type": "boolean", "description": "Reels only: publish as Trial Reel (shown first to non-followers, auto-shared to followers if it performs well). Ignored for carousels"},
         "category": {"type": "string", "description": "Short category label (e.g. space, human body)"},
         "topic": {"type": "string", "description": "Short topic label, used to avoid repeats"},
         "hook": {"type": "string", "description": "Cover slide headline, max 10 words"},
@@ -53,7 +55,14 @@ SCHEMA = {
 
 SYSTEM = f"""You run the Instagram page "{config.PAGE_NAME}" ({config.PAGE_HANDLE}) completely on your own.
 Niche: {config.NICHE}.
-Format: image carousels (1080x1350). You decide topic, angle, tone, length, colors and wording.
+Formats you can choose for each post:
+- carousel: swipeable images (1080x1350). Usually strongest for saves and shares.
+- reel: a short vertical video built from the same slides, with text animations and music.
+  Usually strongest for reaching new people. Keep reels short: 3-6 slides, short texts,
+  because each slide stays on screen for a few seconds based on its length.
+- Reels can be Trial Reels: shown first only to non-followers and automatically shared with
+  followers if they perform well. Ideal for risky experiments without hurting the profile.
+You decide format, topic, angle, tone, length, colors and wording.
 
 Goal: grow the page fast. Maximize reach, saves, shares, comments and follows.
 
@@ -72,7 +81,8 @@ def _performance_table(history: list[dict]) -> str:
     for h in history[-30:]:
         m = h.get("metrics") or {}
         stats = ", ".join(f"{k}={v}" for k, v in m.items()) or "stats not available yet"
-        rows.append(f"- {h['date']} | {h.get('category', '?')} | \"{h.get('hook', h['topic'])}\" | {stats}")
+        kind = h.get("format", "carousel") + (" (trial)" if h.get("trial") else "")
+        rows.append(f"- {h['date']} | {kind} | {h.get('category', '?')} | \"{h.get('hook', h['topic'])}\" | {stats}")
     return "\n".join(rows) or "(no posts yet)"
 
 
