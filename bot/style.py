@@ -12,6 +12,8 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 
+from bot import config
+
 FONTS = Path(__file__).resolve().parent.parent / "assets" / "fonts"
 
 # Inchiostri risograph reali (nomi dei colori Riso)
@@ -314,7 +316,7 @@ class Riso:
     def _masthead(self, d, data, safe, color):
         l, t, r, _ = safe
         mono = font("SpaceMono-Bold", MAST)
-        d.text((l, t), "DID YOU KNOW?", font=mono, fill=color)
+        d.text((l, t), config.PAGE_NAME.upper(), font=mono, fill=color)
         d.text((r, t), f"FACT FILE Nº {data.get('index', 1):04d}", font=mono, fill=color, anchor="ra")
         d.line([l, t + 44, r, t + 44], fill=color, width=3)
 
