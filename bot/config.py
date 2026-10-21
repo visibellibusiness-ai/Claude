@@ -27,14 +27,11 @@ MODEL = "claude-opus-5-5"
 
 # Grafica carosello (formato 4:5 consigliato da Instagram per il feed)
 WIDTH, HEIGHT = 1080, 1350
-# Usati solo se i colori scelti da Claude non sono leggibili
-FALLBACK_THEMES = [
-    {"bg": "#0E1116", "fg": "#FFFFFF", "accent": "#FFD23F"},
-    {"bg": "#111827", "fg": "#F9FAFB", "accent": "#34D399"},
-    {"bg": "#1A1033", "fg": "#FFFFFF", "accent": "#FF6B9A"},
-    {"bg": "#0B1D2E", "fg": "#FFFFFF", "accent": "#4FC3F7"},
-    {"bg": "#1E1410", "fg": "#FFF7ED", "accent": "#FB923C"},
-]
+# Stile di marca (bot/style.py): "riso", "museum" o "tabloid".
+# Claude sceglie solo la palette (5 varianti) dentro lo stile.
+BRAND_STYLE = "riso"
+# Generi musicali dei Reel (bot/music.py) tra cui Claude può scegliere
+MUSIC_PRESETS = ["lofi", "curious_pop", "documentary", "chill_house", "mystery"]
 
 # Ogni quanti giorni Claude rivede la strategia in base ai risultati
 REFLECT_EVERY_DAYS = 7

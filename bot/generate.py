@@ -6,13 +6,12 @@ import anthropic
 
 from bot import config
 
-HEX = {"type": "string", "description": "Colore esadecimale #RRGGBB"}
-
 SCHEMA = {
     "type": "object",
     "properties": {
         "reasoning": {"type": "string", "description": "Why this topic, format and style, based on strategy and data"},
         "format": {"type": "string", "enum": ["carousel", "reel"], "description": "Carousel (swipeable images) or Reel (short video made from the same slides, with music)"},
+        "music": {"type": "string", "enum": config.MUSIC_PRESETS, "description": "Reels only: background music genre. Ignored for carousels"},
         "trial": {"type": "boolean", "description": "Reels only: publish as Trial Reel (shown first to non-followers, auto-shared to followers if it performs well). Ignored for carousels"},
         "category": {"type": "string", "description": "Short category label (e.g. space, human body)"},
         "topic": {"type": "string", "description": "Short topic label, used to avoid repeats"},
@@ -25,8 +24,9 @@ SCHEMA = {
                 "properties": {
                     "title": {"type": "string", "description": "Max 7 words"},
                     "body": {"type": "string", "description": "Max 40 words"},
+                    "highlight": {"type": "string", "description": "Optional striking number or word shown huge (e.g. '+1 cm', '8 min', '90%'), max 8 characters; empty string if none"},
                 },
-                "required": ["title", "body"],
+                "required": ["title", "body", "highlight"],
                 "additionalProperties": False,
             },
         },
@@ -37,19 +37,16 @@ SCHEMA = {
         "design": {
             "type": "object",
             "properties": {
-                "background": HEX,
-                "text": HEX,
-                "accent": HEX,
+                "palette": {"type": "integer", "description": "Color variant of the brand style, 0 to 4"},
                 "cover_label": {"type": "string", "description": "Small label above the hook, max 4 words"},
                 "swipe_text": {"type": "string", "description": "Hint on the cover, max 3 words"},
                 "follow_line": {"type": "string", "description": "Tagline under 'Follow @handle' on the last slide, max 8 words"},
-                "show_numbers": {"type": "boolean", "description": "Show big 01, 02... numbers on content slides"},
             },
-            "required": ["background", "text", "accent", "cover_label", "swipe_text", "follow_line", "show_numbers"],
+            "required": ["palette", "cover_label", "swipe_text", "follow_line"],
             "additionalProperties": False,
         },
     },
-    "required": ["reasoning", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design"],
+    "required": ["reasoning", "format", "music", "trial", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design"],
     "additionalProperties": False,
 }
 
@@ -62,7 +59,10 @@ Formats you can choose for each post:
   because each slide stays on screen for a few seconds based on its length.
 - Reels can be Trial Reels: shown first only to non-followers and automatically shared with
   followers if they perform well. Ideal for risky experiments without hurting the profile.
-You decide format, topic, angle, tone, length, colors and wording.
+The page has a fixed visual brand style; you pick one of its 5 color palettes per post,
+the small labels, and a short "highlight" (a striking number or word shown huge) per slide
+when it makes the fact hit harder. For reels you also pick the music genre.
+You decide format, topic, angle, tone, length, palette, music and wording.
 
 Goal: grow the page fast. Maximize reach, saves, shares, comments and follows.
 
@@ -73,7 +73,7 @@ testing something new now and then so you keep discovering what works best.
 Hard rules:
 - English only, simple and natural.
 - Only real, well-documented, verifiable facts. No myths or invented numbers.
-- Readable colors: strong contrast between background and text."""
+"""
 
 
 def _performance_table(history: list[dict]) -> str:
@@ -82,6 +82,10 @@ def _performance_table(history: list[dict]) -> str:
         m = h.get("metrics") or {}
         stats = ", ".join(f"{k}={v}" for k, v in m.items()) or "stats not available yet"
         kind = h.get("format", "carousel") + (" (trial)" if h.get("trial") else "")
+        if h.get("music"):
+            kind += f", music={h['music']}"
+        if h.get("design"):
+            kind += f", palette={h['design'].get('palette')}"
         rows.append(f"- {h['date']} | {kind} | {h.get('category', '?')} | \"{h.get('hook', h['topic'])}\" | {stats}")
     return "\n".join(rows) or "(no posts yet)"
 

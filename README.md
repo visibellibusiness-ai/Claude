@@ -27,7 +27,9 @@ Ogni giorno alle 13:40 e alle 23:40 UTC (pomeriggio in Europa / mattina e sera n
    la sua strategia e i dati, e provando ogni tanto qualcosa di nuovo.
 3. `bot/render.py` disegna le slide 1080×1350 (carosello); `bot/reel.py` crea il
    Reel 1080×1920 con testo animato e musica generata da `bot/music.py` (niente
-   problemi di copyright). Se i colori scelti non sono leggibili usa un tema di riserva.
+   problemi di copyright). La grafica segue lo stile di marca definito in
+   `bot/style.py` ("riso", "museum" o "tabloid"); Claude sceglie la palette, i
+   numeri o le parole da mettere in grande e, per i Reel, il genere musicale.
 4. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
 5. `bot/publish.py` pubblica con l'API ufficiale di Instagram. I Reel vengono
    caricati direttamente; i Trial Reel li vede prima solo chi non ti segue, e
@@ -79,7 +81,8 @@ Human body · Space · Animals · History
 
 ## Impostazioni di base
 
-- Nome e handle della pagina: `bot/config.py`
+- Nome e handle della pagina, stile grafico (`BRAND_STYLE`) e generi musicali
+  ammessi (`MUSIC_PRESETS`): `bot/config.py`
 - Orari di pubblicazione: `cron` in `.github/workflows/post.yml` (orari in UTC)
 
 ## Costi indicativi

@@ -77,7 +77,7 @@ def reflect(history: list[dict], strategy: str, followers_log: list[dict]) -> st
     for h in history[-60:]:
         lines.append(
             f"- {h['date']} | {h.get('format', 'carousel')}{' (trial)' if h.get('trial') else ''} | {h.get('category', '?')} | hook: \"{h.get('hook', h['topic'])}\" | "
-            f"slides: {h.get('slides', '?')} | design: {h.get('design', {})} | metrics: {h.get('metrics', 'n/a')}"
+            f"slides: {h.get('slides', '?')} | design: {h.get('design', {})} | music: {h.get('music') or '-'} | metrics: {h.get('metrics', 'n/a')}"
         )
     followers = "\n".join(f"- {f['date']}: {f['followers']}" for f in followers_log[-30:] if f.get("followers") is not None)
     prompt = (

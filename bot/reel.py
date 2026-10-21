@@ -1,7 +1,7 @@
-"""Crea un Reel 1080x1920 (MP4) a partire dalle stesse slide del carosello.
+"""Crea un Reel 1080x1920 (MP4) a partire dalle stesse scene del carosello.
 
-Zone di sicurezza Reels rispettate: niente testo nei primi 250px in alto, negli
-ultimi 420px in basso (caption, audio, pulsanti) né nei 150px a destra (icone).
+Zone di sicurezza Reels rispettate: niente testo nei primi 300px in alto, negli
+ultimi 460px in basso (caption, audio, pulsanti) né nei 150px a destra (icone).
 """
 
 import subprocess
@@ -12,73 +12,41 @@ from PIL import Image, ImageDraw
 
 from bot import config
 from bot.music import make_track
-from bot.render import _draw_block, _fit, _font, _theme
+from bot.render import make_style, slide_data
+from bot.style import flatten
 
 W, H = 1080, 1920
 FPS = 30
-LEFT, RIGHT = 90, W - 150
-TOP, BOTTOM = 300, H - 460
-TEXT_W = RIGHT - LEFT
+SAFE = (90, 300, W - 150, H - 460)
 ANIM = 0.45  # secondi di entrata del testo
 
 
-def _scene_duration(*texts: str) -> float:
-    words = sum(len(t.split()) for t in texts)
-    return max(2.8, min(6.5, 1.5 + words * 0.28))
-
-
-def _layer(draw_fn) -> Image.Image:
-    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-    draw_fn(ImageDraw.Draw(layer))
-    return layer
-
-
-def _scenes(post: dict, theme: dict, design: dict):
-    """Restituisce (sfondo, livello testo, durata) per ogni scena."""
-    bg = Image.new("RGB", (W, H), theme["bg"])
-    scenes = []
-
-    def cover(d):
-        d.text((LEFT, TOP), design.get("cover_label", config.PAGE_NAME).upper(), font=_font(44, "Bold"), fill=theme["accent"])
-        font, lines, size = _fit(d, post["hook"], "Black", TEXT_W, 900, 130, 70, 1.12)
-        y = TOP + 120 + (BOTTOM - TOP - 120 - len(lines) * size * 1.12) / 2
-        _draw_block(d, lines, font, size, LEFT, y, theme["fg"], 1.12)
-
-    scenes.append((bg, _layer(cover), _scene_duration(post["hook"]) + 0.5))
-
-    for i, slide in enumerate(post["slides"], start=1):
-        def content(d, i=i, slide=slide):
-            top = TOP
-            if design.get("show_numbers", True):
-                d.text((LEFT, TOP - 20), f"{i:02d}", font=_font(170, "Black"), fill=theme["accent"])
-                top = TOP + 220
-            tfont, tlines, tsize = _fit(d, slide["title"], "ExtraBold", TEXT_W, 330, 92, 56, 1.12)
-            y = _draw_block(d, tlines, tfont, tsize, LEFT, top, theme["fg"], 1.12)
-            bfont, blines, bsize = _fit(d, slide["body"], "Medium", TEXT_W, BOTTOM - y - 60, 60, 38, 1.38)
-            _draw_block(d, blines, bfont, bsize, LEFT, y + 60, theme["fg"], 1.38)
-
-        scenes.append((bg, _layer(content), _scene_duration(slide["title"], slide["body"])))
-
-    end_bg = Image.new("RGB", (W, H), theme["accent"])
-
-    def end(d):
-        font, lines, size = _fit(d, post["cta"], "Black", TEXT_W, 700, 110, 60, 1.15)
-        _draw_block(d, lines, font, size, LEFT, TOP + 150, theme["bg"], 1.15)
-        d.text((LEFT, BOTTOM - 150), f"Follow {config.PAGE_HANDLE}", font=_font(48, "Bold"), fill=theme["bg"])
-        d.text((LEFT, BOTTOM - 80), design.get("follow_line", "a new mind-blowing fact every day"), font=_font(36, "Medium"), fill=theme["bg"])
-
-    scenes.append((end_bg, _layer(end), 3.5))
-    return scenes
+def _duration(kind: str, data: dict) -> float:
+    if kind == "cta":
+        return 3.5
+    text = data.get("hook", "") + " " + data.get("title", "") + " " + data.get("body", "")
+    words = len(text.split())
+    return max(2.8, min(6.5, 1.5 + words * 0.28)) + (0.5 if kind == "cover" else 0)
 
 
 def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
-    design = post.get("design", {})
-    theme = _theme(design, theme_index)
-    post["design_used"] = theme
-    scenes = _scenes(post, theme, design)
-    total = sum(d for _, _, d in scenes)
+    style = make_style(post, theme_index)
+    scenes = []
+    for kind, data in slide_data(post, theme_index):
+        bg, fg = style.slide(kind, data, W, H, SAFE)
+        if kind == "fact":
+            # centra il blocco di testo nell'area sicura, invece di lasciarlo in alto
+            bottom = fg.getchannel("A").getbbox()[3]
+            dy = int((SAFE[3] - bottom) * 0.45)
+            if dy > 20:
+                bg, fg = style.slide(kind, data, W, H, (SAFE[0], SAFE[1] + dy, SAFE[2], SAFE[3]))
+        scenes.append((bg, fg, _duration(kind, data), style.accent(kind)))
+    total = sum(s[2] for s in scenes)
+
     out_dir.mkdir(parents=True, exist_ok=True)
-    audio = make_track(out_dir / "music.wav", total, seed=theme_index)
+    preset = post.get("music") if post.get("music") in config.MUSIC_PRESETS else config.MUSIC_PRESETS[theme_index % len(config.MUSIC_PRESETS)]
+    post["music_used"] = preset
+    audio = make_track(out_dir / "music.wav", total, seed=theme_index, preset=preset)
     video = out_dir / "reel.mp4"
 
     cmd = [
@@ -91,28 +59,25 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     ]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     elapsed = 0.0
-    for n, (bg, layer, duration) in enumerate(scenes):
-        frames = int(duration * FPS)
+    left, right = SAFE[0], SAFE[2]
+    for bg, fg, duration, accent in scenes:
         static = None
-        for f in range(frames):
+        for f in range(int(duration * FPS)):
             t = f / FPS
-            if t >= ANIM and static is not None:
-                frame = static
-            else:
+            if static is None:
                 p = min(1.0, t / ANIM)
                 ease = 1 - (1 - p) ** 3
-                frame = bg.copy()
-                faded = layer.copy()
-                faded.putalpha(layer.getchannel("A").point(lambda a, e=ease: int(a * e)))
-                frame.paste(faded, (0, int(50 * (1 - ease))), faded)
+                faded = fg.copy()
+                faded.putalpha(fg.getchannel("A").point(lambda a, e=ease: int(a * e)))
+                moved = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+                moved.alpha_composite(faded, (0, int(50 * (1 - ease))))
+                frame = flatten(bg, moved)
                 if p >= 1.0:
                     static = frame
-            frame = frame.copy()
+            frame = (static if static is not None else frame).copy()
             # barra di avanzamento (decorativa, nella zona alta)
             d = ImageDraw.Draw(frame)
-            progress = (elapsed + t) / total
-            color = theme["bg"] if n == len(scenes) - 1 else theme["accent"]
-            d.rectangle([LEFT, 200, LEFT + int((RIGHT - LEFT) * progress), 208], fill=color)
+            d.rectangle([left, 200, left + int((right - left) * (elapsed + t) / total), 208], fill=accent)
             proc.stdin.write(frame.tobytes())
         elapsed += duration
     proc.stdin.close()
@@ -120,7 +85,5 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
         raise RuntimeError("ffmpeg non è riuscito a creare il Reel")
     audio.unlink()
 
-    cover_frame = scenes[0][0].copy()
-    cover_frame.paste(scenes[0][1], (0, 0), scenes[0][1])
-    cover_frame.save(out_dir / "cover.jpg", "JPEG", quality=92)
+    flatten(scenes[0][0], scenes[0][1]).save(out_dir / "cover.jpg", "JPEG", quality=92)
     return video
