@@ -1,4 +1,4 @@
-# Pagina Instagram automatica: "Did You Know?"
+# Pagina Instagram automatica: "Fact File"
 
 Pagina in inglese di curiosità verificate (corpo umano, animali, spazio, storia, psicologia…)
 che si gestisce da sola: **due post al giorno**, caroselli o Reel (anche Trial Reel),
@@ -47,7 +47,7 @@ I file JSON in `posts/queue/` escono per primi: c'è già il primo post pronto.
 
 Questi passaggi richiedono il tuo telefono e i tuoi account, quindi vanno fatti a mano.
 
-1. **Crea l'account Instagram** (es. `@didyouknow.daily.facts`), poi in
+1. **Crea l'account Instagram** (es. `@factfile.daily`), poi in
    Impostazioni → Tipo di account passa a **Account professionale → Creator**.
    Metti foto profilo e bio (sotto trovi una proposta).
 2. **Crea una Pagina Facebook** e collegala all'account Instagram
@@ -76,12 +76,16 @@ e va rinnovato nel secret `IG_ACCESS_TOKEN`.
 
 ### Bio consigliata
 
+Nome visualizzato: `Fact File | Did You Know Facts`
+
 ```
-Did You Know? 🤯
-Real facts you never knew, every day
-Human body · Space · Animals · History
-👉 Save posts to remember them
+Real facts that sound fake 🗂️
+A new file every day: body, space, animals, history
+Every fact checked against real sources
+↓ Save it. Send it to someone curious.
 ```
+
+Immagine del profilo: `assets/profile/avatar_question.jpg` (1080×1080).
 
 ## Impostazioni di base
 

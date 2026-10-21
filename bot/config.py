@@ -1,8 +1,8 @@
 """Impostazioni di base. Stile, argomenti e formato li decide Claude e li
 affina in base alle prestazioni (vedi posts/strategy.md)."""
 
-PAGE_NAME = "Did You Know?"
-PAGE_HANDLE = "@didyouknow.daily.facts"  # aggiorna con l'handle reale dell'account
+PAGE_NAME = "Fact File"
+PAGE_HANDLE = "@factfile.daily"  # aggiorna con l'handle reale dell'account
 
 NICHE = (
     "surprising, verified facts about science, the human body, animals, history, "
