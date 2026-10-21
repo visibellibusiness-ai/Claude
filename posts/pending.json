@@ -1,0 +1,23 @@
+{
+  "date": "20261021-0001",
+  "topic": "What your body does while you sleep",
+  "category": "human body",
+  "hook": "Your body does this every single night",
+  "slides": 6,
+  "design": {
+    "bg": "#0E1116",
+    "fg": "#FFFFFF",
+    "accent": "#FFD23F"
+  },
+  "images": [
+    "posts/20261021-0001/slide_01.jpg",
+    "posts/20261021-0001/slide_02.jpg",
+    "posts/20261021-0001/slide_03.jpg",
+    "posts/20261021-0001/slide_04.jpg",
+    "posts/20261021-0001/slide_05.jpg",
+    "posts/20261021-0001/slide_06.jpg",
+    "posts/20261021-0001/slide_07.jpg",
+    "posts/20261021-0001/slide_08.jpg"
+  ],
+  "caption": "Every night while you sleep, your body is working harder than you think: cleaning your brain, repairing your muscles and saving your memories. Sleep is not wasted time. How many hours do you usually sleep?\n\n#didyouknow #funfacts #sleep #humanbody #science #facts #learnsomethingnew #mindblown #health"
+}
