@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cut">
+<title>Torneo Facile</title>
+<meta name="description" content="Organizza tornei amatoriali di pickleball: gironi, fase finale e risultati anche a voce.">
+<meta name="theme-color" content="#14532d">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<style>
+:root {
+  --bg: #f4f6f3;
+  --card: #ffffff;
+  --text: #17201a;
+  --muted: #5d6b62;
+  --line: #dfe5e0;
+  --brand: #15803d;
+  --brand-dark: #14532d;
+  --brand-soft: #dcfce7;
+  --accent: #eab308;
+  --danger: #b91c1c;
+  --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 14px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0f1411; --card: #19211c; --text: #e8efe9; --muted: #9aa99f;
+    --line: #2a352e; --brand: #22c55e; --brand-dark: #166534; --brand-soft: #16301f;
+    --shadow: none;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0f1411; --card: #19211c; --text: #e8efe9; --muted: #9aa99f;
+  --line: #2a352e; --brand: #22c55e; --brand-dark: #166534; --brand-soft: #16301f;
+  --shadow: none;
+}
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; }
+body {
+  background: var(--bg); color: var(--text);
+  font: 16px/1.4 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  padding-bottom: calc(150px + env(safe-area-inset-bottom));
+}
+header {
+  position: sticky; top: 0; z-index: 5;
+  background: var(--brand-dark); color: #fff;
+  padding: calc(12px + env(safe-area-inset-top)) 16px 0;
+}
+header h1 { margin: 0 0 10px; font-size: 19px; font-weight: 700; display: flex; gap: 8px; align-items: center; }
+header h1 span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+nav { display: flex; gap: 4px; }
+nav button {
+  flex: 1; background: none; border: 0; color: rgba(255,255,255,.7);
+  font: inherit; font-size: 15px; font-weight: 600; padding: 10px 4px 12px;
+  border-bottom: 3px solid transparent;
+}
+nav button.on { color: #fff; border-bottom-color: var(--accent); }
+nav button:disabled { opacity: .35; }
+main { max-width: 640px; margin: 0 auto; padding: 16px; }
+.card { background: var(--card); border-radius: 14px; box-shadow: var(--shadow); padding: 16px; margin-bottom: 14px; border: 1px solid var(--line); }
+h2 { font-size: 17px; margin: 0 0 10px; }
+h3 { font-size: 15px; margin: 18px 0 8px; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
+label { display: block; font-weight: 600; font-size: 14px; margin: 12px 0 6px; }
+input, textarea, select {
+  width: 100%; font: inherit; font-size: 16px; color: var(--text);
+  background: var(--bg); border: 1px solid var(--line); border-radius: 10px; padding: 12px;
+}
+textarea { min-height: 200px; resize: vertical; }
+.row { display: flex; gap: 10px; }
+.row > * { flex: 1; min-width: 0; }
+.hint { color: var(--muted); font-size: 13px; margin: 6px 0 0; }
+.btn {
+  display: block; width: 100%; border: 0; border-radius: 12px; padding: 15px;
+  font: inherit; font-weight: 700; font-size: 16px; background: var(--brand); color: #fff; margin-top: 14px;
+}
+.btn.ghost { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); }
+.btn.danger { background: transparent; color: var(--danger); border: 1.5px solid var(--danger); }
+.btn:disabled { opacity: .45; }
+.check { display: flex; align-items: center; gap: 10px; font-weight: 500; margin-top: 14px; }
+.check input { width: 22px; height: 22px; }
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th, td { padding: 7px 4px; text-align: center; border-bottom: 1px solid var(--line); }
+th { color: var(--muted); font-weight: 600; font-size: 12px; }
+td.name, th.name { text-align: left; width: 100%; }
+tr.q td.name { font-weight: 700; }
+tr.q td:first-child { box-shadow: inset 3px 0 0 var(--brand); }
+.match {
+  display: flex; align-items: center; gap: 10px; width: 100%; text-align: left;
+  background: var(--bg); border: 1px solid var(--line); border-radius: 12px;
+  padding: 10px 12px; margin: 8px 0; font: inherit; color: inherit;
+}
+.match .teams { flex: 1; min-width: 0; }
+.match .t { display: flex; justify-content: space-between; gap: 8px; padding: 2px 0; }
+.match .t span:first-child { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.match .t.win { font-weight: 700; }
+.match .t b { min-width: 22px; text-align: right; }
+.match .tag { font-size: 11px; color: var(--muted); }
+.match.done { background: var(--card); }
+.match.todo { border-color: var(--brand); border-style: dashed; }
+.match.locked { opacity: .55; }
+.pill { display: inline-block; background: var(--brand-soft); color: var(--brand); font-size: 12px; font-weight: 700; border-radius: 99px; padding: 3px 9px; }
+.empty { text-align: center; color: var(--muted); padding: 30px 10px; }
+.champion { text-align: center; font-size: 22px; font-weight: 800; padding: 20px 10px; }
+.champion small { display: block; font-size: 14px; color: var(--muted); font-weight: 500; }
+
+/* Voice */
+#mic {
+  position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 20;
+  width: 72px; height: 72px; border-radius: 50%; border: 0;
+  background: var(--accent); color: #1a1a1a; box-shadow: 0 6px 20px rgba(0,0,0,.25);
+  display: none; align-items: center; justify-content: center;
+}
+#mic.show { display: flex; }
+#mic svg { width: 32px; height: 32px; }
+#mic.listening { background: var(--danger); color: #fff; animation: pulse 1.2s infinite; }
+@keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(185,28,28,.5)} 100%{box-shadow:0 0 0 22px rgba(185,28,28,0)} }
+
+.sheet-bg { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 30; display: none; }
+.sheet-bg.show { display: block; }
+.sheet {
+  position: fixed; left: 0; right: 0; bottom: 0; z-index: 31; background: var(--card);
+  border-radius: 20px 20px 0 0; padding: 20px 16px calc(20px + env(safe-area-inset-bottom));
+  max-width: 640px; margin: 0 auto; transform: translateY(110%); transition: transform .2s;
+  max-height: 90vh; overflow-y: auto; visibility: hidden;
+}
+.sheet.show { transform: none; visibility: visible; }
+.score-row { display: flex; align-items: center; gap: 10px; margin: 12px 0; }
+.score-row .nm { flex: 1; font-weight: 700; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.stepper { display: flex; align-items: center; gap: 6px; }
+.stepper button {
+  width: 46px; height: 46px; border-radius: 12px; border: 1px solid var(--line);
+  background: var(--bg); color: var(--text); font-size: 24px; font-weight: 700;
+}
+.stepper input { width: 64px; text-align: center; font-size: 22px; font-weight: 800; padding: 8px 4px; }
+.heard { background: var(--bg); border-radius: 10px; padding: 10px 12px; font-style: italic; color: var(--muted); }
+.err { color: var(--danger); font-weight: 600; margin-top: 8px; }
+.toast {
+  position: fixed; left: 50%; top: calc(110px + env(safe-area-inset-top)); transform: translateX(-50%);
+  background: #111; color: #fff; padding: 10px 16px; border-radius: 99px; z-index: 40;
+  font-size: 14px; opacity: 0; transition: opacity .2s; pointer-events: none; max-width: 90vw; text-align: center;
+}
+.toast.show { opacity: 1; }
+</style>
+</head>
+<body>
+<header>
+  <h1><span id="title">Torneo Facile</span></h1>
+  <nav>
+    <button data-tab="setup">Squadre</button>
+    <button data-tab="groups">Gironi</button>
+    <button data-tab="ko">Fase finale</button>
+  </nav>
+</header>
+<main id="view"></main>
+
+<button id="mic" aria-label="Detta un risultato">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2z"/></svg>
+</button>
+
+<div class="sheet-bg" id="sheetBg"></div>
+<div class="sheet" id="sheet"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+'use strict';
+const KEY = 'torneo-facile-v1';
+const $ = s => document.querySelector(s);
+const esc = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+
+// ---------- Stato ----------
+let S = load();
+let tab = S ? (S.ko ? 'ko' : 'groups') : 'setup';
+
+function load() {
+  try { return JSON.parse(localStorage.getItem(KEY)); } catch (e) { return null; }
+}
+function save() {
+  try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+}
+const team = id => S.teams.find(t => t.id === id);
+const tname = id => id == null ? 'BYE' : team(id).name;
+
+// ---------- Generazione gironi ----------
+function shuffle(a) {
+  a = a.slice();
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+// Girone all'italiana col metodo del cerchio: ogni giornata nessuno gioca due volte.
+function roundRobin(ids) {
+  const p = ids.slice();
+  if (p.length % 2) p.push(null);
+  const n = p.length, rounds = [];
+  for (let r = 0; r < n - 1; r++) {
+    const games = [];
+    for (let i = 0; i < n / 2; i++) {
+      const a = p[i], b = p[n - 1 - i];
+      if (a != null && b != null) games.push(r % 2 ? [b, a] : [a, b]);
+    }
+    rounds.push(games);
+    p.splice(1, 0, p.pop());
+  }
+  return rounds;
+}
+
+function suggestGroups(n) {
+  if (n < 3) return 1;
+  return Math.max(1, Math.round(n / 4));
+}
+
+function createTournament(name, names, nGroups, qual, target, third) {
+  const teams = names.map((n, i) => ({ id: i + 1, name: n }));
+  const order = shuffle(teams.map(t => t.id));
+  const groups = Array.from({ length: nGroups }, (_, g) => ({ name: String.fromCharCode(65 + g), teamIds: [] }));
+  order.forEach((id, i) => groups[i % nGroups].teamIds.push(id));
+  const matches = [];
+  const perGroup = groups.map(g => roundRobin(g.teamIds));
+  const maxR = Math.max(...perGroup.map(r => r.length));
+  // Partite in ordine di giornata, alternando i gironi: così più campi giocano in parallelo.
+  for (let r = 0; r < maxR; r++) {
+    perGroup.forEach((rounds, g) => {
+      (rounds[r] || []).forEach(([a, b]) => matches.push({ id: 'g' + (matches.length + 1), g, round: r + 1, a, b, sa: null, sb: null }));
+    });
+  }
+  S = { name: name || 'Torneo', target, qual, third, teams, groups, matches, ko: null, created: Date.now() };
+  save();
+}
+
+// ---------- Classifiche ----------
+function standings(g) {
+  const ids = S.groups[g].teamIds;
+  const rows = ids.map(id => ({ id, g, pj: 0, w: 0, l: 0, pf: 0, ps: 0 }));
+  const by = Object.fromEntries(rows.map(r => [r.id, r]));
+  const ms = S.matches.filter(m => m.g === g && m.sa != null);
+  for (const m of ms) {
+    const A = by[m.a], B = by[m.b];
+    A.pj++; B.pj++; A.pf += m.sa; A.ps += m.sb; B.pf += m.sb; B.ps += m.sa;
+    if (m.sa > m.sb) { A.w++; B.l++; } else { B.w++; A.l++; }
+  }
+  const h2h = (x, y) => {
+    const m = ms.find(m => (m.a === x && m.b === y) || (m.a === y && m.b === x));
+    if (!m) return 0;
+    const xw = (m.a === x) === (m.sa > m.sb);
+    return xw ? -1 : 1;
+  };
+  rows.sort((x, y) => {
+    if (y.w !== x.w) return y.w - x.w;
+    const tied = rows.filter(r => r.w === x.w);
+    if (tied.length === 2) { const h = h2h(x.id, y.id); if (h) return h; }
+    const dx = x.pf - x.ps, dy = y.pf - y.ps;
+    if (dy !== dx) return dy - dx;
+    if (y.pf !== x.pf) return y.pf - x.pf;
+    return x.id - y.id;
+  });
+  rows.forEach((r, i) => r.pos = i + 1);
+  return rows;
+}
+
+const groupsDone = () => S.matches.every(m => m.sa != null);
+
+// ---------- Fase finale ----------
+function seedOrder(size) {
+  let o = [1];
+  while (o.length < size) {
+    const n = o.length * 2 + 1;
+    o = o.flatMap(s => [s, n - s]);
+  }
+  return o;
+}
+
+function buildKo() {
+  const qual = [];
+  S.groups.forEach((_, g) => standings(g).slice(0, S.qual).forEach(r => qual.push(r)));
+  // Prima tutte le prime, poi le seconde...; a parità di posizione conta il rendimento.
+  qual.sort((x, y) => x.pos - y.pos || (y.w / Math.max(1, y.pj)) - (x.w / Math.max(1, x.pj)) ||
+    ((y.pf - y.ps) / Math.max(1, y.pj)) - ((x.pf - x.ps) / Math.max(1, x.pj)));
+  let size = 2;
+  while (size < qual.length) size *= 2;
+  const order = seedOrder(size);
+  const slots = order.map(s => qual[s - 1] || null);
+  // Evita, se possibile, che due squadre dello stesso girone si incontrino al primo turno.
+  const pairs = [];
+  for (let i = 0; i < size; i += 2) pairs.push([slots[i], slots[i + 1]]);
+  const clash = p => p[0] && p[1] && p[0].g === p[1].g;
+  for (let i = 0; i < pairs.length; i++) {
+    if (!clash(pairs[i])) continue;
+    for (let j = pairs.length - 1; j >= 0; j--) {
+      if (j === i || !pairs[j][1]) continue;
+      const a = [pairs[i][0], pairs[j][1]], b = [pairs[j][0], pairs[i][1]];
+      if (!clash(a) && !clash(b)) { pairs[i] = a; pairs[j] = b; break; }
+    }
+  }
+  S.ko = { seeds: pairs.flat().map(r => r ? r.id : null), results: {} };
+  save();
+}
+
+const roundName = (matchesInRound) =>
+  ({ 1: 'Finale', 2: 'Semifinali', 4: 'Quarti di finale', 8: 'Ottavi di finale', 16: 'Sedicesimi' })[matchesInRound] || 'Turno';
+
+// La struttura del tabellone è ricavata ogni volta da teste di serie + risultati:
+// se si corregge un risultato, i turni successivi si aggiornano da soli.
+function bracket() {
+  const rounds = [];
+  let cur = [];
+  const seeds = S.ko.seeds;
+  for (let i = 0; i < seeds.length; i += 2) cur.push({ a: seeds[i], b: seeds[i + 1], aKnown: true, bKnown: true });
+  let r = 0;
+  const losersSemi = [];
+  while (true) {
+    cur.forEach((m, i) => {
+      m.id = `k${r}-${i}`; m.r = r;
+      m.bye = m.aKnown && m.bKnown && (m.a == null || m.b == null);
+      const res = S.ko.results[m.id];
+      m.sa = m.sb = null; m.winner = undefined; m.loser = undefined;
+      if (m.bye) { m.winner = m.a ?? m.b; }
+      else if (res && m.aKnown && m.bKnown && res.a === m.a && res.b === m.b) {
+        m.sa = res.sa; m.sb = res.sb;
+        m.winner = res.sa > res.sb ? m.a : m.b;
+        m.loser = res.sa > res.sb ? m.b : m.a;
+      }
+    });
+    rounds.push({ name: roundName(cur.length), matches: cur });
+    if (cur.length === 2) cur.forEach(m => losersSemi.push(m));
+    if (cur.length === 1) break;
+    const next = [];
+    for (let i = 0; i < cur.length; i += 2) {
+      const x = cur[i], y = cur[i + 1];
+      next.push({ a: x.winner ?? null, b: y.winner ?? null, aKnown: x.winner !== undefined, bKnown: y.winner !== undefined });
+    }
+    cur = next; r++;
+  }
+  let third = null;
+  if (S.third && losersSemi.length === 2) {
+    const [x, y] = losersSemi;
+    const real = m => !m.bye;
+    if (real(x) && real(y)) {
+      third = { id: 'k3rd', a: x.loser ?? null, b: y.loser ?? null, aKnown: x.loser !== undefined, bKnown: y.loser !== undefined, sa: null, sb: null };
+      const res = S.ko.results.k3rd;
+      if (res && third.aKnown && third.bKnown && res.a === third.a && res.b === third.b) {
+        third.sa = res.sa; third.sb = res.sb; third.winner = res.sa > res.sb ? third.a : third.b;
+      }
+    }
+  }
+  return { rounds, third };
+}
+
+// Partite giocabili adesso (entrambe le squadre note e risultato mancante).
+function playable(includeDone) {
+  const out = [];
+  if (!S) return out;
+  if (!S.ko) {
+    S.matches.forEach(m => { if (includeDone || m.sa == null) out.push({ kind: 'g', m }); });
+  } else {
+    const { rounds, third } = bracket();
+    const all = rounds.flatMap(r => r.matches.map(m => ({ ...m, rn: r.name })));
+    if (third) all.push({ ...third, rn: 'Finale 3° posto' });
+    all.forEach(m => {
+      if (m.bye || !m.aKnown || !m.bKnown) return;
+      if (includeDone || m.sa == null) out.push({ kind: 'k', m });
+    });
+  }
+  return out;
+}
+
+// ---------- Rendering ----------
+function render() {
+  $('#title').textContent = S ? S.name : 'Torneo Facile';
+  document.querySelectorAll('nav button').forEach(b => {
+    b.classList.toggle('on', b.dataset.tab === tab);
+    b.disabled = b.dataset.tab !== 'setup' && !S || (b.dataset.tab === 'ko' && !(S && S.ko));
+  });
+  $('#mic').classList.toggle('show', !!S);
+  const v = $('#view');
+  if (tab === 'setup') v.innerHTML = S ? viewSummary() : viewSetup();
+  else if (tab === 'groups') v.innerHTML = viewGroups();
+  else v.innerHTML = viewKo();
+  if (tab === 'setup' && !S) bindSetup();
+}
+
+function viewSetup() {
+  const draft = (() => { try { return JSON.parse(localStorage.getItem(KEY + '-draft')) || {}; } catch (e) { return {}; } })();
+  return `
+  <div class="card">
+    <h2>Nuovo torneo</h2>
+    <label for="tName">Nome del torneo</label>
+    <input id="tName" placeholder="Es. Torneo di Ottobre" value="${esc(draft.name || '')}">
+    <label for="tTeams">Squadre o giocatori, uno per riga</label>
+    <textarea id="tTeams" placeholder="Mario e Luca&#10;Anna e Sara&#10;I Leoni&#10;...">${esc(draft.teams || '')}</textarea>
+    <p class="hint" id="tCount"></p>
+    <div class="row">
+      <div><label for="tGroups">Gironi</label><select id="tGroups"></select></div>
+      <div><label for="tQual">Passano per girone</label>
+        <select id="tQual"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></div>
+    </div>
+    <div class="row">
+      <div><label for="tTarget">Partite ai punti</label>
+        <select id="tTarget"><option>7</option><option selected>11</option><option>15</option><option>21</option></select></div>
+      <div></div>
+    </div>
+    <label class="check"><input type="checkbox" id="tThird"> Finale 3° / 4° posto</label>
+    <p class="err" id="tErr"></p>
+    <button class="btn" id="tGo">Crea gironi</button>
+  </div>
+  <div class="card"><h2>Come funziona</h2>
+    <p class="hint" style="font-size:14px">1. Scrivi i nomi e premi <b>Crea gironi</b>: le squadre vengono sorteggiate a caso.<br>
+    2. Inserisci i risultati toccando una partita, oppure premi il <b>microfono</b> e di' ad esempio
+    <i>«Leoni contro Tigri 11 a 7»</i>.<br>
+    3. Finiti i gironi, l'app crea il tabellone della fase finale.</p>
+    <p class="hint">I dati restano solo su questo telefono: nessun account, nessun dato personale inviato.</p>
+  </div>`;
+}
+
+function readNames() {
+  const seen = new Set();
+  return $('#tTeams').value.split('\n').map(s => s.trim().replace(/\s+/g, ' ')).filter(s => {
+    if (!s) return false;
+    const k = s.toLowerCase();
+    if (seen.has(k)) return false;
+    seen.add(k); return true;
+  });
+}
+
+function bindSetup() {
+  const upd = () => {
+    const names = readNames();
+    const n = names.length;
+    $('#tCount').textContent = n ? `${n} squadre` : '';
+    const sel = $('#tGroups');
+    const prev = sel.dataset.user ? +sel.value : suggestGroups(n);
+    const max = Math.max(1, Math.floor(n / 2));
+    sel.innerHTML = Array.from({ length: max }, (_, i) => {
+      const g = i + 1, min = Math.floor(n / g), mx = Math.ceil(n / g);
+      return `<option value="${g}" ${g === Math.min(prev, max) ? 'selected' : ''}>${g} ${g === 1 ? 'girone' : 'gironi'}${n ? ` (da ${min === mx ? min : min + '-' + mx})` : ''}</option>`;
+    }).join('');
+    try { localStorage.setItem(KEY + '-draft', JSON.stringify({ name: $('#tName').value, teams: $('#tTeams').value })); } catch (e) {}
+  };
+  $('#tTeams').addEventListener('input', upd);
+  $('#tName').addEventListener('input', upd);
+  $('#tGroups').addEventListener('change', e => e.target.dataset.user = '1');
+  upd();
+  $('#tGo').addEventListener('click', () => {
+    const names = readNames(), g = +$('#tGroups').value, q = +$('#tQual').value;
+    const err = $('#tErr');
+    if (names.length < 3) return err.textContent = 'Servono almeno 3 squadre.';
+    const minSize = Math.floor(names.length / g);
+    if (minSize < 2) return err.textContent = 'Troppi gironi: ogni girone deve avere almeno 2 squadre.';
+    if (q >= minSize && g > 1) return err.textContent = `Con gironi da ${minSize} squadre ne possono passare al massimo ${minSize - 1}.`;
+    createTournament($('#tName').value.trim(), names, g, g === 1 ? Math.min(q, names.length) : q, +$('#tTarget').value, $('#tThird').checked);
+    try { localStorage.removeItem(KEY + '-draft'); } catch (e) {}
+    tab = 'groups'; render(); toast('Gironi sorteggiati!');
+  });
+}
+
+function viewSummary() {
+  const tot = S.matches.length, done = S.matches.filter(m => m.sa != null).length;
+  return `
+  <div class="card">
+    <h2>${esc(S.name)}</h2>
+    <p class="hint">${S.teams.length} squadre · ${S.groups.length} ${S.groups.length === 1 ? 'girone' : 'gironi'} · partite ai ${S.target} · gironi giocati ${done}/${tot}</p>
+    <h3>Squadre</h3>
+    ${S.groups.map(g => `<p style="margin:6px 0"><span class="pill">Girone ${g.name}</span> ${g.teamIds.map(id => esc(tname(id))).join(', ')}</p>`).join('')}
+    <button class="btn ghost" onclick="share()">Condividi classifiche</button>
+    <button class="btn ghost" onclick="exportData()">Salva copia del torneo</button>
+    <button class="btn danger" onclick="resetAll()">Nuovo torneo (cancella questo)</button>
+  </div>`;
+}
+
+function matchBtn(kind, m, label) {
+  const done = m.sa != null;
+  const aw = done && m.sa > m.sb, bw = done && m.sb > m.sa;
+  const locked = kind === 'g' && S.ko;
+  return `<button class="match ${done ? 'done' : 'todo'} ${locked ? 'locked' : ''}" onclick="openScore('${kind}','${m.id}')">
+    <div class="teams">
+      ${label ? `<div class="tag">${esc(label)}</div>` : ''}
+      <div class="t ${aw ? 'win' : ''}"><span>${esc(tname(m.a))}</span><b>${done ? m.sa : ''}</b></div>
+      <div class="t ${bw ? 'win' : ''}"><span>${esc(tname(m.b))}</span><b>${done ? m.sb : ''}</b></div>
+    </div></button>`;
+}
+
+function viewGroups() {
+  const done = groupsDone();
+  let html = '';
+  if (!S.ko) {
+    const left = S.matches.filter(m => m.sa == null).length;
+    html += `<div class="card">${done
+      ? `<h2>Gironi completati</h2><button class="btn" onclick="startKo()">Crea la fase finale</button>`
+      : `<h2>Partite da giocare: ${left}</h2><p class="hint">Tocca una partita per scrivere il risultato, oppure usa il microfono.</p>`}</div>`;
+  }
+  S.groups.forEach((g, gi) => {
+    const st = standings(gi);
+    html += `<div class="card"><h2>Girone ${g.name}</h2>
+      <table><tr><th>#</th><th class="name">Squadra</th><th>G</th><th>V</th><th>P</th><th>+/-</th></tr>
+      ${st.map(r => `<tr class="${r.pos <= S.qual ? 'q' : ''}"><td>${r.pos}</td><td class="name">${esc(tname(r.id))}</td><td>${r.pj}</td><td>${r.w}</td><td>${r.l}</td><td>${r.pf - r.ps > 0 ? '+' : ''}${r.pf - r.ps}</td></tr>`).join('')}
+      </table>
+      ${gi === 0 ? '<p class="hint">A parità di vittorie contano lo scontro diretto, poi la differenza punti.</p>' : ''}
+      <h3>Partite</h3>
+      ${S.matches.filter(m => m.g === gi).map(m => matchBtn('g', m, 'Giornata ' + m.round)).join('')}
+    </div>`;
+  });
+  return html;
+}
+
+function viewKo() {
+  const { rounds, third } = bracket();
+  const final = rounds[rounds.length - 1].matches[0];
+  let html = '';
+  if (final.winner != null && final.sa != null) {
+    html += `<div class="card champion">🏆 ${esc(tname(final.winner))}<small>Vincitore di ${esc(S.name)}</small></div>`;
+  }
+  rounds.forEach(r => {
+    const ms = r.matches.filter(m => !m.bye);
+    if (!ms.length) return;
+    html += `<div class="card"><h2>${r.name}</h2>${ms.map(m =>
+      m.aKnown && m.bKnown ? matchBtn('k', m) :
+      `<div class="match locked"><div class="teams"><div class="t"><span>${m.aKnown ? esc(tname(m.a)) : 'In attesa…'}</span></div><div class="t"><span>${m.bKnown ? esc(tname(m.b)) : 'In attesa…'}</span></div></div></div>`
+    ).join('')}</div>`;
+  });
+  if (third) {
+    html += `<div class="card"><h2>Finale 3° posto</h2>${third.aKnown && third.bKnown ? matchBtn('k', third) :
+      `<div class="match locked"><div class="teams"><div class="t"><span>In attesa delle semifinali…</span></div></div></div>`}</div>`;
+  }
+  const byes = rounds[0].matches.filter(m => m.bye && m.winner != null);
+  if (byes.length) html += `<p class="hint" style="padding:0 4px">Passano direttamente al turno successivo: ${byes.map(m => esc(tname(m.winner))).join(', ')}.</p>`;
+  html += `<button class="btn ghost" onclick="share()">Condividi risultati</button>`;
+  return html;
+}
+
+// ---------- Inserimento risultato ----------
+function findMatch(kind, id) {
+  if (kind === 'g') return S.matches.find(m => m.id === id);
+  const { rounds, third } = bracket();
+  return rounds.flatMap(r => r.matches).concat(third ? [third] : []).find(m => m.id === id);
+}
+
+let sheetCtx = null;
+function openScore(kind, id, pre, heard) {
+  const m = findMatch(kind, id);
+  if (!m) return;
+  if (kind === 'g' && S.ko) {
+    if (!confirm('La fase finale è già stata creata. Modificando un risultato dei gironi il tabellone verrà ricreato e i risultati della fase finale cancellati. Continuare?')) return;
+  }
+  sheetCtx = { kind, id };
+  const sa = pre ? pre[0] : (m.sa ?? ''), sb = pre ? pre[1] : (m.sb ?? '');
+  $('#sheet').innerHTML = `
+    ${heard ? `<div class="heard">«${esc(heard)}»</div>` : ''}
+    <h2 style="margin-top:12px">${heard ? 'Ho capito questo risultato:' : 'Risultato'}</h2>
+    ${['a', 'b'].map((k, i) => `
+      <div class="score-row"><div class="nm">${esc(tname(m[k]))}</div>
+        <div class="stepper">
+          <button onclick="step('${k}',-1)" aria-label="meno">−</button>
+          <input id="s_${k}" type="number" inputmode="numeric" min="0" value="${i ? sb : sa}">
+          <button onclick="step('${k}',1)" aria-label="più">+</button>
+        </div></div>`).join('')}
+    <p class="err" id="sErr"></p>
+    <button class="btn" onclick="saveScore()">${heard ? 'Conferma' : 'Salva'}</button>
+    ${m.sa != null ? `<button class="btn danger" onclick="clearScore()">Cancella risultato</button>` : ''}
+    <button class="btn ghost" onclick="closeSheet()">Annulla</button>`;
+  $('#sheet').classList.add('show'); $('#sheetBg').classList.add('show');
+}
+function step(k, d) {
+  const el = $('#s_' + k);
+  let v = el.value === '' ? (d > 0 ? S.target - 1 : 0) : +el.value;
+  el.value = Math.max(0, v + d);
+}
+function closeSheet() {
+  $('#sheet').classList.remove('show'); $('#sheetBg').classList.remove('show'); sheetCtx = null;
+}
+function saveScore() {
+  const a = $('#s_a').value, b = $('#s_b').value;
+  if (a === '' || b === '') return $('#sErr').textContent = 'Inserisci entrambi i punteggi.';
+  const sa = +a, sb = +b;
+  if (sa === sb) return $('#sErr').textContent = 'Nel pickleball non esiste il pareggio.';
+  setResult(sheetCtx.kind, sheetCtx.id, sa, sb);
+  closeSheet();
+}
+function clearScore() { setResult(sheetCtx.kind, sheetCtx.id, null, null); closeSheet(); }
+
+function setResult(kind, id, sa, sb) {
+  const m = findMatch(kind, id);
+  if (kind === 'g') {
+    m.sa = sa; m.sb = sb;
+    if (S.ko) { S.ko = null; if (groupsDone()) buildKo(); }
+  } else {
+    if (sa == null) delete S.ko.results[id];
+    else S.ko.results[id] = { a: m.a, b: m.b, sa, sb };
+  }
+  save(); render();
+  if (sa != null) {
+    toast(`${tname(m.a)} ${sa} - ${sb} ${tname(m.b)}`);
+    if (kind === 'g' && groupsDone() && !S.ko) setTimeout(() => toast('Gironi completati! Ora puoi creare la fase finale.'), 1800);
+  }
+}
+
+function startKo() {
+  buildKo(); tab = 'ko'; render(); toast('Tabellone creato!');
+}
+
+// ---------- Utilità ----------
+let toastT;
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toastT); toastT = setTimeout(() => t.classList.remove('show'), 2400);
+}
+function resetAll() {
+  if (!confirm('Cancellare questo torneo e iniziarne uno nuovo?')) return;
+  S = null; save(); try { localStorage.removeItem(KEY); } catch (e) {}
+  tab = 'setup'; render();
+}
+function shareText() {
+  let t = `🏓 ${S.name}\n`;
+  S.groups.forEach((g, gi) => {
+    t += `\nGirone ${g.name}\n`;
+    standings(gi).forEach(r => t += `${r.pos}. ${tname(r.id)}  ${r.w}V ${r.l}P  (${r.pf - r.ps >= 0 ? '+' : ''}${r.pf - r.ps})\n`);
+  });
+  if (S.ko) {
+    const { rounds, third } = bracket();
+    rounds.forEach(r => {
+      const ms = r.matches.filter(m => !m.bye && m.sa != null);
+      if (!ms.length) return;
+      t += `\n${r.name}\n`;
+      ms.forEach(m => t += `${tname(m.a)} ${m.sa}-${m.sb} ${tname(m.b)}\n`);
+    });
+    if (third && third.sa != null) t += `\nFinale 3° posto\n${tname(third.a)} ${third.sa}-${third.sb} ${tname(third.b)}\n`;
+    const f = rounds[rounds.length - 1].matches[0];
+    if (f.sa != null) t += `\n🏆 Vincitore: ${tname(f.winner)}\n`;
+  }
+  return t;
+}
+async function share() {
+  const text = shareText();
+  try {
+    if (navigator.share) return await navigator.share({ title: S.name, text });
+  } catch (e) { if (e.name === 'AbortError') return; }
+  try { await navigator.clipboard.writeText(text); toast('Copiato: incollalo su WhatsApp'); }
+  catch (e) { prompt('Copia il testo:', text); }
+}
+function exportData() {
+  const blob = new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = (S.name || 'torneo').replace(/[^\w-]+/g, '_') + '.json';
+  a.click();
+}
+
+// ---------- Assistente vocale ----------
+const NUM = {
+  zero: 0, uno: 1, una: 1, due: 2, tre: 3, quattro: 4, cinque: 5, sei: 6, sette: 7, otto: 8, nove: 9,
+  dieci: 10, undici: 11, dodici: 12, tredici: 13, quattordici: 14, quindici: 15, sedici: 16,
+  diciassette: 17, diciotto: 18, diciannove: 19, venti: 20, ventuno: 21, ventidue: 22, ventitre: 23,
+  ventiquattro: 24, venticinque: 25
+};
+const STOP = new Set(['e', 'ed', 'di', 'del', 'della', 'dei', 'il', 'lo', 'la', 'i', 'gli', 'le', 'team', 'squadra', 'the', 'de', 'da', 'a', 'al', 'un']);
+
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/(\d)\s*[-–:/]\s*(\d)/g, '$1 a $2').replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+
+function lev(a, b) {
+  if (a === b) return 0;
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++)
+    for (let j = 1; j <= b.length; j++)
+      d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+const similar = (w, t) => w === t || (t.length >= 4 && lev(w, t) <= (t.length >= 7 ? 2 : 1)) ||
+  (t.length >= 5 && (w.startsWith(t.slice(0, -1)) || t.startsWith(w) && w.length >= 4));
+
+// Dove e quanto bene il nome di una squadra compare nella frase.
+function teamHit(words, name) {
+  const toks = norm(name).split(' ').filter(t => !STOP.has(t));
+  if (!toks.length) return { score: 0, pos: -1, used: [] };
+  let hit = 0, pos = -1; const used = [];
+  for (const t of toks) {
+    const i = words.findIndex((w, k) => !used.includes(k) && similar(w, t));
+    if (i >= 0) { hit++; used.push(i); if (pos < 0 || i < pos) pos = i; }
+  }
+  return { score: hit / toks.length, pos, used };
+}
+
+function parseVoice(text) {
+  const words = norm(text).split(' ').filter(Boolean);
+  const cands = playable(true);
+  if (!cands.length) return { error: 'Non ci sono partite da registrare.' };
+  let best = null;
+  for (const c of cands) {
+    const ha = teamHit(words, tname(c.m.a)), hb = teamHit(words, tname(c.m.b));
+    if (!ha.score && !hb.score) continue;
+    // Preferisce le partite ancora da giocare e quelle dove si riconoscono entrambe le squadre.
+    const score = ha.score + hb.score + (ha.score && hb.score ? 1 : 0) + (c.m.sa == null ? 0.3 : 0);
+    if (!best || score > best.score) best = { c, ha, hb, score };
+  }
+  if (!best) return { error: 'Non ho riconosciuto le squadre. Prova: «Leoni contro Tigri 11 a 7».' };
+  const used = new Set([...best.ha.used, ...best.hb.used]);
+  const nums = [];
+  words.forEach((w, i) => {
+    if (used.has(i)) return;
+    if (/^\d+$/.test(w)) nums.push(+w);
+    else if (w in NUM) nums.push(NUM[w]);
+  });
+  if (nums.length < 2) return { error: 'Non ho capito il punteggio. Di\' ad esempio «11 a 7».', match: best.c };
+  let [x, y] = nums.slice(-2);
+  const { ha, hb } = best;
+  const first = !hb.score ? 'a' : !ha.score ? 'b' : (ha.pos <= hb.pos ? 'a' : 'b');
+  let sa = first === 'a' ? x : y, sb = first === 'a' ? y : x;
+  // «Ha vinto X» / «X batte...»: la squadra nominata come vincitrice prende il punteggio più alto.
+  const joined = words.join(' ');
+  if (/\b(vint\w*|vinc\w*|batt\w*|vittoria)\b/.test(joined) && (ha.score === 0 || hb.score === 0)) {
+    const hi = Math.max(x, y), lo = Math.min(x, y);
+    [sa, sb] = ha.score ? [hi, lo] : [lo, hi];
+  }
+  if (/\bperso\b|\bperde\b|sconfitt/.test(joined) && (ha.score === 0 || hb.score === 0)) {
+    const hi = Math.max(x, y), lo = Math.min(x, y);
+    [sa, sb] = ha.score ? [lo, hi] : [hi, lo];
+  }
+  return { match: best.c, sa, sb };
+}
+
+function speak(t) {
+  try {
+    const u = new SpeechSynthesisUtterance(t); u.lang = 'it-IT';
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  } catch (e) {}
+}
+
+function handleHeard(text) {
+  const r = parseVoice(text);
+  if (r.error) {
+    if (r.match) return openScore(r.match.kind, r.match.m.id, null, text);
+    speak(r.error); return voiceSheet(text, r.error);
+  }
+  const { m } = r.match;
+  speak(`${tname(m.a)} ${r.sa}, ${tname(m.b)} ${r.sb}. Confermi?`);
+  openScore(r.match.kind, m.id, [r.sa, r.sb], text);
+}
+
+// Se il riconoscimento vocale non è disponibile si può scrivere la frase (o usare il microfono della tastiera).
+function voiceSheet(heard, error) {
+  $('#sheet').innerHTML = `
+    <h2>Detta o scrivi il risultato</h2>
+    ${heard ? `<div class="heard">«${esc(heard)}»</div>` : ''}
+    ${error ? `<p class="err">${esc(error)}</p>` : ''}
+    <p class="hint">Esempi: «Leoni contro Tigri 11 a 7» · «Mario e Luca hanno vinto 11 a 5 contro Anna e Sara»</p>
+    <input id="vText" placeholder="Scrivi qui…" style="margin-top:12px">
+    <button class="btn" onclick="handleHeard($('#vText').value)">Interpreta</button>
+    <button class="btn ghost" onclick="closeSheet()">Annulla</button>`;
+  $('#sheet').classList.add('show'); $('#sheetBg').classList.add('show');
+  setTimeout(() => $('#vText') && $('#vText').focus(), 250);
+}
+
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null;
+function listen() {
+  if (!S) return;
+  if (!SR) return voiceSheet(null, 'Il riconoscimento vocale non è supportato da questo browser: usa il microfono della tastiera.');
+  if (rec) { rec.stop(); return; }
+  closeSheet();
+  rec = new SR();
+  rec.lang = 'it-IT'; rec.interimResults = false; rec.maxAlternatives = 3;
+  $('#mic').classList.add('listening');
+  rec.onresult = e => {
+    const alts = Array.from(e.results[0]).map(a => a.transcript);
+    // Sceglie la prima alternativa che si riesce a interpretare completamente.
+    const ok = alts.find(a => !parseVoice(a).error);
+    handleHeard(ok || alts[0]);
+  };
+  rec.onerror = e => {
+    if (e.error === 'not-allowed' || e.error === 'service-not-allowed') voiceSheet(null, 'Permesso microfono negato. Puoi scrivere il risultato.');
+    else if (e.error === 'no-speech') toast('Non ho sentito nulla, riprova.');
+    else voiceSheet(null, 'Riconoscimento non disponibile (' + e.error + '). Puoi scrivere il risultato.');
+  };
+  rec.onend = () => { rec = null; $('#mic').classList.remove('listening'); };
+  try { rec.start(); toast('Ti ascolto… di\' il risultato'); }
+  catch (e) { rec = null; $('#mic').classList.remove('listening'); voiceSheet(null, 'Impossibile avviare il microfono.'); }
+}
+
+// ---------- Avvio ----------
+document.querySelectorAll('nav button').forEach(b => b.addEventListener('click', () => { tab = b.dataset.tab; render(); scrollTo(0, 0); }));
+$('#mic').addEventListener('click', listen);
+$('#sheetBg').addEventListener('click', closeSheet);
+render();
+if ('serviceWorker' in navigator && location.protocol === 'https:') navigator.serviceWorker.register('sw.js').catch(() => {});
+</script>
+</body>
+</html>

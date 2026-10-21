@@ -1,0 +1,12 @@
+{
+  "name": "Torneo Facile",
+  "short_name": "Torneo",
+  "description": "Tornei amatoriali di pickleball: gironi, fase finale e risultati a voce.",
+  "lang": "it",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f3",
+  "theme_color": "#14532d",
+  "icons": [{ "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }]
+}
