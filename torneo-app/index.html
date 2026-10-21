@@ -640,11 +640,15 @@ async function share() {
   try { await navigator.clipboard.writeText(text); toast('Copiato: incollalo su WhatsApp'); }
   catch (e) { prompt('Copia il testo:', text); }
 }
-function exportData() {
-  const blob = new Blob([JSON.stringify(S, null, 1)], { type: 'application/json' });
+async function exportData() {
+  const data = JSON.stringify(S, null, 1);
+  const filename = (S.name || 'torneo').replace(/[^\w-]+/g, '_') + '.json';
+  // Dentro l'anteprima di claude.ai il salvataggio passa dalla piattaforma; altrove basta un link.
+  const dl = window.claude && window.claude.use ? await window.claude.use('downloads').catch(() => null) : null;
+  if (dl) { try { await dl.save({ filename, data }); } catch (e) {} return; }
   const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = (S.name || 'torneo').replace(/[^\w-]+/g, '_') + '.json';
+  a.href = URL.createObjectURL(new Blob([data], { type: 'application/json' }));
+  a.download = filename;
   a.click();
 }
 
