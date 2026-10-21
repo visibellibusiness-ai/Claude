@@ -19,15 +19,33 @@ jobs:
   post:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Controlla che le chiavi siano configurate
+        id: check
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: |
+          if [ -n "$ANTHROPIC_API_KEY" ] && [ -n "$IG_USER_ID" ] && [ -n "$IG_ACCESS_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Chiavi mancanti (vedi README): giro saltato"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
 
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+        if: steps.check.outputs.ready == 'true'
+
+      - uses: actions/setup-python@v6
+        if: steps.check.outputs.ready == 'true'
         with:
           python-version: "3.12"
 
-      - run: pip install -r requirements.txt
+      - if: steps.check.outputs.ready == 'true'
+        run: pip install -r requirements.txt
 
       - name: Leggi le statistiche e aggiorna la strategia
+        if: steps.check.outputs.ready == 'true'
         continue-on-error: true
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
@@ -36,12 +54,13 @@ jobs:
         run: python -m bot.main learn
 
       - name: Genera e disegna il post
-        if: hashFiles('posts/pending.json') == ''
+        if: steps.check.outputs.ready == 'true' && hashFiles('posts/pending.json') == ''
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python -m bot.main create
 
       - name: Metti online le immagini
+        if: steps.check.outputs.ready == 'true'
         run: |
           git config user.name "instagram-bot"
           git config user.email "instagram-bot@users.noreply.github.com"
@@ -51,6 +70,7 @@ jobs:
           sleep 20
 
       - name: Pubblica su Instagram
+        if: steps.check.outputs.ready == 'true'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
@@ -58,7 +78,7 @@ jobs:
         run: python -m bot.main publish
 
       - name: Aggiorna lo storico
-        if: always()
+        if: always() && steps.check.outputs.ready == 'true'
         run: |
           git add -A posts
           git diff --cached --quiet || git commit -m "Post pubblicato"
