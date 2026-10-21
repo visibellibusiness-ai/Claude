@@ -9,8 +9,8 @@ pubblicati senza intervento umano.
 - **I caroselli di curiosità generano tanti salvataggi e condivisioni**, i segnali
   che l'algoritmo di Instagram premia di più per arrivare a chi non ti segue.
 - **Non serve un volto né riprese**: tutto si produce in automatico.
-- **I contenuti non finiscono mai**: dieci categorie a rotazione e uno storico
-  degli argomenti già usati, così i post non si ripetono.
+- **I contenuti non finiscono mai**: Claude sceglie argomenti sempre nuovi e
+  tiene uno storico di quelli già usati, così i post non si ripetono.
 - **Pubblico ampio e internazionale** (18-45, in inglese) e argomenti adatti ai brand, utile se in
   futuro vuoi monetizzare.
 
