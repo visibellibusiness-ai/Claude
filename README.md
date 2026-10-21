@@ -80,10 +80,12 @@ Nome visualizzato: `You Did Not Know | Facts`
 
 ```
 Real facts that sound fake 🗂️
-A new fact file every day: body, space, animals, history
-Every fact checked against real sources
-↓ Save it. Send it to someone curious.
+New fact file every day
+Save it. Send it to someone curious ↓
 ```
+
+(91 caratteri: il limite di Instagram è 150, a capo compresi; il nome
+visualizzato ne ha 24 su 30.)
 
 Immagine del profilo: `assets/profile/avatar_question.jpg` (1080×1080).
 
