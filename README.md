@@ -95,6 +95,9 @@ visualizzato ne ha 24 su 30.)
 
 Immagine del profilo: `assets/profile/avatar_nome.jpg` oppure `avatar_domanda.jpg` (1080×1080, stile Mystery).
 
+Copertina della Pagina Facebook: `assets/profile/facebook_cover.jpg` (1640×924; il testo
+sta nella fascia centrale, visibile sia da computer sia da telefono).
+
 ## Impostazioni di base
 
 - Nome e handle della pagina, stile grafico (`BRAND_STYLE`) e musica
