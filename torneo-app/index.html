@@ -78,6 +78,19 @@ textarea { min-height: 200px; resize: vertical; }
 .btn.ghost { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); }
 .btn.danger { background: transparent; color: var(--danger); border: 1.5px solid var(--danger); }
 .btn:disabled { opacity: .45; }
+.seg { display: flex; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 4px; gap: 4px; }
+.seg button { flex: 1; border: 0; border-radius: 9px; padding: 11px; font: inherit; font-weight: 700; background: none; color: var(--muted); }
+.seg button.on { background: var(--brand); color: #fff; }
+.add { display: flex; gap: 8px; align-items: center; }
+.add input { min-width: 0; flex: 1; }
+.plus { width: 52px; height: 48px; flex: none; border: 0; border-radius: 12px; background: var(--brand); color: #fff; font-size: 28px; font-weight: 700; line-height: 1; }
+.pslot { font-size: 12px; color: var(--muted); font-weight: 700; margin: 10px 0 6px; text-transform: uppercase; letter-spacing: .04em; }
+.filebtn { display: flex; align-items: center; justify-content: center; text-align: center; cursor: pointer; }
+.entries { margin-top: 10px; }
+.entry { display: flex; align-items: center; gap: 10px; padding: 9px 2px; border-bottom: 1px solid var(--line); }
+.entry .n { color: var(--muted); min-width: 22px; text-align: right; font-size: 13px; }
+.entry .nm { flex: 1; min-width: 0; }
+.entry button { border: 0; background: none; color: var(--muted); font-size: 18px; padding: 6px 10px; }
 .check { display: flex; align-items: center; gap: 10px; font-weight: 500; margin-top: 14px; }
 .check input { width: 22px; height: 22px; }
 table { width: 100%; border-collapse: collapse; font-size: 14px; }
@@ -148,7 +161,7 @@ tr.q td:first-child { box-shadow: inset 3px 0 0 var(--brand); }
 <header>
   <h1><span id="title">Torneo Facile</span></h1>
   <nav>
-    <button data-tab="setup">Squadre</button>
+    <button data-tab="setup">Partecipanti</button>
     <button data-tab="groups">Gironi</button>
     <button data-tab="ko">Fase finale</button>
   </nav>
@@ -214,8 +227,8 @@ function suggestGroups(n) {
   return Math.max(1, Math.round(n / 4));
 }
 
-function createTournament(name, names, nGroups, qual, target, third) {
-  const teams = names.map((n, i) => ({ id: i + 1, name: n }));
+function createTournament(name, type, entries, nGroups, qual, target, third) {
+  const teams = entries.map((e, i) => ({ id: i + 1, name: entryName(e), players: e.players }));
   const order = shuffle(teams.map(t => t.id));
   const groups = Array.from({ length: nGroups }, (_, g) => ({ name: String.fromCharCode(65 + g), teamIds: [] }));
   order.forEach((id, i) => groups[i % nGroups].teamIds.push(id));
@@ -228,7 +241,7 @@ function createTournament(name, names, nGroups, qual, target, third) {
       (rounds[r] || []).forEach(([a, b]) => matches.push({ id: 'g' + (matches.length + 1), g, round: r + 1, a, b, sa: null, sb: null }));
     });
   }
-  S = { name: name || 'Torneo', target, qual, third, teams, groups, matches, ko: null, created: Date.now() };
+  S = { name: name || 'Torneo', type, target, qual, third, teams, groups, matches, ko: null, created: Date.now() };
   save();
 }
 
@@ -383,15 +396,54 @@ function render() {
   if (tab === 'setup' && !S) bindSetup();
 }
 
+// ---------- Partecipanti: inserimento uno a uno, lista incollata o file Excel/CSV ----------
+const PARTICLES = new Set(['de', 'di', 'da', 'del', 'della', 'dei', 'degli', 'dal', 'dalla', 'dello', 'lo', 'la', 'le', 'li', 'van', 'von', 'der', 'den', 'mc', 'mac', 'dos', 'das', 'du', 'st']);
+const pname = p => [p.nome, p.cognome].filter(Boolean).join(' ');
+const entryName = e => e.players.map(pname).join(' / ');
+const unitWord = (type, n) => type === 'double' ? (n === 1 ? 'coppia' : 'coppie') : (n === 1 ? 'giocatore' : 'giocatori');
+// Spazi in ordine; i nomi scritti tutti minuscoli o tutti maiuscoli diventano «Mario De Rossi».
+const cap = s => {
+  s = s.replace(/\s+/g, ' ').trim();
+  if (s !== s.toLowerCase() && s !== s.toUpperCase()) return s;
+  return s.toLowerCase().replace(/(^|[\s'-])(\p{L})/gu, (m, a, c) => a + c.toUpperCase());
+};
+
+// «Paolo De Rossi» → nome Paolo, cognome De Rossi. Una sola parola resta come nome.
+function splitFull(s) {
+  const w = cap(s).split(' ').filter(Boolean);
+  if (w.length < 2) return { nome: w[0] || '', cognome: '' };
+  let i = w.length - 1;
+  while (i > 1 && PARTICLES.has(w[i - 1].toLowerCase())) i--;
+  return { nome: w.slice(0, i).join(' '), cognome: w.slice(i).join(' ') };
+}
+
+let D = null; // bozza del nuovo torneo
+function loadDraft() {
+  try { D = JSON.parse(localStorage.getItem(KEY + '-draft')); } catch (e) { D = null; }
+  if (!D || !Array.isArray(D.entries)) D = { name: (D && D.name) || '', type: 'double', entries: [] };
+}
+function saveDraft() { try { localStorage.setItem(KEY + '-draft', JSON.stringify(D)); } catch (e) {} }
+
 function viewSetup() {
-  const draft = (() => { try { return JSON.parse(localStorage.getItem(KEY + '-draft')) || {}; } catch (e) { return {}; } })();
+  loadDraft();
   return `
   <div class="card">
     <h2>Nuovo torneo</h2>
     <label for="tName">Nome del torneo</label>
-    <input id="tName" placeholder="Es. Torneo di Ottobre" value="${esc(draft.name || '')}">
-    <label for="tTeams">Squadre o giocatori, uno per riga</label>
-    <textarea id="tTeams" placeholder="Mario e Luca&#10;Anna e Sara&#10;I Leoni&#10;...">${esc(draft.teams || '')}</textarea>
+    <input id="tName" placeholder="Es. Torneo di Ottobre" value="${esc(D.name)}">
+    <label>Tipo di torneo</label>
+    <div class="seg" id="tType">
+      <button data-type="single" class="${D.type === 'single' ? 'on' : ''}">Singolare</button>
+      <button data-type="double" class="${D.type === 'double' ? 'on' : ''}">Doppio</button>
+    </div>
+    <label id="addLabel">${D.type === 'double' ? 'Aggiungi una coppia' : 'Aggiungi un giocatore'}</label>
+    <div id="addForm">${addFormHtml()}</div>
+    <p class="err" id="addErr"></p>
+    <div class="row">
+      <button class="btn ghost" style="margin-top:6px" onclick="openPaste()">Incolla una lista</button>
+      <label class="btn ghost filebtn" style="margin-top:6px">Carica Excel o CSV<input type="file" id="tFile" accept=".xlsx,.csv,.txt,text/csv" hidden></label>
+    </div>
+    <div class="entries" id="tList"></div>
     <p class="hint" id="tCount"></p>
     <div class="row">
       <div><label for="tGroups">Gironi</label><select id="tGroups"></select></div>
@@ -408,53 +460,303 @@ function viewSetup() {
     <button class="btn" id="tGo">Crea gironi</button>
   </div>
   <div class="card"><h2>Come funziona</h2>
-    <p class="hint" style="font-size:14px">1. Scrivi i nomi e premi <b>Crea gironi</b>: le squadre vengono sorteggiate a caso.<br>
+    <p class="hint" style="font-size:14px">1. Aggiungi i giocatori con <b>+</b>, oppure incolla una lista o carica un file Excel con le colonne <b>Nome</b> e <b>Cognome</b>. Poi premi <b>Crea gironi</b>: il sorteggio è casuale.<br>
     2. Inserisci i risultati toccando una partita, oppure premi il <b>microfono</b> e di' ad esempio
-    <i>«Leoni contro Tigri 11 a 7»</i>.<br>
+    <i>«Rossi contro Bianchi 11 a 7»</i>.<br>
     3. Finiti i gironi, l'app crea il tabellone della fase finale.</p>
     <p class="hint">I dati restano solo su questo telefono: nessun account, nessun dato personale inviato.</p>
   </div>`;
 }
 
-function readNames() {
-  const seen = new Set();
-  return $('#tTeams').value.split('\n').map(s => s.trim().replace(/\s+/g, ' ')).filter(s => {
-    if (!s) return false;
-    const k = s.toLowerCase();
-    if (seen.has(k)) return false;
-    seen.add(k); return true;
-  });
+function addFormHtml() {
+  const pair = n => `<div class="add"><input id="n${n}" placeholder="Nome" autocomplete="off" autocapitalize="words"><input id="c${n}" placeholder="Cognome" autocomplete="off" autocapitalize="words">${n === 1 && D.type === 'single' ? '<button class="plus" onclick="addEntry()" aria-label="Aggiungi">+</button>' : ''}</div>`;
+  if (D.type === 'single') return pair(1);
+  return `<p class="pslot">Giocatore 1</p>${pair(1)}<p class="pslot">Giocatore 2</p>${pair(2)}
+    <button class="btn" style="margin-top:10px" onclick="addEntry()">+ Aggiungi coppia</button>`;
+}
+
+const keyOf = e => e.players.map(p => pname(p).toLowerCase()).sort().join('|');
+
+function addEntry() {
+  const err = $('#addErr');
+  const read = n => ({ nome: cap($('#n' + n).value), cognome: cap($('#c' + n).value) });
+  const players = D.type === 'double' ? [read(1), read(2)] : [read(1)];
+  const bad = players.findIndex(p => !p.nome || !p.cognome);
+  if (bad >= 0) {
+    err.textContent = D.type === 'double' ? `Inserisci nome e cognome del giocatore ${bad + 1}.` : 'Inserisci nome e cognome.';
+    $((players[bad].nome ? '#c' : '#n') + (bad + 1)).focus();
+    return;
+  }
+  const e = { players };
+  const same = D.entries.find(x => keyOf(x) === keyOf(e));
+  if (same) { err.textContent = `${entryName(same)} è già nell'elenco.`; return; }
+  const all = D.entries.flatMap(x => x.players.map(p => pname(p).toLowerCase()));
+  const dup = players.find(p => all.includes(pname(p).toLowerCase()));
+  if (dup) { err.textContent = `${pname(dup)} è già in un'altra coppia.`; return; }
+  err.textContent = '';
+  D.entries.push(e);
+  saveDraft();
+  document.querySelectorAll('#addForm input').forEach(i => i.value = '');
+  $('#n1').focus();
+  renderEntries();
+}
+function removeEntry(i) { D.entries.splice(i, 1); saveDraft(); renderEntries(); }
+
+function renderEntries() {
+  const n = D.entries.length;
+  $('#tList').innerHTML = D.entries.map((e, i) => `<div class="entry"><span class="n">${i + 1}</span><span class="nm">${esc(entryName(e))}</span><button onclick="removeEntry(${i})" aria-label="Togli">✕</button></div>`).join('');
+  $('#tCount').textContent = n ? `${n} ${unitWord(D.type, n)}` : `Nessun${D.type === 'double' ? 'a coppia' : ' giocatore'} ancora.`;
+  const sel = $('#tGroups');
+  const prev = sel.dataset.user ? +sel.value : suggestGroups(n);
+  const max = Math.max(1, Math.floor(n / 2));
+  sel.innerHTML = Array.from({ length: max }, (_, i) => {
+    const g = i + 1, min = Math.floor(n / g), mx = Math.ceil(n / g);
+    return `<option value="${g}" ${g === Math.min(prev, max) ? 'selected' : ''}>${g} ${g === 1 ? 'girone' : 'gironi'}${n ? ` (da ${min === mx ? min : min + '-' + mx})` : ''}</option>`;
+  }).join('');
 }
 
 function bindSetup() {
-  const upd = () => {
-    const names = readNames();
-    const n = names.length;
-    $('#tCount').textContent = n ? `${n} squadre` : '';
-    const sel = $('#tGroups');
-    const prev = sel.dataset.user ? +sel.value : suggestGroups(n);
-    const max = Math.max(1, Math.floor(n / 2));
-    sel.innerHTML = Array.from({ length: max }, (_, i) => {
-      const g = i + 1, min = Math.floor(n / g), mx = Math.ceil(n / g);
-      return `<option value="${g}" ${g === Math.min(prev, max) ? 'selected' : ''}>${g} ${g === 1 ? 'girone' : 'gironi'}${n ? ` (da ${min === mx ? min : min + '-' + mx})` : ''}</option>`;
-    }).join('');
-    try { localStorage.setItem(KEY + '-draft', JSON.stringify({ name: $('#tName').value, teams: $('#tTeams').value })); } catch (e) {}
-  };
-  $('#tTeams').addEventListener('input', upd);
-  $('#tName').addEventListener('input', upd);
+  renderEntries();
+  $('#tName').addEventListener('input', e => { D.name = e.target.value; saveDraft(); });
   $('#tGroups').addEventListener('change', e => e.target.dataset.user = '1');
-  upd();
+  document.querySelectorAll('#tType button').forEach(b => b.addEventListener('click', () => {
+    if (b.dataset.type === D.type) return;
+    if (D.entries.length && !confirm(`Passando al ${b.dataset.type === 'double' ? 'doppio' : 'singolare'} l'elenco attuale verrà svuotato. Continuare?`)) return;
+    D.type = b.dataset.type; D.entries = []; saveDraft();
+    render();
+  }));
+  // Invio nell'ultimo campo aggiunge; negli altri passa al campo successivo.
+  $('#addForm').addEventListener('keydown', e => {
+    if (e.key !== 'Enter') return;
+    e.preventDefault();
+    const inputs = [...document.querySelectorAll('#addForm input')];
+    const i = inputs.indexOf(e.target);
+    if (i < inputs.length - 1) inputs[i + 1].focus(); else addEntry();
+  });
+  $('#tFile').addEventListener('change', async e => {
+    const f = e.target.files[0];
+    e.target.value = '';
+    if (!f) return;
+    try {
+      const rows = /\.xlsx$/i.test(f.name) ? await readXlsx(await f.arrayBuffer()) : textToRows(await f.text());
+      previewImport(parseRows(rows, D.type), f.name);
+    } catch (err) {
+      $('#addErr').textContent = /\.xls$/i.test(f.name)
+        ? 'Il vecchio formato .xls non è supportato: da Excel salva il file come .xlsx o .csv.'
+        : 'Non riesco a leggere il file: ' + err.message;
+    }
+  });
   $('#tGo').addEventListener('click', () => {
-    const names = readNames(), g = +$('#tGroups').value, q = +$('#tQual').value;
+    const n = D.entries.length, g = +$('#tGroups').value, q = +$('#tQual').value;
     const err = $('#tErr');
-    if (names.length < 3) return err.textContent = 'Servono almeno 3 squadre.';
-    const minSize = Math.floor(names.length / g);
-    if (minSize < 2) return err.textContent = 'Troppi gironi: ogni girone deve avere almeno 2 squadre.';
-    if (q >= minSize && g > 1) return err.textContent = `Con gironi da ${minSize} squadre ne possono passare al massimo ${minSize - 1}.`;
-    createTournament($('#tName').value.trim(), names, g, g === 1 ? Math.min(q, names.length) : q, +$('#tTarget').value, $('#tThird').checked);
+    const w = D.type === 'double' ? 'coppie' : 'giocatori';
+    if (n < 3) return err.textContent = `Servono almeno 3 ${w}.`;
+    const minSize = Math.floor(n / g);
+    if (minSize < 2) return err.textContent = `Troppi gironi: ogni girone deve avere almeno 2 ${w}.`;
+    if (q >= minSize && g > 1) return err.textContent = `Con gironi da ${minSize} ${w} ne possono passare al massimo ${minSize - 1}.`;
+    createTournament(cap($('#tName').value), D.type, D.entries, g, g === 1 ? Math.min(q, n) : q, +$('#tTarget').value, $('#tThird').checked);
     try { localStorage.removeItem(KEY + '-draft'); } catch (e) {}
     tab = 'groups'; render(); toast('Gironi sorteggiati!');
   });
+}
+
+// ---------- Lista incollata ----------
+function openPaste() {
+  $('#sheet').innerHTML = `
+    <h2>Incolla una lista</h2>
+    <p class="hint">Copia le righe da Excel, Fogli Google o WhatsApp e incollale qui. Se la prima riga ha
+    le intestazioni (<b>Nome</b>, <b>Cognome</b>${D.type === 'double' ? ', anche per il secondo giocatore o una colonna <b>Coppia</b>' : ''}) le riconosco da solo.
+    Altrimenti scrivi un ${D.type === 'double' ? 'coppia per riga, ad esempio «Mario Rossi / Luca Bianchi»' : 'giocatore per riga, ad esempio «Mario Rossi»'}.</p>
+    <textarea id="pasteBox" placeholder="${D.type === 'double' ? 'Mario Rossi / Luca Bianchi&#10;Anna Verdi / Sara Neri' : 'Nome&#9;Cognome&#10;Mario&#9;Rossi&#10;Anna&#9;Verdi'}"></textarea>
+    <button class="btn" onclick="previewImport(parseRows(textToRows($('#pasteBox').value), D.type), 'lista incollata')">Leggi la lista</button>
+    <button class="btn ghost" onclick="closeSheet()">Annulla</button>`;
+  $('#sheet').classList.add('show'); $('#sheetBg').classList.add('show');
+  setTimeout(() => { const b = $('#pasteBox'); if (b) b.focus(); }, 250);
+}
+
+let pendingImport = null;
+function previewImport(r, source) {
+  const fresh = r.entries.filter(e => !D.entries.some(x => keyOf(x) === keyOf(e)));
+  const already = r.entries.length - fresh.length;
+  // Nel doppio un giocatore non può stare in due coppie dello stesso torneo.
+  const taken = new Map(D.entries.flatMap(x => x.players.map(p => [pname(p).toLowerCase(), entryName(x)])));
+  const clash = [];
+  for (let i = fresh.length - 1; i >= 0; i--) if (fresh[i].players.length > 1) {
+    const dup = fresh[i].players.find(p => taken.has(pname(p).toLowerCase()) || fresh.some((o, j) => j < i && o.players.some(q => pname(q).toLowerCase() === pname(p).toLowerCase())));
+    if (dup) { clash.unshift(`${entryName(fresh[i])}: ${pname(dup)} è già in un'altra coppia, non aggiunta.`); fresh.splice(i, 1); }
+  }
+  r.warnings = r.warnings.concat(clash);
+  pendingImport = fresh;
+  const n = fresh.length;
+  $('#sheet').innerHTML = `
+    <h2>${n ? `Trovat${D.type === 'double' ? (n === 1 ? 'a' : 'e') : (n === 1 ? 'o' : 'i')} ${n} ${unitWord(D.type, n)}` : 'Nessun nome trovato'}</h2>
+    <p class="hint">Da: ${esc(source)}${r.columns ? ` · colonne riconosciute: <b>${esc(r.columns)}</b>` : ' · nessuna intestazione: letto riga per riga'}</p>
+    ${r.warnings.concat(already ? [already === 1 ? '1 era già nell\'elenco.' : `${already} erano già nell'elenco.`] : []).map(w => `<p class="err" style="font-weight:500">${esc(w)}</p>`).join('')}
+    <div class="entries">${fresh.slice(0, 30).map((e, i) => `<div class="entry"><span class="n">${i + 1}</span><span class="nm">${esc(entryName(e))}</span></div>`).join('')}
+    ${n > 30 ? `<p class="hint">… e altr${D.type === 'double' ? 'e' : 'i'} ${n - 30}</p>` : ''}</div>
+    ${n ? `<button class="btn" onclick="confirmImport()">Aggiungi all'elenco</button>` : ''}
+    <button class="btn ghost" onclick="${source === 'lista incollata' ? 'openPaste()' : 'closeSheet()'}">${n ? 'Annulla' : 'Indietro'}</button>`;
+  $('#sheet').classList.add('show'); $('#sheetBg').classList.add('show');
+}
+function confirmImport() {
+  D.entries.push(...pendingImport);
+  pendingImport = null;
+  saveDraft(); closeSheet(); renderEntries();
+  toast('Elenco aggiornato');
+}
+
+// Testo incollato o CSV → righe di celle. Separatore: tabulazione (copia da Excel), poi «;», poi «,».
+function textToRows(text) {
+  const lines = text.replace(/\r\n?/g, '\n').split('\n').filter(l => l.trim());
+  const sep = lines.some(l => l.includes('\t')) ? '\t' : lines.filter(l => l.includes(';')).length >= lines.length / 2 ? ';'
+    : lines.length > 1 && lines.filter(l => l.includes(',')).length >= lines.length * 0.8 ? ',' : null;
+  if (!sep) return lines.map(l => [l]);
+  return lines.map(l => {
+    const cells = []; let cur = '', q = false;
+    for (let i = 0; i < l.length; i++) {
+      const ch = l[i];
+      if (q) { if (ch === '"' && l[i + 1] === '"') { cur += '"'; i++; } else if (ch === '"') q = false; else cur += ch; }
+      else if (ch === '"' && !cur.trim()) q = true;
+      else if (ch === sep) { cells.push(cur); cur = ''; }
+      else cur += ch;
+    }
+    cells.push(cur);
+    return cells;
+  });
+}
+
+// Riconosce le intestazioni: Nome, Cognome, «Nome e cognome», giocatore 1/2, partner, Coppia/Squadra…
+function classifyHeader(h) {
+  const n = String(h || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  if (!n) return null;
+  const slot = /\b2\b|second|partner|compagn|socio|\bb\b/.test(n) ? 1 : /\b1\b|prim|\ba\b/.test(n) ? 0 : null;
+  if (/nome e cognome|nome cognome|cognome e nome|cognome nome|nominativo|full ?name/.test(n)) return { kind: 'full', slot };
+  if (/cognom|last ?name|lastname|surname|family ?name|nachname|apellido|nom de famille/.test(n)) return { kind: 'cognome', slot };
+  if (/^(nome|first ?name|firstname|given ?name|name|prenom|vorname|nombre)\b/.test(n)) return { kind: 'nome', slot };
+  if (/^(giocator|giocatric|atlet|player|partecipant|iscritt|tesserat)/.test(n)) return { kind: 'full', slot };
+  if (/^(coppia|squadra|team|pair|doppio|duo)/.test(n)) return { kind: 'team' };
+  return null;
+}
+
+function parseRows(rows, type) {
+  rows = rows.map(r => r.map(c => cap(String(c ?? '')))).filter(r => r.some(Boolean));
+  const warnings = [];
+  let players = []; // { p, row, team }
+  let columns = null;
+  const hi = rows.slice(0, 5).findIndex(r => r.some(c => { const k = classifyHeader(c); return k && k.kind !== 'team'; }));
+  if (hi >= 0) {
+    const head = rows[hi].map(classifyHeader);
+    const count = {}, slots = [];
+    let teamCol = -1;
+    head.forEach((k, col) => {
+      if (!k) return;
+      if (k.kind === 'team') { if (teamCol < 0) teamCol = col; return; }
+      const s = k.slot ?? (count[k.kind] = (count[k.kind] ?? -1) + 1);
+      (slots[s] ||= {})[k.kind] ??= col;
+    });
+    columns = rows[hi].filter((c, i) => head[i]).join(', ');
+    rows.slice(hi + 1).forEach((r, ri) => {
+      const ps = slots.filter(Boolean).map(s => {
+        if (s.full != null) return splitFull(r[s.full] || '');
+        if (s.cognome == null) return splitFull(r[s.nome] || '');
+        return { nome: r[s.nome] || '', cognome: r[s.cognome] || '' };
+      }).filter(p => p.nome || p.cognome);
+      ps.forEach(p => players.push({ p, row: hi + ri + 2, team: teamCol >= 0 ? r[teamCol] : null, perRow: ps.length }));
+    });
+  } else {
+    // Nessuna intestazione: «Mario Rossi», «Mario | Rossi», «Mario Rossi / Luca Bianchi», 4 colonne per una coppia.
+    rows.forEach((r, ri) => {
+      const cells = r.filter(Boolean);
+      let ps;
+      if (cells.length >= 4) ps = [{ nome: cells[0], cognome: cells[1] }, { nome: cells[2], cognome: cells[3] }];
+      else if (cells.length === 2 && cells.every(c => c.includes(' '))) ps = cells.map(splitFull);
+      else if (cells.length >= 2) ps = [{ nome: cells[0], cognome: cells[1] }];
+      else {
+        const parts = cells[0].split(/\s+(?:\/|-|–|&|\+|e)\s+|\s*\/\s*/i).filter(Boolean);
+        ps = (type === 'double' && parts.length === 2 ? parts : [cells[0]]).map(splitFull);
+      }
+      ps.forEach(p => players.push({ p, row: ri + 1, team: null, perRow: ps.length }));
+    });
+  }
+
+  let entries = [];
+  if (type === 'single') {
+    entries = players.map(x => ({ players: [x.p] }));
+  } else if (players.some(x => x.team)) {
+    const groups = new Map();
+    players.forEach(x => { const k = (x.team || '').toLowerCase(); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(x); });
+    groups.forEach((g, k) => {
+      if (g.length === 2 && k) entries.push({ players: g.map(x => x.p) });
+      else warnings.push(`${k ? `Coppia «${g[0].team}»` : 'Righe senza coppia'}: ${g.length} giocator${g.length === 1 ? 'e' : 'i'} invece di 2, non aggiunt${g.length === 1 ? 'o' : 'i'} (${g.map(x => pname(x.p)).join(', ')}).`);
+    });
+  } else {
+    let i = 0, paired = false;
+    while (i < players.length) {
+      const a = players[i], b = players[i + 1];
+      if (a.perRow === 2 && b && b.row === a.row) { entries.push({ players: [a.p, b.p] }); i += 2; continue; }
+      if (a.perRow === 1 && b && b.perRow === 1) { entries.push({ players: [a.p, b.p] }); paired = true; i += 2; continue; }
+      warnings.push(`Riga ${a.row}: ${pname(a.p)} non ha un compagno, non aggiunto.`);
+      i++;
+    }
+    if (paired) warnings.push('Un giocatore per riga: ho formato le coppie unendo le righe a due a due. Controlla l\'elenco.');
+  }
+  const seen = new Set();
+  entries = entries.filter(e => { const k = keyOf(e); if (seen.has(k)) return false; seen.add(k); return true; });
+  return { entries, warnings, columns };
+}
+
+// Lettore minimo di file .xlsx (uno zip di XML): prima scheda del foglio, senza librerie esterne.
+async function readXlsx(buf) {
+  const dv = new DataView(buf), u8 = new Uint8Array(buf);
+  let eocd = -1;
+  for (let i = buf.byteLength - 22; i >= Math.max(0, buf.byteLength - 70000); i--) if (dv.getUint32(i, true) === 0x06054b50) { eocd = i; break; }
+  if (eocd < 0) throw new Error('il file non è un .xlsx valido');
+  const files = {};
+  let p = dv.getUint32(eocd + 16, true);
+  for (let n = dv.getUint16(eocd + 10, true); n > 0; n--) {
+    const method = dv.getUint16(p + 10, true), size = dv.getUint32(p + 20, true);
+    const nameLen = dv.getUint16(p + 28, true), extra = dv.getUint16(p + 30, true), comment = dv.getUint16(p + 32, true);
+    const local = dv.getUint32(p + 42, true);
+    const name = new TextDecoder().decode(u8.subarray(p + 46, p + 46 + nameLen));
+    files[name] = { method, size, local };
+    p += 46 + nameLen + extra + comment;
+  }
+  const read = async name => {
+    const f = files[name];
+    if (!f) return null;
+    const start = f.local + 30 + dv.getUint16(f.local + 26, true) + dv.getUint16(f.local + 28, true);
+    const data = u8.subarray(start, start + f.size);
+    if (f.method === 0) return new TextDecoder().decode(data);
+    if (typeof DecompressionStream === 'undefined') throw new Error('browser troppo vecchio per leggere i file Excel: usa un CSV');
+    return new Response(new Blob([data]).stream().pipeThrough(new DecompressionStream('deflate-raw'))).text();
+  };
+  const xml = s => new DOMParser().parseFromString(s, 'application/xml');
+  const byTag = (node, tag) => [...node.getElementsByTagName('*')].filter(e => e.localName === tag);
+  const shared = await read('xl/sharedStrings.xml');
+  const strings = shared ? byTag(xml(shared), 'si').map(si => byTag(si, 't').map(t => t.textContent).join('')) : [];
+  let sheetPath = 'xl/worksheets/sheet1.xml';
+  const wb = await read('xl/workbook.xml'), rels = await read('xl/_rels/workbook.xml.rels');
+  if (wb && rels) {
+    const first = byTag(xml(wb), 'sheet')[0];
+    const rid = first && [...first.attributes].find(a => a.localName === 'id' && a.name !== 'sheetId');
+    const rel = rid && byTag(xml(rels), 'Relationship').find(r => r.getAttribute('Id') === rid.value);
+    if (rel) { const t = rel.getAttribute('Target'); sheetPath = t.startsWith('/') ? t.slice(1) : 'xl/' + t.replace(/^\.\//, ''); }
+  }
+  const sheet = await read(sheetPath);
+  if (!sheet) throw new Error('nessun foglio trovato');
+  const out = [];
+  byTag(xml(sheet), 'row').forEach(row => {
+    const r = [];
+    byTag(row, 'c').forEach((c, idx) => {
+      const ref = c.getAttribute('r') || '';
+      const letters = (ref.match(/^[A-Z]+/) || [''])[0];
+      const col = letters ? [...letters].reduce((a, ch) => a * 26 + ch.charCodeAt(0) - 64, 0) - 1 : idx;
+      const t = c.getAttribute('t'), v = byTag(c, 'v')[0];
+      r[col] = t === 's' ? strings[+(v && v.textContent)] ?? '' : t === 'inlineStr' ? byTag(c, 't').map(x => x.textContent).join('') : v ? v.textContent : '';
+    });
+    out.push(Array.from(r, x => x ?? ''));
+  });
+  return out;
 }
 
 function viewSummary() {
@@ -462,8 +764,8 @@ function viewSummary() {
   return `
   <div class="card">
     <h2>${esc(S.name)}</h2>
-    <p class="hint">${S.teams.length} squadre · ${S.groups.length} ${S.groups.length === 1 ? 'girone' : 'gironi'} · partite ai ${S.target} · gironi giocati ${done}/${tot}</p>
-    <h3>Squadre</h3>
+    <p class="hint">${S.teams.length} ${S.type ? unitWord(S.type, S.teams.length) : 'squadre'} · ${S.groups.length} ${S.groups.length === 1 ? 'girone' : 'gironi'} · partite ai ${S.target} · gironi giocati ${done}/${tot}</p>
+    <h3>${S.type === 'single' ? 'Giocatori' : S.type === 'double' ? 'Coppie' : 'Squadre'}</h3>
     ${S.groups.map(g => `<p style="margin:6px 0"><span class="pill">Girone ${g.name}</span> ${g.teamIds.map(id => esc(tname(id))).join(', ')}</p>`).join('')}
     <button class="btn ghost" onclick="share()">Condividi classifiche</button>
     <button class="btn ghost" onclick="exportData()">Salva copia del torneo</button>
@@ -495,7 +797,7 @@ function viewGroups() {
   S.groups.forEach((g, gi) => {
     const st = standings(gi);
     html += `<div class="card"><h2>Girone ${g.name}</h2>
-      <table><tr><th>#</th><th class="name">Squadra</th><th>G</th><th>V</th><th>P</th><th>+/-</th></tr>
+      <table><tr><th>#</th><th class="name">${S.type === 'single' ? 'Giocatore' : S.type === 'double' ? 'Coppia' : 'Squadra'}</th><th>G</th><th>V</th><th>P</th><th>+/-</th></tr>
       ${st.map(r => `<tr class="${r.pos <= S.qual ? 'q' : ''}"><td>${r.pos}</td><td class="name">${esc(tname(r.id))}</td><td>${r.pj}</td><td>${r.w}</td><td>${r.l}</td><td>${r.pf - r.ps > 0 ? '+' : ''}${r.pf - r.ps}</td></tr>`).join('')}
       </table>
       ${gi === 0 ? '<p class="hint">A parità di vittorie contano lo scontro diretto, poi la differenza punti.</p>' : ''}
@@ -700,7 +1002,7 @@ function parseVoice(text) {
     const score = ha.score + hb.score + (ha.score && hb.score ? 1 : 0) + (c.m.sa == null ? 0.3 : 0);
     if (!best || score > best.score) best = { c, ha, hb, score };
   }
-  if (!best) return { error: 'Non ho riconosciuto le squadre. Prova: «Leoni contro Tigri 11 a 7».' };
+  if (!best) return { error: 'Non ho riconosciuto i giocatori. Prova: «Rossi contro Bianchi 11 a 7».' };
   const used = new Set([...best.ha.used, ...best.hb.used]);
   const nums = [];
   words.forEach((w, i) => {
@@ -750,7 +1052,7 @@ function voiceSheet(heard, error) {
     <h2>Detta o scrivi il risultato</h2>
     ${heard ? `<div class="heard">«${esc(heard)}»</div>` : ''}
     ${error ? `<p class="err">${esc(error)}</p>` : ''}
-    <p class="hint">Esempi: «Leoni contro Tigri 11 a 7» · «Mario e Luca hanno vinto 11 a 5 contro Anna e Sara»</p>
+    <p class="hint">Esempi: «Rossi contro Bianchi 11 a 7» · «Rossi e Verdi hanno vinto 11 a 5 contro Neri e Gallo»</p>
     <input id="vText" placeholder="Scrivi qui…" style="margin-top:12px">
     <button class="btn" onclick="handleHeard($('#vText').value)">Interpreta</button>
     <button class="btn ghost" onclick="closeSheet()">Annulla</button>`;
