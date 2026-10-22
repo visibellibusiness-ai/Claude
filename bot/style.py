@@ -95,6 +95,26 @@ def darkroom(w, h, base, glow, seed, light=(0.25, 0.22)):
     return Image.fromarray(np.clip(img, 0, 255).astype(np.uint8))
 
 
+def with_art(bg: Image.Image, path, seed: int, share: float = 0.66) -> Image.Image:
+    """Mette l'immagine generata nella parte alta della copertina, sfumata nel fondo
+    scuro, con la cima scurita per tenere leggibile la testata."""
+    w, h = bg.size
+    region = int(h * share)
+    art = Image.open(path).convert("RGB")
+    scale = max(w / art.width, region / art.height)
+    art = art.resize((round(art.width * scale), round(art.height * scale)), Image.LANCZOS)
+    left, top = (art.width - w) // 2, (art.height - region) // 2
+    arr = np.asarray(art.crop((left, top, left + w, top + region)), dtype=np.float32)
+    rows = np.linspace(0, 1, region)[:, None, None]
+    arr *= np.clip(0.22 + rows / 0.4, 0, 1)  # cima più scura per testata ed etichetta
+    arr += np.random.default_rng(seed).normal(0, 5.5, arr.shape[:2])[..., None]
+    alpha = np.clip((1 - rows[..., 0]) / 0.42, 0, 1) * 255  # dissolvenza nel fondo
+    layer = Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8))
+    out = bg.copy()
+    out.paste(layer, (0, 0), Image.fromarray(alpha.astype(np.uint8)).resize((1, region)).resize((w, region)))
+    return out
+
+
 # ----------------------------------------------------------- tipografia
 
 # Scala tipografica (px riferiti a una colonna di testo larga 900px).
@@ -181,6 +201,12 @@ class Mystery:
             ) + POINT_GAP["between"] * (len(data["points"]) - 1)
         return len(self._lines("body", data["body"], size, width)) * size * LEADING["body"]
 
+    @staticmethod
+    def _art_text_top(safe):
+        """Con l'immagine in copertina il titolo sta nella metà bassa."""
+        l, t, r, btm = safe
+        return t + (btm - t) * 0.46
+
     def _fact_layout(self, sizes, safe):
         """Posizioni fisse delle slide di contenuto, uguali per tutto il post."""
         l, t, r, btm = safe
@@ -214,8 +240,9 @@ class Mystery:
             return steps[role][-1]
 
         # altezza disponibile per titolo di copertina e chiusura (vedi cover() e cta())
+        art = any(k == "cover" and d.get("image") for k, d in scenes)
         room = {
-            "hook": (btm - 170) - (t + 70 + META) - 40,
+            "hook": (btm - 170) - (self._art_text_top(safe) if art else t + 70 + META) - 40,
             "cta": (btm - 170) - (t + 70 + META + GAP["after_meta"]),
         }
 
@@ -256,6 +283,8 @@ class Mystery:
         base, glow, *_ = self.colors()
         light = {"cover": (0.3, 0.3), "fact": (0.2, 0.25), "cta": (0.7, 0.35)}[kind]
         bg = darkroom(w, h, base, glow, self.seed + data.get("n", 0), light)
+        if kind == "cover" and data.get("image"):
+            bg = with_art(bg, data["image"], self.seed)
         fg = Image.new("RGBA", (w, h), (0, 0, 0, 0))
         getattr(self, kind)(fg, data, safe)
         return bg, fg
@@ -276,7 +305,10 @@ class Mystery:
         size = self.sizes["hook"]
         lines = self._lines("hook", data["hook"], size, r - l)
         block = len(lines) * size * LEADING["hook"]
-        y = t + 70 + META + (btm - 170 - (t + 70 + META) - block) / 2
+        if data.get("image"):
+            y = btm - 170 - block  # titolo in basso, sotto l'immagine
+        else:
+            y = t + 70 + META + (btm - 170 - (t + 70 + META) - block) / 2
         # l'ultima riga in corsivo e nel colore d'accento: la "rivelazione"
         for i, line in enumerate(lines):
             last = i == len(lines) - 1

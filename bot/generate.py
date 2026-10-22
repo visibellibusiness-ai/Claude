@@ -34,6 +34,7 @@ SCHEMA = {
         "caption": {"type": "string", "description": "Instagram caption"},
         "hashtags": {"type": "array", "items": {"type": "string"}, "description": "Hashtags without #"},
         "sources": {"type": "array", "items": {"type": "string"}, "description": "Authoritative sources backing the facts"},
+"image_prompt": {"type": "string", "description": "Cover image for an AI image model: one concrete scene of symbolic objects or a visual metaphor for the topic, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
         "design": {
             "type": "object",
             "properties": {
@@ -46,7 +47,7 @@ SCHEMA = {
             "additionalProperties": False,
         },
     },
-    "required": ["reasoning", "format", "music", "trial", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design"],
+    "required": ["reasoning", "format", "music", "trial", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design", "image_prompt"],
     "additionalProperties": False,
 }
 

@@ -33,6 +33,10 @@ rubrica news (vedi `news/README.md`) e alle 17:40 e 23:40 UTC per le curiosità:
    un colore d'accento, scala tipografica fissa), in coppia con la musica
    "mystery" (quattro variazioni). Claude sceglie la palette e i numeri o le
    parole da mettere in grande.
+   La copertina ha un'immagine generata sul server con **Segmind Vega** (modello
+   open source, licenza Apache 2.0) a partire da una descrizione scritta da Claude:
+   oggetti e metafore simboliche, mai persone. Il modello resta salvato tra un giro
+   e l'altro; se la generazione fallisce, il post esce con la copertina tipografica.
 4. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
 5. `bot/publish.py` pubblica con l'API ufficiale di Instagram. I Reel vengono
    caricati direttamente; i Trial Reel li vede prima solo chi non ti segue, e
@@ -99,6 +103,7 @@ Immagine del profilo: `assets/profile/avatar_nome.jpg` oppure `avatar_domanda.jp
 
 ## Costi indicativi
 
-- GitHub Actions: gratis per i repo pubblici.
+- GitHub Actions: gratis per i repo pubblici (con l'immagine di copertina ogni giro
+  dura qualche minuto in più).
 - API Claude: pochi centesimi per post.
 - Instagram API: gratis.

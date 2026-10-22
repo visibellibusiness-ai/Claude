@@ -53,9 +53,10 @@ SCHEMA = {
         "cta": {"type": "string", "description": "Last slide, max 12 words, invites to follow for the daily brief"},
         "caption": {"type": "string", "description": "3-6 short lines summing up the stories with one emoji each, then a question for comments, then a call to follow for the daily brief"},
         "hashtags": {"type": "array", "items": {"type": "string"}, "description": "8-12 hashtags, lowercase, without #"},
+        "image_prompt": {"type": "string", "description": "Cover image for an AI image model: one concrete scene of symbolic objects or a visual metaphor for story 1, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
         "palette": {"type": "integer", "description": "Color variant of the brand style, 0 to 4"},
     },
-    "required": ["hook", "stories", "reel_hook", "cta", "caption", "hashtags", "palette"],
+    "required": ["hook", "stories", "reel_hook", "cta", "caption", "hashtags", "palette", "image_prompt"],
     "additionalProperties": False,
 }
 
@@ -149,6 +150,7 @@ def to_post(brief: dict) -> dict:
             "swipe_text": "Swipe",
             "follow_line": "the news in 30 seconds, every day",
         },
+        "image_prompt": brief.get("image_prompt", ""),
         "music": config.MUSIC_PRESETS[0],
         "trial": True,
     }

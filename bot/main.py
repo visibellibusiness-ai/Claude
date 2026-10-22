@@ -13,6 +13,7 @@ import os
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from bot import config
 from bot.generate import generate_post
 from bot.reel import render_reel
 from bot.render import render_post
@@ -92,6 +93,15 @@ def create(post_file: str | None, series: str = "facts") -> None:
     rel_dir = Path("posts") / stamp
     out_dir = ROOT / rel_dir
     fmt = "news" if series == "news" else post.get("format", "carousel")
+    if config.COVER_ART and post.get("image_prompt") and not post.get("cover_image"):
+        try:
+            from bot.imagegen import generate
+
+            art = out_dir / "cover_art.jpg"
+            print("Immagine di copertina:", generate(post["image_prompt"], art))
+            post["cover_image"] = str(art)
+        except Exception as e:  # senza immagine il post esce con la copertina tipografica
+            print(f"Immagine di copertina non generata: {e}")
     if fmt == "reel":
         render_reel(post, out_dir, theme_index=n)
         paths = [out_dir / "cover.jpg"]

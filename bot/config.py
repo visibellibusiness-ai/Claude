@@ -32,6 +32,8 @@ WIDTH, HEIGHT = 1080, 1350
 BRAND_STYLE = "mystery"
 # Generi musicali dei Reel (bot/music.py) tra cui Claude può scegliere
 MUSIC_PRESETS = ["mystery"]
+# Immagine di copertina generata con un modello open source (bot/imagegen.py)
+COVER_ART = True
 
 # Ogni quanti giorni Claude rivede la strategia in base ai risultati
 REFLECT_EVERY_DAYS = 7

@@ -26,6 +26,7 @@ def slide_data(post: dict, index: int) -> list[tuple[str, dict]]:
         "swipe": design.get("swipe_text", "Swipe"),
         "category": post.get("category", ""),
         "index": index + 1,
+        "image": post.get("cover_image"),
     })]
     for n, s in enumerate(post["slides"], start=1):
         scenes.append(("fact", {
