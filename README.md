@@ -74,8 +74,8 @@ Questi passaggi richiedono il tuo telefono e i tuoi account, quindi vanno fatti 
    `ANTHROPIC_API_KEY`, `IG_USER_ID`, `IG_ACCESS_TOKEN`.
 8. **Rendi pubblico il repo** (Settings → General → Change visibility): Instagram
    deve poter scaricare le immagini da `raw.githubusercontent.com`.
-9. Unisci questo branch nel branch principale. Da lì il workflow parte da solo;
-   per il primo post subito vai su Actions → "Pubblica post Instagram" → Run workflow.
+9. Fatto. Il workflow parte da solo agli orari previsti; per il primo post subito vai
+   su Actions → "Pubblica post Instagram" → Run workflow (scegli `facts` o `news`).
 
 Se usi il token utente invece di quello della Pagina, scade dopo circa 60 giorni
 e va rinnovato nel secret `IG_ACCESS_TOKEN`.
