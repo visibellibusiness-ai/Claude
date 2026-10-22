@@ -115,6 +115,15 @@ tr.q td:first-child { box-shadow: inset 3px 0 0 var(--brand); }
 .match .t.win { font-weight: 700; }
 .match .t b { min-width: 22px; text-align: right; }
 .match .tag { font-size: 11px; color: var(--muted); }
+.match .t span:first-child { white-space: normal; }
+.match .act { flex: none; align-self: center; font-size: 14px; font-weight: 800; padding: 9px 12px; border-radius: 10px; background: var(--brand); color: #fff; white-space: nowrap; }
+.match .act.edit { background: transparent; color: var(--brand); border: 1.5px solid var(--brand); padding: 7px 10px; font-size: 13px; }
+.wo { display: inline-block; font-size: 10px; font-weight: 800; color: var(--danger); border: 1px solid var(--danger); border-radius: 6px; padding: 0 5px; margin-left: 4px; }
+.out { opacity: .55; text-decoration: line-through; }
+.plist { display: flex; align-items: center; gap: 8px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.plist .nm { flex: 1; min-width: 0; }
+.plist button { border: 1.5px solid var(--brand); background: none; color: var(--brand); border-radius: 10px; padding: 7px 10px; font: inherit; font-size: 13px; font-weight: 700; }
+.wobtns { display: flex; gap: 8px; } .wobtns button { flex: 1; margin-top: 8px; font-size: 14px; padding: 12px 8px; }
 .match.done { background: var(--card); }
 .match.todo { border-color: var(--brand); border-style: dashed; }
 .match.locked { opacity: .55; }
@@ -126,12 +135,12 @@ tr.q td:first-child { box-shadow: inset 3px 0 0 var(--brand); }
 /* Voice */
 #mic {
   position: fixed; right: 18px; bottom: calc(18px + env(safe-area-inset-bottom)); z-index: 20;
-  width: 72px; height: 72px; border-radius: 50%; border: 0;
+  height: 60px; padding: 0 22px 0 18px; border-radius: 30px; border: 0; gap: 8px;
   background: var(--accent); color: #1a1a1a; box-shadow: 0 6px 20px rgba(0,0,0,.25);
-  display: none; align-items: center; justify-content: center;
+  display: none; align-items: center; justify-content: center; font: inherit; font-weight: 800; font-size: 16px;
 }
 #mic.show { display: flex; }
-#mic svg { width: 32px; height: 32px; }
+#mic svg { width: 26px; height: 26px; flex: none; }
 #mic.listening { background: var(--danger); color: #fff; animation: pulse 1.2s infinite; }
 @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(185,28,28,.5)} 100%{box-shadow:0 0 0 22px rgba(185,28,28,0)} }
 
@@ -175,6 +184,7 @@ tr.q td:first-child { box-shadow: inset 3px 0 0 var(--brand); }
 
 <button id="mic" aria-label="Detta un risultato">
   <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 14a3 3 0 0 0 3-3V5a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3zm5-3a5 5 0 0 1-10 0H5a7 7 0 0 0 6 6.92V21h2v-3.08A7 7 0 0 0 19 11h-2z"/></svg>
+  <span id="micTxt">Detta risultato</span>
 </button>
 
 <div class="sheet-bg" id="sheetBg"></div>
@@ -199,6 +209,8 @@ function save() {
 }
 const team = id => S.teams.find(t => t.id === id);
 const tname = id => id == null ? 'BYE' : team(id).name;
+// Nelle schede partita del doppio: «I. Ferri / M. Grasso», così i nomi stanno accanto al pulsante.
+const shortName = id => { if (id == null) return 'BYE'; const t = team(id); return t.players && t.players.length > 1 ? t.players.map(p => (p.nome ? p.nome[0] + '. ' : '') + p.cognome).join(' / ') : t.name; };
 const seedTag = id => { const t = team(id); return t && t.seed ? ` <span class="ts">TS${t.seed}</span>` : ''; };
 
 // ---------- Generazione gironi ----------
@@ -276,6 +288,8 @@ function standings(g) {
     return xw ? -1 : 1;
   };
   rows.sort((x, y) => {
+    // Chi si ritira finisce in fondo e non può qualificarsi.
+    if (isOut(x.id) !== isOut(y.id)) return isOut(x.id) ? 1 : -1;
     if (y.w !== x.w) return y.w - x.w;
     const tied = rows.filter(r => r.w === x.w);
     if (tied.length === 2) { const h = h2h(x.id, y.id); if (h) return h; }
@@ -288,7 +302,8 @@ function standings(g) {
   return rows;
 }
 
-const groupsDone = () => S.matches.every(m => m.sa != null);
+const groupsDone = () => S.matches.every(m => m.sa != null || m.void);
+const isOut = id => { const t = id != null && team(id); return !!(t && t.withdrawn); };
 
 // ---------- Fase finale ----------
 function seedOrder(size) {
@@ -302,7 +317,7 @@ function seedOrder(size) {
 
 function buildKo() {
   const qual = [];
-  S.groups.forEach((_, g) => standings(g).slice(0, S.qual).forEach(r => qual.push(r)));
+  S.groups.forEach((_, g) => standings(g).filter(r => !isOut(r.id)).slice(0, S.qual).forEach(r => qual.push(r)));
   // Prima tutte le prime, poi le seconde...; a parità di posizione conta il rendimento.
   qual.sort((x, y) => x.pos - y.pos || (y.w / Math.max(1, y.pj)) - (x.w / Math.max(1, x.pj)) ||
     ((y.pf - y.ps) / Math.max(1, y.pj)) - ((x.pf - x.ps) / Math.max(1, x.pj)));
@@ -346,9 +361,11 @@ function bracket() {
       m.sa = m.sb = null; m.winner = undefined; m.loser = undefined;
       if (m.bye) { m.winner = m.a ?? m.b; }
       else if (res && m.aKnown && m.bKnown && res.a === m.a && res.b === m.b) {
-        m.sa = res.sa; m.sb = res.sb;
+        m.sa = res.sa; m.sb = res.sb; m.wo = !!res.wo;
         m.winner = res.sa > res.sb ? m.a : m.b;
         m.loser = res.sa > res.sb ? m.b : m.a;
+      } else if (m.aKnown && m.bKnown && (isOut(m.a) || isOut(m.b))) {
+        autoWo(m);
       }
     });
     rounds.push({ name: roundName(cur.length), matches: cur });
@@ -369,11 +386,20 @@ function bracket() {
       third = { id: 'k3rd', a: x.loser ?? null, b: y.loser ?? null, aKnown: x.loser !== undefined, bKnown: y.loser !== undefined, sa: null, sb: null };
       const res = S.ko.results.k3rd;
       if (res && third.aKnown && third.bKnown && res.a === third.a && res.b === third.b) {
-        third.sa = res.sa; third.sb = res.sb; third.winner = res.sa > res.sb ? third.a : third.b;
+        third.sa = res.sa; third.sb = res.sb; third.wo = !!res.wo; third.winner = res.sa > res.sb ? third.a : third.b;
+      } else if (third.aKnown && third.bKnown && third.a != null && third.b != null && (isOut(third.a) || isOut(third.b))) {
+        autoWo(third);
       }
     }
   }
   return { rounds, third };
+}
+
+// Vittoria a tavolino per l'avversario di chi si è ritirato.
+function autoWo(m) {
+  const aOut = isOut(m.a);
+  m.sa = aOut ? 0 : S.target; m.sb = aOut ? S.target : 0; m.wo = true; m.auto = true;
+  m.winner = aOut ? m.b : m.a; m.loser = aOut ? m.a : m.b;
 }
 
 // Partite giocabili adesso (entrambe le squadre note e risultato mancante).
@@ -381,13 +407,13 @@ function playable(includeDone) {
   const out = [];
   if (!S) return out;
   if (!S.ko) {
-    S.matches.forEach(m => { if (includeDone || m.sa == null) out.push({ kind: 'g', m }); });
+    S.matches.forEach(m => { if (!m.void && (includeDone || m.sa == null)) out.push({ kind: 'g', m }); });
   } else {
     const { rounds, third } = bracket();
     const all = rounds.flatMap(r => r.matches.map(m => ({ ...m, rn: r.name })));
     if (third) all.push({ ...third, rn: 'Finale 3° posto' });
     all.forEach(m => {
-      if (m.bye || !m.aKnown || !m.bKnown) return;
+      if (m.bye || !m.aKnown || !m.bKnown || m.auto) return;
       if (includeDone || m.sa == null) out.push({ kind: 'k', m });
     });
   }
@@ -824,23 +850,92 @@ function viewSummary() {
     <h2>${esc(S.name)}</h2>
     <p class="hint">${S.teams.length} ${S.type ? unitWord(S.type, S.teams.length) : 'squadre'} · ${S.groups.length} ${S.groups.length === 1 ? 'girone' : 'gironi'} · partite ai ${S.target} · gironi giocati ${done}/${tot}</p>
     <h3>${S.type === 'single' ? 'Giocatori' : S.type === 'double' ? 'Coppie' : 'Squadre'}</h3>
-    ${S.groups.map(g => `<p style="margin:6px 0"><span class="pill">Girone ${g.name}</span> ${g.teamIds.map(id => esc(tname(id)) + seedTag(id)).join(', ')}</p>`).join('')}
+    <p class="hint" style="margin-top:0">Qualcuno non c'è? <b>Sostituisci</b> mette un'altra persona al suo posto e tiene i risultati; <b>Ritira</b> assegna a tavolino le sue partite non ancora giocate.</p>
+    ${S.groups.map(g => `<p style="margin:14px 0 2px"><span class="pill">Girone ${g.name}</span></p>${g.teamIds.map(id => `<div class="plist"><span class="nm ${isOut(id) ? 'out' : ''}">${esc(tname(id))}${seedTag(id)}</span>
+      ${isOut(id) ? `<button onclick="reinstate(${id})">Riammetti</button>` : `<button onclick="openEditTeam(${id})">Sostituisci</button><button onclick="withdraw(${id})" style="color:var(--danger);border-color:var(--danger)">Ritira</button>`}</div>`).join('')}`).join('')}
     <button class="btn ghost" onclick="share()">Condividi classifiche</button>
     <button class="btn ghost" onclick="exportData()">Salva copia del torneo</button>
     <button class="btn danger" onclick="resetAll()">Nuovo torneo (cancella questo)</button>
   </div>`;
 }
 
+// ---------- Sostituzioni e ritiri ----------
+function openEditTeam(id) {
+  const t = team(id);
+  const players = t.players || [splitFull(t.name)];
+  $('#sheet').innerHTML = `<h2>Sostituisci</h2>
+    <p class="hint">Scrivi chi gioca al posto di ${esc(t.name)}. I risultati già giocati restano.</p>
+    ${players.map((p, i) => `${players.length > 1 ? `<p class="pslot">Giocatore ${i + 1}</p>` : ''}<div class="add"><input id="en${i}" placeholder="Nome" value="${esc(p.nome)}"><input id="ec${i}" placeholder="Cognome" value="${esc(p.cognome)}"></div>`).join('')}
+    <p class="err" id="eErr"></p>
+    <button class="btn" onclick="saveEditTeam(${id}, ${players.length})">Salva</button>
+    <button class="btn ghost" onclick="closeSheet()">Annulla</button>`;
+  $('#sheet').classList.add('show'); $('#sheetBg').classList.add('show');
+}
+function saveEditTeam(id, n) {
+  const players = Array.from({ length: n }, (_, i) => ({ nome: cap($('#en' + i).value), cognome: cap($('#ec' + i).value) }));
+  if (players.some(p => !p.nome || !p.cognome)) return $('#eErr').textContent = 'Inserisci nome e cognome.';
+  const others = S.teams.filter(t => t.id !== id).flatMap(t => (t.players || []).map(p => pname(p).toLowerCase()));
+  const dup = players.find(p => others.includes(pname(p).toLowerCase()));
+  if (dup) return $('#eErr').textContent = `${pname(dup)} gioca già nel torneo.`;
+  const t = team(id), old = t.name;
+  t.players = players; t.name = entryName({ players });
+  save(); closeSheet(); render();
+  toast(`${old} → ${t.name}`);
+}
+function withdraw(id) {
+  const t = team(id);
+  const left = S.matches.filter(m => (m.a === id || m.b === id) && m.sa == null).length;
+  if (!confirm(`Ritirare ${t.name} dal torneo?\n${left ? `Le sue ${left} partite dei gironi non ancora giocate andranno a tavolino agli avversari.` : ''} Non potrà qualificarsi per la fase finale.`)) return;
+  t.withdrawn = true;
+  S.matches.forEach(m => {
+    if (m.sa != null || (m.a !== id && m.b !== id)) return;
+    if (isOut(m.a) && isOut(m.b)) { m.void = true; return; }
+    autoWo(m); delete m.winner; delete m.loser;
+  });
+  save(); render();
+  toast(`${t.name} ritirato`);
+}
+function reinstate(id) {
+  const t = team(id);
+  if (!confirm(`Riammettere ${t.name}? Le partite assegnate a tavolino per il ritiro tornano da giocare.`)) return;
+  t.withdrawn = false;
+  S.matches.forEach(m => {
+    if (m.a !== id && m.b !== id) return;
+    if (m.void) { delete m.void; if (isOut(m.a) || isOut(m.b)) { autoWo(m); delete m.winner; delete m.loser; } return; }
+    if (m.auto) { m.sa = m.sb = null; delete m.wo; delete m.auto; }
+  });
+  save(); render();
+}
+
 function matchBtn(kind, m, label) {
   const done = m.sa != null;
   const aw = done && m.sa > m.sb, bw = done && m.sb > m.sa;
   const locked = kind === 'g' && S.ko;
+  const nm = id => `<span class="${isOut(id) ? 'out' : ''}">${esc(shortName(id))}</span>`;
+  if (m.void) return `<div class="match locked"><div class="teams">${label ? `<div class="tag">${esc(label)}</div>` : ''}
+    <div class="t">${nm(m.a)}</div><div class="t">${nm(m.b)}</div><div class="tag">Non disputata: entrambi ritirati</div></div></div>`;
   return `<button class="match ${done ? 'done' : 'todo'} ${locked ? 'locked' : ''}" onclick="openScore('${kind}','${m.id}')">
     <div class="teams">
-      ${label ? `<div class="tag">${esc(label)}</div>` : ''}
-      <div class="t ${aw ? 'win' : ''}"><span>${esc(tname(m.a))}</span><b>${done ? m.sa : ''}</b></div>
-      <div class="t ${bw ? 'win' : ''}"><span>${esc(tname(m.b))}</span><b>${done ? m.sb : ''}</b></div>
-    </div></button>`;
+      ${label ? `<div class="tag">${esc(label)}${m.wo ? '<span class="wo">A TAVOLINO</span>' : ''}</div>` : m.wo ? '<div class="tag"><span class="wo">A TAVOLINO</span></div>' : ''}
+      <div class="t ${aw ? 'win' : ''}">${nm(m.a)}<b>${done ? m.sa : ''}</b></div>
+      <div class="t ${bw ? 'win' : ''}">${nm(m.b)}<b>${done ? m.sb : ''}</b></div>
+    </div>${m.auto ? '' : `<span class="act ${done ? 'edit' : ''}">${done ? 'Modifica' : '+ Risultato'}</span>`}</button>`;
+}
+
+// Le prime partite ancora da giocare, senza far giocare due volte di fila gli stessi.
+function nextMatches() {
+  const busy = new Set(), out = [];
+  for (const m of S.matches) {
+    if (m.sa != null || m.void || busy.has(m.a) || busy.has(m.b)) continue;
+    out.push(m); busy.add(m.a); busy.add(m.b);
+    if (out.length === 4) break;
+  }
+  return out;
+}
+function voiceExample() {
+  const m = S.matches.find(x => x.sa == null && !x.void) || S.matches[0];
+  const sur = id => { const t = team(id); return t.players ? t.players.map(p => p.cognome || p.nome).join(' e ') : t.name; };
+  return `${sur(m.a)} contro ${sur(m.b)} ${S.target} a 7`;
 }
 
 function viewGroups() {
@@ -850,7 +945,9 @@ function viewGroups() {
     const left = S.matches.filter(m => m.sa == null).length;
     html += `<div class="card">${done
       ? `<h2>Gironi completati</h2><button class="btn" onclick="startKo()">Crea la fase finale</button>`
-      : `<h2>Partite da giocare: ${left}</h2><p class="hint">Tocca una partita per scrivere il risultato, oppure usa il microfono.</p>`}</div>`;
+      : `<h2>Partite da giocare: ${left}</h2>
+         <p class="hint">Premi <b>+ Risultato</b> su una partita, oppure il pulsante giallo <b>Detta risultato</b> e di' ad esempio «${esc(voiceExample())}».</p>
+         <h3>Prossime partite</h3>${nextMatches().map(m => matchBtn('g', m, `Girone ${S.groups[m.g].name} · Giornata ${m.round}`)).join('')}`}</div>`;
   }
   S.groups.forEach((g, gi) => {
     const st = standings(gi);
@@ -878,7 +975,7 @@ function viewKo() {
     if (!ms.length) return;
     html += `<div class="card"><h2>${r.name}</h2>${ms.map(m =>
       m.aKnown && m.bKnown ? matchBtn('k', m) :
-      `<div class="match locked"><div class="teams"><div class="t"><span>${m.aKnown ? esc(tname(m.a)) : 'In attesa…'}</span></div><div class="t"><span>${m.bKnown ? esc(tname(m.b)) : 'In attesa…'}</span></div></div></div>`
+      `<div class="match locked"><div class="teams"><div class="t"><span>${m.aKnown ? esc(shortName(m.a)) : 'In attesa…'}</span></div><div class="t"><span>${m.bKnown ? esc(shortName(m.b)) : 'In attesa…'}</span></div></div></div>`
     ).join('')}</div>`;
   });
   if (third) {
@@ -919,6 +1016,9 @@ function openScore(kind, id, pre, heard) {
         </div></div>`).join('')}
     <p class="err" id="sErr"></p>
     <button class="btn" onclick="saveScore()">${heard ? 'Conferma' : 'Salva'}</button>
+    ${heard ? '' : `<h3 style="margin-top:18px">Partita non giocata?</h3>
+    <p class="hint" style="margin:0">Chi non si presenta perde a tavolino ${S.target}-0.</p>
+    <div class="wobtns">${['a', 'b'].map(k => `<button class="btn danger" onclick="walkover('${k}')">Assente: ${esc(tname(m[k]))}</button>`).join('')}</div>`}
     ${m.sa != null ? `<button class="btn danger" onclick="clearScore()">Cancella risultato</button>` : ''}
     <button class="btn ghost" onclick="closeSheet()">Annulla</button>`;
   $('#sheet').classList.add('show'); $('#sheetBg').classList.add('show');
@@ -940,19 +1040,24 @@ function saveScore() {
   closeSheet();
 }
 function clearScore() { setResult(sheetCtx.kind, sheetCtx.id, null, null); closeSheet(); }
+function walkover(absent) {
+  const [sa, sb] = absent === 'a' ? [0, S.target] : [S.target, 0];
+  setResult(sheetCtx.kind, sheetCtx.id, sa, sb, true);
+  closeSheet();
+}
 
-function setResult(kind, id, sa, sb) {
+function setResult(kind, id, sa, sb, wo = false) {
   const m = findMatch(kind, id);
   if (kind === 'g') {
-    m.sa = sa; m.sb = sb;
+    m.sa = sa; m.sb = sb; m.wo = wo || undefined; delete m.auto;
     if (S.ko) { S.ko = null; if (groupsDone()) buildKo(); }
   } else {
     if (sa == null) delete S.ko.results[id];
-    else S.ko.results[id] = { a: m.a, b: m.b, sa, sb };
+    else S.ko.results[id] = { a: m.a, b: m.b, sa, sb, wo: wo || undefined };
   }
   save(); render();
   if (sa != null) {
-    toast(`${tname(m.a)} ${sa} - ${sb} ${tname(m.b)}`);
+    toast(wo ? `Vittoria a tavolino: ${tname(sa > sb ? m.a : m.b)}` : `${tname(m.a)} ${sa} - ${sb} ${tname(m.b)}`);
     if (kind === 'g' && groupsDone() && !S.ko) setTimeout(() => toast('Gironi completati! Ora puoi creare la fase finale.'), 1800);
   }
 }
@@ -984,7 +1089,7 @@ function shareText() {
       const ms = r.matches.filter(m => !m.bye && m.sa != null);
       if (!ms.length) return;
       t += `\n${r.name}\n`;
-      ms.forEach(m => t += `${tname(m.a)} ${m.sa}-${m.sb} ${tname(m.b)}\n`);
+      ms.forEach(m => t += `${tname(m.a)} ${m.sa}-${m.sb} ${tname(m.b)}${m.wo ? ' (a tavolino)' : ''}\n`);
     });
     if (third && third.sa != null) t += `\nFinale 3° posto\n${tname(third.a)} ${third.sa}-${third.sb} ${tname(third.b)}\n`;
     const f = rounds[rounds.length - 1].matches[0];
