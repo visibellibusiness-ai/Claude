@@ -21,11 +21,13 @@ SAFE = (90, 300, W - 150, H - 460)
 ANIM = 0.45  # secondi di entrata del testo
 
 
-def _duration(kind: str, data: dict) -> float:
+def _duration(kind: str, data: dict, fast: bool = False) -> float:
     if kind == "cta":
-        return 3.5
+        return 2.5 if fast else 3.5
     text = data.get("hook", "") + " " + data.get("title", "") + " " + data.get("body", "")
     words = len(text.split())
+    if fast:  # rubrica news: circa 20 secondi in tutto
+        return max(2.4, min(3.8, 1.2 + words * 0.13))
     return max(2.8, min(6.5, 1.5 + words * 0.28)) + (0.5 if kind == "cover" else 0)
 
 
@@ -33,12 +35,20 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     style = make_style(post, theme_index)
     items = slide_data(post, theme_index)
     items[0][1]["swipe"] = "Keep watching"  # un video non si scorre
+    news = post.get("series") == "news"
+    if news:
+        # Reel news: apertura di 2 secondi e, per ogni notizia, solo "cosa è successo"
+        items[0][1]["hook"] = post.get("reel_hook") or post["hook"]
+        for kind, data in items:
+            if kind == "fact" and data.get("points"):
+                data["points"] = data["points"][:1]
+                data["body"] = data["points"][0][1]
     style.plan(items, SAFE, boost=1.18)
     center_content(style, items, W, H, SAFE)
     scenes = []
     for kind, data in items:
         bg, fg = style.slide(kind, data, W, H, SAFE)
-        scenes.append((bg, fg, _duration(kind, data), style.accent(kind)))
+        scenes.append((bg, fg, _duration(kind, data, fast=news), style.accent(kind)))
     total = sum(s[2] for s in scenes)
 
     out_dir.mkdir(parents=True, exist_ok=True)

@@ -2,11 +2,18 @@ name: Pubblica post Instagram
 
 on:
   schedule:
-    # 13:40 UTC (pomeriggio in Europa, mattina negli USA)
-    # 23:40 UTC (sera negli USA)
-    - cron: "40 13 * * *"
+    # 12:35 UTC: rubrica news (mattina negli USA, primo pomeriggio in Europa)
+    - cron: "35 12 * * *"
+    # 17:40 e 23:40 UTC: curiosità (sera in Europa, pomeriggio e sera negli USA)
+    - cron: "40 17 * * *"
     - cron: "40 23 * * *"
   workflow_dispatch:
+    inputs:
+      series:
+        description: "Cosa pubblicare"
+        type: choice
+        options: [facts, news]
+        default: facts
 
 permissions:
   contents: write
@@ -53,11 +60,21 @@ jobs:
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
         run: python -m bot.main learn
 
+      - name: Scegli la serie
+        if: steps.check.outputs.ready == 'true'
+        id: series
+        run: |
+          if [ "${{ github.event.schedule }}" = "35 12 * * *" ] || [ "${{ inputs.series }}" = "news" ]; then
+            echo "name=news" >> "$GITHUB_OUTPUT"
+          else
+            echo "name=facts" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Genera e disegna il post
-        if: steps.check.outputs.ready == 'true' && hashFiles('posts/pending.json') == ''
+        if: steps.check.outputs.ready == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-        run: python -m bot.main create
+        run: python -m bot.main create --series ${{ steps.series.outputs.name }}
 
       - name: Metti online le immagini
         if: steps.check.outputs.ready == 'true'
@@ -75,7 +92,7 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
-        run: python -m bot.main publish
+        run: python -m bot.main publish --series ${{ steps.series.outputs.name }}
 
       - name: Aggiorna lo storico
         if: always() && steps.check.outputs.ready == 'true'

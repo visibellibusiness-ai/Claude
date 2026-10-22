@@ -1,14 +1,20 @@
 # Rubrica news quotidiana di @you.didnot.know
 
-Ogni giorno alle 9:13 (ora italiana) un'attività programmata prepara il pacchetto
-con le 5 notizie del giorno e lo invia via email a me@andreavisibelli.com.
-Andrea lo verifica, incolla i testi nel template Canva (Bulk Create) e programma
-il post su Meta Business Suite.
+Completamente automatica, come i post di curiosità.
 
-- Formato: carosello con 5 notizie (cosa è successo, perché conta, cosa cambia per te),
-  la quinta sempre leggera; Reel 9:16 di circa 20 secondi con le stesse notizie,
-  pubblicato anche come Trial Reel.
-- Stile: lo stesso "Mystery" della pagina (fondo scuro, serif, accento ambra).
-- Le istruzioni complete dell'attività sono in `daily-package-prompt.md`: se
-  l'attività va ricreata (per esempio dall'interfaccia di claude.ai per collegarle
-  Gmail), basta incollare quel testo.
+Ogni giorno alle 12:35 UTC (mattina negli USA, primo pomeriggio in Europa) il
+workflow `.github/workflows/post.yml` esegue `python -m bot.main create --series news`:
+
+1. `bot/news.py`: Claude cerca sul web le notizie delle ultime 24-36 ore e sceglie
+   5 storie (la quinta sempre leggera), ognuna confermata da almeno 2 fonti
+   autorevoli e indipendenti; tono neutrale.
+2. Scrive per ogni storia titolo, numero o parola in evidenza, categoria e tre
+   righe: cosa è successo, perché conta, cosa cambia per te.
+3. Il sistema crea il carosello (copertina + 5 notizie + chiusura) e un Reel di
+   circa 20 secondi con le stesse notizie, nello stile Mystery e con la musica
+   mystery.
+4. Pubblica il carosello e il Reel (come Trial Reel) e li registra in
+   `posts/history.json` con `series: news`, così l'apprendimento li considera.
+
+Se un giro fallisce, la rubrica non pubblicata viene scartata dopo 12 ore, così
+non escono mai notizie vecchie.

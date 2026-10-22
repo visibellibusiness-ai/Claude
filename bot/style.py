@@ -111,6 +111,7 @@ TYPE_SCALE = {
 LABEL, META, FOLLOW, TAGLINE = 28, 32, 40, 36
 LEADING = {"hook": 1.0, "highlight": 0.95, "title": 1.02, "body": 1.38, "cta": 1.02}
 MAX_LINES = {"hook": 5, "highlight": 1, "title": 2, "cta": 5}
+POINT_GAP = {"label": 10, "between": 28}
 GAP = {"after_meta": 60, "after_highlight": 36, "rule": 34, "after_rule": 40}
 
 
@@ -171,6 +172,15 @@ class Mystery:
         probe = ImageDraw.Draw(Image.new("L", (1, 1)))
         return len(lines) <= max_lines and all(probe.textlength(x, font=f) <= width for x in lines)
 
+    def _body_height(self, data, size, width):
+        """Altezza del corpo: testo semplice o righe con etichetta (rubrica news)."""
+        if data.get("points"):
+            return sum(
+                META + POINT_GAP["label"] + len(self._lines("body", txt, size, width)) * size * LEADING["body"]
+                for _, txt in data["points"]
+            ) + POINT_GAP["between"] * (len(data["points"]) - 1)
+        return len(self._lines("body", data["body"], size, width)) * size * LEADING["body"]
+
     def _fact_layout(self, sizes, safe):
         """Posizioni fisse delle slide di contenuto, uguali per tutto il post."""
         l, t, r, btm = safe
@@ -192,7 +202,7 @@ class Mystery:
                 texts["hook"].append(data["hook"])
             elif kind == "fact":
                 texts["title"].append(data["title"])
-                texts["body"].append(data["body"])
+                texts["body"].append(data)
                 texts["highlight"].append(data.get("highlight") or f"{data['n']:02d}")
             else:
                 texts["cta"].append(data["cta"])
@@ -220,19 +230,23 @@ class Mystery:
         for role in ("hook", "highlight", "title", "cta"):
             sizes[role] = first_fit(role, lambda s, txt, role=role: ok(role, s, txt))
 
-        def body_fits(s, txt):
+        def body_fits(s, data):
             _, _, y_title = self._fact_layout(sizes, safe)
             y_body = y_title + 2 * sizes["title"] * LEADING["title"] + GAP["rule"] + GAP["after_rule"]
-            return len(self._lines("body", txt, s, width)) * s * LEADING["body"] <= btm - y_body
+            return self._body_height(data, s, width) <= btm - y_body
 
-        # se il testo non sta, si scende prima col corpo, poi col numero in evidenza
-        for hl in steps["highlight"]:
-            if hl > sizes["highlight"]:
-                continue
-            sizes["highlight"] = hl
-            sizes["body"] = first_fit("body", body_fits)
-            if body_fits(sizes["body"], max(texts["body"] or [""], key=len)):
-                break
+        # se il testo non sta, si scende prima col corpo, poi col numero in evidenza,
+        # infine col titolo: sempre per tutte le slide insieme
+        def settle():
+            for title in [x for x in steps["title"] if x <= sizes["title"]]:
+                sizes["title"] = title
+                for hl in [x for x in steps["highlight"] if x <= sizes["highlight"]]:
+                    sizes["highlight"] = hl
+                    sizes["body"] = first_fit("body", body_fits)
+                    if all(body_fits(sizes["body"], data) for data in texts["body"]):
+                        return
+
+        settle()
         self.sizes = sizes
         return sizes
 
@@ -279,6 +293,8 @@ class Mystery:
         self._masthead(d, data, safe)
         y_meta, y_hl, y_title = self._fact_layout(sz, safe)
         spaced(d, (l, y_meta), f"FILE {data['n']:02d} / {data['total']:02d}", _mono(META), muted)
+        if data.get("label"):
+            spaced(d, (r, y_meta), data["label"], _mono(META), acc, anchor_right=True)
         # zona del numero in evidenza: sempre presente (se manca, il numero della slide)
         hl = (data.get("highlight") or "").strip() or f"{data['n']:02d}"
         hf = _serif_italic(sz["highlight"])
@@ -287,8 +303,17 @@ class Mystery:
         tl = self._lines("title", data["title"], sz["title"], r - l)
         y = text_block(d, (l, y_title), tl, _serif(sz["title"]), sz["title"], text, LEADING["title"]) + GAP["rule"]
         d.line([l, y, l + 80, y], fill=acc, width=3)
-        bl = self._lines("body", data["body"], sz["body"], r - l)
-        text_block(d, (l, y + GAP["after_rule"]), bl, _body(sz["body"]), sz["body"], muted, LEADING["body"])
+        y += GAP["after_rule"]
+        if data.get("points"):
+            # rubrica news: etichetta piccola + una frase, per ogni punto
+            for label, txt in data["points"]:
+                spaced(d, (l, y), label, _mono(META), acc)
+                y += META + POINT_GAP["label"]
+                bl = self._lines("body", txt, sz["body"], r - l)
+                y = text_block(d, (l, y), bl, _body(sz["body"]), sz["body"], text, LEADING["body"]) + POINT_GAP["between"]
+        else:
+            bl = self._lines("body", data["body"], sz["body"], r - l)
+            text_block(d, (l, y), bl, _body(sz["body"]), sz["body"], muted, LEADING["body"])
 
     def cta(self, fg, data, safe):
         _, _, text, muted, acc = self.colors()

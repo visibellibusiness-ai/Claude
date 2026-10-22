@@ -1,7 +1,8 @@
 # Pagina Instagram automatica: "You Did Not Know" (@you.didnot.know)
 
 Pagina in inglese di curiosità verificate (corpo umano, animali, spazio, storia, psicologia…)
-che si gestisce da sola: **due post al giorno**, caroselli o Reel (anche Trial Reel),
+che si gestisce da sola: **ogni giorno una rubrica news** (carosello + Reel con le 5
+notizie del giorno) e **due post di curiosità** (caroselli o Reel, anche Trial Reel),
 generati, disegnati e pubblicati senza intervento umano.
 
 ## Perché questa nicchia
@@ -16,8 +17,8 @@ generati, disegnati e pubblicati senza intervento umano.
 
 ## Come funziona
 
-Ogni giorno alle 13:40 e alle 23:40 UTC (pomeriggio in Europa / mattina e sera negli USA) GitHub Actions esegue
-`.github/workflows/post.yml`:
+GitHub Actions esegue `.github/workflows/post.yml` ogni giorno alle 12:35 UTC per la
+rubrica news (vedi `news/README.md`) e alle 17:40 e 23:40 UTC per le curiosità:
 
 1. `bot/learn.py` legge le statistiche dei post usciti (copertura, salvataggi,
    condivisioni, like, commenti, follower). Una volta a settimana Claude le analizza

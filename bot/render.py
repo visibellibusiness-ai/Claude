@@ -31,6 +31,7 @@ def slide_data(post: dict, index: int) -> list[tuple[str, dict]]:
         scenes.append(("fact", {
             "n": n, "total": total, "title": s["title"], "body": s["body"],
             "highlight": s.get("highlight", ""), "index": index + 1,
+            "label": s.get("label", ""), "points": s.get("points"),
         }))
     scenes.append(("cta", {
         "cta": post["cta"], "handle": config.PAGE_HANDLE, "index": index + 1,
