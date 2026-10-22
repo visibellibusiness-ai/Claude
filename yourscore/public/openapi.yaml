@@ -1,0 +1,317 @@
+openapi: 3.0.3
+info:
+  title: Your Score API
+  version: 1.0.0
+  description: |
+    Referti di partita firmati da tutti i giocatori su un tablet a bordo campo, certificati
+    (impronta SHA-256 + firma Ed25519 + catena di hash) e consegnati a qualsiasi piattaforma di tornei.
+
+    Integrazione in tre passi:
+    1. la piattaforma carica evento e partite con i **propri ID** (upsert idempotente);
+    2. crea un link tablet per campo (o uno per l'arbitro che sceglie la partita);
+    3. riceve i referti certificati via **webhook** (o li legge via polling) e aggiorna il tabellone.
+
+    Autenticazione: `Authorization: Bearer <API key>` per la piattaforma,
+    `Authorization: Bearer <token tablet>` per gli endpoint `/v1/device/*`.
+servers:
+  - url: http://localhost:8080
+tags:
+  - name: Piattaforma
+  - name: Tablet
+  - name: Verifica
+paths:
+  /v1/formats:
+    get:
+      tags: [Verifica]
+      summary: Regolamenti di punteggio disponibili
+      security: []
+      responses:
+        '200': { description: Elenco dei formati, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Format' } } } } }
+  /v1/events/{event_id}:
+    put:
+      tags: [Piattaforma]
+      summary: Crea o aggiorna un evento (torneo) con l'ID della piattaforma
+      parameters: [{ $ref: '#/components/parameters/EventId' }]
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/EventInput' } } }
+      responses:
+        '200': { description: Evento, content: { application/json: { schema: { $ref: '#/components/schemas/Event' } } } }
+        '400': { $ref: '#/components/responses/Error' }
+  /v1/events:
+    get:
+      tags: [Piattaforma]
+      summary: Eventi della piattaforma
+      responses:
+        '200': { description: Eventi, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Event' } } } } }
+  /v1/events/{event_id}/matches/{match_id}:
+    put:
+      tags: [Piattaforma]
+      summary: Crea o aggiorna una partita (upsert, idempotente)
+      description: Se il referto è già certificato le squadre non si possono cambiare (409).
+      parameters: [{ $ref: '#/components/parameters/EventId' }, { $ref: '#/components/parameters/MatchId' }]
+      requestBody:
+        required: true
+        content: { application/json: { schema: { $ref: '#/components/schemas/MatchInput' } } }
+      responses:
+        '200': { description: Partita, content: { application/json: { schema: { $ref: '#/components/schemas/Match' } } } }
+        '400': { $ref: '#/components/responses/Error' }
+        '409': { $ref: '#/components/responses/Error' }
+    delete:
+      tags: [Piattaforma]
+      summary: Annulla una partita non ancora certificata
+      parameters: [{ $ref: '#/components/parameters/EventId' }, { $ref: '#/components/parameters/MatchId' }]
+      responses:
+        '200': { description: Partita annullata, content: { application/json: { schema: { $ref: '#/components/schemas/Match' } } } }
+  /v1/events/{event_id}/matches/batch:
+    post:
+      tags: [Piattaforma]
+      summary: Carica fino a 500 partite in una chiamata
+      description: Ogni partita riesce o fallisce da sola; l'esito è nell'array `results`.
+      parameters: [{ $ref: '#/components/parameters/EventId' }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [matches]
+              properties:
+                matches: { type: array, maxItems: 500, items: { allOf: [{ $ref: '#/components/schemas/MatchInput' }, { type: object, required: [external_id], properties: { external_id: { type: string } } }] } }
+      responses:
+        '200':
+          description: Esito per partita
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  results:
+                    type: array
+                    items: { type: object, properties: { external_id: { type: string }, ok: { type: boolean }, match: { $ref: '#/components/schemas/Match' }, error: { $ref: '#/components/schemas/ErrorBody' } } }
+  /v1/events/{event_id}/matches:
+    get:
+      tags: [Piattaforma]
+      summary: Partite di un evento
+      parameters:
+        - { $ref: '#/components/parameters/EventId' }
+        - { name: status, in: query, schema: { type: string, enum: [open, certified, disputed, cancelled] } }
+      responses:
+        '200': { description: Partite, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Match' } } } } }
+  /v1/events/{event_id}/devices:
+    post:
+      tags: [Piattaforma]
+      summary: Crea il link di un tablet
+      description: Con `court` il tablet vede solo quel campo; senza, vede tutte le partite dell'evento (arbitro che sceglie la partita).
+      parameters: [{ $ref: '#/components/parameters/EventId' }]
+      requestBody:
+        content: { application/json: { schema: { type: object, properties: { court: { type: string, example: '1' }, label: { type: string } } } } }
+      responses:
+        '200':
+          description: Il token è mostrato una sola volta
+          content:
+            application/json:
+              schema: { type: object, properties: { id: { type: string }, court: { type: string, nullable: true }, label: { type: string, nullable: true }, token: { type: string }, tablet_url: { type: string } } }
+  /v1/devices/{device_id}:
+    delete:
+      tags: [Piattaforma]
+      summary: Revoca un tablet (es. smarrito)
+      parameters: [{ name: device_id, in: path, required: true, schema: { type: string } }]
+      responses:
+        '200': { description: Revocato }
+  /v1/scoresheets:
+    get:
+      tags: [Piattaforma]
+      summary: Referti (alternativa ai webhook)
+      parameters:
+        - { name: event, in: query, schema: { type: string }, description: ID evento della piattaforma }
+        - { name: since, in: query, schema: { type: string, format: date-time }, description: Solo referti creati o modificati dopo questa data }
+      responses:
+        '200': { description: Referti in ordine cronologico, content: { application/json: { schema: { type: array, items: { $ref: '#/components/schemas/Scoresheet' } } } } }
+  /v1/scoresheets/{scoresheet_id}:
+    get:
+      tags: [Piattaforma]
+      summary: Un referto
+      parameters: [{ $ref: '#/components/parameters/ScoresheetId' }]
+      responses:
+        '200': { description: Referto, content: { application/json: { schema: { $ref: '#/components/schemas/Scoresheet' } } } }
+  /v1/scoresheets/{scoresheet_id}/signatures:
+    get:
+      tags: [Piattaforma]
+      summary: Immagini delle firme (solo per la piattaforma proprietaria)
+      parameters: [{ $ref: '#/components/parameters/ScoresheetId' }]
+      responses:
+        '200': { description: Firme, content: { application/json: { schema: { type: array, items: { type: object, properties: { player_external_id: { type: string }, signed_at: { type: string }, image_png_base64: { type: string } } } } } } }
+  /v1/scoresheets/{scoresheet_id}/void:
+    post:
+      tags: [Piattaforma]
+      summary: Annulla un referto (correzione) e riapre la partita
+      parameters: [{ $ref: '#/components/parameters/ScoresheetId' }]
+      requestBody:
+        required: true
+        content: { application/json: { schema: { type: object, required: [reason], properties: { reason: { type: string } } } } }
+      responses:
+        '200': { description: Referto annullato, content: { application/json: { schema: { $ref: '#/components/schemas/Scoresheet' } } } }
+  /v1/webhooks:
+    post:
+      tags: [Piattaforma]
+      summary: Registra un webhook
+      description: |
+        Ogni consegna è un POST JSON firmato: header `YourScore-Signature: t=<unix>,v1=<hex>` dove
+        `v1 = HMAC-SHA256(secret, "<t>.<corpo>")`. Rifiuta firme vecchie di oltre 5 minuti.
+        In caso di errore la consegna viene ritentata 3 volte. Header `YourScore-Event-Id` per scartare i doppioni.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { type: object, required: [url], properties: { url: { type: string }, events: { type: array, items: { type: string, enum: ['*', scoresheet.certified, scoresheet.disputed, scoresheet.voided] } } } }
+      responses:
+        '200': { description: Il secret è mostrato una sola volta, content: { application/json: { schema: { type: object, properties: { id: { type: string }, url: { type: string }, events: { type: array, items: { type: string } }, secret: { type: string } } } } } }
+    get:
+      tags: [Piattaforma]
+      summary: Webhook registrati
+      responses: { '200': { description: Webhook } }
+  /v1/webhooks/{webhook_id}:
+    delete:
+      tags: [Piattaforma]
+      summary: Elimina un webhook
+      parameters: [{ name: webhook_id, in: path, required: true, schema: { type: string } }]
+      responses: { '200': { description: Eliminato } }
+  /v1/device/matches:
+    get:
+      tags: [Tablet]
+      summary: Partite visibili dal tablet
+      security: [{ deviceToken: [] }]
+      responses: { '200': { description: Partite del campo o dell'evento } }
+  /v1/device/matches/{match_internal_id}/scoresheet:
+    post:
+      tags: [Tablet]
+      summary: Invia il referto firmato
+      description: |
+        Senza `dispute` servono le firme di tutti i giocatori: il referto viene certificato.
+        Con `dispute` il referto va al tavolo dell'organizzazione senza certificazione.
+        `client_id` rende l'invio ripetibile senza doppioni (rete che cade).
+      security: [{ deviceToken: [] }]
+      parameters: [{ name: match_internal_id, in: path, required: true, schema: { type: string } }]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required: [score, signatures]
+              properties:
+                client_id: { type: string }
+                score: { $ref: '#/components/schemas/Score' }
+                signatures: { type: array, items: { type: object, required: [player_external_id, image_png_base64], properties: { player_external_id: { type: string }, image_png_base64: { type: string }, signed_at: { type: string, format: date-time } } } }
+                referee: { type: object, properties: { name: { type: string } } }
+                dispute: { type: object, properties: { player_external_id: { type: string }, note: { type: string } } }
+      responses:
+        '200': { description: Referto, content: { application/json: { schema: { $ref: '#/components/schemas/Scoresheet' } } } }
+        '409': { $ref: '#/components/responses/Error' }
+        '422': { $ref: '#/components/responses/Error' }
+  /v1/verify/{scoresheet_id}:
+    get:
+      tags: [Verifica]
+      summary: Verifica pubblica di un referto
+      security: []
+      parameters: [{ $ref: '#/components/parameters/ScoresheetId' }]
+      responses:
+        '200': { description: Esito della verifica, content: { application/json: { schema: { type: object, properties: { valid: { type: boolean }, reason: { type: string }, status: { type: string }, hash: { type: string } } } } } }
+  /v1/public-key:
+    get:
+      tags: [Verifica]
+      summary: Chiave pubblica per verificare i referti in autonomia
+      security: []
+      responses: { '200': { description: Chiave Ed25519 in PEM } }
+components:
+  securitySchemes:
+    apiKey: { type: http, scheme: bearer, description: API key della piattaforma (ys_live_...) }
+    deviceToken: { type: http, scheme: bearer, description: Token del tablet (dt_...) }
+  parameters:
+    EventId: { name: event_id, in: path, required: true, schema: { type: string }, description: ID dell'evento nella piattaforma }
+    MatchId: { name: match_id, in: path, required: true, schema: { type: string }, description: ID della partita nella piattaforma }
+    ScoresheetId: { name: scoresheet_id, in: path, required: true, schema: { type: string } }
+  responses:
+    Error:
+      description: Errore
+      content: { application/json: { schema: { type: object, properties: { error: { $ref: '#/components/schemas/ErrorBody' } } } } }
+  schemas:
+    ErrorBody:
+      type: object
+      properties: { code: { type: string }, message: { type: string }, details: { type: object } }
+    Format:
+      type: object
+      properties:
+        id: { type: string, example: padel_bo3_super }
+        sport: { type: string, enum: [pickleball, padel, tennis, badminton, table_tennis] }
+        label: { type: string }
+        unit: { type: string, enum: [points, games] }
+        best_of: { type: integer }
+    EventInput:
+      type: object
+      required: [name]
+      properties:
+        name: { type: string }
+        format: { type: string, description: Formato predefinito delle partite, default: pickleball_11 }
+        starts_at: { type: string }
+    Event:
+      allOf: [{ $ref: '#/components/schemas/EventInput' }, { type: object, properties: { id: { type: string }, external_id: { type: string } } }]
+    Player:
+      type: object
+      required: [external_id, name]
+      properties: { external_id: { type: string, description: ID del giocatore nella piattaforma (o DUPR ID) }, name: { type: string } }
+    Team:
+      type: object
+      required: [players]
+      properties: { name: { type: string }, players: { type: array, minItems: 1, maxItems: 4, items: { $ref: '#/components/schemas/Player' } } }
+    MatchInput:
+      type: object
+      required: [teams]
+      properties:
+        court: { type: string }
+        round: { type: string }
+        scheduled_at: { type: string }
+        format: { type: string }
+        teams: { type: array, minItems: 2, maxItems: 2, items: { $ref: '#/components/schemas/Team' } }
+    Match:
+      allOf:
+        - { $ref: '#/components/schemas/MatchInput' }
+        - type: object
+          properties:
+            id: { type: string }
+            external_id: { type: string }
+            status: { type: string, enum: [open, certified, disputed, cancelled] }
+            scoresheet_id: { type: string, nullable: true }
+    Score:
+      type: array
+      description: Un elemento per set o game, [squadra 1, squadra 2]
+      items: { type: array, minItems: 2, maxItems: 2, items: { type: integer } }
+      example: [[6, 4], [3, 6], [10, 8]]
+    Scoresheet:
+      type: object
+      properties:
+        id: { type: string }
+        status: { type: string, enum: [certified, disputed, voided, superseded] }
+        event: { type: object, properties: { id: { type: string }, external_id: { type: string }, name: { type: string } } }
+        match: { type: object, properties: { id: { type: string }, external_id: { type: string }, court: { type: string }, round: { type: string } } }
+        format: { type: string }
+        teams: { type: array, items: { $ref: '#/components/schemas/Team' } }
+        score: { $ref: '#/components/schemas/Score' }
+        winner_team: { type: integer, enum: [0, 1] }
+        sets_won: { type: array, items: { type: integer } }
+        winner_player_external_ids: { type: array, items: { type: string } }
+        signatures: { type: array, items: { type: object, properties: { player_external_id: { type: string }, image_sha256: { type: string }, signed_at: { type: string } } } }
+        dispute: { type: object, nullable: true }
+        certified_at: { type: string, format: date-time }
+        certificate:
+          type: object
+          properties:
+            algorithm: { type: string, example: Ed25519 }
+            key_id: { type: string }
+            hash: { type: string, description: SHA-256 del contenuto certificato }
+            prev_hash: { type: string, nullable: true, description: Referto precedente della stessa piattaforma (catena) }
+            signature: { type: string }
+            verify_url: { type: string }
+security:
+  - apiKey: []

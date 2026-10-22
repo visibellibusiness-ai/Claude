@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Your Score Campo</title>
+<meta name="theme-color" content="#0f172a">
+<style>
+:root {
+  --bg: #f1f5f9; --card: #fff; --text: #0f172a; --muted: #64748b; --line: #e2e8f0;
+  --brand: #2563eb; --ok: #15803d; --ko: #b91c1c; --soft: #eff6ff;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { --bg: #0b1120; --card: #131c2e; --text: #e2e8f0; --muted: #94a3b8; --line: #23304a; --brand: #60a5fa; --ok: #22c55e; --ko: #f87171; --soft: #172554; }
+}
+:root[data-theme="dark"] { --bg: #0b1120; --card: #131c2e; --text: #e2e8f0; --muted: #94a3b8; --line: #23304a; --brand: #60a5fa; --ok: #22c55e; --ko: #f87171; --soft: #172554; }
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 18px/1.4 system-ui, -apple-system, sans-serif; }
+header { background: #0f172a; color: #fff; padding: calc(14px + env(safe-area-inset-top)) 18px 14px; display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+header b { font-size: 20px; }
+header span { opacity: .75; font-size: 15px; text-align: right; }
+main { max-width: 760px; margin: 0 auto; padding: 18px 16px 40px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px; margin-bottom: 14px; }
+h2 { margin: 0 0 12px; font-size: 22px; }
+.muted { color: var(--muted); font-size: 15px; }
+.btn { display: block; width: 100%; border: 0; border-radius: 14px; padding: 18px; font: inherit; font-weight: 700; background: var(--brand); color: #fff; margin-top: 12px; }
+.btn.ghost { background: transparent; color: var(--brand); border: 2px solid var(--brand); }
+.btn.ko { background: transparent; color: var(--ko); border: 2px solid var(--ko); }
+.btn:disabled { opacity: .4; }
+.match { display: block; width: 100%; text-align: left; background: var(--card); color: inherit; border: 2px solid var(--line); border-radius: 16px; padding: 16px; margin-bottom: 12px; font: inherit; }
+.match.open { border-color: var(--brand); }
+.match .vs { font-weight: 700; }
+.pill { display: inline-block; font-size: 13px; font-weight: 700; padding: 3px 10px; border-radius: 99px; background: var(--soft); color: var(--brand); }
+.pill.ok { color: var(--ok); } .pill.ko { color: var(--ko); }
+.sets { display: grid; gap: 10px; }
+.setrow { display: grid; grid-template-columns: 70px 1fr 1fr; gap: 10px; align-items: center; }
+.teamhdr { display: grid; grid-template-columns: 70px 1fr 1fr; gap: 10px; font-weight: 700; font-size: 15px; }
+.teamhdr div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
+.step { display: flex; align-items: center; justify-content: center; gap: 6px; }
+.step button { width: 52px; height: 52px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font-size: 26px; font-weight: 700; }
+.step output { min-width: 44px; text-align: center; font-size: 28px; font-weight: 800; }
+.err { color: var(--ko); font-weight: 600; min-height: 1.4em; margin-top: 10px; }
+.ok { color: var(--ok); }
+canvas { width: 100%; height: 220px; background: #fff; border: 2px dashed var(--line); border-radius: 14px; touch-action: none; display: block; }
+.row { display: flex; gap: 10px; } .row > * { flex: 1; }
+.big { font-size: 26px; font-weight: 800; text-align: center; margin: 8px 0; }
+.banner { background: #fef3c7; color: #78350f; border-radius: 12px; padding: 10px 14px; margin-bottom: 14px; font-size: 15px; }
+textarea { width: 100%; min-height: 100px; font: inherit; padding: 12px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); }
+</style>
+</head>
+<body>
+<header><b>Your Score</b><span id="hdr"></span></header>
+<main id="app"></main>
+<script>
+'use strict';
+const $ = s => document.querySelector(s);
+const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+const store = {
+  get(k, d) { try { const v = localStorage.getItem('ys-' + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
+  set(k, v) { try { localStorage.setItem('ys-' + k, JSON.stringify(v)); } catch (e) {} },
+};
+
+// Il link del tablet porta il token nell'ancora (#token=...): non finisce nei log del server.
+const fromHash = new URLSearchParams(location.hash.slice(1)).get('token');
+if (fromHash) { store.set('token', fromHash); history.replaceState(null, '', location.pathname); }
+const TOKEN = store.get('token', null);
+
+let formats = {}, data = null, cur = null;
+
+async function api(path, opts = {}) {
+  const r = await fetch(path, { ...opts, headers: { authorization: 'Bearer ' + TOKEN, 'content-type': 'application/json' } });
+  const body = await r.json().catch(() => ({}));
+  if (!r.ok) { const e = new Error(body.error ? body.error.message : 'errore ' + r.status); e.status = r.status; e.code = body.error && body.error.code; throw e; }
+  return body;
+}
+
+// ---------- Coda offline: se cade la rete il referto resta sul tablet e parte appena torna ----------
+const queue = () => store.get('queue', []);
+async function flush() {
+  const q = queue();
+  if (!q.length) return;
+  const left = [];
+  for (const item of q) {
+    try { await api(`/v1/device/matches/${item.match_id}/scoresheet`, { method: 'POST', body: JSON.stringify(item.body) }); }
+    catch (e) { if (!e.status) left.push(item); }  // gli errori del server (es. già certificato) non si ritentano
+  }
+  store.set('queue', left);
+  if (left.length !== q.length && !cur) load();
+}
+setInterval(flush, 15000);
+addEventListener('online', flush);
+
+async function load() {
+  if (!TOKEN) return view(`<div class="card"><h2>Tablet non collegato</h2><p class="muted">Apri il link del campo che ti ha dato l'organizzatore.</p></div>`);
+  try {
+    if (!Object.keys(formats).length) (await (await fetch('/v1/formats')).json()).forEach(f => formats[f.id] = f);
+    data = await api('/v1/device/matches');
+    $('#hdr').innerHTML = `${esc(data.event.name)}<br>${data.device.court ? 'Campo ' + esc(data.device.court) : esc(data.device.label || 'Tutti i campi')}`;
+    showList();
+  } catch (e) {
+    view(`<div class="card"><h2>Impossibile caricare le partite</h2><p class="err">${esc(e.message)}</p><button class="btn" onclick="load()">Riprova</button></div>`);
+  }
+}
+
+function view(html) { $('#app').innerHTML = html; scrollTo(0, 0); }
+const teamName = t => t.name;
+
+function showList() {
+  cur = null;
+  const pending = queue().length;
+  const open = data.matches.filter(m => m.status === 'open' || m.status === 'disputed');
+  const done = data.matches.filter(m => m.status === 'certified');
+  const label = m => ({ open: '<span class="pill">Da giocare</span>', certified: '<span class="pill ok">Certificata</span>', disputed: '<span class="pill ko">Contestata</span>' }[m.status] || '');
+  const card = m => `<button class="match ${m.status === 'open' ? 'open' : ''}" ${m.status === 'certified' ? 'disabled' : ''} onclick="startMatch('${m.id}')">
+      <div class="muted">${esc(m.round || '')}${m.court && !data.device.court ? ' · Campo ' + esc(m.court) : ''} ${label(m)}</div>
+      <div class="vs">${esc(teamName(m.teams[0]))}</div><div class="muted">contro</div><div class="vs">${esc(teamName(m.teams[1]))}</div></button>`;
+  view(`${pending ? `<div class="banner">${pending} referto in attesa di rete: verrà inviato appena torna la connessione.</div>` : ''}
+    <h2>Scegli la partita</h2>
+    ${open.length ? open.map(card).join('') : '<div class="card muted">Nessuna partita da giocare su questo tablet.</div>'}
+    ${done.length ? `<p class="muted" style="margin-top:22px">Già certificate</p>${done.map(card).join('')}` : ''}
+    <button class="btn ghost" onclick="load()">Aggiorna</button>`);
+}
+
+// ---------- Punteggio ----------
+function startMatch(id) {
+  const m = data.matches.find(x => x.id === id);
+  const f = formats[m.format];
+  cur = { m, f, sets: [[0, 0]], sigs: {}, order: m.teams.flatMap((t, ti) => t.players.map(p => ({ ...p, team: ti }))), client_id: crypto.randomUUID ? crypto.randomUUID() : String(Date.now()) + Math.random() };
+  showScore();
+}
+
+function check() {
+  const { f, sets } = cur;
+  const need = Math.ceil(f.best_of / 2), won = [0, 0];
+  for (let i = 0; i < sets.length; i++) {
+    const [a, b] = sets[i];
+    if (a === b) return { error: `Set ${i + 1}: non può finire in parità` };
+    const decider = f.best_of > 1 && i === f.best_of - 1;
+    const hi = Math.max(a, b), lo = Math.min(a, b);
+    let ok;
+    if (f.unit === 'points' || (decider && f.final === 'super_tiebreak')) {
+      const to = f.unit === 'points' ? f.to : 10, by = f.unit === 'points' ? f.win_by : 2;
+      ok = f.cap && hi === f.cap ? lo >= f.cap - by : hi === to ? hi - lo >= by : hi > to && hi - lo === by;
+    } else ok = (hi === f.games && lo <= f.games - 2) || (hi === f.games + 1 && lo >= f.games - 1);
+    if (!ok) return { error: `Set ${i + 1}: punteggio non valido per ${f.label}` };
+    won[a > b ? 0 : 1]++;
+  }
+  if (won[0] < need && won[1] < need) return { more: sets.length < f.best_of, error: 'La partita non è ancora finita' };
+  return { winner: won[0] === need ? 0 : 1, won };
+}
+
+function showScore() {
+  const { m, f, sets } = cur;
+  const c = check();
+  const unit = f.unit === 'points' ? 'Game' : 'Set';
+  view(`<div class="card"><h2>Risultato</h2><p class="muted">${esc(f.label)}</p>
+    <div class="teamhdr"><div></div><div>${esc(teamName(m.teams[0]))}</div><div>${esc(teamName(m.teams[1]))}</div></div>
+    <div class="sets">${sets.map((s, i) => `<div class="setrow"><div class="muted">${isSuperTb(i) ? 'Super tie-break' : unit + ' ' + (i + 1)}</div>
+      ${[0, 1].map(t => `<div class="step"><button onclick="bump(${i},${t},-1)" aria-label="meno">−</button><output>${s[t]}</output><button onclick="bump(${i},${t},1)" aria-label="più">+</button></div>`).join('')}</div>`).join('')}</div>
+    ${f.best_of > 1 ? `<div class="row">${sets.length < f.best_of ? `<button class="btn ghost" onclick="addSet()">+ ${unit}</button>` : ''}${sets.length > 1 ? `<button class="btn ghost" onclick="removeSet()">− ${unit}</button>` : ''}</div>` : ''}
+    <p class="err">${c.winner == null ? esc(c.error) : ''}</p>
+    ${c.winner != null ? `<p class="big ok">Vince ${esc(teamName(m.teams[c.winner]))}</p>` : ''}
+    <button class="btn" ${c.winner == null ? 'disabled' : ''} onclick="showSign(0)">Conferma e firma</button>
+    <button class="btn ghost" onclick="showList()">Indietro</button></div>`);
+}
+function bump(i, t, d) {
+  const f = cur.f;
+  const s = cur.sets[i];
+  // Il primo tocco su "+" porta direttamente al punteggio di vittoria più comune.
+  if (d > 0 && s[t] === 0 && s[1 - t] === 0) s[t] = isSuperTb(i) ? 10 : f.unit === 'points' ? f.to : f.games;
+  else s[t] = Math.max(0, s[t] + d);
+  showScore();
+}
+const isSuperTb = i => cur.f.unit === 'games' && cur.f.final === 'super_tiebreak' && cur.f.best_of > 1 && i === cur.f.best_of - 1;
+function addSet() { cur.sets.push([0, 0]); showScore(); }
+function removeSet() { cur.sets.pop(); showScore(); }
+
+// ---------- Firme ----------
+function showSign(idx) {
+  const { m, order, sets } = cur;
+  if (idx >= order.length) return submit();
+  const p = order[idx];
+  const score = sets.map(s => s.join('-')).join('  ');
+  view(`<div class="card"><p class="muted">Firma ${idx + 1} di ${order.length} · ${esc(teamName(m.teams[p.team]))}</p>
+    <h2>${esc(p.name)}</h2>
+    <p>Confermo il risultato <b>${esc(score)}</b><br><span class="muted">${esc(teamName(m.teams[0]))} contro ${esc(teamName(m.teams[1]))}</span></p>
+    <canvas id="pad"></canvas>
+    <div class="row"><button class="btn ghost" onclick="clearPad()">Cancella</button><button class="btn" id="signOk" disabled onclick="saveSign(${idx})">Firmo</button></div>
+    <button class="btn ko" onclick="showDispute(${idx})">Non sono d'accordo</button>
+    <button class="btn ghost" onclick="${idx ? `showSign(${idx - 1})` : 'showScore()'}">Indietro</button></div>`);
+  initPad();
+}
+let pad, drawn = false;
+function initPad() {
+  pad = $('#pad');
+  const r = pad.getBoundingClientRect(), dpr = Math.min(2, devicePixelRatio || 1);
+  pad.width = r.width * dpr; pad.height = r.height * dpr;
+  const ctx = pad.getContext('2d');
+  ctx.scale(dpr, dpr); ctx.lineWidth = 2.6; ctx.lineCap = 'round'; ctx.lineJoin = 'round'; ctx.strokeStyle = '#0f172a';
+  drawn = false;
+  let last = null;
+  const pt = e => { const b = pad.getBoundingClientRect(); return [e.clientX - b.left, e.clientY - b.top]; };
+  pad.onpointerdown = e => { pad.setPointerCapture(e.pointerId); last = pt(e); };
+  pad.onpointermove = e => {
+    if (!last) return;
+    const p = pt(e);
+    ctx.beginPath(); ctx.moveTo(...last); ctx.lineTo(...p); ctx.stroke();
+    last = p;
+    if (!drawn) { drawn = true; $('#signOk').disabled = false; }
+  };
+  pad.onpointerup = pad.onpointercancel = () => last = null;
+}
+function clearPad() { initPad(); $('#signOk').disabled = true; }
+// Si salva solo l'immagine del tratto, ridotta: niente pressione né velocità (non è un dato biometrico).
+function padPng() {
+  const out = document.createElement('canvas');
+  out.width = 480; out.height = Math.round(480 * pad.height / pad.width);
+  const ctx = out.getContext('2d');
+  ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, out.width, out.height);
+  ctx.drawImage(pad, 0, 0, out.width, out.height);
+  return out.toDataURL('image/png');
+}
+function saveSign(idx) {
+  const p = cur.order[idx];
+  cur.sigs[p.external_id] = { player_external_id: p.external_id, image_png_base64: padPng(), signed_at: new Date().toISOString() };
+  showSign(idx + 1);
+}
+
+function showDispute(idx) {
+  const p = cur.order[idx];
+  view(`<div class="card"><h2>Risultato contestato</h2><p>${esc(p.name)}, scrivi brevemente il motivo. La partita passa al tavolo dell'organizzazione.</p>
+    <textarea id="note" placeholder="Es. il secondo set è finito 6-4, non 4-6"></textarea>
+    <button class="btn ko" onclick="submit('${esc(p.external_id)}')">Invia al tavolo</button>
+    <button class="btn ghost" onclick="showSign(${idx})">Indietro</button></div>`);
+}
+
+async function submit(disputeBy) {
+  const { m, sets, sigs, client_id } = cur;
+  const body = { client_id, score: sets, signatures: Object.values(sigs) };
+  if (disputeBy) body.dispute = { player_external_id: disputeBy, note: ($('#note') || {}).value || '' };
+  view(`<div class="card"><h2>Invio in corso…</h2></div>`);
+  try {
+    const s = await api(`/v1/device/matches/${m.id}/scoresheet`, { method: 'POST', body: JSON.stringify(body) });
+    done(s);
+  } catch (e) {
+    if (!e.status) {
+      store.set('queue', [...queue(), { match_id: m.id, body }]);
+      return view(`<div class="card"><h2>Salvato sul tablet</h2><p>Manca la connessione: il referto verrà inviato appena torna la rete. Non serve rifarlo.</p><button class="btn" onclick="load()">Prossima partita</button></div>`);
+    }
+    view(`<div class="card"><h2>Referto non inviato</h2><p class="err">${esc(e.message)}</p><button class="btn" onclick="showScore()">Torna al punteggio</button><button class="btn ghost" onclick="load()">Elenco partite</button></div>`);
+  }
+}
+
+function done(s) {
+  const ok = s.status === 'certified';
+  view(`<div class="card" style="text-align:center"><h2 class="${ok ? 'ok' : 'err'}">${ok ? '✓ Referto certificato' : 'Inviato al tavolo'}</h2>
+    <p class="big">${esc(s.teams[s.winner_team].name)}</p><p>${s.score.map(x => x.join('-')).join('  ')}</p>
+    ${ok ? `<p class="muted">Codice di verifica<br><b>${esc(s.certificate.hash.slice(0, 12).toUpperCase())}</b></p>` : '<p class="muted">L\'organizzazione verificherà il risultato.</p>'}
+    <button class="btn" onclick="load()">Prossima partita</button></div>`);
+}
+
+flush().finally(load);
+</script>
+</body>
+</html>

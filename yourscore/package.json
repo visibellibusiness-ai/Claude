@@ -1,0 +1,13 @@
+{
+  "name": "yourscore",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Referti di partita firmati dai giocatori e certificati, integrabili in qualsiasi piattaforma di tornei",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "node src/server.js",
+    "create-platform": "node src/server.js create-platform",
+    "demo": "node examples/demo.js",
+    "test": "node --test test/api.test.js"
+  }
+}
