@@ -148,7 +148,8 @@ Domande da fare a OpenPlay e RAQT al primo incontro:
 - Mancano la **marca temporale qualificata** e il **sigillo elettronico qualificato** di un
   prestatore eIDAS, indicati dalla ricerca legale per dare pieno valore probatorio: vanno aggiunti
   dopo il parere di un avvocato.
-- Non ci sono ancora il pannello per l'organizzatore, l'inserimento vocale del punteggio e il QR code
-  dei link.
+- Non ci sono ancora il pannello per l'organizzatore e il QR code dei link.
+- Il punteggio a voce usa il riconoscimento vocale del browser (Chrome, Safari): va provato sul campo,
+  col rumore vero. Dove non c'è, si apre un campo di testo da dettare col microfono della tastiera.
 - Le regole di punteggio coprono i formati più comuni (`GET /v1/formats`); altri si aggiungono in
   `src/rules.js`.

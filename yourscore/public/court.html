@@ -38,7 +38,20 @@ h2 { margin: 0 0 12px; font-size: 22px; }
 .teamhdr div { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: center; }
 .step { display: flex; align-items: center; justify-content: center; gap: 6px; }
 .step button { width: 52px; height: 52px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font-size: 26px; font-weight: 700; }
-.step output { min-width: 44px; text-align: center; font-size: 28px; font-weight: 800; }
+.step .val { min-width: 64px; height: 52px; border-radius: 12px; border: 2px solid var(--brand); background: var(--soft); color: var(--text); font: inherit; font-size: 28px; font-weight: 800; }
+.sheet-bg { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 10; }
+.sheet { position: fixed; left: 0; right: 0; bottom: 0; z-index: 11; background: var(--card); border-radius: 20px 20px 0 0; padding: 18px 16px calc(18px + env(safe-area-inset-bottom)); max-width: 760px; margin: 0 auto; max-height: 92vh; overflow-y: auto; }
+.grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 8px; }
+.grid button { height: 58px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; font-size: 24px; font-weight: 800; }
+.grid button.hint { border: 2px solid var(--brand); }
+.grid button.on { background: var(--brand); color: #fff; }
+.keypad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-top: 10px; }
+.keypad button { height: 58px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); font: inherit; font-size: 24px; font-weight: 700; }
+.kpval { font-size: 34px; font-weight: 800; text-align: center; min-height: 44px; }
+.voice { display: flex; align-items: center; justify-content: center; gap: 10px; background: #eab308; color: #1a1a1a; }
+.voice.listening { background: var(--ko); color: #fff; }
+.heard { background: var(--bg); border-radius: 12px; padding: 10px 14px; font-style: italic; color: var(--muted); margin-bottom: 10px; }
+input.txt { width: 100%; font: inherit; padding: 14px; border-radius: 12px; border: 1px solid var(--line); background: var(--bg); color: var(--text); }
 .err { color: var(--ko); font-weight: 600; min-height: 1.4em; margin-top: 10px; }
 .ok { color: var(--ok); }
 canvas { width: 100%; height: 220px; background: #fff; border: 2px dashed var(--line); border-radius: 14px; touch-action: none; display: block; }
@@ -153,10 +166,12 @@ function showScore() {
   const { m, f, sets } = cur;
   const c = check();
   const unit = f.unit === 'points' ? 'Game' : 'Set';
-  view(`<div class="card"><h2>Risultato</h2><p class="muted">${esc(f.label)}</p>
-    <div class="teamhdr"><div></div><div>${esc(teamName(m.teams[0]))}</div><div>${esc(teamName(m.teams[1]))}</div></div>
-    <div class="sets">${sets.map((s, i) => `<div class="setrow"><div class="muted">${isSuperTb(i) ? 'Super tie-break' : unit + ' ' + (i + 1)}</div>
-      ${[0, 1].map(t => `<div class="step"><button onclick="bump(${i},${t},-1)" aria-label="meno">−</button><output>${s[t]}</output><button onclick="bump(${i},${t},1)" aria-label="più">+</button></div>`).join('')}</div>`).join('')}</div>
+  view(`<div class="card"><h2>Risultato</h2><p class="muted">${esc(f.label)} · tocca un numero per sceglierlo</p>
+    ${cur.heard ? `<div class="heard">«${esc(cur.heard)}»</div>` : ''}
+    <button class="btn voice" id="micBtn" onclick="listen()">🎤 Detta il punteggio</button>
+    <div class="teamhdr" style="margin-top:16px"><div></div><div>${esc(teamName(m.teams[0]))}</div><div>${esc(teamName(m.teams[1]))}</div></div>
+    <div class="sets">${sets.map((s, i) => `<div class="setrow"><div class="muted">${setName(i)}</div>
+      ${[0, 1].map(t => `<div class="step"><button onclick="bump(${i},${t},-1)" aria-label="meno">−</button><button class="val" onclick="openPicker(${i},${t})" aria-label="scegli punteggio">${s[t]}</button><button onclick="bump(${i},${t},1)" aria-label="più">+</button></div>`).join('')}</div>`).join('')}</div>
     ${f.best_of > 1 ? `<div class="row">${sets.length < f.best_of ? `<button class="btn ghost" onclick="addSet()">+ ${unit}</button>` : ''}${sets.length > 1 ? `<button class="btn ghost" onclick="removeSet()">− ${unit}</button>` : ''}</div>` : ''}
     <p class="err">${c.winner == null ? esc(c.error) : ''}</p>
     ${c.winner != null ? `<p class="big ok">Vince ${esc(teamName(m.teams[c.winner]))}</p>` : ''}
@@ -172,8 +187,130 @@ function bump(i, t, d) {
   showScore();
 }
 const isSuperTb = i => cur.f.unit === 'games' && cur.f.final === 'super_tiebreak' && cur.f.best_of > 1 && i === cur.f.best_of - 1;
+const setName = i => isSuperTb(i) ? 'Super tie-break' : (cur.f.unit === 'points' ? 'Game ' : 'Set ') + (i + 1);
 function addSet() { cur.sets.push([0, 0]); showScore(); }
 function removeSet() { cur.sets.pop(); showScore(); }
+
+// ---------- Griglia di numeri + tastierino ----------
+// Un tocco sul numero apre la griglia: un solo tocco per il punteggio. Il tastierino serve per i numeri fuori griglia.
+function openPicker(i, t) {
+  const f = cur.f;
+  const to = isSuperTb(i) ? 10 : f.unit === 'points' ? f.to : f.games;
+  const max = f.unit === 'games' && !isSuperTb(i) ? f.games + 1 : to + 7;
+  const hints = f.unit === 'games' && !isSuperTb(i) ? [f.games, f.games + 1] : [to, to + 1, to + 2];
+  const val = cur.sets[i][t];
+  closePicker();
+  const box = document.createElement('div');
+  box.id = 'picker';
+  box.innerHTML = `<div class="sheet-bg" onclick="closePicker()"></div><div class="sheet">
+    <p class="muted" style="margin:0 0 4px">${setName(i)}</p>
+    <h2>${esc(teamName(cur.m.teams[t]))}</h2>
+    <div class="grid">${Array.from({ length: max + 1 }, (_, n) => `<button class="${n === val ? 'on' : hints.includes(n) ? 'hint' : ''}" onclick="pick(${i},${t},${n})">${n}</button>`).join('')}</div>
+    <p class="muted" style="margin:14px 0 6px">Altro numero</p>
+    <div class="kpval" id="kpv"></div>
+    <div class="keypad">${[1, 2, 3, 4, 5, 6, 7, 8, 9].map(n => `<button onclick="kp('${n}')">${n}</button>`).join('')}<button onclick="kp('del')">⌫</button><button onclick="kp('0')">0</button><button onclick="kp('ok',${i},${t})" style="background:var(--brand);color:#fff">OK</button></div>
+    <button class="btn ghost" onclick="closePicker()">Annulla</button></div>`;
+  document.body.appendChild(box);
+}
+function closePicker() { const p = $('#picker'); if (p) p.remove(); }
+function kp(k, i, t) {
+  const el = $('#kpv');
+  if (k === 'del') el.textContent = el.textContent.slice(0, -1);
+  else if (k === 'ok') { if (el.textContent !== '') pick(i, t, +el.textContent); }
+  else if (el.textContent.length < 2) el.textContent += k;
+}
+function pick(i, t, n) {
+  cur.sets[i][t] = n;
+  cur.heard = null;
+  closePicker();
+  showScore();
+  // Dopo il punteggio della prima squadra si passa subito alla seconda: due tocchi per set.
+  if (t === 0 && cur.sets[i][1] === 0 && n > 0) openPicker(i, 1);
+}
+
+// ---------- Punteggio a voce ----------
+const NUM = { zero: 0, uno: 1, una: 1, due: 2, tre: 3, quattro: 4, cinque: 5, sei: 6, sette: 7, otto: 8, nove: 9, dieci: 10,
+  undici: 11, dodici: 12, tredici: 13, quattordici: 14, quindici: 15, sedici: 16, diciassette: 17, diciotto: 18, diciannove: 19,
+  venti: 20, ventuno: 21, ventidue: 22, ventitre: 23, ventiquattro: 24, venticinque: 25, ventisei: 26, ventisette: 27, ventotto: 28, ventinove: 29, trenta: 30 };
+const STOP = new Set(['e', 'ed', 'di', 'del', 'della', 'la', 'il', 'lo', 'i', 'gli', 'le', 'de', 'da']);
+const norm = s => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '')
+  .replace(/(\d)\s*[-–:/]\s*(\d)/g, '$1 a $2').replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+function lev(a, b) {
+  const d = Array.from({ length: a.length + 1 }, (_, i) => [i]);
+  for (let j = 1; j <= b.length; j++) d[0][j] = j;
+  for (let i = 1; i <= a.length; i++) for (let j = 1; j <= b.length; j++)
+    d[i][j] = Math.min(d[i - 1][j] + 1, d[i][j - 1] + 1, d[i - 1][j - 1] + (a[i - 1] === b[j - 1] ? 0 : 1));
+  return d[a.length][b.length];
+}
+const similar = (w, t) => w === t || (t.length >= 4 && lev(w, t) <= (t.length >= 7 ? 2 : 1));
+// Posizione della prima parola della frase che corrisponde a un nome della squadra (-1 se assente).
+function teamPos(words, team) {
+  const toks = team.players.flatMap(p => norm(p.name).split(' ')).concat(norm(team.name).split(' ')).filter(t => t.length > 2 && !STOP.has(t));
+  const i = words.findIndex(w => toks.some(t => similar(w, t)));
+  return i;
+}
+// «Cugliari Seccia 11 a 1, 12 a 10» → [[11,1],[12,10]] dal punto di vista della squadra nominata per prima.
+function parseScore(text) {
+  const words = norm(text).split(' ').filter(Boolean).map(w => w in NUM ? String(NUM[w]) : w);
+  const nums = words.filter(w => /^\d+$/.test(w)).map(Number);
+  if (nums.length < 2) return { error: 'Non ho capito i numeri. Di\' ad esempio «11 a 7, 11 a 9».' };
+  const sets = [];
+  for (let k = 0; k + 1 < nums.length && sets.length < cur.f.best_of; k += 2) sets.push([nums[k], nums[k + 1]]);
+  const pa = teamPos(words, cur.m.teams[0]), pb = teamPos(words, cur.m.teams[1]);
+  const swap = pb >= 0 && (pa < 0 || pb < pa);
+  return { sets: swap ? sets.map(([a, b]) => [b, a]) : sets };
+}
+function applyHeard(text) {
+  const r = parseScore(text);
+  cur.heard = text;
+  if (r.error) { showScore(); $('.err').textContent = r.error; speak(r.error); return; }
+  cur.sets = r.sets;
+  showScore();
+  const c = check();
+  speak(c.winner != null
+    ? `Vince ${teamName(cur.m.teams[c.winner])}, ${cur.sets.map(s => s.join(' a ')).join(', ')}. Controlla e conferma.`
+    : 'Ho inserito il punteggio, ma va controllato.');
+}
+function speak(t) {
+  try { const u = new SpeechSynthesisUtterance(t); u.lang = 'it-IT'; speechSynthesis.cancel(); speechSynthesis.speak(u); } catch (e) {}
+}
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+let rec = null;
+function listen() {
+  if (!SR) return typedVoice('Il riconoscimento vocale non è disponibile su questo browser: usa il microfono della tastiera.');
+  if (rec) { rec.stop(); return; }
+  rec = new SR();
+  rec.lang = 'it-IT'; rec.interimResults = false; rec.maxAlternatives = 3;
+  const btn = $('#micBtn');
+  btn.classList.add('listening'); btn.textContent = '● Ti ascolto… (tocca per fermare)';
+  rec.onresult = e => {
+    const alts = Array.from(e.results[0]).map(a => a.transcript);
+    // Preferisce la prima trascrizione che dà un risultato completo e valido.
+    const saved = cur.sets;
+    const good = alts.find(a => { const r = parseScore(a); if (r.error) return false; cur.sets = r.sets; const ok = check().winner != null; cur.sets = saved; return ok; });
+    applyHeard(good || alts[0]);
+  };
+  rec.onerror = e => {
+    if (e.error === 'no-speech') return;
+    typedVoice(e.error === 'not-allowed' ? 'Permesso del microfono negato.' : 'Riconoscimento vocale non disponibile.');
+  };
+  rec.onend = () => { rec = null; const b = $('#micBtn'); if (b) { b.classList.remove('listening'); b.textContent = '🎤 Detta il punteggio'; } };
+  try { rec.start(); } catch (e) { rec = null; typedVoice('Impossibile avviare il microfono.'); }
+}
+// Ripiego: si scrive la frase (o la si detta col microfono della tastiera) e viene interpretata allo stesso modo.
+function typedVoice(msg) {
+  closePicker();
+  const box = document.createElement('div');
+  box.id = 'picker';
+  box.innerHTML = `<div class="sheet-bg" onclick="closePicker()"></div><div class="sheet">
+    <h2>Detta o scrivi il punteggio</h2><p class="muted">${esc(msg)}</p>
+    <p class="muted">Esempio: «${esc(cur.m.teams[0].players[0].name.split(' ').pop())} 11 a 7, 11 a 9»</p>
+    <input class="txt" id="vtxt" placeholder="Scrivi qui…">
+    <button class="btn" onclick="const v=$('#vtxt').value; closePicker(); applyHeard(v)">Inserisci</button>
+    <button class="btn ghost" onclick="closePicker()">Annulla</button></div>`;
+  document.body.appendChild(box);
+  setTimeout(() => { const i = $('#vtxt'); if (i) i.focus(); }, 200);
+}
 
 // ---------- Firme ----------
 function showSign(idx) {

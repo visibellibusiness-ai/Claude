@@ -52,10 +52,22 @@ Prova eseguita il 22/10/2026, 13:40:38.
 
 ## Dal tablet del campo 1
 
-Le due finali del campo 1 sono state inserite e firmate dal tablet in un browser, come farebbe un giocatore:
-[punteggio](tablet-punteggio.png) · [firma](tablet-firma.png) · [referto certificato](tablet-certificato.png).
+Le due finali del campo 1 sono state inserite e firmate dal tablet in un browser, come farebbe un giocatore.
 
-Cosa migliorare, emerso dalla prova: arrivare a un punteggio come 12-10 richiede molti tocchi su «+».
-Serve un tastierino numerico o l'inserimento a voce.
+**Prima prova (solo tasti + e −).** Arrivare a 12-10 richiedeva molti tocchi: [punteggio](tablet-punteggio.png) ·
+[firma](tablet-firma.png) · [referto certificato](tablet-certificato.png).
+
+**Seconda prova, con i nuovi metodi di inserimento:**
+
+- **Griglia e tastierino**, finale del doppio maschile 11-1 12-10: si tocca il numero e si sceglie dalla
+  [griglia](tablet-griglia.png); dopo la prima squadra la griglia si riapre da sola per la seconda.
+  Totale 9 tocchi, compreso il 10 scritto apposta col [tastierino](tablet-tastierino.png) (7 solo con la griglia).
+- **Voce**, finale del singolare maschile: detta dal punto di vista di chi ha perso,
+  «Seccia uno a undici, undici a otto, tre a undici», è stata girata correttamente in 11-1 8-11 11-3
+  ([schermata](tablet-voce.png)) e letta ad alta voce per conferma prima delle firme.
+  Il microfono è stato simulato: il browser di prova non ne ha uno vero.
+
+Altre frasi riconosciute correttamente: «Cugliari 11-1 8-11 11-3», «undici uno otto undici undici tre»,
+«vince Cugliari undici a uno, otto a undici, undici a tre», «Seccia 1 11, 11 8, 3 11».
 
 Per rifare la prova: `node examples/campionati-italiani-2026.js`.
