@@ -58,17 +58,48 @@ Questi passaggi richiedono il tuo telefono e i tuoi account, quindi vanno fatti 
    Metti foto profilo e bio (sotto trovi una proposta).
 2. **Crea una Pagina Facebook** e collegala all'account Instagram
    (Instagram → Impostazioni → Centro gestione account).
-3. **Crea un'app Meta** su developers.facebook.com → Le mie app → Crea app →
-   tipo "Business". Aggiungi il prodotto **Instagram** (API con login di Facebook).
-4. Da **Graph API Explorer** genera un token con i permessi
-   `instagram_basic`, `instagram_content_publish`, `instagram_manage_insights`, `pages_show_list`,
-   `pages_read_engagement`, `business_management`, poi convertilo in
-   **token di lunga durata** (Strumenti → Debug token di accesso → Estendi).
-5. Con il token di lunga durata, in Graph API Explorer esegui
-   `me/accounts?fields=name,access_token,instagram_business_account` e copia:
-   - l'`id` dentro `instagram_business_account` → è `IG_USER_ID`;
-   - l'`access_token` della Pagina → è `IG_ACCESS_TOKEN`. Ottenuto da un token
-     di lunga durata, **non scade** (verificalo nel Debug token: "Scade: mai").
+3. **Crea l'app Meta** (da computer, su developers.facebook.com). Le voci possono
+   apparire in inglese o in italiano: le trovi scritte in entrambe le lingue.
+   1. Entra con il tuo Facebook e premi **Inizia / Get Started**: accetta le
+      condizioni e conferma email o telefono (solo la prima volta).
+   2. In alto a destra **Le mie app / My Apps** → **Crea app / Create App**.
+   3. *Dettagli dell'app*: nome `You Did Not Know Bot`, la tua email → **Avanti**.
+   4. *Casi d'uso*: scegli **Gestisci messaggi e contenuti su Instagram /
+      Manage messaging & content on Instagram** → **Avanti**.
+   5. *Business*: scegli **Non voglio collegare un portfolio aziendale per ora /
+      I don't want to connect a business portfolio yet** → **Avanti**.
+   6. *Requisiti* e *Panoramica*: **Avanti** → **Vai alla dashboard / Go to dashboard**
+      (può chiederti la password di Facebook).
+   7. Nella dashboard: **Casi d'uso / Use cases** → sul caso Instagram premi
+      **Personalizza / Customize** → scegli **Configurazione API con accesso tramite
+      Facebook / API setup with Facebook login**.
+   8. Nella lista dei permessi controlla che ci siano `instagram_basic`,
+      `instagram_content_publish`, `pages_show_list`, `pages_read_engagement`,
+      `business_management`, e aggiungi `instagram_manage_insights` (**Aggiungi / Add**).
+   L'app può restare in modalità sviluppo: sei l'amministratore, quindi non serve la
+   revisione di Meta né la verifica aziendale.
+4. **Genera il token** su developers.facebook.com/tools/explorer (*Graph API Explorer*).
+   1. A destra, in **Meta App**, scegli `You Did Not Know Bot`; in **User or Page**
+      scegli **Get User Access Token**.
+   2. In **Permissions** aggiungi uno per uno: `instagram_basic`,
+      `instagram_content_publish`, `instagram_manage_insights`, `pages_show_list`,
+      `pages_read_engagement`, `business_management`.
+   3. Premi **Generate Access Token**: nella finestra continua con il tuo profilo,
+      seleziona la Pagina **You Did Not Know** e l'account **@you.didnot.know**,
+      lascia attivi tutti i permessi → **Salva / Save**.
+   4. Rendilo di lunga durata: premi la **i** blu accanto al token → **Open in Access
+      Token Tool** → in fondo **Extend Access Token** → copia il nuovo token.
+5. **Prendi i due valori finali**, sempre nel Graph API Explorer:
+   1. Incolla il token appena esteso nel campo **Access Token**.
+   2. Nella barra della richiesta (accanto a **GET**) scrivi
+      `me/accounts?fields=name,access_token,instagram_business_account` → **Submit**.
+   3. Nella risposta, nel blocco della Pagina "You Did Not Know", copia:
+      - il numero `id` dentro `instagram_business_account` → è **IG_USER_ID**;
+      - il valore `access_token` della Pagina (lungo, inizia con `EAA`) → è
+        **IG_ACCESS_TOKEN**.
+   4. Controllo: su developers.facebook.com/tools/debug/accesstoken incolla
+      IG_ACCESS_TOKEN → **Debug**: alla voce **Expires / Scadenza** deve esserci
+      **Never / Mai**. Così non dovrai mai rinnovarlo.
 6. Crea una **chiave API Anthropic** su console.anthropic.com.
 7. Nel repo GitHub: Settings → Secrets and variables → Actions → aggiungi
    `ANTHROPIC_API_KEY`, `IG_USER_ID`, `IG_ACCESS_TOKEN`.
