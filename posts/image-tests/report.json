@@ -1,0 +1,42 @@
+{
+  "cpu": 2,
+  "python": "3.12.15",
+  "results": [
+    {
+      "model": "sd-turbo",
+      "name": "rates",
+      "load_s": 172.2,
+      "gen_s": 26.3
+    },
+    {
+      "model": "sd-turbo",
+      "name": "battery",
+      "load_s": 0.0,
+      "gen_s": 25.6
+    },
+    {
+      "model": "sd-turbo",
+      "name": "comet",
+      "load_s": 0.0,
+      "gen_s": 26.0
+    },
+    {
+      "model": "vega",
+      "name": "rates",
+      "load_s": 1268.1,
+      "gen_s": 135.5
+    },
+    {
+      "model": "vega",
+      "name": "battery",
+      "load_s": 0.0,
+      "gen_s": 110.2
+    },
+    {
+      "model": "vega",
+      "name": "comet",
+      "load_s": 0.0,
+      "gen_s": 110.7
+    }
+  ]
+}
