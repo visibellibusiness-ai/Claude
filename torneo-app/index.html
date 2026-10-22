@@ -87,6 +87,11 @@ textarea { min-height: 200px; resize: vertical; }
 .pslot { font-size: 12px; color: var(--muted); font-weight: 700; margin: 10px 0 6px; text-transform: uppercase; letter-spacing: .04em; }
 .filebtn { display: flex; align-items: center; justify-content: center; text-align: center; cursor: pointer; }
 .entries { margin-top: 10px; }
+.seedrow { width: 100%; background: none; border: 0; border-bottom: 1px solid var(--line); font: inherit; color: inherit; text-align: left; padding: 12px 2px; }
+.seedrow .seed { width: 30px; height: 30px; flex: none; border-radius: 50%; border: 2px solid var(--line); display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 14px; }
+.seedrow.on .seed { background: var(--accent); border-color: var(--accent); color: #1a1a1a; }
+.seedrow.on .nm { font-weight: 700; }
+.ts { display: inline-block; font-size: 10px; font-weight: 800; background: var(--accent); color: #1a1a1a; border-radius: 6px; padding: 1px 5px; vertical-align: 2px; }
 .entry { display: flex; align-items: center; gap: 10px; padding: 9px 2px; border-bottom: 1px solid var(--line); }
 .entry .n { color: var(--muted); min-width: 22px; text-align: right; font-size: 13px; }
 .entry .nm { flex: 1; min-width: 0; }
@@ -194,6 +199,7 @@ function save() {
 }
 const team = id => S.teams.find(t => t.id === id);
 const tname = id => id == null ? 'BYE' : team(id).name;
+const seedTag = id => { const t = team(id); return t && t.seed ? ` <span class="ts">TS${t.seed}</span>` : ''; };
 
 // ---------- Generazione gironi ----------
 function shuffle(a) {
@@ -227,11 +233,18 @@ function suggestGroups(n) {
   return Math.max(1, Math.round(n / 4));
 }
 
-function createTournament(name, type, entries, nGroups, qual, target, third) {
+// seeds: indici delle teste di serie in ordine di forza. Vengono distribuite a serpentina
+// (1 nel girone A, 2 nel B… poi all'indietro), gli altri sono sorteggiati e riempiono i gironi.
+function createTournament(name, type, entries, nGroups, qual, target, third, seeds = []) {
   const teams = entries.map((e, i) => ({ id: i + 1, name: entryName(e), players: e.players }));
-  const order = shuffle(teams.map(t => t.id));
+  seeds.forEach((idx, k) => teams[idx].seed = k + 1);
+  const seededIds = seeds.map(idx => teams[idx].id);
+  const order = seededIds.concat(shuffle(teams.map(t => t.id).filter(id => !seededIds.includes(id))));
   const groups = Array.from({ length: nGroups }, (_, g) => ({ name: String.fromCharCode(65 + g), teamIds: [] }));
-  order.forEach((id, i) => groups[i % nGroups].teamIds.push(id));
+  order.forEach((id, i) => {
+    const r = Math.floor(i / nGroups), pos = i % nGroups;
+    groups[r % 2 ? nGroups - 1 - pos : pos].teamIds.push(id);
+  });
   const matches = [];
   const perGroup = groups.map(g => roundRobin(g.teamIds));
   const maxR = Math.max(...perGroup.map(r => r.length));
@@ -390,10 +403,10 @@ function render() {
   });
   $('#mic').classList.toggle('show', !!S);
   const v = $('#view');
-  if (tab === 'setup') v.innerHTML = S ? viewSummary() : viewSetup();
+  if (tab === 'setup') v.innerHTML = S ? viewSummary() : seedStep && D && D.opts ? viewSeeds() : viewSetup();
   else if (tab === 'groups') v.innerHTML = viewGroups();
   else v.innerHTML = viewKo();
-  if (tab === 'setup' && !S) bindSetup();
+  if (tab === 'setup' && !S && !seedStep) bindSetup();
 }
 
 // ---------- Partecipanti: inserimento uno a uno, lista incollata o file Excel/CSV ----------
@@ -426,6 +439,7 @@ function saveDraft() { try { localStorage.setItem(KEY + '-draft', JSON.stringify
 
 function viewSetup() {
   loadDraft();
+  seedStep = false;
   return `
   <div class="card">
     <h2>Nuovo torneo</h2>
@@ -460,7 +474,7 @@ function viewSetup() {
     <button class="btn" id="tGo">Crea gironi</button>
   </div>
   <div class="card"><h2>Come funziona</h2>
-    <p class="hint" style="font-size:14px">1. Aggiungi i giocatori con <b>+</b>, oppure incolla una lista o carica un file Excel con le colonne <b>Nome</b> e <b>Cognome</b>. Poi premi <b>Crea gironi</b>: il sorteggio è casuale.<br>
+    <p class="hint" style="font-size:14px">1. Aggiungi i giocatori con <b>+</b>, oppure incolla una lista o carica un file Excel con le colonne <b>Nome</b> e <b>Cognome</b>. Poi premi <b>Crea gironi</b>: puoi scegliere le <b>teste di serie</b> (facoltative), gli altri vengono sorteggiati.<br>
     2. Inserisci i risultati toccando una partita, oppure premi il <b>microfono</b> e di' ad esempio
     <i>«Rossi contro Bianchi 11 a 7»</i>.<br>
     3. Finiti i gironi, l'app crea il tabellone della fase finale.</p>
@@ -554,10 +568,54 @@ function bindSetup() {
     const minSize = Math.floor(n / g);
     if (minSize < 2) return err.textContent = `Troppi gironi: ogni girone deve avere almeno 2 ${w}.`;
     if (q >= minSize && g > 1) return err.textContent = `Con gironi da ${minSize} ${w} ne possono passare al massimo ${minSize - 1}.`;
-    createTournament(cap($('#tName').value), D.type, D.entries, g, g === 1 ? Math.min(q, n) : q, +$('#tTarget').value, $('#tThird').checked);
-    try { localStorage.removeItem(KEY + '-draft'); } catch (e) {}
-    tab = 'groups'; render(); toast('Gironi sorteggiati!');
+    D.opts = { g, q: g === 1 ? Math.min(q, n) : q, target: +$('#tTarget').value, third: $('#tThird').checked, groupsByUser: !!$('#tGroups').dataset.user };
+    D.seeds = (D.seeds || []).filter(i => i < n);
+    D.name = $('#tName').value;
+    saveDraft();
+    seedStep = true; render(); scrollTo(0, 0);
   });
+  // Torna dalla schermata delle teste di serie con le scelte già fatte.
+  if (D.opts) {
+    if (D.opts.groupsByUser) { $('#tGroups').dataset.user = '1'; $('#tGroups').value = D.opts.g; }
+    $('#tQual').value = D.opts.q; $('#tTarget').value = D.opts.target; $('#tThird').checked = D.opts.third;
+  }
+}
+
+// ---------- Teste di serie (facoltative), prima del sorteggio vero ----------
+let seedStep = false;
+function viewSeeds() {
+  const g = D.opts.g, seeds = D.seeds;
+  const w = D.type === 'double' ? 'coppie' : 'giocatori';
+  const order = D.entries.map((e, i) => i).sort((a, b) => {
+    const sa = seeds.indexOf(a), sb = seeds.indexOf(b);
+    return (sa < 0) - (sb < 0) || sa - sb || a - b;
+  });
+  return `<div class="card">
+    <h2>Teste di serie</h2>
+    <p class="hint">Facoltative. Tocca ${w === 'coppie' ? 'le coppie più forti' : 'i giocatori più forti'} in ordine, dalla n. 1.
+    ${g > 1 ? `Le prime ${g} finiscono in ${g} gironi diversi; le successive vengono distribuite a serpentina.` : 'Con un solo girone le teste di serie servono solo come riferimento.'}
+    Tutti gli altri vengono sorteggiati.</p>
+    <div class="entries">${order.map(i => {
+      const k = seeds.indexOf(i);
+      return `<button class="entry seedrow ${k >= 0 ? 'on' : ''}" onclick="toggleSeed(${i})"><span class="seed">${k >= 0 ? k + 1 : ''}</span><span class="nm">${esc(entryName(D.entries[i]))}</span>${k >= 0 && g > 1 ? `<span class="pill">Girone ${seedGroup(k, g)}</span>` : ''}</button>`;
+    }).join('')}</div>
+    ${seeds.length ? `<button class="btn ghost" onclick="D.seeds=[];saveDraft();render()">Togli tutte le teste di serie</button>` : ''}
+    <button class="btn" onclick="drawGroups()">${seeds.length ? `Sorteggia i gironi con ${seeds.length} ${seeds.length === 1 ? 'testa' : 'teste'} di serie` : 'Sorteggia senza teste di serie'}</button>
+    <button class="btn ghost" onclick="seedStep=false;render()">Indietro</button>
+  </div>`;
+}
+const seedGroup = (k, g) => { const r = Math.floor(k / g), pos = k % g; return String.fromCharCode(65 + (r % 2 ? g - 1 - pos : pos)); };
+function toggleSeed(i) {
+  const k = D.seeds.indexOf(i);
+  if (k >= 0) D.seeds.splice(k, 1); else D.seeds.push(i);
+  saveDraft(); render();
+}
+function drawGroups() {
+  const o = D.opts;
+  createTournament(cap(D.name || ''), D.type, D.entries, o.g, o.q, o.target, o.third, D.seeds);
+  try { localStorage.removeItem(KEY + '-draft'); } catch (e) {}
+  seedStep = false;
+  tab = 'groups'; render(); toast('Gironi sorteggiati!');
 }
 
 // ---------- Lista incollata ----------
@@ -766,7 +824,7 @@ function viewSummary() {
     <h2>${esc(S.name)}</h2>
     <p class="hint">${S.teams.length} ${S.type ? unitWord(S.type, S.teams.length) : 'squadre'} · ${S.groups.length} ${S.groups.length === 1 ? 'girone' : 'gironi'} · partite ai ${S.target} · gironi giocati ${done}/${tot}</p>
     <h3>${S.type === 'single' ? 'Giocatori' : S.type === 'double' ? 'Coppie' : 'Squadre'}</h3>
-    ${S.groups.map(g => `<p style="margin:6px 0"><span class="pill">Girone ${g.name}</span> ${g.teamIds.map(id => esc(tname(id))).join(', ')}</p>`).join('')}
+    ${S.groups.map(g => `<p style="margin:6px 0"><span class="pill">Girone ${g.name}</span> ${g.teamIds.map(id => esc(tname(id)) + seedTag(id)).join(', ')}</p>`).join('')}
     <button class="btn ghost" onclick="share()">Condividi classifiche</button>
     <button class="btn ghost" onclick="exportData()">Salva copia del torneo</button>
     <button class="btn danger" onclick="resetAll()">Nuovo torneo (cancella questo)</button>
@@ -798,7 +856,7 @@ function viewGroups() {
     const st = standings(gi);
     html += `<div class="card"><h2>Girone ${g.name}</h2>
       <table><tr><th>#</th><th class="name">${S.type === 'single' ? 'Giocatore' : S.type === 'double' ? 'Coppia' : 'Squadra'}</th><th>G</th><th>V</th><th>P</th><th>+/-</th></tr>
-      ${st.map(r => `<tr class="${r.pos <= S.qual ? 'q' : ''}"><td>${r.pos}</td><td class="name">${esc(tname(r.id))}</td><td>${r.pj}</td><td>${r.w}</td><td>${r.l}</td><td>${r.pf - r.ps > 0 ? '+' : ''}${r.pf - r.ps}</td></tr>`).join('')}
+      ${st.map(r => `<tr class="${r.pos <= S.qual ? 'q' : ''}"><td>${r.pos}</td><td class="name">${esc(tname(r.id))}${seedTag(r.id)}</td><td>${r.pj}</td><td>${r.w}</td><td>${r.l}</td><td>${r.pf - r.ps > 0 ? '+' : ''}${r.pf - r.ps}</td></tr>`).join('')}
       </table>
       ${gi === 0 ? '<p class="hint">A parità di vittorie contano lo scontro diretto, poi la differenza punti.</p>' : ''}
       <h3>Partite</h3>
