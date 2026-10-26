@@ -65,3 +65,35 @@ def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
         img.save(p, "JPEG", quality=92)
         paths.append(p)
     return paths
+
+
+def _slide_texts(kind: str, data: dict, credit: str | None) -> dict:
+    """Testi per i livelli segnaposto dei template Photoshop."""
+    base = {"HANDLE": config.PAGE_HANDLE, "CREDIT": f"Photo: {credit}" if credit else ""}
+    if kind == "cover":
+        return {**base, "TITLE": data["hook"], "LABEL": data.get("label", "")}
+    if kind == "fact":
+        body = data["body"]
+        if data.get("points"):
+            body = "\n".join(f"{label.title()}: {txt}" for label, txt in data["points"])
+        return {**base, "TITLE": data["title"], "BODY": body, "HIGHLIGHT": data.get("highlight", ""),
+                "LABEL": data.get("label", ""), "NUMBER": f"{data['n']:02d}/{data['total']:02d}"}
+    return {**base, "TITLE": data["cta"], "BODY": data.get("follow_line", "")}
+
+
+def render_with_templates(post: dict, out_dir: Path, templates: dict) -> list[Path]:
+    """Carosello con i template PSD di Andrea: cambiano solo testi e immagini."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    scenes = slide_data(post, 0)
+    images = [post.get("cover_image")] + [s.get("image") for s in post["slides"]] + [None]
+    credits = [post.get("cover_credit")] + [s.get("credit") for s in post["slides"]] + [None]
+    paths = []
+    for i, ((kind, data), image, credit) in enumerate(zip(scenes, images, credits), start=1):
+        name = {"cover": "cover", "fact": "slide"}.get(kind, "end")
+        tpl = templates.get(name) or templates["slide"]
+        img = tpl.render(_slide_texts(kind, data, credit), image)
+        p = out_dir / f"slide_{i:02d}.jpg"
+        img.save(p, "JPEG", quality=92)
+        paths.append(p)
+    post["design_used"] = {"style": "template"}
+    return paths

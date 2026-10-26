@@ -8,3 +8,5 @@ transformers>=4.44
 accelerate>=0.33
 peft>=0.12
 safetensors>=0.4
+psd-tools>=1.26
+fonttools>=4.50

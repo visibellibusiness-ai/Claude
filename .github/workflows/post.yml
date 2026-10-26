@@ -84,6 +84,9 @@ jobs:
         if: steps.check.outputs.ready == 'true'
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # facoltative: più foto tra cui scegliere
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
         run: python -m bot.main create --series ${{ steps.series.outputs.name }}
 
       - name: Metti online le immagini

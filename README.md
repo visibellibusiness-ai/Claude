@@ -37,6 +37,13 @@ rubrica news (vedi `news/README.md`) e alle 17:40 e 23:40 UTC per le curiosità:
    open source, licenza Apache 2.0) a partire da una descrizione scritta da Claude:
    oggetti e metafore simboliche, mai persone. Il modello resta salvato tra un giro
    e l'altro; se la generazione fallisce, il post esce con la copertina tipografica.
+   **Con i template Photoshop** in `templates/` (vedi `templates/README.md`) la grafica è
+   la tua: il sistema cambia solo testi e immagini. Ogni slide riceve una foto con
+   licenza libera trovata online (Openverse, Wikimedia Commons, NASA, e Pexels/Unsplash
+   se aggiungi le chiavi `PEXELS_API_KEY` / `UNSPLASH_ACCESS_KEY`), scelta da Claude tra
+   i candidati, oppure un'immagine generata se non trova niente di adatto. I crediti
+   delle foto finiscono in fondo alla caption. Le regole sono nella skill
+   `.claude/skills/instagram-images/SKILL.md`.
 4. Le immagini vengono committate nel repo, così hanno un indirizzo pubblico.
 5. `bot/publish.py` pubblica con l'API ufficiale di Instagram. I Reel vengono
    caricati direttamente; i Trial Reel li vede prima solo chi non ti segue, e

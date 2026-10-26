@@ -25,8 +25,10 @@ SCHEMA = {
                     "title": {"type": "string", "description": "Max 7 words"},
                     "body": {"type": "string", "description": "Max 40 words"},
                     "highlight": {"type": "string", "description": "Optional striking number or word shown huge (e.g. '+1 cm', '8 min', '90%'), max 8 characters; empty string if none"},
+                    "image_query": {"type": "string", "description": "2-4 English words to search a real, freely licensed photo of the concrete subject (e.g. 'octopus underwater', 'saturn rings'); empty string if the subject is abstract or a real person"},
+                    "image_prompt": {"type": "string", "description": "Scene for an AI image model if no photo fits: concrete symbolic objects or a visual metaphor, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
                 },
-                "required": ["title", "body", "highlight"],
+                "required": ["title", "body", "highlight", "image_query", "image_prompt"],
                 "additionalProperties": False,
             },
         },
@@ -34,7 +36,8 @@ SCHEMA = {
         "caption": {"type": "string", "description": "Instagram caption"},
         "hashtags": {"type": "array", "items": {"type": "string"}, "description": "Hashtags without #"},
         "sources": {"type": "array", "items": {"type": "string"}, "description": "Authoritative sources backing the facts"},
-"image_prompt": {"type": "string", "description": "Cover image for an AI image model: one concrete scene of symbolic objects or a visual metaphor for the topic, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
+        "image_query": {"type": "string", "description": "2-4 English words to search a real, freely licensed photo for the cover; empty string if abstract"},
+        "image_prompt": {"type": "string", "description": "Cover image for an AI image model: one concrete scene of symbolic objects or a visual metaphor for the topic, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
         "design": {
             "type": "object",
             "properties": {
@@ -47,7 +50,7 @@ SCHEMA = {
             "additionalProperties": False,
         },
     },
-    "required": ["reasoning", "format", "music", "trial", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design", "image_prompt"],
+    "required": ["reasoning", "format", "music", "trial", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design", "image_query", "image_prompt"],
     "additionalProperties": False,
 }
 

@@ -16,7 +16,7 @@ from pathlib import Path
 from bot import config
 from bot.generate import generate_post
 from bot.reel import render_reel
-from bot.render import render_post
+from bot.render import render_post, render_with_templates
 
 ROOT = Path(__file__).resolve().parent.parent
 HISTORY = ROOT / "posts" / "history.json"
@@ -53,6 +53,37 @@ def learn() -> None:
 def build_caption(post: dict) -> str:
     tags = " ".join("#" + t.lstrip("#").replace(" ", "") for t in post["hashtags"])
     return f"{post['caption']}\n\n{tags}"
+
+
+def load_templates() -> dict:
+    """I template PSD in templates/, se ci sono: altrimenti si usa lo stile Mystery."""
+    try:
+        from bot.template import available
+
+        return available()
+    except Exception as e:  # un template illeggibile non deve fermare la pubblicazione
+        print(f"Template non utilizzabili, uso lo stile predefinito: {e}")
+        return {}
+
+
+def attach_images(post: dict, out_dir: Path) -> None:
+    """Un'immagine per copertina e slide (foto con licenza libera o generata) e crediti in caption."""
+    from bot.images import credits_line, get_image
+
+    out_dir.mkdir(parents=True, exist_ok=True)
+    space = post.get("category", "").lower() in ("space", "spazio")
+    cover = get_image(post.get("image_query", ""), post.get("image_prompt", ""), post["hook"], out_dir / "img_cover.jpg", space)
+    if cover:
+        post["cover_image"], post["cover_credit"] = cover["path"], cover["credit"]
+    results = [cover]
+    for i, s in enumerate(post["slides"], start=1):
+        r = get_image(s.get("image_query", ""), s.get("image_prompt", ""), f"{s['title']}. {s['body']}", out_dir / f"img_{i:02d}.jpg", space)
+        if r:
+            s["image"], s["credit"] = r["path"], r["credit"]
+        results.append(r)
+    line = credits_line(results)
+    if line:
+        post["caption"] = f"{post['caption']}\n\n{line}"
 
 
 def pending_path(series: str) -> Path:
@@ -93,7 +124,10 @@ def create(post_file: str | None, series: str = "facts") -> None:
     rel_dir = Path("posts") / stamp
     out_dir = ROOT / rel_dir
     fmt = "news" if series == "news" else post.get("format", "carousel")
-    if config.COVER_ART and post.get("image_prompt") and not post.get("cover_image"):
+    templates = load_templates()
+    if templates:
+        attach_images(post, out_dir)
+    elif config.COVER_ART and post.get("image_prompt") and not post.get("cover_image"):
         try:
             from bot.imagegen import generate
 
@@ -106,7 +140,7 @@ def create(post_file: str | None, series: str = "facts") -> None:
         render_reel(post, out_dir, theme_index=n)
         paths = [out_dir / "cover.jpg"]
     else:
-        paths = render_post(post, out_dir, theme_index=n)
+        paths = render_with_templates(post, out_dir, templates) if templates else render_post(post, out_dir, theme_index=n)
         if fmt == "news":
             # la rubrica esce sia come carosello sia come Reel con le stesse notizie
             render_reel(post, out_dir / "reel", theme_index=n)
