@@ -67,9 +67,14 @@ def render_post(post: dict, out_dir: Path, theme_index: int) -> list[Path]:
     return paths
 
 
+def _short_credit(credit: str) -> str:
+    """Sulla slide basta l'autore: licenza e archivio restano nella caption."""
+    return credit.split(" (")[0].strip()[:40]
+
+
 def _slide_texts(kind: str, data: dict, credit: str | None) -> dict:
     """Testi per i livelli segnaposto dei template Photoshop."""
-    base = {"HANDLE": config.PAGE_HANDLE, "CREDIT": f"Photo: {credit}" if credit else ""}
+    base = {"HANDLE": config.PAGE_HANDLE, "CREDIT": f"Photo: {_short_credit(credit)}" if credit else ""}
     if kind == "cover":
         return {**base, "TITLE": data["hook"], "LABEL": data.get("label", "")}
     if kind == "fact":
@@ -78,14 +83,15 @@ def _slide_texts(kind: str, data: dict, credit: str | None) -> dict:
             body = "\n".join(f"{label.title()}: {txt}" for label, txt in data["points"])
         return {**base, "TITLE": data["title"], "BODY": body, "HIGHLIGHT": data.get("highlight", ""),
                 "LABEL": data.get("label", ""), "NUMBER": f"{data['n']:02d}/{data['total']:02d}"}
-    return {**base, "TITLE": data["cta"], "BODY": data.get("follow_line", "")}
+    return {**base, "TITLE": data["cta"], "BODY": data.get("follow_line", ""), "LABEL": config.PAGE_NAME}
 
 
 def render_with_templates(post: dict, out_dir: Path, templates: dict) -> list[Path]:
     """Carosello con i template PSD di Andrea: cambiano solo testi e immagini."""
     out_dir.mkdir(parents=True, exist_ok=True)
     scenes = slide_data(post, 0)
-    images = [post.get("cover_image")] + [s.get("image") for s in post["slides"]] + [None]
+    # l'ultima slide riprende la foto di copertina (il suo template la scurisce)
+    images = [post.get("cover_image")] + [s.get("image") for s in post["slides"]] + [post.get("cover_image")]
     credits = [post.get("cover_credit")] + [s.get("credit") for s in post["slides"]] + [None]
     paths = []
     for i, ((kind, data), image, credit) in enumerate(zip(scenes, images, credits), start=1):

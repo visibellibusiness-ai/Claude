@@ -8,6 +8,14 @@ nomi fissi, con o senza parentesi graffe ("TITLE" oppure "{{TITLE}}"):
   riduce da solo se non entra nel riquadro (meglio usare caselle di testo).
 - "TITLE box" (opzionale): un rettangolo che definisce a mano il riquadro di un testo.
 Tutti gli altri livelli restano esattamente come disegnati.
+
+Impaginazione: i testi grandi (HIGHLIGHT, TITLE, BODY) vicini fra loro nel template
+formano una pila ancorata in basso: testi corti non lasciano buchi e la distanza fra i
+blocchi resta quella disegnata. Il riquadro del template dice quante righe ci stanno
+(altezza della casella diviso interlinea): oltre quel limite il testo si rimpicciolisce.
+Se il primo testo di una pila è da solo, TITLE e HIGHLIGHT restano ancorati in basso
+nella loro casella e BODY in alto. Con BOTTOM_ALIGN = False tutti i testi partono
+dall'alto della casella come prima.
 """
 
 import re
@@ -22,6 +30,9 @@ TEMPLATES = ROOT / "templates"
 FONTS = TEMPLATES / "fonts"
 FALLBACK_FONT = ROOT / "assets" / "fonts" / "Archivo.ttf"
 SLOTS = {"IMAGE", "TITLE", "BODY", "HIGHLIGHT", "LABEL", "NUMBER", "HANDLE", "CREDIT"}
+STACK = ("HIGHLIGHT", "TITLE", "BODY")  # testi che si impilano dal basso
+STACK_MAX_GAP = 80  # px: oltre questa distanza fra due caselle i testi non fanno pila
+BOTTOM_ALIGN = True
 
 
 def _slot(name: str) -> tuple[str | None, bool]:
@@ -89,7 +100,14 @@ class TextSlot:
             pass
         return layer.bbox
 
-    def draw(self, canvas: Image.Image, text: str) -> None:
+    @property
+    def capacity(self) -> int:
+        """Righe che stanno nella casella alla grandezza disegnata."""
+        height = self.box[3] - self.box[1]
+        return max(1, int(height * 1.02 // (self.size * self.leading)))
+
+    def layout(self, text: str) -> dict:
+        """Righe, grandezza e altezza del testo (si rimpicciolisce se non entra)."""
         if self.uppercase:
             text = text.upper()
         x0, y0, x1, y1 = self.box
@@ -97,30 +115,49 @@ class TextSlot:
         size = self.size
         while True:
             font = _font(self.font_name, size)
-            lines = _wrap(text, font, width)
+            track = self.tracking * size
+            lines = _wrap(text, font, width, track)
             line_h = size * self.leading
             if len(lines) * line_h <= height * 1.02 or size <= self.size * 0.45:
                 break
             size *= 0.94
+        return {"lines": lines, "font": font, "size": size, "track": track,
+                "line_h": line_h, "height": len(lines) * line_h}
+
+    def draw(self, canvas: Image.Image, text: str, top: float | None = None, info: dict | None = None) -> None:
+        info = info or self.layout(text)
+        x0, y0, x1, y1 = self.box
+        width = x1 - x0
+        font, track, line_h = info["font"], info["track"], info["line_h"]
         layer = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
         d = ImageDraw.Draw(layer)
-        y = y0
-        for line in lines:
-            w = d.textlength(line, font=font)
+        # come in Photoshop: la prima riga ha la cima delle lettere alte sul bordo superiore
+        baseline = (y0 if top is None else top) - font.getbbox("Hdl", anchor="ls")[1]
+        for line in info["lines"]:
+            w = _line_width(d, line, font, track)
             x = x0 if self.align == "left" else (x1 - w if self.align == "right" else x0 + (width - w) / 2)
-            d.text((x, y), line, font=font, fill=self.color)
-            y += line_h
+            if track:
+                for ch in line:
+                    d.text((x, baseline), ch, font=font, fill=self.color, anchor="ls")
+                    x += d.textlength(ch, font=font) + track
+            else:
+                d.text((x, baseline), line, font=font, fill=self.color, anchor="ls")
+            baseline += line_h
         canvas.alpha_composite(layer)
 
 
-def _wrap(text: str, font, width: float) -> list[str]:
+def _line_width(draw, text: str, font, track: float = 0.0) -> float:
+    return draw.textlength(text, font=font) + track * len(text)
+
+
+def _wrap(text: str, font, width: float, track: float = 0.0) -> list[str]:
     probe = ImageDraw.Draw(Image.new("L", (1, 1)))
     out = []
     for para in text.split("\n"):
         line = ""
         for word in para.split():
             cand = f"{line} {word}".strip()
-            if probe.textlength(cand, font=font) <= width or not line:
+            if _line_width(probe, cand, font, track) <= width or not line:
                 line = cand
             else:
                 out.append(line)
@@ -185,11 +222,48 @@ class PsdTemplate:
             canvas.alpha_composite(photo, (x0, y0))
         if self.above is not None:
             canvas.alpha_composite(self.above)
+        tops = self._stack(texts) if BOTTOM_ALIGN else {}
         for name, slot in self.texts.items():
             value = texts.get(name)
             if value:
-                slot.draw(canvas, value)
+                info, top = tops.get(name, (None, None))
+                slot.draw(canvas, value, top, info)
         return canvas.convert("RGB")
+
+    def _stack(self, texts: dict[str, str]) -> dict[str, tuple[dict, float]]:
+        """Posizione verticale dei testi grandi, ancorati in basso (vedi il docstring)."""
+        slots = sorted((n for n in STACK if n in self.texts), key=lambda n: self.texts[n].box[1])
+        if not slots:
+            return {}
+        nominal = {n: self.texts[n].box[1] + self.texts[n].capacity * self.texts[n].size * self.texts[n].leading for n in slots}
+        # gruppi di testi vicini nel template
+        groups, gaps = [[slots[0]]], {}
+        for upper, lower in zip(slots, slots[1:]):
+            gap = self.texts[lower].box[1] - nominal[upper]
+            if gap <= STACK_MAX_GAP:
+                groups[-1].append(lower)
+                gaps[(upper, lower)] = gap
+            else:
+                groups.append([lower])
+        out = {}
+        for group in groups:
+            lower_top = None
+            for name in reversed(group):
+                slot = self.texts[name]
+                if len(group) == 1 and name == "BODY":
+                    value = texts.get(name)
+                    if value:
+                        out[name] = (slot.layout(value), slot.box[1])
+                    continue
+                bottom = nominal[name] if lower_top is None else lower_top - gaps[(name, group[group.index(name) + 1])]
+                value = texts.get(name)
+                if value:
+                    info = slot.layout(value)
+                    lower_top = bottom - info["height"]
+                    out[name] = (info, lower_top)
+                else:
+                    lower_top = bottom
+        return out
 
 
 # Il template da cui copiare le grandezze dei testi (None = ognuno tiene le sue)
