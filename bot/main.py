@@ -1,10 +1,10 @@
 """Ciclo completo: genera → disegna → pubblica → registra nello storico.
 
 Uso:
-  python -m bot.main learn       # aggiorna statistiche e, se è ora, la strategia
-  python -m bot.main create      # genera e disegna, salva posts/pending.json
-  python -m bot.main publish     # pubblica il post in pending.json (richiede i secret)
-  aggiungi --series news per la rubrica news quotidiana
+    python -m bot.main learn     # aggiorna statistiche e, se è ora, la strategia
+    python -m bot.main create    # genera e disegna, salva posts/pending.json
+    python -m bot.main publish   # pubblica il post in pending.json (richiede i secret)
+    aggiungi --series news per la rubrica news quotidiana
 """
 
 import argparse
@@ -174,6 +174,13 @@ def _video(pending: dict, sub: str = "") -> Path:
     return video
 
 
+def _video_url(video: Path) -> str:
+    """Indirizzo pubblico del video: con l'accesso Instagram il video non si carica a pezzi,
+    lo scarica Instagram. Il workflow lo mette sul branch "media" (VIDEO_BASE_URL)."""
+    base = os.environ["VIDEO_BASE_URL"].rstrip("/")
+    return f"{base}/{video.relative_to(ROOT).as_posix()}"
+
+
 def publish(series: str = "facts") -> None:
     from bot.publish import publish_carousel, publish_reel
 
@@ -185,7 +192,7 @@ def publish(series: str = "facts") -> None:
     fmt = pending.get("format", "carousel")
     entries = []
     if fmt == "reel":
-        media_id, trial = publish_reel(_video(pending), pending["caption"], pending.get("trial", False))
+        media_id, trial = publish_reel(_video_url(_video(pending)), pending["caption"], pending.get("trial", False))
         entries.append(("reel", media_id, trial))
     else:
         # Le immagini devono essere raggiungibili pubblicamente: il workflow le
@@ -195,7 +202,7 @@ def publish(series: str = "facts") -> None:
         entries.append(("carousel", publish_carousel(urls, pending["caption"]), False))
         if fmt == "news":
             try:
-                media_id, trial = publish_reel(_video(pending, "reel"), pending["caption"], pending.get("trial", False))
+                media_id, trial = publish_reel(_video_url(_video(pending, "reel")), pending["caption"], pending.get("trial", False))
                 entries.append(("reel", media_id, trial))
             except Exception as e:  # il carosello è già uscito: non va ripubblicato
                 print(f"Reel della rubrica non pubblicato: {e}")

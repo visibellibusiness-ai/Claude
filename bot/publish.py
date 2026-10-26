@@ -1,13 +1,18 @@
-"""Pubblica caroselli e Reel tramite Instagram Graph API (Content Publishing)."""
+"""Pubblica caroselli e Reel con l'API Instagram con Instagram Login (graph.instagram.com).
+
+Non serve una Pagina Facebook: il token è un token utente Instagram, valido 60 giorni e
+rinnovato da .github/workflows/rinnovo-token.yml. Immagini e video devono avere un
+indirizzo pubblico: è Instagram a scaricarli (vedi MEDIA_BASE_URL e VIDEO_BASE_URL
+in .github/workflows/post.yml).
+"""
 
 import json
 import os
 import time
-from pathlib import Path
 
 import requests
 
-GRAPH = "https://graph.facebook.com/v21.0"
+GRAPH = "https://graph.instagram.com/v26.0"
 
 
 def _post(path: str, **params) -> dict:
@@ -54,28 +59,11 @@ def publish_carousel(image_urls: list[str], caption: str) -> str:
     return result["id"]
 
 
-def _upload_video(container_id: str, video: Path) -> None:
-    """Carica il file direttamente su Instagram (upload ripristinabile)."""
-    data = video.read_bytes()
-    r = requests.post(
-        f"https://rupload.facebook.com/ig-api-upload/v21.0/{container_id}",
-        headers={
-            "Authorization": f"OAuth {os.environ['IG_ACCESS_TOKEN']}",
-            "offset": "0",
-            "file_size": str(len(data)),
-        },
-        data=data,
-        timeout=300,
-    )
-    if not r.ok:
-        raise RuntimeError(f"Upload video fallito {r.status_code}: {r.text}")
-
-
-def publish_reel(video: Path, caption: str, trial: bool) -> tuple[str, bool]:
-    """Pubblica un Reel. Con trial=True è un Trial Reel: lo vede prima solo chi non
-    ti segue e Instagram lo condivide con i follower se va bene."""
+def publish_reel(video_url: str, caption: str, trial: bool) -> tuple[str, bool]:
+    """Pubblica un Reel dal suo indirizzo pubblico. Con trial=True è un Trial Reel: lo vede
+    prima solo chi non ti segue e Instagram lo condivide con i follower se va bene."""
     user_id = os.environ["IG_USER_ID"]
-    params = {"media_type": "REELS", "upload_type": "resumable", "caption": caption}
+    params = {"media_type": "REELS", "video_url": video_url, "caption": caption}
     if trial:
         params["trial_params"] = json.dumps({"graduation_strategy": "SS_PERFORMANCE"})
     else:
@@ -90,7 +78,6 @@ def publish_reel(video: Path, caption: str, trial: bool) -> tuple[str, bool]:
         params["share_to_feed"] = "true"
         trial = False
         container = _post(f"{user_id}/media", **params)
-    _upload_video(container["id"], video)
     _wait_ready(container["id"])
     result = _post(f"{user_id}/media_publish", creation_id=container["id"])
     return result["id"], trial

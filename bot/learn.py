@@ -8,7 +8,9 @@ import requests
 
 from bot import config
 
-GRAPH = "https://graph.facebook.com/v21.0"
+# API Instagram con Instagram Login: servono i permessi instagram_business_basic e
+# instagram_business_manage_insights nel token
+GRAPH = "https://graph.instagram.com/v26.0"
 METRICS = ["reach", "saved", "shares", "likes", "comments", "total_interactions"]
 
 
@@ -40,7 +42,7 @@ def _insights(media_id: str) -> dict | None:
 
 def _followers() -> int | None:
     r = requests.get(
-        f"{GRAPH}/{os.environ['IG_USER_ID']}",
+        f"{GRAPH}/me",
         params={"fields": "followers_count", "access_token": os.environ["IG_ACCESS_TOKEN"]},
         timeout=30,
     )
