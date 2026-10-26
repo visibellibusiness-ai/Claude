@@ -7,6 +7,10 @@ filigrane, volti riconoscibili o bassa qualità; 3) se nessuno va bene, genera
 l'immagine con il modello open source (bot/imagegen.py).
 Ogni immagine trovata online porta con sé autore, licenza e link: finiscono nei
 crediti della caption.
+
+La foto riempie tutta la slide (4:5) e il testo sta nella metà bassa su una sfumatura
+scura: il soggetto deve stare nella parte alta, e la foto deve avere abbastanza pixel
+per non risultare sfocata dopo l'ingrandimento (vedi MAX_UPSCALE).
 """
 
 import base64
@@ -27,6 +31,10 @@ UA = "YouDidNotKnowBot/1.0 (https://github.com/visibellibusiness-ai/Claude)"
 TIMEOUT = 25
 # licenze accettate: libere, uso commerciale consentito, al massimo con attribuzione
 WIKI_OK = re.compile(r"^(cc0|public domain|pd|cc by(-sa)? \d(\.\d)?)", re.I)
+# ingrandimento massimo accettato per riempire la slide: oltre, la foto esce sfocata
+MAX_UPSCALE = 1.7
+# quanti candidati provare prima di passare all'immagine generata
+MAX_TRIES = 4
 
 
 def _get(url, **params):
@@ -83,6 +91,8 @@ def nasa(query: str, n: int = 8) -> list[dict]:
             continue
         out.append({
             "provider": "nasa", "url": thumb.replace("~thumb", "~large"), "thumb": thumb,
+            # non tutte le immagini NASA hanno la versione "large": si provano le altre
+            "fallback_urls": [thumb.replace("~thumb", "~orig"), thumb.replace("~thumb", "~medium")],
             "author": meta.get("center") and f"NASA/{meta['center']}" or "NASA",
             "license": "public domain (NASA)", "title": meta.get("title", ""),
             "source": f"https://images.nasa.gov/details/{meta.get('nasa_id', '')}",
@@ -111,8 +121,9 @@ def unsplash(query: str, n: int = 8) -> list[dict]:
     r = requests.get("https://api.unsplash.com/search/photos", params={"query": query, "per_page": n},
                      headers={"Authorization": f"Client-ID {key}", "User-Agent": UA}, timeout=TIMEOUT)
     r.raise_for_status()
+    # "full" e non "regular" (1080 px di larghezza): serve più risoluzione per riempire la slide
     return [{
-        "provider": "unsplash", "url": p["urls"]["regular"], "thumb": p["urls"]["small"],
+        "provider": "unsplash", "url": p["urls"]["full"], "thumb": p["urls"]["small"],
         "author": p["user"]["name"], "license": "Unsplash license",
         "source": p["links"]["html"], "title": p.get("alt_description") or "",
     } for p in r.json().get("results", [])]
@@ -172,10 +183,15 @@ def pick(candidates: list[dict], context: str, limit: int = 8) -> dict | None:
         return None
     content.append({"type": "text", "text": (
         f"Slide content: {context}\n\n"
-        "Pick the single best image for this Instagram slide. It must clearly show the subject, "
-        "be sharp and well composed, and work when cropped to a portrait frame. Reject images with "
+        "Pick the single best image for this Instagram slide. The photo fills the whole portrait "
+        "frame (4:5), and the lower 40% of the frame is covered by a dark gradient and big white "
+        "text. So the main subject must sit in the upper 60% of the image, and the bottom part "
+        "should be calm (sky, ground, water, dark background) because it will be under the text. "
+        "It must clearly show the subject, be sharp and well composed, and still look striking when "
+        "cropped to a portrait frame. Prefer clear light-versus-dark contrast. Reject images with "
         "visible text, watermarks, logos, collages, recognizable faces of private people, graphic or "
-        "disturbing content, or a subject that does not match. Return -1 if none is good enough."
+        "disturbing content, a subject that does not match, a subject that is tiny or sits low in "
+        "the frame, or a blurry, noisy or heavily compressed look. Return -1 if none is good enough."
     )})
     response = anthropic.Anthropic().messages.create(
         model=config.MODEL,
@@ -190,22 +206,57 @@ def pick(candidates: list[dict], context: str, limit: int = 8) -> dict | None:
     return shown[i] if 0 <= i < len(shown) else None
 
 
+def _enough(size: tuple[int, int]) -> bool:
+    """Bastano i pixel per riempire la slide senza ingrandire troppo?"""
+    return max(config.WIDTH / size[0], config.HEIGHT / size[1]) <= MAX_UPSCALE
+
+
 def download(c: dict, out: Path) -> Path:
-    img = Image.open(io.BytesIO(_get(c["url"]).content)).convert("RGB")
+    """Scarica la foto: prova gli indirizzi in ordine e tiene il primo abbastanza grande
+    (o, se nessuno lo è, il più grande). Gli archivi non hanno sempre tutte le versioni."""
+    best, last_error = None, None
+    for url in [c["url"], *c.get("fallback_urls", [])]:
+        try:
+            img = Image.open(io.BytesIO(_get(url).content)).convert("RGB")
+        except Exception as e:
+            last_error = e
+            continue
+        if best is None or img.width * img.height > best.width * best.height:
+            best = img
+        if _enough(img.size):
+            break
+    if best is None:
+        raise last_error or RuntimeError("download non riuscito")
     out.parent.mkdir(parents=True, exist_ok=True)
-    img.save(out, "JPEG", quality=92)
+    best.save(out, "JPEG", quality=92)
     return out
+
+
+def sharp_enough(path: Path) -> bool:
+    """La foto salvata ha abbastanza pixel per riempire la slide?"""
+    with Image.open(path) as img:
+        return _enough(img.size)
 
 
 def get_image(query: str, prompt: str, context: str, out: Path, space: bool = False) -> dict | None:
     """Restituisce {"path", "credit"} oppure None. credit è None per le immagini generate."""
     if query:
         try:
-            chosen = pick(search(query, space), context)
-            if chosen:
-                path = download(chosen, out)
-                return {"path": str(path), "credit": f"{chosen['author']} ({chosen['license']}) via {chosen['provider']}",
-                        "source": chosen["source"]}
+            candidates = search(query, space)
+            for _ in range(MAX_TRIES):
+                chosen = pick(candidates, context)
+                if not chosen:
+                    break
+                candidates = [c for c in candidates if c is not chosen]
+                try:
+                    path = download(chosen, out)
+                except Exception as e:  # archivio che blocca lo scarico: si passa al prossimo candidato
+                    print(f"Scarico non riuscito ({chosen['provider']}: {chosen['title'][:60]}): {e}")
+                    continue
+                if sharp_enough(path):
+                    return {"path": str(path), "credit": f"{chosen['author']} ({chosen['license']}) via {chosen['provider']}",
+                            "source": chosen["source"]}
+                print(f"Foto troppo piccola per riempire la slide ({chosen['provider']}: {chosen['title'][:60]}): provo un'altra")
         except Exception as e:
             print(f"Immagine online non trovata per '{query}': {e}")
     if prompt and config.COVER_ART:
