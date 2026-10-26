@@ -1,0 +1,46 @@
+name: Rinnova il token Instagram
+
+# Il token di accesso Instagram dura 60 giorni e si puo' rinnovare per altri 60 se e'
+# ancora valido e ha almeno 24 ore. Il rinnovo parte il 1 e il 15 di ogni mese e salva
+# il nuovo token nel secret IG_ACCESS_TOKEN.
+# Serve il secret GH_PAT: un token personale GitHub, limitato a questo repo, con il solo
+# permesso "Secrets: Read and write" (vedi CONFIGURAZIONE.md).
+
+on:
+  schedule:
+    - cron: "17 6 1,15 * *"
+  workflow_dispatch:
+
+permissions: {}
+
+# coda propria: non deve mai far saltare un post in attesa
+concurrency:
+  group: instagram-token
+  cancel-in-progress: false
+
+jobs:
+  rinnova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Rinnova il token e salva il nuovo valore
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -z "$IG_ACCESS_TOKEN" ]; then
+            echo "::notice::IG_ACCESS_TOKEN non configurato: niente da rinnovare"
+            exit 0
+          fi
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::error::Manca il secret GH_PAT: senza, il token non si rinnova da solo e dopo 60 giorni la pubblicazione si ferma (vedi CONFIGURAZIONE.md)"
+            exit 1
+          fi
+          RESPONSE=$(curl -fsS --get "https://graph.instagram.com/refresh_access_token" \
+            --data-urlencode "grant_type=ig_refresh_token" \
+            --data-urlencode "access_token=$IG_ACCESS_TOKEN")
+          NEW=$(printf '%s' "$RESPONSE" | python3 -c "import sys, json; print(json.load(sys.stdin)['access_token'])")
+          DAYS=$(printf '%s' "$RESPONSE" | python3 -c "import sys, json; print(round(json.load(sys.stdin)['expires_in'] / 86400))")
+          echo "::add-mask::$NEW"
+          gh secret set IG_ACCESS_TOKEN --body "$NEW" --repo "$GITHUB_REPOSITORY"
+          echo "Token rinnovato: scade tra circa $DAYS giorni"

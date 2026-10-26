@@ -37,7 +37,7 @@ jobs:
           if [ -n "$ANTHROPIC_API_KEY" ] && [ -n "$IG_USER_ID" ] && [ -n "$IG_ACCESS_TOKEN" ]; then
             echo "ready=true" >> "$GITHUB_OUTPUT"
           else
-            echo "::notice::Chiavi mancanti (vedi README): giro saltato"
+            echo "::notice::Chiavi mancanti (vedi CONFIGURAZIONE.md): giro saltato"
             echo "ready=false" >> "$GITHUB_OUTPUT"
           fi
 
@@ -99,12 +99,34 @@ jobs:
           git push
           sleep 20
 
+      # Con l'accesso Instagram il video non si carica a pezzi: lo scarica Instagram da un
+      # indirizzo pubblico. Va sul branch "media", riscritto a ogni giro (cosi' lo storico
+      # del repo non si riempie di video).
+      - name: Metti online i video
+        if: steps.check.outputs.ready == 'true'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/media
+          find posts -name '*.mp4' -exec cp --parents {} /tmp/media \;
+          if [ -n "$(find /tmp/media -name '*.mp4' -print -quit)" ]; then
+            cd /tmp/media
+            git init -q -b media
+            git config user.name "instagram-bot"
+            git config user.email "instagram-bot@users.noreply.github.com"
+            git add -A
+            git commit -q -m "Video del giro"
+            git push -q --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" media
+            sleep 20
+          fi
+
       - name: Pubblica su Instagram
         if: steps.check.outputs.ready == 'true'
         env:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
           IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
           MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+          VIDEO_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/media
         run: python -m bot.main publish --series ${{ steps.series.outputs.name }}
 
       - name: Aggiorna lo storico
