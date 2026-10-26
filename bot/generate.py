@@ -15,16 +15,16 @@ SCHEMA = {
         "trial": {"type": "boolean", "description": "Reels only: publish as Trial Reel (shown first to non-followers, auto-shared to followers if it performs well). Ignored for carousels"},
         "category": {"type": "string", "description": "Short category label (e.g. space, human body)"},
         "topic": {"type": "string", "description": "Short topic label, used to avoid repeats"},
-        "hook": {"type": "string", "description": "Cover slide headline, max 10 words"},
+        "hook": {"type": "string", "description": "Cover slide headline, max 8 words and about 48 characters (3 lines of big type)"},
         "slides": {
             "type": "array",
             "description": "3 to 9 content slides",
             "items": {
                 "type": "object",
                 "properties": {
-                    "title": {"type": "string", "description": "Max 7 words"},
-                    "body": {"type": "string", "description": "Max 40 words"},
-                    "highlight": {"type": "string", "description": "Optional striking number or word shown huge (e.g. '+1 cm', '8 min', '90%'), max 8 characters; empty string if none"},
+                    "title": {"type": "string", "description": "2 to 5 words, max 32 characters (2 lines of big type)"},
+                    "body": {"type": "string", "description": "One idea, max 22 words and about 130 characters (3 lines)"},
+                    "highlight": {"type": "string", "description": "Optional striking number or word shown huge (e.g. '+1 cm', '8 min', '90%'), max 6 characters; empty string if none"},
                     "image_query": {"type": "string", "description": "2-4 English words to search a real, freely licensed photo of the concrete subject (e.g. 'octopus underwater', 'saturn rings'); empty string if the subject is abstract or a real person"},
                     "image_prompt": {"type": "string", "description": "Scene for an AI image model if no photo fits: concrete symbolic objects or a visual metaphor, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
                 },
@@ -32,8 +32,8 @@ SCHEMA = {
                 "additionalProperties": False,
             },
         },
-        "cta": {"type": "string", "description": "Last slide text, max 14 words"},
-        "caption": {"type": "string", "description": "Instagram caption"},
+        "cta": {"type": "string", "description": "Last slide text, max 8 words and about 40 characters, invites to follow so people never miss the next one"},
+        "caption": {"type": "string", "description": "Instagram caption: 2 or 3 short paragraphs, ending with one short question for the audience"},
         "hashtags": {"type": "array", "items": {"type": "string"}, "description": "Hashtags without #"},
         "sources": {"type": "array", "items": {"type": "string"}, "description": "Authoritative sources backing the facts"},
         "image_query": {"type": "string", "description": "2-4 English words to search a real, freely licensed photo for the cover; empty string if abstract"},
@@ -44,7 +44,7 @@ SCHEMA = {
                 "palette": {"type": "integer", "description": "Color variant of the brand style, 0 to 4"},
                 "cover_label": {"type": "string", "description": "Small label above the hook, max 4 words"},
                 "swipe_text": {"type": "string", "description": "Hint on the cover, max 3 words"},
-                "follow_line": {"type": "string", "description": "Tagline under 'Follow @handle' on the last slide, max 8 words"},
+                "follow_line": {"type": "string", "description": "Tagline under 'Follow @handle' on the last slide, max 8 words and about 40 characters"},
             },
             "required": ["palette", "cover_label", "swipe_text", "follow_line"],
             "additionalProperties": False,
@@ -67,9 +67,27 @@ The page has a fixed visual brand style; you pick one of its 5 color palettes pe
 the small labels, and a short "highlight" (a striking number or word shown huge) per slide
 when it makes the fact hit harder. For reels you also pick the music genre.
 You decide format, topic, angle, tone, length, palette, music and wording.
-Typography uses a fixed scale shared by all slides of a post: if one title or body is much
-longer than the others, every slide gets smaller text. Keep titles to 2-5 words and bodies
-under about 30 words, with similar lengths across slides, so the type stays big and bold.
+
+Text must fit the design. Slides use big type in fixed boxes: anything longer than these
+limits is shrunk automatically, and a shrunk slide looks worse than a short one.
+- Cover hook: 8 words at most, about 48 characters (3 lines).
+- Slide title: 2 to 5 words, 32 characters at most (2 lines).
+- Slide body: 22 words at most, about 130 characters (3 lines), one idea only.
+- Highlight: 6 characters at most.
+- Last slide text: 8 words at most, about 40 characters.
+Count characters. When in doubt, cut.
+
+Structure that suits saves and shares:
+1. Cover: a hook that makes people curious about one concrete subject. Hook shapes that
+   suit this niche (vary them, write your own wording): "Here is what happens to your body
+   when...", "N things that...", "Why we stopped...", "How long it takes to...",
+   "Everything you should know about...", "Things that look normal but...".
+2. Content slides, one fact each. Two styles: a list (each slide is one short sentence)
+   or cards (each slide has a title naming the item plus a short factual paragraph).
+3. Last slide: invite people to follow so they never miss the next one.
+Caption: 2 or 3 short paragraphs that introduce the topic with one concrete detail, then
+one short question for the audience. Vary the kind of question between posts (about the
+topic, an opinion, a nudge to save or share), so the stats can show which one works.
 
 Goal: grow the page fast. Maximize reach, saves, shares, comments and follows.
 

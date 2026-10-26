@@ -30,7 +30,7 @@ the source names and URLs. Plain text."""
 SCHEMA = {
     "type": "object",
     "properties": {
-        "hook": {"type": "string", "description": "Cover headline about story 1, max 7 words, makes people stop scrolling"},
+        "hook": {"type": "string", "description": "Cover headline about story 1, max 7 words and about 45 characters (3 lines of big type), makes people stop scrolling"},
         "stories": {
             "type": "array",
             "description": "Exactly 5 stories; the 5th is light, good or curious",
@@ -38,13 +38,13 @@ SCHEMA = {
                 "type": "object",
                 "properties": {
                     "category": {"type": "string", "enum": CATEGORIES},
-                    "headline": {"type": "string", "description": "Max 6 words"},
-                    "highlight": {"type": "string", "description": "Striking number or word from the story shown huge (e.g. '+0.25%', '3 days', 'Mars'), max 8 characters; empty string if none"},
+                    "headline": {"type": "string", "description": "Max 5 words and 32 characters (2 lines of big type)"},
+                    "highlight": {"type": "string", "description": "Striking number or word from the story shown huge (e.g. '+0.25%', '3 days', 'Mars'), max 6 characters; empty string if none"},
                     "image_query": {"type": "string", "description": "2-4 English words to search a real, freely licensed photo of the concrete subject (e.g. 'octopus underwater', 'saturn rings'); empty string if the subject is abstract or a real person"},
                     "image_prompt": {"type": "string", "description": "Scene for an AI image model if no photo fits: concrete symbolic objects or a visual metaphor, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
-                    "what": {"type": "string", "description": "What happened: one sentence, max 14 words"},
-                    "why": {"type": "string", "description": "Why it matters: one sentence, max 14 words"},
-                    "for_you": {"type": "string", "description": "What changes for you: one sentence, max 14 words, concrete and honest"},
+                    "what": {"type": "string", "description": "What happened: one sentence, max 10 words"},
+                    "why": {"type": "string", "description": "Why it matters: one sentence, max 10 words"},
+                    "for_you": {"type": "string", "description": "What changes for you: one sentence, max 14 words, concrete and honest. Shown in videos and in the caption; photo slides show only 'what' and 'why'"},
                     "sources": {"type": "array", "items": {"type": "string"}, "description": "At least 2 source URLs"},
                 },
                 "required": ["category", "headline", "highlight", "image_query", "image_prompt", "what", "why", "for_you", "sources"],
@@ -52,8 +52,8 @@ SCHEMA = {
             },
         },
         "reel_hook": {"type": "string", "description": "2-second reel opening, max 7 words"},
-        "cta": {"type": "string", "description": "Last slide, max 12 words, invites to follow for the daily brief"},
-        "caption": {"type": "string", "description": "3-6 short lines summing up the stories with one emoji each, then a question for comments, then a call to follow for the daily brief"},
+        "cta": {"type": "string", "description": "Last slide, max 8 words and about 40 characters, invites to follow for the daily brief"},
+        "caption": {"type": "string", "description": "3-6 short lines summing up the stories with one emoji each and, for the most useful stories, what it means for the reader; then one short question for comments; then a call to follow for the daily brief"},
         "hashtags": {"type": "array", "items": {"type": "string"}, "description": "8-12 hashtags, lowercase, without #"},
         "image_prompt": {"type": "string", "description": "Cover image for an AI image model: one concrete scene of symbolic objects or a visual metaphor for story 1, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
         "palette": {"type": "integer", "description": "Color variant of the brand style, 0 to 4"},
@@ -65,8 +65,12 @@ SCHEMA = {
 WRITE_SYSTEM = f"""You write the daily news brief of the Instagram page "{config.PAGE_NAME}" ({config.PAGE_HANDLE}).
 Tone: a well-informed friend explaining the news at the bar: clear, direct, plain English,
 short sentences. Strictly neutral on politics. Use only facts from the research notes, and
-keep every number, name and date exactly as confirmed there. Respect the word limits: the
-design uses big type, so short lines matter."""
+keep every number, name and date exactly as confirmed there. Respect the limits: the
+design uses big type in fixed boxes, anything longer gets shrunk and looks worse. Cover
+headline about 45 characters, story headlines 32 characters, and "what" plus "why"
+together about 120 characters, because each photo slide shows only those two sentences.
+Count characters. When in doubt, cut. The cover headline should create curiosity about
+one concrete subject, not summarize the day."""
 
 
 def _client():
