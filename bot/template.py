@@ -192,6 +192,24 @@ class PsdTemplate:
         return canvas.convert("RGB")
 
 
+# Il template da cui copiare le grandezze dei testi (None = ognuno tiene le sue)
+ALIGN_SIZES_TO = "end"
+
+
+def align_sizes(templates: dict[str, "PsdTemplate"], reference: str) -> None:
+    """Stessa grandezza e interlinea per i testi con lo stesso nome in tutti i template."""
+    ref = templates.get(reference)
+    if not ref:
+        return
+    for name, tpl in templates.items():
+        if tpl is ref:
+            continue
+        for slot, text_slot in tpl.texts.items():
+            if slot in ref.texts:
+                text_slot.size = ref.texts[slot].size
+                text_slot.leading = ref.texts[slot].leading
+
+
 def available() -> dict[str, PsdTemplate]:
     """Template presenti: cover.psd, slide.psd e (facoltativo) end.psd."""
     found = {}
@@ -199,4 +217,6 @@ def available() -> dict[str, PsdTemplate]:
         path = TEMPLATES / f"{kind}.psd"
         if path.exists():
             found[kind] = PsdTemplate(path)
+    if ALIGN_SIZES_TO:
+        align_sizes(found, ALIGN_SIZES_TO)
     return found
