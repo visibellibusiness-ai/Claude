@@ -1,0 +1,63 @@
+name: Test ricerca immagini
+
+# Prova temporanea: verifica che gli archivi di immagini libere rispondano dai
+# server di GitHub e salva in posts/image-search-tests/ cosa trovano.
+on:
+  push:
+    paths:
+      - ".github/workflows/image-search-test.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install requests pillow anthropic
+      - name: Cerca immagini di prova
+        run: |
+          python - <<'EOF'
+          import json, io
+          from pathlib import Path
+          from PIL import Image, ImageDraw
+          from bot import images
+          out = Path("posts/image-search-tests"); out.mkdir(parents=True, exist_ok=True)
+          report = {}
+          for query, space in [("octopus", False), ("comet night sky", True), ("old brass key", False)]:
+              res = {}
+              for p in images.PROVIDERS:
+                  try:
+                      found = p(query)
+                      res[p.__name__] = {"count": len(found), "items": found[:3]}
+                  except Exception as e:
+                      res[p.__name__] = {"error": repr(e)[:300]}
+              report[query] = res
+              thumbs = [c for r in res.values() for c in r.get("items", [])][:9]
+              sheet = Image.new("RGB", (3 * 300, 3 * 330), "white"); d = ImageDraw.Draw(sheet)
+              for i, c in enumerate(thumbs):
+                  try:
+                      im = Image.open(io.BytesIO(images._get(c["thumb"]).content)).convert("RGB")
+                      im.thumbnail((300, 300)); sheet.paste(im, ((i % 3) * 300, (i // 3) * 330))
+                  except Exception as e:
+                      pass
+                  d.text(((i % 3) * 300 + 4, (i // 3) * 330 + 302), f"{c['provider']} | {c['license']}"[:48], fill="black")
+                  d.text(((i % 3) * 300 + 4, (i // 3) * 330 + 316), c["author"][:48], fill="black")
+              sheet.save(out / f"{query.replace(' ', '_')}.jpg", quality=85)
+          (out / "report.json").write_text(json.dumps(report, indent=2, ensure_ascii=False))
+          print(json.dumps({q: {k: v.get("count", v.get("error")) for k, v in r.items()} for q, r in report.items()}, indent=1))
+          EOF
+      - name: Salva i risultati
+        if: always()
+        run: |
+          git config user.name "instagram-bot"
+          git config user.email "instagram-bot@users.noreply.github.com"
+          git add posts/image-search-tests || true
+          git diff --cached --quiet || git commit -m "Test ricerca immagini: risultati"
+          git pull --rebase origin "${GITHUB_REF_NAME}" && git push
