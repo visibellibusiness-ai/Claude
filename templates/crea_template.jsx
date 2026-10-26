@@ -139,39 +139,42 @@ function save(doc, file) {
     doc.saveAs(new File(FOLDER + "/" + file), opts, true, Extension.LOWERCASE);
 }
 
+// Grandezze dei testi uguali in tutti i file (quelle dell'ultima slide).
+var SZ = { label: 28, title: 120, titleLeading: 122, body: 32, bodyLeading: 44, handle: 40 };
+
 // ---------------------------------------------------------------- copertina
 var cover = newDoc("cover");
 rect(cover, "IMAGE", 0, 0, W, H, C.placeholder);
-scrim(cover, "Sfumatura", 520, 1350);
+scrim(cover, "Sfumatura", 480, 1350);
 rect(cover, "Velatura alta", 0, 0, W, 220, C.bg, 45);
-text(cover, "LABEL", "SLEEP SCIENCE", 90, 90, 900, 50, F.mono, 30, C.accent, { tracking: 120 });
-text(cover, "TITLE", "Your body does this every single night", 90, 760, 900, 380, F.serif, 112, C.text, { leading: 112 });
-text(cover, "HANDLE", "@you.didnot.know", 90, 1200, 500, 50, F.mono, 26, C.muted, { tracking: 60 });
-text(cover, "CREDIT", "Photo: Author (CC BY 4.0)", 590, 1204, 400, 40, F.sans, 18, C.muted, { align: Justification.RIGHT });
-rect(cover, "Linea", 90, 1180, 170, 1183, C.accent);
+text(cover, "LABEL", "SLEEP SCIENCE", 90, 90, 900, 50, F.mono, SZ.label, C.accent, { tracking: 120 });
+text(cover, "TITLE", "Your body does this every single night", 90, 640, 900, 500, F.serif, SZ.title, C.text, { leading: SZ.titleLeading });
+rect(cover, "Linea", 90, 1160, 170, 1163, C.accent);
+text(cover, "HANDLE", "@you.didnot.know", 90, 1180, 600, 60, F.mono, SZ.handle, C.text, { tracking: 60 });
+text(cover, "CREDIT", "Photo: Author (CC BY 4.0)", 590, 1260, 400, 40, F.sans, 18, C.muted, { align: Justification.RIGHT });
 save(cover, "cover.psd");
 
 // ---------------------------------------------------------------- slide interne
 var slide = newDoc("slide");
-rect(slide, "IMAGE", 0, 0, W, 720, C.placeholder);
-scrim(slide, "Sfumatura", 380, 722);
+rect(slide, "IMAGE", 0, 0, W, 600, C.placeholder);
+scrim(slide, "Sfumatura", 300, 602);
 text(slide, "NUMBER", "02/06", 840, 60, 150, 44, F.mono, 26, C.text, { align: Justification.RIGHT, tracking: 80 });
-text(slide, "CREDIT", "Photo: Author (CC BY 4.0)", 590, 680, 400, 30, F.sans, 16, C.muted, { align: Justification.RIGHT });
-text(slide, "LABEL", "SCIENCE", 90, 740, 900, 40, F.mono, 26, C.accent, { tracking: 120 });
-text(slide, "HIGHLIGHT", "+1 cm", 86, 780, 900, 150, F.serifItalic, 130, C.accent);
-text(slide, "TITLE", "You get taller", 90, 930, 900, 130, F.serif, 76, C.text, { leading: 78 });
-text(slide, "BODY", "At night the discs in your spine rehydrate. In the morning you are about one centimeter taller than in the evening.", 90, 1070, 900, 210, F.sans, 36, C.muted, { leading: 48 });
-text(slide, "HANDLE", "@you.didnot.know", 90, 1290, 500, 40, F.mono, 22, C.muted, { tracking: 60 });
+text(slide, "CREDIT", "Photo: Author (CC BY 4.0)", 590, 560, 400, 30, F.sans, 16, C.muted, { align: Justification.RIGHT });
+text(slide, "LABEL", "SCIENCE", 90, 620, 900, 40, F.mono, SZ.label, C.accent, { tracking: 120 });
+text(slide, "HIGHLIGHT", "+1 cm", 86, 655, 900, 140, F.serifItalic, 120, C.accent);
+text(slide, "TITLE", "You get taller", 90, 790, 900, 250, F.serif, SZ.title, C.text, { leading: SZ.titleLeading });
+text(slide, "BODY", "At night the discs in your spine rehydrate. In the morning you are about one centimeter taller than in the evening.", 90, 1040, 900, 180, F.sans, SZ.body, C.muted, { leading: SZ.bodyLeading });
+text(slide, "HANDLE", "@you.didnot.know", 90, 1240, 600, 60, F.mono, SZ.handle, C.muted, { tracking: 60 });
 save(slide, "slide.psd");
 
 // ---------------------------------------------------------------- ultima slide
 var end = newDoc("end");
 rect(end, "Luce", 0, 0, W, H, "14161D", 100);
-text(end, "LABEL", "YOU DID NOT KNOW", 90, 90, 900, 50, F.mono, 28, C.accent, { tracking: 120 });
-text(end, "TITLE", "Save this and send it to someone who never sleeps enough", 90, 300, 900, 560, F.serif, 120, C.text, { leading: 122 });
+text(end, "LABEL", "YOU DID NOT KNOW", 90, 90, 900, 50, F.mono, SZ.label, C.accent, { tracking: 120 });
+text(end, "TITLE", "Save this and send it to someone who never sleeps enough", 90, 300, 900, 560, F.serif, SZ.title, C.text, { leading: SZ.titleLeading });
 rect(end, "Linea", 90, 1060, 170, 1063, C.accent);
-text(end, "HANDLE", "@you.didnot.know", 90, 1090, 900, 60, F.mono, 40, C.text, { tracking: 60 });
-text(end, "BODY", "a new mind-blowing fact every day", 90, 1160, 900, 60, F.sans, 32, C.muted);
+text(end, "HANDLE", "@you.didnot.know", 90, 1090, 900, 60, F.mono, SZ.handle, C.text, { tracking: 60 });
+text(end, "BODY", "a new mind-blowing fact every day", 90, 1160, 900, 60, F.sans, SZ.body, C.muted);
 save(end, "end.psd");
 
 app.preferences.rulerUnits = oldUnits;
