@@ -1,3 +1,5 @@
+> Aggiornamento del 26 ottobre 2026: per collegare Instagram segui CONFIGURAZIONE.md. Quella guida sostituisce la sezione Configurazione una tantum qui sotto e non richiede la Pagina Facebook.
+
 # Pagina Instagram automatica: "You Did Not Know" (@you.didnot.know)
 
 Pagina in inglese di curiosità verificate (corpo umano, animali, spazio, storia, psicologia…)
