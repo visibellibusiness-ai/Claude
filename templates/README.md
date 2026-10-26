@@ -1,7 +1,19 @@
 # Template Photoshop per i post
 
 La grafica la disegni tu in Photoshop; il sistema cambia solo testi e immagini.
-Metti qui tre file (1080×1350 px, RGB, 72 dpi):
+
+## Partire dai template già pronti
+
+1. Installa i font della cartella `fonts/` (doppio clic su ogni `.ttf` → **Installa**).
+2. In Photoshop: **File → Script → Sfoglia…** (*File → Scripts → Browse…*) e scegli
+   `crea_template.jsx`. In pochi secondi crea `cover.psd`, `slide.psd` ed `end.psd`
+   nella stessa cartella, con livelli modificabili e già nominati.
+3. Modificali come vuoi (colori, posizioni, font, decorazioni). Non rinominare i
+   livelli in maiuscolo (`IMAGE`, `TITLE`, `BODY`, ...): sono quelli che il sistema
+   riempie.
+4. Carica i tre `.psd` in questa cartella su GitHub (Add file → Upload files).
+
+I file che servono qui (1080×1350 px, RGB, 72 dpi):
 
 | File | Uso |
 |---|---|
