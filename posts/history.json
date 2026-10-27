@@ -77,5 +77,21 @@
       "palette": 2
     },
     "media_id": "18442180123198005"
+  },
+  {
+    "date": "20261027-1821",
+    "series": "facts",
+    "topic": "Octopus biology: hearts, blood, arms, taste, color",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "animals",
+    "hook": "5 things octopuses do that seem impossible",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "17926969662429134"
   }
 ]
