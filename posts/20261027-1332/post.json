@@ -1,0 +1,188 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-10-27",
+  "hook": "Netanyahu or Eisenkot? Polls can't tell",
+  "reel_hook": "Israel votes, and nobody knows who wins",
+  "slides": [
+    {
+      "title": "Israel's too-close-to-call vote",
+      "highlight": "61",
+      "image_query": "Knesset building Jerusalem",
+      "image_prompt": "A ballot box on a perfectly level balance scale, two equal stacks of paper ballots on each side, soft blue and white light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Netanyahu faces ex-army chief Eisenkot in Israel's election."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Turnout is the highest in decades, with no clear favourite."
+        ],
+        [
+          "FOR YOU",
+          "Exit polls come at 20:00 UTC; full results could take weeks."
+        ]
+      ],
+      "body": "Netanyahu faces ex-army chief Eisenkot in Israel's election. Turnout is the highest in decades, with no clear favourite. Exit polls come at 20:00 UTC; full results could take weeks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1332/img_01.jpg",
+      "credit": "Clema12 (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Kyiv hit as Oleshky truce holds",
+      "highlight": "280",
+      "image_query": "Kyiv Southern Bridge",
+      "image_prompt": "A damaged river bridge at dawn beside a quiet road lined with white aid boxes, smoke fading in a grey sky",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russia struck Kyiv overnight as a local truce began."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The Oleshky ceasefire lets aid in and civilians out."
+        ],
+        [
+          "FOR YOU",
+          "New US-brokered talks are expected; watch if this truce lasts until Saturday."
+        ]
+      ],
+      "body": "Russia struck Kyiv overnight as a local truce began. The Oleshky ceasefire lets aid in and civilians out. New US-brokered talks are expected; watch if this truce lasts until Saturday.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1332/img_02.jpg",
+      "credit": "Theonemansvision (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Rare four-way talks in Tehran",
+      "highlight": "First",
+      "image_query": "Tehran skyline",
+      "image_prompt": "Four empty chairs around a round wooden table with tea glasses, a desert night sky outside the window with distant streaks of light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran hosted Saudi, Turkish and Pakistani officials in Tehran."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First joint talks, as Houthi missiles target Saudi Arabia."
+        ],
+        [
+          "FOR YOU",
+          "No deal yet; Iran says talks with the three countries will continue."
+        ]
+      ],
+      "body": "Iran hosted Saudi, Turkish and Pakistani officials in Tehran. First joint talks, as Houthi missiles target Saudi Arabia. No deal yet; Iran says talks with the three countries will continue.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1332/img_03.jpg",
+      "credit": "Ninara from Helsinki, Finland (CC BY-SA 3.0) via wikimedia"
+    },
+    {
+      "title": "Claude maker files for IPO",
+      "highlight": "$16.3B",
+      "image_query": "stock market bell",
+      "image_prompt": "A brass stock exchange bell on a podium in an empty trading hall, ticker lights glowing as abstract colored streaks",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Anthropic filed to list on Nasdaq under the ticker ANT."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Revenue hit $16.3B in six months; losses were $80.7B."
+        ],
+        [
+          "FOR YOU",
+          "Share price isn't set; reports say it could be the biggest IPO ever."
+        ]
+      ],
+      "body": "Anthropic filed to list on Nasdaq under the ticker ANT. Revenue hit $16.3B in six months; losses were $80.7B. Share price isn't set; reports say it could be the biggest IPO ever.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1332/img_04.jpg",
+      "credit": null
+    },
+    {
+      "title": "Oxford Street goes car-free",
+      "highlight": "1 km",
+      "image_query": "Oxford Street London",
+      "image_prompt": "A wide empty London shopping street with paving stones, potted trees and benches, a red bus stop sign removed and leaning aside",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "About 1 km of London's Oxford Street is now traffic-free."
+        ],
+        [
+          "WHY IT MATTERS",
+          "No cars, buses, taxis or bikes, permanently."
+        ],
+        [
+          "FOR YOU",
+          "Visiting London? You can stroll past Selfridges and John Lewis without traffic."
+        ]
+      ],
+      "body": "About 1 km of London's Oxford Street is now traffic-free. No cars, buses, taxis or bikes, permanently. Visiting London? You can stroll past Selfridges and John Lewis without traffic.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1332/img_05.jpg",
+      "credit": null
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🗳️ Israel votes: Netanyahu vs Eisenkot, too close to call. Exit polls land when voting ends at 20:00 UTC.\n🇺🇦 Russia strikes Kyiv (at least 1 killed, per Ukraine's emergency service) as a small truce starts in Oleshky.\n🤝 Iran hosts Saudi, Turkish and Pakistani officials, while Houthi missiles target Saudi Arabia.\n📈 Anthropic, maker of Claude, files for a Nasdaq IPO. Price not set yet.\n🚶 Almost half of London's Oxford Street is now car-free for good.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Clema12 (CC BY-SA 4.0) via wikimedia · Theonemansvision (CC BY-SA 4.0) via wikimedia · Ninara from Helsinki, Finland (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "israel",
+    "election",
+    "ukraine",
+    "iran",
+    "anthropic",
+    "ipo",
+    "london",
+    "oxfordstreet",
+    "worldnews"
+  ],
+  "sources": [
+    "https://www.cnn.com/2026/10/27/world/live-news/israel-elections-live-results-latest-votes-intl",
+    "https://www.nbcnews.com/world/israel/live-blog/israel-election-live-updates-netanyahu-eisenkot-voters-war-iran-gaza-rcna604979",
+    "https://www.10news.com/world/middle-east/strong-turnout-marks-israeli-election-as-netanyahu-fights-to-retain-power",
+    "https://www.aljazeera.com/news/2026/10/27/israel-election-results-2026-when-will-we-know-who-won-and-whats-next",
+    "https://time.com/article/2026/10/27/israel-netanyahu-eisenkot-knesset-election-explainer/",
+    "https://www.cnbc.com/2026/10/27/russia-ukraine-zelenskyy-trump-putin-ceasefire.html",
+    "https://www.investing.com/news/economy-news/kremlin-reports-no-ceasefire-violations-in-oleshky-ukraine-93CH-4974802",
+    "https://kyivindependent.com/russian-attacks-across-ukraine-kill-four-injure-55-over-past-day-as-kyiv-comes-under-ballistic-missile-assault/",
+    "https://www.kyivpost.com/post/88247",
+    "https://www.aljazeera.com/news/2026/10/23/white-house-says-melania-trump-secured-a-ceasefire-in-ukraines-oleshky",
+    "https://www.aljazeera.com/news/2026/10/26/officials-from-mecca-pact-states-to-hold-talks-in-iran-amid-regional-tensions",
+    "https://www.aljazeera.com/news/2026/10/26/mecca-defence-alliance-members-in-tehran-to-defuse-iran-us-yemen-tensions",
+    "https://www.jpost.com/middle-east/iran-news/2026-10-26/live-updates-912856",
+    "https://www.justsecurity.org/162113/early-edition-october-27-2026/",
+    "https://www.arabtimesonline.com/news/saudi-led-coalition-intercepts-3-houthi-ballistic-missiles-targeting-eastern-province/",
+    "https://www.bloomberg.com/news/articles/2026-10-26/anthropic-ipo-s-1-filing-offers-first-look-at-claude-maker-s-finances",
+    "https://www.cnn.com/2026/10/26/tech/anthropic-files-ipo",
+    "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html",
+    "https://www.investing.com/news/stock-market-news/anthropic-files-for-nasdaq-ipo-as-revenue-jumps-to-163-billion-4972842",
+    "https://thehill.com/policy/technology/6171816-anthropic-files-for-ai-ipo/",
+    "https://abcnews.com/International/londons-oxford-street-europes-busiest-shopping-street-pedestrian/story?id=137567050",
+    "https://www.aljazeera.com/features/2026/10/27/its-magical-londons-iconic-oxford-street-goes-vehicle-free",
+    "https://ripr.trade/news/new-straits-times/part-of-london-s-oxford-street-pedestrianised-forever",
+    "https://www.bernama.com/en/world/news.php?id=2626189"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 27 OCT 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in 30 seconds, every day"
+  },
+  "image_query": "Knesset building Jerusalem",
+  "image_prompt": "A ballot box resting on a perfectly balanced old brass scale, two equal stacks of paper ballots on each pan, dramatic blue and white light",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261027-1332/img_cover.jpg",
+  "cover_credit": "Clema12 (CC BY-SA 4.0) via wikimedia",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "music_used": "mystery"
+}
