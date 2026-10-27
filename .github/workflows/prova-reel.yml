@@ -1,0 +1,45 @@
+name: Prova Reel
+
+# Non pubblica niente su Instagram e non tocca i post: disegna alcuni Reel di prova con foto
+# vere, misura tempo e leggibilità e mette i montaggi sul ramo "prove" (vedi bot/prova_reel.py).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: pip install anthropic requests pillow numpy imageio-ffmpeg
+
+      - name: Disegna i Reel di prova
+        id: prova
+        continue-on-error: true
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          UNSPLASH_ACCESS_KEY: ${{ secrets.UNSPLASH_ACCESS_KEY }}
+        run: python -m bot.prova_reel
+
+      - name: Metti online i montaggi
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p /tmp/prove
+          cp prova_out/*.jpg prova_out/rapporto.txt /tmp/prove/
+          cd /tmp/prove
+          git init -q -b prove
+          git config user.name "instagram-bot"
+          git config user.email "instagram-bot@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Montaggi di prova"
+          git push -q --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" prove
