@@ -13,5 +13,37 @@
       "style": "template"
     },
     "media_id": "18120394205318900"
+  },
+  {
+    "date": "20261027-1255",
+    "series": "news",
+    "topic": "Daily news 2026-10-27",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "news",
+    "hook": "Israel's busiest election morning since 1977",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "17959105578017198"
+  },
+  {
+    "date": "20261027-1255",
+    "series": "news",
+    "topic": "Daily news 2026-10-27",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "news",
+    "hook": "Israel's busiest election morning since 1977",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18119805316782021"
   }
 ]
