@@ -31,6 +31,21 @@ def pct(x, digits: int = 1) -> str:
     return "n/d" if x is None else f"{x * 100:.{digits}f}".replace(".", ",") + "%"
 
 
+def it_int(x) -> str:
+    """Numero intero all'italiana: il punto separa le migliaia (11.764)."""
+    return f"{x:,}".replace(",", ".") if isinstance(x, int) else ("n/d" if x is None else str(x))
+
+
+def day_it(iso: str) -> str:
+    """2026-10-27 -> 27/10/2026"""
+    return datetime.strptime(iso, "%Y-%m-%d").strftime("%d/%m/%Y")
+
+
+def stamp_it(stamp: str) -> str:
+    """20261027-1242 -> 27/10/2026 12:42"""
+    return datetime.strptime(stamp, "%Y%m%d-%H%M").strftime("%d/%m/%Y %H:%M")
+
+
 def post_rates(metrics: dict | None) -> dict:
     """Tassi di un post a partire dalle sue metriche. Ogni valore è None se manca il dato."""
     m = metrics or {}
@@ -106,7 +121,7 @@ def build_report(history: list[dict], state: dict, now: datetime | None = None) 
         for e in reversed(summary["days"]):
             reach, views = e.get("reach") or {}, e.get("views") or {}
             lines.append(
-                f"| {e['date']} | {reach.get('total', 'n/d')} | {reach.get('NON_FOLLOWER', 0) if reach else 'n/d'} | "
+                f"| {day_it(e['date'])} | {reach.get('total', 'n/d')} | {reach.get('NON_FOLLOWER', 0) if reach else 'n/d'} | "
                 f"{views.get('total', 'n/d')} | {views.get('NON_FOLLOWER', 0) if views else 'n/d'} | "
                 f"{(e.get('total_interactions') or {}).get('total', 'n/d')} | {(e.get('saves') or {}).get('total', 'n/d')} |"
             )
@@ -136,7 +151,7 @@ def build_report(history: list[dict], state: dict, now: datetime | None = None) 
         ]
         for h, r, notes in sorted(rows, key=lambda x: x[0]["date"], reverse=True):
             lines.append(
-                f"| {h['date']} | {h.get('format', 'carousel')} | {h.get('hook', h.get('topic', ''))[:40]} | "
+                f"| {stamp_it(h['date'])} | {h.get('format', 'carousel')} | {h.get('hook', h.get('topic', ''))[:40]} | "
                 f"{r['reach'] if r['reach'] is not None else 'n/d'} | {r['views'] if r['views'] is not None else 'n/d'} | "
                 f"{pct(r['saves'])} | {pct(r['shares'])} | {pct(r['likes'])} | {pct(r['profile_visits'])} | {notes} |"
             )
@@ -148,8 +163,8 @@ def build_report(history: list[dict], state: dict, now: datetime | None = None) 
                       "| Data | Titolo | Tempo medio di visione | Tasso di salto |", "|---|---|---|---|"]
             for h, _ in reels:
                 m = h["metrics"]
-                lines.append(f"| {h['date']} | {h.get('hook', '')[:40]} | {m.get('ig_reels_avg_watch_time', 'n/d')} | "
-                             f"{m.get('reels_skip_rate', 'n/d')} |")
+                lines.append(f"| {stamp_it(h['date'])} | {h.get('hook', '')[:40]} | {it_int(m.get('ig_reels_avg_watch_time'))} | "
+                             f"{it_int(m.get('reels_skip_rate'))} |")
         lines += ["", "### Per formato", "", "| Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |", "|---|---|---|---|---|"]
         by_format: dict[str, list] = {}
         for h, r, _ in rows:
