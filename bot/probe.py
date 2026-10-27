@@ -88,7 +88,7 @@ def media(user_id: str) -> None:
             print(f"  profile_activity per action_type: {short(res.get('data', res), 300) if code == 200 else 'ERRORE ' + error_text(res)}")
 
 
-def bot_reading() -> None:
+def bot_reading() -> list[dict]:
     """Cosa leggerebbe il bot (bot/learn.py) per i post dello storico, senza salvare niente."""
     from pathlib import Path
 
@@ -99,25 +99,36 @@ def bot_reading() -> None:
     for h in history:
         if "media_id" in h:
             print(f"\n{h['date']} | {h.get('format', 'carousel')} | {h['media_id']} | {h.get('hook', '')[:50]}")
-            print("  " + short(_insights(h["media_id"], h.get("format", "carousel")), 700))
+            h["metrics"] = _insights(h["media_id"], h.get("format", "carousel"))
+            print("  " + short(h["metrics"], 700))
+    return history
 
 
-def account_log() -> None:
+def account_log() -> dict:
     """Cosa salverebbe il bot ogni giorno per l'account, senza scrivere niente."""
     from bot.learn import update_account_log
 
     print("\n=== COPERTURA DELL'ACCOUNT PER GIORNO (cosa salva il bot) ===")
-    for entry in update_account_log({}):
+    state: dict = {}
+    for entry in update_account_log(state):
         print(f"\n{entry['date']}")
         for name, value in entry.items():
             if name != "date":
                 print(f"  {name}: {short(value, 300)}")
+    return state
 
 
 def main() -> None:
     user_id = os.environ["IG_USER_ID"]
-    account_log()
-    bot_reading()
+    state = account_log()
+    history = bot_reading()
+    from datetime import datetime, timezone
+
+    from bot.report import build_report
+
+    print("\n=== RAPPORTO (come lo scriverebbe il bot) ===\n")
+    # per la prova si leggono anche i post con meno di 48 ore, che il bot salta
+    print(build_report(history, state, datetime.now(timezone.utc)))
     account(user_id)
     media(user_id)
     print("\nFatto: nessun dato è stato scritto o pubblicato.")

@@ -147,9 +147,14 @@ def update_metrics(history: list[dict]) -> dict:
     return {"date": now.strftime("%Y%m%d-%H%M"), "followers": _followers()}
 
 
+# Prima di riscrivere la strategia servono abbastanza post misurati: con 3 o 4 post i tassi
+# sono rumore (scelta nostra di prudenza, non un numero di Instagram).
+MIN_POSTS_TO_REFLECT = 10
+
+
 def should_reflect(state: dict, history: list[dict]) -> bool:
     measured = sum(1 for h in history if h.get("metrics"))
-    if measured < 3:
+    if measured < MIN_POSTS_TO_REFLECT:
         return False
     last = state.get("last_reflection")
     if not last:
@@ -157,14 +162,22 @@ def should_reflect(state: dict, history: list[dict]) -> bool:
     return datetime.now(timezone.utc) - _parse_date(last) >= timedelta(days=config.REFLECT_EVERY_DAYS)
 
 
-def reflect(history: list[dict], strategy: str, followers_log: list[dict]) -> str:
-    """Claude analizza i risultati e riscrive la propria strategia."""
+def reflect(history: list[dict], strategy: str, followers_log: list[dict], account_log: list[dict] | None = None) -> str:
+    """Claude analizza i risultati e riscrive la propria strategia, giudicando sui tassi."""
+    from bot.report import MIN_REACH, rates_text
+
     lines = []
     for h in history[-60:]:
         lines.append(
             f"- {h['date']} | {h.get('format', 'carousel')}{' (trial)' if h.get('trial') else ''} | {h.get('category', '?')} | hook: \"{h.get('hook', h['topic'])}\" | "
-            f"slides: {h.get('slides', '?')} | design: {h.get('design', {})} | music: {h.get('music') or '-'} | metrics: {h.get('metrics', 'n/a')}"
+            f"slides: {h.get('slides', '?')} | design: {h.get('design', {})} | music: {h.get('music') or '-'} | results: {rates_text(h.get('metrics'))}"
         )
+    account = []
+    for e in (account_log or [])[-28:]:
+        reach, views = e.get("reach") or {}, e.get("views") or {}
+        account.append(f"- {e['date']}: reach {reach.get('total', 'n/a')} (non-followers {reach.get('NON_FOLLOWER', 0)}), "
+                       f"views {views.get('total', 'n/a')} (non-followers {views.get('NON_FOLLOWER', 0)}), "
+                       f"saves {(e.get('saves') or {}).get('total', 'n/a')}")
     followers = "\n".join(f"- {f['date']}: {f['followers']}" for f in followers_log[-30:] if f.get("followers") is not None)
     prompt = (
         f"You run the Instagram page \"{config.PAGE_NAME}\" ({config.NICHE}) autonomously.\n"
@@ -172,11 +185,19 @@ def reflect(history: list[dict], strategy: str, followers_log: list[dict]) -> st
         f"## Current strategy\n{strategy or '(none yet)'}\n\n"
         f"## Posts\n" + "\n".join(lines) + "\n\n"
         f"## Followers over time\n{followers or '(n/a)'}\n\n"
+        f"## Account reach per day, split followers / non-followers\n" + ("\n".join(account) or "(n/a)") + "\n\n"
         "Write the new strategy in Markdown (max 400 words): what is working (with numbers), "
         "what is not, which formats (carousel vs reel vs trial reel), topics, hooks, lengths, colors "
         "and captions to use more or less, how to split formats, and 1-2 "
-        "experiments to run next. Judge mainly saves, shares and reach relative to the average. "
-        "Be honest when there is too little data to draw conclusions. Output only the document."
+        "experiments to run next.\n"
+        "How to judge: use RATES, never raw totals. Compare saves, shares, likes and profile visits per account "
+        "reached, and for Reels the skip rate and average watch time (their units are not confirmed, so compare "
+        "only between Reels). While the page has fewer than 100 followers, the share of reach and views that "
+        "comes from non-followers is the main growth indicator. Data younger than 48 hours may be incomplete. "
+        f"A post with fewer than {MIN_REACH} accounts reached cannot support a conclusion: say so instead of "
+        "drawing one, and keep the current strategy mostly unchanged when the data is that thin. "
+        "Do not invent causes: report what the numbers show, label hypotheses as hypotheses, and state clearly "
+        "when there is too little data. Output only the document."
     )
     response = anthropic.Anthropic().beta.messages.create(
         model=config.MODEL,

@@ -24,6 +24,7 @@ PENDING = ROOT / "posts" / "pending.json"
 QUEUE = ROOT / "posts" / "queue"
 STRATEGY = ROOT / "posts" / "strategy.md"
 STATE = ROOT / "posts" / "state.json"
+REPORT = ROOT / "posts" / "report.md"
 
 
 def load_history() -> list[dict]:
@@ -47,9 +48,16 @@ def learn() -> None:
         print(f"Copertura dell'account salvata per {len(days)} giorni (divisa tra follower e non follower)")
     except Exception as e:  # le statistiche dell'account sono un extra: non fermano il resto
         print(f"Copertura dell'account non aggiornata: {e}")
+    try:
+        from bot.report import build_report
+
+        REPORT.write_text(build_report(history, state))
+        print("Rapporto aggiornato in posts/report.md")
+    except Exception as e:  # il rapporto è un extra: non ferma il resto
+        print(f"Rapporto non aggiornato: {e}")
     if should_reflect(state, history):
         strategy = STRATEGY.read_text() if STRATEGY.exists() else ""
-        STRATEGY.write_text(reflect(history, strategy, state["followers_log"]) + "\n")
+        STRATEGY.write_text(reflect(history, strategy, state["followers_log"], state.get("account_log")) + "\n")
         state["last_reflection"] = snapshot["date"]
         print("Strategia aggiornata in posts/strategy.md")
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2))
