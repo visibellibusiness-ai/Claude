@@ -1,0 +1,23 @@
+{
+  "date": "20261027-1242",
+  "series": "facts",
+  "format": "carousel",
+  "trial": false,
+  "music": null,
+  "theme_index": 0,
+  "topic": "Venus: one spin takes longer than its year",
+  "category": "space",
+  "hook": "One spin of Venus takes longer than its year",
+  "slides": 3,
+  "design": {
+    "style": "template"
+  },
+  "images": [
+    "posts/20261027-1242/slide_01.jpg",
+    "posts/20261027-1242/slide_02.jpg",
+    "posts/20261027-1242/slide_03.jpg",
+    "posts/20261027-1242/slide_04.jpg",
+    "posts/20261027-1242/slide_05.jpg"
+  ],
+  "caption": "One spin of Venus takes longer than its year.\n\nVenus needs about 243 Earth days to turn once on its axis, but only about 225 Earth days to go around the Sun. It also spins backward compared to Earth, so the Sun rises in the west and sets in the east.\n\nSurface views are computer-simulated from NASA Magellan radar data.\n\nWhich planet should we look at next?\n\n📷 NASA/JPL-Caltech (public domain (NASA)) via nasa · NASA/JPL (public domain (NASA)) via nasa\n\n#space #venus #planets #astronomy #nasa #didyouknow #facts #science #learnsomethingnew"
+}

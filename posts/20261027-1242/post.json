@@ -11,7 +11,7 @@
       "label": "Rotation",
       "image_query": "",
       "image_prompt": "",
-      "image": "posts/queue/venus-1.jpg",
+      "image": "/home/runner/work/Claude/Claude/posts/queue/venus-1.jpg",
       "credit": "NASA/JPL (public domain (NASA)) via nasa"
     },
     {
@@ -21,7 +21,7 @@
       "label": "Orbit",
       "image_query": "",
       "image_prompt": "",
-      "image": "posts/queue/venus-2.jpg",
+      "image": "/home/runner/work/Claude/Claude/posts/queue/venus-2.jpg",
       "credit": "NASA/JPL (public domain (NASA)) via nasa"
     },
     {
@@ -31,12 +31,12 @@
       "label": "Backwards",
       "image_query": "",
       "image_prompt": "",
-      "image": "posts/queue/venus-3.jpg",
+      "image": "/home/runner/work/Claude/Claude/posts/queue/venus-3.jpg",
       "credit": "NASA/JPL (public domain (NASA)) via nasa"
     }
   ],
   "cta": "Follow to never miss the next one",
-  "caption": "One spin of Venus takes longer than its year.\n\nVenus needs about 243 Earth days to turn once on its axis, but only about 225 Earth days to go around the Sun. It also spins backward compared to Earth, so the Sun rises in the west and sets in the east.\n\nSurface views are computer-simulated from NASA Magellan radar data.\n\nWhich planet should we look at next?",
+  "caption": "One spin of Venus takes longer than its year.\n\nVenus needs about 243 Earth days to turn once on its axis, but only about 225 Earth days to go around the Sun. It also spins backward compared to Earth, so the Sun rises in the west and sets in the east.\n\nSurface views are computer-simulated from NASA Magellan radar data.\n\nWhich planet should we look at next?\n\n📷 NASA/JPL-Caltech (public domain (NASA)) via nasa · NASA/JPL (public domain (NASA)) via nasa",
   "hashtags": [
     "space",
     "venus",
@@ -54,7 +54,7 @@
   ],
   "image_query": "",
   "image_prompt": "",
-  "cover_image": "posts/queue/venus-cover.jpg",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/queue/venus-cover.jpg",
   "cover_credit": "NASA/JPL-Caltech (public domain (NASA)) via nasa",
   "design": {
     "palette": 0,
@@ -64,5 +64,8 @@
   },
   "reasoning": "First post: facts checked against NASA primary sources",
   "music": "mystery",
-  "trial": false
+  "trial": false,
+  "design_used": {
+    "style": "template"
+  }
 }
