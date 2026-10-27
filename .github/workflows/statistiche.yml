@@ -1,0 +1,28 @@
+name: Controlla statistiche Instagram
+
+# Solo lettura: non pubblica niente e non scrive niente nel repo. Stampa nel log quali
+# metriche rispondono per l'account e per i post (vedi bot/probe.py).
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  statistiche:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Leggi le statistiche
+        env:
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+        run: python -m bot.probe
