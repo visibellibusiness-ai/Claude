@@ -66,18 +66,26 @@ def load_templates() -> dict:
         return {}
 
 
+def _preset(rel: str | None, credit: str | None) -> dict | None:
+    """Foto già scelta e salvata nel repo (percorso relativo alla radice, per esempio
+    posts/queue/foto.jpg): in quel caso non si cerca niente online."""
+    if rel and (ROOT / rel).exists():
+        return {"path": str(ROOT / rel), "credit": credit}
+    return None
+
+
 def attach_images(post: dict, out_dir: Path) -> None:
     """Un'immagine per copertina e slide (foto con licenza libera o generata) e crediti in caption."""
     from bot.images import credits_line, get_image
 
     out_dir.mkdir(parents=True, exist_ok=True)
     space = post.get("category", "").lower() in ("space", "spazio")
-    cover = get_image(post.get("image_query", ""), post.get("image_prompt", ""), post["hook"], out_dir / "img_cover.jpg", space)
+    cover = _preset(post.get("cover_image"), post.get("cover_credit")) or get_image(post.get("image_query", ""), post.get("image_prompt", ""), post["hook"], out_dir / "img_cover.jpg", space)
     if cover:
         post["cover_image"], post["cover_credit"] = cover["path"], cover["credit"]
     results = [cover]
     for i, s in enumerate(post["slides"], start=1):
-        r = get_image(s.get("image_query", ""), s.get("image_prompt", ""), f"{s['title']}. {s['body']}", out_dir / f"img_{i:02d}.jpg", space)
+        r = _preset(s.get("image"), s.get("credit")) or get_image(s.get("image_query", ""), s.get("image_prompt", ""), f"{s['title']}. {s['body']}", out_dir / f"img_{i:02d}.jpg", space)
         if r:
             s["image"], s["credit"] = r["path"], r["credit"]
         results.append(r)
