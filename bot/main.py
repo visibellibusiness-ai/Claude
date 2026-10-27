@@ -35,13 +35,18 @@ def load_state() -> dict:
 
 
 def learn() -> None:
-    from bot.learn import reflect, should_reflect, update_metrics
+    from bot.learn import reflect, should_reflect, update_account_log, update_metrics
 
     history, state = load_history(), load_state()
     snapshot = update_metrics(history)
     state["followers_log"].append(snapshot)
     HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2))
     print(f"Statistiche aggiornate. Follower: {snapshot['followers']}")
+    try:
+        days = update_account_log(state)
+        print(f"Copertura dell'account salvata per {len(days)} giorni (divisa tra follower e non follower)")
+    except Exception as e:  # le statistiche dell'account sono un extra: non fermano il resto
+        print(f"Copertura dell'account non aggiornata: {e}")
     if should_reflect(state, history):
         strategy = STRATEGY.read_text() if STRATEGY.exists() else ""
         STRATEGY.write_text(reflect(history, strategy, state["followers_log"]) + "\n")

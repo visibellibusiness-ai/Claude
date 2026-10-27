@@ -1,7 +1,7 @@
 """Legge le statistiche dei post e fa rivedere la strategia a Claude."""
 
 import os
-from datetime import datetime, timedelta, timezone
+from datetime import date, datetime, timedelta, timezone
 
 import anthropic
 import requests
@@ -56,6 +56,72 @@ def _insights(media_id: str, kind: str = "carousel") -> dict | None:
         return {"likes": d.get("like_count", 0), "comments": d.get("comments_count", 0)}
     print(f"Statistiche non disponibili per {media_id}: {r.text}")
     return None
+
+
+# Copertura dell'account al giorno, divisa tra follower e non follower. L'API conserva i dati
+# dell'account solo 90 giorni e li può correggere per 48 ore: a ogni giro si rileggono gli
+# ultimi giorni e si sovrascrivono, i più vecchi restano come salvati in posts/state.json.
+ACCOUNT_REREAD_DAYS = 4  # oggi (parziale) e i 3 giorni precedenti
+ACCOUNT_LOG_MAX = 400
+# (nome nel log, metrica, suddivisione). "follow_type" dà FOLLOWER / NON_FOLLOWER / UNKNOWN.
+ACCOUNT_METRICS = [
+    ("reach", "reach", "follow_type"),
+    ("reach_by_product", "reach", "media_product_type"),
+    ("views", "views", "follow_type"),
+    ("views_by_product", "views", "media_product_type"),
+    ("accounts_engaged", "accounts_engaged", None),
+    ("total_interactions", "total_interactions", None),
+    ("likes", "likes", None),
+    ("comments", "comments", None),
+    ("saves", "saves", None),
+    ("shares", "shares", None),
+]
+
+
+def _account_metric(user_id: str, metric: str, breakdown: str | None, since: int, until: int) -> dict | None:
+    """Un valore dell'account: {"total": n, "NON_FOLLOWER": n, ...}. None se l'API non lo dà."""
+    params = {"metric": metric, "period": "day", "metric_type": "total_value", "since": since,
+              "until": until, "access_token": os.environ["IG_ACCESS_TOKEN"]}
+    if breakdown:
+        params["breakdown"] = breakdown
+    r = requests.get(f"{GRAPH}/{user_id}/insights", params=params, timeout=30)
+    if not r.ok:
+        print(f"Account: {metric}{'/' + breakdown if breakdown else ''} non disponibile: {r.text[:160]}")
+        return None
+    data = r.json().get("data", [])
+    if not data:
+        return None  # insieme vuoto: dato non ancora disponibile, non zero
+    total = data[0].get("total_value", {})
+    out = {"total": total.get("value")}
+    for b in total.get("breakdowns", []):
+        for res in b.get("results", []):
+            out[res["dimension_values"][0]] = res["value"]
+    return out
+
+
+def account_day(user_id: str, day: date) -> dict:
+    """Statistiche dell'account per un giorno UTC (dalle 00:00 alle 23:59:59)."""
+    since = int(datetime(day.year, day.month, day.day, tzinfo=timezone.utc).timestamp())
+    entry = {"date": day.isoformat()}
+    for name, metric, breakdown in ACCOUNT_METRICS:
+        entry[name] = _account_metric(user_id, metric, breakdown, since, since + 86399)
+    return entry
+
+
+def update_account_log(state: dict, today: date | None = None) -> list[dict]:
+    """Aggiorna state["account_log"] con gli ultimi giorni. Non sovrascrive un giorno già salvato
+    con uno vuoto. Restituisce le voci rilette."""
+    user_id = os.environ["IG_USER_ID"]
+    today = today or datetime.now(timezone.utc).date()
+    log = {e["date"]: e for e in state.get("account_log", [])}
+    fresh = []
+    for back in range(ACCOUNT_REREAD_DAYS):
+        entry = account_day(user_id, today - timedelta(days=back))
+        fresh.append(entry)
+        if any(v is not None for k, v in entry.items() if k != "date"):
+            log[entry["date"]] = entry
+    state["account_log"] = [log[k] for k in sorted(log)][-ACCOUNT_LOG_MAX:]
+    return fresh
 
 
 def _followers() -> int | None:

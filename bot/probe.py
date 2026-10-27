@@ -102,8 +102,21 @@ def bot_reading() -> None:
             print("  " + short(_insights(h["media_id"], h.get("format", "carousel")), 700))
 
 
+def account_log() -> None:
+    """Cosa salverebbe il bot ogni giorno per l'account, senza scrivere niente."""
+    from bot.learn import update_account_log
+
+    print("\n=== COPERTURA DELL'ACCOUNT PER GIORNO (cosa salva il bot) ===")
+    for entry in update_account_log({}):
+        print(f"\n{entry['date']}")
+        for name, value in entry.items():
+            if name != "date":
+                print(f"  {name}: {short(value, 300)}")
+
+
 def main() -> None:
     user_id = os.environ["IG_USER_ID"]
+    account_log()
     bot_reading()
     account(user_id)
     media(user_id)
