@@ -1,0 +1,186 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-10-27",
+  "hook": "Israel's busiest election morning since 1977",
+  "reel_hook": "Israel votes. Nobody knows who wins.",
+  "slides": [
+    {
+      "title": "Israel votes, neck and neck",
+      "highlight": "31%",
+      "image_query": "Knesset building Jerusalem",
+      "image_prompt": "A ballot box on a table beside a perfectly level brass balance scale holding two equal stacks of blank paper ballots, soft morning light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Netanyahu faces ex-army chief Eisenkot in a tight race."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Neither bloc likely hits 61 seats; talks could take weeks."
+        ],
+        [
+          "FOR YOU",
+          "Exit polls come after 20:00 GMT; a clear winner may take weeks."
+        ]
+      ],
+      "body": "Netanyahu faces ex-army chief Eisenkot in a tight race. Neither bloc likely hits 61 seats; talks could take weeks. Exit polls come after 20:00 GMT; a clear winner may take weeks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1255/img_01.jpg",
+      "credit": "Clema12 (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Three nations talk in Tehran",
+      "highlight": "3",
+      "image_query": "Tehran skyline",
+      "image_prompt": "Three empty chairs around a round wooden table with a single olive branch in the middle, evening light through tall windows",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Saudi, Pakistani and Turkish officials held talks in Tehran."
+        ],
+        [
+          "WHY IT MATTERS",
+          "They aim to stop new Iran–Israel–US fighting; no deal yet."
+        ],
+        [
+          "FOR YOU",
+          "Little changes today; Egypt also okayed military help for Saudi Arabia."
+        ]
+      ],
+      "body": "Saudi, Pakistani and Turkish officials held talks in Tehran. They aim to stop new Iran–Israel–US fighting; no deal yet. Little changes today; Egypt also okayed military help for Saudi Arabia.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1255/img_02.jpg",
+      "credit": "Ninara from Helsinki, Finland (CC BY-SA 3.0) via wikimedia"
+    },
+    {
+      "title": "Claude's maker files for IPO",
+      "highlight": "ANT",
+      "image_query": "Nasdaq Times Square",
+      "image_prompt": "A glowing brass bell on a pedestal surrounded by rising stacks of gold coins, a small circuit board resting at its base, dramatic studio light",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Anthropic filed to list on Nasdaq under the ticker ANT."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It could be one of the largest IPOs ever."
+        ],
+        [
+          "FOR YOU",
+          "Shares could trade as soon as November; price range not yet disclosed."
+        ]
+      ],
+      "body": "Anthropic filed to list on Nasdaq under the ticker ANT. It could be one of the largest IPOs ever. Shares could trade as soon as November; price range not yet disclosed.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1255/img_03.jpg",
+      "credit": "Nielsoncaetanosalmeron (CC BY 4.0) via wikimedia"
+    },
+    {
+      "title": "Lula wins a fourth term",
+      "highlight": "51.8%",
+      "image_query": "Brasilia National Congress",
+      "image_prompt": "A green and yellow ballot box on a marble step at dusk, a single gavel lying beside it, modernist columns in the background",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Lula beat Flávio Bolsonaro 51.8% to 48.2% in Brazil's runoff."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Bolsonaro refuses to concede and seeks to annul the result."
+        ],
+        [
+          "FOR YOU",
+          "Lula's new term runs 2027–2030; watch Bolsonaro's bid to annul the vote."
+        ]
+      ],
+      "body": "Lula beat Flávio Bolsonaro 51.8% to 48.2% in Brazil's runoff. Bolsonaro refuses to concede and seeks to annul the result. Lula's new term runs 2027–2030; watch Bolsonaro's bid to annul the vote.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1255/img_04.jpg",
+      "credit": "Donatas Dabravolskas (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "A ceasefire to let aid in",
+      "highlight": "Aid",
+      "image_query": "humanitarian aid trucks",
+      "image_prompt": "A line of white aid boxes on an empty country road at dawn, a white flag fluttering on a fence post, calm river in the distance",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A local ceasefire began around occupied Oleshky, southern Ukraine."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Aid can enter, residents can leave; both sides observe it."
+        ],
+        [
+          "FOR YOU",
+          "Brokered by Melania Trump, it runs until week's end; strikes continue elsewhere."
+        ]
+      ],
+      "body": "A local ceasefire began around occupied Oleshky, southern Ukraine. Aid can enter, residents can leave; both sides observe it. Brokered by Melania Trump, it runs until week's end; strikes continue elsewhere.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1255/img_05.jpg",
+      "credit": "U.S. Army USARCENT by Staff Sgt. Michael Ito (Public domain) via wikimedia"
+    }
+  ],
+  "cta": "Follow @you.didnot.know for daily news",
+  "caption": "🗳️ Israel votes in a neck-and-neck race: turnout is the highest at midday since 1977. Exit polls come after 20:00 GMT, but a clear winner could take weeks.\n🕊️ Saudi, Pakistani and Turkish officials held talks in Tehran to prevent new fighting. No deal yet.\n📈 Anthropic, maker of Claude, filed for a Nasdaq IPO under the ticker ANT. Shares could trade as soon as November.\n🇧🇷 Lula wins a fourth term in Brazil, 51.8% to 48.2%. Bolsonaro won't concede.\n🚚 A local ceasefire around Oleshky, Ukraine, lets aid in and residents out until the end of the week.\n\nWhich story will you be following this week?\n\nFollow @you.didnot.know for your daily brief.\n\n📷 Clema12 (CC BY-SA 4.0) via wikimedia · Ninara from Helsinki, Finland (CC BY-SA 3.0) via wikimedia · Nielsoncaetanosalmeron (CC BY 4.0) via wikimedia · Donatas Dabravolskas (CC BY-SA 4.0) via wikimedia · U.S. Army USARCENT by Staff Sgt. Michael Ito (Public domain) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "worldnews",
+    "israelelection",
+    "israel",
+    "middleeast",
+    "anthropic",
+    "ipo",
+    "brazil",
+    "lula",
+    "ukraine",
+    "newsbrief"
+  ],
+  "sources": [
+    "https://www.nbc26.com/world/middle-east/strong-turnout-marks-israeli-election-as-netanyahu-fights-to-retain-po",
+    "https://www.nbcnews.com/world/israel/live-blog/israel-election-live-updates-netanyahu-eisenkot-voters-war-iran",
+    "https://www.aljazeera.com/news/2026/10/27/israel-election-results-2026-when-will-we-know-who-won-and-whats-nex",
+    "https://www.cnn.com/2026/10/25/middleeast/israel-election-2026-whats-at-stake-intl",
+    "https://www.aljazeera.com/news/2026/10/26/officials-from-mecca-pact-states-to-hold-talks-in-iran-amid-regional",
+    "https://www.france24.com/en/middle-east/20261026-iran-talks-mecca-pact-nations-war",
+    "https://www.union-bulletin.com/news/national/ap-news-summary-at-9-09-a-m-edt/article_c6dba3ec-b84b-5b25-9dfc-c9b6d3d68e66.html",
+    "https://www.aljazeera.com/news/2026/10/26/egyptian-parliament-authorises-military-aid-for-saudi-arabia",
+    "https://www.washingtontimes.com/news/2026/oct/26/egypts-parliament-authorizing-military-support-saudi-arabia-defend/",
+    "https://www.cnn.com/2026/10/26/tech/anthropic-files-ipo",
+    "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html",
+    "https://www.investing.com/news/stock-market-news/anthropic-files-for-nasdaq-ipo-as-revenue-jumps-to-163-billion-4972842",
+    "https://finance.yahoo.com/technology/article/anthropic-publicly-files-ipo-prospectus-noting-strong-revenue-gro",
+    "https://www.sec.gov/Archives/edgar/data/0002130357/000162828026067168/exhibit44-sx1.htm",
+    "https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html",
+    "https://www.npr.org/2026/10/25/nx-s1-6016299/brazil-lula-bolsonaro-election",
+    "https://www.bloomberg.com/news/articles/2026-10-25/lula-wins-a-record-fourth-term-in-brazil-in-a-surprise-comeback",
+    "https://www.usnews.com/news/world/articles/2026-10-26/russia-ukraine-begin-localised-ceasefire-to-allow-for-hu",
+    "https://www.wral.com/news/ap/f2614-localized-russia-ukraine-ceasefire-takes-effect-in-oleshky-in-deal-brokered",
+    "https://kyivindependent.com/local-ceasefire-in-besieged-oleshky-begins-ukrainian-russian-officials-say/",
+    "https://www.whitehouse.gov/briefings-statements/2026/10/first-lady-melania-trump-secures-ceasefire-between-rus"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 27 OCT 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in 30 seconds, every day"
+  },
+  "image_query": "Knesset building Jerusalem",
+  "image_prompt": "A wooden ballot box on a table beside a perfectly level balance scale holding two equal piles of blank paper ballots, soft early morning light through a window",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261027-1255/img_cover.jpg",
+  "cover_credit": "Clema12 (CC BY-SA 4.0) via wikimedia",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "music_used": "mystery"
+}
