@@ -67,10 +67,19 @@ def _luminance(rgb: np.ndarray) -> np.ndarray:
 
 
 def _local_mask(fg: Image.Image) -> np.ndarray:
-    """Dove c'è testo, allargato e sfumato: la velatura locale segue questa mappa."""
-    a = fg.getchannel("A").point(lambda v: 255 if v > 8 else 0)
-    small = a.resize((W // 8, H // 8), Image.BOX).filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(7))
-    return np.asarray(small.resize((W, H), Image.BILINEAR), dtype=np.float32) / 255
+    """Dove c'è testo: un alone attorno alle lettere (la foto resta visibile tra un blocco e
+    l'altro) più una fascia leggera a tutta larghezza che lo raccorda, così su foto chiare
+    non restano macchie scure isolate."""
+    alpha = fg.getchannel("A")
+    # ogni blocco da 8 px con un po' di testo vale 1: le righe sottili della testata non devono sbiadire
+    small = alpha.resize((W // 8, H // 8), Image.BOX).point(lambda v: 255 if v > 2 else 0)
+    halo = small.filter(ImageFilter.MaxFilter(9)).filter(ImageFilter.GaussianBlur(7))
+    halo = np.asarray(halo.resize((W, H), Image.BILINEAR), dtype=np.float32) / 255
+    rows = (np.asarray(alpha) > 8).any(axis=1).astype(np.uint8) * 255
+    strip = Image.fromarray(np.repeat(rows[:, None], 9, axis=1))
+    strip = strip.filter(ImageFilter.MaxFilter(121)).filter(ImageFilter.GaussianBlur(40))
+    band = np.repeat((np.asarray(strip, dtype=np.float32)[:, 4] / 255)[:, None], W, axis=1)
+    return np.maximum(halo, 0.45 * band)
 
 
 def _veil(local: np.ndarray, strength: float) -> Image.Image:
