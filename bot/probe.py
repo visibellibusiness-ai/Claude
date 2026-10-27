@@ -88,8 +88,23 @@ def media(user_id: str) -> None:
             print(f"  profile_activity per action_type: {short(res.get('data', res), 300) if code == 200 else 'ERRORE ' + error_text(res)}")
 
 
+def bot_reading() -> None:
+    """Cosa leggerebbe il bot (bot/learn.py) per i post dello storico, senza salvare niente."""
+    from pathlib import Path
+
+    from bot.learn import _insights
+
+    print("\n=== COSA LEGGE IL BOT PER OGNI POST DELLO STORICO ===")
+    history = json.loads((Path(__file__).resolve().parent.parent / "posts" / "history.json").read_text())
+    for h in history:
+        if "media_id" in h:
+            print(f"\n{h['date']} | {h.get('format', 'carousel')} | {h['media_id']} | {h.get('hook', '')[:50]}")
+            print("  " + short(_insights(h["media_id"], h.get("format", "carousel")), 700))
+
+
 def main() -> None:
     user_id = os.environ["IG_USER_ID"]
+    bot_reading()
     account(user_id)
     media(user_id)
     print("\nFatto: nessun dato è stato scritto o pubblicato.")

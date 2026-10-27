@@ -11,22 +11,40 @@ from bot import config
 # API Instagram con Instagram Login: servono i permessi instagram_business_basic e
 # instagram_business_manage_insights nel token
 GRAPH = "https://graph.instagram.com/v26.0"
-METRICS = ["reach", "saved", "shares", "likes", "comments", "total_interactions"]
+# Metriche che l'API ha restituito nella prova del 27/10/2026 (bot/probe.py). "reposts" non è
+# supportata sui singoli post. Il tempo medio di visione e il tasso di salto dei Reel si salvano
+# così come arrivano: le unità non sono confermate.
+REELS_METRICS = ["reach", "views", "likes", "comments", "shares", "saved", "total_interactions",
+                 "ig_reels_avg_watch_time", "ig_reels_video_view_total_time", "reels_skip_rate"]
+FEED_METRICS = ["reach", "views", "likes", "comments", "shares", "saved", "total_interactions",
+                "follows", "profile_visits", "profile_activity"]
 
 
 def _parse_date(stamp: str) -> datetime:
     return datetime.strptime(stamp, "%Y%m%d-%H%M").replace(tzinfo=timezone.utc)
 
 
-def _insights(media_id: str) -> dict | None:
+def _read_metrics(media_id: str, metrics: list[str], token: str) -> dict | None:
+    r = requests.get(f"{GRAPH}/{media_id}/insights", params={"metric": ",".join(metrics), "access_token": token}, timeout=30)
+    if not r.ok:
+        return None
+    return {m["name"]: m["values"][0]["value"] for m in r.json().get("data", []) if m.get("values")}
+
+
+def _insights(media_id: str, kind: str = "carousel") -> dict | None:
+    """Metriche del post secondo il suo tipo. Se una non esiste per quel tipo l'API rifiuta
+    l'intera richiesta: allora si chiedono una per una e si tengono quelle che rispondono."""
     token = os.environ["IG_ACCESS_TOKEN"]
-    r = requests.get(
-        f"{GRAPH}/{media_id}/insights",
-        params={"metric": ",".join(METRICS), "access_token": token},
-        timeout=30,
-    )
-    if r.ok:
-        return {m["name"]: m["values"][0]["value"] for m in r.json().get("data", [])}
+    wanted = REELS_METRICS if kind == "reel" else FEED_METRICS
+    found = _read_metrics(media_id, wanted, token)
+    if found is None:
+        found = {}
+        for metric in wanted:
+            one = _read_metrics(media_id, [metric], token)
+            if one:
+                found.update(one)
+    if found:
+        return found
     # senza permesso insights restano comunque like e commenti pubblici
     r = requests.get(
         f"{GRAPH}/{media_id}",
@@ -57,7 +75,7 @@ def update_metrics(history: list[dict]) -> dict:
             continue
         age = now - _parse_date(h["date"])
         if timedelta(hours=config.INSIGHTS_MIN_AGE_HOURS) <= age <= timedelta(days=14):
-            metrics = _insights(h["media_id"])
+            metrics = _insights(h["media_id"], h.get("format", "carousel"))
             if metrics:
                 h["metrics"] = metrics
     return {"date": now.strftime("%Y%m%d-%H%M"), "followers": _followers()}
