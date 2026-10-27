@@ -16,7 +16,7 @@ from pathlib import Path
 from bot import config
 from bot.generate import generate_post
 from bot.reel import render_reel
-from bot.render import render_post, render_with_templates
+from bot.render import render_post, render_story, render_with_templates
 
 ROOT = Path(__file__).resolve().parent.parent
 HISTORY = ROOT / "posts" / "history.json"
@@ -152,6 +152,11 @@ def create(post_file: str | None, series: str = "facts") -> None:
         if fmt == "news":
             # la rubrica esce sia come carosello sia come Reel con le stesse notizie
             render_reel(post, out_dir / "reel", theme_index=n)
+    story = None
+    try:
+        story = render_story(post, out_dir, templates, series)
+    except Exception as e:  # la Story è un extra: se non si disegna, il post esce lo stesso
+        print(f"Story non disegnata: {e}")
     (out_dir / "post.json").write_text(json.dumps(post, ensure_ascii=False, indent=2))
     caption = build_caption(post)
     pending.write_text(json.dumps({
@@ -167,6 +172,7 @@ def create(post_file: str | None, series: str = "facts") -> None:
         "slides": len(post["slides"]),
         "design": post.get("design_used") or post.get("design", {}),
         "images": [f"{rel_dir.as_posix()}/{p.name}" for p in paths],
+        "story": f"{rel_dir.as_posix()}/{story.name}" if story else None,
         "caption": caption,
     }, ensure_ascii=False, indent=2))
     print(f"Formato: {fmt}\nCategoria: {post.get('category', '?')}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
@@ -190,7 +196,7 @@ def _video_url(video: Path) -> str:
 
 
 def publish(series: str = "facts") -> None:
-    from bot.publish import publish_carousel, publish_reel
+    from bot.publish import publish_carousel, publish_reel, publish_story
 
     path = pending_path(series)
     if not path.exists():
@@ -233,6 +239,14 @@ def publish(series: str = "facts") -> None:
         print(f"Pubblicato ({kind}): media_id={media_id}")
     HISTORY.write_text(json.dumps(history, ensure_ascii=False, indent=2))
     path.unlink()
+    if pending.get("story"):
+        # dopo il post e senza mai fermarlo: se la Story non esce, il post c'è già
+        try:
+            base = os.environ["MEDIA_BASE_URL"].rstrip("/")
+            story_id = publish_story(f"{base}/{pending['story']}")
+            print(f"Pubblicata Story: media_id={story_id}")
+        except Exception as e:
+            print(f"Story non pubblicata: {e}")
 
 
 def main() -> None:

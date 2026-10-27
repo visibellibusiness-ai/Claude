@@ -285,12 +285,18 @@ def align_sizes(templates: dict[str, "PsdTemplate"], reference: str) -> None:
 
 
 def available() -> dict[str, PsdTemplate]:
-    """Template presenti: cover.psd, slide.psd e (facoltativo) end.psd."""
+    """Template presenti: cover.psd, slide.psd e (facoltativi) end.psd e story.psd."""
     found = {}
-    for kind in ("cover", "slide", "end"):
+    for kind in ("cover", "slide", "end", "story"):
         path = TEMPLATES / f"{kind}.psd"
-        if path.exists():
+        if not path.exists():
+            continue
+        try:
             found[kind] = PsdTemplate(path)
+        except Exception as e:
+            if kind != "story":  # la Story è un extra: gli altri template non devono pagarne il guasto
+                raise
+            print(f"Template story non utilizzabile, niente Story: {e}")
     if ALIGN_SIZES_TO:
         align_sizes(found, ALIGN_SIZES_TO)
     return found

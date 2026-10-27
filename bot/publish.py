@@ -81,3 +81,12 @@ def publish_reel(video_url: str, caption: str, trial: bool) -> tuple[str, bool]:
     _wait_ready(container["id"])
     result = _post(f"{user_id}/media_publish", creation_id=container["id"])
     return result["id"], trial
+
+
+def publish_story(image_url: str) -> str:
+    """Story con una sola immagine 9:16 (dura 24 ore). Via API non si possono mettere
+    link, adesivi o musica: solo l'immagine."""
+    user_id = os.environ["IG_USER_ID"]
+    container = _post(f"{user_id}/media", media_type="STORIES", image_url=image_url)
+    _wait_ready(container["id"])
+    return _post(f"{user_id}/media_publish", creation_id=container["id"])["id"]

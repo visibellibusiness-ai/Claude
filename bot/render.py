@@ -104,3 +104,26 @@ def render_with_templates(post: dict, out_dir: Path, templates: dict) -> list[Pa
         paths.append(p)
     post["design_used"] = {"style": "template"}
     return paths
+
+
+STORY_BODY = {"facts": "New post on our profile", "news": "Today's news is on our profile"}
+
+
+def render_story(post: dict, out_dir: Path, templates: dict, series: str = "facts") -> Path | None:
+    """Story 1080x1920 con la foto di copertina e il gancio del post, dal template story.psd.
+    Senza template (o senza foto) non si fa: la Story è un extra, il post esce lo stesso."""
+    tpl = templates.get("story")
+    if not tpl or not post.get("cover_image"):
+        return None
+    credit = post.get("cover_credit")
+    texts = {
+        "LABEL": "Daily brief" if series == "news" else "New post",
+        "TITLE": post["hook"],
+        "BODY": STORY_BODY.get(series, STORY_BODY["facts"]),
+        "HANDLE": config.PAGE_HANDLE,
+        "CREDIT": f"Photo: {_short_credit(credit)}" if credit else "",
+    }
+    out_dir.mkdir(parents=True, exist_ok=True)
+    p = out_dir / "story.jpg"
+    tpl.render(texts, post["cover_image"]).save(p, "JPEG", quality=92)
+    return p
