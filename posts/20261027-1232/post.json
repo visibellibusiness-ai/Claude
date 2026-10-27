@@ -57,5 +57,8 @@
     "swipe_text": "Swipe",
     "follow_line": "daily facts that rewire your brain"
   },
-  "format": "carousel"
+  "format": "carousel",
+  "design_used": {
+    "style": "template"
+  }
 }
