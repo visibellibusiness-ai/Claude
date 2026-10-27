@@ -45,5 +45,37 @@
       "palette": 2
     },
     "media_id": "18119805316782021"
+  },
+  {
+    "date": "20261027-1332",
+    "series": "news",
+    "topic": "Daily news 2026-10-27",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "news",
+    "hook": "Netanyahu or Eisenkot? Polls can't tell",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18097484327414955"
+  },
+  {
+    "date": "20261027-1332",
+    "series": "news",
+    "topic": "Daily news 2026-10-27",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "news",
+    "hook": "Netanyahu or Eisenkot? Polls can't tell",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18442180123198005"
   }
 ]
