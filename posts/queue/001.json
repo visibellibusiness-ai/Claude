@@ -1,0 +1,68 @@
+{
+  "format": "carousel",
+  "category": "space",
+  "topic": "Venus: one spin takes longer than its year",
+  "hook": "One spin of Venus takes longer than its year",
+  "slides": [
+    {
+      "title": "Earth days per spin",
+      "body": "Venus needs 243 Earth days to spin once. That is longer than a trip around the Sun.",
+      "highlight": "243",
+      "label": "Rotation",
+      "image_query": "",
+      "image_prompt": "",
+      "image": "posts/queue/venus-1.jpg",
+      "credit": "NASA/JPL (public domain (NASA)) via nasa"
+    },
+    {
+      "title": "Earth days per year",
+      "body": "One trip around the Sun takes Venus about 225 Earth days. Its spin takes even longer.",
+      "highlight": "225",
+      "label": "Orbit",
+      "image_query": "",
+      "image_prompt": "",
+      "image": "posts/queue/venus-2.jpg",
+      "credit": "NASA/JPL (public domain (NASA)) via nasa"
+    },
+    {
+      "title": "Earth days from sunrise to sunrise",
+      "body": "Venus spins backward compared to Earth, so the Sun rises in the west and sets in the east.",
+      "highlight": "117",
+      "label": "Backwards",
+      "image_query": "",
+      "image_prompt": "",
+      "image": "posts/queue/venus-3.jpg",
+      "credit": "NASA/JPL (public domain (NASA)) via nasa"
+    }
+  ],
+  "cta": "Follow to never miss the next one",
+  "caption": "One spin of Venus takes longer than its year.\n\nVenus needs about 243 Earth days to turn once on its axis, but only about 225 Earth days to go around the Sun. It also spins backward compared to Earth, so the Sun rises in the west and sets in the east.\n\nSurface views are computer-simulated from NASA Magellan radar data.\n\nWhich planet should we look at next?",
+  "hashtags": [
+    "space",
+    "venus",
+    "planets",
+    "astronomy",
+    "nasa",
+    "didyouknow",
+    "facts",
+    "science",
+    "learnsomethingnew"
+  ],
+  "sources": [
+    "https://science.nasa.gov/venus/venus-facts/",
+    "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html"
+  ],
+  "image_query": "",
+  "image_prompt": "",
+  "cover_image": "posts/queue/venus-cover.jpg",
+  "cover_credit": "NASA/JPL-Caltech (public domain (NASA)) via nasa",
+  "design": {
+    "palette": 0,
+    "cover_label": "Space",
+    "swipe_text": "Swipe",
+    "follow_line": "A new mind-blowing fact every day"
+  },
+  "reasoning": "First post: facts checked against NASA primary sources",
+  "music": "mystery",
+  "trial": false
+}
