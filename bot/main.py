@@ -89,6 +89,9 @@ def attach_images(post: dict, out_dir: Path) -> None:
         if r:
             s["image"], s["credit"] = r["path"], r["credit"]
         results.append(r)
+    # dichiarazione AI: vale per il post se almeno un'immagine è generata, per la Story se lo è la copertina
+    post["ai_generated"] = any(r and r.get("generated") for r in results)
+    post["cover_ai_generated"] = bool(cover and cover.get("generated"))
     line = credits_line(results)
     if line:
         post["caption"] = f"{post['caption']}\n\n{line}"
@@ -142,6 +145,7 @@ def create(post_file: str | None, series: str = "facts") -> None:
             art = out_dir / "cover_art.jpg"
             print("Immagine di copertina:", generate(post["image_prompt"], art))
             post["cover_image"] = str(art)
+            post["ai_generated"] = post["cover_ai_generated"] = True
         except Exception as e:  # senza immagine il post esce con la copertina tipografica
             print(f"Immagine di copertina non generata: {e}")
     if fmt == "reel":
@@ -173,6 +177,8 @@ def create(post_file: str | None, series: str = "facts") -> None:
         "design": post.get("design_used") or post.get("design", {}),
         "images": [f"{rel_dir.as_posix()}/{p.name}" for p in paths],
         "story": f"{rel_dir.as_posix()}/{story.name}" if story else None,
+        "ai": bool(post.get("ai_generated")),
+        "story_ai": bool(post.get("cover_ai_generated")),
         "caption": caption,
     }, ensure_ascii=False, indent=2))
     print(f"Formato: {fmt}\nCategoria: {post.get('category', '?')}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
@@ -206,17 +212,17 @@ def publish(series: str = "facts") -> None:
     fmt = pending.get("format", "carousel")
     entries = []
     if fmt == "reel":
-        media_id, trial = publish_reel(_video_url(_video(pending)), pending["caption"], pending.get("trial", False))
+        media_id, trial = publish_reel(_video_url(_video(pending)), pending["caption"], pending.get("trial", False), pending.get("ai", False))
         entries.append(("reel", media_id, trial))
     else:
         # Le immagini devono essere raggiungibili pubblicamente: il workflow le
         # committa nel repo prima di questo passo (vedi .github/workflows/post.yml).
         base = os.environ["MEDIA_BASE_URL"].rstrip("/")
         urls = [f"{base}/{p}" for p in pending["images"]]
-        entries.append(("carousel", publish_carousel(urls, pending["caption"]), False))
+        entries.append(("carousel", publish_carousel(urls, pending["caption"], pending.get("ai", False)), False))
         if fmt == "news":
             try:
-                media_id, trial = publish_reel(_video_url(_video(pending, "reel")), pending["caption"], pending.get("trial", False))
+                media_id, trial = publish_reel(_video_url(_video(pending, "reel")), pending["caption"], pending.get("trial", False), pending.get("ai", False))
                 entries.append(("reel", media_id, trial))
             except Exception as e:  # il carosello è già uscito: non va ripubblicato
                 print(f"Reel della rubrica non pubblicato: {e}")
@@ -243,7 +249,7 @@ def publish(series: str = "facts") -> None:
         # dopo il post e senza mai fermarlo: se la Story non esce, il post c'è già
         try:
             base = os.environ["MEDIA_BASE_URL"].rstrip("/")
-            story_id = publish_story(f"{base}/{pending['story']}")
+            story_id = publish_story(f"{base}/{pending['story']}", pending.get("story_ai", False))
             print(f"Pubblicata Story: media_id={story_id}")
         except Exception as e:
             print(f"Story non pubblicata: {e}")

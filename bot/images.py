@@ -239,7 +239,7 @@ def sharp_enough(path: Path) -> bool:
 
 
 def get_image(query: str, prompt: str, context: str, out: Path, space: bool = False) -> dict | None:
-    """Restituisce {"path", "credit"} oppure None. credit è None per le immagini generate."""
+    """Restituisce {"path", "credit"} oppure None. Per le immagini generate credit è None e generated è True."""
     if query:
         try:
             candidates = search(query, space)
@@ -264,7 +264,7 @@ def get_image(query: str, prompt: str, context: str, out: Path, space: bool = Fa
             from bot.imagegen import generate
 
             generate(prompt, out)
-            return {"path": str(out), "credit": None, "source": None}
+            return {"path": str(out), "credit": None, "source": None, "generated": True}
         except Exception as e:
             print(f"Immagine non generata: {e}")
     return None
