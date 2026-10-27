@@ -1,0 +1,94 @@
+{
+  "reasoning": "There are no stats yet. The last four posts were off-niche news, so I'm going back to the core niche with a classic crowd-pleaser: animals, specifically octopuses. This topic is widely shared and every fact on it is well documented. I'm testing a short reel (5 slides, short texts) to measure reach with new audiences. I'm making it a Trial Reel so the experiment doesn't hurt the profile if it underperforms. The style is cards, each with a big highlight. Palette 0 starts a fresh test, since palette 2 was used for news. The caption question is topic-based, to compare against future opinion or save-nudge questions.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": true,
+  "category": "animals",
+  "topic": "Octopus biology: hearts, blood, arms, taste, color",
+  "hook": "5 things octopuses do that seem impossible",
+  "slides": [
+    {
+      "title": "Three hearts",
+      "body": "Two hearts pump blood through the gills. The third pumps it to the rest of the body.",
+      "highlight": "3",
+      "image_query": "octopus underwater",
+      "image_prompt": "An octopus floating in deep blue water with three glowing red hearts visible inside its translucent body, dramatic light rays from above",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1821/img_01.jpg",
+      "credit": "Diego Delso (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Blue blood",
+      "body": "Their blood carries oxygen with copper-based hemocyanin instead of iron, which turns it blue.",
+      "highlight": "Blue",
+      "image_query": "blue octopus",
+      "image_prompt": "Glass vial of glowing blue liquid resting on wet rocks beside octopus tentacles, ocean background, cinematic lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1821/img_02.jpg",
+      "credit": "Ahmed Abdul Rahman (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Arms that think",
+      "body": "About two-thirds of an octopus's neurons are in its arms, not its brain.",
+      "highlight": "2/3",
+      "image_query": "octopus tentacles",
+      "image_prompt": "Octopus arm curling around a seashell with faint glowing neural network lines running through it, dark ocean background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1821/img_03.jpg",
+      "credit": "ImagePerson (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "They taste by touch",
+      "body": "Their suckers are packed with chemical receptors, so octopuses taste whatever they touch.",
+      "highlight": "Taste",
+      "image_query": "octopus suckers",
+      "image_prompt": "Close-up of octopus suckers gripping a crab shell on the seafloor, soft underwater light, high detail",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1821/img_04.jpg",
+      "credit": "Betty Wills (Atsme) (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Colorblind color masters",
+      "body": "They change color in a blink, yet most species have only one type of light receptor in their eyes.",
+      "highlight": "1",
+      "image_query": "octopus camouflage",
+      "image_prompt": "Octopus blending into colorful coral reef, half its body matching the coral pattern, vivid underwater scene",
+      "image": "/home/runner/work/Claude/Claude/posts/20261027-1821/img_05.jpg",
+      "credit": "Jerome Paillet (IFREMER, Laboratoire d'Océanographie Physique et Spatiale, Centr (CC BY 4.0) via wikimedia"
+    }
+  ],
+  "cta": "Follow for facts you never knew",
+  "caption": "Octopuses have three hearts, blue blood and arms that can taste. They look less like animals from Earth and more like visitors from another planet.\n\nOne of the strangest details: about two-thirds of their neurons sit in their arms, so each arm can explore and react on its own.\n\nWhich of these octopus facts surprised you the most?\n\n📷 Victor Micallef (CC BY-SA 4.0) via wikimedia · Diego Delso (CC BY-SA 4.0) via wikimedia · Ahmed Abdul Rahman (CC BY-SA 4.0) via wikimedia · ImagePerson (CC BY-SA 4.0) via wikimedia · Betty Wills (Atsme) (CC BY-SA 4.0) via wikimedia · Jerome Paillet (IFREMER, Laboratoire d'Océanographie Physique et Spatiale, Centr (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "octopus",
+    "animalfacts",
+    "marinelife",
+    "ocean",
+    "didyouknow",
+    "sciencefacts",
+    "naturelovers",
+    "funfacts",
+    "wildlife",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Smithsonian Ocean: Octopuses (ocean.si.edu)",
+    "Encyclopaedia Britannica: Octopus",
+    "Scientific American: The Octopus's Sensitive Arms and Brain",
+    "van Giesen et al., 2020, Cell: Molecular Basis of Chemotactile Sensation in Octopus",
+    "Ramirez & Oakley, 2015, Journal of Experimental Biology: Eye-independent, light-activated chromatophore expansion in octopus skin"
+  ],
+  "image_query": "octopus close up",
+  "image_prompt": "A striking octopus in deep blue water, tentacles spread wide, skin shimmering with shifting colors, mysterious light beams from above",
+  "design": {
+    "palette": 0,
+    "cover_label": "Ocean weirdness",
+    "swipe_text": "Watch till end",
+    "follow_line": "Daily facts that sound made up"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261027-1821/img_cover.jpg",
+  "cover_credit": "Victor Micallef (CC BY-SA 4.0) via wikimedia",
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "music_used": "mystery"
+}
