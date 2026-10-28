@@ -108,5 +108,37 @@
       "style": "template"
     },
     "media_id": "18129222529872581"
+  },
+  {
+    "date": "20261028-1340",
+    "series": "news",
+    "topic": "Daily news 2026-10-28",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "news",
+    "hook": "Spain's second deadly train crash this year",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18088295282705576"
+  },
+  {
+    "date": "20261028-1340",
+    "series": "news",
+    "topic": "Daily news 2026-10-28",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "news",
+    "hook": "Spain's second deadly train crash this year",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "17991975959861422"
   }
 ]
