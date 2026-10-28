@@ -1,0 +1,114 @@
+{
+  "reasoning": "No performance data yet, so I'm testing new ground. Science, space and animals are covered, but history isn't, so this tries a history and deep-time angle. 'Things that happened at the same time' posts tend to get shared because each slide resets your sense of time and invites debate in the comments. A carousel with cards suits a save-worthy list of 7 short, checkable facts. I'm also trying palette 1, which hasn't been used yet, and an opinion-style question to compare comment rates later.",
+  "format": "carousel",
+  "music": "mystery",
+  "trial": false,
+  "category": "history",
+  "topic": "Surprising timeline overlaps in history and prehistory",
+  "hook": "Timelines that will break your brain",
+  "slides": [
+    {
+      "title": "Cleopatra and the Moon",
+      "body": "Cleopatra lived closer in time to the Moon landing than to the building of the Great Pyramid of Giza.",
+      "highlight": "",
+      "image_query": "great pyramid giza",
+      "image_prompt": "The Great Pyramid of Giza at dusk with a bright full moon rising above it, golden sand, cinematic lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_01.jpg",
+      "credit": "kallerna (CC BY-SA 3.0) via wikimedia"
+    },
+    {
+      "title": "Mammoths and pyramids",
+      "body": "Woolly mammoths survived on Arctic Wrangel Island until about 4,000 years ago, after the Great Pyramid was built.",
+      "highlight": "4,000",
+      "image_query": "woolly mammoth",
+      "image_prompt": "A woolly mammoth standing on snowy Arctic tundra under a pale sky, realistic, cold blue light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_02.jpg",
+      "credit": "Thomas Quine (CC BY 2.0) via wikimedia"
+    },
+    {
+      "title": "Oxford vs the Aztecs",
+      "body": "Teaching at Oxford began by 1096. The Aztec city of Tenochtitlan was founded in 1325, over 200 years later.",
+      "highlight": "1096",
+      "image_query": "oxford university",
+      "image_prompt": "Old stone university towers and spires in warm morning light, medieval architecture, no people",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_03.jpg",
+      "credit": "Diliff (CC BY 2.5) via wikimedia"
+    },
+    {
+      "title": "Sharks before trees",
+      "body": "Sharks have existed for about 450 million years. The first trees appeared around 385 million years ago.",
+      "highlight": "450M",
+      "image_query": "shark underwater",
+      "image_prompt": "A shark gliding through deep blue water beneath the silhouette of an ancient fern-like forest at the surface",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_04.jpg",
+      "credit": "Charles J. Sharp (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "T. rex vs Stegosaurus",
+      "body": "Stegosaurus lived about 150 million years ago, T. rex about 68. T. rex is closer in time to us than to Stegosaurus.",
+      "highlight": "",
+      "image_query": "stegosaurus skeleton",
+      "image_prompt": "A Stegosaurus skeleton and a T. rex skull displayed in a dim museum hall, dramatic spotlight",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_05.jpg",
+      "credit": "Gary Todd from Xinzheng, China (CC0) via wikimedia"
+    },
+    {
+      "title": "Fax before the phone",
+      "body": "Alexander Bain patented an early fax machine in 1843, more than 30 years before Bell's telephone in 1876.",
+      "highlight": "1843",
+      "image_query": "antique telegraph machine",
+      "image_prompt": "A brass Victorian telegraph-style machine on a wooden desk with coiled wires and paper strips, warm vintage light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_06.jpg",
+      "credit": null
+    },
+    {
+      "title": "Nintendo and the Ripper",
+      "body": "Nintendo was founded in 1889 to make playing cards, just one year after the Jack the Ripper murders in London.",
+      "highlight": "1889",
+      "image_query": "hanafuda playing cards",
+      "image_prompt": "Traditional Japanese hanafuda playing cards scattered on a dark wooden table beside a gas lamp, foggy Victorian mood",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_07.jpg",
+      "credit": "Marcus Richert (CC BY 2.0) via wikimedia"
+    }
+  ],
+  "cta": "Follow for more mind-bending facts",
+  "caption": "History feels like neat chapters, but the chapters overlap in strange ways. A few woolly mammoths were still alive on a remote Arctic island while Egyptians were stacking pyramid stones.\n\nSwipe through 7 timelines that sound wrong but are completely true.\n\nWhich one messed with your head the most?\n\n📷 FOTO:Fortepan — ID 93327: Adományozó/Donor: Inkey Tibor. (CC BY-SA 3.0) via wikimedia · kallerna (CC BY-SA 3.0) via wikimedia · Thomas Quine (CC BY 2.0) via wikimedia · Diliff (CC BY 2.5) via wikimedia · Charles J. Sharp (CC BY-SA 4.0) via wikimedia · Gary Todd from Xinzheng, China (CC0) via wikimedia · Marcus Richert (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "history",
+    "historyfacts",
+    "didyouknow",
+    "funfacts",
+    "mindblown",
+    "ancientegypt",
+    "dinosaurs",
+    "mammoth",
+    "learnsomethingnew",
+    "interestingfacts",
+    "factsdaily",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "University of Oxford, 'Introduction and history' (ox.ac.uk): teaching existed at Oxford in some form in 1096",
+    "Encyclopaedia Britannica: Tenochtitlan founded c. 1325; Great Pyramid of Giza built c. 2560 BCE; Cleopatra died 30 BCE",
+    "Vartanyan et al., Nature 1993; Rogers & Slatkin, PLOS Genetics 2017: woolly mammoths survived on Wrangel Island until c. 4,000 years ago",
+    "Smithsonian Ocean Portal: sharks have existed for over 400 million years; Stein et al., Nature 2007: earliest trees (Wattieza) c. 385 million years ago",
+    "Natural History Museum London: Stegosaurus c. 155-150 million years ago; Tyrannosaurus rex c. 68-66 million years ago",
+    "Encyclopaedia Britannica: Alexander Bain fax patent 1843; Bell telephone patent 1876",
+    "Nintendo Co., Ltd. company history: founded 1889 as a hanafuda card maker; Britannica: Jack the Ripper murders 1888"
+  ],
+  "image_query": "great pyramid giza night",
+  "image_prompt": "An hourglass standing in desert sand with the Great Pyramid and a full moon in the background, dramatic twilight sky",
+  "design": {
+    "palette": 1,
+    "cover_label": "History, rearranged",
+    "swipe_text": "Swipe to see",
+    "follow_line": "Daily facts that rewire your brain"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261028-1823/img_cover.jpg",
+  "cover_credit": "FOTO:Fortepan — ID 93327: Adományozó/Donor: Inkey Tibor. (CC BY-SA 3.0) via wikimedia",
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "design_used": {
+    "style": "template"
+  }
+}
