@@ -68,6 +68,14 @@ def build_caption(post: dict) -> str:
     return f"{post['caption']}\n\n{tags}"
 
 
+def build_carousel_caption(post: dict) -> str | None:
+    """Per il carosello: il testo di ogni slide con i crediti della sua foto (il Reel tiene la didascalia breve)."""
+    from bot.captions import build
+
+    tags = " ".join("#" + t.lstrip("#").replace(" ", "") for t in post["hashtags"])
+    return build(post, tags)
+
+
 def load_templates() -> dict:
     """I template PSD in templates/, se ci sono: altrimenti si usa lo stile Mystery."""
     try:
@@ -96,16 +104,19 @@ def attach_images(post: dict, out_dir: Path) -> None:
     cover = _preset(post.get("cover_image"), post.get("cover_credit")) or get_image(post.get("image_query", ""), post.get("image_prompt", ""), post["hook"], out_dir / "img_cover.jpg", space)
     if cover:
         post["cover_image"], post["cover_credit"] = cover["path"], cover["credit"]
+        post["cover_generated"] = bool(cover.get("generated"))
     results = [cover]
     for i, s in enumerate(post["slides"], start=1):
         r = _preset(s.get("image"), s.get("credit")) or get_image(s.get("image_query", ""), s.get("image_prompt", ""), f"{s['title']}. {s['body']}", out_dir / f"img_{i:02d}.jpg", space)
         if r:
             s["image"], s["credit"] = r["path"], r["credit"]
+            s["generated"] = bool(r.get("generated"))
         results.append(r)
     # dichiarazione AI: vale per il post se almeno un'immagine è generata, per la Story se lo è la copertina
     post["ai_generated"] = any(r and r.get("generated") for r in results)
     post["cover_ai_generated"] = bool(cover and cover.get("generated"))
     line = credits_line(results)
+    post["caption_plain"] = post["caption"]  # senza crediti: serve alla didascalia del carosello
     if line:
         post["caption"] = f"{post['caption']}\n\n{line}"
 
@@ -176,6 +187,11 @@ def create(post_file: str | None, series: str = "facts") -> None:
         print(f"Story non disegnata: {e}")
     (out_dir / "post.json").write_text(json.dumps(post, ensure_ascii=False, indent=2))
     caption = build_caption(post)
+    try:
+        carousel_caption = build_carousel_caption(post)
+    except Exception as e:  # la didascalia con il testo delle slide è un extra: si usa quella di prima
+        print(f"Didascalia del carosello non costruita: {e}")
+        carousel_caption = None
     pending.write_text(json.dumps({
         "date": stamp,
         "series": series,
@@ -193,8 +209,11 @@ def create(post_file: str | None, series: str = "facts") -> None:
         "ai": bool(post.get("ai_generated")),
         "story_ai": bool(post.get("cover_ai_generated")),
         "caption": caption,
+        "carousel_caption": carousel_caption,
     }, ensure_ascii=False, indent=2))
     print(f"Formato: {fmt}\nCategoria: {post.get('category', '?')}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
+    if carousel_caption and fmt != "reel":
+        print(f"\nDidascalia del carosello ({len(carousel_caption)} caratteri):\n{carousel_caption}")
 
 
 def _video(pending: dict, sub: str = "") -> Path:
@@ -232,7 +251,7 @@ def publish(series: str = "facts") -> None:
         # committa nel repo prima di questo passo (vedi .github/workflows/post.yml).
         base = os.environ["MEDIA_BASE_URL"].rstrip("/")
         urls = [f"{base}/{p}" for p in pending["images"]]
-        entries.append(("carousel", publish_carousel(urls, pending["caption"], pending.get("ai", False)), False))
+        entries.append(("carousel", publish_carousel(urls, pending.get("carousel_caption") or pending["caption"], pending.get("ai", False)), False))
         if fmt == "news":
             try:
                 media_id, trial = publish_reel(_video_url(_video(pending, "reel")), pending["caption"], pending.get("trial", False), pending.get("ai", False))

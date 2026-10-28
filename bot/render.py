@@ -3,6 +3,7 @@
 from pathlib import Path
 
 from bot import config
+from bot.captions import slide_body
 from bot.style import STYLES, flatten
 
 MARGIN = 90
@@ -78,11 +79,7 @@ def _slide_texts(kind: str, data: dict, credit: str | None) -> dict:
     if kind == "cover":
         return {**base, "TITLE": data["hook"], "LABEL": data.get("label", "")}
     if kind == "fact":
-        body = data["body"]
-        if data.get("points"):
-            # sulle slide con foto bastano le prime due frasi (cosa e perché): il resto va nel Reel e nella caption
-            body = " ".join(txt for _, txt in data["points"][:2])
-        return {**base, "TITLE": data["title"], "BODY": body, "HIGHLIGHT": data.get("highlight", ""),
+        return {**base, "TITLE": data["title"], "BODY": slide_body(data), "HIGHLIGHT": data.get("highlight", ""),
                 "LABEL": data.get("label", ""), "NUMBER": f"{data['n']:02d}/{data['total']:02d}"}
     return {**base, "TITLE": data["cta"], "BODY": data.get("follow_line", ""), "LABEL": config.PAGE_NAME}
 
