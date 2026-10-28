@@ -1,0 +1,183 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-10-28",
+  "hook": "Spain's second deadly train crash this year",
+  "reel_hook": "Two fast trains, one track, 64+ dead",
+  "slides": [
+    {
+      "title": "Spain high-speed train crash",
+      "highlight": "64+",
+      "image_query": "Spain high-speed train",
+      "image_prompt": "Empty high-speed railway tracks at dawn stretching across dry Spanish plains, a red signal light glowing, light mist over the rails, sombre muted colours",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A Renfe AVE hit an Iryo train near Urda, Toledo."
+        ],
+        [
+          "WHY IT MATTERS",
+          "At least 64 dead, toll may rise; cause unknown."
+        ],
+        [
+          "FOR YOU",
+          "Madrid–Andalusia trains are suspended; check with Renfe or Iryo before travelling."
+        ]
+      ],
+      "body": "A Renfe AVE hit an Iryo train near Urda, Toledo. At least 64 dead, toll may rise; cause unknown. Madrid–Andalusia trains are suspended; check with Renfe or Iryo before travelling.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1340/img_01.jpg",
+      "credit": "Gertjanlaan (CC BY-SA 3.0) via wikimedia"
+    },
+    {
+      "title": "Israel vote: no clear winner",
+      "highlight": "61",
+      "image_query": "Knesset building",
+      "image_prompt": "A ballot box on a wooden table beside two uneven stacks of blank paper ballots, soft window light, neutral background",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Netanyahu's bloc leads with about 53–54 seats."
+        ],
+        [
+          "WHY IT MATTERS",
+          "A government needs 61 of 120 Knesset seats."
+        ],
+        [
+          "FOR YOU",
+          "Results aren't official yet; the shekel and Israeli bonds fell Wednesday."
+        ]
+      ],
+      "body": "Netanyahu's bloc leads with about 53–54 seats. A government needs 61 of 120 Knesset seats. Results aren't official yet; the shekel and Israeli bonds fell Wednesday.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1340/img_02.jpg",
+      "credit": "Clema12 (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Flávio Bolsonaro leaves Brazil",
+      "highlight": "Miami",
+      "image_query": "",
+      "image_prompt": "A small private jet on a night runway, a closed blue passport resting on a suitcase in the foreground, distant city lights",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Lula's defeated rival left despite a court travel ban."
+        ],
+        [
+          "WHY IT MATTERS",
+          "He went via Argentina and Ecuador; expected in Miami."
+        ],
+        [
+          "FOR YOU",
+          "Not much for you directly: the US says it will grant the family visas."
+        ]
+      ],
+      "body": "Lula's defeated rival left despite a court travel ban. He went via Argentina and Ecuador; expected in Miami. Not much for you directly: the US says it will grant the family visas.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1340/img_03.jpg",
+      "credit": null
+    },
+    {
+      "title": "Ebola passes 10,000 cases",
+      "highlight": "10,060",
+      "image_query": "ebola virus micrograph",
+      "image_prompt": "A microscope beside neat rows of sealed sample tubes in a clean laboratory, cool blue light, no labels",
+      "label": "SCIENCE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "DR Congo figures show 10,060 confirmed Ebola cases."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Fastest-growing on record; this strain has no approved vaccine."
+        ],
+        [
+          "FOR YOU",
+          "If travelling to DR Congo or neighbouring countries, check official health advice first."
+        ]
+      ],
+      "body": "DR Congo figures show 10,060 confirmed Ebola cases. Fastest-growing on record; this strain has no approved vaccine. If travelling to DR Congo or neighbouring countries, check official health advice first.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1340/img_04.jpg",
+      "credit": "NIAID (CC BY 2.0) via wikimedia"
+    },
+    {
+      "title": "World's longest freight train?",
+      "highlight": "7.6 km",
+      "image_query": "iron ore train",
+      "image_prompt": "An extremely long freight train of empty ore wagons curving across dry semi-desert plains under a wide blue sky, vanishing toward the horizon",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "South Africa's Transnet says it ran a 696-wagon train."
+        ],
+        [
+          "WHY IT MATTERS",
+          "That would beat BHP's 2001 record of 682 wagons."
+        ],
+        [
+          "FOR YOU",
+          "Just a fun fact: it stretched 7.6 km over an 860 km trip."
+        ]
+      ],
+      "body": "South Africa's Transnet says it ran a 696-wagon train. That would beat BHP's 2001 record of 682 wagons. Just a fun fact: it stretched 7.6 km over an 860 km trip.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-1340/img_05.jpg",
+      "credit": "Tomoyn (CC BY 4.0) via wikimedia"
+    }
+  ],
+  "cta": "Follow for tomorrow's daily brief",
+  "caption": "🚆 Spain: at least 64 dead after two high-speed trains collided near Urda, toll may rise. Madrid–Andalusia trains are suspended, so check before you travel.\n🗳️ Israel: Netanyahu's bloc leads with about 53–54 seats, short of the 61 needed. Results aren't official yet.\n✈️ Brazil: Flávio Bolsonaro left despite a court travel ban and is expected in Miami.\n🦠 Ebola passes 10,000 confirmed cases. Travelling to DR Congo or nearby? Check health advice.\n🚂 South Africa says it ran a 7.6 km freight train, a claimed world record.\nWhich story surprised you most today?\nFollow @you.didnot.know for the daily brief.\n\n📷 Kabelleger / David Gubler (CC BY-SA 4.0) via wikimedia · Gertjanlaan (CC BY-SA 3.0) via wikimedia · Clema12 (CC BY-SA 4.0) via wikimedia · NIAID (CC BY 2.0) via wikimedia · Tomoyn (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "worldnews",
+    "spain",
+    "traincrash",
+    "israelelection",
+    "brazil",
+    "ebola",
+    "southafrica",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.cbsnews.com/news/spain-train-crash-toledo-urda/",
+    "https://www.cnn.com/2026/10/28/world/live-news/spain-train-crash-collision-intl",
+    "https://www.irishtimes.com/world/europe/2026/10/28/spain-train-crash-live-updates/",
+    "https://www.abc.net.au/news/2026-10-28/deadly-high-speed-train-collision-spain/107320916",
+    "https://www.bloomberg.com/news/articles/2026-10-28/israeli-vote-too-close-to-call-between-netanyahu-and-eisenkot",
+    "https://www.ynetnews.com/article/hjnatbkaml",
+    "https://www.aljazeera.com/news/2026/10/27/exit-polls-following-israeli-elections-indicate-no-clear-winner",
+    "https://www.cnbc.com/2026/10/28/israel-election-netanyahu-trump-gaza-.html",
+    "https://www.nbclosangeles.com/news/national-international/flavio-bolsonaro-flees-brazil-through-argentina-and-is-expected-to-land-in-miami/3962232/",
+    "https://www.yahoo.com/news/us/articles/flavio-bolsonaro-expected-land-miami-115618310.html",
+    "https://www.france24.com/en/live-news/20261028-flavio-bolsonaro-on-way-to-ecuador-from-argentina-after-fleeing-brazil",
+    "https://www.cbsnews.com/news/brazil-flavio-bolsonaro-u-s-visa-presidential-election-loss/",
+    "https://www.france24.com/en/africa/20261027-africa-ebola-outbreak-tops-10-000-cases-mainly-dr-congo",
+    "https://www.npr.org/2026/10/27/g-s1-150136/ebola-outbreak-milestone-democratic-republic-congo-vaccine",
+    "https://www.cbc.ca/news/health/ebola-outbreak-10000-cases-9.7397981",
+    "https://sg.news.yahoo.com/south-africa-tests-7-6-063858197.html",
+    "https://www.cp24.com/news/world/2026/10/22/south-africas-public-rail-operator-breaks-record-for-worlds-longest-freight-train/",
+    "https://en.railmarket.com/news/freight-rail/64906-transnet-operates-7-6-km-freight-train-with-696-wagons-claims-world-record"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 28 OCT 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in 30 seconds, every day"
+  },
+  "image_query": "Spain high-speed train",
+  "image_prompt": "Two sleek high-speed trains on a single track at dawn, the front one halted under a red signal, empty Spanish plains, sombre muted light",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261028-1340/img_cover.jpg",
+  "cover_credit": "Kabelleger / David Gubler (CC BY-SA 4.0) via wikimedia",
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "music_used": "mystery"
+}

@@ -1,0 +1,29 @@
+{
+  "date": "20261028-1340",
+  "series": "news",
+  "format": "news",
+  "trial": true,
+  "music": "mystery",
+  "theme_index": 7,
+  "topic": "Daily news 2026-10-28",
+  "category": "news",
+  "hook": "Spain's second deadly train crash this year",
+  "slides": 5,
+  "design": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "images": [
+    "posts/20261028-1340/slide_01.jpg",
+    "posts/20261028-1340/slide_02.jpg",
+    "posts/20261028-1340/slide_03.jpg",
+    "posts/20261028-1340/slide_04.jpg",
+    "posts/20261028-1340/slide_05.jpg",
+    "posts/20261028-1340/slide_06.jpg",
+    "posts/20261028-1340/slide_07.jpg"
+  ],
+  "story": "posts/20261028-1340/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "🚆 Spain: at least 64 dead after two high-speed trains collided near Urda, toll may rise. Madrid–Andalusia trains are suspended, so check before you travel.\n🗳️ Israel: Netanyahu's bloc leads with about 53–54 seats, short of the 61 needed. Results aren't official yet.\n✈️ Brazil: Flávio Bolsonaro left despite a court travel ban and is expected in Miami.\n🦠 Ebola passes 10,000 confirmed cases. Travelling to DR Congo or nearby? Check health advice.\n🚂 South Africa says it ran a 7.6 km freight train, a claimed world record.\nWhich story surprised you most today?\nFollow @you.didnot.know for the daily brief.\n\n📷 Kabelleger / David Gubler (CC BY-SA 4.0) via wikimedia · Gertjanlaan (CC BY-SA 3.0) via wikimedia · Clema12 (CC BY-SA 4.0) via wikimedia · NIAID (CC BY 2.0) via wikimedia · Tomoyn (CC BY 4.0) via wikimedia\n\n#news #dailynews #worldnews #spain #traincrash #israelelection #brazil #ebola #southafrica #youdidnotknow"
+}
