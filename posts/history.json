@@ -140,5 +140,20 @@
       "palette": 2
     },
     "media_id": "17991975959861422"
+  },
+  {
+    "date": "20261028-1823",
+    "series": "facts",
+    "topic": "Surprising timeline overlaps in history and prehistory",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "history",
+    "hook": "Timelines that will break your brain",
+    "slides": 7,
+    "design": {
+      "style": "template"
+    },
+    "media_id": "18154781632551826"
   }
 ]
