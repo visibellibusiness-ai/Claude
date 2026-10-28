@@ -93,5 +93,20 @@
       "palette": 0
     },
     "media_id": "17926969662429134"
+  },
+  {
+    "date": "20261028-0009",
+    "series": "facts",
+    "topic": "Cell turnover: which body parts renew and which never do",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "human body",
+    "hook": "Your body rebuilds itself, except these parts",
+    "slides": 8,
+    "design": {
+      "style": "template"
+    },
+    "media_id": "18129222529872581"
   }
 ]
