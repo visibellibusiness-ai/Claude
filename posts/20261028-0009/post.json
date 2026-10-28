@@ -1,0 +1,120 @@
+{
+  "reasoning": "The page has no stats yet, and recent posts cover space, news and an animal reel. A human body carousel fills a gap and tests the format usually strongest for saves. The 'your body replaces itself, except...' angle flips a popular half-myth into verified facts. It suits cards with a striking number on each slide, and people tend to share it to settle debates. I chose a new palette (1) to start comparing colors, and a curiosity-gap hook to test that shape.",
+  "format": "carousel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Cell turnover: which body parts renew and which never do",
+  "hook": "Your body rebuilds itself, except these parts",
+  "slides": [
+    {
+      "title": "Gut lining",
+      "body": "The cells lining your intestine are replaced every 3 to 5 days. They wear out fast from acid and digestion.",
+      "highlight": "5 days",
+      "image_query": "intestine villi microscope",
+      "image_prompt": "Soft glowing pink folds of intestinal tissue with tiny finger-like villi, macro scientific illustration style, warm light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_01.jpg",
+      "credit": null
+    },
+    {
+      "title": "Red blood cells",
+      "body": "Each one lives about 120 days before being recycled. Your bone marrow makes millions of new ones every second.",
+      "highlight": "120",
+      "image_query": "red blood cells",
+      "image_prompt": "Red disc-shaped blood cells flowing through a translucent vessel, deep red tones, macro 3D illustration",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_02.jpg",
+      "credit": "Arek Socha (CC0) via wikimedia"
+    },
+    {
+      "title": "Your skin's surface",
+      "body": "The outer layer of your skin renews roughly every 4 weeks, shedding tens of thousands of dead cells every minute.",
+      "highlight": "4 wks",
+      "image_query": "skin texture macro",
+      "image_prompt": "Extreme macro of skin surface texture with fine flakes lifting off, soft natural lighting, scientific style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_03.jpg",
+      "credit": "Montavius Howard (TongCreator), from Pixabay (CC0) via wikimedia"
+    },
+    {
+      "title": "Your skeleton",
+      "body": "Bone is constantly broken down and rebuilt. Over about 10 years, your adult skeleton is almost fully renewed.",
+      "highlight": "10 yrs",
+      "image_query": "human skeleton bones",
+      "image_prompt": "Anatomical skeleton model standing against a dark background, dramatic side lighting, museum style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_04.jpg",
+      "credit": "Laboratoires Servier (CC BY-SA 3.0) via wikimedia"
+    },
+    {
+      "title": "Fat cells",
+      "body": "About 10% of your fat cells are replaced each year, but their total number stays almost fixed in adulthood, even after dieting.",
+      "highlight": "10%",
+      "image_query": "fat cells microscope",
+      "image_prompt": "Round yellow fat cells packed together like bubbles under a microscope, soft scientific illustration",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_05.jpg",
+      "credit": null
+    },
+    {
+      "title": "Heart muscle",
+      "body": "Heart muscle cells renew under 1% per year at age 25, and even less later. Most stay with you for life.",
+      "highlight": "<1%",
+      "image_query": "anatomical heart model",
+      "image_prompt": "Realistic anatomical human heart model on a dark surface, red and purple tones, dramatic studio lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_06.jpg",
+      "credit": "Dguendel (CC BY 4.0) via wikimedia"
+    },
+    {
+      "title": "Your eye lens",
+      "body": "The cells at the center of your eye lens formed before you were born. They are never replaced.",
+      "highlight": "0",
+      "image_query": "eye lens anatomy",
+      "image_prompt": "Crystal clear glass lens glowing with soft light, floating on a dark background, symbolizing the eye lens",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_07.jpg",
+      "credit": "Terry Gruijters (CC BY-SA 4.0) via wikimedia"
+    },
+    {
+      "title": "Brain neurons",
+      "body": "Most neurons in your cerebral cortex are as old as you are. Carbon dating of brain cells proved it.",
+      "highlight": "",
+      "image_query": "neurons brain cells",
+      "image_prompt": "Glowing network of neurons with branching connections in blue and violet light, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_08.jpg",
+      "credit": "GerryShaw (CC BY-SA 3.0) via wikimedia"
+    }
+  ],
+  "cta": "Follow for facts your body hides",
+  "caption": "You may have heard that your body replaces every cell every 7 years. It's not true. Your gut lining renews in days, but the center of your eye lens formed before you were born and is never replaced.\n\nScientists confirmed this by measuring carbon from 1950s nuclear tests, which acts as a hidden date stamp inside your cells.\n\nWhich one surprised you the most?\n\n📷 Edeh Sophia (CC0) via wikimedia · Arek Socha (CC0) via wikimedia · Montavius Howard (TongCreator), from Pixabay (CC0) via wikimedia · Laboratoires Servier (CC BY-SA 3.0) via wikimedia · Dguendel (CC BY 4.0) via wikimedia · Terry Gruijters (CC BY-SA 4.0) via wikimedia · GerryShaw (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "youdidnotknow",
+    "humanbody",
+    "sciencefacts",
+    "biology",
+    "didyouknow",
+    "funfacts",
+    "anatomy",
+    "learnsomethingnew",
+    "sciencelover",
+    "factsdaily"
+  ],
+  "sources": [
+    "Sender R, Milo R. The distribution of cellular turnover in the human body. Nature Medicine, 2021",
+    "Spalding KL et al. Dynamics of fat cell turnover in humans. Nature, 2008",
+    "Bergmann O et al. Evidence for cardiomyocyte renewal in humans. Science, 2009",
+    "Lynnerup N et al. Radiocarbon dating of the human eye lens crystallines. PLoS ONE, 2008",
+    "Spalding KL et al. Retrospective birth dating of cells in humans. Cell, 2005",
+    "Manolagas SC. Birth and death of bone cells. Endocrine Reviews, 2000"
+  ],
+  "image_query": "human anatomy model",
+  "image_prompt": "Translucent anatomical human body model with some organs glowing brightly and others dim, dark background, scientific museum lighting, no face visible",
+  "design": {
+    "palette": 1,
+    "cover_label": "Human body",
+    "swipe_text": "Swipe to see",
+    "follow_line": "New surprising facts every day"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261028-0009/img_cover.jpg",
+  "cover_credit": "Edeh Sophia (CC0) via wikimedia",
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "design_used": {
+    "style": "template"
+  }
+}

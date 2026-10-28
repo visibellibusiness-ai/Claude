@@ -1,15 +1,15 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 27/10/2026 alle 18:20 UTC. Follower: 0.
+Aggiornato il 28/10/2026 alle 00:09 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 10, di cui da non follower 10 (100%).
+- Visualizzazioni: 15, di cui da non follower 15 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 27/10/2026 | 3 | 3 | 10 | 10 | 3 | 3 |
+| 27/10/2026 | 6 | 6 | 15 | 15 | 3 | 3 |
 | 26/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 25/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 24/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
