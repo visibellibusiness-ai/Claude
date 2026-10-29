@@ -274,5 +274,21 @@
       "palette": 2
     },
     "media_id": "18130010497865648"
+  },
+  {
+    "date": "20261029-1824",
+    "series": "facts",
+    "topic": "Effects of spaceflight on the human body",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "space",
+    "hook": "What happens to your body in space",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "17999324907101630"
   }
 ]
