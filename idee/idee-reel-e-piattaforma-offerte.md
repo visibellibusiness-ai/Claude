@@ -86,9 +86,6 @@ Messaggio di fondo: *dimmi cosa vuoi e ti dirò quanto risparmi.*
 - Offerte del mese come primo impatto.
 - Elementi di gioco (punti, livelli, missioni) eventuali, da decidere se servono ancora.
 
-### Punto aperto
-Ultima frase della nota: "Registrare completamente lo stato di un corpo. Inviare l'informazione." Non è chiaro come si colleghi (misure del corpo per consigliare taglia/prodotto? scheda fisica dell'utente? altro). Da chiarire prima di inserirlo nel piano.
-
 ### Da definire
 - Settore e catalogo (abbigliamento sportivo? altro).
 - Da dove arrivano le offerte e come si calcola il risparmio.
