@@ -230,5 +230,37 @@
       "style": "template"
     },
     "media_id": "18129687485484244"
+  },
+  {
+    "date": "20261029-1344",
+    "series": "news",
+    "topic": "Daily news 2026-10-29",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "news",
+    "hook": "Why was this train allowed to move?",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18123221054319020"
+  },
+  {
+    "date": "20261029-1344",
+    "series": "news",
+    "topic": "Daily news 2026-10-29",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "news",
+    "hook": "Why was this train allowed to move?",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18130010497865648"
   }
 ]
