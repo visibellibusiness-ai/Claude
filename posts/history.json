@@ -12,7 +12,19 @@
     "design": {
       "style": "template"
     },
-    "media_id": "18120394205318900"
+    "media_id": "18120394205318900",
+    "metrics": {
+      "reach": 1,
+      "views": 4,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0,
+      "profile_activity": 0
+    }
   },
   {
     "date": "20261027-1255",
@@ -28,7 +40,19 @@
       "style": "mystery",
       "palette": 2
     },
-    "media_id": "17959105578017198"
+    "media_id": "17959105578017198",
+    "metrics": {
+      "reach": 1,
+      "views": 3,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0,
+      "profile_activity": 0
+    }
   },
   {
     "date": "20261027-1255",
@@ -44,7 +68,19 @@
       "style": "mystery",
       "palette": 2
     },
-    "media_id": "18119805316782021"
+    "media_id": "18119805316782021",
+    "metrics": {
+      "reach": 4,
+      "views": 8,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 8179,
+      "ig_reels_video_view_total_time": 73613,
+      "reels_skip_rate": 100
+    }
   },
   {
     "date": "20261027-1332",
@@ -60,7 +96,19 @@
       "style": "mystery",
       "palette": 2
     },
-    "media_id": "18097484327414955"
+    "media_id": "18097484327414955",
+    "metrics": {
+      "reach": 1,
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0,
+      "profile_activity": 0
+    }
   },
   {
     "date": "20261027-1332",
@@ -76,7 +124,19 @@
       "style": "mystery",
       "palette": 2
     },
-    "media_id": "18442180123198005"
+    "media_id": "18442180123198005",
+    "metrics": {
+      "reach": 5,
+      "views": 6,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 7159,
+      "ig_reels_video_view_total_time": 57273,
+      "reels_skip_rate": 60
+    }
   },
   {
     "date": "20261027-1821",

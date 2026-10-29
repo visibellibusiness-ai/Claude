@@ -1,0 +1,192 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-10-29",
+  "hook": "Why was this train allowed to move?",
+  "reel_hook": "68 dead. One order called 'inexplicable.'",
+  "slides": [
+    {
+      "title": "Spain's 'inexplicable' order",
+      "highlight": "68",
+      "image_query": "spanish high speed train",
+      "image_prompt": "Empty high-speed railway tracks stretching across a flat dry Spanish plain at dusk, a single red signal light glowing beside the line",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "At least 68 dead as a train hits a stopped one."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Minister calls letting it restart 'inexplicable'; probe ongoing."
+        ],
+        [
+          "FOR YOU",
+          "Madrid–Andalusia high-speed trains are suspended, so check any booking on that route."
+        ]
+      ],
+      "body": "At least 68 dead as a train hits a stopped one. Minister calls letting it restart 'inexplicable'; probe ongoing. Madrid–Andalusia high-speed trains are suspended, so check any booking on that route.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1344/img_01.jpg",
+      "credit": "Kabelleger / David Gubler (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Israel vote: no majority yet",
+      "highlight": "61",
+      "image_query": "knesset building jerusalem",
+      "image_prompt": "Two stacks of ballot envelopes on a wooden table, neither tall enough to reach a marked line, under soft parliament lighting",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Partial count: Netanyahu's bloc 53, Eisenkot's bloc 48."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Neither reaches 61; Arab-led parties hold a record 19."
+        ],
+        [
+          "FOR YOU",
+          "Seat numbers may still shift once special double-envelope ballots are counted."
+        ]
+      ],
+      "body": "Partial count: Netanyahu's bloc 53, Eisenkot's bloc 48. Neither reaches 61; Arab-led parties hold a record 19. Seat numbers may still shift once special double-envelope ballots are counted.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1344/img_02.jpg",
+      "credit": "Clema12 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Fed holds rates, 2 want hikes",
+      "highlight": "10–2",
+      "image_query": "federal reserve building",
+      "image_prompt": "A brass balance scale perfectly level on a marble desk, a small stack of coins on each side, cool morning light",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The Fed kept rates at 3.75–4.00% on Wednesday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Two officials wanted a hike: 'Inflation remains elevated.'"
+        ],
+        [
+          "FOR YOU",
+          "US borrowing costs stay put for now; the next decision comes in December."
+        ]
+      ],
+      "body": "The Fed kept rates at 3.75–4.00% on Wednesday. Two officials wanted a hike: 'Inflation remains elevated.' US borrowing costs stay put for now; the next decision comes in December.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1344/img_03.jpg",
+      "credit": "Federalreserve (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Bolsonaro lands in Miami",
+      "highlight": "Miami",
+      "image_query": "",
+      "image_prompt": "A small private jet parked on a sunny tarmac with palm trees, an open empty suitcase resting on the ground beside the stairs",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Flávio Bolsonaro flew to Miami despite a passport order."
+        ],
+        [
+          "WHY IT MATTERS",
+          "He faces a money-laundering probe; he denies wrongdoing."
+        ],
+        [
+          "FOR YOU",
+          "Lula called leaving 'shameful'; Bolsonaro plans a Miami press conference Thursday."
+        ]
+      ],
+      "body": "Flávio Bolsonaro flew to Miami despite a passport order. He faces a money-laundering probe; he denies wrongdoing. Lula called leaving 'shameful'; Bolsonaro plans a Miami press conference Thursday.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1344/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Brewers win first World Series",
+      "highlight": "1st",
+      "image_query": "milwaukee baseball stadium",
+      "image_prompt": "A gleaming trophy beside a baseball and glove on infield dirt under bright stadium lights, confetti scattered on the grass",
+      "label": "SPORT",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Milwaukee beat Tampa Bay 4–1 to take the series 4–1."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First title since the club was founded in 1969."
+        ],
+        [
+          "FOR YOU",
+          "Long droughts do end: thousands of fans traveled 1,300 miles to see it."
+        ]
+      ],
+      "body": "Milwaukee beat Tampa Bay 4–1 to take the series 4–1. First title since the club was founded in 1969. Long droughts do end: thousands of fans traveled 1,300 miles to see it.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1344/img_05.jpg",
+      "credit": "DiscoA340 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🚄 Spain: at least 68 dead after a train restarted and hit a stopped one. Madrid–Andalusia high-speed trains are suspended.\n🗳️ Israel: no bloc reaches 61 seats; Arab-led parties hold a record 19.\n🏦 Fed holds rates at 3.75–4.00%: US borrowing costs stay put until at least December.\n✈️ Flávio Bolsonaro lands in Miami despite a passport order; he denies wrongdoing.\n⚾ The Milwaukee Brewers win their first World Series.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Kabelleger / David Gubler (CC BY-SA 4.0) via wikimedia · Clema12 (CC BY-SA 4.0) via wikimedia · Federalreserve (Public domain) via wikimedia · DiscoA340 (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "worldnews",
+    "spain",
+    "traincrash",
+    "israel",
+    "election",
+    "federalreserve",
+    "brazil",
+    "worldseries",
+    "brewers",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.cnbc.com/2026/10/28/spain-high-speed-train-crash.html",
+    "https://www.pbs.org/newshour/world/dozens-dead-in-spain-after-high-speed-train-slams-into-another-stopped-on-tracks",
+    "https://www.cbc.ca/news/world/train-crash-spain-toledo-9.7399154",
+    "https://abcnews.com/International/10-killed-train-collision-high-speed-line-spain/story?id=137633323",
+    "https://www.bloomberg.com/news/articles/2026-10-28/israeli-vote-too-close-to-call-between-netanyahu-and-eisenkot",
+    "https://www.cbc.ca/news/world/israel-vote-deadlock-9.7399140",
+    "https://www.npr.org/2026/10/28/nx-s1-6019423/israel-election-results",
+    "https://www.timesofisrael.com/arab-parties-emerge-as-potential-kingmakers-presenting-zionist-opposition-with-fateful-choice/",
+    "https://www.federalreserve.gov/newsevents/pressreleases/monetary20261028a1.htm",
+    "https://www.cnbc.com/2026/10/28/fed-interest-rate-decision-october-2026.html",
+    "https://www.cnbc.com/2026/10/28/fed-meeting-today-live-updates.html",
+    "https://www.nbcnews.com/world/brazil/flavio-bolsonaro-arrives-miami-election-defeat-rcna606099",
+    "https://fortune.com/2026/10/28/flavio-bolsonaro-trump-brazil-miami-corruption-investigation/",
+    "https://www.cbsnews.com/miami/news/flavio-bolsonaro-reportedly-in-florida-after-leaving-brazil-following-election-defeat/",
+    "https://time.com/article/2026/10/27/brazil-flavio-bolsonaro-money-laundering-supreme-court-lula/",
+    "https://www.mprnews.org/story/2026/10/29/brewers-beat-the-rays-4-1-in-game-5-to-win-the-first-world-series-title-in-franchise-history",
+    "https://www.espn.com/mlb/story/_/id/50314006/brewers-rays-game-5-first-world-series-title",
+    "https://www.npr.org/2026/10/29/nx-s1-6020541/milwaukee-brewers-win-their-first-world-series"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 29 OCT 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in 30 seconds, every day"
+  },
+  "image_query": "spanish high speed train",
+  "image_prompt": "A single red railway signal glowing over empty high-speed tracks on a flat Spanish plain at dusk, low mist drifting over the rails",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261029-1344/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🚄 Spain: at least 68 dead after a train restarted and hit a stopped one. Madrid–Andalusia high-speed trains are suspended.\n🗳️ Israel: no bloc reaches 61 seats; Arab-led parties hold a record 19.\n🏦 Fed holds rates at 3.75–4.00%: US borrowing costs stay put until at least December.\n✈️ Flávio Bolsonaro lands in Miami despite a passport order; he denies wrongdoing.\n⚾ The Milwaukee Brewers win their first World Series.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "music_used": "mystery"
+}

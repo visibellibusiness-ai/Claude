@@ -1,0 +1,30 @@
+{
+  "date": "20261029-1344",
+  "series": "news",
+  "format": "news",
+  "trial": true,
+  "music": "mystery",
+  "theme_index": 11,
+  "topic": "Daily news 2026-10-29",
+  "category": "news",
+  "hook": "Why was this train allowed to move?",
+  "slides": 5,
+  "design": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "images": [
+    "posts/20261029-1344/slide_01.jpg",
+    "posts/20261029-1344/slide_02.jpg",
+    "posts/20261029-1344/slide_03.jpg",
+    "posts/20261029-1344/slide_04.jpg",
+    "posts/20261029-1344/slide_05.jpg",
+    "posts/20261029-1344/slide_06.jpg",
+    "posts/20261029-1344/slide_07.jpg"
+  ],
+  "story": "posts/20261029-1344/story.jpg",
+  "ai": true,
+  "story_ai": true,
+  "caption": "🚄 Spain: at least 68 dead after a train restarted and hit a stopped one. Madrid–Andalusia high-speed trains are suspended.\n🗳️ Israel: no bloc reaches 61 seats; Arab-led parties hold a record 19.\n🏦 Fed holds rates at 3.75–4.00%: US borrowing costs stay put until at least December.\n✈️ Flávio Bolsonaro lands in Miami despite a passport order; he denies wrongdoing.\n⚾ The Milwaukee Brewers win their first World Series.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Kabelleger / David Gubler (CC BY-SA 4.0) via wikimedia · Clema12 (CC BY-SA 4.0) via wikimedia · Federalreserve (Public domain) via wikimedia · DiscoA340 (CC BY-SA 4.0) via wikimedia\n\n#news #dailynews #worldnews #spain #traincrash #israel #election #federalreserve #brazil #worldseries #brewers #youdidnotknow",
+  "carousel_caption": "🚄 Spain: at least 68 dead after a train restarted and hit a stopped one. Madrid–Andalusia high-speed trains are suspended.\n🗳️ Israel: no bloc reaches 61 seats; Arab-led parties hold a record 19.\n🏦 Fed holds rates at 3.75–4.00%: US borrowing costs stay put until at least December.\n✈️ Flávio Bolsonaro lands in Miami despite a passport order; he denies wrongdoing.\n⚾ The Milwaukee Brewers win their first World Series.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\nCover: Why was this train allowed to move?\n🎨 AI-generated image\n\n1/5 Spain's 'inexplicable' order (68)\nAt least 68 dead as a train hits a stopped one. Minister calls letting it restart 'inexplicable'; probe ongoing.\n📷 Kabelleger / David Gubler (CC BY-SA 4.0) via wikimedia\n\n2/5 Israel vote: no majority yet (61)\nPartial count: Netanyahu's bloc 53, Eisenkot's bloc 48. Neither reaches 61; Arab-led parties hold a record 19.\n📷 Clema12 (CC BY-SA 4.0) via wikimedia\n\n3/5 Fed holds rates, 2 want hikes (10–2)\nThe Fed kept rates at 3.75–4.00% on Wednesday. Two officials wanted a hike: 'Inflation remains elevated.'\n📷 Federalreserve (Public domain) via wikimedia\n\n4/5 Bolsonaro lands in Miami (Miami)\nFlávio Bolsonaro flew to Miami despite a passport order. He faces a money-laundering probe; he denies wrongdoing.\n🎨 AI-generated image\n\n5/5 Brewers win first World Series (1st)\nMilwaukee beat Tampa Bay 4–1 to take the series 4–1. First title since the club was founded in 1969.\n📷 DiscoA340 (CC BY-SA 4.0) via wikimedia\n\n#news #dailynews #worldnews #spain #traincrash #israel #election #federalreserve #brazil #worldseries #brewers #youdidnotknow"
+}
