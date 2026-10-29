@@ -1,6 +1,6 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 29/10/2026 alle 13:39 UTC. Follower: 0.
+Aggiornato il 29/10/2026 alle 18:23 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
@@ -22,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 27/10/2026 18:21 | reel | 5 things octopuses do that seem impossib | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 27/10/2026 13:32 | carousel | Netanyahu or Eisenkot? Polls can't tell | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 27/10/2026 13:32 | reel | Netanyahu or Eisenkot? Polls can't tell | 5 | 6 | 20,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 27/10/2026 12:55 | carousel | Israel's busiest election morning since  | 1 | 3 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
@@ -36,12 +37,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 |---|---|---|---|
 | 27/10/2026 12:55 | Israel's busiest election morning since  | 8.179 | 100 |
 | 27/10/2026 13:32 | Netanyahu or Eisenkot? Polls can't tell | 7.159 | 60 |
+| 27/10/2026 18:21 | 5 things octopuses do that seem impossib | 13.046 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 3 | 3 | 100,0% | 0,0% |
-| reel | 2 | 9 | 22,2% | 0,0% |
+| reel | 3 | 10 | 30,0% | 0,0% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

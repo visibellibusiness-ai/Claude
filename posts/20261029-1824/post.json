@@ -1,0 +1,101 @@
+{
+  "reasoning": "Reels have reached the most people so far (4-5 accounts vs 1 for carousels), so I am posting another short reel. Every post saved one time, which is too little data to learn from. The octopus reel had the longest watch time, which suggests evergreen science works better than news. This topic mixes space and the human body: one concrete subject with a 'what happens to your body' hook, five punchy NASA-backed facts and short texts that suit reel timing. Palette 1 has not been used yet, so this tests a new color. The caption ends with an opinion question to test that kind of comment prompt.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "space",
+  "topic": "Effects of spaceflight on the human body",
+  "hook": "What happens to your body in space",
+  "slides": [
+    {
+      "title": "You get taller",
+      "body": "Without gravity your spine stretches out. Astronauts grow up to 3% taller, then shrink back on Earth.",
+      "highlight": "+3%",
+      "image_query": "astronaut space station",
+      "image_prompt": "A glowing human spine model floating weightless inside a space station module, Earth visible through a round window",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1824/img_01.jpg",
+      "credit": "NASA/JSC (public domain (NASA)) via nasa",
+      "generated": false
+    },
+    {
+      "title": "Your bones thin out",
+      "body": "Weight-bearing bones like hips and legs can lose 1% to 1.5% of their mass every month in orbit.",
+      "highlight": "-1.5%",
+      "image_query": "bone x-ray",
+      "image_prompt": "A white bone floating in dark space, slowly crumbling into tiny glowing particles drifting away",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1824/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Puffy face, bird legs",
+      "body": "Body fluids drift upward, so faces swell and legs slim down. Astronauts really call it 'puffy face, bird legs'.",
+      "highlight": "",
+      "image_query": "international space station interior",
+      "image_prompt": "Water droplets floating upward inside a space capsule, forming wobbly spheres against metal walls",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1824/img_03.jpg",
+      "credit": "NASA/JSC (public domain (NASA)) via nasa",
+      "generated": false
+    },
+    {
+      "title": "Your eyes change shape",
+      "body": "Fluid pressure can flatten the back of the eye. Some astronauts need stronger glasses after long missions.",
+      "highlight": "",
+      "image_query": "eye anatomy model",
+      "image_prompt": "A pair of glasses floating weightless in front of a spacecraft window with Earth glowing below",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1824/img_04.jpg",
+      "credit": "unknown (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Food tastes bland",
+      "body": "The fluid shift leaves astronauts with stuffy noses, which dulls taste. Many start craving hot sauce.",
+      "highlight": "",
+      "image_query": "astronaut food tray",
+      "image_prompt": "Sealed space food packets and a small bottle of hot sauce floating weightless inside a space station",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-1824/img_05.jpg",
+      "credit": "NASA/MSFC (public domain (NASA)) via nasa",
+      "generated": false
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "Spend a few months in orbit and your body starts rewriting itself. NASA has measured astronauts coming home up to 3% taller, with thinner bones and changed eyes.\n\nMost of it reverses back on Earth, but some changes stay for months or even years. That is one of the biggest hurdles for a trip to Mars.\n\nWould you still go to space knowing all this?\n\n📷 NASA/JSC (public domain (NASA)) via nasa · unknown (CC BY 4.0) via wikimedia · NASA/MSFC (public domain (NASA)) via nasa",
+  "hashtags": [
+    "space",
+    "nasa",
+    "astronaut",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow",
+    "spacefacts",
+    "funfacts",
+    "science",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "NASA - The Human Body in Space (nasa.gov/humans-in-space/the-human-body-in-space)",
+    "NASA Human Research Program - Spaceflight Associated Neuro-ocular Syndrome (SANS)",
+    "NASA - Why do astronauts grow taller in space? (Spine elongation up to 3%)",
+    "NASA - Bone loss in space: 1-1.5% per month in weight-bearing bones",
+    "NASA - Space food and taste changes due to fluid shift"
+  ],
+  "image_query": "astronaut floating space",
+  "image_prompt": "A lone empty spacesuit floating above Earth with tiny glowing bones and water droplets drifting around it in weightlessness",
+  "design": {
+    "palette": 1,
+    "cover_label": "Space vs your body",
+    "swipe_text": "Watch this",
+    "follow_line": "Weird science you will want to share"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261029-1824/img_cover.jpg",
+  "cover_credit": "NASA/JSC (public domain (NASA)) via nasa",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Spend a few months in orbit and your body starts rewriting itself. NASA has measured astronauts coming home up to 3% taller, with thinner bones and changed eyes.\n\nMost of it reverses back on Earth, but some changes stay for months or even years. That is one of the biggest hurdles for a trip to Mars.\n\nWould you still go to space knowing all this?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "music_used": "mystery"
+}
