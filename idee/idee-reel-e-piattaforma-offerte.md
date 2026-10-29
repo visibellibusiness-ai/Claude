@@ -59,25 +59,32 @@ Scheda slot stampabile: per ogni inquadratura posizione camera, altezza, focale,
 
 ---
 
-## 2. Piattaforma offerte in stile gaming
+## 2. Piattaforma offerte con assistente di shopping
 
 ### Idea
-Una piattaforma di offerte dall'esperienza **gaming**: non un catalogo da sfogliare, ma un percorso guidato in cui l'utente dice cosa cerca e vede subito quanto risparmia.
+Una piattaforma di offerte con interfaccia **classica, moderna e facilmente navigabile**, utilizzabile per intero anche senza assistente. In più, un **assistente di shopping** a cui dire cosa si cerca e che mostra subito quanto si risparmia.
+
+Aggiornamento rispetto alla prima versione: l'interfaccia non è "da gioco" in senso stretto. La navigazione resta tradizionale (menu, categorie, ricerca), e l'assistente è l'aiuto in più.
 
 ### Flusso utente
 1. **Ingresso nel sito:** si mostrano subito le **offerte del mese**.
-2. **Home page:** l'utente può dire **a voce o scrivendo** di cosa ha bisogno.
-3. **Richiesta in linguaggio naturale:** "vorrei una tuta".
-4. **Risposta:** compare l'offerta sulle tute, con il **risparmio** calcolato.
-5. **Categoria:** da lì si entra nella categoria "tute".
+2. **Home page:** navigazione normale per categorie e offerte.
+3. **Pulsante in basso a destra:** apre l'assistente di shopping.
+4. **Primo accesso:** un breve **tutorial** spiega che quel pulsante dà accesso all'assistente.
+5. **Richiesta a voce o scritta:** "vorrei una tuta".
+6. **Risposta:** compare l'offerta sulle tute, con il **risparmio** calcolato.
+7. **Categoria:** da lì si entra nella categoria "tute".
 
 Messaggio di fondo: *dimmi cosa vuoi e ti dirò quanto risparmi.*
 
 ### Elementi chiave
-- Stile visivo e di interazione da gioco (livelli, ricompense, progressione: da definire).
+- Interfaccia moderna e totalmente navigabile senza assistente.
+- Pulsante assistente sempre visibile in basso a destra.
+- Tutorial solo al primo ingresso, con possibilità di rivederlo.
 - Input vocale e testuale con la stessa logica.
-- Mostrare il risparmio come numero chiaro, non solo lo sconto percentuale.
-- Offerte del mese come primo impatto, prima ancora della home.
+- Risparmio mostrato come numero chiaro, non solo come sconto percentuale.
+- Offerte del mese come primo impatto.
+- Elementi di gioco (punti, livelli, missioni) eventuali, da decidere se servono ancora.
 
 ### Punto aperto
 Ultima frase della nota: "Registrare completamente lo stato di un corpo. Inviare l'informazione." Non è chiaro come si colleghi (misure del corpo per consigliare taglia/prodotto? scheda fisica dell'utente? altro). Da chiarire prima di inserirlo nel piano.
@@ -85,5 +92,5 @@ Ultima frase della nota: "Registrare completamente lo stato di un corpo. Inviare
 ### Da definire
 - Settore e catalogo (abbigliamento sportivo? altro).
 - Da dove arrivano le offerte e come si calcola il risparmio.
-- Cosa significa "gaming" in concreto (punti, livelli, missioni, avatar).
+- Se tenere elementi di gioco (punti, livelli, missioni) o restare su un'interfaccia classica.
 - Come si gestisce la voce (browser, app) e la privacy.
