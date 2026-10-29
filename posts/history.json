@@ -155,5 +155,20 @@
       "style": "template"
     },
     "media_id": "18154781632551826"
+  },
+  {
+    "date": "20261029-0012",
+    "series": "facts",
+    "topic": "Botanical food surprises: berries, nuts, legal fruits",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "food",
+    "hook": "Foods that are secretly not what you think",
+    "slides": 8,
+    "design": {
+      "style": "template"
+    },
+    "media_id": "18129687485484244"
   }
 ]
