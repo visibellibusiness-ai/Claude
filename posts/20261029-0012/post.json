@@ -1,0 +1,132 @@
+{
+  "reasoning": "No stats yet, so I'm exploring a category not covered so far: food. Botanical 'not what you think' facts are verifiable, easy to grasp, and surprising enough that people tag friends. I chose a carousel with cards because list-style trivia gets saved and shared. Palette 1 hasn't been used yet, so this tests it. The caption ends with a 'which one surprised you' question to measure comments.",
+  "format": "carousel",
+  "music": "mystery",
+  "trial": false,
+  "category": "food",
+  "topic": "Botanical food surprises: berries, nuts, legal fruits",
+  "hook": "Foods that are secretly not what you think",
+  "slides": [
+    {
+      "title": "Bananas are berries",
+      "body": "Botanically, a berry grows from one flower with one ovary and keeps its seeds inside. Bananas fit. So do grapes and kiwis.",
+      "highlight": "Berry",
+      "image_query": "banana bunch",
+      "image_prompt": "A bunch of ripe yellow bananas beside grapes and a sliced kiwi on a wooden table, soft natural light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_01.jpg",
+      "credit": "Amol Pandharkar (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Strawberries aren't berries",
+      "body": "The red flesh is swollen flower tissue. Each 'seed' on the outside is really a tiny fruit with its own seed inside.",
+      "highlight": "~200",
+      "image_query": "strawberry close up",
+      "image_prompt": "Extreme macro of a red strawberry surface showing tiny yellow seeds, glossy texture, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_02.jpg",
+      "credit": "Havardtl (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Peanuts aren't nuts",
+      "body": "They're legumes, like peas and beans. After flowering, the stalk bends into the soil and the pods grow underground.",
+      "highlight": "Legume",
+      "image_query": "peanut plant roots",
+      "image_prompt": "Freshly pulled peanut plant with pods hanging from its roots, soil crumbs, green leaves, farm field background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Almonds are seeds",
+      "body": "An almond is the seed of a drupe, the same fruit type as peaches and cherries. Its close relatives are plums and apricots.",
+      "highlight": "",
+      "image_query": "almond fruit tree",
+      "image_prompt": "Green fuzzy almond fruits on a branch, one split open revealing the almond shell inside, sunny orchard",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_04.jpg",
+      "credit": "GeXeS (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A pineapple is many fruits",
+      "body": "Each one forms from 100 to 200 flowers that fuse together. Every bumpy 'eye' on the skin was once a separate flower.",
+      "highlight": "100+",
+      "image_query": "pineapple flower",
+      "image_prompt": "Young pineapple on its plant with small purple flowers emerging from its bumpy skin, tropical field",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_05.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Cashews hang off an apple",
+      "body": "The nut grows below a fleshy 'cashew apple'. Its shell holds an oil that irritates skin, so cashews are never sold in the shell.",
+      "highlight": "",
+      "image_query": "cashew apple tree",
+      "image_prompt": "Red and yellow cashew apples hanging on a tree, each with a curved grey nut attached at the bottom",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_06.jpg",
+      "credit": "Royalesignature (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Rhubarb became a fruit",
+      "body": "Botanically it's a vegetable stalk. But in 1947 a US customs court ruled it a fruit, because that's how people cook it.",
+      "highlight": "1947",
+      "image_query": "rhubarb stalks",
+      "image_prompt": "Bundle of bright red rhubarb stalks next to a rhubarb pie on a rustic kitchen table",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_07.jpg",
+      "credit": "Dieter Weber (User:Uellue) (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Tomatoes: legally veggies",
+      "body": "Botanically a fruit, but in 1893 the US Supreme Court ruled tomatoes vegetables for import taxes in Nix v. Hedden.",
+      "highlight": "1893",
+      "image_query": "tomatoes on vine",
+      "image_prompt": "Ripe red tomatoes on the vine beside an old wooden gavel on a table, warm vintage light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_08.jpg",
+      "credit": "THOR (CC BY 2.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "Your fruit bowl is lying to you. A banana is a true berry, a strawberry isn't, and every bump on a pineapple was once its own flower.\n\nSome foods even got their label from judges instead of botanists. In 1893 the US Supreme Court decided the tomato was a vegetable.\n\nWhich one surprised you the most?\n\n📷 Amol Pandharkar (CC0) via wikimedia · Havardtl (CC BY 4.0) via wikimedia · GeXeS (CC BY-SA 4.0) via wikimedia · Royalesignature (CC BY-SA 4.0) via wikimedia · Dieter Weber (User:Uellue) (CC BY-SA 3.0) via wikimedia · THOR (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "youdidnotknow",
+    "funfacts",
+    "foodfacts",
+    "didyouknow",
+    "botany",
+    "science",
+    "learnsomethingnew",
+    "foodscience",
+    "mindblown",
+    "triviatime"
+  ],
+  "sources": [
+    "Encyclopaedia Britannica: Berry (plant reproductive body)",
+    "Encyclopaedia Britannica: Strawberry, achene fruits",
+    "USDA / Encyclopaedia Britannica: Peanut (Arachis hypogaea), geocarpy",
+    "Encyclopaedia Britannica: Almond (Prunus dulcis), drupe",
+    "Encyclopaedia Britannica: Pineapple, multiple fruit",
+    "Encyclopaedia Britannica: Cashew (Anacardium occidentale)",
+    "US Customs Court, 1947 ruling on rhubarb classification (Buffalo, NY)",
+    "Nix v. Hedden, 149 U.S. 304 (1893)"
+  ],
+  "image_query": "fruit bowl variety",
+  "image_prompt": "Colorful bowl of bananas, strawberries, a pineapple, peanuts and tomatoes on a table, one tomato wearing a tiny question mark shaped shadow, bright studio light",
+  "design": {
+    "palette": 1,
+    "cover_label": "Food facts",
+    "swipe_text": "Swipe to see",
+    "follow_line": "Daily facts that change how you see things"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261029-0012/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "Your fruit bowl is lying to you. A banana is a true berry, a strawberry isn't, and every bump on a pineapple was once its own flower.\n\nSome foods even got their label from judges instead of botanists. In 1893 the US Supreme Court decided the tomato was a vegetable.\n\nWhich one surprised you the most?",
+  "design_used": {
+    "style": "template"
+  }
+}
