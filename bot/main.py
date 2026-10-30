@@ -253,6 +253,16 @@ def _video_url(video: Path) -> str:
     return f"{base}/{video.relative_to(ROOT).as_posix()}"
 
 
+def _cover_url(video: Path) -> str | None:
+    """Indirizzo pubblico della copertina del Reel (cover.jpg accanto al video, già nel repo
+    perché il workflow committa la cartella posts prima di pubblicare)."""
+    cover = video.parent / "cover.jpg"
+    if not cover.exists():
+        return None
+    base = os.environ["MEDIA_BASE_URL"].rstrip("/")
+    return f"{base}/{cover.relative_to(ROOT).as_posix()}"
+
+
 def publish(series: str = "facts") -> None:
     from bot.publish import publish_carousel, publish_reel, publish_story
 
@@ -264,7 +274,8 @@ def publish(series: str = "facts") -> None:
     fmt = pending.get("format", "carousel")
     entries = []
     if fmt == "reel":
-        media_id, trial = publish_reel(_video_url(_video(pending)), pending["caption"], pending.get("trial", False), pending.get("ai", False))
+        reel = _video(pending)
+        media_id, trial = publish_reel(_video_url(reel), pending["caption"], pending.get("trial", False), pending.get("ai", False), _cover_url(reel))
         entries.append(("reel", media_id, trial))
     else:
         # Le immagini devono essere raggiungibili pubblicamente: il workflow le
@@ -274,7 +285,8 @@ def publish(series: str = "facts") -> None:
         entries.append(("carousel", publish_carousel(urls, pending.get("carousel_caption") or pending["caption"], pending.get("ai", False), pending.get("slide_captions")), False))
         if fmt == "news":
             try:
-                media_id, trial = publish_reel(_video_url(_video(pending, "reel")), pending["caption"], pending.get("trial", False), pending.get("ai", False))
+                reel = _video(pending, "reel")
+                media_id, trial = publish_reel(_video_url(reel), pending["caption"], pending.get("trial", False), pending.get("ai", False), _cover_url(reel))
                 entries.append(("reel", media_id, trial))
             except Exception as e:  # il carosello è già uscito: non va ripubblicato
                 print(f"Reel della rubrica non pubblicato: {e}")
