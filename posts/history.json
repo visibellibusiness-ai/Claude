@@ -179,7 +179,19 @@
     "design": {
       "style": "template"
     },
-    "media_id": "18129222529872581"
+    "media_id": "18129222529872581",
+    "metrics": {
+      "reach": 1,
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0,
+      "profile_activity": 0
+    }
   },
   {
     "date": "20261028-1340",

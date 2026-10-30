@@ -1,0 +1,101 @@
+{
+  "reasoning": "Stats are still too small to show a clear pattern, but reels reached 4-5 accounts while carousels reached 1, so a short reel is the better bet for new viewers. Psychology is in the niche and has not been tested yet. A relatable 'your brain tricks you' angle invites comments because people recognize themselves. The post uses 5 short cards with one bold highlight (89%). It runs as a Trial Reel so the format test does not hurt the profile. Palette 3 is new, to test colors, and the closing question asks people about their own experience.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": true,
+  "category": "psychology",
+  "topic": "Everyday brain illusions: stopped clock, blind spot, doorway effect, phantom vibration, frequency illusion",
+  "hook": "5 ways your brain lies to you daily",
+  "slides": [
+    {
+      "title": "The frozen clock",
+      "body": "Glance at a clock and the first second feels longer. Your brain fills in the gap from your eye movement.",
+      "highlight": "1 sec",
+      "image_query": "analog wall clock",
+      "image_prompt": "Close-up of a vintage analog wall clock with its second hand mid-tick, soft dramatic light, slightly blurred motion trail",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-0013/img_01.jpg",
+      "credit": "ECTran71 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your hidden blind spot",
+      "body": "Each eye has a spot with no light sensors, where the optic nerve exits. Your brain quietly paints over it.",
+      "highlight": "",
+      "image_query": "human eye macro",
+      "image_prompt": "Glass model of an eyeball on a dark surface with a small glowing hole at the back, moody scientific lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-0013/img_02.jpg",
+      "credit": "Osmo Lundell (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The doorway effect",
+      "body": "Walking through a door can make you forget why you came. Studies suggest your brain files it as a new scene.",
+      "highlight": "",
+      "image_query": "open doorway light",
+      "image_prompt": "Half-open wooden door in a dim hallway with bright light spilling through, floating faded sticky notes drifting away",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-0013/img_03.jpg",
+      "credit": "A.-K. D. (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Phantom vibrations",
+      "body": "In one study, 89% of students felt their phone buzz when it hadn't. Your brain is primed to expect it.",
+      "highlight": "89%",
+      "image_query": "smartphone on table",
+      "image_prompt": "Smartphone lying face down on a wooden table with faint ghostly vibration lines around it, blank dark screen",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-0013/img_04.jpg",
+      "credit": "Santeri Viinamäki (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Suddenly everywhere",
+      "body": "Learn a new word and you see it all the time. It was always there. Your brain just started noticing.",
+      "highlight": "",
+      "image_query": "magnifying glass",
+      "image_prompt": "Magnifying glass over a crowded parking lot of grey cars where one red car glows sharply in focus",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-0013/img_05.jpg",
+      "credit": "Tomomarusan (CC BY 2.5) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "Your brain doesn't show you reality. It shows you its best guess. Right now there is a hole in your vision, and you can't see it, because your brain fills it in.\n\nThese five glitches happen to almost everyone, every day. Researchers have studied each of them, from the 'stopped clock' illusion to phantom phone buzzes.\n\nWhich one happens to you the most? 👇\n\n📷 unknown (CC BY 4.0) via wikimedia · ECTran71 (CC BY-SA 4.0) via wikimedia · Osmo Lundell (CC BY-SA 4.0) via wikimedia · A.-K. D. (CC BY-SA 4.0) via wikimedia · Santeri Viinamäki (CC BY-SA 4.0) via wikimedia · Tomomarusan (CC BY 2.5) via wikimedia",
+  "hashtags": [
+    "psychology",
+    "brain",
+    "braintricks",
+    "didyouknow",
+    "facts",
+    "sciencefacts",
+    "neuroscience",
+    "mindblown",
+    "funfacts",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Yarrow K. et al. (2001) Illusory perceptions of space and time preserve cross-saccadic perceptual continuity, Nature 414",
+    "American Academy of Ophthalmology: The blind spot and the optic disc",
+    "Radvansky G.A. et al. (2011) Walking through doorways causes forgetting, Quarterly Journal of Experimental Psychology",
+    "Drouin M. et al. (2012) Phantom vibrations among undergraduates, Computers in Human Behavior 28",
+    "Zwicky A. (2005) Just between Dr. Language and I, Language Log (coining 'frequency illusion')"
+  ],
+  "image_query": "human brain model",
+  "image_prompt": "Anatomical brain model made of glass on a dark table, with tangled glowing threads looping like an optical illusion around it, mysterious lighting",
+  "design": {
+    "palette": 3,
+    "cover_label": "Brain glitches",
+    "swipe_text": "Watch till end",
+    "follow_line": "Daily facts your brain will love"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261030-0013/img_cover.jpg",
+  "cover_credit": "unknown (CC BY 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "Your brain doesn't show you reality. It shows you its best guess. Right now there is a hole in your vision, and you can't see it, because your brain fills it in.\n\nThese five glitches happen to almost everyone, every day. Researchers have studied each of them, from the 'stopped clock' illusion to phantom phone buzzes.\n\nWhich one happens to you the most? 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "music_used": "mystery"
+}
