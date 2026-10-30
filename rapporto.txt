@@ -1,0 +1,33 @@
+== polpo: OK
+   foto: Diego Delso (CC BY-SA 4.0) via wikimedia
+   render 47 s, video 38.6 s, 7.9 MB
+   Reel, varietà: foto out, entrate ['left', 'right', 'left', 'blur', 'scale', 'left', 'rise'], cambi scena ['cut', 'dip', 'punch', 'cut', 'punch', 'flash', 'punch']
+   Reel, leggibilità scena 1 (cover): contrasto peggiore 5.6:1, mediano 6.2:1
+   Reel, leggibilità scena 2 (fact): contrasto peggiore 5.4:1, mediano 6.2:1
+   Reel, leggibilità scena 3 (fact): contrasto peggiore 5.1:1, mediano 6.0:1
+   Reel, leggibilità scena 4 (fact): contrasto peggiore 5.5:1, mediano 6.3:1
+   Reel, leggibilità scena 5 (fact): contrasto peggiore 5.1:1, mediano 6.2:1
+   Reel, leggibilità scena 6 (fact): contrasto peggiore 5.5:1, mediano 6.3:1
+   Reel, leggibilità scena 7 (cta): contrasto peggiore 5.4:1, mediano 6.3:1
+== sabbia: OK
+   foto: Vyacheslav Argenberg (CC BY 4.0) via wikimedia
+   render 45 s, video 38.3 s, 7.1 MB
+   Reel, varietà: foto out, entrate ['left', 'right', 'left', 'blur', 'scale', 'left', 'rise'], cambi scena ['cut', 'dip', 'punch', 'cut', 'punch', 'flash', 'punch']
+   Reel, leggibilità scena 1 (cover): contrasto peggiore 5.5:1, mediano 6.1:1
+   Reel, leggibilità scena 2 (fact): contrasto peggiore 5.4:1, mediano 6.4:1
+   Reel, leggibilità scena 3 (fact): contrasto peggiore 5.4:1, mediano 6.3:1
+   Reel, leggibilità scena 4 (fact): contrasto peggiore 5.3:1, mediano 6.4:1
+   Reel, leggibilità scena 5 (fact): contrasto peggiore 5.1:1, mediano 6.2:1
+   Reel, leggibilità scena 6 (fact): contrasto peggiore 5.4:1, mediano 6.3:1
+   Reel, leggibilità scena 7 (cta): contrasto peggiore 5.4:1, mediano 6.7:1
+== neve: OK
+   foto: Wonderlane from Seattle, USA (CC BY 2.0) via wikimedia
+   render 48 s, video 38.0 s, 6.9 MB
+   Reel, varietà: foto out, entrate ['left', 'right', 'left', 'blur', 'scale', 'left', 'rise'], cambi scena ['cut', 'dip', 'punch', 'cut', 'punch', 'flash', 'punch']
+   Reel, leggibilità scena 1 (cover): contrasto peggiore 5.6:1, mediano 6.2:1
+   Reel, leggibilità scena 2 (fact): contrasto peggiore 5.6:1, mediano 6.2:1
+   Reel, leggibilità scena 3 (fact): contrasto peggiore 6.0:1, mediano 6.3:1
+   Reel, leggibilità scena 4 (fact): contrasto peggiore 6.0:1, mediano 6.3:1
+   Reel, leggibilità scena 5 (fact): contrasto peggiore 6.0:1, mediano 6.3:1
+   Reel, leggibilità scena 6 (fact): contrasto peggiore 6.0:1, mediano 6.3:1
+   Reel, leggibilità scena 7 (cta): contrasto peggiore 5.0:1, mediano 6.3:1
