@@ -207,7 +207,19 @@
       "style": "mystery",
       "palette": 2
     },
-    "media_id": "18088295282705576"
+    "media_id": "18088295282705576",
+    "metrics": {
+      "reach": 2,
+      "views": 3,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0,
+      "profile_activity": 0
+    }
   },
   {
     "date": "20261028-1340",
@@ -223,7 +235,19 @@
       "style": "mystery",
       "palette": 2
     },
-    "media_id": "17991975959861422"
+    "media_id": "17991975959861422",
+    "metrics": {
+      "reach": 2,
+      "views": 3,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "ig_reels_avg_watch_time": 4563,
+      "ig_reels_video_view_total_time": 22816,
+      "reels_skip_rate": 100
+    }
   },
   {
     "date": "20261028-1823",
