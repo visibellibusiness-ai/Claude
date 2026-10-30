@@ -374,5 +374,21 @@
       "palette": 2
     },
     "media_id": "18128638301292936"
+  },
+  {
+    "date": "20261030-1819",
+    "series": "facts",
+    "topic": "Ocean facts: Greenland shark age, Challenger Deep, brine pools, ocean oxygen, unmapped seafloor",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "oceans",
+    "hook": "Ocean facts that sound made up",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "18183114685435167"
   }
 ]
