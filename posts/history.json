@@ -302,5 +302,21 @@
       "palette": 1
     },
     "media_id": "17999324907101630"
+  },
+  {
+    "date": "20261030-0013",
+    "series": "facts",
+    "topic": "Everyday brain illusions: stopped clock, blind spot, doorway effect, phantom vibration, frequency illusion",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "psychology",
+    "hook": "5 ways your brain lies to you daily",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "18125308697490325"
   }
 ]
