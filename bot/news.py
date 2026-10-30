@@ -160,7 +160,7 @@ def to_post(brief: dict) -> dict:
         },
         "image_query": brief["stories"][0].get("image_query", "") if brief.get("stories") else "",
         "image_prompt": brief.get("image_prompt", ""),
-        "music": config.MUSIC_PRESETS[0],
+        "music": None,  # lo sceglie main.pick_music, diverso dagli ultimi Reel
         "trial": True,
     }
 

@@ -68,6 +68,16 @@ def build_caption(post: dict) -> str:
     return f"{post['caption']}\n\n{tags}"
 
 
+def pick_music(wanted: str | None, history: list[dict]) -> str:
+    """Genere musicale del Reel: quello voluto da Claude se è valido e diverso dagli ultimi due Reel,
+    altrimenti il genere che non si sente da più tempo."""
+    recent = [h["music"] for h in history if h.get("format") == "reel" and h.get("music")][-2:]
+    if wanted in config.MUSIC_PRESETS and wanted not in recent:
+        return wanted
+    last_used = {m: i for i, m in enumerate(h.get("music") for h in history if h.get("format") == "reel")}
+    return min((m for m in config.MUSIC_PRESETS if m not in recent), key=lambda m: last_used.get(m, -1))
+
+
 def build_carousel_caption(post: dict) -> str | None:
     """Per il carosello: il testo di ogni slide con i crediti della sua foto (il Reel tiene la didascalia breve)."""
     from bot.captions import build
@@ -87,11 +97,11 @@ def load_templates() -> dict:
         return {}
 
 
-def _preset(rel: str | None, credit: str | None) -> dict | None:
+def _preset(rel: str | None, credit: str | None, generated: bool = False) -> dict | None:
     """Foto già scelta e salvata nel repo (percorso relativo alla radice, per esempio
     posts/queue/foto.jpg): in quel caso non si cerca niente online."""
     if rel and (ROOT / rel).exists():
-        return {"path": str(ROOT / rel), "credit": credit}
+        return {"path": str(ROOT / rel), "credit": credit, "generated": generated}
     return None
 
 
@@ -101,13 +111,13 @@ def attach_images(post: dict, out_dir: Path) -> None:
 
     out_dir.mkdir(parents=True, exist_ok=True)
     space = post.get("category", "").lower() in ("space", "spazio")
-    cover = _preset(post.get("cover_image"), post.get("cover_credit")) or get_image(post.get("image_query", ""), post.get("image_prompt", ""), post["hook"], out_dir / "img_cover.jpg", space)
+    cover = _preset(post.get("cover_image"), post.get("cover_credit"), post.get("cover_generated", False)) or get_image(post.get("image_query", ""), post.get("image_prompt", ""), post["hook"], out_dir / "img_cover.jpg", space)
     if cover:
         post["cover_image"], post["cover_credit"] = cover["path"], cover["credit"]
         post["cover_generated"] = bool(cover.get("generated"))
     results = [cover]
     for i, s in enumerate(post["slides"], start=1):
-        r = _preset(s.get("image"), s.get("credit")) or get_image(s.get("image_query", ""), s.get("image_prompt", ""), f"{s['title']}. {s['body']}", out_dir / f"img_{i:02d}.jpg", space)
+        r = _preset(s.get("image"), s.get("credit"), s.get("generated", False)) or get_image(s.get("image_query", ""), s.get("image_prompt", ""), f"{s['title']}. {s['body']}", out_dir / f"img_{i:02d}.jpg", space)
         if r:
             s["image"], s["credit"] = r["path"], r["credit"]
             s["generated"] = bool(r.get("generated"))
@@ -160,6 +170,8 @@ def create(post_file: str | None, series: str = "facts") -> None:
     out_dir = ROOT / rel_dir
     fmt = "news" if series == "news" else post.get("format", "carousel")
     templates = load_templates()
+    if fmt in ("reel", "news"):
+        post["music"] = pick_music(post.get("music"), history)
     if templates:
         attach_images(post, out_dir)
     elif config.COVER_ART and post.get("image_prompt") and not post.get("cover_image"):
@@ -192,6 +204,13 @@ def create(post_file: str | None, series: str = "facts") -> None:
     except Exception as e:  # la didascalia con il testo delle slide è un extra: si usa quella di prima
         print(f"Didascalia del carosello non costruita: {e}")
         carousel_caption = None
+    try:
+        from bot.captions import per_slide
+
+        slide_captions = per_slide(post)
+    except Exception as e:  # extra: senza, il carosello esce con la sola didascalia unica
+        print(f"Didascalie per slide non costruite: {e}")
+        slide_captions = None
     pending.write_text(json.dumps({
         "date": stamp,
         "series": series,
@@ -210,6 +229,7 @@ def create(post_file: str | None, series: str = "facts") -> None:
         "story_ai": bool(post.get("cover_ai_generated")),
         "caption": caption,
         "carousel_caption": carousel_caption,
+        "slide_captions": slide_captions,
     }, ensure_ascii=False, indent=2))
     print(f"Formato: {fmt}\nCategoria: {post.get('category', '?')}\nTopic: {post['topic']}\nSlide: {len(paths)} in {rel_dir}\n\n{caption}")
     if carousel_caption and fmt != "reel":
@@ -251,7 +271,7 @@ def publish(series: str = "facts") -> None:
         # committa nel repo prima di questo passo (vedi .github/workflows/post.yml).
         base = os.environ["MEDIA_BASE_URL"].rstrip("/")
         urls = [f"{base}/{p}" for p in pending["images"]]
-        entries.append(("carousel", publish_carousel(urls, pending.get("carousel_caption") or pending["caption"], pending.get("ai", False)), False))
+        entries.append(("carousel", publish_carousel(urls, pending.get("carousel_caption") or pending["caption"], pending.get("ai", False), pending.get("slide_captions")), False))
         if fmt == "news":
             try:
                 media_id, trial = publish_reel(_video_url(_video(pending, "reel")), pending["caption"], pending.get("trial", False), pending.get("ai", False))

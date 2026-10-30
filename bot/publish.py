@@ -52,12 +52,30 @@ def _wait_ready(container_id: str, timeout: int = 600) -> None:
     raise TimeoutError(f"Container {container_id} non pronto dopo {timeout}s")
 
 
-def publish_carousel(image_urls: list[str], caption: str, ai: bool = False) -> str:
+def publish_carousel(image_urls: list[str], caption: str, ai: bool = False, slide_captions: list[str] | None = None) -> str:
+    """Con slide_captions prova a dare una didascalia a ogni immagine (le "didascalie multiple" dell'app).
+    La documentazione dell'API dice che sugli elementi di un carosello non è supportata: se Instagram
+    rifiuta, si crea l'elemento senza e si va avanti, con un avviso nel log. La didascalia del carosello
+    resta sempre."""
     user_id = os.environ["IG_USER_ID"]
+    if slide_captions is not None and len(slide_captions) != len(image_urls):
+        slide_captions = None
+    per_slide_ok = slide_captions is not None
     children = []
-    for url in image_urls:
-        child = _post(f"{user_id}/media", image_url=url, is_carousel_item="true")
+    for i, url in enumerate(image_urls):
+        params = {"image_url": url, "is_carousel_item": "true"}
+        if per_slide_ok:
+            try:
+                child = _post(f"{user_id}/media", caption=slide_captions[i], **params)
+            except RuntimeError as e:
+                print(f"::warning::Didascalia per slide non accettata dall'API (slide {i + 1}), proseguo senza: {e}")
+                per_slide_ok = False
+                child = _post(f"{user_id}/media", **params)
+        else:
+            child = _post(f"{user_id}/media", **params)
         children.append(child["id"])
+    if slide_captions is not None:
+        print(f"::notice::Didascalie per slide: {'inviate a tutte le slide e accettate dall API' if per_slide_ok else 'NON accettate'}")
     for child in children:
         _wait_ready(child)
     # la dichiarazione AI non è ammessa sui singoli elementi: va sul carosello intero

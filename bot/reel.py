@@ -8,6 +8,7 @@ Zone di sicurezza Reels rispettate: niente testo nei primi 300px in alto, negli
 ultimi 460px in basso (caption, audio, pulsanti) né nei 150px a destra (icone).
 """
 
+import random
 import subprocess
 from pathlib import Path
 
@@ -25,6 +26,13 @@ FPS = 30
 SAFE = (90, 300, W - 150, H - 460)
 ANIM = 0.45  # secondi di entrata del testo
 ZOOM = 0.10  # ingrandimento della foto da inizio a fine Reel
+PAN_MARGIN = 0.20  # margine in più della foto quando scorre di lato
+
+# Varietà: a ogni Reel cambiano il movimento della foto, l'effetto a ogni cambio scena e l'entrata del testo
+MOTIONS = ["in", "in", "out", "pan_l", "pan_r"]
+CUTS = ["cut", "flash", "dip", "punch", "punch", "glitch"]
+ENTRANCES = ["rise", "left", "right", "scale", "blur"]
+CUT_FRAMES = int(0.3 * FPS)  # durata dell'effetto di cambio scena
 
 # Contrasto minimo del testo sulla foto (WCAG): il 10% di pixel di testo messo peggio deve
 # arrivare almeno a 5 e la mediana almeno a 6 (il colore d'accento su nero non supera circa 7). Il controllo si fa a inizio e a fine zoom.
@@ -43,18 +51,27 @@ def _duration(kind: str, data: dict, fast: bool = False) -> float:
 
 # ------------------------------------------------------------------ foto
 
-def _master(path) -> Image.Image:
-    """Foto adattata a coprire lo schermo con il margine per lo zoom."""
+def _master(path, margin: float = ZOOM) -> Image.Image:
+    """Foto adattata a coprire lo schermo con il margine per lo zoom o lo scorrimento."""
     im = Image.open(path).convert("RGB")
-    s = max(W * (1 + ZOOM) / im.width, H * (1 + ZOOM) / im.height)
+    s = max(W * (1 + margin) / im.width, H * (1 + margin) / im.height)
     return im.resize((round(im.width * s), round(im.height * s)), Image.LANCZOS)
 
 
-def _view(master: Image.Image, progress: float) -> Image.Image:
-    """Inquadratura a metà dello zoom: la finestra si stringe da (1+ZOOM) a 1 volte lo schermo."""
-    k = 1 + ZOOM * (1 - progress)
-    ww, wh = W * k, H * k
+def _view(master: Image.Image, progress: float, motion: str = "in", punch: float = 0.0) -> Image.Image:
+    """Inquadratura della foto: zoom in (la finestra si stringe da 1+ZOOM a 1 volte lo schermo), zoom out,
+    oppure scorrimento a destra o a sinistra. `punch` stringe ancora la finestra (colpo di zoom al cambio scena)."""
     cx, cy = master.width / 2, master.height / 2
+    if motion == "out":
+        k = 1 + ZOOM * progress
+    elif motion in ("pan_l", "pan_r"):
+        k = 1 + PAN_MARGIN * 0.3
+        slack = master.width - W * k
+        cx = W * k / 2 + slack * (progress if motion == "pan_r" else 1 - progress)
+    else:
+        k = 1 + ZOOM * (1 - progress)
+    k *= 1 - punch
+    ww, wh = W * k, H * k
     return master.resize((W, H), Image.BILINEAR, box=(cx - ww / 2, cy - wh / 2, cx + ww / 2, cy + wh / 2))
 
 
@@ -91,7 +108,7 @@ def _veil(local: np.ndarray, strength: float) -> Image.Image:
     return Image.fromarray(((1 - dark) * 255).astype(np.uint8)).convert("RGB")
 
 
-def _contrast(master: Image.Image, veil: Image.Image, fg: Image.Image) -> tuple[float, float]:
+def _contrast(master: Image.Image, veil: Image.Image, fg: Image.Image, motion: str = "in") -> tuple[float, float]:
     """(10° percentile, mediana) del contrasto dei pixel di testo, al punto peggiore dello zoom
     e della fascia: ogni fascia di 100 px con testo conta da sola, così testata ed etichette
     piccole non si perdono dietro al corpo del testo."""
@@ -101,8 +118,8 @@ def _contrast(master: Image.Image, veil: Image.Image, fg: Image.Image) -> tuple[
     rows = np.nonzero(text)[0]
     text_lum = _luminance(np.asarray(fg.convert("RGB"))[text])
     worst = (99.0, 99.0)
-    for progress in (0.0, 1.0):
-        bg = np.asarray(ImageChops.multiply(_view(master, progress), veil))[text]
+    for progress in (0.0, 0.5, 1.0):
+        bg = np.asarray(ImageChops.multiply(_view(master, progress, motion), veil))[text]
         ratio = (text_lum + 0.05) / (_luminance(bg) + 0.05)
         ratio = np.maximum(ratio, 1 / ratio)
         for band in np.unique(rows // 100):
@@ -112,13 +129,13 @@ def _contrast(master: Image.Image, veil: Image.Image, fg: Image.Image) -> tuple[
     return worst
 
 
-def _readable(master: Image.Image, fg: Image.Image) -> tuple[Image.Image, float, float]:
+def _readable(master: Image.Image, fg: Image.Image, motion: str = "in") -> tuple[Image.Image, float, float]:
     """Velatura più leggera che porta il testo sopra le soglie di contrasto."""
     local = _local_mask(fg)
     strength = 0.45
     while True:
         veil = _veil(local, strength)
-        p10, median = _contrast(master, veil, fg)
+        p10, median = _contrast(master, veil, fg, motion)
         if (p10 >= MIN_P10 and median >= MIN_MEDIAN) or strength >= 0.95:
             return veil, p10, median
         strength = min(0.95, strength + 0.05)
@@ -131,6 +148,61 @@ def _with_shadow(fg: Image.Image) -> Image.Image:
     layer.putalpha(shade)
     layer.alpha_composite(fg)
     return layer
+
+
+# ---------------------------------------------------------------- varietà
+
+def _sequence(rng: random.Random, options: list[str], n: int) -> list[str]:
+    """n scelte a caso, mai la stessa due volte di fila."""
+    out, prev = [], None
+    for _ in range(n):
+        prev = rng.choice([o for o in options if o != prev])
+        out.append(prev)
+    return out
+
+
+def _enter(fg: Image.Image, ease: float, kind: str) -> Image.Image:
+    """Il testo entra in scena: sale, scivola da un lato, si ingrandisce o si mette a fuoco."""
+    alpha = fg.getchannel("A").point(lambda a, e=ease: int(a * e))
+    if kind == "left" or kind == "right":
+        moved = ImageChops.offset(fg, int((-80 if kind == "left" else 80) * (1 - ease)), 0)
+        alpha = moved.getchannel("A").point(lambda a, e=ease: int(a * e))
+        layer = moved.copy()
+    elif kind == "scale":
+        k = 0.94 + 0.06 * ease
+        small = fg.resize((round(W * k), round(H * k)), Image.BILINEAR)
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        layer.alpha_composite(small, ((W - small.width) // 2, (H - small.height) // 2))
+        alpha = layer.getchannel("A").point(lambda a, e=ease: int(a * e))
+    elif kind == "blur":
+        layer = fg.filter(ImageFilter.GaussianBlur(14 * (1 - ease)))
+        alpha = layer.getchannel("A").point(lambda a, e=ease: int(a * e))
+    else:  # rise
+        layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
+        layer.alpha_composite(fg, (0, int(50 * (1 - ease))))
+        alpha = layer.getchannel("A").point(lambda a, e=ease: int(a * e))
+    layer.putalpha(alpha)
+    return layer
+
+
+def _cut_effect(frame: Image.Image, kind: str, f: int, seed: int) -> Image.Image:
+    """Effetto sul fotogramma f dall'inizio della scena: lampo bianco, dissolvenza dal nero o disturbo a fasce."""
+    if f >= CUT_FRAMES:
+        return frame
+    t = f / CUT_FRAMES
+    if kind == "flash":
+        return Image.blend(frame, Image.new("RGB", frame.size, (255, 255, 255)), 0.6 * (1 - t))
+    if kind == "dip":
+        return Image.blend(frame, Image.new("RGB", frame.size, (0, 0, 0)), 0.9 * (1 - t))
+    if kind == "glitch" and f < 5:
+        rng = random.Random(seed * 31 + f)
+        arr = np.asarray(frame).copy()
+        for _ in range(7):
+            y0, h = rng.randrange(0, H - 120), rng.randrange(30, 120)
+            arr[y0:y0 + h] = np.roll(arr[y0:y0 + h], rng.choice([-1, 1]) * rng.randrange(20, 70), axis=1)
+        arr[..., 0] = np.roll(arr[..., 0], 9, axis=1)
+        return Image.fromarray(arr)
+    return frame
 
 
 # ---------------------------------------------------------------- Reel
@@ -150,8 +222,16 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     style.plan(items, SAFE, boost=1.18)
     center_content(style, items, W, H, SAFE)
 
+    rng = random.Random(theme_index * 7919 + len(items))
+    motion = rng.choice(MOTIONS)
+    entrances = _sequence(rng, ENTRANCES, len(items))
+    cuts = ["cut"] + _sequence(rng, CUTS, len(items) - 1)
+    post["reel_fx"] = {"motion": motion, "entrances": entrances, "cuts": cuts}
+    print(f"Reel, varietà: foto {motion}, entrate {entrances}, cambi scena {cuts}")
+
     photo_path = post.get("cover_image")
-    master = _master(photo_path) if photo_path and Path(photo_path).exists() else None
+    margin = PAN_MARGIN if motion in ("pan_l", "pan_r") else ZOOM
+    master = _master(photo_path, margin) if photo_path and Path(photo_path).exists() else None
     if master:
         # riferimento fisso su ogni scheda, a destra di "FILE 01 / 05": di cosa parla il Reel
         topic = (post.get("design", {}).get("cover_label") or post.get("category", "")).upper()[:22]
@@ -163,12 +243,12 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     for n, (kind, data) in enumerate(items, start=1):
         bg, fg = style.slide(kind, data, W, H, SAFE)
         if master:
-            veil, p10, median = _readable(master, fg)
+            veil, p10, median = _readable(master, fg, motion)
             ok = p10 >= MIN_P10 and median >= MIN_MEDIAN
             print(f"Reel, leggibilità scena {n} ({kind}): contrasto peggiore {p10:.1f}:1, mediano {median:.1f}:1"
                   + ("" if ok else " (SOTTO SOGLIA con la velatura al massimo)"))
             bg, fg = veil, _with_shadow(fg)
-        scenes.append((bg, fg, _duration(kind, data, fast=news), style.accent(kind)))
+        scenes.append((bg, fg, _duration(kind, data, fast=news), style.accent(kind), entrances[n - 1], cuts[n - 1]))
     total = sum(s[2] for s in scenes)
 
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -188,36 +268,30 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     elapsed = 0.0
     left, right = SAFE[0], SAFE[2]
-    for bg, fg, duration, accent in scenes:
+    for si, (bg, fg, duration, accent, entrance, cut) in enumerate(scenes):
         static = None
         for f in range(int(duration * FPS)):
             t = f / FPS
             progress = (elapsed + t) / total
             if master:
                 # la foto si muove piano: la scena si ricompone a ogni fotogramma
-                base = ImageChops.multiply(_view(master, progress), bg).convert("RGBA")
+                punch = 0.06 * (1 - min(1.0, f / CUT_FRAMES)) ** 2 if cut == "punch" and f < CUT_FRAMES else 0.0
+                base = ImageChops.multiply(_view(master, progress, motion, punch), bg).convert("RGBA")
                 p = min(1.0, t / ANIM)
                 ease = 1 - (1 - p) ** 3
-                layer = fg
-                if p < 1.0:
-                    faded = fg.copy()
-                    faded.putalpha(fg.getchannel("A").point(lambda a, e=ease: int(a * e)))
-                    layer = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-                    layer.alpha_composite(faded, (0, int(50 * (1 - ease))))
+                layer = fg if p >= 1.0 else _enter(fg, ease, entrance)
                 base.alpha_composite(layer)
                 frame = base.convert("RGB")
             else:
                 if static is None:
                     p = min(1.0, t / ANIM)
                     ease = 1 - (1 - p) ** 3
-                    faded = fg.copy()
-                    faded.putalpha(fg.getchannel("A").point(lambda a, e=ease: int(a * e)))
-                    moved = Image.new("RGBA", (W, H), (0, 0, 0, 0))
-                    moved.alpha_composite(faded, (0, int(50 * (1 - ease))))
-                    frame = flatten(bg, moved)
+                    frame = flatten(bg, _enter(fg, ease, entrance))
                     if p >= 1.0:
                         static = frame
                 frame = (static if static is not None else frame).copy()
+            if si > 0:
+                frame = _cut_effect(frame, cut, f, theme_index * 101 + si)
             # barra di avanzamento (decorativa, nella zona alta)
             d = ImageDraw.Draw(frame)
             if master:
@@ -232,7 +306,7 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
 
     cover_bg = scenes[0][0]
     if master:
-        still = ImageChops.multiply(_view(master, 0.0), cover_bg).convert("RGBA")
+        still = ImageChops.multiply(_view(master, 0.0, motion), cover_bg).convert("RGBA")
         still.alpha_composite(scenes[0][1])
         still.convert("RGB").save(out_dir / "cover.jpg", "JPEG", quality=92)
     else:

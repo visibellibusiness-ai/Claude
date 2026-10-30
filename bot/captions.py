@@ -60,3 +60,17 @@ def build(post: dict, tags: str, limit: int = LIMIT) -> str | None:
         if len(caption) <= limit:
             return caption
     return None
+
+
+def per_slide(post: dict) -> list[str]:
+    """Una didascalia per ogni immagine del carosello (copertina, slide, ultima slide), con il testo
+    della slide e il credito della sua foto. Serve alle "didascalie multiple" di Instagram."""
+    total = len(post["slides"])
+    cover = [post["hook"], _photo_line(post.get("cover_credit"), post.get("cover_generated", False), False)]
+    out = ["\n".join(line for line in cover if line)]
+    for n, s in enumerate(post["slides"], start=1):
+        head = f"{n}/{total} {s['title']}" + (f" ({s['highlight']})" if s.get("highlight") else "")
+        lines = [head, slide_body(s), _photo_line(s.get("credit"), s.get("generated", False), False)]
+        out.append("\n".join(line for line in lines if line))
+    out.append(post["cta"])
+    return out

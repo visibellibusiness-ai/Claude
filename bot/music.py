@@ -158,6 +158,24 @@ PROGS = {
     "mystery": [[45, 48, 52], [45, 48, 53], [44, 48, 52], [45, 48, 52]],  # Am Am(b6) E+ Am
 }
 
+# Altre progressioni per ogni genere: se ne sceglie una in base al numero del brano
+POP_PROGS = [
+    PROGS["pop"],
+    [[53, 57, 60], [48, 52, 55], [50, 53, 57], [58, 62, 65]],  # F C Dm Bb
+    [[50, 54, 57], [55, 59, 62], [52, 55, 59], [57, 61, 64]],  # D G Em A
+]
+DOC_PROGS = [
+    PROGS["epic"],
+    [[52, 55, 59], [48, 52, 55], [43, 47, 50], [50, 54, 57]],  # Em C G D
+    [[50, 53, 57], [46, 50, 53], [53, 57, 60], [48, 52, 55]],  # Dm Bb F C
+]
+HOUSE_PROGS = [
+    PROGS["dreamy"],
+    [[53, 57, 60, 64], [52, 55, 59, 62], [50, 53, 57, 60], [48, 52, 55, 59]],  # Fmaj7 Em7 Dm7 Cmaj7
+    [[57, 60, 64, 67], [50, 53, 57, 60], [43, 47, 50, 53], [48, 52, 55, 59]],  # Am7 Dm7 G7 Cmaj7
+]
+POP_ARPS = [[0, 1, 2, 1, 2, 0, 1, 2], [0, 2, 1, 2, 0, 2, 1, 0], [2, 1, 0, 1, 2, 1, 0, 2]]
+
 # Variazioni del brano "mystery": stessa atmosfera, accordi e melodie diverse
 MYSTERY_VARIANTS = [
     (PROGS["mystery"], [0, 2, 1, 2, 0, 2, 1, 3]),
@@ -192,8 +210,8 @@ def lofi(tr: Track, seed):
 
 
 def curious_pop(tr: Track, seed):
-    prog = PROGS["pop"]
-    arp = [0, 1, 2, 1, 2, 0, 1, 2]
+    prog = POP_PROGS[(seed // 2) % len(POP_PROGS)]
+    arp = POP_ARPS[seed % len(POP_ARPS)]
     for bar, s, t in tr.steps(None):
         chord = prog[bar % len(prog)]
         if s % 2 == 0:
@@ -214,7 +232,7 @@ def curious_pop(tr: Track, seed):
 
 
 def documentary(tr: Track, seed):
-    prog = PROGS["epic"]
+    prog = DOC_PROGS[seed % len(DOC_PROGS)]
     for bar, s, t in tr.steps(None):
         chord = prog[(bar // 2) % len(prog)]
         if s == 0 and bar % 2 == 0:
@@ -233,7 +251,7 @@ def documentary(tr: Track, seed):
 
 
 def chill_house(tr: Track, seed):
-    prog = PROGS["dreamy"]
+    prog = HOUSE_PROGS[seed % len(HOUSE_PROGS)]
     kick_env = np.ones(tr.n + SR * 4)
     for bar, s, t in tr.steps(None):
         chord = prog[bar % len(prog)]

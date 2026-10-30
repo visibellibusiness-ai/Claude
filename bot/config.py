@@ -30,8 +30,8 @@ WIDTH, HEIGHT = 1080, 1350
 # Stile di marca (bot/style.py): "mystery", in coppia con la musica.
 # Claude sceglie solo la palette (5 varianti) dentro lo stile.
 BRAND_STYLE = "mystery"
-# Generi musicali dei Reel (bot/music.py) tra cui Claude può scegliere
-MUSIC_PRESETS = ["mystery"]
+# Generi musicali dei Reel (bot/music.py): ogni Reel ne usa uno diverso dagli ultimi due (vedi main.pick_music)
+MUSIC_PRESETS = ["mystery", "lofi", "curious_pop", "documentary", "chill_house"]
 # Immagine di copertina generata con un modello open source (bot/imagegen.py)
 COVER_ART = True
 
