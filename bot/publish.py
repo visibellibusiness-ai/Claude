@@ -91,11 +91,15 @@ def publish_carousel(image_urls: list[str], caption: str, ai: bool = False, slid
     return result["id"]
 
 
-def publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False) -> tuple[str, bool]:
+def publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False, cover_url: str | None = None) -> tuple[str, bool]:
     """Pubblica un Reel dal suo indirizzo pubblico. Con trial=True è un Trial Reel: lo vede
-    prima solo chi non ti segue e Instagram lo condivide con i follower se va bene."""
+    prima solo chi non ti segue e Instagram lo condivide con i follower se va bene.
+    Con cover_url la copertina è l'immagine data (cover_url dell'API) invece di un fotogramma
+    scelto da Instagram; se Instagram non la accetta si pubblica senza, con un avviso nel log."""
     user_id = os.environ["IG_USER_ID"]
     params = {"media_type": "REELS", "video_url": video_url, "caption": caption}
+    if cover_url:
+        params["cover_url"] = cover_url
     if trial:
         params["trial_params"] = json.dumps({"graduation_strategy": "SS_PERFORMANCE"})
     else:
@@ -103,15 +107,31 @@ def publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False) ->
     try:
         container = _create(user_id, ai, **params)
     except RuntimeError as e:
-        if not trial:
+        if cover_url:
+            print(f"::warning::Copertina del Reel non accettata, pubblico senza: {e}")
+            params.pop("cover_url")
+            cover_url = None
+        elif not trial:
             raise
-        print(f"Trial Reel non disponibile, pubblico come Reel normale: {e}")
-        params.pop("trial_params")
-        params["share_to_feed"] = "true"
-        trial = False
+        if trial:
+            print(f"Trial Reel non disponibile, pubblico come Reel normale: {e}")
+            params.pop("trial_params")
+            params["share_to_feed"] = "true"
+            trial = False
         container = _create(user_id, ai, **params)
-    _wait_ready(container["id"])
+    try:
+        _wait_ready(container["id"])
+    except RuntimeError as e:
+        if not cover_url:
+            raise
+        print(f"::warning::Copertina del Reel in errore durante l'elaborazione, pubblico senza: {e}")
+        params.pop("cover_url")
+        cover_url = None
+        container = _create(user_id, ai, **params)
+        _wait_ready(container["id"])
     result = _post(f"{user_id}/media_publish", creation_id=container["id"])
+    if cover_url:
+        print("::notice::Reel pubblicato con copertina")
     return result["id"], trial
 
 
