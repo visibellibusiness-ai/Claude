@@ -1,0 +1,211 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-10-30",
+  "hook": "Who took $6.3 billion from Binance?",
+  "reel_hook": "$6.3 billion hit in one crypto attack",
+  "slides": [
+    {
+      "title": "Binance hit by $6.3B hack",
+      "highlight": "$6.3B",
+      "image_query": "cryptocurrency coins",
+      "image_prompt": "An open steel vault door with golden coins spilling into darkness, a broken padlock on the floor, cold blue light",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Binance says a complex attack hit $6.3 billion in assets."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Blockchain firms link it to North Korea's TraderTraitor."
+        ],
+        [
+          "FOR YOU",
+          "Binance paused deposits and withdrawals; it says it will cover all losses."
+        ]
+      ],
+      "body": "Binance says a complex attack hit $6.3 billion in assets. Blockchain firms link it to North Korea's TraderTraitor. Binance paused deposits and withdrawals; it says it will cover all losses.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-1341/img_01.jpg",
+      "credit": "Satheesh Sankaran (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "AI spending spooks tech stocks",
+      "highlight": "-7%",
+      "image_query": "data center servers",
+      "image_prompt": "Rows of glowing server racks with a thick bundle of cables shaped like a chart arrow plunging toward the floor",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Amazon fell about 7%, Intel about 23% after results."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Investors fear AI spending is burning through cash."
+        ],
+        [
+          "FOR YOU",
+          "Tech-heavy funds may dip; Nasdaq futures were down more than 2% Friday."
+        ]
+      ],
+      "body": "Amazon fell about 7%, Intel about 23% after results. Investors fear AI spending is burning through cash. Tech-heavy funds may dip; Nasdaq futures were down more than 2% Friday.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-1341/img_02.jpg",
+      "credit": "BalticServers.com (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "G20 ministers meet in Atlanta",
+      "highlight": "G20",
+      "image_query": "atlanta skyline",
+      "image_prompt": "A large round conference table with empty chairs and water glasses, a city skyline glowing through tall windows at dusk",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "G20 foreign ministers meet in Atlanta Friday and Saturday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It sets up December's leaders' summit amid deep divisions."
+        ],
+        [
+          "FOR YOU",
+          "Nothing changes yet; watch for a joint statement after Saturday's talks."
+        ]
+      ],
+      "body": "G20 foreign ministers meet in Atlanta Friday and Saturday. It sets up December's leaders' summit amid deep divisions. Nothing changes yet; watch for a joint statement after Saturday's talks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-1341/img_03.jpg",
+      "credit": "Marc Merlin (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Japan hits its 2% goal",
+      "highlight": "2%",
+      "image_query": "japanese yen banknotes",
+      "image_prompt": "A stack of yen coins beside a thermometer reading warm, cherry blossom petals scattered on a wooden table",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Bank of Japan held rates at 1.25%, highest since 1995."
+        ],
+        [
+          "WHY IT MATTERS",
+          "For the first time, it sees underlying inflation near 2%."
+        ],
+        [
+          "FOR YOU",
+          "Travelling to Japan? A December rate rise is possible and could lift the yen."
+        ]
+      ],
+      "body": "Bank of Japan held rates at 1.25%, highest since 1995. For the first time, it sees underlying inflation near 2%. Travelling to Japan? A December rate rise is possible and could lift the yen.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-1341/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Truce lets Oleshky civilians out",
+      "highlight": "",
+      "image_query": "humanitarian aid convoy",
+      "image_prompt": "A dirt road leading out of a damaged town at dawn, a white flag on a post and aid boxes stacked by the roadside",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Melania Trump-brokered truce lets hundreds leave Oleshky."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Residents went months without supplies; it ends Sunday."
+        ],
+        [
+          "FOR YOU",
+          "No change at home, but small local deals can still get people out safely."
+        ]
+      ],
+      "body": "Melania Trump-brokered truce lets hundreds leave Oleshky. Residents went months without supplies; it ends Sunday. No change at home, but small local deals can still get people out safely.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261030-1341/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🔓 Binance hit by a $6.3B attack that blockchain firms link to North Korea. Deposits and withdrawals are paused; Binance says it will cover all losses.\n📉 Amazon and Intel sink as AI spending worries hit tech. Tech-heavy funds may have a rough day.\n🌐 G20 foreign ministers meet in Atlanta ahead of December's summit.\n🇯🇵 Bank of Japan holds at 1.25% and says inflation is near its 2% goal. A December hike could lift the yen.\n🕊️ A temporary local truce lets hundreds leave occupied Oleshky.\nWould you still keep crypto on an exchange? 👇\nFollow @you.didnot.know for the daily brief.\n\n📷 Shixart1985 (CC BY 2.0) via wikimedia · Satheesh Sankaran (CC BY 2.0) via wikimedia · BalticServers.com (CC BY-SA 3.0) via wikimedia · Marc Merlin (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "binance",
+    "crypto",
+    "cybersecurity",
+    "stockmarket",
+    "ai",
+    "g20",
+    "bankofjapan",
+    "ukraine",
+    "worldnews",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.weau.com/2026/10/30/north-korea-linked-63-billion-hack-binance-blockchain-intelligence-firms-say/",
+    "https://www.cbsnews.com/news/binance-hack-north-korea/",
+    "https://www.cbc.ca/news/business/binance-north-korea-9.7402446",
+    "https://www.cnbc.com/2026/10/30/billions-in-crypto-frozen-in-binance-hack-heres-what-happens-next-.html",
+    "https://www.investing.com/news/stock-market-news/nasdaq-futures-tumble-as-amazon-intel-results-deepen-ai-spending-woes-4986163",
+    "https://www.axios.com/2026/10/29/amazon-stock-earnings-ai",
+    "https://cnbc.com/2026/10/29/stock-market-today-live-updates.html",
+    "https://abcnews.com/US/wireStory/g20-diplomats-including-china-russia-face-deep-rifts-137695571",
+    "https://www.rferl.org/a/g20-meeting-atlanta-us-ukraine-russia/33887200.html",
+    "https://www.state.gov/releases/office-of-the-spokesman/2026/10/secretary-rubios-travel-to-atlanta-to-host-the-g20-foreig",
+    "https://www.bloomberg.com/news/articles/2026-10-30/boj-holds-benchmark-rate-steady-as-expected-after-september-hike",
+    "https://www.cnbc.com/2026/10/30/boj-inflation-target-rates.html",
+    "https://www.centralbanking.com/central-banks/monetary-policy/monetary-policy-decisions/7977673/boj-says-2-inflation-target-has-been-met-as-it-holds-policy",
+    "https://www.cnn.com/2026/10/30/world/evacuations-oleshky-melania-trump-ceasefire-intl",
+    "https://www.nbcnews.com/world/ukraine/melania-ukraine-oleshky-evacuation-russia-ceasefire-leo-rcna606509",
+    "https://www.foxnews.com/world/ceasefire-negotiated-melania-trump-holds-russia-occupied-ukrainian-city"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 30 OCT 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in 30 seconds, every day"
+  },
+  "image_query": "cryptocurrency coins",
+  "image_prompt": "An open steel vault door glowing blue, digital gold coins streaming out through a crack into darkness, a snapped padlock lying on the floor",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261030-1341/img_cover.jpg",
+  "cover_credit": "Shixart1985 (CC BY 2.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🔓 Binance hit by a $6.3B attack that blockchain firms link to North Korea. Deposits and withdrawals are paused; Binance says it will cover all losses.\n📉 Amazon and Intel sink as AI spending worries hit tech. Tech-heavy funds may have a rough day.\n🌐 G20 foreign ministers meet in Atlanta ahead of December's summit.\n🇯🇵 Bank of Japan holds at 1.25% and says inflation is near its 2% goal. A December hike could lift the yen.\n🕊️ A temporary local truce lets hundreds leave occupied Oleshky.\nWould you still keep crypto on an exchange? 👇\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "rise",
+      "right",
+      "scale",
+      "right",
+      "scale",
+      "left",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "flash",
+      "cut",
+      "punch",
+      "glitch",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}

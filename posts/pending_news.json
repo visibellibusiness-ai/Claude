@@ -1,0 +1,39 @@
+{
+  "date": "20261030-1341",
+  "series": "news",
+  "format": "news",
+  "trial": true,
+  "music": "lofi",
+  "theme_index": 15,
+  "topic": "Daily news 2026-10-30",
+  "category": "news",
+  "hook": "Who took $6.3 billion from Binance?",
+  "slides": 5,
+  "design": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "images": [
+    "posts/20261030-1341/slide_01.jpg",
+    "posts/20261030-1341/slide_02.jpg",
+    "posts/20261030-1341/slide_03.jpg",
+    "posts/20261030-1341/slide_04.jpg",
+    "posts/20261030-1341/slide_05.jpg",
+    "posts/20261030-1341/slide_06.jpg",
+    "posts/20261030-1341/slide_07.jpg"
+  ],
+  "story": "posts/20261030-1341/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "🔓 Binance hit by a $6.3B attack that blockchain firms link to North Korea. Deposits and withdrawals are paused; Binance says it will cover all losses.\n📉 Amazon and Intel sink as AI spending worries hit tech. Tech-heavy funds may have a rough day.\n🌐 G20 foreign ministers meet in Atlanta ahead of December's summit.\n🇯🇵 Bank of Japan holds at 1.25% and says inflation is near its 2% goal. A December hike could lift the yen.\n🕊️ A temporary local truce lets hundreds leave occupied Oleshky.\nWould you still keep crypto on an exchange? 👇\nFollow @you.didnot.know for the daily brief.\n\n📷 Shixart1985 (CC BY 2.0) via wikimedia · Satheesh Sankaran (CC BY 2.0) via wikimedia · BalticServers.com (CC BY-SA 3.0) via wikimedia · Marc Merlin (CC BY-SA 4.0) via wikimedia\n\n#news #dailynews #binance #crypto #cybersecurity #stockmarket #ai #g20 #bankofjapan #ukraine #worldnews #youdidnotknow",
+  "carousel_caption": "🔓 Binance hit by a $6.3B attack that blockchain firms link to North Korea. Deposits and withdrawals are paused; Binance says it will cover all losses.\n📉 Amazon and Intel sink as AI spending worries hit tech. Tech-heavy funds may have a rough day.\n🌐 G20 foreign ministers meet in Atlanta ahead of December's summit.\n🇯🇵 Bank of Japan holds at 1.25% and says inflation is near its 2% goal. A December hike could lift the yen.\n🕊️ A temporary local truce lets hundreds leave occupied Oleshky.\nWould you still keep crypto on an exchange? 👇\nFollow @you.didnot.know for the daily brief.\n\nCover: Who took $6.3 billion from Binance?\n📷 Shixart1985 (CC BY 2.0) via wikimedia\n\n1/5 Binance hit by $6.3B hack ($6.3B)\nBinance says a complex attack hit $6.3 billion in assets. Blockchain firms link it to North Korea's TraderTraitor.\n📷 Satheesh Sankaran (CC BY 2.0) via wikimedia\n\n2/5 AI spending spooks tech stocks (-7%)\nAmazon fell about 7%, Intel about 23% after results. Investors fear AI spending is burning through cash.\n📷 BalticServers.com (CC BY-SA 3.0) via wikimedia\n\n3/5 G20 ministers meet in Atlanta (G20)\nG20 foreign ministers meet in Atlanta Friday and Saturday. It sets up December's leaders' summit amid deep divisions.\n📷 Marc Merlin (CC BY-SA 4.0) via wikimedia\n\n4/5 Japan hits its 2% goal (2%)\nBank of Japan held rates at 1.25%, highest since 1995. For the first time, it sees underlying inflation near 2%.\n🎨 AI-generated image\n\n5/5 Truce lets Oleshky civilians out\nMelania Trump-brokered truce lets hundreds leave Oleshky. Residents went months without supplies; it ends Sunday.\n🎨 AI-generated image\n\n#news #dailynews #binance #crypto #cybersecurity #stockmarket #ai #g20 #bankofjapan #ukraine #worldnews #youdidnotknow",
+  "slide_captions": [
+    "Who took $6.3 billion from Binance?\n📷 Shixart1985 (CC BY 2.0) via wikimedia",
+    "1/5 Binance hit by $6.3B hack ($6.3B)\nBinance says a complex attack hit $6.3 billion in assets. Blockchain firms link it to North Korea's TraderTraitor.\n📷 Satheesh Sankaran (CC BY 2.0) via wikimedia",
+    "2/5 AI spending spooks tech stocks (-7%)\nAmazon fell about 7%, Intel about 23% after results. Investors fear AI spending is burning through cash.\n📷 BalticServers.com (CC BY-SA 3.0) via wikimedia",
+    "3/5 G20 ministers meet in Atlanta (G20)\nG20 foreign ministers meet in Atlanta Friday and Saturday. It sets up December's leaders' summit amid deep divisions.\n📷 Marc Merlin (CC BY-SA 4.0) via wikimedia",
+    "4/5 Japan hits its 2% goal (2%)\nBank of Japan held rates at 1.25%, highest since 1995. For the first time, it sees underlying inflation near 2%.\n🎨 AI-generated image",
+    "5/5 Truce lets Oleshky civilians out\nMelania Trump-brokered truce lets hundreds leave Oleshky. Residents went months without supplies; it ends Sunday.\n🎨 AI-generated image",
+    "Follow for your daily news brief"
+  ]
+}
