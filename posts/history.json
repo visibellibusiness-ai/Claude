@@ -318,5 +318,37 @@
       "palette": 3
     },
     "media_id": "18125308697490325"
+  },
+  {
+    "date": "20261030-1341",
+    "series": "news",
+    "topic": "Daily news 2026-10-30",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "news",
+    "hook": "Who took $6.3 billion from Binance?",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18209661568325071"
+  },
+  {
+    "date": "20261030-1341",
+    "series": "news",
+    "topic": "Daily news 2026-10-30",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "news",
+    "hook": "Who took $6.3 billion from Binance?",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18128638301292936"
   }
 ]
