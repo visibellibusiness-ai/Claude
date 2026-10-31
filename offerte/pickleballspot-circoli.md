@@ -35,6 +35,19 @@ Tutto il Premium, più presenza e domanda:
 - Presenza nella newsletter e negli articoli di zona del sito
 - Galleria foto estesa e video
 
+### 3-bis. Sito web completo — 500 € una tantum + 200-300 €/anno
+
+Per i circoli che vogliono più del mini-sito: sito completo con dominio
+personalizzato (non sottodominio).
+
+- **500 € una tantum** per progettazione e realizzazione
+- **200-300 €/anno** per hosting, dominio, GDPR (privacy/cookie policy) e manutenzione
+- Il ricorrente copre i costi vivi e tiene il cliente agganciato alla piattaforma
+
+**Pilota: Roma Pickleball** — sito completo con dominio personalizzato a **metà
+prezzo (250 € una tantum)** + canone annuo pieno. In cambio: caso studio, foto e
+testimonianza da usare per vendere agli altri circoli.
+
 ### 4. Partner — 1.500-3.000 €/anno (o canone mensile)
 
 Il gradino che aggancia l'attività di agenzia di Andrea:
