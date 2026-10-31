@@ -95,7 +95,7 @@ Le prime quattro location hanno già le foto coperte (i circoli autorizzano l'us
 |---|---|---|
 | Pickleball Augustea | ✅ Su Drive | Cartelle "16ott26 - Pickleball Augustea" e "17ott26 - Pickleball Augustea" (condivise da Fabrizio Perrini) |
 | Arena Roma Pickleball | ✅ Su Drive | Cartella "Arena Roma Pickleball" (account pickleballtourit), sottocartelle DAY-0…DAY-3 dell'evento di Roma |
-| Casa Viola | ⚠️ Da localizzare | Foto dell'inaugurazione: su Drive non esiste una cartella con questo nome — chiedere ad Andrea dove sono |
+| Casa Viola | ✅ Su hard disk esterno | Foto dell'inaugurazione sull'HDD esterno "PBT" (8 TB), dentro le cartelle degli eventi. Quando serviranno: collegare il computer alla sessione (Remote Control) o caricare una selezione su Drive |
 | Miami Pickleball | 🔎 Online | Foto da prendere dai loro canali (autorizzazione data) |
 
 ## Partnership OpenPlay (Marco)
