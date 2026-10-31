@@ -260,7 +260,7 @@ Prerequisito tecnico: i dati risultati leggibili da OpenPlay (API/feed tornei,
 fase 2 di `openplay-integrazione.md`) — un motivo in più per chiuderla.
 
 Il collaudo del servizio lo fa Andrea su se stesso: tool risultati live per il
-prossimo PPA (vedi `idee/tool-risultati-live-ppa.md`), che diventa la demo da
+prossimo PPA (vedi `idee/tool-risultati-live-tornei.md`), che diventa la demo da
 mostrare ai circoli.
 
 Argomento di vendita: "le grafiche sono quello che vedono i tuoi sponsor" — il kit

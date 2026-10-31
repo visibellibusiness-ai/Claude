@@ -1,9 +1,27 @@
 # Tool risultati live: scheda progetto (da sviluppare in una chat dedicata)
 
-Idea di Andrea (31 ottobre 2026). Obiettivo: coprire il prossimo torneo PPA sui
-canali PickleballSpot con risultati aggiornati in automatico, e insieme collaudare
-il servizio "risultati live con AI" da vendere ai circoli (vedi
-`offerte/pickleballspot-circoli.md`).
+Idea di Andrea (31 ottobre 2026). Obiettivo: coprire i tornei sui canali
+PickleballSpot con risultati aggiornati in automatico, e insieme collaudare il
+servizio "risultati live con AI" da vendere ai circoli (vedi
+`offerte/pickleballspot-circoli.md`). Primo uso: il prossimo torneo PPA.
+
+## Multi-piattaforma per progetto
+
+Il tool NON è legato al PPA: gli si indica il torneo e la piattaforma, e lui fa
+lo scraping lì. Architettura ad adapter: un modulo di lettura per piattaforma,
+che restituisce i risultati in un formato comune; il resto (template, Stories,
+post, trigger fine tabellone) è identico per tutte.
+
+Piattaforme da supportare (con prove su ciascuna):
+
+1. **PPA** (ppatour.com) — il primo collaudo
+2. **"React"** — nome da confermare con Andrea (trascrizione vocale ambigua:
+   Rankedin? R2 Sports? altro?)
+3. **OpenPlay** (openplay.cloud) — qui meglio ancora via feed/API appena esiste
+   (fase 2 di `offerte/openplay-integrazione.md`)
+4. **Pickleball Global** — se fattibile
+5. Altre piattaforme in seguito: l'architettura ad adapter rende ogni aggiunta
+   un modulo nuovo, senza toccare il resto
 
 ## Cosa fa il tool
 
