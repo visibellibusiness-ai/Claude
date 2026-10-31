@@ -1,0 +1,213 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-10-31",
+  "hook": "Who's telling the truth about Hormuz mines?",
+  "reel_hook": "Mines in Hormuz? Depends who you ask.",
+  "slides": [
+    {
+      "title": "Hormuz: mines or no mines?",
+      "highlight": "1/5",
+      "image_query": "oil tanker sea",
+      "image_prompt": "A large oil tanker on dark calm water at dusk, a thin plume of smoke rising from its deck, a rusty sea mine floating in the foreground",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran says tankers hit mines; US says routes are clear."
+        ],
+        [
+          "WHY IT MATTERS",
+          "About a fifth of the world's oil normally passes here."
+        ],
+        [
+          "FOR YOU",
+          "Shipping scares in Hormuz can push oil prices up, and fuel costs with them."
+        ]
+      ],
+      "body": "Iran says tankers hit mines; US says routes are clear. About a fifth of the world's oil normally passes here. Shipping scares in Hormuz can push oil prices up, and fuel costs with them.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-1328/img_01.jpg",
+      "credit": "ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Binance promises to pay it back",
+      "highlight": "$6.3B",
+      "image_query": "cryptocurrency coins",
+      "image_prompt": "A heap of golden coins spilling out of an open steel vault door into darkness, a broken padlock lying on the floor beside them",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Binance says it'll cover all losses from a $6.3B hack."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It's the largest crypto theft on record."
+        ],
+        [
+          "FOR YOU",
+          "Binance users: deposits and withdrawals were paused; the exchange says it will cover losses."
+        ]
+      ],
+      "body": "Binance says it'll cover all losses from a $6.3B hack. It's the largest crypto theft on record. Binance users: deposits and withdrawals were paused; the exchange says it will cover losses.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-1328/img_02.jpg",
+      "credit": "Edwin.images (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "43 million already voted",
+      "highlight": "43M",
+      "image_query": "ballot box",
+      "image_prompt": "A tall stack of sealed paper ballot envelopes beside a wooden ballot box on a table, warm morning light through a window",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Over 43 million have voted early, nearly 10M above 2022."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Tuesday's vote decides which party controls Congress."
+        ],
+        [
+          "FOR YOU",
+          "US voter? Election Day is Tuesday 3 November; check your polling place now."
+        ]
+      ],
+      "body": "Over 43 million have voted early, nearly 10M above 2022. Tuesday's vote decides which party controls Congress. US voter? Election Day is Tuesday 3 November; check your polling place now.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-1328/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Out of Oleshky, via Belarus",
+      "highlight": "",
+      "image_query": "dnipro river",
+      "image_prompt": "A row of empty buses parked on a road at dawn, small pet carriers resting beside them, a wide misty river in the background",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Hundreds left occupied Oleshky under a one-town ceasefire."
+        ],
+        [
+          "WHY IT MATTERS",
+          "They'd gone months without regular food and medicine."
+        ],
+        [
+          "FOR YOU",
+          "Rare proof that a small local deal can get civilians out, even mid-war."
+        ]
+      ],
+      "body": "Hundreds left occupied Oleshky under a one-town ceasefire. They'd gone months without regular food and medicine. Rare proof that a small local deal can get civilians out, even mid-war.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-1328/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Houdini died on Halloween",
+      "highlight": "100",
+      "image_query": "antique handcuffs",
+      "image_prompt": "Antique iron handcuffs and chains lying open on a velvet stage floor under a spotlight, a carved pumpkin glowing beside them",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Houdini died on Halloween 1926, exactly 100 years ago."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Detroit, where he died, is marking the centenary."
+        ],
+        [
+          "FOR YOU",
+          "That famous 'killed by a punch' story? Historians say it's disputed."
+        ]
+      ],
+      "body": "Houdini died on Halloween 1926, exactly 100 years ago. Detroit, where he died, is marking the centenary. That famous 'killed by a punch' story? Historians say it's disputed.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-1328/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for the daily brief you missed",
+  "caption": "🛢️ Hormuz: Iran says tankers hit mines, the US says the routes are clear. Oil prices can feel it.\n💸 Binance says it will cover all losses from the $6.3B hack, the biggest crypto theft on record.\n🗳️ Over 43 million Americans have already voted. Election Day is Tuesday 3 November.\n🚌 Hundreds evacuated from occupied Oleshky under a one-town ceasefire.\n🎃 Houdini died on Halloween, 100 years ago today.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia · Edwin.images (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "worldnews",
+    "hormuz",
+    "oil",
+    "binance",
+    "crypto",
+    "midterms",
+    "ukraine",
+    "houdini",
+    "halloween",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.aljazeera.com/news/2026/10/30/oman-rescues-25-from-burning-oil-tanker-in-strait-of-hormuz",
+    "https://www.usnews.com/news/world/articles/2026-10-30/irans-irgc-navy-says-two-tankers-stopped-south-of-hormuz-after-incidents",
+    "https://www.rutlandherald.com/news/business/iran-says-3-tankers-strike-mines-and-catch-fire-in-strait-of-hormuz-and-other/article_b3283bc2-fb48-5477-88b0-350f953f86bd.html",
+    "https://www.brecorder.com/news/40446767/oman-rescues-25-from-burning-ship-iran-halts-tankers",
+    "https://www.cnbc.com/2026/10/30/iran-trump-hormuz-oil-middle-east-.html",
+    "https://www.cnn.com/2026/10/30/tech/binance-crypto-heist-hnk-intl",
+    "https://www.cnbc.com/2026/10/30/billions-in-crypto-frozen-in-binance-hack-heres-what-happens-next-.html",
+    "https://www.npr.org/2026/10/30/g-s1-150902/blockchain-intelligence-firms-link-north-korea-to-6-3b-hack-on-binance",
+    "https://www.cbsnews.com/news/binance-hack-north-korea/",
+    "https://www.wccbcharlotte.com/2026/10/31/early-voting-jumps-across-senate-battlegrounds-as-millions-more-americans-vote-ahead-of-election-day/",
+    "https://www.aljazeera.com/news/2026/10/31/us-midterms-3-days-to-go-what-latest-polls-say-as-early-voting-surges",
+    "https://www.pbs.org/newshour/show/october-30-2026-pbs-news-hour-full-episode",
+    "https://www.cnn.com/2026/10/31/europe/oleshky-ceasefire-russia-ukraine-arrivals-intl",
+    "https://www.cbsnews.com/news/residents-evacuated-oleshky-us-brokered-ceasefire/",
+    "https://www.nbcnews.com/world/ukraine/ukraine-war-oleshky-civilians-evacuate-belarus-historic-ceasefire-rcna606675",
+    "https://www.euronews.com/2026/10/30/residents-leave-russian-occupied-oleshky-amid-local-ceasefire",
+    "https://www.npr.org/2026/10/31/nx-s1-6008110/100-years-harry-houdinis-death-haunts-detroit",
+    "https://blogs.loc.gov/loc/2026/10/death-of-the-magician-100th-anniversary-of-houdinis-tragic-death/"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 31 OCT 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in 30 seconds, every day"
+  },
+  "image_query": "oil tanker sea",
+  "image_prompt": "A lone oil tanker on dark water at dusk, a thin column of smoke rising, a spiked sea mine half-submerged in the foreground",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261031-1328/img_cover.jpg",
+  "cover_credit": "ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🛢️ Hormuz: Iran says tankers hit mines, the US says the routes are clear. Oil prices can feel it.\n💸 Binance says it will cover all losses from the $6.3B hack, the biggest crypto theft on record.\n🗳️ Over 43 million Americans have already voted. Election Day is Tuesday 3 November.\n🚌 Hundreds evacuated from occupied Oleshky under a one-town ceasefire.\n🎃 Houdini died on Halloween, 100 years ago today.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "left",
+      "rise",
+      "blur",
+      "left",
+      "rise",
+      "blur",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "glitch",
+      "punch",
+      "dip",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}
