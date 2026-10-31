@@ -1,62 +1,74 @@
 # Monetizzazione circoli PickleballSpot: scala dell'offerta
 
-Idea di Andrea (31 ottobre 2026, chat "Spunti Interessanti"): dopo il restyling di
-PickleballSpot, vendere ai circoli con campi da pickleball una presenza a pagamento,
-partendo da un mini-sito a 100 €/anno e salendo con più servizi, più presenza,
-digital marketing e prenotazioni.
+Idea di Andrea (ottobre 2026): dopo il restyling di PickleballSpot, vendere ai
+circoli con campi da pickleball una presenza a pagamento, su due assi: la
+**presenza web** (dal mini-sito al sito personalizzato) e i **servizi marketing**.
 
-## La scala dell'offerta (4 gradini)
+## Asse 1: presenza web (4 livelli)
 
 ### 1. Base — gratis (per sempre)
 
-Scheda in directory: nome, indirizzo, numero campi, mappa. La copertura totale è il
-valore della piattaforma: più circoli ci sono, più giocatori arrivano, più i circoli
-pagano per emergere. Il gratis è il bacino di upsell.
+Scheda in directory: nome, indirizzo, numero campi, mappa. La copertura totale è
+il valore della piattaforma: più circoli ci sono, più giocatori arrivano, più i
+circoli pagano per emergere. Il gratis è il bacino di upsell.
 
-### 2. Premium — 100 €/anno
+### 2. Mini-sito — 100 €/anno
 
-Il "sì facile", sotto la soglia di decisione:
+Il "sì facile", presenza super basica ma vera:
 
-- Mini-sito one page su sottodominio (`nomecircolo.pickleballspot.eu`)
-- Foto, descrizione dei campi, orari, prezzi
-- Form di richiesta contatto/prenotazione (inoltro a email o WhatsApp del circolo)
-- Badge "circolo verificato" e priorità nelle ricerche della propria zona
+- Sottodominio col nome del circolo (`nomecircolo.pickleballspot.eu`)
+- Home page con foto, descrizione dei campi e contatti, poco più
+- Si indicizza su Google col nome del circolo
+- Form di richiesta contatto (inoltro a email o WhatsApp del circolo)
 
-Per i circoli piccoli senza sistema di prenotazione, il form del mini-sito È il loro
-primo sistema di prenotazione: gancio di vendita fortissimo.
+Per i circoli piccoli senza sistema di prenotazione, il form del mini-sito È il
+loro primo canale di prenotazione: gancio di vendita fortissimo.
 
-### 3. Pro — 300-500 €/anno
+### 3. Sito a template — 500 € una tantum
 
-Tutto il Premium, più presenza e domanda:
+La via di mezzo: sito vero ma non personalizzato.
 
-- Bottone "Prenota" collegato al loro sistema (vedi sezione prenotazioni)
-- Statistiche: visite alla scheda, click, richieste ricevute
-- 2-4 contenuti l'anno sui canali social PickleballSpot (il circolo raccontato)
-- Presenza nella newsletter e negli articoli di zona del sito
-- Galleria foto estesa e video
+- 4-5 template pronti tra cui scegliere: **3 layout × 3 opzioni di font** ciascuno
+- Colori liberi, loghi e immagini del circolo
+- Inserimento contenuti incluso nel prezzo (è il grosso del lavoro: i circoli
+  "rompono" su testi e foto, e i 500 € coprono proprio quello)
+- Da definire: dominio personalizzato o sottodominio, e canone annuo (proposta:
+  stesso canone 200-300 €/anno del livello 4 se c'è dominio proprio)
 
-### 3-bis. Sito web completo — 500 € una tantum + 200-300 €/anno
+### 4. Sito personalizzato — da 695 € una tantum + 200-300 €/anno
 
-Per i circoli che vogliono più del mini-sito: sito completo con dominio
-personalizzato (non sottodominio).
+Il top: layout disegnato sul circolo, dominio personalizzato.
 
-- **500 € una tantum** per progettazione e realizzazione
-- **200-300 €/anno** per hosting, dominio, GDPR (privacy/cookie policy) e manutenzione
-- Il ricorrente copre i costi vivi e tiene il cliente agganciato alla piattaforma
+- **695 € = 4 pagine**: home, location (se più di una, tutte lì), contatti con
+  link alle prenotazioni, pagina del circolo/campi
+- **+100 € a pagina** oltre le 4
+- Canone **200-300 €/anno**: hosting, dominio, GDPR (privacy/cookie policy),
+  manutenzione — da definire bene cosa include (es. 2 ore di modifiche l'anno,
+  il resto a preventivo)
 
-**Pilota: Roma Pickleball** — sito completo con dominio personalizzato a **metà
-prezzo (250 € una tantum)** + canone annuo pieno. In cambio: caso studio, foto e
-testimonianza da usare per vendere agli altri circoli.
+**Pilota: Roma Pickleball** — sito personalizzato (livello 4) a **metà prezzo
+(~350 € sul listino da 695)** + canone annuo pieno. In cambio: caso studio, foto
+e testimonianza da usare per vendere agli altri circoli.
+Nota: prima della revisione del listino il pilota era segnato a 250 € su base
+500 — confermare con Andrea la cifra finale.
 
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
 con 2 campi outdoor in cemento e solo un numero di telefono come contatto — nessun
 sito né Instagram trovati. Lo stesso numero compare per la Standout Pickleball
 Arena (Via Castore Durante 88, 4 campi indoor): probabilmente stessa gestione, il
 sito del pilota potrebbe coprire entrambe le strutture. Partire da zero è ideale
-per il caso studio: il prima/dopo è massimo (da "solo un numero su Pickleheads" a
-sito completo con dominio, foto, prenotazioni).
+per il caso studio: il prima/dopo è massimo.
 
-### 4. Partner — 1.500-3.000 €/anno (o canone mensile)
+## Asse 2: servizi marketing (upsell sui livelli 2-4)
+
+### Pro — 300-500 €/anno
+
+- Bottone "Prenota" collegato al loro sistema (vedi strategia prenotazioni)
+- Statistiche: visite alla scheda/sito, click, richieste ricevute
+- 2-4 contenuti l'anno sui canali social PickleballSpot (il circolo raccontato)
+- Presenza nella newsletter e negli articoli di zona del sito
+
+### Partner — 1.500-3.000 €/anno (o canone mensile)
 
 Il gradino che aggancia l'attività di agenzia di Andrea:
 
@@ -65,8 +77,9 @@ Il gradino che aggancia l'attività di agenzia di Andrea:
 - Tornei ed eventi del circolo promossi su tutta la piattaforma
 - Report trimestrale
 
-Qui PickleballSpot diventa canale di acquisizione clienti per i servizi di marketing
-di Andrea: il circolo entra con 100 €, cresce fino al contratto di agenzia.
+Qui PickleballSpot diventa canale di acquisizione clienti per i servizi di
+marketing di Andrea: il circolo entra con 100 €, cresce fino al contratto di
+agenzia.
 
 ## Prenotazioni: la strategia realistica in 3 fasi
 
@@ -76,16 +89,14 @@ Nessuno di questi espone API pubbliche: le integrazioni vere passano da partners
 commerciali.
 
 1. **Subito (costo zero): deep link.** Bottone "Prenota" sulla scheda/mini-sito che
-   apre direttamente la pagina del circolo su Playtomic/Wansport. Per l'utente
-   l'esperienza è "prenoto da PickleballSpot"; per i circoli senza sistema, il form
-   del mini-sito fa da prenotazione semplice.
-2. **A media scala: partnership.** Con qualche migliaio di utenti/mese si va da
-   Playtomic/Wansport come canale che porta prenotazioni: accordo di affiliazione o
-   accesso API partner. Filtro "solo pickleball" come differenziatore (le app padel
-   trattano il pickleball come categoria minore).
+   apre direttamente la pagina del circolo su OpenPlay/Playtomic/Wansport. Per
+   l'utente l'esperienza è "prenoto da PickleballSpot"; per i circoli senza
+   sistema, il form del mini-sito fa da prenotazione semplice.
+2. **A media scala: partnership.** OpenPlay è il partner designato (vedi sotto e
+   `openplay-integrazione.md`); con Playtomic/Wansport si tengono i deep link per
+   i circoli che già li usano.
 3. **A grande scala: prenotazione nativa.** Solo se i numeri lo giustificano,
-   prenotazione interna per i circoli che non hanno nessun sistema, con commissione
-   per prenotazione (1-2 €) o inclusa nel tier Pro.
+   prenotazione interna con commissione per prenotazione o inclusa nel tier Pro.
 
 ## Materiale fotografico per i primi siti
 
@@ -100,20 +111,21 @@ Le prime quattro location hanno già le foto coperte (i circoli autorizzano l'us
 
 ## Partnership OpenPlay (Marco)
 
-Prodotto: **openplay.cloud** (sito da analizzare appena la rete della sessione lo
-permette: funzioni, prezzi, se espone API o widget di prenotazione integrabile nei
-mini-siti). Attenzione al nome: esiste già "OpenPlay" (openplay.net), gestionale di
-prenotazioni sportive britannico ben indicizzato — possibile confusione di brand o
-questione di marchio da tenere presente nelle conversazioni con Marco.
+Prodotto: **openplay.cloud**, app di prenotazione campi e gestione tornei. Roma
+Pickleball (il pilota) è socio di OpenPlay e Andrea è in contatto diretto con gli
+sviluppatori: le richieste tecniche di integrazione sono in
+`openplay-integrazione.md`. Attenzione al nome: esiste già "OpenPlay"
+(openplay.net), gestionale di prenotazioni sportive britannico ben indicizzato —
+possibile confusione di brand o questione di marchio da tenere presente.
 
 Accordo da proporre a Marco, su due piani:
 
 1. **Sponsor del progetto**: Marco sostiene il progetto mini-siti/schede premium
    come sponsor (visibilità "powered by" / logo sulla piattaforma e sui mini-siti).
-2. **OpenPlay dentro l'offerta commerciale**: OpenPlay viene proposto ai circoli
-   come sistema di prenotazione consigliato (in particolare a quelli che un sistema
-   non ce l'hanno — oggi serviti solo dal form del mini-sito). Andrea porta i nuovi
-   clienti e trattiene una **commissione sui nuovi clienti procurati** (referral).
+2. **OpenPlay dentro l'offerta commerciale**: OpenPlay proposto ai circoli come
+   sistema di prenotazione consigliato (in particolare a quelli senza sistema).
+   Andrea porta i nuovi clienti e trattiene una **commissione sui clienti
+   procurati** (referral).
 
 Da definire con Marco:
 
@@ -123,10 +135,6 @@ Da definire con Marco:
 - Eventuale esclusiva: OpenPlay unico sistema consigliato, o affiancato ai
   deep link verso Playtomic/Wansport per i circoli che già li usano
 - Tracciamento dei clienti portati (codice/link di riferimento)
-
-Nota di coerenza con la strategia prenotazioni: OpenPlay copre i circoli senza
-sistema; per i circoli già su Playtomic/Wansport restano i deep link. Nessun
-conflitto, due segmenti diversi.
 
 ## Altri flussi di ricavo (dopo i primi paganti)
 
@@ -139,9 +147,8 @@ conflitto, due segmenti diversi.
 
 - Italia: ~438 campi affiliati (dato federale citato in stampa, in crescita da 358);
   stima 150-250 circoli con almeno un campo.
-- Tetto teorico solo Premium: ~200 circoli × 100 € = 20.000 €/anno.
-- Realistico anno 1: 10-15% di conversione = 2.000-3.000 €; con la scala completa il
-  valore medio per circolo pagante sale ben oltre i 100 €.
+- Tetto teorico solo mini-siti: ~200 circoli × 100 € = 20.000 €/anno; con la scala
+  completa il valore medio per circolo pagante sale ben oltre i 100 €.
 - Da fare: conteggio esatto dei circoli censiti su pickleballspot.eu (bloccato dalla
   rete della sessione; in coda).
 
@@ -149,7 +156,10 @@ conflitto, due segmenti diversi.
 
 1. Contare i circoli in directory su pickleballspot.eu → dimensione reale del mercato.
 2. Validare con 3-5 circoli pilota (anche gratis per 3 mesi) prima di fissare i prezzi.
-3. Restyling del sito (riferimenti: PPA Tour, Premier Padel per i box contenuti, font
-   stile DAZN/Trim) come vetrina dell'offerta.
-4. Conversazione dedicata per costruire l'offerta commerciale vera e propria
-   (con la skill logica-offerte-commerciali).
+3. Chiudere con Marco integrazione (fase 1 di `openplay-integrazione.md`) e accordo
+   economico (sponsor + referral), per iscritto.
+4. Restyling del sito (riferimenti: PPA Tour, Premier Padel per i box contenuti, font
+   stile DAZN/Trim) come vetrina dell'offerta; i 3 layout template nascono dallo
+   stesso design system del restyling.
+5. Proposta formale per Roma Pickleball con `logica-offerte-commerciali` e
+   `lettere-incarico`.
