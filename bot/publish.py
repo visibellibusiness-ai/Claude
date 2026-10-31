@@ -107,18 +107,24 @@ def publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False, co
     try:
         container = _create(user_id, ai, **params)
     except RuntimeError as e:
-        if cover_url:
-            print(f"::warning::Copertina del Reel non accettata, pubblico senza: {e}")
-            params.pop("cover_url")
-            cover_url = None
-        elif not trial:
-            raise
+        # Prima il Trial Reel: con pochi follower Instagram lo rifiuta (codice 2207081) e l'errore
+        # non c'entra con la copertina, che quindi resta.
         if trial:
             print(f"Trial Reel non disponibile, pubblico come Reel normale: {e}")
             params.pop("trial_params")
             params["share_to_feed"] = "true"
             trial = False
-        container = _create(user_id, ai, **params)
+        elif not cover_url:
+            raise
+        try:
+            container = _create(user_id, ai, **params)
+        except RuntimeError as e2:
+            if not cover_url:
+                raise
+            print(f"::warning::Copertina del Reel non accettata, pubblico senza: {e2}")
+            params.pop("cover_url")
+            cover_url = None
+            container = _create(user_id, ai, **params)
     try:
         _wait_ready(container["id"])
     except RuntimeError as e:
