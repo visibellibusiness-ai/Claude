@@ -81,6 +81,12 @@ commerciali.
 
 ## Partnership OpenPlay (Marco)
 
+Prodotto: **openplay.cloud** (sito da analizzare appena la rete della sessione lo
+permette: funzioni, prezzi, se espone API o widget di prenotazione integrabile nei
+mini-siti). Attenzione al nome: esiste già "OpenPlay" (openplay.net), gestionale di
+prenotazioni sportive britannico ben indicizzato — possibile confusione di brand o
+questione di marchio da tenere presente nelle conversazioni con Marco.
+
 Accordo da proporre a Marco, su due piani:
 
 1. **Sponsor del progetto**: Marco sostiene il progetto mini-siti/schede premium
