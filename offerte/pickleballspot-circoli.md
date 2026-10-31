@@ -78,6 +78,23 @@ e testimonianza da usare per vendere agli altri circoli.
 Nota: prima della revisione del listino il pilota era segnato a 250 € su base
 500 — confermare con Andrea la cifra finale.
 
+**Come si vende la scala: Roma Pickleball in 3 versioni.** La differenza tra
+template e sito personalizzato è qualità visiva, quindi si vende facendola vedere,
+non raccontandola. Il caso studio del pilota va costruito mostrando lo stesso
+circolo a ogni livello:
+
+1. **Scheda avanzata** su PickleballSpot (Roma Pickleball probabilmente ce l'ha
+   già: migliorarla ancora) → cosa ottieni col mini-sito/presenza premium
+2. **Roma Pickleball in uno dei 3 template** → cosa ottieni con 500 €
+3. **Roma Pickleball sito personalizzato super top** → il livello 4, costruito
+   con il design system del restyling (riferimenti PPA Tour, Premier Padel,
+   tipografia stile DAZN/Trim)
+
+Le tre versioni affiancate diventano LA pagina di vendita dell'offerta per tutti
+gli altri circoli: "scegli quale vuoi essere". Il confronto visivo giustifica i
+prezzi meglio di qualsiasi listino e risolve anche la vicinanza 500/695: si deve
+VEDERE perché il personalizzato costa di più.
+
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
 con 2 campi outdoor in cemento e solo un numero di telefono come contatto — nessun
 sito né Instagram trovati. Lo stesso numero compare per la Standout Pickleball
