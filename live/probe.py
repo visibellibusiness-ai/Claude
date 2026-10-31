@@ -18,11 +18,15 @@ from urllib.parse import urljoin, urlparse
 import requests
 
 DEFAULT_URLS = [
-    "https://www.pickleballengland.org/2026-english-nationals/",
-    "https://www.pickleballengland.org/tournaments/",
-    "https://www.picklebook.org/a/pbe",
-    "https://www.picklebook.org/a/pbe/tournaments/uLh76HpTL8lBGyqN/results/16",
+    # 2026 English Nationals su Picklebook (link trovato sulla pagina Pickleball England)
+    "https://www.picklebook.org/a/pbe/tournaments/bYC3Jqgwq7JKJKwJ",
+    "https://www.picklebook.org/a/pbe/tournaments/bYC3Jqgwq7JKJKwJ/results",
 ]
+
+# dentro un torneo la sonda segue da sola le pagine dei risultati (indice eventi,
+# gironi, tabelloni, classifiche), fino a questo tetto di pagine
+CRAWL_PATTERN = re.compile(r"/tournaments/[^/]+/results(?:/\d+(?:/(?:group/\d+|knockouts/\w+|ranking))?)?$")
+MAX_PAGES = 80
 
 UA = ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/130.0 Safari/537.36")
@@ -73,11 +77,11 @@ def inspect_text(label: str, text: str) -> None:
         print(f"  [{label}] dati incorporati: {embeds}")
 
 
-def probe_page(url: str, session: requests.Session) -> None:
+def probe_page(url: str, session: requests.Session) -> list[str]:
     print(f"\n=== {url}")
     r = fetch(url, session)
     if r is None:
-        return
+        return []
     ctype = r.headers.get("content-type", "?")
     print(f"  HTTP {r.status_code} | {ctype} | {len(r.content)} byte | url finale: {r.url}")
     body = r.text
@@ -103,25 +107,42 @@ def probe_page(url: str, session: requests.Session) -> None:
         for l in interesting[:40]:
             print(f"    - {urljoin(url, l)}")
 
-    # bundle JavaScript: dentro ci sono gli endpoint delle SPA
-    scripts = [urljoin(url, s) for s in RE_SCRIPT.findall(body)]
-    own = [s for s in scripts if urlparse(s).netloc == urlparse(r.url).netloc or urlparse(s).netloc == ""]
-    for s in own[:6]:
-        rb = fetch(s, session)
-        if rb is None or rb.status_code != 200:
-            continue
-        name = safe_name(s) + ".js"
-        save(name, rb.content)
-        print(f"  bundle: {s} ({len(rb.content)} byte) -> probe_out/{name}")
-        inspect_text(Path(urlparse(s).path).name, rb.text)
+    # bundle JavaScript: dentro ci sono gli endpoint delle SPA (saltati se la pagina è già piena)
+    if words < 150:
+        scripts = [urljoin(url, s) for s in RE_SCRIPT.findall(body)]
+        own = [s for s in scripts if urlparse(s).netloc == urlparse(r.url).netloc or urlparse(s).netloc == ""]
+        for s in own[:6]:
+            rb = fetch(s, session)
+            if rb is None or rb.status_code != 200:
+                continue
+            name = safe_name(s) + ".js"
+            save(name, rb.content)
+            print(f"  bundle: {s} ({len(rb.content)} byte) -> probe_out/{name}")
+            inspect_text(Path(urlparse(s).path).name, rb.text)
+
+    # pagine risultati dello stesso torneo da seguire
+    return [urljoin(url, l) for l in links if CRAWL_PATTERN.search(urlparse(urljoin(url, l)).path)]
 
 
 def main() -> None:
+    import time
+
     urls = sys.argv[1:] or DEFAULT_URLS
     session = requests.Session()
-    for url in urls:
-        probe_page(url, session)
-    print("\nFatto: nessun dato scritto fuori da probe_out/, niente pubblicato.")
+    queue = list(urls)
+    seen: set[str] = set()
+    while queue and len(seen) < MAX_PAGES:
+        url = queue.pop(0).split("#")[0].rstrip("?")
+        if url in seen:
+            continue
+        seen.add(url)
+        for found in probe_page(url, session):
+            if found not in seen and found not in queue:
+                queue.append(found)
+        time.sleep(0.4)
+    if queue:
+        print(f"\nTetto di {MAX_PAGES} pagine raggiunto, rimaste fuori: {len(queue)}")
+    print(f"\nFatto: {len(seen)} pagine viste, nessun dato scritto fuori da probe_out/, niente pubblicato.")
 
 
 if __name__ == "__main__":

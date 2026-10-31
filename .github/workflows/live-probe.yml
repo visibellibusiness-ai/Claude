@@ -9,7 +9,7 @@ on:
         default: ""
 
 permissions:
-  contents: read
+  contents: write
 
 jobs:
   probe:
@@ -33,3 +33,18 @@ jobs:
           name: probe-out
           path: probe_out/
           retention-days: 5
+
+      # Le stesse pagine vanno sul branch "probe" (riscritto a ogni giro, come "media"):
+      # la sessione cloud ha la rete chiusa ma GitHub lo raggiunge, così il parser si
+      # sviluppa in locale su pagine vere.
+      - name: Pubblica le pagine sul branch probe
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          cd probe_out
+          git init -q -b probe
+          git config user.name "live-probe"
+          git config user.email "live-probe@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Pagine della sonda"
+          git push -q --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git" probe
