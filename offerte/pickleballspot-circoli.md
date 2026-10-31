@@ -32,19 +32,45 @@ La via di mezzo: sito vero ma non personalizzato.
 - Colori liberi, loghi e immagini del circolo
 - Inserimento contenuti incluso nel prezzo (è il grosso del lavoro: i circoli
   "rompono" su testi e foto, e i 500 € coprono proprio quello)
-- Da definire: dominio personalizzato o sottodominio, e canone annuo (proposta:
-  stesso canone 200-300 €/anno del livello 4 se c'è dominio proprio)
+- Di default su sottodominio PickleballSpot; dominio personalizzato opzionale
+  (vedi "Canoni ricorrenti")
 
-### 4. Sito personalizzato — da 695 € una tantum + 200-300 €/anno
+### 4. Sito personalizzato — da 695 € una tantum + canone annuo
 
-Il top: layout disegnato sul circolo, dominio personalizzato.
+Il top: layout disegnato sul circolo.
 
 - **695 € = 4 pagine**: home, location (se più di una, tutte lì), contatti con
   link alle prenotazioni, pagina del circolo/campi
 - **+100 € a pagina** oltre le 4
-- Canone **200-300 €/anno**: hosting, dominio, GDPR (privacy/cookie policy),
-  manutenzione — da definire bene cosa include (es. 2 ore di modifiche l'anno,
-  il resto a preventivo)
+- Di default su sottodominio PickleballSpot; dominio personalizzato opzionale
+  (vedi "Canoni ricorrenti")
+
+### Canoni ricorrenti (livelli 3 e 4)
+
+Il canone annuo si compone di tre voci, tutte dovute perché i costi sono reali:
+
+1. **Mantenimento sito** (aggiornamenti tecnici; definire cosa include di
+   modifiche, es. 2 ore l'anno, il resto a preventivo)
+2. **GDPR compliance** (privacy/cookie policy sempre aggiornate — Andrea ha la
+   licenza dello strumento di compliance, il costo per sito è coperto da questa voce)
+3. **Hosting** (+ dominio solo se personalizzato)
+
+**Strategia dominio: tenerli sotto pickleballspot.eu.** Il default per tutti i
+livelli è il sottodominio (`nomecircolo.pickleballspot.eu`); il dominio
+personalizzato è opzionale e **va prezzato volutamente caro**, da deterrente.
+Perché conviene che restino sul sottodominio:
+
+- Ogni sito rafforza l'autorità SEO di pickleballspot.eu
+- Il circolo resta agganciato alla piattaforma (se se ne va, perde l'indirizzo)
+- Meno gestione per Andrea (niente DNS, rinnovi e certificati per ogni cliente)
+
+Proposta di cifre (da confermare):
+
+| | Su sottodominio | Con dominio personalizzato |
+|---|---|---|
+| Canone annuo liv. 3-4 | 150-200 €/anno | 350-400 €/anno |
+
+Il mini-sito (livello 2) resta a 100 €/anno tutto compreso, solo sottodominio.
 
 **Pilota: Roma Pickleball** — sito personalizzato (livello 4) a **metà prezzo
 (~350 € sul listino da 695)** + canone annuo pieno. In cambio: caso studio, foto
