@@ -238,6 +238,31 @@ grafiche in tempo reale fanno salire il preventivo — un evento enorme vale mol
 di più (1.500-2.500 € e oltre). Il driver del prezzo è la dimensione e la
 visibilità dell'evento, non le ore di lavoro.
 
+### Upsell del kit: risultati live con l'AI
+
+Le grafiche di risultati, podi e tabelloni del kit si consegnano come **template
+compilabili in automatico con l'AI**. Il circolo adotta Claude (licenza propria) e
+durante il torneo l'AI pesca i risultati direttamente dalla sua piattaforma
+(OpenPlay, che tanto terranno aperta e aggiornata), aggiorna le grafiche in tempo
+reale e, quando un tabellone finisce, compila la grafica finale e posta.
+
+Cosa si vende:
+
+- **Avviamento**: installazione e configurazione di Claude + collegamento ai
+  template e alla piattaforma risultati (una tantum)
+- **Consulenza**: formazione all'uso durante il torneo (a ore o forfait)
+- **Licenza Claude**: il circolo la paga direttamente; verificare se esiste un
+  programma di referral/commissioni per le licenze — a oggi non risulta un
+  programma pubblico, quindi il guadagno certo sta in avviamento e consulenza,
+  non nella commissione
+
+Prerequisito tecnico: i dati risultati leggibili da OpenPlay (API/feed tornei,
+fase 2 di `openplay-integrazione.md`) — un motivo in più per chiuderla.
+
+Il collaudo del servizio lo fa Andrea su se stesso: tool risultati live per il
+prossimo PPA (vedi `idee/tool-risultati-live-ppa.md`), che diventa la demo da
+mostrare ai circoli.
+
 Argomento di vendita: "le grafiche sono quello che vedono i tuoi sponsor" — il kit
 si ripaga con un solo sponsor in più convinto dalla presentazione ordinata.
 Sinergia: i tornei poi finiscono sul calendario di PickleballSpot (feed OpenPlay,
