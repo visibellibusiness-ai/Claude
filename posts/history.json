@@ -262,7 +262,19 @@
     "design": {
       "style": "template"
     },
-    "media_id": "18154781632551826"
+    "media_id": "18154781632551826",
+    "metrics": {
+      "reach": 1,
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0,
+      "profile_activity": 0
+    }
   },
   {
     "date": "20261029-0012",
@@ -277,7 +289,19 @@
     "design": {
       "style": "template"
     },
-    "media_id": "18129687485484244"
+    "media_id": "18129687485484244",
+    "metrics": {
+      "reach": 1,
+      "views": 2,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 1,
+      "total_interactions": 1,
+      "follows": 0,
+      "profile_visits": 0,
+      "profile_activity": 0
+    }
   },
   {
     "date": "20261029-1344",

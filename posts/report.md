@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 30/10/2026 alle 18:19 UTC. Follower: 0.
+Aggiornato il 31/10/2026 alle 00:13 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 70, di cui da non follower 70 (100%).
+- Visualizzazioni: 95, di cui da non follower 95 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 30/10/2026 | 3 | 3 | 4 | 4 | 1 | 0 |
+| 30/10/2026 | 28 | 28 | 29 | 29 | 2 | 0 |
 | 29/10/2026 | 26 | 26 | 36 | 36 | 5 | 5 |
 | 28/10/2026 | 3 | 3 | 13 | 13 | 6 | 6 |
 | 27/10/2026 | 8 | 8 | 17 | 17 | 3 | 3 |
 | 26/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 25/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 24/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,8 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 29/10/2026 00:12 | carousel | Foods that are secretly not what you thi | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
+| 28/10/2026 18:23 | carousel | Timelines that will break your brain | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 13:40 | carousel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 13:40 | reel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 28/10/2026 00:09 | carousel | Your body rebuilds itself, except these  | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
@@ -48,7 +49,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 5 | 6 | 83,3% | 0,0% |
+| carousel | 7 | 8 | 87,5% | 0,0% |
 | reel | 4 | 12 | 33,3% | 0,0% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

@@ -1,0 +1,33 @@
+{
+  "date": "20261031-0014",
+  "series": "facts",
+  "format": "reel",
+  "trial": true,
+  "music": "mystery",
+  "theme_index": 18,
+  "topic": "Mantis shrimp: punch force, cavitation, color vision, club armor",
+  "category": "animals",
+  "hook": "A shrimp that punches 2,500x its body weight",
+  "slides": 5,
+  "design": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "images": [
+    "posts/20261031-0014/cover.jpg"
+  ],
+  "story": "posts/20261031-0014/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "A mantis shrimp's punch can hit with forces over 2,500 times its own body weight, and it's fast enough to make the water itself strike its prey a second time.\n\nThe twist: with 12 color receptors to our 3, you'd expect super color vision. Experiments found they're actually worse than us at telling close colors apart. (Sources: Patek et al., Nature 2004; Thoen et al., Science 2014)\n\nWhich animal should we cover next?\n\n📷 Cédric Péneau (CC BY-SA 4.0) via wikimedia · Alexander Vasenin (CC BY-SA 3.0) via wikimedia · Cédric Peneau (CC BY-SA 4.0) via wikimedia · Diego Delso (CC BY-SA 4.0) via wikimedia\n\n#mantisshrimp #animalfacts #oceanlife #marinebiology #sciencefacts #didyouknow #naturefacts #weirdanimals #funfacts #youdidnotknow",
+  "carousel_caption": "A mantis shrimp's punch can hit with forces over 2,500 times its own body weight, and it's fast enough to make the water itself strike its prey a second time.\n\nThe twist: with 12 color receptors to our 3, you'd expect super color vision. Experiments found they're actually worse than us at telling close colors apart. (Sources: Patek et al., Nature 2004; Thoen et al., Science 2014)\n\nWhich animal should we cover next?\n\nCover: A shrimp that punches 2,500x its body weight\n📷 Cédric Péneau (CC BY-SA 4.0) via wikimedia\n\n1/5 Faster than a blink (23 m/s)\nIts club-like arm strikes at up to 23 meters per second, finishing in just a few milliseconds.\n📷 Alexander Vasenin (CC BY-SA 3.0) via wikimedia\n\n2/5 Two hits in one (2x)\nThe strike is so fast it creates collapsing bubbles in the water, hitting the prey a second time.\n🎨 AI-generated image\n\n3/5 12 color receptors (12)\nHumans see color with 3 types of cones. Mantis shrimp have 12 types of color receptors.\n📷 Cédric Peneau (CC BY-SA 4.0) via wikimedia\n\n4/5 But worse at color (Twist)\nTests show they tell similar colors apart worse than we do. They likely recognize colors fast, not finely.\n📷 Cédric Peneau (CC BY-SA 4.0) via wikimedia\n\n5/5 Armor engineers copy\nIts club has a spiral fiber structure that stops cracks. Scientists study it to design tougher materials.\n📷 Diego Delso (CC BY-SA 4.0) via wikimedia\n\n#mantisshrimp #animalfacts #oceanlife #marinebiology #sciencefacts #didyouknow #naturefacts #weirdanimals #funfacts #youdidnotknow",
+  "slide_captions": [
+    "A shrimp that punches 2,500x its body weight\n📷 Cédric Péneau (CC BY-SA 4.0) via wikimedia",
+    "1/5 Faster than a blink (23 m/s)\nIts club-like arm strikes at up to 23 meters per second, finishing in just a few milliseconds.\n📷 Alexander Vasenin (CC BY-SA 3.0) via wikimedia",
+    "2/5 Two hits in one (2x)\nThe strike is so fast it creates collapsing bubbles in the water, hitting the prey a second time.\n🎨 AI-generated image",
+    "3/5 12 color receptors (12)\nHumans see color with 3 types of cones. Mantis shrimp have 12 types of color receptors.\n📷 Cédric Peneau (CC BY-SA 4.0) via wikimedia",
+    "4/5 But worse at color (Twist)\nTests show they tell similar colors apart worse than we do. They likely recognize colors fast, not finely.\n📷 Cédric Peneau (CC BY-SA 4.0) via wikimedia",
+    "5/5 Armor engineers copy\nIts club has a spiral fiber structure that stops cracks. Scientists study it to design tougher materials.\n📷 Diego Delso (CC BY-SA 4.0) via wikimedia",
+    "Follow for a new wild fact every day"
+  ]
+}

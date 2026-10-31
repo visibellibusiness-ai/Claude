@@ -1,0 +1,121 @@
+{
+  "reasoning": "Strategy says niche evergreen content, about 60% Reels, 5 slides, and adding trial reels when available. No trial reel has been tested yet. With 0 followers there is no downside, so this is a Trial Reel. It also runs Experiment 2, version B: the hook states the shocking number directly instead of asking a question, so it can later be compared with question-style reel hooks. Animals is core niche, and mantis shrimp has not been covered. Each slide is one punchy, peer-reviewed fact, and a twist (12 color receptors but poor color vision) supports watch time and comments. I'm using documentary music and palette 0 to keep rotating the variables.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": true,
+  "category": "animals",
+  "topic": "Mantis shrimp: punch force, cavitation, color vision, club armor",
+  "hook": "A shrimp that punches 2,500x its body weight",
+  "slides": [
+    {
+      "title": "Faster than a blink",
+      "body": "Its club-like arm strikes at up to 23 meters per second, finishing in just a few milliseconds.",
+      "highlight": "23 m/s",
+      "image_query": "mantis shrimp",
+      "image_prompt": "Colorful mantis shrimp on a coral reef, club arm poised to strike, dramatic underwater lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-0014/img_01.jpg",
+      "credit": "Alexander Vasenin (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Two hits in one",
+      "body": "The strike is so fast it creates collapsing bubbles in the water, hitting the prey a second time.",
+      "highlight": "2x",
+      "image_query": "cavitation bubbles water",
+      "image_prompt": "Burst of tiny bubbles collapsing underwater next to a cracked snail shell, high-speed photo style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-0014/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "12 color receptors",
+      "body": "Humans see color with 3 types of cones. Mantis shrimp have 12 types of color receptors.",
+      "highlight": "12",
+      "image_query": "mantis shrimp eyes",
+      "image_prompt": "Extreme close-up of mantis shrimp striped compound eyes on stalks, vivid rainbow colors",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-0014/img_03.jpg",
+      "credit": "Cédric Peneau (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "But worse at color",
+      "body": "Tests show they tell similar colors apart worse than we do. They likely recognize colors fast, not finely.",
+      "highlight": "Twist",
+      "image_query": "peacock mantis shrimp",
+      "image_prompt": "Mantis shrimp facing two nearly identical colored light panels underwater, soft glow",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-0014/img_04.jpg",
+      "credit": "Cédric Peneau (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Armor engineers copy",
+      "body": "Its club has a spiral fiber structure that stops cracks. Scientists study it to design tougher materials.",
+      "highlight": "",
+      "image_query": "mantis shrimp club",
+      "image_prompt": "Spiral layered fiber structure like a twisted staircase, glowing blue, cross-section of a tough material",
+      "image": "/home/runner/work/Claude/Claude/posts/20261031-0014/img_05.jpg",
+      "credit": "Diego Delso (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new wild fact every day",
+  "caption": "A mantis shrimp's punch can hit with forces over 2,500 times its own body weight, and it's fast enough to make the water itself strike its prey a second time.\n\nThe twist: with 12 color receptors to our 3, you'd expect super color vision. Experiments found they're actually worse than us at telling close colors apart. (Sources: Patek et al., Nature 2004; Thoen et al., Science 2014)\n\nWhich animal should we cover next?\n\n📷 Cédric Péneau (CC BY-SA 4.0) via wikimedia · Alexander Vasenin (CC BY-SA 3.0) via wikimedia · Cédric Peneau (CC BY-SA 4.0) via wikimedia · Diego Delso (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "mantisshrimp",
+    "animalfacts",
+    "oceanlife",
+    "marinebiology",
+    "sciencefacts",
+    "didyouknow",
+    "naturefacts",
+    "weirdanimals",
+    "funfacts",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Patek, Korff & Caldwell (2004) Deadly strike mechanism of a mantis shrimp, Nature 428",
+    "Patek & Caldwell (2005) Extreme impact and cavitation forces of a biological hammer, Journal of Experimental Biology 208",
+    "Thoen et al. (2014) A different form of color vision in mantis shrimp, Science 343",
+    "Weaver et al. (2012) The stomatopod dactyl club: a formidable damage-tolerant biological hammer, Science 336"
+  ],
+  "image_query": "peacock mantis shrimp",
+  "image_prompt": "Vivid rainbow-colored mantis shrimp on a reef, club arm raised like a boxer, a cracked seashell beside it, dramatic underwater light",
+  "design": {
+    "palette": 0,
+    "cover_label": "Ocean's hardest punch",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts that sound made up"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261031-0014/img_cover.jpg",
+  "cover_credit": "Cédric Péneau (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "A mantis shrimp's punch can hit with forces over 2,500 times its own body weight, and it's fast enough to make the water itself strike its prey a second time.\n\nThe twist: with 12 color receptors to our 3, you'd expect super color vision. Experiments found they're actually worse than us at telling close colors apart. (Sources: Patek et al., Nature 2004; Thoen et al., Science 2014)\n\nWhich animal should we cover next?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "left",
+      "right",
+      "left",
+      "scale",
+      "right",
+      "rise",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "dip",
+      "glitch",
+      "cut",
+      "punch"
+    ]
+  },
+  "music_used": "mystery"
+}
