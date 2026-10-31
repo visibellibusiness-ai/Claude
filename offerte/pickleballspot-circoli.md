@@ -87,6 +87,17 @@ commerciali.
    prenotazione interna per i circoli che non hanno nessun sistema, con commissione
    per prenotazione (1-2 €) o inclusa nel tier Pro.
 
+## Materiale fotografico per i primi siti
+
+Le prime quattro location hanno già le foto coperte (i circoli autorizzano l'uso):
+
+| Location | Foto | Dove |
+|---|---|---|
+| Pickleball Augustea | ✅ Su Drive | Cartelle "16ott26 - Pickleball Augustea" e "17ott26 - Pickleball Augustea" (condivise da Fabrizio Perrini) |
+| Arena Roma Pickleball | ✅ Su Drive | Cartella "Arena Roma Pickleball" (account pickleballtourit), sottocartelle DAY-0…DAY-3 dell'evento di Roma |
+| Casa Viola | ⚠️ Da localizzare | Foto dell'inaugurazione: su Drive non esiste una cartella con questo nome — chiedere ad Andrea dove sono |
+| Miami Pickleball | 🔎 Online | Foto da prendere dai loro canali (autorizzazione data) |
+
 ## Partnership OpenPlay (Marco)
 
 Prodotto: **openplay.cloud** (sito da analizzare appena la rete della sessione lo
