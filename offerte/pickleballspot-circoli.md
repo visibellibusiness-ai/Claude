@@ -206,6 +206,38 @@ Da definire con Marco:
   deep link verso Playtomic/Wansport per i circoli che già li usano
 - Tracciamento dei clienti portati (codice/link di riferimento)
 
+## Servizio: immagine coordinata per tornei ed eventi
+
+Derivato naturale dei template AI-ready: quando il circolo organizza un torneo,
+invece delle grafiche improvvisate gli si vende il pacchetto completo. Una volta
+impostato il template dell'evento la produzione è veloce (la fa Claude), ma il
+valore percepito è alto perché il materiale consegnato è tanto e il torneo è il
+momento di massima visibilità del circolo (sponsor e pubblico guardano).
+
+Cosa comprende il kit torneo (esempio):
+
+- Key visual dell'evento (il "manifesto" da cui deriva tutto)
+- Locandina stampabile + versione social (feed e Stories)
+- Post annuncio, apertura iscrizioni, ultimi posti, countdown
+- Tabelloni e programma giornate (aggiornabili)
+- Grafiche risultati e premiazioni (template da riempire durante il torneo)
+- Pannello/strip sponsor (ciò che il circolo rivende agli sponsor)
+- Copertina e cornici per foto e Reel post-evento
+
+Prezzi proposti (da validare):
+
+| Pacchetto | Contenuto | Prezzo |
+|---|---|---|
+| Kit torneo base | Key visual + locandina + 5-6 grafiche social | 350-500 € |
+| Kit torneo completo | Tutto l'elenco sopra | 700-900 € |
+| Add-on clienti sito (liv. 3-4) | Sconto 20-30%: lo stile c'è già | — |
+
+Argomento di vendita: "le grafiche sono quello che vedono i tuoi sponsor" — il kit
+si ripaga con un solo sponsor in più convinto dalla presentazione ordinata.
+Sinergia: i tornei poi finiscono sul calendario di PickleballSpot (feed OpenPlay,
+fase 2 dell'integrazione), quindi ogni torneo vestito bene è anche contenuto per
+la piattaforma.
+
 ## Altri flussi di ricavo (dopo i primi paganti)
 
 - Sponsor di categoria sulla piattaforma (brand racchette/palline: Selkirk, JOOLA…)
