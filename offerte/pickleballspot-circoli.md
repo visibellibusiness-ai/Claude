@@ -44,6 +44,14 @@ Il top: layout disegnato sul circolo.
 - **+100 € a pagina** oltre le 4
 - Di default su sottodominio PickleballSpot; dominio personalizzato opzionale
   (vedi "Canoni ricorrenti")
+- **Stile su misura del circolo** — non il design system di PickleballSpot (quello
+  resta esclusivo della piattaforma): per ogni cliente del livello 4 si crea uno
+  stile web proprio, riportabile anche sui social
+- **In regalo: kit social.** Insieme al sito si consegnano l'impostazione grafica
+  e i template per i social del circolo, con una mini-guida per usarli in
+  autonomia ("ti comunicherai meglio anche da solo"). Costa poco una volta creato
+  lo stile del sito, e in vendita vale moltissimo; in più semina il terreno per i
+  servizi marketing (asse 2) quando il circolo capisce che da solo non ha tempo
 
 ### Canoni ricorrenti (livelli 3 e 4)
 
@@ -86,9 +94,9 @@ circolo a ogni livello:
 1. **Scheda avanzata** su PickleballSpot (Roma Pickleball probabilmente ce l'ha
    già: migliorarla ancora) → cosa ottieni col mini-sito/presenza premium
 2. **Roma Pickleball in uno dei 3 template** → cosa ottieni con 500 €
-3. **Roma Pickleball sito personalizzato super top** → il livello 4, costruito
-   con il design system del restyling (riferimenti PPA Tour, Premier Padel,
-   tipografia stile DAZN/Trim)
+3. **Roma Pickleball sito personalizzato super top** → il livello 4, con uno
+   stile creato apposta per Roma Pickleball (il design system del restyling resta
+   esclusivo di PickleballSpot) + il kit social in regalo come leva di chiusura
 
 Le tre versioni affiancate diventano LA pagina di vendita dell'offerta per tutti
 gli altri circoli: "scegli quale vuoi essere". Il confronto visivo giustifica i
@@ -202,7 +210,9 @@ Da definire con Marco:
 3. Chiudere con Marco integrazione (fase 1 di `openplay-integrazione.md`) e accordo
    economico (sponsor + referral), per iscritto.
 4. Restyling del sito (riferimenti: PPA Tour, Premier Padel per i box contenuti, font
-   stile DAZN/Trim) come vetrina dell'offerta; i 3 layout template nascono dallo
-   stesso design system del restyling.
+   stile DAZN/Trim) come vetrina dell'offerta. Il design system che ne esce è e
+   resta di PickleballSpot; i 3 layout template per i circoli sono neutri e
+   personalizzabili (colori, font, loghi), cosa diversa dal design system della
+   piattaforma.
 5. Proposta formale per Roma Pickleball con `logica-offerte-commerciali` e
    `lettere-incarico`.
