@@ -1,0 +1,84 @@
+name: Risultati live tornei
+
+on:
+  schedule:
+    # ogni 30 minuti; il giro esce subito se il torneo in live/torneo.json ha "attivo": false
+    - cron: "7,37 * * * *"
+  workflow_dispatch:
+    inputs:
+      solo_grafiche:
+        description: "Genera le grafiche senza pubblicare su Instagram"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-tornei
+  cancel-in-progress: false
+
+jobs:
+  giro:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Controlla che il torneo sia attivo
+        id: attivo
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || { [ -f live/torneo.json ] && python3 -c "import json,sys; sys.exit(0 if json.load(open('live/torneo.json')).get('attivo', True) else 1)"; }; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Nessun torneo attivo: giro saltato"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/setup-python@v6
+        if: steps.attivo.outputs.ready == 'true'
+        with:
+          python-version: "3.12"
+
+      - if: steps.attivo.outputs.ready == 'true'
+        run: pip install requests pillow
+
+      - name: Scraping e grafiche
+        if: steps.attivo.outputs.ready == 'true'
+        run: python -m live.main run
+
+      - name: Metti online le immagini
+        if: steps.attivo.outputs.ready == 'true'
+        run: |
+          git config user.name "live-tornei"
+          git config user.email "live-tornei@users.noreply.github.com"
+          git add posts/live live/state
+          git diff --cached --quiet || { git commit -m "Risultati live: nuove Story generate"; git push; sleep 20; }
+
+      - name: Controlla le chiavi Instagram di PickleballSpot
+        if: steps.attivo.outputs.ready == 'true' && inputs.solo_grafiche != true
+        id: chiavi
+        env:
+          PBS_IG_USER_ID: ${{ secrets.PBS_IG_USER_ID }}
+          PBS_IG_ACCESS_TOKEN: ${{ secrets.PBS_IG_ACCESS_TOKEN }}
+        run: |
+          if [ -n "$PBS_IG_USER_ID" ] && [ -n "$PBS_IG_ACCESS_TOKEN" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "::notice::Chiavi PBS_IG_USER_ID / PBS_IG_ACCESS_TOKEN mancanti: Story generate ma in coda, niente pubblicazione"
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Pubblica le Story
+        if: steps.attivo.outputs.ready == 'true' && steps.chiavi.outputs.ready == 'true'
+        env:
+          IG_USER_ID: ${{ secrets.PBS_IG_USER_ID }}
+          IG_ACCESS_TOKEN: ${{ secrets.PBS_IG_ACCESS_TOKEN }}
+          MEDIA_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.ref_name }}
+        run: python -m live.main publish
+
+      - name: Aggiorna la coda
+        if: always() && steps.attivo.outputs.ready == 'true'
+        run: |
+          git add live/state
+          git diff --cached --quiet || { git commit -m "Risultati live: coda aggiornata"; git push; }

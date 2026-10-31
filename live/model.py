@@ -37,6 +37,8 @@ class Match:
     score: list[str] = field(default_factory=list)
     winner: str = ""
     match_id: str = ""      # id della piattaforma se c'è, altrimenti derivato dai nomi
+    tbd: bool = False       # squadre ancora da definire: conta per la completezza della
+                            # fase, esclusa dalle grafiche
 
     @property
     def finished(self) -> bool:
@@ -67,6 +69,12 @@ class Snapshot:
         """Un tabellone è chiuso quando la sua finale ha un vincitore."""
         finals = [m for m in self.matches if m.event == event and m.phase == "finale"]
         return bool(finals) and all(m.finished for m in finals)
+
+    def phase_complete(self, event: str, phase: str) -> bool:
+        """Una fase è completa quando tutte le sue partite (anche quelle con squadre
+        ancora da definire) hanno un vincitore."""
+        phase_matches = [m for m in self.matches if m.event == event and m.phase == phase]
+        return bool(phase_matches) and all(m.finished for m in phase_matches)
 
 
 def new_finished(previous_keys: set[str], snapshot: Snapshot) -> list[Match]:

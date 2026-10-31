@@ -1,0 +1,11 @@
+{
+  "attivo": false,
+  "adapter": "picklebook",
+  "base_url": "https://www.picklebook.org/a/pbe/tournaments/bYC3Jqgwq7JKJKwJ",
+  "tournament": "2026 English Nationals",
+  "slug": "english-nationals-2026",
+  "events": ["doubles open"],
+  "match_stories": ["quarti", "semifinali", "finale", "terzo posto"],
+  "phase_stories": ["trentaduesimi", "sedicesimi", "ottavi", "quarti", "semifinali", "finale"],
+  "handles": {}
+}
