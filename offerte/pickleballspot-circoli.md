@@ -246,15 +246,27 @@ durante il torneo l'AI pesca i risultati direttamente dalla sua piattaforma
 (OpenPlay, che tanto terranno aperta e aggiornata), aggiorna le grafiche in tempo
 reale e, quando un tabellone finisce, compila la grafica finale e posta.
 
-Cosa si vende:
+Due modalità di vendita, per qualunque gestore di tornei (non solo circoli):
+
+**A. Servizio gestito (la via principale).** Lo fa girare Andrea, anche a
+distanza: propone i template, il gestore approva, durante il torneo le grafiche
+escono da sole. Il gestore non deve installare né imparare niente — zero attrito,
+massima qualità garantita.
+
+- Prezzo: **a partire da 100 € a torneo** (tappa piccola); eventi grandi di più,
+  stesso criterio "a partire da" del kit tornei
+- **Abbonamento** per chi organizza un circuito: es. stagione da 10 tappe a
+  prezzo scontato a tappa
+- Venduto in bundle col kit torneo completo, il live è l'upgrade naturale
+
+**B. In autonomia (per chi la vuole).** Il circolo adotta Claude e lo usa da sé:
 
 - **Avviamento**: installazione e configurazione di Claude + collegamento ai
   template e alla piattaforma risultati (una tantum)
 - **Consulenza**: formazione all'uso durante il torneo (a ore o forfait)
-- **Licenza Claude**: il circolo la paga direttamente; verificare se esiste un
-  programma di referral/commissioni per le licenze — a oggi non risulta un
-  programma pubblico, quindi il guadagno certo sta in avviamento e consulenza,
-  non nella commissione
+- **Licenza Claude**: il circolo la paga direttamente; a oggi non risulta un
+  programma pubblico di referral/commissioni sulle licenze, quindi il guadagno
+  certo sta in avviamento e consulenza
 
 Prerequisito tecnico: i dati risultati leggibili da OpenPlay (API/feed tornei,
 fase 2 di `openplay-integrazione.md`) — un motivo in più per chiuderla.
