@@ -79,6 +79,30 @@ commerciali.
    prenotazione interna per i circoli che non hanno nessun sistema, con commissione
    per prenotazione (1-2 €) o inclusa nel tier Pro.
 
+## Partnership OpenPlay (Marco)
+
+Accordo da proporre a Marco, su due piani:
+
+1. **Sponsor del progetto**: Marco sostiene il progetto mini-siti/schede premium
+   come sponsor (visibilità "powered by" / logo sulla piattaforma e sui mini-siti).
+2. **OpenPlay dentro l'offerta commerciale**: OpenPlay viene proposto ai circoli
+   come sistema di prenotazione consigliato (in particolare a quelli che un sistema
+   non ce l'hanno — oggi serviti solo dal form del mini-sito). Andrea porta i nuovi
+   clienti e trattiene una **commissione sui nuovi clienti procurati** (referral).
+
+Da definire con Marco:
+
+- Valore e durata della sponsorizzazione
+- Percentuale di referral e base di calcolo (solo primo anno o ricorrente; su
+  canone o su transato)
+- Eventuale esclusiva: OpenPlay unico sistema consigliato, o affiancato ai
+  deep link verso Playtomic/Wansport per i circoli che già li usano
+- Tracciamento dei clienti portati (codice/link di riferimento)
+
+Nota di coerenza con la strategia prenotazioni: OpenPlay copre i circoli senza
+sistema; per i circoli già su Playtomic/Wansport restano i deep link. Nessun
+conflitto, due segmenti diversi.
+
 ## Altri flussi di ricavo (dopo i primi paganti)
 
 - Sponsor di categoria sulla piattaforma (brand racchette/palline: Selkirk, JOOLA…)
