@@ -53,6 +53,25 @@ Il top: layout disegnato sul circolo.
   lo stile del sito, e in vendita vale moltissimo; in più semina il terreno per i
   servizi marketing (asse 2) quando il circolo capisce che da solo non ha tempo
 
+#### Evoluzione del kit: template AI-ready (idea del 31 ottobre 2026)
+
+Il kit social diventa un prodotto nuovo: **template pronti per essere usati con
+l'AI, prompt incluso**. (Riferimento: Marco Maurizio fa già editing con l'AI.)
+
+- Si creano le basi grafiche standard del circolo: sfondi, cornici, zone fisse
+  (logo, colori, font) che l'AI non deve toccare
+- Per ogni tipo di contenuto (risultato torneo, evento, promo lezioni, annuncio)
+  si consegna il **prompt già scritto**: il circolo lo incolla in Gemini, Claude o
+  ChatGPT con la sua base grafica e ottiene il post pronto, sempre on-brand
+- Il prompt fa anche da guardrail: dice all'AI cosa non modificare (logo, palette,
+  zone di sicurezza), così l'autonomia del circolo non degrada il brand
+- I prompt si costruiscono col metodo della skill visual-prompt-mastery
+
+Posizionamento: **in regalo nel livello 4** (parte del kit social), **vendibile a
+parte** come prodotto autonomo ai circoli dei livelli 2-3 (es. 150-250 € una
+tantum). Nessun concorrente offre "il template + il prompt": è un differenziatore
+vero e si aggiorna quasi da solo.
+
 ### Canoni ricorrenti (livelli 3 e 4)
 
 Il canone annuo si compone di tre voci, tutte dovute perché i costi sono reali:
