@@ -228,9 +228,15 @@ Prezzi proposti (da validare):
 
 | Pacchetto | Contenuto | Prezzo |
 |---|---|---|
-| Kit torneo base | Key visual + locandina + 5-6 grafiche social | 350-500 € |
-| Kit torneo completo | Tutto l'elenco sopra | 700-900 € |
+| Kit torneo base | Key visual + locandina + 5-6 grafiche social | a partire da 350 € |
+| Kit torneo completo | Tutto l'elenco sopra | a partire da 700 € |
 | Add-on clienti sito (liv. 3-4) | Sconto 20-30%: lo stile c'è già | — |
+
+I prezzi sono "a partire da" e si dimensionano con l'evento, da valutare col
+circolo: più giornate, più categorie, più sponsor, copertura live e aggiornamento
+grafiche in tempo reale fanno salire il preventivo — un evento enorme vale molto
+di più (1.500-2.500 € e oltre). Il driver del prezzo è la dimensione e la
+visibilità dell'evento, non le ore di lavoro.
 
 Argomento di vendita: "le grafiche sono quello che vedono i tuoi sponsor" — il kit
 si ripaga con un solo sponsor in più convinto dalla presentazione ordinata.
