@@ -414,5 +414,21 @@
       "palette": 4
     },
     "media_id": "18183114685435167"
+  },
+  {
+    "date": "20261031-0014",
+    "series": "facts",
+    "topic": "Mantis shrimp: punch force, cavitation, color vision, club armor",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "animals",
+    "hook": "A shrimp that punches 2,500x its body weight",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "18077048303734561"
   }
 ]
