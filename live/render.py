@@ -197,8 +197,9 @@ def story_phase(event: str, phase: str, matches: list, tournament: str,
     y = centered(draw, phase_label(phase), y + 30, 84, YELLOW, weight=700)
     y += 70
 
-    row_h = (H - SAFE_BOTTOM - 180 - y) // max(len(matches), 1)
-    row_h = min(row_h, 260)
+    available = H - SAFE_BOTTOM - 180 - y
+    row_h = min(available // max(len(matches), 1), 260)
+    y += max(0, (available - row_h * len(matches)) // 2)  # poche partite: blocco centrato
     for m in matches:
         winner = m.side_a if m.winner == "a" else m.side_b
         loser = m.side_b if m.winner == "a" else m.side_a
