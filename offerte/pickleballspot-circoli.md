@@ -248,10 +248,13 @@ reale e, quando un tabellone finisce, compila la grafica finale e posta.
 
 Due modalità di vendita, per qualunque gestore di tornei (non solo circoli):
 
-**A. Servizio gestito (la via principale).** Lo fa girare Andrea, anche a
-distanza: propone i template, il gestore approva, durante il torneo le grafiche
-escono da sole. Il gestore non deve installare né imparare niente — zero attrito,
-massima qualità garantita.
+**A. Servizio gestito (la via principale).** È la copertura social che Andrea fa
+già dal vivo ai tornei, trasformata in prodotto vendibile a distanza: propone i
+template, il gestore approva, durante il torneo le grafiche escono da sole.
+Quando Andrea non è sul posto, le foto le manda il gestore (WhatsApp o cartella
+Drive condivisa) e il sistema le impagina e pubblica in automatico — il gestore
+sa che è automatizzato, ma l'automazione la gestisce Andrea, che resta il
+responsabile della qualità. Zero attrito per il cliente.
 
 - Prezzo: **a partire da 100 € a torneo** (tappa piccola); eventi grandi di più,
   stesso criterio "a partire da" del kit tornei
