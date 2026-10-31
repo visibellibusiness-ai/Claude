@@ -48,6 +48,14 @@ personalizzato (non sottodominio).
 prezzo (250 € una tantum)** + canone annuo pieno. In cambio: caso studio, foto e
 testimonianza da usare per vendere agli altri circoli.
 
+Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
+con 2 campi outdoor in cemento e solo un numero di telefono come contatto — nessun
+sito né Instagram trovati. Lo stesso numero compare per la Standout Pickleball
+Arena (Via Castore Durante 88, 4 campi indoor): probabilmente stessa gestione, il
+sito del pilota potrebbe coprire entrambe le strutture. Partire da zero è ideale
+per il caso studio: il prima/dopo è massimo (da "solo un numero su Pickleheads" a
+sito completo con dominio, foto, prenotazioni).
+
 ### 4. Partner — 1.500-3.000 €/anno (o canone mensile)
 
 Il gradino che aggancia l'attività di agenzia di Andrea:
