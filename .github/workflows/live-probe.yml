@@ -1,0 +1,35 @@
+name: Sonda piattaforme risultati live
+
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: "URL da sondare, separati da spazio (vuoto = default in live/probe.py)"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - run: pip install requests
+
+      - name: Sonda le pagine
+        run: python -m live.probe ${{ inputs.urls }}
+
+      - name: Carica le pagine scaricate
+        uses: actions/upload-artifact@v4
+        with:
+          name: probe-out
+          path: probe_out/
+          retention-days: 5
