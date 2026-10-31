@@ -19,8 +19,14 @@ Piattaforme da supportare (con prove su ciascuna):
    Rankedin? R2 Sports? altro?)
 3. **OpenPlay** (openplay.cloud) — qui meglio ancora via feed/API appena esiste
    (fase 2 di `offerte/openplay-integrazione.md`)
-4. **Pickleball Global** — se fattibile
-5. Altre piattaforme in seguito: l'architettura ad adapter rende ogni aggiunta
+4. **Pickleball Global** — se fattibile (usata anche per iscrizioni di tappe
+   italiane)
+5. **FITP / TPRA** (tpra.fitp.it, risultati su tpra.it) — la piattaforma dei
+   tornei amatoriali federali: dal 2025 iscrizioni e tornei pickleball FITP
+   passano da lì (iscrizioni anche via app MyFITP). Nota collegata: il rating
+   ufficiale FITP per il pickleball è DUPR — una fonte dati in più per grafiche
+   (es. rating dei finalisti)
+6. Altre piattaforme in seguito: l'architettura ad adapter rende ogni aggiunta
    un modulo nuovo, senza toccare il resto
 
 ## Cosa fa il tool
