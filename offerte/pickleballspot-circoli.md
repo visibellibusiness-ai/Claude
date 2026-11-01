@@ -141,6 +141,31 @@ premium in brand PickleballSpot, template con selettore di 3 font e 3 palette,
 sito personalizzato con stile dedicato rosso pompeiano/oro). Foto segnaposto e
 testi di esempio: si sostituiscono con materiali veri del circolo in produzione.
 
+**Roma Pickleball ha 4 sedi (detto da Andrea, 1 novembre 2026)**, dati letti dalla
+directory pickleballspot.eu lo stesso giorno:
+
+| Sede | Indirizzo | Campi |
+|---|---|---|
+| Arena Roma Pickleball | Via Castore Durante 88 | 4 indoor |
+| Augustea Sport City | Via Armando Luciani 57 | 2 indoor (centro con palestra, piscine, padel, tennis, ristorante) |
+| Casa Viola | Via della Camilluccia 112 | 2 outdoor |
+| Miami Pickleball | Via Giulio Bonasoni 68 | 6 outdoor, telefono e Instagram propri |
+
+Totale 14 campi (6 indoor, 8 outdoor). Le prime tre usano il telefono
++39 328 783 2730 e l'Instagram @romapickleball (8.417 follower al 1 novembre
+2026); Miami ha +39 347 100 0976 e @miami.pickleball.roma. La ricognizione qui
+sotto è superata: la "Standout Arena" è l'Arena Roma Pickleball (stesso
+indirizzo), Augustea ha campi indoor e l'Instagram del circolo esiste.
+Proposta e lettera d'incarico vanno riallineate sulle 4 sedi (oggi parlano di
+"seconda struttura").
+
+**Layout del sito personalizzato (bozza, 1 novembre 2026)**, sul canvas, da
+approvare con Andrea prima di passare a template e mini-sito: 4 pagine collegate
+(home, sedi con filtro indoor/outdoor, il circolo, contatti), stile preso dal
+brand Instagram @romapickleball (nero, bianco, lettering condensato corsivo,
+arancio dei post promozionali), Miami presentata come le altre sedi coi suoi
+contatti. Testi tra parentesi quadre da scrivere col circolo.
+
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
 con 2 campi outdoor in cemento e solo un numero di telefono come contatto, nessun
 sito né Instagram trovati. Lo stesso numero compare per la Standout Pickleball
