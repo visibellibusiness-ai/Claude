@@ -158,15 +158,43 @@ def run() -> None:
     print(f"In coda per la pubblicazione: {len(queue)} contenuti (totale coda: {len(state['queue'])})")
 
 
+def _limite_pubblicazione() -> None:
+    """Stampa il contatore ufficiale dell'API (quota sulle 24 ore)."""
+    import requests as _rq
+
+    try:
+        r = _rq.get(f"https://graph.instagram.com/v26.0/{os.environ['IG_USER_ID']}/content_publishing_limit",
+                    params={"fields": "quota_usage,config", "access_token": os.environ["IG_ACCESS_TOKEN"]},
+                    timeout=30)
+        print(f"content_publishing_limit: HTTP {r.status_code} {r.text[:300]}")
+    except Exception as e:
+        print(f"content_publishing_limit non leggibile: {e}")
+
+
 def publish() -> None:
+    """Pubblica la coda. Variabili per la modalità prova (test su un altro account):
+
+    LIVE_PROVA=1   la coda resta intatta (lo stato torna utile per l'account vero)
+    LIVE_LIMITE=n  pubblica al massimo n contenuti (0 o assente = tutti)
+    LIVE_SALTA=n   salta i primi n contenuti della coda
+    """
     from bot.publish import publish_carousel, publish_story
+
+    prova = os.environ.get("LIVE_PROVA") == "1"
+    limite = int(os.environ.get("LIVE_LIMITE", "0") or 0)
+    salta = int(os.environ.get("LIVE_SALTA", "0") or 0)
 
     config = load_config()
     slug = config["slug"]
     state = load_state(slug)
     base = os.environ["MEDIA_BASE_URL"].rstrip("/")
+    _limite_pubblicazione()
+    coda = state.get("queue", [])[salta:]
+    if limite:
+        coda = coda[:limite]
+    print(f"Da pubblicare in questo giro: {len(coda)} contenuti (prova: {prova})")
     remaining: list[dict] = []
-    for item in state.get("queue", []):
+    for item in coda:
         try:
             if item["tipo"] == "carousel":
                 media_id = publish_carousel([f"{base}/{rel}" for rel in item["files"]],
@@ -178,7 +206,11 @@ def publish() -> None:
         except Exception as e:  # la coda resta: si riprova al giro dopo
             print(f"::warning::Contenuto rimasto in coda ({item}): {e}")
             remaining.append(item)
-    state["queue"] = remaining
+    _limite_pubblicazione()
+    if prova:
+        print("Modalità prova: coda e stato lasciati come prima.")
+        return
+    state["queue"] = state.get("queue", [])[:salta] + remaining + state.get("queue", [])[salta + len(coda):]
     save_state(slug, state)
 
 
