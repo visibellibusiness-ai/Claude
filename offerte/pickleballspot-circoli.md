@@ -127,6 +127,12 @@ una tantum (Andrea ha indicato la fascia 390-450; fissato a 450, ribassabile a
 liv. 3-4: 200 € su sottodominio, 400 € con dominio personalizzato · pilota Roma
 Pickleball: 300 €.
 
+**Design su canvas Claude Design (1 novembre 2026):** le tre versioni sono anche
+tavole di design affiancate, modificabili a mano da Andrea, su
+https://claude.ai/artifact/X8zt8zfYBiA4L9p4FvLQED (il canvas è il posto dove si
+itera il design: la tavola template ha i tweak per cambiare palette e font dal
+pannello; prezzi e note di lavorazione sono post-it sul canvas).
+
 **Prima bozza della demo (1 novembre 2026):** le tre versioni navigabili sono
 nella cartella `demo/roma-pickleball/` di questo repo e pubblicate su
 https://claude.ai/artifact/Bqo4ryCWXqm1XDrGSpNVfY (hub di confronto + scheda
