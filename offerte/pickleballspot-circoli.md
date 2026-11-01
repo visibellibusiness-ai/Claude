@@ -182,11 +182,19 @@ Le prime quattro location hanno già le foto coperte (i circoli autorizzano l'us
 | Pickleball Augustea | ✅ Su Drive | Cartelle "16ott26 - Pickleball Augustea" e "17ott26 - Pickleball Augustea" (condivise da Fabrizio Perrini) |
 | Arena Roma Pickleball | ✅ Su Drive | Cartella "Arena Roma Pickleball" (account pickleballtourit), sottocartelle DAY-0…DAY-3 dell'evento di Roma |
 | Casa Viola | ✅ Su hard disk esterno | Foto dell'inaugurazione sull'HDD esterno "PBT" (8 TB), dentro le cartelle degli eventi. Quando serviranno: collegare il computer alla sessione (Remote Control) o caricare una selezione su Drive |
-| Miami Pickleball | 🔎 Online | Foto da prendere dai loro canali (autorizzazione data) |
+| Miami Pickleball | 🔎 Online | Foto da prendere dai loro canali (autorizzazione data). Scheda già in directory: pickleballspot.eu/campi-pickleball/pickeball-miami-roma/ |
 
 ## Partnership OpenPlay (Marco)
 
-Prodotto: **openplay.cloud**, app di prenotazione campi e gestione tornei. Roma
+Prodotto: **openplay.cloud** — analizzato dal vivo l'1 novembre 2026. "Trova.
+Gioca. Cresci.": app italiana che unisce player e circoli di pickleball — match
+vicini, open play, tornei, community e gestione circoli, webapp Next.js. Punto di
+forza dichiarato: **unica piattaforma italiana con integrazione DUPR certificata**
+(auto-sync dei risultati sul ranking mondiale in tempo reale, matchmaking che
+blocca partite con gap di livello troppo alto); collegata alla Lega Italiana
+Pickleball. Per i circoli: organizzazione attività/tornei, visibilità verso i
+player della piattaforma, niente prezzi pubblici (contatto diretto). L'asse DUPR
+è prezioso anche per il tool risultati live (rating nei tabelloni). Roma
 Pickleball (il pilota) è socio di OpenPlay e Andrea è in contatto diretto con gli
 sviluppatori: le richieste tecniche di integrazione sono in
 `openplay-integrazione.md`. Attenzione al nome: esiste già "OpenPlay"
@@ -300,10 +308,12 @@ la piattaforma.
 
 - Italia: ~438 campi affiliati (dato federale citato in stampa, in crescita da 358);
   stima 150-250 circoli con almeno un campo.
-- Tetto teorico solo mini-siti: ~200 circoli × 100 € = 20.000 €/anno; con la scala
-  completa il valore medio per circolo pagante sale ben oltre i 100 €.
-- Da fare: conteggio esatto dei circoli censiti su pickleballspot.eu (bloccato dalla
-  rete della sessione; in coda).
+- **Conteggio reale (1 novembre 2026): 176 strutture censite su pickleballspot.eu**
+  (pagine /campi-pickleball/ nella sitemap). Tetto teorico solo mini-siti:
+  176 × 100 € = **17.600 €/anno**; con la scala completa il valore medio per
+  circolo pagante sale ben oltre i 100 €.
+- Le 4 location dei primi siti sono già tutte in directory: Augustea Sport City,
+  Casa Viola, Arena Roma Pickleball, Pickeball Miami Roma.
 
 ## Prossimi passi
 
