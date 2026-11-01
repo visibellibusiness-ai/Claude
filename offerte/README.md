@@ -5,7 +5,7 @@ chat. Ogni offerta ha il suo file; questo indice dice a che punto è ognuna.
 
 | Offerta | File | Stato |
 |---|---|---|
-| Circoli PickleballSpot (scala: mini-sito, sito completo, marketing) | `pickleballspot-circoli.md` | Bozza completa; pilota Roma Pickleball da avviare |
+| Circoli PickleballSpot (scala: mini-sito, sito completo, marketing) | `pickleballspot-circoli.md` | Listino confermato (1 nov 2026); pilota Roma Pickleball a 300 € da avviare |
 | Nox | `nox.md` | Da recuperare dalla chat dedicata |
 | Teuton | `teuton.md` | Da recuperare dalla chat dedicata |
 

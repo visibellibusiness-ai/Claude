@@ -24,14 +24,14 @@ Il "sì facile", presenza super basica ma vera:
 Per i circoli piccoli senza sistema di prenotazione, il form del mini-sito È il
 loro primo canale di prenotazione: gancio di vendita fortissimo.
 
-### 3. Sito a template — 500 € una tantum
+### 3. Sito a template — 450 € una tantum
 
 La via di mezzo: sito vero ma non personalizzato.
 
 - 4-5 template pronti tra cui scegliere: **3 layout × 3 opzioni di font** ciascuno
 - Colori liberi, loghi e immagini del circolo
 - Inserimento contenuti incluso nel prezzo (è il grosso del lavoro: i circoli
-  "rompono" su testi e foto, e i 500 € coprono proprio quello)
+  "rompono" su testi e foto, e i 450 € coprono proprio quello)
 - Di default su sottodominio PickleballSpot; dominio personalizzato opzionale
   (vedi "Canoni ricorrenti")
 
@@ -91,19 +91,18 @@ Perché conviene che restino sul sottodominio:
 - Il circolo resta agganciato alla piattaforma (se se ne va, perde l'indirizzo)
 - Meno gestione per Andrea (niente DNS, rinnovi e certificati per ogni cliente)
 
-Proposta di cifre (da confermare):
+Cifre confermate da Andrea (1 novembre 2026):
 
 | | Su sottodominio | Con dominio personalizzato |
 |---|---|---|
-| Canone annuo liv. 3-4 | 150-200 €/anno | 350-400 €/anno |
+| Canone annuo liv. 3-4 | 200 €/anno | 400 €/anno |
 
 Il mini-sito (livello 2) resta a 100 €/anno tutto compreso, solo sottodominio.
 
-**Pilota: Roma Pickleball** — sito personalizzato (livello 4) a **metà prezzo
-(~350 € sul listino da 695)** + canone annuo pieno. In cambio: caso studio, foto
-e testimonianza da usare per vendere agli altri circoli.
-Nota: prima della revisione del listino il pilota era segnato a 250 € su base
-500 — confermare con Andrea la cifra finale.
+**Pilota: Roma Pickleball** — sito personalizzato (livello 4) a **300 € (listino
+695 €, confermato da Andrea l'1 novembre 2026)** + canone annuo pieno (200 €/anno
+su sottodominio). In cambio: caso studio, foto e testimonianza da usare per
+vendere agli altri circoli.
 
 **Come si vende la scala: Roma Pickleball in 3 versioni.** La differenza tra
 template e sito personalizzato è qualità visiva, quindi si vende facendola vedere,
@@ -112,15 +111,21 @@ circolo a ogni livello:
 
 1. **Scheda avanzata** su PickleballSpot (Roma Pickleball probabilmente ce l'ha
    già: migliorarla ancora) → cosa ottieni col mini-sito/presenza premium
-2. **Roma Pickleball in uno dei 3 template** → cosa ottieni con 500 €
+2. **Roma Pickleball in uno dei 3 template** → cosa ottieni con 450 €
 3. **Roma Pickleball sito personalizzato super top** → il livello 4, con uno
    stile creato apposta per Roma Pickleball (il design system del restyling resta
    esclusivo di PickleballSpot) + il kit social in regalo come leva di chiusura
 
 Le tre versioni affiancate diventano LA pagina di vendita dell'offerta per tutti
 gli altri circoli: "scegli quale vuoi essere". Il confronto visivo giustifica i
-prezzi meglio di qualsiasi listino e risolve anche la vicinanza 500/695: si deve
+prezzi meglio di qualsiasi listino e risolve anche la vicinanza 450/695: si deve
 VEDERE perché il personalizzato costa di più.
+
+**Listino confermato (1 novembre 2026):** mini-sito 100 €/anno · template 450 €
+una tantum (Andrea ha indicato la fascia 390-450; fissato a 450, ribassabile a
+390 se serve in trattativa) · personalizzato da 695 € una tantum · canoni annui
+liv. 3-4: 200 € su sottodominio, 400 € con dominio personalizzato · pilota Roma
+Pickleball: 300 €.
 
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
 con 2 campi outdoor in cemento e solo un numero di telefono come contatto — nessun
