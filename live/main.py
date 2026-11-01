@@ -43,8 +43,16 @@ def state_path(slug: str) -> Path:
 def load_state(slug: str) -> dict:
     path = state_path(slug)
     if path.exists():
-        return json.loads(path.read_text())
-    return {"published_matches": [], "published_phases": [], "queue": []}
+        state = json.loads(path.read_text())
+    else:
+        state = {}
+    state.setdefault("published_matches", [])
+    state.setdefault("published_phases", [])
+    state.setdefault("published_posts", [])
+    # le voci vecchie della coda erano stringhe (solo Story): si normalizzano
+    state["queue"] = [q if isinstance(q, dict) else {"tipo": "story", "file": q}
+                      for q in state.get("queue", [])]
+    return state
 
 
 def save_state(slug: str, state: dict) -> None:
@@ -70,14 +78,18 @@ def run() -> None:
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
     out = OUT_DIR / slug / stamp
-    queue: list[str] = []
+    queue: list[dict] = []
 
-    def enqueue(img, name: str) -> None:
+    def save_img(img, name: str) -> str:
         out.mkdir(parents=True, exist_ok=True)
         path = out / name
         img.save(path)
-        queue.append(str(path.relative_to(ROOT)))
-        print(f"  Story pronta: {path.relative_to(ROOT)}")
+        return str(path.relative_to(ROOT))
+
+    def enqueue(img, name: str) -> None:
+        rel = save_img(img, name)
+        queue.append({"tipo": "story", "file": rel})
+        print(f"  Story pronta: {rel}")
 
     # 1. una Story per ogni partita appena finita delle fasi scelte
     match_phases = config.get("match_stories", [])
@@ -109,29 +121,63 @@ def run() -> None:
                         f"fase-{event_slug}-{phase.replace(' ', '_')}-{n}.png")
             done_phases.add(key)
 
+    # 3. post celebrativo: tabellone chiuso + foto del vincitore arrivata
+    #    (live/foto/<slug evento>.jpg|png, la passa Andrea o il gestore)
+    import re as _re
+    for event, matches in snap.by_event().items():
+        if event in state["published_posts"] or not snap.event_closed(event):
+            continue
+        event_slug = _re.sub(r"[^a-z0-9]+", "-", event.lower()).strip("-")[:40]
+        photo = next((p for ext in ("jpg", "jpeg", "png")
+                      for p in [ROOT / "live" / "foto" / f"{event_slug}.{ext}"] if p.exists()), None)
+        if photo is None:
+            print(f"  Tabellone chiuso, in attesa della foto: live/foto/{event_slug}.jpg -> post {event}")
+            continue
+        from live import render_post
+        rows = [m for m in matches if m.finished and not m.tbd and not m.phase.startswith("gironi")
+                and not m.phase.startswith("consolation")]
+        phases = [p for p in ["trentaduesimi", "sedicesimi", "ottavi", "quarti", "semifinali", "finale"]
+                  if any(m.phase == p for m in rows)]
+        slides = render_post.build_carousel(photo, event, config["tournament"], rows, phases)
+        files = [save_img(s, f"post-{event_slug}-{n:02d}.png") for n, s in enumerate(slides, start=1)]
+        final = next(m for m in rows if m.phase == "finale")
+        winners = (final.side_a if final.winner == "a" else final.side_b).players
+        tags = " ".join(handles.get(p, "") for p in winners).strip()
+        caption = (f"CONGRATS {' & '.join(winners)} 🏆 {event} champions at the {config['tournament']}!"
+                   + (f"\n{tags}" if tags else "")
+                   + "\n\nThe road to gold, bracket by bracket 👇"
+                   + "\n\n#pickleball #pickleballspot")
+        queue.append({"tipo": "carousel", "files": files, "caption": caption})
+        state["published_posts"].append(event)
+        print(f"  Post celebrativo pronto: {event} ({len(files)} slide)")
+
     state["published_matches"] = sorted(published)
     state["published_phases"] = sorted(done_phases)
     state["queue"] = state.get("queue", []) + queue
     save_state(slug, state)
-    print(f"In coda per la pubblicazione: {len(queue)} Story (totale coda: {len(state['queue'])})")
+    print(f"In coda per la pubblicazione: {len(queue)} contenuti (totale coda: {len(state['queue'])})")
 
 
 def publish() -> None:
-    from bot.publish import publish_story
+    from bot.publish import publish_carousel, publish_story
 
     config = load_config()
     slug = config["slug"]
     state = load_state(slug)
     base = os.environ["MEDIA_BASE_URL"].rstrip("/")
-    remaining: list[str] = []
-    for rel in state.get("queue", []):
-        url = f"{base}/{rel}"
+    remaining: list[dict] = []
+    for item in state.get("queue", []):
         try:
-            media_id = publish_story(url, ai=True)
-            print(f"Story pubblicata: {rel} -> {media_id}")
+            if item["tipo"] == "carousel":
+                media_id = publish_carousel([f"{base}/{rel}" for rel in item["files"]],
+                                            item.get("caption", ""), ai=True)
+                print(f"Post pubblicato: {len(item['files'])} slide -> {media_id}")
+            else:
+                media_id = publish_story(f"{base}/{item['file']}", ai=True)
+                print(f"Story pubblicata: {item['file']} -> {media_id}")
         except Exception as e:  # la coda resta: si riprova al giro dopo
-            print(f"::warning::Story rimasta in coda ({rel}): {e}")
-            remaining.append(rel)
+            print(f"::warning::Contenuto rimasto in coda ({item}): {e}")
+            remaining.append(item)
     state["queue"] = remaining
     save_state(slug, state)
 

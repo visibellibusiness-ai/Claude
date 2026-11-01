@@ -77,23 +77,27 @@ def fit_font(draw: ImageDraw.ImageDraw, text: str, max_width: int, size: int,
 
 
 def grunge_border(img: Image.Image, seed: int = 7) -> None:
-    """Cornice gialla con margine interno irregolare, effetto pennellata."""
+    """Cornice gialla con margine interno irregolare, effetto pennellata.
+
+    Usa la misura dell'immagine: va bene per le Story (1080x1920) e per le slide
+    del post (1080x1440)."""
+    w, h = img.size
     draw = ImageDraw.Draw(img)
-    draw.rectangle([0, 0, W - 1, H - 1], outline=YELLOW, width=BORDER)
+    draw.rectangle([0, 0, w - 1, h - 1], outline=YELLOW, width=BORDER)
     rng = random.Random(seed)
     # pennellate: blob gialli che sporgono dal bordo verso l'interno
     for edge in range(4):
         pos = 0
-        while pos < (W if edge in (0, 2) else H):
+        while pos < (w if edge in (0, 2) else h):
             pos += rng.randint(26, 90)
             r = rng.randint(4, 16)
             off = BORDER + rng.randint(-6, 8)
             if edge == 0:
                 xy = (pos, off)
             elif edge == 2:
-                xy = (pos, H - off)
+                xy = (pos, h - off)
             elif edge == 1:
-                xy = (W - off, pos)
+                xy = (w - off, pos)
             else:
                 xy = (off, pos)
             draw.ellipse([xy[0] - r, xy[1] - r, xy[0] + r, xy[1] + r], fill=YELLOW)
