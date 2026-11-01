@@ -14,6 +14,8 @@
   "Sat - Womens Doubles OPEN|7829",
   "Sat - Womens Doubles OPEN|7831",
   "Sat - Womens Doubles OPEN|7832",
+  "Sun - Mixed Doubles OPEN|7976",
+  "Sun - Mixed Doubles OPEN|7977",
   "Sun - Mixed Doubles OPEN|7978",
   "Sun - Mixed Doubles OPEN|7979",
   "Sun - Mixed Doubles OPEN|7980",
@@ -28,7 +30,8 @@
   "Sat - Womens Doubles OPEN|quarti",
   "Sat - Womens Doubles OPEN|semifinali",
   "Sun - Mixed Doubles OPEN|ottavi",
-  "Sun - Mixed Doubles OPEN|quarti"
+  "Sun - Mixed Doubles OPEN|quarti",
+  "Sun - Mixed Doubles OPEN|semifinali"
  ],
  "queue": [
   {
@@ -138,6 +141,18 @@
   {
    "tipo": "story",
    "file": "posts/live/english-nationals-2026/20261101-1443/fase-sun-mixed-doubles-open-quarti-1.png"
+  },
+  {
+   "tipo": "story",
+   "file": "posts/live/english-nationals-2026/20261101-1543/match-140-semifinali.png"
+  },
+  {
+   "tipo": "story",
+   "file": "posts/live/english-nationals-2026/20261101-1543/match-141-semifinali.png"
+  },
+  {
+   "tipo": "story",
+   "file": "posts/live/english-nationals-2026/20261101-1543/fase-sun-mixed-doubles-open-semifinali-1.png"
   }
  ],
  "published_posts": []
