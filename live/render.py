@@ -65,8 +65,24 @@ def text_width(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeTypeFon
     return box[2] - box[0]
 
 
+def load_logo(path: Path | None = None) -> Image.Image | None:
+    """Logo ufficiale in RGBA. I PNG della skill sono bianco su fondo nero in RGB:
+    l'alfa si ricava dalla luminanza (bianco = opaco), preservando l'antialias."""
+    path = path or LOGO
+    if not path.exists():
+        return None
+    img = Image.open(path)
+    if img.mode == "RGBA" and img.getextrema()[3][0] < 255:
+        return img
+    rgb = img.convert("RGB")
+    alpha = rgb.convert("L")
+    white = Image.new("RGBA", rgb.size, (255, 255, 255, 0))
+    white.putalpha(alpha)
+    return white
+
+
 def fit_font(draw: ImageDraw.ImageDraw, text: str, max_width: int, size: int,
-             weight: int = 600, min_size: int = 26) -> ImageFont.FreeTypeFont:
+             weight: int = 600, min_size: int = 36) -> ImageFont.FreeTypeFont:
     """Il font più grande (fino a size) con cui il testo sta in max_width."""
     while size > min_size:
         font = fredoka(size, weight)
@@ -103,12 +119,12 @@ def grunge_border(img: Image.Image, seed: int = 7) -> None:
             draw.ellipse([xy[0] - r, xy[1] - r, xy[0] + r, xy[1] + r], fill=YELLOW)
 
 
-def badge(draw: ImageDraw.ImageDraw, text: str, y: int, size: int = 34) -> int:
+def badge(draw: ImageDraw.ImageDraw, text: str, y: int, size: int = 42) -> int:
     """Pillola gialla con testo nero maiuscolo, centrata. Restituisce la y sotto il badge."""
     text = text.upper()
-    font = fit_font(draw, text, W - 2 * (INSET + 40), size, weight=600)
+    font = fit_font(draw, text, W - 2 * (INSET + 40), size, weight=600, min_size=32)
     tw = text_width(draw, text, font)
-    pad_x, pad_y = 30, 14
+    pad_x, pad_y = 34, 16
     x0 = (W - tw) // 2 - pad_x
     box = draw.textbbox((0, 0), text, font=font)
     th = box[3] - box[1]
@@ -119,25 +135,25 @@ def badge(draw: ImageDraw.ImageDraw, text: str, y: int, size: int = 34) -> int:
 
 
 def centered(draw: ImageDraw.ImageDraw, text: str, y: int, size: int, color, weight: int = 600,
-             max_width: int = W - 2 * (INSET + 30)) -> int:
-    font = fit_font(draw, text, max_width, size, weight)
+             max_width: int = W - 2 * (INSET + 30), min_size: int = 36) -> int:
+    font = fit_font(draw, text, max_width, size, weight, min_size=min_size)
     box = draw.textbbox((0, 0), text, font=font)
     draw.text(((W - (box[2] - box[0])) // 2 - box[0], y - box[1]), text, font=font, fill=color)
     return y + (box[3] - box[1])
 
 
 def logo_footer(img: Image.Image) -> None:
-    """Logo bianco in basso, dentro la zona sicura."""
+    """Logo completo bianco in basso, dentro la zona sicura."""
     draw = ImageDraw.Draw(img)
-    base_y = H - SAFE_BOTTOM - 110
-    if LOGO.exists():
-        logo = Image.open(LOGO).convert("RGBA")
-        ratio = min(420 / logo.width, 90 / logo.height)
+    base_y = H - SAFE_BOTTOM - 130
+    logo = load_logo()
+    if logo is not None:
+        ratio = min(560 / logo.width, 115 / logo.height)
         logo = logo.resize((int(logo.width * ratio), int(logo.height * ratio)))
         img.paste(logo, ((W - logo.width) // 2, base_y), logo)
     else:
-        y = centered(draw, "PICKLEBALLSPOT", base_y, 52, WHITE, weight=700)
-        centered(draw, "@pickleball.spot", y + 8, 30, YELLOW, weight=500)
+        y = centered(draw, "PICKLEBALLSPOT", base_y, 56, WHITE, weight=700)
+        centered(draw, "@pickleball.spot", y + 8, 34, YELLOW, weight=500)
 
 
 def new_story() -> tuple[Image.Image, ImageDraw.ImageDraw]:
@@ -156,8 +172,26 @@ def handles_line(players: list[str], handles: dict[str, str]) -> str:
 
 
 def story_match(match, tournament: str, handles: dict[str, str] | None = None) -> Image.Image:
-    """Story per una partita finita: vincitori grandi, punteggio, sconfitti, tag."""
+    """Story per una partita finita: vincitori grandi, punteggio, sconfitti, tag.
+
+    Con live/templates/story-match.psd la disegna il template di Andrea."""
     handles = handles or {}
+    winner_side = match.side_a if match.winner == "a" else match.side_b
+    loser_side = match.side_b if match.winner == "a" else match.side_a
+    side_score = match.score if match.winner == "a" else ["-".join(reversed(g.split("-"))) for g in match.score]
+    from live import template_psd
+    psd = template_psd.render("story-match", {
+        "BADGE": f"{match.event} · {phase_label(match.phase)}",
+        "TOURNAMENT": tournament,
+        "WINNERS": "\n".join(winner_side.players),
+        "TAGS": handles_line(winner_side.players, handles),
+        "LABEL": "CHAMPIONS" if match.phase == "finale" else "WIN",
+        "SCORE": score_line(side_score),
+        "LOSERS": "\n".join(loser_side.players),
+    })
+    if psd is not None:
+        return psd
+
     img, draw = new_story()
     y = badge(draw, f"{match.event} · {phase_label(match.phase)}", SAFE_TOP + 60)
 
@@ -167,54 +201,67 @@ def story_match(match, tournament: str, handles: dict[str, str] | None = None) -
         "-".join(reversed(g.split("-"))) for g in match.score
     ]
 
-    y = centered(draw, tournament.upper(), y + 70, 36, WHITE, weight=500)
-    y += 90
+    y = centered(draw, tournament.upper(), y + 50, 44, WHITE, weight=500)
+    y += 60
     for name in winner.players:
-        y = centered(draw, name, y, 88, YELLOW, weight=700) + 10
+        y = centered(draw, name, y, 96, YELLOW, weight=700, min_size=56) + 8
     tags = handles_line(winner.players, handles)
     if tags:
-        y = centered(draw, tags, y + 2, 34, WHITE, weight=500)
-    y = centered(draw, "CHAMPIONS" if match.phase == "finale" else "WIN", y + 46, 44, WHITE, weight=700)
-    y = centered(draw, score_line(win_score), y + 24, 100, WHITE, weight=700)
-    y = centered(draw, "vs", y + 60, 36, YELLOW, weight=500)
-    y += 28
+        y = centered(draw, tags, y + 4, 44, WHITE, weight=500)
+    y = centered(draw, "CHAMPIONS" if match.phase == "finale" else "WIN", y + 40, 52, WHITE, weight=700)
+    y = centered(draw, score_line(win_score), y + 20, 112, WHITE, weight=700)
+    y = centered(draw, "vs", y + 44, 40, YELLOW, weight=500)
+    y += 20
     for name in loser.players:
-        y = centered(draw, name, y, 54, WHITE, weight=600) + 6
+        y = centered(draw, name, y, 60, WHITE, weight=600, min_size=44) + 6
     tags = handles_line(loser.players, handles)
     if tags:
-        centered(draw, tags, y + 2, 30, WHITE, weight=500)
+        centered(draw, tags, y + 2, 36, WHITE, weight=500)
 
     logo_footer(img)
     return img
 
 
-MAX_ROWS = 5  # partite per Story di fase: più contenuto ma sempre leggibile
+MAX_ROWS = 3  # partite per Story di fase: testi grandi e sempre leggibili
 
 
 def story_phase(event: str, phase: str, matches: list, tournament: str,
                 part: tuple[int, int] = (1, 1)) -> Image.Image:
-    """Story con i risultati di una fase (es. tutti i quarti). matches <= MAX_ROWS."""
-    img, draw = new_story()
+    """Story con i risultati di una fase (es. tutti i quarti). matches <= MAX_ROWS.
+
+    Con live/templates/story-phase.psd la disegna il template di Andrea."""
     label = f"{event}" + (f" · {part[0]}/{part[1]}" if part[1] > 1 else "")
+    from live import template_psd
+    texts = {"BADGE": label, "TOURNAMENT": tournament, "PHASE": phase_label(phase)}
+    for i, m in enumerate(matches, start=1):
+        winner = m.side_a if m.winner == "a" else m.side_b
+        loser = m.side_b if m.winner == "a" else m.side_a
+        score = m.score if m.winner == "a" else ["-".join(reversed(g.split("-"))) for g in m.score]
+        texts[f"ROW{i}"] = f"{winner.label()}\nd. {loser.label()}\n{score_line(score)}"
+    psd = template_psd.render("story-phase", texts)
+    if psd is not None:
+        return psd
+
+    img, draw = new_story()
     y = badge(draw, label, SAFE_TOP + 40)
-    y = centered(draw, tournament.upper(), y + 40, 34, WHITE, weight=500)
-    y = centered(draw, phase_label(phase), y + 30, 84, YELLOW, weight=700)
-    y += 70
+    y = centered(draw, tournament.upper(), y + 30, 42, WHITE, weight=500)
+    y = centered(draw, phase_label(phase), y + 24, 96, YELLOW, weight=700)
+    y += 50
 
     available = H - SAFE_BOTTOM - 180 - y
-    row_h = min(available // max(len(matches), 1), 260)
+    row_h = min(available // max(len(matches), 1), 330)
     y += max(0, (available - row_h * len(matches)) // 2)  # poche partite: blocco centrato
     for m in matches:
         winner = m.side_a if m.winner == "a" else m.side_b
         loser = m.side_b if m.winner == "a" else m.side_a
         score = m.score if m.winner == "a" else ["-".join(reversed(g.split("-"))) for g in m.score]
-        mid = y + 6
-        mid = centered(draw, winner.label(), mid, 46, YELLOW, weight=650) + 4
-        mid = centered(draw, f"d. {loser.label()}", mid, 36, WHITE, weight=500) + 4
-        centered(draw, score_line(score), mid, 40, WHITE, weight=650)
+        mid = y + 8
+        mid = centered(draw, winner.label(), mid, 62, YELLOW, weight=650, min_size=44) + 6
+        mid = centered(draw, f"d. {loser.label()}", mid, 46, WHITE, weight=500, min_size=38) + 6
+        centered(draw, score_line(score), mid, 54, WHITE, weight=650)
         y += row_h
         if m is not matches[-1]:
-            draw.line([INSET + 120, y - 18, W - INSET - 120, y - 18], fill=YELLOW, width=2)
+            draw.line([INSET + 120, y - 20, W - INSET - 120, y - 20], fill=YELLOW, width=3)
 
     logo_footer(img)
     return img

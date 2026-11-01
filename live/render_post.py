@@ -73,6 +73,13 @@ def _logo(img: Image.Image, y: int | None = None) -> None:
 
 
 def cover(photo: Path, event: str, tournament: str, winners: list[str]) -> Image.Image:
+    from live import template_psd
+    psd = template_psd.render("post-cover", {
+        "BADGE": "CHAMPIONS", "TOURNAMENT": tournament,
+        "WINNERS": "\n".join(winners), "EVENT": event,
+    }, image=photo)
+    if psd is not None:
+        return psd
     img, draw = _canvas(photo, darkness=95)
     y = _badge(draw, "CHAMPIONS", MARGIN + 60)
     y = _centered(draw, tournament.upper(), y + 26, 34, WHITE, weight=500)
@@ -86,8 +93,19 @@ def cover(photo: Path, event: str, tournament: str, winners: list[str]) -> Image
 
 def phase_slide(event: str, phase: str, matches: list, tournament: str,
                 part: tuple[int, int] = (1, 1)) -> Image.Image:
-    img, draw = _canvas()
     label = "THE ROAD TO GOLD" + (f" · {part[0]}/{part[1]}" if part[1] > 1 else "")
+    from live import template_psd
+    texts = {"BADGE": label, "TOURNAMENT": tournament, "PHASE": phase_label(phase), "EVENT": event}
+    for i, m in enumerate(matches, start=1):
+        w_side = m.side_a if m.winner == "a" else m.side_b
+        l_side = m.side_b if m.winner == "a" else m.side_a
+        sc = m.score if m.winner == "a" else ["-".join(reversed(g.split("-"))) for g in m.score]
+        texts[f"ROW{i}"] = f"{w_side.label()}\nd. {l_side.label()}\n{'  '.join(sc)}"
+    psd = template_psd.render("post-phase", texts)
+    if psd is not None:
+        return psd
+
+    img, draw = _canvas()
     y = _badge(draw, label, MARGIN + 60)
     y = _centered(draw, phase_label(phase), y + 30, 64, YELLOW, weight=700)
     y += 40
@@ -112,6 +130,13 @@ def phase_slide(event: str, phase: str, matches: list, tournament: str,
 
 def congrats(photo: Path, event: str, tournament: str, winners: list[str]) -> Image.Image:
     """L'ultima slide: foto trattata, CONGRATS, categoria e vincitori."""
+    from live import template_psd
+    psd = template_psd.render("post-congrats", {
+        "BADGE": tournament, "TITLE": "CONGRATS", "EVENT": event,
+        "WINNERS": "\n".join(winners), "LABEL": "WINNERS",
+    }, image=photo)
+    if psd is not None:
+        return psd
     img, draw = _canvas(photo, darkness=165)
     y = _badge(draw, tournament, MARGIN + 60)
     y = _centered(draw, "CONGRATS", H // 2 - 220, 120, YELLOW, weight=700)

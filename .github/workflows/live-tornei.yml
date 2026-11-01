@@ -41,7 +41,7 @@ jobs:
           python-version: "3.12"
 
       - if: steps.attivo.outputs.ready == 'true'
-        run: pip install requests pillow
+        run: pip install requests pillow "psd-tools[composite]" fonttools
 
       - name: Scraping e grafiche
         if: steps.attivo.outputs.ready == 'true'
