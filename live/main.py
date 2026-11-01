@@ -198,10 +198,10 @@ def publish() -> None:
         try:
             if item["tipo"] == "carousel":
                 media_id = publish_carousel([f"{base}/{rel}" for rel in item["files"]],
-                                            item.get("caption", ""), ai=True)
+                                            item.get("caption", ""), ai=False)
                 print(f"Post pubblicato: {len(item['files'])} slide -> {media_id}")
             else:
-                media_id = publish_story(f"{base}/{item['file']}", ai=True)
+                media_id = publish_story(f"{base}/{item['file']}", ai=False)
                 print(f"Story pubblicata: {item['file']} -> {media_id}")
         except Exception as e:  # la coda resta: si riprova al giro dopo
             print(f"::warning::Contenuto rimasto in coda ({item}): {e}")
