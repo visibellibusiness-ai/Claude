@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 01/11/2026 alle 00:10 UTC. Follower: 0.
+Aggiornato il 01/11/2026 alle 13:27 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 104, di cui da non follower 104 (100%).
+- Visualizzazioni: 222, di cui da non follower 222 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 31/10/2026 | 6 | 6 | 7 | 7 | 2 | 0 |
+| 01/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 31/10/2026 | 109 | 109 | 125 | 125 | 8 | 0 |
 | 30/10/2026 | 30 | 30 | 31 | 31 | 2 | 0 |
 | 29/10/2026 | 26 | 26 | 36 | 36 | 5 | 5 |
 | 28/10/2026 | 3 | 3 | 13 | 13 | 6 | 6 |
@@ -22,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 30/10/2026 00:13 | reel | 5 ways your brain lies to you daily | 30 | 31 | 0,0% | 0,0% | 6,7% | n/d |  |
 | 29/10/2026 18:24 | reel | What happens to your body in space | 24 | 25 | 4,2% | 0,0% | 0,0% | n/d |  |
 | 29/10/2026 13:44 | carousel | Why was this train allowed to move? | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 29/10/2026 13:44 | reel | Why was this train allowed to move? | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -49,12 +51,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 28/10/2026 13:40 | Spain's second deadly train crash this y | 4.563 | 100 |
 | 29/10/2026 13:44 | Why was this train allowed to move? | 2.387 | 100 |
 | 29/10/2026 18:24 | What happens to your body in space | 4.568 | 79.2 |
+| 30/10/2026 00:13 | 5 ways your brain lies to you daily | 6.977 | 51.7 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 8 | 9 | 88,9% | 0,0% |
-| reel | 6 | 37 | 16,2% | 0,0% |
+| reel | 7 | 67 | 9,0% | 0,0% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

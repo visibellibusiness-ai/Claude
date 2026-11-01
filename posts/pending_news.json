@@ -1,39 +1,39 @@
 {
-  "date": "20261031-1328",
+  "date": "20261101-1330",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "lofi",
-  "theme_index": 19,
-  "topic": "Daily news 2026-10-31",
+  "music": "documentary",
+  "theme_index": 20,
+  "topic": "Daily news 2026-11-01",
   "category": "news",
-  "hook": "Who's telling the truth about Hormuz mines?",
+  "hook": "Iran's 2-day plan to reopen Hormuz",
   "slides": 5,
   "design": {
     "style": "mystery",
     "palette": 2
   },
   "images": [
-    "posts/20261031-1328/slide_01.jpg",
-    "posts/20261031-1328/slide_02.jpg",
-    "posts/20261031-1328/slide_03.jpg",
-    "posts/20261031-1328/slide_04.jpg",
-    "posts/20261031-1328/slide_05.jpg",
-    "posts/20261031-1328/slide_06.jpg",
-    "posts/20261031-1328/slide_07.jpg"
+    "posts/20261101-1330/slide_01.jpg",
+    "posts/20261101-1330/slide_02.jpg",
+    "posts/20261101-1330/slide_03.jpg",
+    "posts/20261101-1330/slide_04.jpg",
+    "posts/20261101-1330/slide_05.jpg",
+    "posts/20261101-1330/slide_06.jpg",
+    "posts/20261101-1330/slide_07.jpg"
   ],
-  "story": "posts/20261031-1328/story.jpg",
+  "story": "posts/20261101-1330/story.jpg",
   "ai": true,
   "story_ai": false,
-  "caption": "🛢️ Hormuz: Iran says tankers hit mines, the US says the routes are clear. Oil prices can feel it.\n💸 Binance says it will cover all losses from the $6.3B hack, the biggest crypto theft on record.\n🗳️ Over 43 million Americans have already voted. Election Day is Tuesday 3 November.\n🚌 Hundreds evacuated from occupied Oleshky under a one-town ceasefire.\n🎃 Houdini died on Halloween, 100 years ago today.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia · Edwin.images (CC BY-SA 4.0) via wikimedia\n\n#news #dailynews #worldnews #hormuz #oil #binance #crypto #midterms #ukraine #houdini #halloween #youdidnotknow",
-  "carousel_caption": "🛢️ Hormuz: Iran says tankers hit mines, the US says the routes are clear. Oil prices can feel it.\n💸 Binance says it will cover all losses from the $6.3B hack, the biggest crypto theft on record.\n🗳️ Over 43 million Americans have already voted. Election Day is Tuesday 3 November.\n🚌 Hundreds evacuated from occupied Oleshky under a one-town ceasefire.\n🎃 Houdini died on Halloween, 100 years ago today.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\nCover: Who's telling the truth about Hormuz mines?\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia\n\n1/5 Hormuz: mines or no mines? (1/5)\nIran says tankers hit mines; US says routes are clear. About a fifth of the world's oil normally passes here.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia\n\n2/5 Binance promises to pay it back ($6.3B)\nBinance says it'll cover all losses from a $6.3B hack. It's the largest crypto theft on record.\n📷 Edwin.images (CC BY-SA 4.0) via wikimedia\n\n3/5 43 million already voted (43M)\nOver 43 million have voted early, nearly 10M above 2022. Tuesday's vote decides which party controls Congress.\n🎨 AI-generated image\n\n4/5 Out of Oleshky, via Belarus\nHundreds left occupied Oleshky under a one-town ceasefire. They'd gone months without regular food and medicine.\n🎨 AI-generated image\n\n5/5 Houdini died on Halloween (100)\nHoudini died on Halloween 1926, exactly 100 years ago. Detroit, where he died, is marking the centenary.\n🎨 AI-generated image\n\n#news #dailynews #worldnews #hormuz #oil #binance #crypto #midterms #ukraine #houdini #halloween #youdidnotknow",
+  "caption": "🛢️ Iran met Qatari mediators to end the Gulf war. Iran says Hormuz could reopen in 2 days if the US agrees. No deal yet.\n🗳️ US midterms are Tuesday, after record early voting. What happens next with Iran may hang on the vote.\n💻 The FBI says North Korea was behind the $6.3 billion Binance hack. Got crypto on an exchange? Turn on two-factor login.\n🕊️ The local ceasefire in Ukraine's Kherson region is due to end Sunday evening.\n🚌 Hundreds evacuated from Oleshky have reached Ukraine via Belarus.\n\nWhich story will you be watching this week?\nFollow @you.didnot.know for the daily brief.\n\n📷 Ank Kumar (CC BY-SA 4.0) via wikimedia · Edwin.images (CC BY-SA 4.0) via wikimedia\n\n#news #dailynews #worldnews #iran #hormuz #midterms #uselections #binance #crypto #northkorea #ukraine #youdidnotknow",
+  "carousel_caption": "🛢️ Iran met Qatari mediators to end the Gulf war. Iran says Hormuz could reopen in 2 days if the US agrees. No deal yet.\n🗳️ US midterms are Tuesday, after record early voting. What happens next with Iran may hang on the vote.\n💻 The FBI says North Korea was behind the $6.3 billion Binance hack. Got crypto on an exchange? Turn on two-factor login.\n🕊️ The local ceasefire in Ukraine's Kherson region is due to end Sunday evening.\n🚌 Hundreds evacuated from Oleshky have reached Ukraine via Belarus.\n\nWhich story will you be watching this week?\nFollow @you.didnot.know for the daily brief.\n\nCover: Iran's 2-day plan to reopen Hormuz\n📷 Ank Kumar (CC BY-SA 4.0) via wikimedia\n\n1/5 Qatar talks to end Gulf war (2 days)\nIran met Qatari mediators in Doha to end the Gulf war. Iran says Hormuz could reopen in 2 days if the US agrees.\n📷 Ank Kumar (CC BY-SA 4.0) via wikimedia\n\n2/5 US midterms on Tuesday (3 Nov)\nAmericans vote Tuesday on which party controls Congress. Early voting has already set a record for a midterm.\n🎨 AI-generated image\n\n3/5 FBI blames North Korea ($6.3B)\nThe FBI blamed North Korea for the $6.3 billion Binance hack. It's one of the largest crypto heists ever.\n📷 Edwin.images (CC BY-SA 4.0) via wikimedia\n\n4/5 Kherson truce due to end (6 days)\nA local ceasefire in Ukraine's Kherson region ends Sunday evening. Melania Trump helped broker it so aid could reach Oleshky.\n🎨 AI-generated image\n\n5/5 Oleshky evacuees reach Ukraine\nHundreds evacuated from occupied Oleshky reached Ukraine via Belarus. About 2,000 still there could leave or get new supplies.\n🎨 AI-generated image\n\n#news #dailynews #worldnews #iran #hormuz #midterms #uselections #binance #crypto #northkorea #ukraine #youdidnotknow",
   "slide_captions": [
-    "Who's telling the truth about Hormuz mines?\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
-    "1/5 Hormuz: mines or no mines? (1/5)\nIran says tankers hit mines; US says routes are clear. About a fifth of the world's oil normally passes here.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
-    "2/5 Binance promises to pay it back ($6.3B)\nBinance says it'll cover all losses from a $6.3B hack. It's the largest crypto theft on record.\n📷 Edwin.images (CC BY-SA 4.0) via wikimedia",
-    "3/5 43 million already voted (43M)\nOver 43 million have voted early, nearly 10M above 2022. Tuesday's vote decides which party controls Congress.\n🎨 AI-generated image",
-    "4/5 Out of Oleshky, via Belarus\nHundreds left occupied Oleshky under a one-town ceasefire. They'd gone months without regular food and medicine.\n🎨 AI-generated image",
-    "5/5 Houdini died on Halloween (100)\nHoudini died on Halloween 1926, exactly 100 years ago. Detroit, where he died, is marking the centenary.\n🎨 AI-generated image",
-    "Follow for the daily brief you missed"
+    "Iran's 2-day plan to reopen Hormuz\n📷 Ank Kumar (CC BY-SA 4.0) via wikimedia",
+    "1/5 Qatar talks to end Gulf war (2 days)\nIran met Qatari mediators in Doha to end the Gulf war. Iran says Hormuz could reopen in 2 days if the US agrees.\n📷 Ank Kumar (CC BY-SA 4.0) via wikimedia",
+    "2/5 US midterms on Tuesday (3 Nov)\nAmericans vote Tuesday on which party controls Congress. Early voting has already set a record for a midterm.\n🎨 AI-generated image",
+    "3/5 FBI blames North Korea ($6.3B)\nThe FBI blamed North Korea for the $6.3 billion Binance hack. It's one of the largest crypto heists ever.\n📷 Edwin.images (CC BY-SA 4.0) via wikimedia",
+    "4/5 Kherson truce due to end (6 days)\nA local ceasefire in Ukraine's Kherson region ends Sunday evening. Melania Trump helped broker it so aid could reach Oleshky.\n🎨 AI-generated image",
+    "5/5 Oleshky evacuees reach Ukraine\nHundreds evacuated from occupied Oleshky reached Ukraine via Belarus. About 2,000 still there could leave or get new supplies.\n🎨 AI-generated image",
+    "Follow for your daily news brief"
   ]
 }

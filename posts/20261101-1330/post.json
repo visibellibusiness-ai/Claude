@@ -1,0 +1,210 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-01",
+  "hook": "Iran's 2-day plan to reopen Hormuz",
+  "reel_hook": "Iran has a 2-day Hormuz plan",
+  "slides": [
+    {
+      "title": "Qatar talks to end Gulf war",
+      "highlight": "2 days",
+      "image_query": "oil tanker strait",
+      "image_prompt": "Oil tanker in a calm narrow strait at dusk, a heavy chain stretched across the water beginning to lower, warm golden light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran met Qatari mediators in Doha to end the Gulf war."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Iran says Hormuz could reopen in 2 days if the US agrees."
+        ],
+        [
+          "FOR YOU",
+          "No deal yet: Rubio gave no timeframe, and Trump says he's in no hurry."
+        ]
+      ],
+      "body": "Iran met Qatari mediators in Doha to end the Gulf war. Iran says Hormuz could reopen in 2 days if the US agrees. No deal yet: Rubio gave no timeframe, and Trump says he's in no hurry.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-1330/img_01.jpg",
+      "credit": "Ank Kumar (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "US midterms on Tuesday",
+      "highlight": "3 Nov",
+      "image_query": "ballot box voting",
+      "image_prompt": "Wooden ballot box on a table with a stack of blank folded ballots beside it, soft morning light, neutral colors",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Americans vote Tuesday on which party controls Congress."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Early voting has already set a record for a midterm."
+        ],
+        [
+          "FOR YOU",
+          "Watch Tuesday: diplomats are trying to prevent new Iran fighting after the vote."
+        ]
+      ],
+      "body": "Americans vote Tuesday on which party controls Congress. Early voting has already set a record for a midterm. Watch Tuesday: diplomats are trying to prevent new Iran fighting after the vote.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-1330/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "FBI blames North Korea",
+      "highlight": "$6.3B",
+      "image_query": "crypto coins",
+      "image_prompt": "Pile of golden crypto coins with an open padlock lying on top, dark background with cold blue light",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The FBI blamed North Korea for the $6.3 billion Binance hack."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It's one of the largest crypto heists ever."
+        ],
+        [
+          "FOR YOU",
+          "Holding crypto on an exchange? Turn on two-factor login and review your security."
+        ]
+      ],
+      "body": "The FBI blamed North Korea for the $6.3 billion Binance hack. It's one of the largest crypto heists ever. Holding crypto on an exchange? Turn on two-factor login and review your security.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-1330/img_03.jpg",
+      "credit": "Edwin.images (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Kherson truce due to end",
+      "highlight": "6 days",
+      "image_query": "humanitarian aid trucks",
+      "image_prompt": "Line of white aid trucks on an empty rural road at sunset, crates of food and medical boxes stacked beside them",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A local ceasefire in Ukraine's Kherson region ends Sunday evening."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Melania Trump helped broker it so aid could reach Oleshky."
+        ],
+        [
+          "FOR YOU",
+          "Watch whether the pause holds or gets extended after Sunday."
+        ]
+      ],
+      "body": "A local ceasefire in Ukraine's Kherson region ends Sunday evening. Melania Trump helped broker it so aid could reach Oleshky. Watch whether the pause holds or gets extended after Sunday.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-1330/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Oleshky evacuees reach Ukraine",
+      "highlight": "",
+      "image_query": "bus on country road",
+      "image_prompt": "A single bus driving along a long country road at sunrise, open fields on both sides, hopeful warm light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Hundreds evacuated from occupied Oleshky reached Ukraine via Belarus."
+        ],
+        [
+          "WHY IT MATTERS",
+          "About 2,000 still there could leave or get new supplies."
+        ],
+        [
+          "FOR YOU",
+          "A rare bit of good news: families who wanted out got a route."
+        ]
+      ],
+      "body": "Hundreds evacuated from occupied Oleshky reached Ukraine via Belarus. About 2,000 still there could leave or get new supplies. A rare bit of good news: families who wanted out got a route.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-1330/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🛢️ Iran met Qatari mediators to end the Gulf war. Iran says Hormuz could reopen in 2 days if the US agrees. No deal yet.\n🗳️ US midterms are Tuesday, after record early voting. What happens next with Iran may hang on the vote.\n💻 The FBI says North Korea was behind the $6.3 billion Binance hack. Got crypto on an exchange? Turn on two-factor login.\n🕊️ The local ceasefire in Ukraine's Kherson region is due to end Sunday evening.\n🚌 Hundreds evacuated from Oleshky have reached Ukraine via Belarus.\n\nWhich story will you be watching this week?\nFollow @you.didnot.know for the daily brief.\n\n📷 Ank Kumar (CC BY-SA 4.0) via wikimedia · Edwin.images (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "worldnews",
+    "iran",
+    "hormuz",
+    "midterms",
+    "uselections",
+    "binance",
+    "crypto",
+    "northkorea",
+    "ukraine",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://kfgo.com/2026/10/31/iranian-envoys-meet-qatari-mediators-as-threat-looms-of-us-strikes-after-midterms/",
+    "https://www.aljazeera.com/news/2026/11/1/mediators-continue-us-iran-negotiations-amid-war-rhetoric-what-we-know",
+    "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz",
+    "https://www.newsitem.com/ap/national/ap-news-summary-at-4-58-a-m-edt/article_9b340c9c-cf18-5685-a080-b869fb14cf10.html",
+    "https://www.bloomberg.com/news/articles/2026-10-30/midterm-elections-2026-early-voting-hits-record-ahead-of-election-day",
+    "https://kfgo.com/2026/10/31/iranian-envoys-meet-qatari-mediators-as-threat-looms-of-us-strikes-after-midterms/",
+    "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist",
+    "https://www.nbcnews.com/business/business-news/fbi-says-north-korea-was-6-billion-binance-crypto-hack-rcna606758",
+    "https://www.euronews.com/2026/11/01/fbi-blames-north-korea-for-63-billion-binance-crypto-hack",
+    "https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea",
+    "https://www.dailyrecordnews.com/ap_news/us/ap-news-summary-at-7-00-a-m-edt/article_65bb1288-dfc6-5171-b73c-5f08655c62c1.html",
+    "https://www.cnn.com/2026/10/27/europe/russia-ukraine-melania-trump-ceasefire-intl-hnk",
+    "https://www.usnews.com/news/world/articles/2026-10-27/first-lady-melania-trump-says-ukraine-russia-ceasefire-expanded-within-kherson",
+    "https://www.pbs.org/newshour/world/residents-evacuated-from-russian-occupied-oleshky-reach-ukraine-after-localized-ceasefire",
+    "https://www.aljazeera.com/news/2026/10/31/hundreds-from-russian-occupied-oleshky-land-in-belarus-en-route-to-ukraine"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 01 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in 30 seconds, every day"
+  },
+  "image_query": "oil tanker strait",
+  "image_prompt": "Oil tanker anchored in a calm narrow strait at dusk, a heavy chain across the water slowly lowering, two-day calendar pages floating on the waves, golden light",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261101-1330/img_cover.jpg",
+  "cover_credit": "Ank Kumar (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🛢️ Iran met Qatari mediators to end the Gulf war. Iran says Hormuz could reopen in 2 days if the US agrees. No deal yet.\n🗳️ US midterms are Tuesday, after record early voting. What happens next with Iran may hang on the vote.\n💻 The FBI says North Korea was behind the $6.3 billion Binance hack. Got crypto on an exchange? Turn on two-factor login.\n🕊️ The local ceasefire in Ukraine's Kherson region is due to end Sunday evening.\n🚌 Hundreds evacuated from Oleshky have reached Ukraine via Belarus.\n\nWhich story will you be watching this week?\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "rise",
+      "right",
+      "rise",
+      "right",
+      "rise",
+      "blur",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "flash",
+      "punch",
+      "dip",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}
