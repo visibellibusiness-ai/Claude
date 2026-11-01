@@ -156,7 +156,7 @@ def to_post(brief: dict) -> dict:
             "palette": brief.get("palette", 0),
             "cover_label": f"Today's file · {date}",
             "swipe_text": "Swipe",
-            "follow_line": "the news in 30 seconds, every day",
+            "follow_line": "the news in one minute, every day",
         },
         "image_query": brief["stories"][0].get("image_query", "") if brief.get("stories") else "",
         "image_prompt": brief.get("image_prompt", ""),

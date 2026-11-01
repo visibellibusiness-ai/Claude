@@ -25,6 +25,10 @@ W, H = 1080, 1920
 FPS = 30
 SAFE = (90, 300, W - 150, H - 460)
 ANIM = 0.45  # secondi di entrata del testo
+# Leggibile in una passata (algoritmo Instagram, ottobre 2026, dichiarazioni di Adam Mosseri):
+# il testo resta a schermo il tempo di leggerlo a velocità normale, senza forzare il rewatch.
+READ_WPS = 3.0  # parole al secondo a lettura normale (~180 parole al minuto)
+SETTLE = 0.7  # secondi per orientarsi sulla scena dopo il cambio (effetto di taglio compreso)
 ZOOM = 0.10  # ingrandimento della foto da inizio a fine Reel
 PAN_MARGIN = 0.20  # margine in più della foto quando scorre di lato
 
@@ -39,14 +43,25 @@ CUT_FRAMES = int(0.3 * FPS)  # durata dell'effetto di cambio scena
 MIN_P10, MIN_MEDIAN = 5.0, 6.0
 
 
+def _scene_words(data: dict) -> int:
+    """Le parole davvero a schermo nella scena: gancio o titolo, corpo (con le etichette
+    dei punti della rubrica news), numero in evidenza e testo dell'ultima scheda."""
+    body = " ".join(f"{label} {txt}" for label, txt in data["points"]) if data.get("points") else data.get("body", "")
+    text = " ".join([data.get("hook", ""), data.get("title", ""), body, str(data.get("highlight", "")), data.get("cta", "")])
+    return len(text.split())
+
+
 def _duration(kind: str, data: dict, fast: bool = False) -> float:
+    """Durata della scena con la regola "leggibile in una passata": entrata del testo,
+    orientamento e poi il tempo di lettura delle parole a schermo. Il minimo per scena
+    resta quello di prima; il tetto fisso se n'è andato perché tagliava il tempo di
+    lettura delle scene piene (il news Reel passa da ~20 a ~35-40 secondi)."""
+    read = ANIM + SETTLE + _scene_words(data) / READ_WPS
     if kind == "cta":
-        return 2.5 if fast else 3.5
-    text = data.get("hook", "") + " " + data.get("title", "") + " " + data.get("body", "")
-    words = len(text.split())
-    if fast:  # rubrica news: circa 20 secondi in tutto
-        return max(2.4, min(3.8, 1.2 + words * 0.13))
-    return max(2.8, min(6.5, 1.5 + words * 0.28)) + (0.5 if kind == "cover" else 0)
+        return max(2.5 if fast else 3.5, read)
+    if fast:
+        return max(2.4, read)
+    return max(2.8, read) + (0.5 if kind == "cover" else 0)
 
 
 # ------------------------------------------------------------------ foto
@@ -241,6 +256,10 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
 
     scenes = []
     for n, (kind, data) in enumerate(items, start=1):
+        duration = _duration(kind, data, fast=news)
+        words = _scene_words(data)
+        pace = words / (duration - ANIM) * 60 if words else 0
+        print(f"Reel, lettura scena {n} ({kind}): {words} parole in {duration:.1f} s ({pace:.0f} wpm)")
         bg, fg = style.slide(kind, data, W, H, SAFE)
         if master:
             veil, p10, median = _readable(master, fg, motion)
@@ -248,7 +267,7 @@ def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
             print(f"Reel, leggibilità scena {n} ({kind}): contrasto peggiore {p10:.1f}:1, mediano {median:.1f}:1"
                   + ("" if ok else " (SOTTO SOGLIA con la velatura al massimo)"))
             bg, fg = veil, _with_shadow(fg)
-        scenes.append((bg, fg, _duration(kind, data, fast=news), style.accent(kind), entrances[n - 1], cuts[n - 1]))
+        scenes.append((bg, fg, duration, style.accent(kind), entrances[n - 1], cuts[n - 1]))
     total = sum(s[2] for s in scenes)
 
     out_dir.mkdir(parents=True, exist_ok=True)
