@@ -14,6 +14,7 @@
   "Sat - Womens Doubles OPEN|7829",
   "Sat - Womens Doubles OPEN|7831",
   "Sat - Womens Doubles OPEN|7832",
+  "Sun - Mixed Doubles OPEN|7975",
   "Sun - Mixed Doubles OPEN|7976",
   "Sun - Mixed Doubles OPEN|7977",
   "Sun - Mixed Doubles OPEN|7978",
@@ -153,6 +154,10 @@
   {
    "tipo": "story",
    "file": "posts/live/english-nationals-2026/20261101-1543/fase-sun-mixed-doubles-open-semifinali-1.png"
+  },
+  {
+   "tipo": "story",
+   "file": "posts/live/english-nationals-2026/20261101-1807/match-140-terzo_posto.png"
   }
  ],
  "published_posts": []
