@@ -148,7 +148,7 @@ directory pickleballspot.eu lo stesso giorno:
 |---|---|---|
 | Arena Roma Pickleball | Via Castore Durante 88 | 4 indoor |
 | Augustea Sport City | Via Armando Luciani 57 | 2 indoor (centro con palestra, piscine, padel, tennis, ristorante) |
-| Casa Viola | Via della Camilluccia 112 | 2 outdoor |
+| Casa Viola | Via della Camilluccia 120 (la directory dice 112) | 2 outdoor, prenotazioni su Playtomic |
 | Miami Pickleball | Via Giulio Bonasoni 68 | 6 outdoor, telefono e Instagram propri |
 
 Totale 14 campi (6 indoor, 8 outdoor). Le prime tre usano il telefono
@@ -173,8 +173,10 @@ bianca in testata, impilata in fondo pagina), logo Casa Viola sulla sua sede,
 foto reali (Roma Open all'Arena, Augustea dalle cartelle Drive condivise, Casa
 Viola dall'inaugurazione; Miami senza foto), apertura con testo e foto
 affiancati. Il font del logo lo manda Andrea il 2 novembre: poi si sostituisce
-il Barlow Condensed dei titoli. Da chiarire il civico di Casa Viola (112 in
-directory, 120 nel post del circolo).
+il Barlow Condensed dei titoli. Casa Viola è in Via della Camilluccia 120
+(post del circolo e pagina Playtomic, verificati il 1 novembre; la directory
+dice 112 e la correzione è in carico alla chat del sito) e si prenota su
+Playtomic: nella demo il tasto della sua sede porta lì.
 
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
 con 2 campi outdoor in cemento e solo un numero di telefono come contatto, nessun
