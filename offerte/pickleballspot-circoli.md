@@ -166,6 +166,16 @@ brand Instagram @romapickleball (nero, bianco, lettering condensato corsivo,
 arancio dei post promozionali), Miami presentata come le altre sedi coi suoi
 contatti. Testi tra parentesi quadre da scrivere col circolo.
 
+**Bozza 2 del personalizzato (1 novembre 2026, sera)** dopo il commento di
+Andrea "ci siamo ma puoi far meglio, usa il logo vero": logo originale dalla
+cartella `PARTNERS/ROMA-PICKLEBALL/LOGO` del disco PBT (versione orizzontale
+bianca in testata, impilata in fondo pagina), logo Casa Viola sulla sua sede,
+foto reali (Roma Open all'Arena, Augustea dalle cartelle Drive condivise, Casa
+Viola dall'inaugurazione; Miami senza foto), apertura con testo e foto
+affiancati. Il font del logo lo manda Andrea il 2 novembre: poi si sostituisce
+il Barlow Condensed dei titoli. Da chiarire il civico di Casa Viola (112 in
+directory, 120 nel post del circolo).
+
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
 con 2 campi outdoor in cemento e solo un numero di telefono come contatto, nessun
 sito né Instagram trovati. Lo stesso numero compare per la Standout Pickleball
