@@ -127,6 +127,13 @@ una tantum (Andrea ha indicato la fascia 390-450; fissato a 450, ribassabile a
 liv. 3-4: 200 € su sottodominio, 400 € con dominio personalizzato · pilota Roma
 Pickleball: 300 €.
 
+**Prima bozza della demo (1 novembre 2026):** le tre versioni navigabili sono
+nella cartella `demo/roma-pickleball/` di questo repo e pubblicate su
+https://claude.ai/artifact/Bqo4ryCWXqm1XDrGSpNVfY (hub di confronto + scheda
+premium in brand PickleballSpot, template con selettore di 3 font e 3 palette,
+sito personalizzato con stile dedicato rosso pompeiano/oro). Foto segnaposto e
+testi di esempio: si sostituiscono con materiali veri del circolo in produzione.
+
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
 con 2 campi outdoor in cemento e solo un numero di telefono come contatto — nessun
 sito né Instagram trovati. Lo stesso numero compare per la Standout Pickleball
@@ -326,5 +333,10 @@ la piattaforma.
    resta di PickleballSpot; i 3 layout template per i circoli sono neutri e
    personalizzabili (colori, font, loghi), cosa diversa dal design system della
    piattaforma.
-5. Proposta formale per Roma Pickleball con `logica-offerte-commerciali` e
-   `lettere-incarico`.
+5. ✅ Proposta formale per Roma Pickleball: pronta (1 novembre 2026), vedi
+   `roma-pickleball-proposta.md` (messaggio WhatsApp + one-pager, vagliati con
+   `logica-offerte-commerciali`) e `roma-pickleball-lettera-incarico.md`/`.docx`.
+   Prima dell'invio restano i campi aperti elencati in testa alla proposta
+   (referente, dati fiscali, doppia struttura, foto).
+6. Stack tecnico scelto per mini-siti e template: statico (Astro) + Cloudflare
+   Pages su sottodomini, dettagli e costi in `stack-tecnico-siti.md`.
