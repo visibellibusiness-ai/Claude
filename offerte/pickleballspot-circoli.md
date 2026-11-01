@@ -342,7 +342,9 @@ la piattaforma.
    resta di PickleballSpot; i 3 layout template per i circoli sono neutri e
    personalizzabili (colori, font, loghi), cosa diversa dal design system della
    piattaforma.
-5. ✅ Proposta formale per Roma Pickleball: pronta (1 novembre 2026), rivista
+5. Proposta formale per Roma Pickleball: **bozza, in revisione con Andrea**
+   (1 novembre 2026). Ordine: prima la proposta, poi la lettera d'incarico solo
+   dopo il suo ok sulla proposta. Corretta
    l'1 novembre sera (niente trattini lunghi, "paddle", logo ufficiale nella
    demo, tolto "il primo in Italia" non verificabile), su Drive come Google Doc
    nella cartella "Siti web circoli", vedi
