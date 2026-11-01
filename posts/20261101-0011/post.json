@@ -1,0 +1,122 @@
+{
+  "reasoning": "The only post to pass 10 reach was the 'What happens to your body in space' reel (24 reach, 79% skip, all non-followers). So I am reusing that body-centred 'what happens to your body' hook and the reel format, on a new evergreen topic with no news. This also runs the strategy's version B of the reel hook test: a direct claim with a shocking number on the first content slide (17 h awake = 0.05% blood alcohol). With 0 followers, a Trial Reel loses nothing and starts producing trial data. I chose palette 1 and mystery music because they matched the best performer. Five short slides keep the watch time tight. The caption question asks about personal experience to test whether that drives comments.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": true,
+  "category": "human body",
+  "topic": "Sleep deprivation effects on the body",
+  "hook": "What happens to your body without sleep",
+  "slides": [
+    {
+      "title": "17 hours awake",
+      "body": "After about 17 hours awake, your reaction speed and accuracy can match someone at 0.05% blood alcohol.",
+      "highlight": "17 h",
+      "image_query": "alarm clock night",
+      "image_prompt": "Glowing digital alarm clock on a dark nightstand beside a half-empty glass, deep blue night light, moody cinematic atmosphere",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-0011/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Microsleeps take over",
+      "body": "Your brain starts switching off for seconds at a time, even with your eyes open, often without you noticing.",
+      "highlight": "",
+      "image_query": "empty highway night",
+      "image_prompt": "Empty highway at night with blurred headlights and fading lane lines, dreamlike motion blur, dark blue and amber tones",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-0011/img_02.jpg",
+      "credit": "PattayaPatrol (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Hunger hormones flip",
+      "body": "After two short nights, hunger hormone ghrelin rose 28% and fullness hormone leptin fell 18% in one study.",
+      "highlight": "+28%",
+      "image_query": "donuts night kitchen",
+      "image_prompt": "Open fridge glowing in a dark kitchen at night, donuts and cake on the counter, cold blue light, cinematic mood",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-0011/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Brain cleaning stops",
+      "body": "Sleep helps fluid wash waste out of the brain. In mice, the space between brain cells grew about 60% during sleep.",
+      "highlight": "60%",
+      "image_query": "brain model",
+      "image_prompt": "Translucent glass brain model with glowing blue water flowing through it, dark background, soft scientific lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-0011/img_04.jpg",
+      "credit": "Edeh Sophia (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The 264-hour record",
+      "body": "In 1964, a student stayed awake for 11 days. Guinness later stopped tracking the record because it is dangerous.",
+      "highlight": "264 h",
+      "image_query": "vintage calendar pages",
+      "image_prompt": "Stack of torn calendar pages scattered beside a vintage alarm clock under a single desk lamp, dark room, warm and blue tones",
+      "image": "/home/runner/work/Claude/Claude/posts/20261101-0011/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "After about 17 hours awake, your brain can perform roughly like it does at 0.05% blood alcohol. Most people hit that point on a normal late night.\n\nSkip sleep for longer and your hunger hormones shift, microsleeps creep in, and your brain's overnight cleaning shift gets cut short. Sources: Williamson & Feyer 2000, Spiegel et al. 2004, Xie et al. 2013 (Science).\n\nWhat's the longest you've ever stayed awake?\n\n📷 PattayaPatrol (CC BY-SA 4.0) via wikimedia · Edeh Sophia (CC0) via wikimedia",
+  "hashtags": [
+    "sleep",
+    "sleepdeprivation",
+    "humanbody",
+    "brain",
+    "sciencefacts",
+    "didyouknow",
+    "health",
+    "neuroscience",
+    "funfacts",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Williamson AM, Feyer AM (2000). Moderate sleep deprivation produces impairments in cognitive and motor performance equivalent to legally prescribed levels of alcohol intoxication. Occupational and Environmental Medicine 57:649-655",
+    "Spiegel K et al. (2004). Sleep curtailment in healthy young men is associated with decreased leptin levels, elevated ghrelin levels, and increased hunger and appetite. Annals of Internal Medicine 141(11):846-850",
+    "Xie L et al. (2013). Sleep drives metabolite clearance from the adult brain. Science 342(6156):373-377",
+    "Sleep Foundation / NIH NHLBI: microsleep and sleep deprivation overviews",
+    "Guinness World Records: Randy Gardner 264 hours (1964); record category discontinued for safety"
+  ],
+  "image_query": "alarm clock night bedroom",
+  "image_prompt": "Glowing alarm clock showing late night on a bedside table, rumpled bed in dark blue shadows, single beam of moonlight, mysterious cinematic mood",
+  "design": {
+    "palette": 1,
+    "cover_label": "Your Body, Explained",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts your brain will love"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261101-0011/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "After about 17 hours awake, your brain can perform roughly like it does at 0.05% blood alcohol. Most people hit that point on a normal late night.\n\nSkip sleep for longer and your hunger hormones shift, microsleeps creep in, and your brain's overnight cleaning shift gets cut short. Sources: Williamson & Feyer 2000, Spiegel et al. 2004, Xie et al. 2013 (Science).\n\nWhat's the longest you've ever stayed awake?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "left",
+      "rise",
+      "blur",
+      "left",
+      "rise",
+      "blur",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "glitch",
+      "punch",
+      "dip",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}

@@ -1,0 +1,33 @@
+{
+  "date": "20261101-0011",
+  "series": "facts",
+  "format": "reel",
+  "trial": true,
+  "music": "lofi",
+  "theme_index": 19,
+  "topic": "Sleep deprivation effects on the body",
+  "category": "human body",
+  "hook": "What happens to your body without sleep",
+  "slides": 5,
+  "design": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "images": [
+    "posts/20261101-0011/cover.jpg"
+  ],
+  "story": "posts/20261101-0011/story.jpg",
+  "ai": true,
+  "story_ai": true,
+  "caption": "After about 17 hours awake, your brain can perform roughly like it does at 0.05% blood alcohol. Most people hit that point on a normal late night.\n\nSkip sleep for longer and your hunger hormones shift, microsleeps creep in, and your brain's overnight cleaning shift gets cut short. Sources: Williamson & Feyer 2000, Spiegel et al. 2004, Xie et al. 2013 (Science).\n\nWhat's the longest you've ever stayed awake?\n\n📷 PattayaPatrol (CC BY-SA 4.0) via wikimedia · Edeh Sophia (CC0) via wikimedia\n\n#sleep #sleepdeprivation #humanbody #brain #sciencefacts #didyouknow #health #neuroscience #funfacts #youdidnotknow",
+  "carousel_caption": "After about 17 hours awake, your brain can perform roughly like it does at 0.05% blood alcohol. Most people hit that point on a normal late night.\n\nSkip sleep for longer and your hunger hormones shift, microsleeps creep in, and your brain's overnight cleaning shift gets cut short. Sources: Williamson & Feyer 2000, Spiegel et al. 2004, Xie et al. 2013 (Science).\n\nWhat's the longest you've ever stayed awake?\n\nCover: What happens to your body without sleep\n🎨 AI-generated image\n\n1/5 17 hours awake (17 h)\nAfter about 17 hours awake, your reaction speed and accuracy can match someone at 0.05% blood alcohol.\n🎨 AI-generated image\n\n2/5 Microsleeps take over\nYour brain starts switching off for seconds at a time, even with your eyes open, often without you noticing.\n📷 PattayaPatrol (CC BY-SA 4.0) via wikimedia\n\n3/5 Hunger hormones flip (+28%)\nAfter two short nights, hunger hormone ghrelin rose 28% and fullness hormone leptin fell 18% in one study.\n🎨 AI-generated image\n\n4/5 Brain cleaning stops (60%)\nSleep helps fluid wash waste out of the brain. In mice, the space between brain cells grew about 60% during sleep.\n📷 Edeh Sophia (CC0) via wikimedia\n\n5/5 The 264-hour record (264 h)\nIn 1964, a student stayed awake for 11 days. Guinness later stopped tracking the record because it is dangerous.\n🎨 AI-generated image\n\n#sleep #sleepdeprivation #humanbody #brain #sciencefacts #didyouknow #health #neuroscience #funfacts #youdidnotknow",
+  "slide_captions": [
+    "What happens to your body without sleep\n🎨 AI-generated image",
+    "1/5 17 hours awake (17 h)\nAfter about 17 hours awake, your reaction speed and accuracy can match someone at 0.05% blood alcohol.\n🎨 AI-generated image",
+    "2/5 Microsleeps take over\nYour brain starts switching off for seconds at a time, even with your eyes open, often without you noticing.\n📷 PattayaPatrol (CC BY-SA 4.0) via wikimedia",
+    "3/5 Hunger hormones flip (+28%)\nAfter two short nights, hunger hormone ghrelin rose 28% and fullness hormone leptin fell 18% in one study.\n🎨 AI-generated image",
+    "4/5 Brain cleaning stops (60%)\nSleep helps fluid wash waste out of the brain. In mice, the space between brain cells grew about 60% during sleep.\n📷 Edeh Sophia (CC0) via wikimedia",
+    "5/5 The 264-hour record (264 h)\nIn 1964, a student stayed awake for 11 days. Guinness later stopped tracking the record because it is dangerous.\n🎨 AI-generated image",
+    "Follow so you never miss the next one"
+  ]
+}

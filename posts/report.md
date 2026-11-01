@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 31/10/2026 alle 13:26 UTC. Follower: 0.
+Aggiornato il 01/11/2026 alle 00:10 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 103, di cui da non follower 103 (100%).
+- Visualizzazioni: 104, di cui da non follower 104 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 31/10/2026 | 5 | 5 | 6 | 6 | 2 | 0 |
+| 31/10/2026 | 6 | 6 | 7 | 7 | 2 | 0 |
 | 30/10/2026 | 30 | 30 | 31 | 31 | 2 | 0 |
 | 29/10/2026 | 26 | 26 | 36 | 36 | 5 | 5 |
 | 28/10/2026 | 3 | 3 | 13 | 13 | 6 | 6 |
 | 27/10/2026 | 8 | 8 | 17 | 17 | 3 | 3 |
 | 26/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
-| 25/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,9 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 29/10/2026 18:24 | reel | What happens to your body in space | 24 | 25 | 4,2% | 0,0% | 0,0% | n/d |  |
+| 29/10/2026 13:44 | carousel | Why was this train allowed to move? | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
+| 29/10/2026 13:44 | reel | Why was this train allowed to move? | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 29/10/2026 00:12 | carousel | Foods that are secretly not what you thi | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 18:23 | carousel | Timelines that will break your brain | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 13:40 | carousel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
@@ -45,12 +47,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 27/10/2026 13:32 | Netanyahu or Eisenkot? Polls can't tell | 7.159 | 60 |
 | 27/10/2026 18:21 | 5 things octopuses do that seem impossib | 13.046 | 100 |
 | 28/10/2026 13:40 | Spain's second deadly train crash this y | 4.563 | 100 |
+| 29/10/2026 13:44 | Why was this train allowed to move? | 2.387 | 100 |
+| 29/10/2026 18:24 | What happens to your body in space | 4.568 | 79.2 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 7 | 8 | 87,5% | 0,0% |
-| reel | 4 | 12 | 33,3% | 0,0% |
+| carousel | 8 | 9 | 88,9% | 0,0% |
+| reel | 6 | 37 | 16,2% | 0,0% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
