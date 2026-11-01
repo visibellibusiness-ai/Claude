@@ -1,4 +1,4 @@
-# Offerte clienti — punto unico
+# Offerte clienti: punto unico
 
 Raccolta di tutte le offerte commerciali in lavorazione, finora sparse in più
 chat. Ogni offerta ha il suo file; questo indice dice a che punto è ognuna.

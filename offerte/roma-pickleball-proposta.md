@@ -69,7 +69,7 @@ question a bassa frizione (una pagina di dettagli e una bozza, nessun impegno).
 >   presenta entrambe: lo definiamo insieme
 >
 > **Perché a queste condizioni.** Il listino del sito personalizzato è 695 €. Roma
-> Pickleball è il circolo pilota del progetto, il primo in Italia: in cambio del
+> Pickleball è il circolo pilota del progetto, il primo a partire: in cambio del
 > caso studio (uso di nome, foto e una vostra testimonianza per presentare il
 > servizio agli altri circoli) il progetto pilota è **300 € una tantum**, più il
 > canone annuo di **200 €** per hosting, mantenimento e GDPR. Le condizioni pilota

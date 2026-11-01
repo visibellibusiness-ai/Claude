@@ -8,7 +8,7 @@ procurati.
 
 Richieste in 3 fasi, dalla più semplice: la fase 1 basta per lanciare.
 
-## Fase 1 — per lanciare subito (pilota Roma Pickleball)
+## Fase 1: per lanciare subito (pilota Roma Pickleball)
 
 1. **Deep link stabile per circolo.** Un URL fisso per ogni circolo su OpenPlay
    (es. `openplay.cloud/club/<id>`) che apra direttamente la sua pagina di
@@ -26,7 +26,7 @@ Richieste in 3 fasi, dalla più semplice: la fase 1 basta per lanciare.
    "powered by" su piattaforma e mini-siti (e viceversa, se vogliono mostrare
    PickleballSpot come partner).
 
-## Fase 2 — per rendere la piattaforma viva
+## Fase 2: per rendere la piattaforma viva
 
 5. **API in lettura: disponibilità campi.** Endpoint che dato un circolo
    restituisce campi e slot liberi (es. prossime 24-48 ore). Con questa,
@@ -42,7 +42,7 @@ Richieste in 3 fasi, dalla più semplice: la fase 1 basta per lanciare.
    prenotazione arriva da un link/widget PickleballSpot, per misurare il valore
    generato e rendicontare la commissione senza report manuali.
 
-## Fase 3 — solo a volumi alti
+## Fase 3: solo a volumi alti
 
 8. **API in scrittura: prenotazione nativa.** Creare la prenotazione da dentro
    PickleballSpot (utente, slot, pagamento). Da valutare solo quando il traffico
@@ -56,7 +56,7 @@ Richieste in 3 fasi, dalla più semplice: la fase 1 basta per lanciare.
 - Valore e durata della sponsorizzazione del progetto
 - Esclusiva o affiancamento ai deep link Playtomic/Wansport per i circoli che già li usano
 - GDPR: finché si usano solo deep link e widget, il titolare del trattamento resta
-  OpenPlay — verificare che il widget abbia la sua informativa; con la fase 3
+  OpenPlay: verificare che il widget abbia la sua informativa; con la fase 3
   servirebbe un accordo ex art. 28
 
 ## Messaggio breve per gli sviluppatori (pronto da inoltrare)

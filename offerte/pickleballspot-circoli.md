@@ -6,13 +6,13 @@ circoli con campi da pickleball una presenza a pagamento, su due assi: la
 
 ## Asse 1: presenza web (4 livelli)
 
-### 1. Base — gratis (per sempre)
+### 1. Base: gratis (per sempre)
 
 Scheda in directory: nome, indirizzo, numero campi, mappa. La copertura totale è
 il valore della piattaforma: più circoli ci sono, più giocatori arrivano, più i
 circoli pagano per emergere. Il gratis è il bacino di upsell.
 
-### 2. Mini-sito — 100 €/anno
+### 2. Mini-sito: 100 €/anno
 
 Il "sì facile", presenza super basica ma vera:
 
@@ -24,7 +24,7 @@ Il "sì facile", presenza super basica ma vera:
 Per i circoli piccoli senza sistema di prenotazione, il form del mini-sito È il
 loro primo canale di prenotazione: gancio di vendita fortissimo.
 
-### 3. Sito a template — 450 € una tantum
+### 3. Sito a template: 450 € una tantum
 
 La via di mezzo: sito vero ma non personalizzato.
 
@@ -35,7 +35,7 @@ La via di mezzo: sito vero ma non personalizzato.
 - Di default su sottodominio PickleballSpot; dominio personalizzato opzionale
   (vedi "Canoni ricorrenti")
 
-### 4. Sito personalizzato — da 695 € una tantum + canone annuo
+### 4. Sito personalizzato: da 695 € una tantum + canone annuo
 
 Il top: layout disegnato sul circolo.
 
@@ -44,7 +44,7 @@ Il top: layout disegnato sul circolo.
 - **+100 € a pagina** oltre le 4
 - Di default su sottodominio PickleballSpot; dominio personalizzato opzionale
   (vedi "Canoni ricorrenti")
-- **Stile su misura del circolo** — non il design system di PickleballSpot (quello
+- **Stile su misura del circolo**: non il design system di PickleballSpot (quello
   resta esclusivo della piattaforma): per ogni cliente del livello 4 si crea uno
   stile web proprio, riportabile anche sui social
 - **In regalo: kit social.** Insieme al sito si consegnano l'impostazione grafica
@@ -78,7 +78,7 @@ Il canone annuo si compone di tre voci, tutte dovute perché i costi sono reali:
 
 1. **Mantenimento sito** (aggiornamenti tecnici; definire cosa include di
    modifiche, es. 2 ore l'anno, il resto a preventivo)
-2. **GDPR compliance** (privacy/cookie policy sempre aggiornate — Andrea ha la
+2. **GDPR compliance** (privacy/cookie policy sempre aggiornate; Andrea ha la
    licenza dello strumento di compliance, il costo per sito è coperto da questa voce)
 3. **Hosting** (+ dominio solo se personalizzato)
 
@@ -99,7 +99,7 @@ Cifre confermate da Andrea (1 novembre 2026):
 
 Il mini-sito (livello 2) resta a 100 €/anno tutto compreso, solo sottodominio.
 
-**Pilota: Roma Pickleball** — sito personalizzato (livello 4) a **300 € (listino
+**Pilota: Roma Pickleball**: sito personalizzato (livello 4) a **300 € (listino
 695 €, confermato da Andrea l'1 novembre 2026)** + canone annuo pieno (200 €/anno
 su sottodominio). In cambio: caso studio, foto e testimonianza da usare per
 vendere agli altri circoli.
@@ -109,8 +109,9 @@ template e sito personalizzato è qualità visiva, quindi si vende facendola ved
 non raccontandola. Il caso studio del pilota va costruito mostrando lo stesso
 circolo a ogni livello:
 
-1. **Scheda avanzata** su PickleballSpot (Roma Pickleball probabilmente ce l'ha
-   già: migliorarla ancora) → cosa ottieni col mini-sito/presenza premium
+1. **Mini-sito** (livello 2, 100 €/anno): la versione base di Roma Pickleball,
+   nello stile PickleballSpot → cosa ottieni col mini-sito. Nome unico per questo
+   livello in tutti i materiali: "mini-sito" (allineati demo e canvas il 1/11/2026)
 2. **Roma Pickleball in uno dei 3 template** → cosa ottieni con 450 €
 3. **Roma Pickleball sito personalizzato super top** → il livello 4, con uno
    stile creato apposta per Roma Pickleball (il design system del restyling resta
@@ -141,7 +142,7 @@ sito personalizzato con stile dedicato rosso pompeiano/oro). Foto segnaposto e
 testi di esempio: si sostituiscono con materiali veri del circolo in produzione.
 
 Ricognizione (31 ottobre 2026): Roma Pickleball risulta in Via Armando Luciani 57
-con 2 campi outdoor in cemento e solo un numero di telefono come contatto — nessun
+con 2 campi outdoor in cemento e solo un numero di telefono come contatto, nessun
 sito né Instagram trovati. Lo stesso numero compare per la Standout Pickleball
 Arena (Via Castore Durante 88, 4 campi indoor): probabilmente stessa gestione, il
 sito del pilota potrebbe coprire entrambe le strutture. Partire da zero è ideale
@@ -149,14 +150,14 @@ per il caso studio: il prima/dopo è massimo.
 
 ## Asse 2: servizi marketing (upsell sui livelli 2-4)
 
-### Pro — 300-500 €/anno
+### Pro: 300-500 €/anno
 
 - Bottone "Prenota" collegato al loro sistema (vedi strategia prenotazioni)
 - Statistiche: visite alla scheda/sito, click, richieste ricevute
 - 2-4 contenuti l'anno sui canali social PickleballSpot (il circolo raccontato)
 - Presenza nella newsletter e negli articoli di zona del sito
 
-### Partner — 1.500-3.000 €/anno (o canone mensile)
+### Partner: 1.500-3.000 €/anno (o canone mensile)
 
 Il gradino che aggancia l'attività di agenzia di Andrea:
 
@@ -199,8 +200,8 @@ Le prime quattro location hanno già le foto coperte (i circoli autorizzano l'us
 
 ## Partnership OpenPlay (Marco)
 
-Prodotto: **openplay.cloud** — analizzato dal vivo l'1 novembre 2026. "Trova.
-Gioca. Cresci.": app italiana che unisce player e circoli di pickleball — match
+Prodotto: **openplay.cloud**, analizzato dal vivo l'1 novembre 2026. "Trova.
+Gioca. Cresci.": app italiana che unisce player e circoli di pickleball: match
 vicini, open play, tornei, community e gestione circoli, webapp Next.js. Punto di
 forza dichiarato: **unica piattaforma italiana con integrazione DUPR certificata**
 (auto-sync dei risultati sul ranking mondiale in tempo reale, matchmaking che
@@ -211,7 +212,7 @@ player della piattaforma, niente prezzi pubblici (contatto diretto). L'asse DUPR
 Pickleball (il pilota) è socio di OpenPlay e Andrea è in contatto diretto con gli
 sviluppatori: le richieste tecniche di integrazione sono in
 `openplay-integrazione.md`. Attenzione al nome: esiste già "OpenPlay"
-(openplay.net), gestionale di prenotazioni sportive britannico ben indicizzato —
+(openplay.net), gestionale di prenotazioni sportive britannico ben indicizzato:
 possibile confusione di brand o questione di marchio da tenere presente.
 
 Accordo da proporre a Marco, su due piani:
@@ -256,11 +257,11 @@ Prezzi proposti (da validare):
 |---|---|---|
 | Kit torneo base | Key visual + locandina + 5-6 grafiche social | a partire da 350 € |
 | Kit torneo completo | Tutto l'elenco sopra | a partire da 700 € |
-| Add-on clienti sito (liv. 3-4) | Sconto 20-30%: lo stile c'è già | — |
+| Add-on clienti sito (liv. 3-4) | Sconto 20-30%: lo stile c'è già | sul prezzo del kit |
 
 I prezzi sono "a partire da" e si dimensionano con l'evento, da valutare col
 circolo: più giornate, più categorie, più sponsor, copertura live e aggiornamento
-grafiche in tempo reale fanno salire il preventivo — un evento enorme vale molto
+grafiche in tempo reale fanno salire il preventivo: un evento enorme vale molto
 di più (1.500-2.500 € e oltre). Il driver del prezzo è la dimensione e la
 visibilità dell'evento, non le ore di lavoro.
 
@@ -278,7 +279,7 @@ Due modalità di vendita, per qualunque gestore di tornei (non solo circoli):
 già dal vivo ai tornei, trasformata in prodotto vendibile a distanza: propone i
 template, il gestore approva, durante il torneo le grafiche escono da sole.
 Quando Andrea non è sul posto, le foto le manda il gestore (WhatsApp o cartella
-Drive condivisa) e il sistema le impagina e pubblica in automatico — il gestore
+Drive condivisa) e il sistema le impagina e pubblica in automatico. Il gestore
 sa che è automatizzato, ma l'automazione la gestisce Andrea, che resta il
 responsabile della qualità. Zero attrito per il cliente.
 
@@ -298,13 +299,13 @@ responsabile della qualità. Zero attrito per il cliente.
   certo sta in avviamento e consulenza
 
 Prerequisito tecnico: i dati risultati leggibili da OpenPlay (API/feed tornei,
-fase 2 di `openplay-integrazione.md`) — un motivo in più per chiuderla.
+fase 2 di `openplay-integrazione.md`), un motivo in più per chiuderla.
 
 Il collaudo del servizio lo fa Andrea su se stesso: tool risultati live per il
 prossimo PPA (vedi `idee/tool-risultati-live-tornei.md`), che diventa la demo da
 mostrare ai circoli.
 
-Argomento di vendita: "le grafiche sono quello che vedono i tuoi sponsor" — il kit
+Argomento di vendita: "le grafiche sono quello che vedono i tuoi sponsor": il kit
 si ripaga con un solo sponsor in più convinto dalla presentazione ordinata.
 Sinergia: i tornei poi finiscono sul calendario di PickleballSpot (feed OpenPlay,
 fase 2 dell'integrazione), quindi ogni torneo vestito bene è anche contenuto per
@@ -312,7 +313,7 @@ la piattaforma.
 
 ## Altri flussi di ricavo (dopo i primi paganti)
 
-- Sponsor di categoria sulla piattaforma (brand racchette/palline: Selkirk, JOOLA…)
+- Sponsor di categoria sulla piattaforma (brand di paddle e palline: Selkirk, JOOLA…)
 - Lead generation per costruttori di campi (un circolo che vuole aggiungere un campo
   vale molto per chi li costruisce)
 - Tornei ed eventi: listing a pagamento, biglietteria/iscrizioni
@@ -330,8 +331,10 @@ la piattaforma.
 
 ## Prossimi passi
 
-1. Contare i circoli in directory su pickleballspot.eu → dimensione reale del mercato.
-2. Validare con 3-5 circoli pilota (anche gratis per 3 mesi) prima di fissare i prezzi.
+1. ✅ Contare i circoli in directory: 176 strutture (1 novembre 2026).
+2. ✅ Prezzi fissati senza piloti gratuiti: listino confermato e un solo pilota
+   a pagamento (Roma Pickleball, 300 €), vedi sopra. Superata l'idea di 3-5
+   piloti gratis per 3 mesi.
 3. Chiudere con Marco integrazione (fase 1 di `openplay-integrazione.md`) e accordo
    economico (sponsor + referral), per iscritto.
 4. Restyling del sito (riferimenti: PPA Tour, Premier Padel per i box contenuti, font
@@ -339,7 +342,10 @@ la piattaforma.
    resta di PickleballSpot; i 3 layout template per i circoli sono neutri e
    personalizzabili (colori, font, loghi), cosa diversa dal design system della
    piattaforma.
-5. ✅ Proposta formale per Roma Pickleball: pronta (1 novembre 2026), vedi
+5. ✅ Proposta formale per Roma Pickleball: pronta (1 novembre 2026), rivista
+   l'1 novembre sera (niente trattini lunghi, "paddle", logo ufficiale nella
+   demo, tolto "il primo in Italia" non verificabile), su Drive come Google Doc
+   nella cartella "Siti web circoli", vedi
    `roma-pickleball-proposta.md` (messaggio WhatsApp + one-pager, vagliati con
    `logica-offerte-commerciali`) e `roma-pickleball-lettera-incarico.md`/`.docx`.
    Prima dell'invio restano i campi aperti elencati in testa alla proposta
