@@ -466,5 +466,21 @@
       "palette": 0
     },
     "media_id": "18077048303734561"
+  },
+  {
+    "date": "20261101-0011",
+    "series": "facts",
+    "topic": "Sleep deprivation effects on the body",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "What happens to your body without sleep",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "17939637525124738"
   }
 ]
