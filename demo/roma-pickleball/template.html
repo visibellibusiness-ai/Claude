@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Roma Pickleball — demo template</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&family=Bitter:wght@400;600;800&family=Jost:wght@400;600;800&display=swap">
+<style>
+  /* Sito a template, layout 1: colori e font del circolo intercambiabili */
+  :root{
+    --club:#1b5e4a; --club-dark:#124033; --club-soft:#e7f0ec;
+    --bg:#fafaf8; --fg:#1c1c1a; --muted:#5b5b56; --line:#e2e2dc;
+    --font:'Outfit',system-ui,sans-serif;
+    color-scheme:light;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);margin:0;font-family:var(--font);
+    padding-left:max(16px,env(safe-area-inset-left,0px));
+    padding-right:max(16px,env(safe-area-inset-right,0px));
+    padding-block:0 48px}
+  .wrap{max-width:980px;margin:0 auto}
+  .demo-bar{background:#1c1c1a;color:#fff;border-radius:0 0 14px 14px;padding:12px 16px;
+    display:flex;flex-wrap:wrap;gap:10px;align-items:center;font-size:.8rem}
+  .demo-bar b{font-weight:600}
+  .demo-bar .group{display:flex;gap:6px;align-items:center;flex-wrap:wrap}
+  .demo-bar button{border:1px solid #555;background:transparent;color:#fff;border-radius:8px;
+    padding:5px 10px;font-size:.75rem;cursor:pointer;font-family:inherit}
+  .demo-bar button[aria-pressed="true"]{background:#fff;color:#1c1c1a;border-color:#fff}
+  .demo-bar .sw{width:22px;height:22px;border-radius:6px;border:2px solid transparent;padding:0}
+  .demo-bar .sw[aria-pressed="true"]{border-color:#fff}
+  .demo-bar a{color:#fff;margin-left:auto;font-size:.78rem}
+  header.site{display:flex;align-items:center;gap:12px;padding-block:20px}
+  .logo-ph{width:42px;height:42px;border-radius:10px;background:var(--club);color:#fff;
+    display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem}
+  header.site .name{font-weight:800;font-size:1.15rem}
+  header.site nav{margin-left:auto;display:flex;gap:18px;font-size:.9rem;flex-wrap:wrap}
+  header.site nav a{color:var(--muted);text-decoration:none;font-weight:600}
+  header.site nav a:hover{color:var(--club)}
+  .hero{background:var(--club);color:#fff;border-radius:20px;padding:48px 36px;
+    display:grid;grid-template-columns:1.2fr 1fr;gap:26px;align-items:center}
+  .hero h1{font-size:clamp(1.8rem,4.5vw,2.8rem);margin:0 0 14px;font-weight:800;line-height:1.1;text-wrap:balance}
+  .hero p{margin:0 0 22px;opacity:.9;line-height:1.6}
+  .hero .btn{display:inline-block;background:#fff;color:var(--club-dark);font-weight:800;
+    text-decoration:none;padding:13px 22px;border-radius:12px}
+  .hero .ph{border-radius:14px;min-height:220px;background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(0,0,0,.25));
+    display:flex;align-items:flex-end;padding:12px;font-size:.75rem}
+  .hero .ph span{background:rgba(0,0,0,.5);padding:4px 10px;border-radius:8px}
+  section{margin-top:44px}
+  h2{font-size:1.5rem;font-weight:800;margin:0 0 6px}
+  .sub{color:var(--muted);margin:0 0 20px}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .fcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;min-width:0}
+  .fcard .ph{min-height:140px;background:linear-gradient(135deg,var(--club-soft),#d8d8d0);
+    display:flex;align-items:flex-end;padding:10px;font-size:.72rem;color:#444}
+  .fcard .ph span{background:#ffffffcc;padding:3px 8px;border-radius:6px}
+  .fcard .body{padding:16px 18px}
+  .fcard h3{margin:0 0 6px;font-size:1.05rem;font-weight:800}
+  .fcard p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+  .contact{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;
+    display:grid;grid-template-columns:1fr 1fr;gap:24px}
+  .contact dl{display:grid;grid-template-columns:auto 1fr;gap:8px 14px;margin:14px 0 0;font-size:.92rem}
+  .contact dt{color:var(--muted)}.contact dd{margin:0;font-weight:600}
+  form{display:flex;flex-direction:column;gap:10px}
+  input,textarea{border:1px solid var(--line);border-radius:10px;padding:11px 12px;
+    font-family:inherit;font-size:.92rem;width:100%;background:var(--bg);color:var(--fg)}
+  input:focus,textarea:focus{outline:2px solid var(--club);outline-offset:1px}
+  form button{background:var(--club);border:0;color:#fff;font-family:inherit;font-weight:800;
+    font-size:.95rem;padding:12px;border-radius:10px;cursor:pointer}
+  .ok{display:none;color:var(--club-dark);font-weight:600;font-size:.9rem;margin:4px 0 0}
+  footer{margin-top:48px;border-top:1px solid var(--line);padding-top:16px;color:var(--muted);font-size:.8rem}
+  @media (max-width:760px){.hero,.contact{grid-template-columns:1fr}.hero{padding:34px 24px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="demo-bar">
+    <b>Demo template</b>
+    <span class="group">Font:
+      <button data-font="'Outfit',system-ui,sans-serif" aria-pressed="true">Outfit</button>
+      <button data-font="'Bitter',Georgia,serif" aria-pressed="false">Bitter</button>
+      <button data-font="'Jost',system-ui,sans-serif" aria-pressed="false">Jost</button>
+    </span>
+    <span class="group">Colore:
+      <button class="sw" style="background:#1b5e4a" data-c="#1b5e4a" data-cd="#124033" data-cs="#e7f0ec" aria-pressed="true" aria-label="Verde"></button>
+      <button class="sw" style="background:#1e3a5f" data-c="#1e3a5f" data-cd="#142942" data-cs="#e7edf4" aria-pressed="false" aria-label="Blu"></button>
+      <button class="sw" style="background:#7a2230" data-c="#7a2230" data-cd="#551822" data-cs="#f3e8ea" aria-pressed="false" aria-label="Bordeaux"></button>
+    </span>
+    <a href="index.html">← Torna al confronto</a>
+  </div>
+
+  <header class="site">
+    <div class="logo-ph">RP</div>
+    <span class="name">Roma Pickleball</span>
+    <nav>
+      <a href="#campi">I campi</a>
+      <a href="#dove">Dove siamo</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <div>
+      <h1>Il pickleball a Roma est, su prenotazione</h1>
+      <p>Due campi outdoor in cemento, aperti tutto l'anno. Prenota il tuo slot
+      su OpenPlay e vieni a giocare: le racchette per provare le trovi qui.</p>
+      <a class="btn" href="https://openplay.cloud" target="_blank" rel="noopener">Prenota un campo</a>
+    </div>
+    <div class="ph"><span>Foto hero: campo in gioco (Drive)</span></div>
+  </div>
+
+  <section id="campi">
+    <h2>I campi</h2>
+    <p class="sub">Testi di esempio: i contenuti definitivi si scrivono col circolo.</p>
+    <div class="cards">
+      <article class="fcard">
+        <div class="ph"><span>Foto campo 1</span></div>
+        <div class="body"><h3>Campo 1 · outdoor</h3>
+        <p>Cemento, illuminazione serale, linee dedicate pickleball.</p></div>
+      </article>
+      <article class="fcard">
+        <div class="ph"><span>Foto campo 2</span></div>
+        <div class="body"><h3>Campo 2 · outdoor</h3>
+        <p>Cemento, a bordo area relax, ideale per i principianti.</p></div>
+      </article>
+      <article class="fcard">
+        <div class="ph"><span>Foto attività</span></div>
+        <div class="body"><h3>Lezioni e open day</h3>
+        <p>Prova gratuita per chi inizia, su appuntamento.</p></div>
+      </article>
+    </div>
+  </section>
+
+  <section id="dove">
+    <h2>Dove siamo</h2>
+    <p class="sub">Via Armando Luciani 57, Roma · mappa interattiva nella versione pubblicata.</p>
+  </section>
+
+  <section id="contatti">
+    <h2>Contatti</h2>
+    <div class="contact">
+      <div>
+        <p class="sub" style="margin:0">Scrivici per informazioni su campi,
+        lezioni e tornei: ti rispondiamo in giornata.</p>
+        <dl>
+          <dt>Telefono</dt><dd>+39 3xx xxx xxxx</dd>
+          <dt>Indirizzo</dt><dd>Via Armando Luciani 57, Roma</dd>
+          <dt>Prenotazioni</dt><dd>OpenPlay</dd>
+        </dl>
+      </div>
+      <form id="f">
+        <input type="text" placeholder="Il tuo nome" aria-label="Il tuo nome">
+        <input type="text" placeholder="Telefono o email" aria-label="Telefono o email">
+        <textarea rows="3" placeholder="Il tuo messaggio" aria-label="Messaggio"></textarea>
+        <button type="submit">Invia</button>
+        <p class="ok" id="ok">Messaggio inviato: ti ricontattiamo a breve. (Demo)</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>Roma Pickleball · sito realizzato con PickleballSpot · privacy e cookie policy</footer>
+</div>
+<script>
+  document.querySelectorAll('[data-font]').forEach(function(b){
+    b.addEventListener('click',function(){
+      document.documentElement.style.setProperty('--font',b.dataset.font);
+      document.querySelectorAll('[data-font]').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+    });
+  });
+  document.querySelectorAll('.sw').forEach(function(b){
+    b.addEventListener('click',function(){
+      var r=document.documentElement.style;
+      r.setProperty('--club',b.dataset.c);
+      r.setProperty('--club-dark',b.dataset.cd);
+      r.setProperty('--club-soft',b.dataset.cs);
+      document.querySelectorAll('.sw').forEach(function(x){x.setAttribute('aria-pressed','false')});
+      b.setAttribute('aria-pressed','true');
+    });
+  });
+  document.getElementById('f').addEventListener('submit',function(e){
+    e.preventDefault();
+    document.getElementById('ok').style.display='block';
+  });
+</script>
+</body>
+</html>
