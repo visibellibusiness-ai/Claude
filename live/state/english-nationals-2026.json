@@ -36,139 +36,143 @@
   "Sun - Mixed Doubles OPEN|quarti",
   "Sun - Mixed Doubles OPEN|semifinali"
  ],
- "queue": [
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-052-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-053-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-054-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-055-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-056-semifinali.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-057-semifinali.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-058-finale.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-059-terzo_posto.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-086-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-087-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-088-semifinali.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-089-semifinali.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-090-finale.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/match-091-terzo_posto.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-ottavi-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-quarti-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-semifinali-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-finale-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-womens-doubles-open-quarti-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-womens-doubles-open-semifinali-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-womens-doubles-open-finale-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1343/match-140-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1343/match-141-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1343/match-142-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1343/fase-sun-mixed-doubles-open-ottavi-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1443/match-140-quarti.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1443/fase-sun-mixed-doubles-open-quarti-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1543/match-140-semifinali.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1543/match-141-semifinali.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1543/fase-sun-mixed-doubles-open-semifinali-1.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1807/match-140-terzo_posto.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1851/match-140-finale.png"
-  },
-  {
-   "tipo": "story",
-   "file": "posts/live/english-nationals-2026/20261101-1851/fase-sun-mixed-doubles-open-finale-1.png"
-  }
- ],
- "published_posts": []
+ "queue": [],
+ "published_posts": [],
+ "coda_archiviata_test": {
+  "motivo": "Story di prova degli English Nationals, archiviate senza pubblicarle (decisione di Andrea, 2/11/2026)",
+  "voci": [
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-052-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-053-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-054-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-055-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-056-semifinali.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-057-semifinali.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-058-finale.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-059-terzo_posto.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-086-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-087-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-088-semifinali.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-089-semifinali.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-090-finale.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/match-091-terzo_posto.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-ottavi-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-quarti-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-semifinali-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-mens-doubles-open-finale-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-womens-doubles-open-quarti-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-womens-doubles-open-semifinali-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261031-2243/fase-sat-womens-doubles-open-finale-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1343/match-140-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1343/match-141-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1343/match-142-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1343/fase-sun-mixed-doubles-open-ottavi-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1443/match-140-quarti.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1443/fase-sun-mixed-doubles-open-quarti-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1543/match-140-semifinali.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1543/match-141-semifinali.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1543/fase-sun-mixed-doubles-open-semifinali-1.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1807/match-140-terzo_posto.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1851/match-140-finale.png"
+   },
+   {
+    "tipo": "story",
+    "file": "posts/live/english-nationals-2026/20261101-1851/fase-sun-mixed-doubles-open-finale-1.png"
+   }
+  ]
+ }
 }
