@@ -83,6 +83,10 @@
     {
       "date": "20261102-1345",
       "followers": 0
+    },
+    {
+      "date": "20261102-1831",
+      "followers": 0
     }
   ],
   "account_log": [
@@ -416,20 +420,22 @@
     {
       "date": "2026-11-02",
       "reach": {
-        "total": 6,
-        "NON_FOLLOWER": 6
+        "total": 9,
+        "NON_FOLLOWER": 9
       },
       "reach_by_product": {
-        "total": 6,
-        "REEL": 6
+        "total": 9,
+        "REEL": 9,
+        "CAROUSEL_CONTAINER": 1
       },
       "views": {
-        "total": 11,
-        "NON_FOLLOWER": 11
+        "total": 14,
+        "NON_FOLLOWER": 14
       },
       "views_by_product": {
-        "total": 11,
-        "REEL": 11
+        "total": 14,
+        "REEL": 13,
+        "CAROUSEL_CONTAINER": 1
       },
       "accounts_engaged": {
         "total": 0

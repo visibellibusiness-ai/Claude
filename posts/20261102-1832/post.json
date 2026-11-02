@@ -1,0 +1,121 @@
+{
+  "reasoning": "The only posts that reached 20+ accounts were 'you'-focused body and brain Reels: spaceflight body (24) and brain illusions (30, best skip rate at 51.7). This post follows that with an evergreen psychology and body topic that everyone can test on themselves, which invites comments and shares. It is a Reel because Reels are the only format getting non-follower distribution so far. It has 5 short slides, as the strategy says. The hook states the claim directly with no question, as version B of the hook test. It pairs with the earlier question-led and list-led brain posts. Mystery music matches the two best performers. Palette 2 has only been used on news posts, so testing it on niche content keeps the palette rotation fair. Trial is off because all reach is non-followers anyway, so there is nothing to protect. Every fact comes from peer-reviewed studies (Blakemore/Wolpert at UCL, Shergill 2003 in Science, Panksepp on rats).",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "psychology",
+  "topic": "Why you can't tickle yourself: brain prediction of self-touch",
+  "hook": "Your brain won't let you tickle yourself",
+  "slides": [
+    {
+      "title": "It predicts your touch",
+      "body": "Your brain forecasts what your own hand will feel and turns the sensation down before it even arrives.",
+      "highlight": "",
+      "image_query": "feather close up",
+      "image_prompt": "A single white feather floating above a glowing translucent brain model on a dark background, soft blue light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1832/img_01.jpg",
+      "credit": "Joao Estevao Andrade de Freitas (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The cerebellum does it",
+      "body": "Brain scans at UCL showed the cerebellum flags self-made touch, so the brain's tickle response barely reacts.",
+      "highlight": "",
+      "image_query": "cerebellum brain model",
+      "image_prompt": "Anatomical model of a human brain with the cerebellum glowing amber, dark moody studio lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1832/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "A robot broke the trick",
+      "body": "When a robot delayed people's own strokes by 200 milliseconds, the touch started to feel ticklish again.",
+      "highlight": "200ms",
+      "image_query": "robotic arm laboratory",
+      "image_prompt": "A small robotic arm holding a soft feather in a dim laboratory, glowing timer light beside it",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1832/img_03.jpg",
+      "credit": "European Space Agency (CC BY-SA 3.0 igo) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Why fights escalate",
+      "body": "Your own push feels weaker than one you receive, so in lab tests people hit back about 40% harder without noticing.",
+      "highlight": "+40%",
+      "image_query": "boxing gloves",
+      "image_prompt": "Two red boxing gloves on a dark floor, one slightly bigger than the other, dramatic spotlight",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1832/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Rats laugh too",
+      "body": "Tickled rats make 50 kHz chirps, too high for us to hear, and chase the tickler for more.",
+      "highlight": "50kHz",
+      "image_query": "pet rat",
+      "image_prompt": "A cute brown rat on a soft blanket with faint glowing sound waves rising from it, warm light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1832/img_05.jpg",
+      "credit": "Eurovaran (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for facts your brain hides",
+  "caption": "Try to tickle yourself right now. Nothing happens, because your brain predicts every move of your own fingers and mutes the feeling before it lands.\n\nThe same trick makes your own push feel weaker than someone else's. In a 2003 study in Science, people asked to match a push hit back about 40% harder each round without noticing. Sources: Blakemore et al. (UCL) and Shergill et al., Science.\n\nAre you super ticklish, or totally immune? 👇\n\n📷 Joao Estevao Andrade de Freitas (Public domain) via wikimedia · European Space Agency (CC BY-SA 3.0 igo) via wikimedia · Eurovaran (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "didyouknow",
+    "brainfacts",
+    "psychologyfacts",
+    "neuroscience",
+    "tickle",
+    "sciencefacts",
+    "humanbody",
+    "funfacts",
+    "mindblown",
+    "learnsomethingnew"
+  ],
+  "sources": [
+    "Blakemore, Wolpert & Frith (1998), Central cancellation of self-produced tickle sensation, Nature Neuroscience",
+    "Blakemore, Frith & Wolpert (1999), Spatio-temporal prediction modulates the perception of self-produced stimuli, Journal of Cognitive Neuroscience",
+    "Shergill et al. (2003), Two eyes for an eye: the neuroscience of force escalation, Science",
+    "Panksepp & Burgdorf (2003), 'Laughing' rats and the evolutionary antecedents of human joy?, Physiology & Behavior"
+  ],
+  "image_query": "white feather dark background",
+  "image_prompt": "A single white feather hovering in a dark room above a softly glowing brain model, mysterious blue and amber lighting",
+  "design": {
+    "palette": 2,
+    "cover_label": "Brain science",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts your brain won't expect"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261102-1832/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "Try to tickle yourself right now. Nothing happens, because your brain predicts every move of your own fingers and mutes the feeling before it lands.\n\nThe same trick makes your own push feel weaker than someone else's. In a 2003 study in Science, people asked to match a push hit back about 40% harder each round without noticing. Sources: Blakemore et al. (UCL) and Shergill et al., Science.\n\nAre you super ticklish, or totally immune? 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "left",
+      "right",
+      "blur",
+      "left",
+      "scale",
+      "right",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "flash",
+      "glitch",
+      "dip",
+      "flash"
+    ]
+  },
+  "music_used": "mystery"
+}
