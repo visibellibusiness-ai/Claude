@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 02/11/2026 alle 00:10 UTC. Follower: 0.
+Aggiornato il 02/11/2026 alle 13:46 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 222, di cui da non follower 222 (100%).
+- Visualizzazioni: 323, di cui da non follower 323 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 01/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 02/11/2026 | 6 | 6 | 11 | 11 | 0 | 0 |
+| 01/11/2026 | 82 | 82 | 90 | 90 | 0 | 0 |
 | 31/10/2026 | 109 | 109 | 125 | 125 | 8 | 0 |
 | 30/10/2026 | 30 | 30 | 31 | 31 | 2 | 0 |
 | 29/10/2026 | 26 | 26 | 36 | 36 | 5 | 5 |
@@ -22,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 31/10/2026 00:14 | reel | A shrimp that punches 2,500x its body we | 7 | 7 | 0,0% | 0,0% | 28,6% | n/d | copertura sotto 10 |
 | 30/10/2026 18:19 | reel | Ocean facts that sound made up | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 30/10/2026 13:41 | carousel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 30/10/2026 13:41 | reel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
@@ -56,12 +58,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 30/10/2026 00:13 | 5 ways your brain lies to you daily | 6.977 | 51.7 |
 | 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
 | 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
+| 31/10/2026 00:14 | A shrimp that punches 2,500x its body we | 5.194 | 85.7 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 9 | 9 | 88,9% | 0,0% |
-| reel | 9 | 69 | 8,7% | 0,0% |
+| reel | 10 | 76 | 7,9% | 0,0% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

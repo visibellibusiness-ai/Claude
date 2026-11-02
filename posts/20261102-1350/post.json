@@ -1,0 +1,210 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-02",
+  "hook": "One day left: who will control Congress?",
+  "reel_hook": "Tomorrow, America picks who runs Congress",
+  "slides": [
+    {
+      "title": "US midterms are tomorrow",
+      "highlight": "435",
+      "image_query": "us capitol building",
+      "image_prompt": "White domed capitol building at dawn with red and blue ballot boxes on the steps and flag bunting, empty voting booths nearby",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "All 435 House seats and 35 Senate seats vote Tuesday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It decides who controls Congress for Trump's final two years."
+        ],
+        [
+          "FOR YOU",
+          "Results aren't final on election night, so expect updates until certification."
+        ]
+      ],
+      "body": "All 435 House seats and 35 Senate seats vote Tuesday. It decides who controls Congress for Trump's final two years. Results aren't final on election night, so expect updates until certification.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1350/img_01.jpg",
+      "credit": "Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Oil drops on Iran deal hopes",
+      "highlight": "-4.2%",
+      "image_query": "oil tanker sea",
+      "image_prompt": "Oil tanker sailing through a calm narrow strait at sunrise, barrels on the dock, a falling red arrow made of rope on the water",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran-Qatar talks ended with a draft US deal circulating."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Brent oil fell 4.2% on hopes Hormuz could reopen."
+        ],
+        [
+          "FOR YOU",
+          "Fuel prices could ease if a deal holds, but nothing is signed yet."
+        ]
+      ],
+      "body": "Iran-Qatar talks ended with a draft US deal circulating. Brent oil fell 4.2% on hopes Hormuz could reopen. Fuel prices could ease if a deal holds, but nothing is signed yet.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1350/img_02.jpg",
+      "credit": "Frans Berkelaar (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Bulgaria's first woman president",
+      "highlight": "57.58%",
+      "image_query": "",
+      "image_prompt": "White, green and red Bulgarian flag waving above a wooden ballot box in an empty marble hall, soft morning light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Acting President Iliana Iotova won the runoff with 57.58%."
+        ],
+        [
+          "WHY IT MATTERS",
+          "She's Bulgaria's first elected female head of state."
+        ],
+        [
+          "FOR YOU",
+          "Expect her to push for a negotiated end to the Ukraine war."
+        ]
+      ],
+      "body": "Acting President Iliana Iotova won the runoff with 57.58%. She's Bulgaria's first elected female head of state. Expect her to push for a negotiated end to the Ukraine war.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1350/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Jet crash in Florida kills nine",
+      "highlight": "9",
+      "image_query": "airport runway lights dusk",
+      "image_prompt": "Empty airport runway at dusk with soft blue runway lights fading into the distance, calm quiet sky, somber mood",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A Bahamas-bound Learjet 60 crashed in Greenacres, Florida."
+        ],
+        [
+          "WHY IT MATTERS",
+          "All nine aboard died; the cause is not yet known."
+        ],
+        [
+          "FOR YOU",
+          "The FAA and NTSB will investigate; no cause has been confirmed yet."
+        ]
+      ],
+      "body": "A Bahamas-bound Learjet 60 crashed in Greenacres, Florida. All nine aboard died; the cause is not yet known. The FAA and NTSB will investigate; no cause has been confirmed yet.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1350/img_04.jpg",
+      "credit": "Bill Abbott (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "F1's youngest champion ever",
+      "highlight": "20",
+      "image_query": "formula one race car",
+      "image_prompt": "Silver Formula One car parked on a sunlit race track with a golden trophy beside it and Italian flag colors in the stands",
+      "label": "SPORT",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Kimi Antonelli, 20, clinched the F1 title in Mexico City."
+        ],
+        [
+          "WHY IT MATTERS",
+          "He's Italy's first world champion since Alberto Ascari in 1953."
+        ],
+        [
+          "FOR YOU",
+          "Italy's 73-year wait is over, and Verstappen won the race by 0.7s."
+        ]
+      ],
+      "body": "Kimi Antonelli, 20, clinched the F1 title in Mexico City. He's Italy's first world champion since Alberto Ascari in 1953. Italy's 73-year wait is over, and Verstappen won the race by 0.7s.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-1350/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🗳️ US midterms are tomorrow: all 435 House seats and 35 Senate seats. Results aren't final on election night.\n🛢️ Iran talks in Qatar end with a draft deal circulating; Brent oil drops 4.2%. Fuel could ease if a deal holds.\n🇧🇬 Iliana Iotova becomes Bulgaria's first elected female president.\n✈️ A Learjet crash in Florida kills all nine aboard; the cause is under investigation.\n🏎️ Kimi Antonelli, 20, is F1's youngest-ever world champion.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Diliff (CC BY 2.5) via wikimedia · Martin Falbisoner (CC BY-SA 3.0) via wikimedia · Frans Berkelaar (CC BY 2.0) via wikimedia · Bill Abbott (CC BY-SA 2.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "midterms",
+    "uspolitics",
+    "iran",
+    "oilprices",
+    "bulgaria",
+    "formula1",
+    "antonelli",
+    "worldnews",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.aljazeera.com/news/2026/11/1/us-midterms-2-days-to-go-what-polls-say-as-trump-el-sayed-hit-the-trail",
+    "https://www.cbc.ca/news/world/midterm-races-to-watch-senate-house-9.7395306",
+    "https://bipartisanpolicy.org/article/the-2026-midterms-key-dates-and-events/",
+    "https://www.gmanetwork.com/news/topstories/content/1008015/iranians-have-left-doha-talks-draft-proposal-for-us-deal-being-circulated-official-says/story/",
+    "https://macaubusiness.com/oil-prices-sink-on-us-iran-war-hope-ahead-of-midterms",
+    "https://qz.com/oil-prices-fall-iran-peace-talks-supply-fears-110226",
+    "https://www.aljazeera.com/news/liveblog/2026/11/1/iran-war-live-araghchi-says-talks-under-way-on-2-day-plan-to-reopen-hormuz",
+    "https://www.usnews.com/news/world/articles/2026-11-02/bulgarias-iotova-wins-presidential-runoff-near-final-results-show",
+    "https://www.aljazeera.com/news/2026/11/1/bulgarian-president-yotova-leads-runoff-exit-polls-show",
+    "https://www.euronews.com/2026/11/01/bulgarias-acting-president-yotova-leads-in-exit-polls-of-runoff-election",
+    "https://abc7news.com/post/palm-beach-plane-crash-today-learjet-60-florida-causes-massive-fireball-bahamas-bound-jet-carried-9-people/20006401/",
+    "https://abcnews.com/US/learjet-9-aboard-crashes-palm-beach-florida-faa/story?id=137753599",
+    "https://www.nbcmiami.com/news/local/officials-respond-to-fiery-aircraft-incident-in-palm-beach-county/3881532/",
+    "https://www.formula1.com/en/latest/article/antonelli-crowned-youngest-ever-f1-champion-as-verstappen-wins-eventful-mexico-city-grand-prix.xpMMeef0KmRURs9IDs3LH",
+    "https://www.aljazeera.com/sports/2026/11/2/kimi-antonelli-becomes-formula-ones-youngest-world-champion-in-mexico-city",
+    "https://www.espn.com/f1/story/_/id/50250037/kimi-antonelli-youngest-f1-world-champion-2026-mexico-city-grand-prix"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 02 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "us capitol building",
+  "image_prompt": "White domed capitol building at dawn with red and blue ballot boxes on its steps, an hourglass nearly empty in front, flag bunting",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261102-1350/img_cover.jpg",
+  "cover_credit": "Diliff (CC BY 2.5) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🗳️ US midterms are tomorrow: all 435 House seats and 35 Senate seats. Results aren't final on election night.\n🛢️ Iran talks in Qatar end with a draft deal circulating; Brent oil drops 4.2%. Fuel could ease if a deal holds.\n🇧🇬 Iliana Iotova becomes Bulgaria's first elected female president.\n✈️ A Learjet crash in Florida kills all nine aboard; the cause is under investigation.\n🏎️ Kimi Antonelli, 20, is F1's youngest-ever world champion.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "left",
+      "right",
+      "blur",
+      "left",
+      "scale",
+      "right",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "flash",
+      "glitch",
+      "dip",
+      "flash"
+    ]
+  },
+  "music_used": "mystery"
+}
