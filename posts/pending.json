@@ -1,0 +1,33 @@
+{
+  "date": "20261102-0011",
+  "series": "facts",
+  "format": "reel",
+  "trial": false,
+  "music": "documentary",
+  "theme_index": 20,
+  "topic": "False memories: reconsolidation, leading words, planted memories, flashbulb confidence",
+  "category": "psychology",
+  "hook": "Your memories change every time you recall them",
+  "slides": 5,
+  "design": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "images": [
+    "posts/20261102-0011/cover.jpg"
+  ],
+  "story": "posts/20261102-0011/story.jpg",
+  "ai": true,
+  "story_ai": true,
+  "caption": "Your memories are not recordings. Every time you recall one, your brain rebuilds it and can save it back with small changes. In one classic study, a single word, 'smashed' instead of 'hit', made people remember broken glass that was never there.\n\nThis is not just a lab curiosity. According to the Innocence Project, eyewitness misidentification played a role in about 69% of US wrongful convictions later overturned by DNA evidence. (Sources: Loftus & Palmer 1974, Loftus & Pickrell 1995, Talarico & Rubin 2003)\n\nWhat's one memory you're 100% sure about, but now you're not so sure?\n\n📷 Shuets Udono (CC BY-SA 2.0) via wikimedia · Sudzie (CC BY-SA 4.0) via wikimedia · WikiPediaAid (CC BY-SA 4.0) via wikimedia\n\n#psychology #memory #falsememories #brainfacts #didyouknow #mindblown #neuroscience #sciencefacts #funfacts #learnsomethingnew #psychologyfacts #youdidnotknow",
+  "carousel_caption": "Your memories are not recordings. Every time you recall one, your brain rebuilds it and can save it back with small changes. In one classic study, a single word, 'smashed' instead of 'hit', made people remember broken glass that was never there.\n\nThis is not just a lab curiosity. According to the Innocence Project, eyewitness misidentification played a role in about 69% of US wrongful convictions later overturned by DNA evidence. (Sources: Loftus & Palmer 1974, Loftus & Pickrell 1995, Talarico & Rubin 2003)\n\nWhat's one memory you're 100% sure about, but now you're not so sure?\n\nCover: Your memories change every time you recall them\n🎨 AI-generated image\n\n1/5 Recall rewrites it\nEach time you remember something, your brain rebuilds the memory and can store it back slightly changed.\n🎨 AI-generated image\n\n2/5 One word changes it (1974)\nPeople asked how fast cars 'smashed' into each other guessed higher speeds than those asked how fast they 'hit'.\n📷 Shuets Udono (CC BY-SA 2.0) via wikimedia\n\n3/5 Glass that never was (32%)\nA week later, 32% of the 'smashed' group remembered broken glass. The crash film showed none.\n📷 Sudzie (CC BY-SA 4.0) via wikimedia\n\n4/5 Planted memories (1 in 4)\nIn a 1995 study, about 1 in 4 adults came to remember being lost in a mall as kids. It never happened.\n📷 WikiPediaAid (CC BY-SA 4.0) via wikimedia\n\n5/5 Confidence lies too\nAfter 9/11, people's memories of that day drifted like ordinary memories, yet they stayed just as sure they were right.\n🎨 AI-generated image\n\n#psychology #memory #falsememories #brainfacts #didyouknow #mindblown #neuroscience #sciencefacts #funfacts #learnsomethingnew #psychologyfacts #youdidnotknow",
+  "slide_captions": [
+    "Your memories change every time you recall them\n🎨 AI-generated image",
+    "1/5 Recall rewrites it\nEach time you remember something, your brain rebuilds the memory and can store it back slightly changed.\n🎨 AI-generated image",
+    "2/5 One word changes it (1974)\nPeople asked how fast cars 'smashed' into each other guessed higher speeds than those asked how fast they 'hit'.\n📷 Shuets Udono (CC BY-SA 2.0) via wikimedia",
+    "3/5 Glass that never was (32%)\nA week later, 32% of the 'smashed' group remembered broken glass. The crash film showed none.\n📷 Sudzie (CC BY-SA 4.0) via wikimedia",
+    "4/5 Planted memories (1 in 4)\nIn a 1995 study, about 1 in 4 adults came to remember being lost in a mall as kids. It never happened.\n📷 WikiPediaAid (CC BY-SA 4.0) via wikimedia",
+    "5/5 Confidence lies too\nAfter 9/11, people's memories of that day drifted like ordinary memories, yet they stayed just as sure they were right.\n🎨 AI-generated image",
+    "Follow so you never miss the next one"
+  ]
+}

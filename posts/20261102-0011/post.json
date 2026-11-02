@@ -1,0 +1,124 @@
+{
+  "reasoning": "The two best performers so far are the psychology reel (reach 30, 2 likes, lowest skip rate at 51.7) and the 'body in space' reel (reach 24). Both are evergreen niche reels with mystery music, so I'm staying in psychology with a new topic: false and rewritten memories. It is personal, a little unsettling and easy to share. I chose a reel because reels are the only format that has reached more than 10 people so far, and I kept it to 5 slides as the strategy says. This is also version B of the reel hook test: the hook states the shocking claim directly instead of asking a question, so it can be compared with the psychology reel. I kept the mystery music and palette 3 (the same as the best psychology reel) so the hook is the main thing that changes. I did not make it a trial reel: with 0 followers all reach already comes from non-followers, so a trial adds nothing yet. Every fact comes from well-documented studies: Loftus & Palmer 1974, Loftus & Pickrell 1995, Talarico & Rubin 2003 and research on memory reconsolidation.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "psychology",
+  "topic": "False memories: reconsolidation, leading words, planted memories, flashbulb confidence",
+  "hook": "Your memories change every time you recall them",
+  "slides": [
+    {
+      "title": "Recall rewrites it",
+      "body": "Each time you remember something, your brain rebuilds the memory and can store it back slightly changed.",
+      "highlight": "",
+      "image_query": "",
+      "image_prompt": "A glass sculpture of a human brain cracked into pieces, glowing threads of light stitching the fragments back together on a dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-0011/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "One word changes it",
+      "body": "People asked how fast cars 'smashed' into each other guessed higher speeds than those asked how fast they 'hit'.",
+      "highlight": "1974",
+      "image_query": "car collision crash",
+      "image_prompt": "Two vintage toy cars touching bumpers on a dark table under a dramatic spotlight, shards of light scattered around them",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-0011/img_02.jpg",
+      "credit": "Shuets Udono (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Glass that never was",
+      "body": "A week later, 32% of the 'smashed' group remembered broken glass. The crash film showed none.",
+      "highlight": "32%",
+      "image_query": "broken glass shards",
+      "image_prompt": "Shards of broken glass floating in dark empty space, half transparent like a fading dream, soft blue light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-0011/img_03.jpg",
+      "credit": "Sudzie (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Planted memories",
+      "body": "In a 1995 study, about 1 in 4 adults came to remember being lost in a mall as kids. It never happened.",
+      "highlight": "1 in 4",
+      "image_query": "empty shopping mall",
+      "image_prompt": "An empty, dimly lit shopping mall corridor seen through fog, a small lost red balloon floating near the ceiling",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-0011/img_04.jpg",
+      "credit": "WikiPediaAid (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Confidence lies too",
+      "body": "After 9/11, people's memories of that day drifted like ordinary memories, yet they stayed just as sure they were right.",
+      "highlight": "",
+      "image_query": "",
+      "image_prompt": "An old photograph slowly dissolving into dust at one corner, resting on a dark wooden desk under a single warm lamp",
+      "image": "/home/runner/work/Claude/Claude/posts/20261102-0011/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "Your memories are not recordings. Every time you recall one, your brain rebuilds it and can save it back with small changes. In one classic study, a single word, 'smashed' instead of 'hit', made people remember broken glass that was never there.\n\nThis is not just a lab curiosity. According to the Innocence Project, eyewitness misidentification played a role in about 69% of US wrongful convictions later overturned by DNA evidence. (Sources: Loftus & Palmer 1974, Loftus & Pickrell 1995, Talarico & Rubin 2003)\n\nWhat's one memory you're 100% sure about, but now you're not so sure?\n\n📷 Shuets Udono (CC BY-SA 2.0) via wikimedia · Sudzie (CC BY-SA 4.0) via wikimedia · WikiPediaAid (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "psychology",
+    "memory",
+    "falsememories",
+    "brainfacts",
+    "didyouknow",
+    "mindblown",
+    "neuroscience",
+    "sciencefacts",
+    "funfacts",
+    "learnsomethingnew",
+    "psychologyfacts",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Loftus, E. F., & Palmer, J. C. (1974). Reconstruction of automobile destruction. Journal of Verbal Learning and Verbal Behavior, 13(5), 585-589.",
+    "Loftus, E. F., & Pickrell, J. E. (1995). The formation of false memories. Psychiatric Annals, 25(12), 720-725.",
+    "Talarico, J. M., & Rubin, D. C. (2003). Confidence, not consistency, characterizes flashbulb memories. Psychological Science, 14(5), 455-461.",
+    "Nader, K., Schafe, G. E., & LeDoux, J. E. (2000). Fear memories require protein synthesis in the amygdala for reconsolidation after retrieval. Nature, 406, 722-726.",
+    "Innocence Project: Eyewitness Identification Reform (innocenceproject.org)"
+  ],
+  "image_query": "",
+  "image_prompt": "A vintage photograph of a memory dissolving into glowing particles that drift and rearrange themselves into a slightly different picture, dark moody background",
+  "design": {
+    "palette": 3,
+    "cover_label": "Psychology",
+    "swipe_text": "Keep watching",
+    "follow_line": "Daily facts your brain will misremember"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261102-0011/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "Your memories are not recordings. Every time you recall one, your brain rebuilds it and can save it back with small changes. In one classic study, a single word, 'smashed' instead of 'hit', made people remember broken glass that was never there.\n\nThis is not just a lab curiosity. According to the Innocence Project, eyewitness misidentification played a role in about 69% of US wrongful convictions later overturned by DNA evidence. (Sources: Loftus & Palmer 1974, Loftus & Pickrell 1995, Talarico & Rubin 2003)\n\nWhat's one memory you're 100% sure about, but now you're not so sure?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "rise",
+      "right",
+      "rise",
+      "right",
+      "rise",
+      "blur",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "flash",
+      "punch",
+      "dip",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}

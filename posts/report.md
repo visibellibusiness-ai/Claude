@@ -1,6 +1,6 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 01/11/2026 alle 13:27 UTC. Follower: 0.
+Aggiornato il 02/11/2026 alle 00:10 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
@@ -15,7 +15,6 @@ Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 o
 | 29/10/2026 | 26 | 26 | 36 | 36 | 5 | 5 |
 | 28/10/2026 | 3 | 3 | 13 | 13 | 6 | 6 |
 | 27/10/2026 | 8 | 8 | 17 | 17 | 3 | 3 |
-| 26/10/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,9 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 30/10/2026 18:19 | reel | Ocean facts that sound made up | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
+| 30/10/2026 13:41 | carousel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
+| 30/10/2026 13:41 | reel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 30/10/2026 00:13 | reel | 5 ways your brain lies to you daily | 30 | 31 | 0,0% | 0,0% | 6,7% | n/d |  |
 | 29/10/2026 18:24 | reel | What happens to your body in space | 24 | 25 | 4,2% | 0,0% | 0,0% | n/d |  |
 | 29/10/2026 13:44 | carousel | Why was this train allowed to move? | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
@@ -52,12 +54,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 29/10/2026 13:44 | Why was this train allowed to move? | 2.387 | 100 |
 | 29/10/2026 18:24 | What happens to your body in space | 4.568 | 79.2 |
 | 30/10/2026 00:13 | 5 ways your brain lies to you daily | 6.977 | 51.7 |
+| 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
+| 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 8 | 9 | 88,9% | 0,0% |
-| reel | 7 | 67 | 9,0% | 0,0% |
+| carousel | 9 | 9 | 88,9% | 0,0% |
+| reel | 9 | 69 | 8,7% | 0,0% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
