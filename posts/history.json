@@ -558,5 +558,21 @@
       "palette": 3
     },
     "media_id": "18469755118187108"
+  },
+  {
+    "date": "20261102-1832",
+    "series": "facts",
+    "topic": "Why you can't tickle yourself: brain prediction of self-touch",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "psychology",
+    "hook": "Your brain won't let you tickle yourself",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18207479392373325"
   }
 ]
