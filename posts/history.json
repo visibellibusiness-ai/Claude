@@ -530,5 +530,21 @@
       "palette": 1
     },
     "media_id": "17939637525124738"
+  },
+  {
+    "date": "20261102-0011",
+    "series": "facts",
+    "topic": "False memories: reconsolidation, leading words, planted memories, flashbulb confidence",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "psychology",
+    "hook": "Your memories change every time you recall them",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "18469755118187108"
   }
 ]
