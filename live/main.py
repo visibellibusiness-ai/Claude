@@ -27,7 +27,7 @@ from live.adapters import get_adapter
 from live.model import new_finished
 
 ROOT = Path(__file__).resolve().parent.parent
-CONFIG = ROOT / "live" / "torneo.json"
+CONFIG = ROOT / (os.environ.get("LIVE_CONFIG") or "live/torneo.json")
 STATE_DIR = ROOT / "live" / "state"
 OUT_DIR = ROOT / "posts" / "live"
 

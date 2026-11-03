@@ -1,0 +1,11 @@
+{
+  "attivo": false,
+  "adapter": "ppatour",
+  "base_url": "https://www.ppatour.com/api/scores/?event=ad262b1f-ea62-4dcc-af59-69732a97107c",
+  "tournament": "2026 Pickleball World Championships",
+  "slug": "ppa-worlds-2026",
+  "events": ["Mixed Doubles"],
+  "match_stories": ["quarti", "semifinali", "finale", "terzo posto"],
+  "phase_stories": ["ottavi", "quarti", "semifinali", "finale"],
+  "handles": {}
+}

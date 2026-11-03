@@ -8,4 +8,8 @@ def get_adapter(name: str):
         from live.adapters import picklebook
 
         return picklebook
+    if name == "ppatour":
+        from live.adapters import ppatour
+
+        return ppatour
     raise ValueError(f"Adapter sconosciuto: {name}")

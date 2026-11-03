@@ -10,6 +10,10 @@ on:
         description: "Genera le grafiche senza pubblicare su Instagram"
         type: boolean
         default: false
+      config:
+        description: "File di configurazione del torneo (default live/torneo.json)"
+        type: string
+        default: "live/torneo.json"
 
 permissions:
   contents: write
@@ -45,6 +49,8 @@ jobs:
 
       - name: Scraping e grafiche
         if: steps.attivo.outputs.ready == 'true'
+        env:
+          LIVE_CONFIG: ${{ inputs.config }}
         run: python -m live.main run
 
       - name: Metti online le immagini
