@@ -1,0 +1,123 @@
+{
+  "reasoning": "The strongest post so far is a human body reel with a 'what happens to your body' hook. 'Without sleep' reached 103 accounts and earned the page's first 2 shares. Psychology reels came second (30 reach). Fear combines both categories, is evergreen and is easy to relate to. That stays inside the niche, in line with the plan to cut news. I'm keeping the reel format and 5 slides. Each slide states the claim directly, for the hook test. The music is mystery to suit the topic. Palette 4 continues the rotation, since it has barely been tested. The caption question asks for a personal story to test whether that drives comments.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Fear response: amygdala, adrenaline, digestion, goosebumps, time slowing",
+  "hook": "What fear does to your body in seconds",
+  "slides": [
+    {
+      "title": "Your brain reacts first",
+      "body": "Your amygdala flags danger before the thinking part of your brain even knows what it saw.",
+      "highlight": "",
+      "image_query": "dark forest path night",
+      "image_prompt": "A dark forest path at night with glowing red warning light deep between the trees, eerie fog, cinematic",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1826/img_01.jpg",
+      "credit": "Brenda Clarke from Blaxland, Australia (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Adrenaline floods in",
+      "body": "Adrenaline makes your heart pound and your breathing speed up, sending extra oxygen to your muscles.",
+      "highlight": "",
+      "image_query": "anatomical heart model",
+      "image_prompt": "A glowing anatomical heart surrounded by electric sparks and rushing red light streams, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1826/img_02.jpg",
+      "credit": "Dguendel (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your gut shuts down",
+      "body": "Blood is pulled away from your stomach, which is why fear feels like butterflies or nausea.",
+      "highlight": "",
+      "image_query": "butterflies dark background",
+      "image_prompt": "Dozens of dark moths fluttering inside a glass jar on a shadowy table, dramatic side lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1826/img_03.jpg",
+      "credit": "ESA/Webb, NASA & CSA, K. Noll, J. Kastner, M. Zamani (ESA/Webb) (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Goosebumps appear",
+      "body": "Tiny muscles raise your hairs, a leftover reflex that once made furry ancestors look bigger.",
+      "highlight": "",
+      "image_query": "cat fur standing up",
+      "image_prompt": "Close-up of a frightened black cat with its fur standing on end, arched back, moody lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1826/img_04.jpg",
+      "credit": "Sheepwalrus (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Time seems to slow",
+      "body": "Fear makes your brain store denser memories, so scary moments feel longer when you remember them.",
+      "highlight": "",
+      "image_query": "hourglass sand dark",
+      "image_prompt": "An hourglass with sand frozen mid-fall, floating grains suspended in the air, dark dramatic background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1826/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "Fear hits your body before you even know what scared you. Your amygdala sounds the alarm first, and adrenaline handles the rest in seconds.\n\nOne strange bonus: in a 2007 experiment, people who free-fell 31 metres into a net felt the drop lasted about a third longer than it did. Their brains weren't slowing time. They were just recording more memory.\n\nWhat's a scary moment you still remember in slow motion?\n\n📷 Dragan (CC BY 3.0) via wikimedia · Brenda Clarke from Blaxland, Australia (CC BY 2.0) via wikimedia · Dguendel (CC BY 4.0) via wikimedia · ESA/Webb, NASA & CSA, K. Noll, J. Kastner, M. Zamani (ESA/Webb) (CC BY 4.0) via wikimedia · Sheepwalrus (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "humanbody",
+    "fear",
+    "adrenaline",
+    "psychology",
+    "brainfacts",
+    "sciencefacts",
+    "didyouknow",
+    "funfacts",
+    "biology",
+    "neuroscience",
+    "learnsomethingnew",
+    "factsdaily"
+  ],
+  "sources": [
+    "Harvard Health Publishing: Understanding the stress response",
+    "LeDoux J. (2003) The emotional brain, fear, and the amygdala, Cellular and Molecular Neurobiology",
+    "Stetson C., Fiesta M., Eagleman D. (2007) Does time really slow down during a frightening event? PLoS ONE",
+    "Cleveland Clinic: Goosebumps (piloerection)"
+  ],
+  "image_query": "dark hallway shadow",
+  "image_prompt": "A long dark hallway with a single flickering light and a door slightly open at the end, ominous shadows, cinematic suspense",
+  "design": {
+    "palette": 4,
+    "cover_label": "Human body",
+    "swipe_text": "Watch this",
+    "follow_line": "Weird science about you, every day"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261103-1826/img_cover.jpg",
+  "cover_credit": "Dragan (CC BY 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Fear hits your body before you even know what scared you. Your amygdala sounds the alarm first, and adrenaline handles the rest in seconds.\n\nOne strange bonus: in a 2007 experiment, people who free-fell 31 metres into a net felt the drop lasted about a third longer than it did. Their brains weren't slowing time. They were just recording more memory.\n\nWhat's a scary moment you still remember in slow motion?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "blur",
+      "rise",
+      "left",
+      "blur",
+      "right",
+      "left",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "punch",
+      "flash",
+      "punch",
+      "glitch"
+    ]
+  },
+  "music_used": "documentary"
+}
