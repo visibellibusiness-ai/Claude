@@ -1,1 +1,28 @@
-{"published_matches": [], "published_phases": [], "published_posts": [], "queue": []}
+{
+ "published_matches": [
+  "Women's Doubles|8b3db68f-30c7-4658-950b-4e7f9f9e4ea6",
+  "Women's Doubles|a93b561c-0e73-4474-9b35-2c6e48cc887c",
+  "Women's Doubles|c9ced6a9-2679-4449-b91e-b945aaa0bbeb",
+  "Women's Doubles|eed55f39-cbbe-4c55-9aad-603a794930c3"
+ ],
+ "published_phases": [],
+ "published_posts": [],
+ "queue": [
+  {
+   "tipo": "story",
+   "file": "posts/live/ppa-worlds-2026-prova/20261103-1530/match-000-quarti.png"
+  },
+  {
+   "tipo": "story",
+   "file": "posts/live/ppa-worlds-2026-prova/20261103-1530/match-001-quarti.png"
+  },
+  {
+   "tipo": "story",
+   "file": "posts/live/ppa-worlds-2026-prova/20261103-1530/match-002-quarti.png"
+  },
+  {
+   "tipo": "story",
+   "file": "posts/live/ppa-worlds-2026-prova/20261103-1530/match-003-quarti.png"
+  }
+ ]
+}
