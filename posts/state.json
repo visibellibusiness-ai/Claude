@@ -91,6 +91,10 @@
     {
       "date": "20261103-0013",
       "followers": 0
+    },
+    {
+      "date": "20261103-1343",
+      "followers": 0
     }
   ],
   "account_log": [
@@ -424,22 +428,22 @@
     {
       "date": "2026-11-02",
       "reach": {
-        "total": 54,
-        "NON_FOLLOWER": 54
-      },
-      "reach_by_product": {
-        "total": 54,
-        "REEL": 54,
-        "CAROUSEL_CONTAINER": 1
-      },
-      "views": {
         "total": 67,
         "NON_FOLLOWER": 67
       },
-      "views_by_product": {
+      "reach_by_product": {
         "total": 67,
-        "REEL": 66,
+        "REEL": 67,
         "CAROUSEL_CONTAINER": 1
+      },
+      "views": {
+        "total": 83,
+        "NON_FOLLOWER": 83
+      },
+      "views_by_product": {
+        "total": 83,
+        "CAROUSEL_CONTAINER": 1,
+        "REEL": 82
       },
       "accounts_engaged": {
         "total": 0
@@ -449,6 +453,44 @@
       },
       "likes": {
         "total": 0
+      },
+      "comments": {
+        "total": 0
+      },
+      "saves": {
+        "total": 0
+      },
+      "shares": {
+        "total": 0
+      }
+    },
+    {
+      "date": "2026-11-03",
+      "reach": {
+        "total": 6,
+        "NON_FOLLOWER": 6
+      },
+      "reach_by_product": {
+        "total": 6,
+        "CAROUSEL_CONTAINER": 2,
+        "REEL": 4
+      },
+      "views": {
+        "total": 6,
+        "NON_FOLLOWER": 6
+      },
+      "views_by_product": {
+        "total": 6,
+        "REEL": 6
+      },
+      "accounts_engaged": {
+        "total": 1
+      },
+      "total_interactions": {
+        "total": 1
+      },
+      "likes": {
+        "total": 1
       },
       "comments": {
         "total": 0

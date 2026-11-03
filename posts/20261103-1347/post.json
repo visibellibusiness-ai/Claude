@@ -1,0 +1,214 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-03",
+  "hook": "America votes: who will control Congress?",
+  "reel_hook": "America votes today. Here's what's at stake.",
+  "slides": [
+    {
+      "title": "Congress up for grabs",
+      "highlight": "435",
+      "image_query": "voting booth",
+      "image_prompt": "Rows of empty voting booths beside a ballot box filled with red and blue ballots, soft morning light through tall windows.",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Americans vote today for all 435 House seats."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Results decide Congress for Trump's last two years."
+        ],
+        [
+          "FOR YOU",
+          "Polls suggest Democrats lead; Trump predicts Republicans keep both chambers."
+        ]
+      ],
+      "body": "Americans vote today for all 435 House seats. Results decide Congress for Trump's last two years. Polls suggest Democrats lead; Trump predicts Republicans keep both chambers.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1347/img_01.jpg",
+      "credit": "Ktkvtsh (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "US strikes Iran's Qeshm Island",
+      "highlight": "Qeshm",
+      "image_query": "strait of hormuz",
+      "image_prompt": "A rocky island in a deep blue strait seen from above, with a naval chart and brass compass laid over the scene.",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The US hit Qeshm Island in limited 'defensive' strikes."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Iran says a deal remains far off despite talks."
+        ],
+        [
+          "FOR YOU",
+          "US officials say it's not a return to major combat; Qatar is mediating talks."
+        ]
+      ],
+      "body": "The US hit Qeshm Island in limited 'defensive' strikes. Iran says a deal remains far off despite talks. US officials say it's not a return to major combat; Qatar is mediating talks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1347/img_02.jpg",
+      "credit": "OpenStreetMap (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Huge overnight attack on Ukraine",
+      "highlight": "289",
+      "image_query": "power lines night",
+      "image_prompt": "A darkened city skyline at night under silent power lines, one small candle glowing in a single window.",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Zelensky says Russia fired 289 drones overnight, plus missiles."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The attack hit nine regions, causing emergency power cuts."
+        ],
+        [
+          "FOR YOU",
+          "Separately, a strike on an aid site killed at least 31, officials said Tuesday."
+        ]
+      ],
+      "body": "Zelensky says Russia fired 289 drones overnight, plus missiles. The attack hit nine regions, causing emergency power cuts. Separately, a strike on an aid site killed at least 31, officials said Tuesday.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1347/img_03.jpg",
+      "credit": "NiC00L147 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "North Korea denies Binance hack",
+      "highlight": "$6.3bn",
+      "image_query": "bitcoin coins",
+      "image_prompt": "A cracked steel vault door on a dark desk with golden crypto coins spilling out across the floor.",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Kim Yo Jong rejected FBI claims Pyongyang stole $6.3bn."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It's the biggest crypto theft on record."
+        ],
+        [
+          "FOR YOU",
+          "Binance users: the exchange says it covered 90% of losses itself."
+        ]
+      ],
+      "body": "Kim Yo Jong rejected FBI claims Pyongyang stole $6.3bn. It's the biggest crypto theft on record. Binance users: the exchange says it covered 90% of losses itself.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1347/img_04.jpg",
+      "credit": "Isokivi (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Ocarina of Time returns",
+      "highlight": "1998",
+      "image_query": "ocarina instrument",
+      "image_prompt": "A blue ocarina resting on mossy stones in a sunlit forest clearing, soft fantasy glow and floating dust in the light.",
+      "label": "CULTURE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Nintendo's 1998 Zelda classic is remade for Switch 2."
+        ],
+        [
+          "WHY IT MATTERS",
+          "NPR's review says it lasts 'for generations to come.'"
+        ],
+        [
+          "FOR YOU",
+          "Switch 2 owners: check Nintendo's site for your local release date."
+        ]
+      ],
+      "body": "Nintendo's 1998 Zelda classic is remade for Switch 2. NPR's review says it lasts 'for generations to come.' Switch 2 owners: check Nintendo's site for your local release date.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-1347/img_05.jpg",
+      "credit": "0x010C (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🗳️ US midterms today: all 435 House seats, 35 Senate seats and 36 governors on the ballot. Polls suggest Democrats lead; Trump predicts Republicans hold.\n💥 US carries out limited strikes on Iran's Qeshm Island; Iran says a deal is still far off.\n⚡ Ukraine says Russia fired 289 drones overnight; an aid-site strike killed at least 31, officials said Tuesday.\n💻 North Korea rejects FBI claims it stole $6.3bn from Binance. Binance users: the exchange says it covered 90% of losses.\n🎮 Zelda: Ocarina of Time is back, remade for Switch 2.\nWhich story are you following most today? 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 Kenneth C. Zirkel (CC0) via wikimedia · Ktkvtsh (CC BY 4.0) via wikimedia · OpenStreetMap (CC BY 4.0) via wikimedia · NiC00L147 (CC BY-SA 4.0) via wikimedia · Isokivi (CC BY-SA 3.0) via wikimedia · 0x010C (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "midterms",
+    "election2026",
+    "congress",
+    "iran",
+    "ukraine",
+    "binance",
+    "crypto",
+    "zelda",
+    "worldnews",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.cbsnews.com/news/what-us-voting-on-november-2026-elections/",
+    "https://www.nbcnews.com/politics/2026-election/live-blog/midterm-election-results-2026-news-trump-live-updates-rcna605763",
+    "https://www.foxnews.com/politics/battle-congress-just-beginning-heres-whats-stake-election-day",
+    "https://www.aljazeera.com/us-midterm-elections-2026/results/",
+    "https://abcnews.com/International/us-carries-defensive-airstrikes-irans-qeshm-island-officials/story?id=137792518",
+    "https://www.nbcwashington.com/news/national-international/us-military-limited-strikes-iran-qeshm-island/4175809/",
+    "https://www.france24.com/en/middle-east/20261103-us-strikes-iran-qeshm-island-as-trump-signals-progress-in-talks",
+    "https://www.al-monitor.com/originals/2026/11/iran-us-deal-still-out-reach-despite-heightened-diplomatic-efforts",
+    "https://www.npr.org/2026/11/03/g-s1-151439/russia-ukraine-war",
+    "https://www.yahoo.com/news/world/articles/zelenskyy-says-russia-launched-17-084400200.html",
+    "https://ukrinform.net/rubric-ato/4180863-death-toll-from-komyshuvakha-airstrike-rises-to-31-nearly-50-people-missing.html",
+    "https://kyivindependent.com/exceptionally-horrific-strike-russian-bombs-strike-school-used-as-humanitarian-aid-center-in-zaporizhzhia-oblast-killing-24/",
+    "https://abc.net.au/news/2026-11-03/north-korea-denies-binance-heist-customers-withdraw-billions/107340330",
+    "https://www.upi.com/Top_News/World-News/2026/11/03/Kim-Yo-Jong-Binance-hack-crypto/2441793694435/",
+    "https://www.aljazeera.com/news/2026/11/1/fbi-blames-north-korea-for-record-6-3bn-crypto-heist",
+    "https://www.npr.org/2026/10/31/nx-s1-6024426/binance-crypto-heist-cyber-criminals-north-korea",
+    "https://www.npr.org/sections/news/",
+    "https://www.vice.com/en/article/zelda-ocarina-of-time-remake-release-date-launch-times/",
+    "https://gamerant.com/zelda-ocarina-of-time-remake-release-time-early-access-countdown/"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 03 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "voting booth",
+  "image_prompt": "An empty ballot box on a wooden table between a red and a blue stack of ballots, with the US Capitol dome softly blurred behind.",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261103-1347/img_cover.jpg",
+  "cover_credit": "Kenneth C. Zirkel (CC0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "🗳️ US midterms today: all 435 House seats, 35 Senate seats and 36 governors on the ballot. Polls suggest Democrats lead; Trump predicts Republicans hold.\n💥 US carries out limited strikes on Iran's Qeshm Island; Iran says a deal is still far off.\n⚡ Ukraine says Russia fired 289 drones overnight; an aid-site strike killed at least 31, officials said Tuesday.\n💻 North Korea rejects FBI claims it stole $6.3bn from Binance. Binance users: the exchange says it covered 90% of losses.\n🎮 Zelda: Ocarina of Time is back, remade for Switch 2.\nWhich story are you following most today? 👇\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "blur",
+      "rise",
+      "left",
+      "blur",
+      "right",
+      "left",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "punch",
+      "flash",
+      "punch",
+      "glitch"
+    ]
+  },
+  "music_used": "documentary"
+}

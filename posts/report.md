@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 03/11/2026 alle 00:14 UTC. Follower: 0.
+Aggiornato il 03/11/2026 alle 13:44 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 362, di cui da non follower 362 (100%).
+- Visualizzazioni: 384, di cui da non follower 384 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 02/11/2026 | 54 | 54 | 67 | 67 | 0 | 0 |
+| 03/11/2026 | 6 | 6 | 6 | 6 | 1 | 0 |
+| 02/11/2026 | 67 | 67 | 83 | 83 | 0 | 0 |
 | 01/11/2026 | 82 | 82 | 90 | 90 | 0 | 0 |
 | 31/10/2026 | 109 | 109 | 125 | 125 | 8 | 0 |
 | 30/10/2026 | 30 | 30 | 31 | 31 | 2 | 0 |
@@ -59,7 +60,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
 | 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
 | 31/10/2026 00:14 | A shrimp that punches 2,500x its body we | 5.194 | 85.7 |
-| 01/11/2026 00:11 | What happens to your body without sleep | 5.057 | 74 |
+| 01/11/2026 00:11 | What happens to your body without sleep | 5.111 | 74 |
 
 ### Per formato
 
