@@ -602,5 +602,21 @@
       "palette": 0
     },
     "media_id": "18139998353498016"
+  },
+  {
+    "date": "20261103-1826",
+    "series": "facts",
+    "topic": "Fear response: amygdala, adrenaline, digestion, goosebumps, time slowing",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "What fear does to your body in seconds",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "17865409149694008"
   }
 ]
