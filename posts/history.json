@@ -586,5 +586,21 @@
       "palette": 2
     },
     "media_id": "18207479392373325"
+  },
+  {
+    "date": "20261103-0014",
+    "series": "facts",
+    "topic": "Breath-holding physiology: CO2 urge, dive reflex, spleen, blackout, record",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "What holding your breath really does",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "18139998353498016"
   }
 ]
