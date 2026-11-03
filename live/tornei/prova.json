@@ -1,11 +1,15 @@
 {
-  "attivo": false,
-  "adapter": "ppatour",
-  "base_url": "https://www.ppatour.com/api/scores/?event=ad262b1f-ea62-4dcc-af59-69732a97107c",
-  "tournament": "2026 Pickleball World Championships",
-  "slug": "ppa-worlds-2026-prova",
-  "events": ["Mixed Doubles"],
-  "match_stories": ["sedicesimi"],
-  "phase_stories": [],
-  "handles": {}
+ "attivo": false,
+ "adapter": "ppatour",
+ "base_url": "https://www.ppatour.com/api/scores/?event=ad262b1f-ea62-4dcc-af59-69732a97107c",
+ "tournament": "2026 Pickleball World Championships",
+ "slug": "ppa-worlds-2026-prova",
+ "events": [
+  "Women's Doubles"
+ ],
+ "match_stories": [
+  "quarti"
+ ],
+ "phase_stories": [],
+ "handles": {}
 }
