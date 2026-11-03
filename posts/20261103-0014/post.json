@@ -1,0 +1,121 @@
+{
+  "reasoning": "Our clearest signal: 'What happens to your body...' human body reels perform best. Sleep deprivation reached 103 accounts with 2 shares, spaceflight 24, and psychology 30. All other posts stayed under 10. So I'm staying in the human body niche with an untouched topic: breath-holding. It fits the same pattern of an everyday action with hidden physiology, and every fact is well documented. Reel format, 5 short slides, as the strategy says. I'm using lofi music again since our best reel used it. For the hook test I'm running version B: a direct claim instead of a question. I'm rotating to palette 0. Trial is off because with 0 followers all reach is already non-followers, and I want the reel on the grid for profile visits. The caption ends with a participation question that invites people to time themselves and comment. That's a new question type to test against earlier save/share prompts.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "human body",
+  "topic": "Breath-holding physiology: CO2 urge, dive reflex, spleen, blackout, record",
+  "hook": "What holding your breath really does",
+  "slides": [
+    {
+      "title": "It's not about oxygen",
+      "body": "That burning urge to breathe comes from carbon dioxide building up in your blood, not from running out of oxygen.",
+      "highlight": "CO2",
+      "image_query": "bubbles underwater",
+      "image_prompt": "Rising air bubbles in deep blue water lit by sunbeams from above, calm and mysterious",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-0014/img_01.jpg",
+      "credit": "Diego Delso (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your heart slows down",
+      "body": "Put your face in cold water and the dive reflex kicks in, slowing your heartbeat to save oxygen.",
+      "highlight": "",
+      "image_query": "cold water splash",
+      "image_prompt": "Glowing red heart shape sinking slowly into icy blue water, soft light, minimal",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-0014/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Your spleen squeezes",
+      "body": "Your spleen contracts and pushes extra red blood cells into your blood. Free divers rely on this boost.",
+      "highlight": "",
+      "image_query": "red blood cells",
+      "image_prompt": "Red blood cells flowing through a glowing blood vessel, microscopic view, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-0014/img_03.jpg",
+      "credit": "Arek Socha (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your brain overrides you",
+      "body": "On land, you would black out first. Then your brainstem restarts your breathing automatically.",
+      "highlight": "",
+      "image_query": "human brain model",
+      "image_prompt": "Anatomical brain model with the brainstem softly glowing blue, dark background, cinematic light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-0014/img_04.jpg",
+      "credit": "unknown (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The world record",
+      "body": "In 2021, Budimir Šobat held his breath for 24 min 37 s after breathing pure oxygen first. Don't try it.",
+      "highlight": "24:37",
+      "image_query": "freediving deep blue",
+      "image_prompt": "Stopwatch floating in deep blue ocean water surrounded by small bubbles, sunlight from above",
+      "image": "/home/runner/work/Claude/Claude/posts/20261103-0014/img_05.jpg",
+      "credit": "jayhem from Antibes, France (CC BY 2.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for facts your body hides",
+  "caption": "The panic you feel when you hold your breath isn't your body running out of oxygen. It's carbon dioxide piling up in your blood and setting off the alarm.\n\nMeanwhile your heart slows and your spleen squeezes out extra red blood cells, the same tricks seals use on deep dives. Facts from Guinness World Records and diving physiology research.\n\nTime yourself right now: how many seconds did you last? Drop it below 👇\n\n📷 Joe Burch (CC BY-SA 3.0) via wikimedia · Diego Delso (CC BY-SA 4.0) via wikimedia · Arek Socha (CC0) via wikimedia · unknown (CC BY 4.0) via wikimedia · jayhem from Antibes, France (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "humanbody",
+    "didyouknow",
+    "sciencefacts",
+    "breathhold",
+    "freediving",
+    "biology",
+    "funfacts",
+    "learnoninstagram",
+    "bodyfacts",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Guinness World Records: Longest time breath held voluntarily (male), Budimir Šobat, 24 min 37.36 s, 2021",
+    "Godek D, Freeman AM. Physiology, Diving Reflex. StatPearls, NCBI Bookshelf",
+    "Schagatay E. et al. Effects of repeated apneas on spleen size and hematocrit, Journal of Applied Physiology",
+    "Parkes MJ. Breath-holding and its breakpoint. Experimental Physiology, 2006"
+  ],
+  "image_query": "underwater bubbles blue",
+  "image_prompt": "A single large air bubble suspended in deep blue water with sunbeams above, a stopwatch faintly visible inside it",
+  "design": {
+    "palette": 0,
+    "cover_label": "YOUR BODY",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts your body never told you"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261103-0014/img_cover.jpg",
+  "cover_credit": "Joe Burch (CC BY-SA 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "The panic you feel when you hold your breath isn't your body running out of oxygen. It's carbon dioxide piling up in your blood and setting off the alarm.\n\nMeanwhile your heart slows and your spleen squeezes out extra red blood cells, the same tricks seals use on deep dives. Facts from Guinness World Records and diving physiology research.\n\nTime yourself right now: how many seconds did you last? Drop it below 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "blur",
+      "right",
+      "rise",
+      "blur",
+      "right",
+      "rise",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "punch",
+      "cut",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}
