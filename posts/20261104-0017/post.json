@@ -1,0 +1,122 @@
+{
+  "reasoning": "Human body reels are the clear winner so far. 'What happens to your body without sleep' had reach 103 and the page's only shares. The memory reel reached 93. Both beat every news post and every carousel. I'm repeating the winning hook shape ('What happens to your body when...') on a new, very relatable everyday topic: sneezing. It has a myth-buster slide and a gross-but-true story, and the photic sneeze reflex makes a natural comment prompt. Settings copy the top performer (reel, lofi music, palette 1, 5 short slides) so I get a clean replicate. The hook is stated directly in line with the 'shocking claim' side of the hook test. This is not a trial reel, so it stays comparable with the best post.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Sneezing: reflex, heart myth, droplet distance, photic sneeze, holding it in",
+  "hook": "What happens to your body when you sneeze",
+  "slides": [
+    {
+      "title": "It starts in your nose",
+      "body": "Irritants hit nerve endings in your nose. A signal races to your brainstem, which fires the sneeze reflex.",
+      "highlight": "",
+      "image_query": "pollen macro",
+      "image_prompt": "Glowing pollen grains drifting toward a dark nasal-shaped tunnel, tiny electric sparks along nerve-like threads, dramatic macro lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-0017/img_01.jpg",
+      "credit": "unknown (CC0 / public domain) via openverse",
+      "generated": false
+    },
+    {
+      "title": "Your heart doesn't stop",
+      "body": "Pure myth. Chest pressure can briefly change your heart rhythm, but your heart keeps beating the whole time.",
+      "highlight": "Myth",
+      "image_query": "anatomical heart model",
+      "image_prompt": "Anatomical heart model on a dark table with a steady glowing pulse line wrapping around it, moody lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-0017/img_02.jpg",
+      "credit": "Dguendel (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The cloud travels far",
+      "body": "MIT researchers filmed sneeze clouds carrying droplets up to 8 meters across a room.",
+      "highlight": "8 m",
+      "image_query": "water mist spray",
+      "image_prompt": "Fine mist cloud of droplets expanding across a dark room, backlit so every droplet glows, long perspective",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-0017/img_03.jpg",
+      "credit": "Metacladistics (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Bright light can trigger it",
+      "body": "The photic sneeze reflex makes roughly 1 in 4 people sneeze when they step into bright sunlight.",
+      "highlight": "1 in 4",
+      "image_query": "bright sun rays",
+      "image_prompt": "Blinding sunburst breaking through a dark doorway, sharp light rays and dust particles floating in the beam",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-0017/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Never hold one in",
+      "body": "In 2018, doctors reported a man who tore his throat holding in a sneeze with his nose and mouth shut.",
+      "highlight": "2018",
+      "image_query": "pressure gauge",
+      "image_prompt": "A pressure gauge needle pushed into the red zone beside a cracked glass tube, dark dramatic background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-0017/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "A sneeze is a reflex your brainstem fires. MIT researchers filmed sneeze clouds carrying droplets up to 8 meters across a room.\n\nAnd holding one in is a bad idea. In 2018, doctors in the UK described a man who tore his throat after pinching his nose and closing his mouth mid-sneeze (BMJ Case Reports).\n\nBe honest: do you sneeze when you look at the sun? 👇\n\n📷 unknown (CC0 / public domain) via openverse · Dguendel (CC BY 4.0) via wikimedia · Metacladistics (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "sneeze",
+    "humanbody",
+    "didyouknow",
+    "sciencefacts",
+    "bodyfacts",
+    "funfacts",
+    "biology",
+    "health",
+    "learnsomethingnew",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Bourouiba L. (2020) Turbulent Gas Clouds and Respiratory Pathogen Emissions, JAMA",
+    "Yang W. et al. (2018) Snap, crackle and pop: when sneezing leads to crackling in the neck, BMJ Case Reports",
+    "Breitenbach R. et al. (1993) The photic sneeze reflex as a risk factor to combat pilots, Military Medicine",
+    "Library of Congress, Everyday Mysteries: Does your heart stop when you sneeze?",
+    "Cleveland Clinic: Sneezing, causes and reflex"
+  ],
+  "image_query": "sneeze droplets backlit",
+  "image_prompt": "Explosive cloud of tiny glowing droplets bursting outward against a pitch-black background, frozen in high-speed photography style",
+  "design": {
+    "palette": 1,
+    "cover_label": "Your body, explained",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts about your weird body"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261104-0017/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "A sneeze is a reflex your brainstem fires. MIT researchers filmed sneeze clouds carrying droplets up to 8 meters across a room.\n\nAnd holding one in is a bad idea. In 2018, doctors in the UK described a man who tore his throat after pinching his nose and closing his mouth mid-sneeze (BMJ Case Reports).\n\nBe honest: do you sneeze when you look at the sun? 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "scale",
+      "left",
+      "blur",
+      "rise",
+      "left",
+      "right",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "punch",
+      "dip",
+      "flash",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "mystery"
+}
