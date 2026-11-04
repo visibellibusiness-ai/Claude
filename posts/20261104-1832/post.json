@@ -1,0 +1,121 @@
+{
+  "reasoning": "Human body and psychology reels are my only posts with reach near 100 (sleep 103, memories 93). The 'what X does to your body' hook shape is my most consistent performer, so I'm keeping the format and niche. I'm switching to a fresh, well-documented subject: cold water shock (RNLI, Tipton, the 1-10-1 rule). It has a strong survival angle that can drive saves and shares. This is reel hook test version B, with the claim and timeframe stated directly. I'm making it a Trial Reel because trial reels are now available and all my reach comes from non-followers anyway. Five short slides. Palette 3 and lofi music, which matches the best-performing sleep reel's music.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": true,
+  "category": "human body",
+  "topic": "Cold water shock: gasp reflex, first minute, swim failure, hypothermia, 1-10-1 rule",
+  "hook": "What cold water does to you in 60 seconds",
+  "slides": [
+    {
+      "title": "The gasp reflex",
+      "body": "Water below 15°C makes you gasp without choosing to. Underwater, that breath can pull water into your lungs.",
+      "highlight": "15°C",
+      "image_query": "icy lake water",
+      "image_prompt": "Dark icy lake surface with floating ice chunks and rising mist at dawn, cold blue tones",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1832/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Breathing goes wild",
+      "body": "Your breathing turns fast and uncontrolled, while your heart rate and blood pressure spike instantly.",
+      "highlight": "",
+      "image_query": "cold water splash",
+      "image_prompt": "Explosive splash of freezing water with air bubbles bursting upward, frozen in motion, deep blue light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1832/img_02.jpg",
+      "credit": "Christian Ferrer (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Survive the first minute",
+      "body": "Cold shock fades after about 60 to 90 seconds. That's why rescuers say: float, don't fight the water.",
+      "highlight": "1 min",
+      "image_query": "orange life ring water",
+      "image_prompt": "Orange life ring floating calmly on dark rippling water, soft overhead light, peaceful mood",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1832/img_03.jpg",
+      "credit": "PattayaPatrol (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your arms give up",
+      "body": "As your muscles and nerves cool, swimming gets harder. Swim failure can set in within about 10 minutes.",
+      "highlight": "10 min",
+      "image_query": "frozen lake ice edge",
+      "image_prompt": "Edge of cracked lake ice meeting black water, frost crystals close up, cold blue atmosphere",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1832/img_04.jpg",
+      "credit": "Bernhard Hanakam (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Hypothermia comes last",
+      "body": "Passing out from hypothermia often takes about an hour. Cold shock and swim failure strike much sooner.",
+      "highlight": "1 hr",
+      "image_query": "thermometer snow",
+      "image_prompt": "Old mercury thermometer half buried in fresh snow beside icy water, cold morning light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1832/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for facts that could save you",
+  "caption": "In the first minute after you fall into cold water, the biggest threat isn't hypothermia. It's your own gasp reflex, which can make you breathe in water before you even think.\n\nSafety experts sum it up as the 1-10-1 rule: about 1 minute for cold shock to pass, about 10 minutes of useful movement, and roughly 1 hour before hypothermia knocks you out. The RNLI's advice is simple: float first, then act. (Sources: RNLI, Prof. Mike Tipton's cold water research.)\n\nWould you ever try cold water swimming, or is this a hard no?\n\n📷 Christian Ferrer (CC BY 4.0) via wikimedia · PattayaPatrol (CC BY-SA 4.0) via wikimedia · Bernhard Hanakam (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "coldwater",
+    "coldwatershock",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow",
+    "survivaltips",
+    "watersafety",
+    "bodyfacts",
+    "learnsomethingnew",
+    "factsdaily"
+  ],
+  "sources": [
+    "RNLI – Float to Live / cold water shock guidance (rnli.org)",
+    "Tipton MJ et al. (2017) 'Cold water immersion: kill or cure?' Experimental Physiology 102(11)",
+    "Giesbrecht G. – 1-10-1 principle, National Center for Cold Water Safety (coldwatersafety.org)",
+    "UK National Water Safety Forum – cold water shock factsheet"
+  ],
+  "image_query": "icy lake water",
+  "image_prompt": "Frozen lake with a dark open hole in the ice, steam rising, cold blue light, ominous calm",
+  "design": {
+    "palette": 3,
+    "cover_label": "Your body vs cold",
+    "swipe_text": "Watch this",
+    "follow_line": "Body facts that could save your life"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261104-1832/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "In the first minute after you fall into cold water, the biggest threat isn't hypothermia. It's your own gasp reflex, which can make you breathe in water before you even think.\n\nSafety experts sum it up as the 1-10-1 rule: about 1 minute for cold shock to pass, about 10 minutes of useful movement, and roughly 1 hour before hypothermia knocks you out. The RNLI's advice is simple: float first, then act. (Sources: RNLI, Prof. Mike Tipton's cold water research.)\n\nWould you ever try cold water swimming, or is this a hard no?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "scale",
+      "right",
+      "blur",
+      "scale",
+      "rise",
+      "right",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "flash",
+      "glitch",
+      "punch",
+      "glitch"
+    ]
+  },
+  "music_used": "lofi"
+}
