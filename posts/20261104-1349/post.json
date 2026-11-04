@@ -1,0 +1,210 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-04",
+  "hook": "Congress just changed hands. Now what?",
+  "reel_hook": "Congress flipped. And that's not all.",
+  "slides": [
+    {
+      "title": "Democrats win House and Senate",
+      "highlight": "7+",
+      "image_query": "us capitol building",
+      "image_prompt": "The US Capitol dome at dawn under a sky split into deep blue and red clouds, empty steps in the foreground",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Democrats won both chambers, flipping 7+ Senate seats."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Trump's last two years now face a Democratic Congress."
+        ],
+        [
+          "FOR YOU",
+          "Analysts expect gridlock from January 2027, so big new laws get harder."
+        ]
+      ],
+      "body": "Democrats won both chambers, flipping 7+ Senate seats. Trump's last two years now face a Democratic Congress. Analysts expect gridlock from January 2027, so big new laws get harder.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1349/img_01.jpg",
+      "credit": "Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "US strikes Iran's Qeshm Island",
+      "highlight": "20M",
+      "image_query": "oil tanker strait",
+      "image_prompt": "Oil tanker crossing a narrow sea strait at dusk, a rocky island on the horizon with a distant smoke plume",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The US carried out limited strikes on Iran's Qeshm Island."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It sits in Hormuz, a key route for world oil."
+        ],
+        [
+          "FOR YOU",
+          "Hormuz carried 20 million barrels of oil daily pre-war; tension can move fuel prices."
+        ]
+      ],
+      "body": "The US carried out limited strikes on Iran's Qeshm Island. It sits in Hormuz, a key route for world oil. Hormuz carried 20 million barrels of oil daily pre-war; tension can move fuel prices.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1349/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Ukraine talks set for Abu Dhabi",
+      "highlight": "Nov 10",
+      "image_query": "abu dhabi skyline",
+      "image_prompt": "Empty negotiating table with three chairs and water glasses in a bright room overlooking a desert city skyline",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russia confirmed it will join US-mediated talks with Ukraine."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Both sides will sit at one table, with the US in between."
+        ],
+        [
+          "FOR YOU",
+          "Watch Abu Dhabi on 10–11 November; Zelensky also wants the EU involved."
+        ]
+      ],
+      "body": "Russia confirmed it will join US-mediated talks with Ukraine. Both sides will sit at one table, with the US in between. Watch Abu Dhabi on 10–11 November; Zelensky also wants the EU involved.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1349/img_03.jpg",
+      "credit": "Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Gaza ceasefire under strain",
+      "highlight": "5",
+      "image_query": "",
+      "image_prompt": "An olive branch resting on cracked grey concrete under a hazy evening sky, soft warm light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Israeli strikes killed at least five, Gaza health officials say."
+        ],
+        [
+          "WHY IT MATTERS",
+          "They test a US-brokered ceasefire from October 2025."
+        ],
+        [
+          "FOR YOU",
+          "The year-old truce still stands, but deadly incidents show how fragile it is."
+        ]
+      ],
+      "body": "Israeli strikes killed at least five, Gaza health officials say. They test a US-brokered ceasefire from October 2025. The year-old truce still stands, but deadly incidents show how fragile it is.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1349/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Georgia makes history",
+      "highlight": "1st",
+      "image_query": "georgia state capitol",
+      "image_prompt": "Georgia state capitol gold dome glowing at sunrise, peach blossoms in the foreground",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Keisha Lance Bottoms was elected governor of Georgia."
+        ],
+        [
+          "WHY IT MATTERS",
+          "She's the first Black woman elected governor of any state."
+        ],
+        [
+          "FOR YOU",
+          "A milestone: no US state had elected a Black woman governor before."
+        ]
+      ],
+      "body": "Keisha Lance Bottoms was elected governor of Georgia. She's the first Black woman elected governor of any state. A milestone: no US state had elected a Black woman governor before.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261104-1349/img_05.jpg",
+      "credit": "Harrison Keely (CC BY 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🗳️ Democrats won the House and Senate. New Congress from January 2027: analysts expect gridlock.\n💥 US strikes on Iran's Qeshm Island, right in the Strait of Hormuz. Oil route tension can move fuel prices.\n🤝 Russia confirms Ukraine talks in Abu Dhabi on 10–11 November.\n🕊️ Deadly strikes in Gaza test the ceasefire from October 2025.\n🍑 Georgia elects the first Black woman governor of any US state.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia · Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Harrison Keely (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "midterms",
+    "congress",
+    "uspolitics",
+    "iran",
+    "straitofhormuz",
+    "ukraine",
+    "gaza",
+    "worldnews",
+    "didyouknow"
+  ],
+  "sources": [
+    "https://spectrumlocalnews.com/nys/buffalo/politics/2026/11/03/balance-of-power-congress-2026-midterm-elections",
+    "https://www.bloomberg.com/news/articles/2026-11-04/democrats-sweep-the-house-and-senate-in-us-midterms-seen-as-trump-referendum",
+    "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
+    "https://finance.yahoo.com/markets/stocks/articles/analysts-react-us-midterm-election-025738421.html",
+    "https://www.cnn.com/2026/11/02/politics/us-strikes-iran-qeshm-island",
+    "https://www.nbcnews.com/world/iran/us-conducted-defensive-strikes-iranian-targets-strait-hormuz-us-offici-rcna607161",
+    "https://www.cnbc.com/2026/11/03/iran-us-vance-trump-strikes.html",
+    "https://www.yahoo.com/news/politics/articles/ukraine-russia-set-peace-talks-004824046.html",
+    "https://www.cnbc.com/2026/11/03/russia-ukraine-peace-talks-abu-dhabi-trump-putin-xi.html",
+    "https://www.pravda.com.ua/eng/news/2026/11/03/8061009/",
+    "https://www.dawn.com/news/2041749/israeli-strikes-kill-five-palestinians-in-gaza",
+    "https://www.aljazeera.com/news/2026/11/3/israeli-forces-kill-four-in-gaza-as-fifth-palestinian-dies-of-wounds",
+    "https://www.haaretz.com/gaza/2026-11-03/ty-article/.premium/israeli-strikes-reportedly-kill-at-least-four-in-gaza/000001a1-a296-d279-a3ad-ead6d5390000",
+    "https://spectrumlocalnews.com/nys/buffalo/politics/2026/11/03/balance-of-power-congress-2026-midterm-elections",
+    "https://www.npr.org/sections/news/",
+    "https://www.bakersfield.com/ap/national/ap-news-summary-at-10-29-p-m-est/article_7ff8e113-c13a-5401-ab35-31d0ff37a823.html"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 04 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "us capitol building",
+  "image_prompt": "The US Capitol dome at dawn, a giant balance scale beside it tipping to one side, sky split between blue and red clouds",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261104-1349/img_cover.jpg",
+  "cover_credit": "Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🗳️ Democrats won the House and Senate. New Congress from January 2027: analysts expect gridlock.\n💥 US strikes on Iran's Qeshm Island, right in the Strait of Hormuz. Oil route tension can move fuel prices.\n🤝 Russia confirms Ukraine talks in Abu Dhabi on 10–11 November.\n🕊️ Deadly strikes in Gaza test the ceasefire from October 2025.\n🍑 Georgia elects the first Black woman governor of any US state.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "scale",
+      "right",
+      "blur",
+      "scale",
+      "rise",
+      "right",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "flash",
+      "glitch",
+      "punch",
+      "glitch"
+    ]
+  },
+  "music_used": "lofi"
+}
