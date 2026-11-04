@@ -630,5 +630,21 @@
       "palette": 4
     },
     "media_id": "17865409149694008"
+  },
+  {
+    "date": "20261104-0017",
+    "series": "facts",
+    "topic": "Sneezing: reflex, heart myth, droplet distance, photic sneeze, holding it in",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "What happens to your body when you sneeze",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "18120329623791566"
   }
 ]
