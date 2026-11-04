@@ -646,5 +646,21 @@
       "palette": 1
     },
     "media_id": "18120329623791566"
+  },
+  {
+    "date": "20261104-1832",
+    "series": "facts",
+    "topic": "Cold water shock: gasp reflex, first minute, swim failure, hypothermia, 1-10-1 rule",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "What cold water does to you in 60 seconds",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "18431186644150829"
   }
 ]
