@@ -1,0 +1,213 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-05",
+  "hook": "Democrats flipped Texas. And 6 more seats",
+  "reel_hook": "Democrats flipped Texas. Here's what else happened.",
+  "slides": [
+    {
+      "title": "Democrats win both houses",
+      "highlight": "54",
+      "image_query": "US Capitol building",
+      "image_prompt": "The US Capitol dome at sunrise, a wooden ballot box on the steps in front, clear sky, calm morning light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Democrats won control of the House and the Senate."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Congress can now block Trump's bills and investigate."
+        ],
+        [
+          "FOR YOU",
+          "From next year, new federal laws will need Democratic support to pass."
+        ]
+      ],
+      "body": "Democrats won control of the House and the Senate. Congress can now block Trump's bills and investigate. From next year, new federal laws will need Democratic support to pass.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1354/img_01.jpg",
+      "credit": "Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Hormuz: tankers on fire",
+      "highlight": "Mine",
+      "image_query": "oil tanker sea",
+      "image_prompt": "A large oil tanker at sea at dusk with smoke rising from its deck, a small tugboat nearby, calm water, distant coastline",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran says 2 tankers and a tugboat caught fire in Hormuz."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Trump says the war was worth it despite election losses."
+        ],
+        [
+          "FOR YOU",
+          "Oil prices fell this week, but Gulf shipping risks keep fuel costs uncertain."
+        ]
+      ],
+      "body": "Iran says 2 tankers and a tugboat caught fire in Hormuz. Trump says the war was worth it despite election losses. Oil prices fell this week, but Gulf shipping risks keep fuel costs uncertain.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1354/img_02.jpg",
+      "credit": "ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Dow jumps, chip stocks sink",
+      "highlight": "-5.3%",
+      "image_query": "semiconductor wafer",
+      "image_prompt": "A shiny silicon chip wafer on a dark table beside a stack of coins and a red downward arrow made of copper wire",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Dow rose 1,569 points; Korea's KOSPI fell 5.3% Thursday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Investors fear tighter AI data-centre rules under Democrats."
+        ],
+        [
+          "FOR YOU",
+          "Got tech or chip funds? Check them: AI stocks swung hard this week."
+        ]
+      ],
+      "body": "Dow rose 1,569 points; Korea's KOSPI fell 5.3% Thursday. Investors fear tighter AI data-centre rules under Democrats. Got tech or chip funds? Check them: AI stocks swung hard this week.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1354/img_03.jpg",
+      "credit": "DrHughManning (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Europe flights hit by threats",
+      "highlight": "2nd",
+      "image_query": "airplane landing runway",
+      "image_prompt": "A passenger jet landing on a wet runway at dawn, a military jet flying alongside in the grey sky, airport lights glowing",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Airlines in Europe got bomb threats again Thursday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Flights diverted, some escorted by jets; none proved real."
+        ],
+        [
+          "FOR YOU",
+          "Flying in Europe? Check your flight status; delays and diversions are possible."
+        ]
+      ],
+      "body": "Airlines in Europe got bomb threats again Thursday. Flights diverted, some escorted by jets; none proved real. Flying in Europe? Check your flight status; delays and diversions are possible.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1354/img_04.jpg",
+      "credit": "Kuhnmi (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A Senate first in Michigan",
+      "highlight": "1st",
+      "image_query": "Michigan state capitol",
+      "image_prompt": "An old wooden Senate desk in a grand marble chamber, warm light falling on an empty chair, a small brass nameplate without text",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Abdul El-Sayed won Michigan's Senate seat on Tuesday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "He'll be the first Muslim elected to the US Senate."
+        ],
+        [
+          "FOR YOU",
+          "A small piece of history: no Muslim had been elected senator before."
+        ]
+      ],
+      "body": "Abdul El-Sayed won Michigan's Senate seat on Tuesday. He'll be the first Muslim elected to the US Senate. A small piece of history: no Muslim had been elected senator before.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1354/img_05.jpg",
+      "credit": "w_lemay (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for tomorrow's 5-story brief",
+  "caption": "🗳️ Democrats won control of the House and Senate, flipping 7 Senate seats. From next year, new laws need their votes.\n🛢️ Iran says 2 tankers and a tugboat caught fire in Hormuz; Trump says the war was worth it.\n📉 Dow up 1,569 points, but Asian chip stocks sank. Holding tech funds? Expect swings.\n✈️ New bomb threats hit European flights; none proved real. Flying soon? Check your flight status.\n🏛️ Abdul El-Sayed will be the first Muslim elected to the US Senate.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Diliff (CC BY 2.5) via wikimedia · Martin Falbisoner (CC BY-SA 3.0) via wikimedia · ITookSomePhotos (CC BY-SA 4.0) via wikimedia · DrHughManning (CC BY-SA 4.0) via wikimedia · Kuhnmi (CC BY-SA 4.0) via wikimedia · w_lemay (CC BY-SA 2.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "midterms",
+    "uspolitics",
+    "congress",
+    "iran",
+    "straitofhormuz",
+    "stockmarket",
+    "kospi",
+    "europe",
+    "aviation",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
+    "https://time.com/article/2026/11/03/midterm-elections-2026-key-races-live-results-polls-latest-news-updates/",
+    "https://www.cnbc.com/2026/11/04/2026-midterm-election-results-live-updates.html",
+    "https://www.yahoo.com/news/politics/articles/republicans-call-trump-change-course-224820660.html",
+    "https://www.yahoo.com/news/articles/irans-irgc-says-two-tankers-042107548.html",
+    "http://www.idahopress.com/ap_news/us/tanker-struck-by-projectiles-in-the-persian-gulf-off-qatar-and-other-mideast-news/article_900dee9c-061d-5d3c-9bc2-a0f97a47ebe2.html",
+    "https://abcnews.com/Politics/vance-blames-iran-war-republicans-midterms-defeat-trump/story?id=137849295",
+    "https://aa.com.tr/en/americas/trump-says-iran-war-worth-it-despite-midterm-elections-losses/4111942",
+    "https://www.cnbc.com/2026/11/04/oil-price-iran-war-us-election-strait-hormuz.html",
+    "https://finance.yahoo.com/markets/stocks/articles/us-stock-index-futures-steady-083456013.html",
+    "https://www.cnn.com/2026/11/04/investing/us-markets-midterm-elections",
+    "https://aa.com.tr/en/economy/tech-stocks-tumble-as-us-election-results-fuel-ai-spending-concerns/4112319",
+    "https://www.investing.com/news/stock-market-news/asia-stocks-mixed-as-chip-rout-triggers-kospi-trading-halt-china-outperforms-5002134",
+    "https://www.devdiscourse.com/article/international/4002095-reuters-world-news-summary",
+    "https://www.dailyrecordnews.com/ap_news/us/ap-news-summary-at-6-50-a-m-est/article_9f1b867d-8ebd-554c-97e0-d7a14fccc4d3.html",
+    "https://www.aljazeera.com/",
+    "https://podcasts.apple.com/us/podcast/reuters-world-news/id1665219519",
+    "https://www.aljazeera.com/news/liveblog/2026/11/4/us-midterm-election-results-live-trump-reacts-as-more-results-awaited"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 05 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "US Capitol building",
+  "image_prompt": "The US Capitol dome at sunrise with a wooden ballot box and scattered blank ballots on the steps in front, soft golden light, clear sky",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261105-1354/img_cover.jpg",
+  "cover_credit": "Diliff (CC BY 2.5) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "🗳️ Democrats won control of the House and Senate, flipping 7 Senate seats. From next year, new laws need their votes.\n🛢️ Iran says 2 tankers and a tugboat caught fire in Hormuz; Trump says the war was worth it.\n📉 Dow up 1,569 points, but Asian chip stocks sank. Holding tech funds? Expect swings.\n✈️ New bomb threats hit European flights; none proved real. Flying soon? Check your flight status.\n🏛️ Abdul El-Sayed will be the first Muslim elected to the US Senate.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "left",
+      "scale",
+      "blur",
+      "right",
+      "left",
+      "scale",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "cut",
+      "punch",
+      "glitch",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "mystery"
+}

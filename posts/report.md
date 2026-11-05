@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 05/11/2026 alle 00:21 UTC. Follower: 0.
+Aggiornato il 05/11/2026 alle 13:50 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 506, di cui da non follower 506 (100%).
+- Visualizzazioni: 508, di cui da non follower 508 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 04/11/2026 | 104 | 104 | 115 | 115 | 0 | 0 |
+| 05/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 04/11/2026 | 106 | 106 | 117 | 117 | 0 | 0 |
 | 03/11/2026 | 61 | 61 | 62 | 62 | 1 | 0 |
 | 02/11/2026 | 67 | 67 | 83 | 83 | 0 | 0 |
 | 01/11/2026 | 82 | 82 | 90 | 90 | 0 | 0 |
@@ -62,9 +63,9 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
 | 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
 | 31/10/2026 00:14 | A shrimp that punches 2,500x its body we | 5.194 | 85.7 |
-| 01/11/2026 00:11 | What happens to your body without sleep | 5.068 | 74 |
-| 02/11/2026 00:11 | Your memories change every time you reca | 5.550 | 70.1 |
-| 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.664 | 75.8 |
+| 01/11/2026 00:11 | What happens to your body without sleep | 5.024 | 74 |
+| 02/11/2026 00:11 | Your memories change every time you reca | 5.501 | 70.1 |
+| 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.610 | 75.8 |
 | 03/11/2026 00:14 | What holding your breath really does | 3.351 | 77.8 |
 
 ### Per formato

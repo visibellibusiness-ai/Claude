@@ -1,39 +1,39 @@
 {
-  "date": "20261104-1349",
+  "date": "20261105-1354",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "lofi",
-  "theme_index": 25,
-  "topic": "Daily news 2026-11-04",
+  "music": "mystery",
+  "theme_index": 27,
+  "topic": "Daily news 2026-11-05",
   "category": "news",
-  "hook": "Congress just changed hands. Now what?",
+  "hook": "Democrats flipped Texas. And 6 more seats",
   "slides": 5,
   "design": {
     "style": "mystery",
     "palette": 2
   },
   "images": [
-    "posts/20261104-1349/slide_01.jpg",
-    "posts/20261104-1349/slide_02.jpg",
-    "posts/20261104-1349/slide_03.jpg",
-    "posts/20261104-1349/slide_04.jpg",
-    "posts/20261104-1349/slide_05.jpg",
-    "posts/20261104-1349/slide_06.jpg",
-    "posts/20261104-1349/slide_07.jpg"
+    "posts/20261105-1354/slide_01.jpg",
+    "posts/20261105-1354/slide_02.jpg",
+    "posts/20261105-1354/slide_03.jpg",
+    "posts/20261105-1354/slide_04.jpg",
+    "posts/20261105-1354/slide_05.jpg",
+    "posts/20261105-1354/slide_06.jpg",
+    "posts/20261105-1354/slide_07.jpg"
   ],
-  "story": "posts/20261104-1349/story.jpg",
-  "ai": true,
+  "story": "posts/20261105-1354/story.jpg",
+  "ai": false,
   "story_ai": false,
-  "caption": "🗳️ Democrats won the House and Senate. New Congress from January 2027: analysts expect gridlock.\n💥 US strikes on Iran's Qeshm Island, right in the Strait of Hormuz. Oil route tension can move fuel prices.\n🤝 Russia confirms Ukraine talks in Abu Dhabi on 10–11 November.\n🕊️ Deadly strikes in Gaza test the ceasefire from October 2025.\n🍑 Georgia elects the first Black woman governor of any US state.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia · Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Harrison Keely (CC BY 4.0) via wikimedia\n\n#news #dailynews #midterms #congress #uspolitics #iran #straitofhormuz #ukraine #gaza #worldnews #didyouknow",
-  "carousel_caption": "🗳️ Democrats won the House and Senate. New Congress from January 2027: analysts expect gridlock.\n💥 US strikes on Iran's Qeshm Island, right in the Strait of Hormuz. Oil route tension can move fuel prices.\n🤝 Russia confirms Ukraine talks in Abu Dhabi on 10–11 November.\n🕊️ Deadly strikes in Gaza test the ceasefire from October 2025.\n🍑 Georgia elects the first Black woman governor of any US state.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\nCover: Congress just changed hands. Now what?\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n1/5 Democrats win House and Senate (7+)\nDemocrats won both chambers, flipping 7+ Senate seats. Trump's last two years now face a Democratic Congress.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n2/5 US strikes Iran's Qeshm Island (20M)\nThe US carried out limited strikes on Iran's Qeshm Island. It sits in Hormuz, a key route for world oil.\n🎨 AI-generated image\n\n3/5 Ukraine talks set for Abu Dhabi (Nov 10)\nRussia confirmed it will join US-mediated talks with Ukraine. Both sides will sit at one table, with the US in between.\n📷 Clint Ian Pinto (CC BY-SA 4.0) via wikimedia\n\n4/5 Gaza ceasefire under strain (5)\nIsraeli strikes killed at least five, Gaza health officials say. They test a US-brokered ceasefire from October 2025.\n🎨 AI-generated image\n\n5/5 Georgia makes history (1st)\nKeisha Lance Bottoms was elected governor of Georgia. She's the first Black woman elected governor of any state.\n📷 Harrison Keely (CC BY 4.0) via wikimedia\n\n#news #dailynews #midterms #congress #uspolitics #iran #straitofhormuz #ukraine #gaza #worldnews #didyouknow",
+  "caption": "🗳️ Democrats won control of the House and Senate, flipping 7 Senate seats. From next year, new laws need their votes.\n🛢️ Iran says 2 tankers and a tugboat caught fire in Hormuz; Trump says the war was worth it.\n📉 Dow up 1,569 points, but Asian chip stocks sank. Holding tech funds? Expect swings.\n✈️ New bomb threats hit European flights; none proved real. Flying soon? Check your flight status.\n🏛️ Abdul El-Sayed will be the first Muslim elected to the US Senate.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Diliff (CC BY 2.5) via wikimedia · Martin Falbisoner (CC BY-SA 3.0) via wikimedia · ITookSomePhotos (CC BY-SA 4.0) via wikimedia · DrHughManning (CC BY-SA 4.0) via wikimedia · Kuhnmi (CC BY-SA 4.0) via wikimedia · w_lemay (CC BY-SA 2.0) via wikimedia\n\n#news #dailynews #midterms #uspolitics #congress #iran #straitofhormuz #stockmarket #kospi #europe #aviation #youdidnotknow",
+  "carousel_caption": "🗳️ Democrats won control of the House and Senate, flipping 7 Senate seats. From next year, new laws need their votes.\n🛢️ Iran says 2 tankers and a tugboat caught fire in Hormuz; Trump says the war was worth it.\n📉 Dow up 1,569 points, but Asian chip stocks sank. Holding tech funds? Expect swings.\n✈️ New bomb threats hit European flights; none proved real. Flying soon? Check your flight status.\n🏛️ Abdul El-Sayed will be the first Muslim elected to the US Senate.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\nCover: Democrats flipped Texas. And 6 more seats\n📷 Diliff (CC BY 2.5) via wikimedia\n\n1/5 Democrats win both houses (54)\nDemocrats won control of the House and the Senate. Congress can now block Trump's bills and investigate.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n2/5 Hormuz: tankers on fire (Mine)\nIran says 2 tankers and a tugboat caught fire in Hormuz. Trump says the war was worth it despite election losses.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia\n\n3/5 Dow jumps, chip stocks sink (-5.3%)\nDow rose 1,569 points; Korea's KOSPI fell 5.3% Thursday. Investors fear tighter AI data-centre rules under Democrats.\n📷 DrHughManning (CC BY-SA 4.0) via wikimedia\n\n4/5 Europe flights hit by threats (2nd)\nAirlines in Europe got bomb threats again Thursday. Flights diverted, some escorted by jets; none proved real.\n📷 Kuhnmi (CC BY-SA 4.0) via wikimedia\n\n5/5 A Senate first in Michigan (1st)\nAbdul El-Sayed won Michigan's Senate seat on Tuesday. He'll be the first Muslim elected to the US Senate.\n📷 w_lemay (CC BY-SA 2.0) via wikimedia\n\n#news #dailynews #midterms #uspolitics #congress #iran #straitofhormuz #stockmarket #kospi #europe #aviation #youdidnotknow",
   "slide_captions": [
-    "Congress just changed hands. Now what?\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
-    "1/5 Democrats win House and Senate (7+)\nDemocrats won both chambers, flipping 7+ Senate seats. Trump's last two years now face a Democratic Congress.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
-    "2/5 US strikes Iran's Qeshm Island (20M)\nThe US carried out limited strikes on Iran's Qeshm Island. It sits in Hormuz, a key route for world oil.\n🎨 AI-generated image",
-    "3/5 Ukraine talks set for Abu Dhabi (Nov 10)\nRussia confirmed it will join US-mediated talks with Ukraine. Both sides will sit at one table, with the US in between.\n📷 Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
-    "4/5 Gaza ceasefire under strain (5)\nIsraeli strikes killed at least five, Gaza health officials say. They test a US-brokered ceasefire from October 2025.\n🎨 AI-generated image",
-    "5/5 Georgia makes history (1st)\nKeisha Lance Bottoms was elected governor of Georgia. She's the first Black woman elected governor of any state.\n📷 Harrison Keely (CC BY 4.0) via wikimedia",
-    "Follow for your daily news brief"
+    "Democrats flipped Texas. And 6 more seats\n📷 Diliff (CC BY 2.5) via wikimedia",
+    "1/5 Democrats win both houses (54)\nDemocrats won control of the House and the Senate. Congress can now block Trump's bills and investigate.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+    "2/5 Hormuz: tankers on fire (Mine)\nIran says 2 tankers and a tugboat caught fire in Hormuz. Trump says the war was worth it despite election losses.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
+    "3/5 Dow jumps, chip stocks sink (-5.3%)\nDow rose 1,569 points; Korea's KOSPI fell 5.3% Thursday. Investors fear tighter AI data-centre rules under Democrats.\n📷 DrHughManning (CC BY-SA 4.0) via wikimedia",
+    "4/5 Europe flights hit by threats (2nd)\nAirlines in Europe got bomb threats again Thursday. Flights diverted, some escorted by jets; none proved real.\n📷 Kuhnmi (CC BY-SA 4.0) via wikimedia",
+    "5/5 A Senate first in Michigan (1st)\nAbdul El-Sayed won Michigan's Senate seat on Tuesday. He'll be the first Muslim elected to the US Senate.\n📷 w_lemay (CC BY-SA 2.0) via wikimedia",
+    "Follow for tomorrow's 5-story brief"
   ]
 }
