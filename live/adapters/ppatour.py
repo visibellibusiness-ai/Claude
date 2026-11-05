@@ -58,10 +58,16 @@ def _score(team_a: dict, team_b: dict) -> list[str]:
 
 def to_matches(data: dict, events: list[str] | None = None) -> list[Match]:
     wanted = [w.lower() for w in events] if events else None
+    divisions = {m.get("division", "").lower() for m in data.get("matches", [])}
+    # un filtro vale come nome esatto della categoria; solo se nessuna categoria ha quel nome
+    # esatto si ricade sulla sottostringa. Senza questo, "Mixed Doubles" prenderebbe anche
+    # "PPA CHALLENGER SHOWDOWN: Mixed Doubles" (altro tabellone, turni "Round 1/2/3").
+    exact = {w for w in (wanted or []) if w in divisions}
     out: list[Match] = []
     for m in data.get("matches", []):
         division = m.get("division", "")
-        if wanted and not any(w in division.lower() for w in wanted):
+        if wanted and not any(
+                division.lower() == w if w in exact else w in division.lower() for w in wanted):
             continue
         teams = m.get("teams", [])
         if len(teams) != 2:
@@ -93,10 +99,29 @@ def to_matches(data: dict, events: list[str] | None = None) -> list[Match]:
     return out
 
 
+def surnames_from_ticker(ticker: dict) -> dict[str, str]:
+    """Il ticker PPA dà ogni giocatore come {"name": "A. Waters", "fullName": "Anna Leigh Waters"}:
+    il `name` è "iniziale. Cognome" con la divisione nome/cognome fatta dal PPA stesso."""
+    out: dict[str, str] = {}
+    for m in ticker.get("matches", []):
+        for team in m.get("teams", []):
+            for p in team.get("players", []):
+                short, full = (p.get("name") or "").strip(), (p.get("fullName") or "").strip()
+                if full and ". " in short:
+                    out[full] = short.split(". ", 1)[1].strip()
+    return out
+
+
 def snapshot(base_url: str, events: list[str] | None = None,
              fetch: Callable[[str], str] | None = None,
              tournament: str = "") -> Snapshot:
     fetch = fetch or default_fetch
     data = json.loads(fetch(base_url))
+    surnames: dict[str, str] = {}
+    if "/api/scores/" in base_url:
+        try:  # il ticker mostra solo le 20 prossime partite: la cache si accumula giro dopo giro
+            surnames = surnames_from_ticker(json.loads(fetch(base_url.replace("/api/scores/", "/api/ticker/"))))
+        except Exception:
+            surnames = {}
     return Snapshot(tournament=tournament or data.get("tournamentId", ""),
-                    matches=to_matches(data, events))
+                    matches=to_matches(data, events), surnames=surnames)
