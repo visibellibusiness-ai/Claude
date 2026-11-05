@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 04/11/2026 alle 18:32 UTC. Follower: 0.
+Aggiornato il 05/11/2026 alle 00:21 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 435, di cui da non follower 435 (100%).
+- Visualizzazioni: 506, di cui da non follower 506 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 04/11/2026 | 9 | 9 | 8 | 8 | 0 | 0 |
+| 04/11/2026 | 104 | 104 | 115 | 115 | 0 | 0 |
 | 03/11/2026 | 61 | 61 | 62 | 62 | 1 | 0 |
 | 02/11/2026 | 67 | 67 | 83 | 83 | 0 | 0 |
 | 01/11/2026 | 82 | 82 | 90 | 90 | 0 | 0 |
 | 31/10/2026 | 109 | 109 | 125 | 125 | 8 | 0 |
 | 30/10/2026 | 30 | 30 | 31 | 31 | 2 | 0 |
-| 29/10/2026 | 26 | 26 | 36 | 36 | 5 | 5 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,8 +22,10 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
-| 02/11/2026 00:11 | reel | Your memories change every time you reca | 93 | 105 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 01/11/2026 00:11 | reel | What happens to your body without sleep | 103 | 119 | 0,0% | 1,9% | 1,9% | n/d |  |
+| 03/11/2026 00:14 | reel | What holding your breath really does | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
+| 02/11/2026 18:32 | reel | Your brain won't let you tickle yourself | 61 | 71 | 0,0% | 0,0% | 1,6% | n/d |  |
+| 02/11/2026 00:11 | reel | Your memories change every time you reca | 94 | 105 | 0,0% | 0,0% | 0,0% | n/d |  |
+| 01/11/2026 00:11 | reel | What happens to your body without sleep | 104 | 119 | 0,0% | 1,9% | 1,9% | n/d |  |
 | 31/10/2026 00:14 | reel | A shrimp that punches 2,500x its body we | 7 | 7 | 0,0% | 0,0% | 28,6% | n/d | copertura sotto 10 |
 | 30/10/2026 18:19 | reel | Ocean facts that sound made up | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 30/10/2026 13:41 | carousel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
@@ -61,14 +62,16 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
 | 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
 | 31/10/2026 00:14 | A shrimp that punches 2,500x its body we | 5.194 | 85.7 |
-| 01/11/2026 00:11 | What happens to your body without sleep | 5.111 | 74 |
-| 02/11/2026 00:11 | Your memories change every time you reca | 5.601 | 70.1 |
+| 01/11/2026 00:11 | What happens to your body without sleep | 5.068 | 74 |
+| 02/11/2026 00:11 | Your memories change every time you reca | 5.550 | 70.1 |
+| 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.664 | 75.8 |
+| 03/11/2026 00:14 | What holding your breath really does | 3.351 | 77.8 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 9 | 9 | 88,9% | 0,0% |
-| reel | 12 | 272 | 2,2% | 0,7% |
+| reel | 14 | 344 | 1,7% | 0,6% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

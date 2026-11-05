@@ -1,0 +1,123 @@
+{
+  "reasoning": "The only posts that reached real audiences were human body and psychology reels: sleep (104), memory (94) and tickling (61). Off-niche news reached 0-5. I am staying with a body/psychology reel, but the last 4 posts were all human body, so I chose yawning. It mixes brain, body and animals and is very interactive: viewers yawn while watching, which invites comments and sends to friends. This runs version B of the hook test (a direct challenge or claim instead of a question). I am posting it as a Trial Reel because we have about 0 followers, so this costs nothing and gives the first trial-reel data. Five short slides keep the reel short. I chose documentary music (94 reach, lowest recent skip rate) and palette 2 to keep rotating.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": true,
+  "category": "human body",
+  "topic": "Yawning: contagion, dogs, womb, brain cooling",
+  "hook": "Try not to yawn before the end",
+  "slides": [
+    {
+      "title": "It spreads by sight",
+      "body": "In Robert Provine's studies, about 55% of people yawned within 5 minutes of watching someone else yawn.",
+      "highlight": "55%",
+      "image_query": "lion yawning",
+      "image_prompt": "A lion with its mouth wide open in a big yawn, golden savanna light, soft background blur",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-0022/img_01.jpg",
+      "credit": "Kitty Terwolbeck from The Netherlands (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Reading works too",
+      "body": "Just reading or thinking about yawning can trigger a yawn. Feeling it yet?",
+      "highlight": "",
+      "image_query": "open book pillow",
+      "image_prompt": "An open book resting on a soft pillow beside a cup of tea, warm lamp light, cozy sleepy mood",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-0022/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Dogs catch ours",
+      "body": "In a 2008 study, 21 of 29 dogs yawned after watching a human yawn in front of them.",
+      "highlight": "72%",
+      "image_query": "dog yawning",
+      "image_prompt": "A sleepy dog mid-yawn on a wooden floor, warm afternoon sunlight, shallow depth of field",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-0022/img_03.jpg",
+      "credit": "Picography (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "It starts in the womb",
+      "body": "Babies already yawn in the womb at about 11 weeks, but most can't catch yawns until age 4 or 5.",
+      "highlight": "11 wks",
+      "image_query": "",
+      "image_prompt": "A tiny knitted baby blanket and a crescent moon mobile glowing softly in a dark nursery, dreamy blue tones",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-0022/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "It may cool your brain",
+      "body": "A leading theory: a deep yawn pulls in cool air and boosts blood flow, helping chill a warm brain.",
+      "highlight": "",
+      "image_query": "brain model",
+      "image_prompt": "An anatomical brain model surrounded by frost and drifting cool blue mist, dark background, cinematic light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-0022/img_05.jpg",
+      "credit": "John Campbell (CC BY 2.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new fact every day",
+  "caption": "Yawning is weirdly contagious. In Robert Provine's experiments, about half of people yawned within minutes of watching others yawn. For many, just reading about it is enough.\n\nIt even jumps between species. In one study, most dogs yawned after watching a person yawn. Yet babies, who already yawn in the womb, don't catch yawns until around age 4.\n\nBe honest: how many times did you yawn while watching this? 🥱\n\n📷 Akira 001 (CC BY-SA 4.0) via wikimedia · Kitty Terwolbeck from The Netherlands (CC BY 2.0) via wikimedia · Picography (CC0) via wikimedia · John Campbell (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "yawning",
+    "didyouknow",
+    "humanbody",
+    "psychology",
+    "brainfacts",
+    "sciencefacts",
+    "funfacts",
+    "dogsofinstagram",
+    "learnsomethingnew",
+    "factsdaily"
+  ],
+  "sources": [
+    "Provine, R. R. (1986). Yawning as a stereotyped action pattern and releasing stimulus. Ethology, 72(2), 109-122",
+    "Provine, R. R. (2005). Yawning. American Scientist, 93(6), 532-539",
+    "Joly-Mascheroni, R. M., Senju, A., & Shepherd, A. J. (2008). Dogs catch human yawns. Biology Letters, 4(5), 446-448",
+    "Helt, M. S. et al. (2010). Contagious yawning in autistic and typical development. Child Development, 81(5), 1620-1631",
+    "Gallup, A. C., & Gallup, G. G. (2007). Yawning as a brain cooling mechanism. Evolutionary Psychology, 5(1)",
+    "de Vries, J. I. P., Visser, G. H. A., & Prechtl, H. F. R. (1982). The emergence of fetal behaviour. Early Human Development, 7(4), 301-322"
+  ],
+  "image_query": "cat yawning",
+  "image_prompt": "A fluffy cat mid-yawn with mouth wide open, curled on a soft blanket in warm morning light, cozy and sleepy",
+  "design": {
+    "palette": 2,
+    "cover_label": "Body test",
+    "swipe_text": "Watch closely",
+    "follow_line": "Daily facts your brain will love"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261105-0022/img_cover.jpg",
+  "cover_credit": "Akira 001 (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Yawning is weirdly contagious. In Robert Provine's experiments, about half of people yawned within minutes of watching others yawn. For many, just reading about it is enough.\n\nIt even jumps between species. In one study, most dogs yawned after watching a person yawn. Yet babies, who already yawn in the womb, don't catch yawns until around age 4.\n\nBe honest: how many times did you yawn while watching this? 🥱",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "scale",
+      "rise",
+      "right",
+      "blur",
+      "rise",
+      "left",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "punch",
+      "cut",
+      "flash",
+      "glitch",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}
