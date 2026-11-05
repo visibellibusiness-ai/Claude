@@ -702,5 +702,21 @@
       "palette": 2
     },
     "media_id": "18380043382242401"
+  },
+  {
+    "date": "20261105-1823",
+    "series": "facts",
+    "topic": "Why your recorded voice sounds strange: bone conduction, stapedius reflex, self-voice bias",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "Why your voice sounds weird on recordings",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "17945127516363125"
   }
 ]
