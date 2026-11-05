@@ -1,0 +1,121 @@
+{
+  "reasoning": "Human body and psychology reels with relatable 'what happens to you' angles are my only posts with reach near 100 (sleep 104, memories 94). The last five posts were all body topics, so I am staying in that proven area with a fresh, relatable psychology-and-body subject almost everyone has felt: hating your own recorded voice. It should drive shares and comments. Reel format, since reels carry nearly all non-follower reach. I kept it to 5 short slides and used lofi music, which was on the top performer. Since 100% of reach comes from non-followers anyway, this is a low-risk first Trial Reel test. Palette 4 continues the rotation. The caption ends with an opinion question to test comment pull.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": true,
+  "category": "human body",
+  "topic": "Why your recorded voice sounds strange: bone conduction, stapedius reflex, self-voice bias",
+  "hook": "Why your voice sounds weird on recordings",
+  "slides": [
+    {
+      "title": "Two paths to your ear",
+      "body": "When you speak, sound reaches your inner ear through the air and through the bones of your skull.",
+      "highlight": "2",
+      "image_query": "human skull model",
+      "image_prompt": "Anatomical skull model on a dark table with soft glowing sound waves passing through the bone toward the ear area",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1823/img_01.jpg",
+      "credit": "unknown (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Bones add the bass",
+      "body": "Your skull carries low tones well, so in your head your voice sounds deeper and fuller than it really is.",
+      "highlight": "Deeper",
+      "image_query": "bass speaker vibration",
+      "image_prompt": "Close-up of a large bass speaker cone vibrating, dust jumping on its surface, deep moody lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1823/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Microphones skip the bones",
+      "body": "A recording only captures sound through the air. That thinner, higher voice is what everyone else hears.",
+      "highlight": "",
+      "image_query": "studio microphone",
+      "image_prompt": "Vintage studio microphone in a dim room with thin bright sound waves drifting through the air around it",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1823/img_03.jpg",
+      "credit": "Galak76 (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your ears turn it down",
+      "body": "A tiny middle-ear muscle tightens as you speak, muffling your own voice so it doesn't deafen you.",
+      "highlight": "",
+      "image_query": "ear anatomy model",
+      "image_prompt": "Detailed anatomical ear model with a tiny glowing muscle inside the middle ear, soft blue lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1823/img_04.jpg",
+      "credit": "RWhitwam (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "You actually like it",
+      "body": "In a 2013 study, people rated their own voice as more attractive when they didn't recognize it as theirs.",
+      "highlight": "2013",
+      "image_query": "cassette tape recorder",
+      "image_prompt": "Old cassette tape recorder on a wooden desk, a small golden heart shape resting beside it, warm light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261105-1823/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "That cringe when you hear yourself on a voice note is real, and it has a physical cause. In your head, your voice also travels through your skull bones, which boost the low tones. A microphone only picks up the air, so the recording sounds higher and thinner than the voice you know.\n\nThe twist: in a 2013 study, people rated their own voice as more attractive when they didn't realize it was theirs. So the problem is mostly surprise.\n\nBe honest: do you still hate hearing your own voice on recordings?\n\n📷 unknown (CC BY 4.0) via wikimedia · Galak76 (CC BY-SA 3.0) via wikimedia · RWhitwam (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "didyouknow",
+    "sciencefacts",
+    "humanbody",
+    "psychologyfacts",
+    "brainfacts",
+    "funfacts",
+    "voice",
+    "learnsomethingnew",
+    "factsdaily",
+    "mindblown"
+  ],
+  "sources": [
+    "Hughes, S. M. & Harrison, M. A. (2013). I like my voice better: self-enhancement bias in perceptions of voice attractiveness. Perception, 42(9).",
+    "Pörschmann, C. (2000). Influences of bone conduction and air conduction on the sound of one's own voice. Acta Acustica united with Acustica, 86.",
+    "Borg, E. & Zakrisson, J.-E. (1975). The activity of the stapedius muscle in man during vocalization. Acta Oto-Laryngologica, 79.",
+    "Scientific American: Why does my voice sound different on a recording?"
+  ],
+  "image_query": "vintage microphone",
+  "image_prompt": "Vintage microphone beside an old cassette recorder on a dark desk, faint sound waves bending strangely in the air, moody cinematic light",
+  "design": {
+    "palette": 4,
+    "cover_label": "Your Body Explained",
+    "swipe_text": "Watch this",
+    "follow_line": "Weird science about you, every day"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261105-1823/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "That cringe when you hear yourself on a voice note is real, and it has a physical cause. In your head, your voice also travels through your skull bones, which boost the low tones. A microphone only picks up the air, so the recording sounds higher and thinner than the voice you know.\n\nThe twist: in a 2013 study, people rated their own voice as more attractive when they didn't realize it was theirs. So the problem is mostly surprise.\n\nBe honest: do you still hate hearing your own voice on recordings?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "left",
+      "scale",
+      "blur",
+      "right",
+      "left",
+      "scale",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "cut",
+      "punch",
+      "glitch",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "mystery"
+}
