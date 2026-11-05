@@ -686,5 +686,21 @@
       "palette": 3
     },
     "media_id": "18431186644150829"
+  },
+  {
+    "date": "20261105-0022",
+    "series": "facts",
+    "topic": "Yawning: contagion, dogs, womb, brain cooling",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "Try not to yawn before the end",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18380043382242401"
   }
 ]
