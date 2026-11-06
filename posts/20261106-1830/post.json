@@ -1,0 +1,123 @@
+{
+  "reasoning": "Reels drive almost all reach so far. The best performers were body and brain explainers with a 'what happens / what it really does' hook: sleep deprivation (104 reach, 2 shares), memories (94) and fear (53). Recent posts are heavy on body reflexes, so I'm moving to an everyday-science angle with the same proven hook shape. Caffeine is universal and relatable, which should help shares ('send this to your coffee friend'). It is a 5-slide reel with the direct-claim hook (version B of the hook test). Lofi music went with the top reel. Palette 0 continues the rotation. I'm not using a trial reel because with 0 followers it adds no protection.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Caffeine: adenosine blocking, half-life, sleep loss, crash, withdrawal",
+  "hook": "What coffee really does to your brain",
+  "slides": [
+    {
+      "title": "It hijacks sleep signals",
+      "body": "Caffeine looks like adenosine, the molecule that makes you sleepy, and blocks its receptors in your brain.",
+      "highlight": "",
+      "image_query": "coffee cup beans",
+      "image_prompt": "A steaming coffee cup beside a glowing model of a brain on a dark wooden table, moody cinematic light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1830/img_01.jpg",
+      "credit": "Christoph (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Half stays for hours",
+      "body": "On average, half the caffeine from your cup is still in your blood about 5 hours later.",
+      "highlight": "5 hrs",
+      "image_query": "espresso shot",
+      "image_prompt": "An hourglass filled with dark coffee grounds next to an espresso cup, dramatic side lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1830/img_02.jpg",
+      "credit": "massage-techniques (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "It steals your sleep",
+      "body": "In one study, a strong dose taken 6 hours before bed still cut total sleep by more than an hour.",
+      "highlight": "-1 hr",
+      "image_query": "alarm clock night",
+      "image_prompt": "An empty coffee mug on a bedside table next to an analog alarm clock at night, blue moonlight through a window",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1830/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Why the crash hits",
+      "body": "Adenosine keeps piling up while it's blocked. When caffeine fades, it floods the receptors at once.",
+      "highlight": "",
+      "image_query": "empty coffee cup",
+      "image_prompt": "A tipped-over empty coffee cup with a few spilled beans on a desk, dim late-afternoon light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1830/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Your brain adapts",
+      "body": "Daily drinkers may grow extra adenosine receptors. Skip a day and withdrawal headaches can start within 12 to 24 hours.",
+      "highlight": "24 h",
+      "image_query": "coffee beans closeup",
+      "image_prompt": "A pile of roasted coffee beans with a cracked glass cup in front, dark moody studio light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1830/img_05.jpg",
+      "credit": "unknown (CC0 / public domain) via openverse",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for facts your brain will love",
+  "caption": "Your morning coffee doesn't give you energy. It blocks the signal that tells your brain you're tired. Caffeine fits into the same receptors as adenosine, the molecule that builds sleep pressure all day.\n\nThat's why the effect lasts so long. On average, half your caffeine is still in your blood around 5 hours after your cup. A late coffee can quietly cut your sleep even if you fall asleep fine.\n\nHow many cups do you drink a day? Be honest 👇\n\n📷 Christoph (CC0) via wikimedia · massage-techniques (CC BY-SA 2.0) via wikimedia · unknown (CC0 / public domain) via openverse",
+  "hashtags": [
+    "coffee",
+    "caffeine",
+    "brainfacts",
+    "sciencefacts",
+    "didyouknow",
+    "humanbody",
+    "sleepscience",
+    "neuroscience",
+    "funfacts",
+    "learnontiktok",
+    "coffeelover",
+    "factsdaily"
+  ],
+  "sources": [
+    "Fredholm BB et al. (1999). Actions of caffeine in the brain. Pharmacological Reviews 51(1):83-133",
+    "Drake C et al. (2013). Caffeine effects on sleep taken 0, 3, or 6 hours before going to bed. Journal of Clinical Sleep Medicine 9(11):1195-1200",
+    "Juliano LM, Griffiths RR (2004). A critical review of caffeine withdrawal. Psychopharmacology 176:1-29",
+    "U.S. FDA: Spilling the Beans: How Much Caffeine is Too Much?"
+  ],
+  "image_query": "coffee cup steam dark",
+  "image_prompt": "A steaming black coffee cup on a dark table with the steam curling into the shape of a brain, cinematic moody lighting",
+  "design": {
+    "palette": 0,
+    "cover_label": "Everyday science",
+    "swipe_text": "Watch to the end",
+    "follow_line": "New surprising facts every day"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261106-1830/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "Your morning coffee doesn't give you energy. It blocks the signal that tells your brain you're tired. Caffeine fits into the same receptors as adenosine, the molecule that builds sleep pressure all day.\n\nThat's why the effect lasts so long. On average, half your caffeine is still in your blood around 5 hours after your cup. A late coffee can quietly cut your sleep even if you fall asleep fine.\n\nHow many cups do you drink a day? Be honest 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "blur",
+      "left",
+      "rise",
+      "blur",
+      "right",
+      "left",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "cut",
+      "punch",
+      "cut",
+      "punch"
+    ]
+  },
+  "music_used": "documentary"
+}
