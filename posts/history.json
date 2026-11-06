@@ -758,5 +758,21 @@
       "palette": 1
     },
     "media_id": "18080415641404845"
+  },
+  {
+    "date": "20261106-1830",
+    "series": "facts",
+    "topic": "Caffeine: adenosine blocking, half-life, sleep loss, crash, withdrawal",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "What coffee really does to your brain",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "17928229872433287"
   }
 ]
