@@ -1,39 +1,39 @@
 {
-  "date": "20261105-1354",
+  "date": "20261106-1350",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "mystery",
-  "theme_index": 27,
-  "topic": "Daily news 2026-11-05",
+  "music": "documentary",
+  "theme_index": 29,
+  "topic": "Daily news 2026-11-06",
   "category": "news",
-  "hook": "Democrats flipped Texas. And 6 more seats",
+  "hook": "Democrats now control both House and Senate",
   "slides": 5,
   "design": {
     "style": "mystery",
     "palette": 2
   },
   "images": [
-    "posts/20261105-1354/slide_01.jpg",
-    "posts/20261105-1354/slide_02.jpg",
-    "posts/20261105-1354/slide_03.jpg",
-    "posts/20261105-1354/slide_04.jpg",
-    "posts/20261105-1354/slide_05.jpg",
-    "posts/20261105-1354/slide_06.jpg",
-    "posts/20261105-1354/slide_07.jpg"
+    "posts/20261106-1350/slide_01.jpg",
+    "posts/20261106-1350/slide_02.jpg",
+    "posts/20261106-1350/slide_03.jpg",
+    "posts/20261106-1350/slide_04.jpg",
+    "posts/20261106-1350/slide_05.jpg",
+    "posts/20261106-1350/slide_06.jpg",
+    "posts/20261106-1350/slide_07.jpg"
   ],
-  "story": "posts/20261105-1354/story.jpg",
-  "ai": false,
+  "story": "posts/20261106-1350/story.jpg",
+  "ai": true,
   "story_ai": false,
-  "caption": "🗳️ Democrats won control of the House and Senate, flipping 7 Senate seats. From next year, new laws need their votes.\n🛢️ Iran says 2 tankers and a tugboat caught fire in Hormuz; Trump says the war was worth it.\n📉 Dow up 1,569 points, but Asian chip stocks sank. Holding tech funds? Expect swings.\n✈️ New bomb threats hit European flights; none proved real. Flying soon? Check your flight status.\n🏛️ Abdul El-Sayed will be the first Muslim elected to the US Senate.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Diliff (CC BY 2.5) via wikimedia · Martin Falbisoner (CC BY-SA 3.0) via wikimedia · ITookSomePhotos (CC BY-SA 4.0) via wikimedia · DrHughManning (CC BY-SA 4.0) via wikimedia · Kuhnmi (CC BY-SA 4.0) via wikimedia · w_lemay (CC BY-SA 2.0) via wikimedia\n\n#news #dailynews #midterms #uspolitics #congress #iran #straitofhormuz #stockmarket #kospi #europe #aviation #youdidnotknow",
-  "carousel_caption": "🗳️ Democrats won control of the House and Senate, flipping 7 Senate seats. From next year, new laws need their votes.\n🛢️ Iran says 2 tankers and a tugboat caught fire in Hormuz; Trump says the war was worth it.\n📉 Dow up 1,569 points, but Asian chip stocks sank. Holding tech funds? Expect swings.\n✈️ New bomb threats hit European flights; none proved real. Flying soon? Check your flight status.\n🏛️ Abdul El-Sayed will be the first Muslim elected to the US Senate.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\nCover: Democrats flipped Texas. And 6 more seats\n📷 Diliff (CC BY 2.5) via wikimedia\n\n1/5 Democrats win both houses (54)\nDemocrats won control of the House and the Senate. Congress can now block Trump's bills and investigate.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n2/5 Hormuz: tankers on fire (Mine)\nIran says 2 tankers and a tugboat caught fire in Hormuz. Trump says the war was worth it despite election losses.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia\n\n3/5 Dow jumps, chip stocks sink (-5.3%)\nDow rose 1,569 points; Korea's KOSPI fell 5.3% Thursday. Investors fear tighter AI data-centre rules under Democrats.\n📷 DrHughManning (CC BY-SA 4.0) via wikimedia\n\n4/5 Europe flights hit by threats (2nd)\nAirlines in Europe got bomb threats again Thursday. Flights diverted, some escorted by jets; none proved real.\n📷 Kuhnmi (CC BY-SA 4.0) via wikimedia\n\n5/5 A Senate first in Michigan (1st)\nAbdul El-Sayed won Michigan's Senate seat on Tuesday. He'll be the first Muslim elected to the US Senate.\n📷 w_lemay (CC BY-SA 2.0) via wikimedia\n\n#news #dailynews #midterms #uspolitics #congress #iran #straitofhormuz #stockmarket #kospi #europe #aviation #youdidnotknow",
+  "caption": "🗳️ Democrats won both the House and Senate; Mississippi's Senate race is still being counted.\n🛢️ More tankers hit in Hormuz. Oil jumped 3.8% Thursday, so watch fuel prices.\n📉 Nasdaq fell more than 5%. Tech funds may swing for a while.\n✈️ Hoax bomb threats hit at least 20 European flights. Check your airline before flying.\n🏛️ A judge paused Trump's 250-ft Washington arch for 14 days.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia · Frans Berkelaar (CC BY 2.0) via wikimedia · BalticServers.com (CC BY-SA 3.0) via wikimedia\n\n#news #dailynews #midterms #uspolitics #congress #oilprices #stockmarket #nasdaq #europe #travelnews #worldnews #youdidnotknow",
+  "carousel_caption": "🗳️ Democrats won both the House and Senate; Mississippi's Senate race is still being counted.\n🛢️ More tankers hit in Hormuz. Oil jumped 3.8% Thursday, so watch fuel prices.\n📉 Nasdaq fell more than 5%. Tech funds may swing for a while.\n✈️ Hoax bomb threats hit at least 20 European flights. Check your airline before flying.\n🏛️ A judge paused Trump's 250-ft Washington arch for 14 days.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\nCover: Democrats now control both House and Senate\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n1/5 Democrats win both chambers (250+)\nDemocrats won the House and Senate in Tuesday's midterms. It would be their largest House majority since 2008.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n2/5 More tankers hit in Hormuz (+3.8%)\nIran says more tankers hit mines in Hormuz. Brent oil rose 3.8% Thursday, then eased early Friday.\n📷 Frans Berkelaar (CC BY 2.0) via wikimedia\n\n3/5 Tech stocks tumble after vote (-5%)\nThe Nasdaq fell more than 5% on Thursday. Investors are reassessing AI data centre plans after the vote.\n📷 BalticServers.com (CC BY-SA 3.0) via wikimedia\n\n4/5 Hoax bomb threats hit flights (20+)\nAt least 20 European flights got hoax bomb threats Thursday. Second wave this week; no bombs found, no one blamed.\n🎨 AI-generated image\n\n5/5 Judge pauses 250-ft arch plan (250 ft)\nA judge blocked Trump's planned Washington arch for 14 days. It came hours after planners approved it 8–4.\n🎨 AI-generated image\n\n#news #dailynews #midterms #uspolitics #congress #oilprices #stockmarket #nasdaq #europe #travelnews #worldnews #youdidnotknow",
   "slide_captions": [
-    "Democrats flipped Texas. And 6 more seats\n📷 Diliff (CC BY 2.5) via wikimedia",
-    "1/5 Democrats win both houses (54)\nDemocrats won control of the House and the Senate. Congress can now block Trump's bills and investigate.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
-    "2/5 Hormuz: tankers on fire (Mine)\nIran says 2 tankers and a tugboat caught fire in Hormuz. Trump says the war was worth it despite election losses.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
-    "3/5 Dow jumps, chip stocks sink (-5.3%)\nDow rose 1,569 points; Korea's KOSPI fell 5.3% Thursday. Investors fear tighter AI data-centre rules under Democrats.\n📷 DrHughManning (CC BY-SA 4.0) via wikimedia",
-    "4/5 Europe flights hit by threats (2nd)\nAirlines in Europe got bomb threats again Thursday. Flights diverted, some escorted by jets; none proved real.\n📷 Kuhnmi (CC BY-SA 4.0) via wikimedia",
-    "5/5 A Senate first in Michigan (1st)\nAbdul El-Sayed won Michigan's Senate seat on Tuesday. He'll be the first Muslim elected to the US Senate.\n📷 w_lemay (CC BY-SA 2.0) via wikimedia",
-    "Follow for tomorrow's 5-story brief"
+    "Democrats now control both House and Senate\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+    "1/5 Democrats win both chambers (250+)\nDemocrats won the House and Senate in Tuesday's midterms. It would be their largest House majority since 2008.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+    "2/5 More tankers hit in Hormuz (+3.8%)\nIran says more tankers hit mines in Hormuz. Brent oil rose 3.8% Thursday, then eased early Friday.\n📷 Frans Berkelaar (CC BY 2.0) via wikimedia",
+    "3/5 Tech stocks tumble after vote (-5%)\nThe Nasdaq fell more than 5% on Thursday. Investors are reassessing AI data centre plans after the vote.\n📷 BalticServers.com (CC BY-SA 3.0) via wikimedia",
+    "4/5 Hoax bomb threats hit flights (20+)\nAt least 20 European flights got hoax bomb threats Thursday. Second wave this week; no bombs found, no one blamed.\n🎨 AI-generated image",
+    "5/5 Judge pauses 250-ft arch plan (250 ft)\nA judge blocked Trump's planned Washington arch for 14 days. It came hours after planners approved it 8–4.\n🎨 AI-generated image",
+    "Follow for your daily news brief"
   ]
 }

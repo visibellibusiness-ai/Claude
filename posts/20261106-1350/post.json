@@ -1,0 +1,212 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-06",
+  "hook": "Democrats now control both House and Senate",
+  "reel_hook": "Congress flipped. Here's what else happened.",
+  "slides": [
+    {
+      "title": "Democrats win both chambers",
+      "highlight": "250+",
+      "image_query": "us capitol building",
+      "image_prompt": "US Capitol dome at dawn with neat stacks of blank paper ballots and a ballot box in the foreground, soft golden light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Democrats won the House and Senate in Tuesday's midterms."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It would be their largest House majority since 2008."
+        ],
+        [
+          "FOR YOU",
+          "The new Congress starts next year; Mississippi's Senate race is still too close to call."
+        ]
+      ],
+      "body": "Democrats won the House and Senate in Tuesday's midterms. It would be their largest House majority since 2008. The new Congress starts next year; Mississippi's Senate race is still too close to call.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1350/img_01.jpg",
+      "credit": "Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "More tankers hit in Hormuz",
+      "highlight": "+3.8%",
+      "image_query": "oil tanker sea",
+      "image_prompt": "Large oil tanker crossing a narrow strait at dusk, distant smoke on the horizon, calm dark water",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran says more tankers hit mines in Hormuz."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Brent oil rose 3.8% Thursday, then eased early Friday."
+        ],
+        [
+          "FOR YOU",
+          "Oil swings fast on Hormuz news, and fuel prices can follow within weeks."
+        ]
+      ],
+      "body": "Iran says more tankers hit mines in Hormuz. Brent oil rose 3.8% Thursday, then eased early Friday. Oil swings fast on Hormuz news, and fuel prices can follow within weeks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1350/img_02.jpg",
+      "credit": "Frans Berkelaar (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Tech stocks tumble after vote",
+      "highlight": "-5%",
+      "image_query": "server room data center",
+      "image_prompt": "Glowing computer chip on a circuit board, lit in red, with a downward arrow of light falling across it",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The Nasdaq fell more than 5% on Thursday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Investors are reassessing AI data centre plans after the vote."
+        ],
+        [
+          "FOR YOU",
+          "Hold tech funds? Expect swings. South Korea's KOSPI fell over 8% Friday."
+        ]
+      ],
+      "body": "The Nasdaq fell more than 5% on Thursday. Investors are reassessing AI data centre plans after the vote. Hold tech funds? Expect swings. South Korea's KOSPI fell over 8% Friday.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1350/img_03.jpg",
+      "credit": "BalticServers.com (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Hoax bomb threats hit flights",
+      "highlight": "20+",
+      "image_query": "airplane runway night",
+      "image_prompt": "Passenger jet parked on a wet runway at night under airport floodlights, empty tarmac, calm atmosphere",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "At least 20 European flights got hoax bomb threats Thursday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Second wave this week; no bombs found, no one blamed."
+        ],
+        [
+          "FOR YOU",
+          "Flying in Europe? Possible delays or diversions, so check your airline's updates."
+        ]
+      ],
+      "body": "At least 20 European flights got hoax bomb threats Thursday. Second wave this week; no bombs found, no one blamed. Flying in Europe? Possible delays or diversions, so check your airline's updates.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1350/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Judge pauses 250-ft arch plan",
+      "highlight": "250 ft",
+      "image_query": "",
+      "image_prompt": "Architectural model of a tall white stone arch on a wooden table beside a judge's gavel, soft studio light",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A judge blocked Trump's planned Washington arch for 14 days."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It came hours after planners approved it 8–4."
+        ],
+        [
+          "FOR YOU",
+          "For at least 14 days, the 76-metre arch stays on paper."
+        ]
+      ],
+      "body": "A judge blocked Trump's planned Washington arch for 14 days. It came hours after planners approved it 8–4. For at least 14 days, the 76-metre arch stays on paper.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-1350/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🗳️ Democrats won both the House and Senate; Mississippi's Senate race is still being counted.\n🛢️ More tankers hit in Hormuz. Oil jumped 3.8% Thursday, so watch fuel prices.\n📉 Nasdaq fell more than 5%. Tech funds may swing for a while.\n✈️ Hoax bomb threats hit at least 20 European flights. Check your airline before flying.\n🏛️ A judge paused Trump's 250-ft Washington arch for 14 days.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia · Frans Berkelaar (CC BY 2.0) via wikimedia · BalticServers.com (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "midterms",
+    "uspolitics",
+    "congress",
+    "oilprices",
+    "stockmarket",
+    "nasdaq",
+    "europe",
+    "travelnews",
+    "worldnews",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://edition.cnn.com/2026/11/05/politics/live-news/midterm-election-congress",
+    "https://www.cbsnews.com/live-updates/election-day-2026-midterms/",
+    "https://www.nbcnews.com/politics/2026-election/live-blog/election-results-house-senate-trump-congress-live-updates-rcna607549",
+    "https://www.cnbc.com/2026/11/05/mississippi-senate-election-scott-colom-hyde-smith.html",
+    "https://www.usnews.com/news/top-news/articles/2026-11-05/tankers-hit-in-hormuz-as-iran-keeps-up-pressure-after-us-vote",
+    "https://www.cbsnews.com/live-updates/iran-war-us-trump-midterms-strait-of-hormuz/",
+    "https://www.aljazeera.com/news/liveblog/2026/11/6/iran-war-live-trump-warns-us-may-have-to-destroy-rest-of-iran",
+    "https://www.cnbc.com/2026/11/06/oil-price-today-brent-wti.html",
+    "https://www.investing.com/news/economy-news/trading-day-a-november-5-market-bonfire-5005919",
+    "https://news.sbs.co.kr/english/article.do?news_id=N1008833956",
+    "https://edition.cnn.com/2026/11/05/politics/live-news/midterm-election-congress",
+    "https://www.cbc.ca/news/world/europe-bomb-threats-czechia-poland-france-9.7410169",
+    "https://www.cnbc.com/2026/11/05/bomb-threats-flights-europe.html",
+    "https://www.cbsnews.com/news/europe-flights-airlines-hoax-bomb-threats/",
+    "https://www.aljazeera.com/news/2026/11/5/bomb-threat-diverts-dublin-rome-flight-to-france",
+    "https://www.aljazeera.com/news/2026/11/6/us-judge-halts-construction-of-trumps-triumphal-arch-in-washington-dc",
+    "https://www.cbsnews.com/news/trump-arch-approval-national-capital-planning-commission/"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 06 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "us capitol building",
+  "image_prompt": "US Capitol dome at dawn, with a ballot box and neat stacks of blank paper ballots in the foreground, soft golden light, quiet atmosphere",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261106-1350/img_cover.jpg",
+  "cover_credit": "Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🗳️ Democrats won both the House and Senate; Mississippi's Senate race is still being counted.\n🛢️ More tankers hit in Hormuz. Oil jumped 3.8% Thursday, so watch fuel prices.\n📉 Nasdaq fell more than 5%. Tech funds may swing for a while.\n✈️ Hoax bomb threats hit at least 20 European flights. Check your airline before flying.\n🏛️ A judge paused Trump's 250-ft Washington arch for 14 days.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "blur",
+      "left",
+      "rise",
+      "blur",
+      "right",
+      "left",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "cut",
+      "punch",
+      "cut",
+      "punch"
+    ]
+  },
+  "music_used": "documentary"
+}
