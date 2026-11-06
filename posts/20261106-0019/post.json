@@ -1,0 +1,124 @@
+{
+  "reasoning": "The two best performers were 'What happens to your body without sleep' (reach 104) and 'Your memories change every time you recall them' (94). Both are Reels with a body or brain mechanism that applies to every viewer. The last six posts were all human body topics, so I'm moving to a close but fresh psychology and memory subject: infantile amnesia. It is universal, counterintuitive and drives comments ('what's your earliest memory?'). I'm keeping the Reel format with 5 slides, short texts and lofi music, since lofi was on the 104-reach post, plus palette 1, which was also on that post. This reel tests hook version B from the hook experiment: a direct claim or question about the reader instead of a bold number. It runs as a Trial Reel to start testing trial distribution, since nearly all reach is non-follower anyway. The caption ends with a personal-memory question to test comment-driving prompts after save and share prompts earned nothing.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": true,
+  "category": "psychology",
+  "topic": "Infantile amnesia: why we can't remember being a baby",
+  "hook": "Why you can't remember being a baby",
+  "slides": [
+    {
+      "title": "It has a name",
+      "body": "Scientists call it infantile amnesia. Most adults' earliest memories date back to around age 3.",
+      "highlight": "Age 3",
+      "image_query": "baby crib nursery",
+      "image_prompt": "An empty wooden baby crib in a softly lit nursery, a tiny knitted blanket fading into mist, dreamy nostalgic atmosphere",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-0019/img_01.jpg",
+      "credit": "Ansel Adams (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Babies do remember",
+      "body": "A 2025 Yale brain-scan study found 1-year-olds already storing new memories in the hippocampus.",
+      "highlight": "1 yr",
+      "image_query": "brain scan MRI",
+      "image_prompt": "A small glowing seahorse-shaped structure inside a translucent brain model, soft blue light, floating baby toys around it",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-0019/img_02.jpg",
+      "credit": "Raymond F Sekula Jr, Peter J Jannetta, Kenneth F Casey, Edward M Marchan, L Kath (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Kids forget later",
+      "body": "Kids aged 5 to 7 recall over 60% of events from age 3. By age 8 or 9, it drops to about 35%.",
+      "highlight": "35%",
+      "image_query": "old childhood photographs",
+      "image_prompt": "A stack of faded childhood polaroid photos slowly dissolving into dust at the edges, warm vintage light on a wooden table",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-0019/img_03.jpg",
+      "credit": "Eugene Field (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Too many new neurons",
+      "body": "In young mice, a burst of new brain cells in the hippocampus wiped out early memories. Babies may be similar.",
+      "highlight": "",
+      "image_query": "neurons microscope",
+      "image_prompt": "Dense glowing neuron network growing rapidly, new branches covering older faint connections, deep blue and purple tones",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-0019/img_04.jpg",
+      "credit": "ZEISS Microscopy from Germany (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Locked, not deleted?",
+      "body": "Scientists brought back 'forgotten' infant memories in mice using light. Yours may still be in there.",
+      "highlight": "",
+      "image_query": "lab mouse",
+      "image_prompt": "An old brass key glowing with a beam of light, resting beside a locked tiny wooden memory box, dark moody background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261106-0019/img_05.jpg",
+      "credit": "Rama (CC BY-SA 2.0 fr) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for facts your brain forgets",
+  "caption": "Your brain was recording from your very first year. A 2025 Yale study scanned babies and found their hippocampus already storing new memories. So why can almost none of us remember being a baby?\n\nOne leading theory: the infant brain grows new neurons so fast that old memory links get scrambled. In mice, scientists even brought 'lost' infant memories back using light. So yours may still be in there somewhere.\n\nWhat's your earliest memory, and how old were you? 👇\n\n📷 Paul Goyette from Chicago, USA (CC BY-SA 2.0) via wikimedia · Ansel Adams (Public domain) via wikimedia · Raymond F Sekula Jr, Peter J Jannetta, Kenneth F Casey, Edward M Marchan, L Kath (CC BY 2.0) via wikimedia · Eugene Field (Public domain) via wikimedia · ZEISS Microscopy from Germany (CC BY 2.0) via wikimedia · Rama (CC BY-SA 2.0 fr) via wikimedia",
+  "hashtags": [
+    "psychology",
+    "memory",
+    "brainfacts",
+    "neuroscience",
+    "didyouknow",
+    "sciencefacts",
+    "childhood",
+    "facts",
+    "mindblown",
+    "youdidnotknow",
+    "humanbrain",
+    "learnsomethingnew"
+  ],
+  "sources": [
+    "Bauer & Larkina (2014), 'The onset of childhood amnesia in childhood', Memory, 22(8)",
+    "Akers et al. (2014), 'Hippocampal neurogenesis regulates forgetting during adulthood and infancy', Science 344",
+    "Yates, Turk-Browne et al. (2025), 'Hippocampal encoding of memories in human infants', Science",
+    "Guskjolen et al. (2018), 'Recovery of enduring infantile memories through optogenetic activation', Current Biology",
+    "American Psychological Association: Infantile amnesia overview"
+  ],
+  "image_query": "baby sleeping crib",
+  "image_prompt": "An empty baby crib under soft moonlight, a few faded photographs floating above it and dissolving like smoke, nostalgic mysterious mood",
+  "design": {
+    "palette": 1,
+    "cover_label": "Psychology",
+    "swipe_text": "Watch to end",
+    "follow_line": "Daily facts about your brain and body"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261106-0019/img_cover.jpg",
+  "cover_credit": "Paul Goyette from Chicago, USA (CC BY-SA 2.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "Your brain was recording from your very first year. A 2025 Yale study scanned babies and found their hippocampus already storing new memories. So why can almost none of us remember being a baby?\n\nOne leading theory: the infant brain grows new neurons so fast that old memory links get scrambled. In mice, scientists even brought 'lost' infant memories back using light. So yours may still be in there somewhere.\n\nWhat's your earliest memory, and how old were you? 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "blur",
+      "right",
+      "scale",
+      "blur",
+      "scale",
+      "right",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "punch",
+      "glitch",
+      "dip",
+      "punch",
+      "glitch"
+    ]
+  },
+  "music_used": "lofi"
+}

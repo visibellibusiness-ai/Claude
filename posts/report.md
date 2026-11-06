@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 05/11/2026 alle 18:22 UTC. Follower: 0.
+Aggiornato il 06/11/2026 alle 00:18 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 508, di cui da non follower 508 (100%).
+- Visualizzazioni: 594, di cui da non follower 594 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 05/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 05/11/2026 | 98 | 98 | 117 | 117 | 0 | 0 |
 | 04/11/2026 | 106 | 106 | 117 | 117 | 0 | 0 |
 | 03/11/2026 | 61 | 61 | 62 | 62 | 1 | 0 |
 | 02/11/2026 | 67 | 67 | 83 | 83 | 0 | 0 |
 | 01/11/2026 | 82 | 82 | 90 | 90 | 0 | 0 |
 | 31/10/2026 | 109 | 109 | 125 | 125 | 8 | 0 |
-| 30/10/2026 | 30 | 30 | 31 | 31 | 2 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,8 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 04/11/2026 00:17 | reel | What happens to your body when you sneez | 4 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
+| 03/11/2026 18:26 | reel | What fear does to your body in seconds | 53 | 54 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 03/11/2026 00:14 | reel | What holding your breath really does | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 02/11/2026 18:32 | reel | Your brain won't let you tickle yourself | 61 | 71 | 0,0% | 0,0% | 1,6% | n/d |  |
 | 02/11/2026 00:11 | reel | Your memories change every time you reca | 94 | 105 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -67,12 +68,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 02/11/2026 00:11 | Your memories change every time you reca | 5.501 | 70.1 |
 | 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.610 | 75.8 |
 | 03/11/2026 00:14 | What holding your breath really does | 3.351 | 77.8 |
+| 03/11/2026 18:26 | What fear does to your body in seconds | 5.519 | 76 |
+| 04/11/2026 00:17 | What happens to your body when you sneez | 1.628 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 9 | 9 | 88,9% | 0,0% |
-| reel | 14 | 344 | 1,7% | 0,6% |
+| reel | 16 | 401 | 1,5% | 0,5% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
