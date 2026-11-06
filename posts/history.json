@@ -742,5 +742,21 @@
       "palette": 4
     },
     "media_id": "17945127516363125"
+  },
+  {
+    "date": "20261106-0019",
+    "series": "facts",
+    "topic": "Infantile amnesia: why we can't remember being a baby",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "psychology",
+    "hook": "Why you can't remember being a baby",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "18080415641404845"
   }
 ]
