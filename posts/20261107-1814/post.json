@@ -1,0 +1,120 @@
+{
+  "reasoning": "The strategy calls for ~90% Reels, with body and psychology as the main topics. The hook experiment alternates three styles. The last posts used a numbered list and a 'what X does' hook, so this one tests a direct claim: 'You're shorter tonight than this morning'. Direct claims carried the memories Reel to 94 reach. Daily height loss is concrete, easy to check against your own body, and safe to share. It is also a new body topic that is not on the published list. This Reel runs the follow-conversion experiment, with a 'Part 2 tomorrow' tease on the last slide. The caption adds a follow reason. I am using Trial Reels for the first time, as the strategy planned. With 0 followers there is no downside, and all reach comes from non-followers anyway. Settings: 5 short slides, lofi music to rotate away from the last mystery track, and palette 4 to rotate after palette 3.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": true,
+  "category": "human body",
+  "topic": "Daily height loss: spinal disc compression, overnight recovery, astronaut growth",
+  "hook": "You're shorter tonight than this morning",
+  "slides": [
+    {
+      "title": "Blame your spine",
+      "body": "Soft discs sit between your vertebrae. All day, gravity slowly squeezes fluid out of them.",
+      "highlight": "",
+      "image_query": "human spine model",
+      "image_prompt": "Anatomical model of a human spine on a clean table, soft studio light, discs between vertebrae clearly visible",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1814/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "The daily shrink",
+      "body": "Studies measuring adults morning and evening found they lose about 1% of their height by night.",
+      "highlight": "-1%",
+      "image_query": "height measuring tape",
+      "image_prompt": "Vintage wooden height measuring ruler on a wall with a small marker sliding down, warm evening light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1814/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Fastest after waking",
+      "body": "Most of the loss happens in the first hours after you get out of bed and start moving.",
+      "highlight": "",
+      "image_query": "unmade bed morning",
+      "image_prompt": "Unmade bed in soft morning sunlight with an alarm clock on the nightstand, calm bedroom scene",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1814/img_03.jpg",
+      "credit": "Markus Spiske (CC0 / public domain) via openverse",
+      "generated": false
+    },
+    {
+      "title": "Sleep resets it",
+      "body": "Lying down takes the load off. Overnight, the discs soak fluid back up and you regain your height.",
+      "highlight": "",
+      "image_query": "bed at night",
+      "image_prompt": "Dark bedroom with moonlight across an empty bed, a sponge slowly absorbing water on the nightstand as a metaphor",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1814/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Astronauts grow",
+      "body": "With no gravity pressing down, the spine stretches out. Astronauts can grow up to 3% taller in space.",
+      "highlight": "+3%",
+      "image_query": "astronaut space station",
+      "image_prompt": "Empty spacesuit floating inside a space station module with Earth visible through the window",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1814/img_05.jpg",
+      "credit": "NASA Johnson Space Center (Public domain) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow, don't miss it",
+  "caption": "You are not the same height you were this morning. Gravity squeezes fluid out of the discs in your spine all day. By evening, most adults are about 1% shorter, which is often 1 to 2 cm.\n\nThe good news is that you get it all back overnight while you sleep. In space there is no gravity to squeeze them, so astronauts come home up to 3% taller for a while (Spine journal, NASA).\n\nFollow for one fact about your body you never noticed, every day. Would you measure yourself tonight to check?\n\n📷 Nevit Dilmen, crop and annotation by Mikael Häggström, M.D. Author info - Reusin (CC BY-SA 3.0) via wikimedia · Markus Spiske (CC0 / public domain) via openverse · NASA Johnson Space Center (Public domain) via wikimedia",
+  "hashtags": [
+    "humanbody",
+    "sciencefacts",
+    "didyouknow",
+    "spine",
+    "facts",
+    "biology",
+    "learnsomethingnew",
+    "funfacts",
+    "health",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Tyrrell AR, Reilly T, Troup JD. Circadian variation in stature and the effects of spinal loading. Spine, 1985",
+    "NASA: Astronauts can grow up to 3% taller during spaceflight (nasa.gov)",
+    "Adams MA, Dolan P. Intervertebral disc degeneration and diurnal fluid loss, Clinical Biomechanics / Spine literature"
+  ],
+  "image_query": "spine x-ray",
+  "image_prompt": "Tall wooden height chart on a wall with two pencil marks, one higher labeled by morning sun, one lower in evening shadow, no text",
+  "design": {
+    "palette": 4,
+    "cover_label": "Your Body Daily",
+    "swipe_text": "Watch this",
+    "follow_line": "One body fact you never noticed, daily"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261107-1814/img_cover.jpg",
+  "cover_credit": "Nevit Dilmen, crop and annotation by Mikael Häggström, M.D. Author info - Reusin (CC BY-SA 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "You are not the same height you were this morning. Gravity squeezes fluid out of the discs in your spine all day. By evening, most adults are about 1% shorter, which is often 1 to 2 cm.\n\nThe good news is that you get it all back overnight while you sleep. In space there is no gravity to squeeze them, so astronauts come home up to 3% taller for a while (Spine journal, NASA).\n\nFollow for one fact about your body you never noticed, every day. Would you measure yourself tonight to check?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "blur",
+      "scale",
+      "blur",
+      "right",
+      "left",
+      "rise",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "glitch",
+      "cut",
+      "punch",
+      "flash"
+    ]
+  },
+  "music_used": "lofi"
+}
