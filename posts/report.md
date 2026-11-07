@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 07/11/2026 alle 00:16 UTC. Follower: 0.
+Aggiornato il 07/11/2026 alle 13:30 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 504, di cui da non follower 504 (100%).
+- Visualizzazioni: 510, di cui da non follower 510 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 06/11/2026 | 11 | 11 | 12 | 12 | 0 | 0 |
+| 07/11/2026 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 06/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
 | 05/11/2026 | 118 | 118 | 140 | 140 | 0 | 0 |
 | 04/11/2026 | 106 | 106 | 117 | 117 | 0 | 0 |
 | 03/11/2026 | 61 | 61 | 62 | 62 | 1 | 0 |
@@ -22,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 05/11/2026 00:22 | reel | Try not to yawn before the end | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 04/11/2026 18:32 | reel | What cold water does to you in 60 second | 96 | 106 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 04/11/2026 00:17 | reel | What happens to your body when you sneez | 4 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 03/11/2026 18:26 | reel | What fear does to your body in seconds | 53 | 54 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -72,12 +74,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 03/11/2026 18:26 | What fear does to your body in seconds | 5.519 | 76 |
 | 04/11/2026 00:17 | What happens to your body when you sneez | 1.628 | 100 |
 | 04/11/2026 18:32 | What cold water does to you in 60 second | 5.636 | 78.6 |
+| 05/11/2026 00:22 | Try not to yawn before the end | 5.359 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 9 | 9 | 88,9% | 0,0% |
-| reel | 17 | 497 | 1,2% | 0,4% |
+| reel | 18 | 499 | 1,2% | 0,4% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

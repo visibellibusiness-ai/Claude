@@ -1,0 +1,205 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-07",
+  "hook": "New Zealand still doesn't know who won",
+  "reel_hook": "One country still doesn't know who won",
+  "slides": [
+    {
+      "title": "NZ vote: too close to call",
+      "highlight": "99.7%",
+      "image_query": "New Zealand parliament Beehive",
+      "image_prompt": "A sealed ballot box on a wooden table beside a brass scale with two perfectly equal weights, New Zealand flag folded nearby, soft morning light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "New Zealand's 7 November election is still too close to call."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Now everyone waits for the special votes to be counted."
+        ],
+        [
+          "FOR YOU",
+          "Treat any early winner claims with caution until special votes are counted."
+        ]
+      ],
+      "body": "New Zealand's 7 November election is still too close to call. Now everyone waits for the special votes to be counted. Treat any early winner claims with caution until special votes are counted.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1334/img_01.jpg",
+      "credit": "Donaldytong (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Ukraine talks set for Abu Dhabi",
+      "highlight": "3-way",
+      "image_query": "Abu Dhabi skyline",
+      "image_prompt": "Three empty chairs around a round negotiating table with glasses of water, Abu Dhabi skyline at dusk through a large window",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Ukraine, Russia and US talk in Abu Dhabi, 10–11 November."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First direct three-way talks since February, on ending the war."
+        ],
+        [
+          "FOR YOU",
+          "On 10–11 November, ending the war, Europe's security and rebuilding top the agenda."
+        ]
+      ],
+      "body": "Ukraine, Russia and US talk in Abu Dhabi, 10–11 November. First direct three-way talks since February, on ending the war. On 10–11 November, ending the war, Europe's security and rebuilding top the agenda.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1334/img_02.jpg",
+      "credit": "Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Democrats take both chambers",
+      "highlight": "Both",
+      "image_query": "US Capitol building",
+      "image_prompt": "The US Capitol dome at sunset with a wooden gavel resting on an empty desk in the foreground",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Democrats won the House and Senate in the 3 November midterms."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It means a Democratic Congress facing a Republican president."
+        ],
+        [
+          "FOR YOU",
+          "Once seated, Democratic majorities will shape which bills reach the president's desk."
+        ]
+      ],
+      "body": "Democrats won the House and Senate in the 3 November midterms. It means a Democratic Congress facing a Republican president. Once seated, Democratic majorities will shape which bills reach the president's desk.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1334/img_03.jpg",
+      "credit": "Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "NZ's big two may need help",
+      "highlight": "",
+      "image_query": "",
+      "image_prompt": "Two large chess kings on a board surrounded by several small pawns, one pawn stepping forward, dramatic side light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "National and Labour may struggle to govern without smaller parties."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Coalition talks could decide who governs, not just the count."
+        ],
+        [
+          "FOR YOU",
+          "In 2023 National won 48 seats with 38.06%; expect coalition deals again."
+        ]
+      ],
+      "body": "National and Labour may struggle to govern without smaller parties. Coalition talks could decide who governs, not just the count. In 2023 National won 48 seats with 38.06%; expect coalition deals again.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1334/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "A parliament that can grow",
+      "highlight": "120+",
+      "image_query": "New Zealand parliament chamber",
+      "image_prompt": "Rows of green parliament benches in an empty chamber with a few extra chairs added at the edges, warm light",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "NZ's parliament has 120 seats, plus extra 'overhang' seats."
+        ],
+        [
+          "WHY IT MATTERS",
+          "So the majority line can shift with each election."
+        ],
+        [
+          "FOR YOU",
+          "When NZ seat totals are announced, check the overhang: it moves the majority line."
+        ]
+      ],
+      "body": "NZ's parliament has 120 seats, plus extra 'overhang' seats. So the majority line can shift with each election. When NZ seat totals are announced, check the overhang: it moves the majority line.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-1334/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🇳🇿 New Zealand's election is too close to call: wait for special votes before trusting any winner claims.\n🕊️ Ukraine, Russia and the US hold three-way talks in Abu Dhabi on 10–11 November.\n🏛️ Democrats won both the House and Senate in the US midterms.\n🤝 NZ's two big parties may need smaller ones to govern.\n🪑 Fun fact: NZ's parliament can grow beyond 120 seats.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia · Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "worldnews",
+    "newzealand",
+    "nzelection",
+    "ukraine",
+    "abudhabi",
+    "midterms",
+    "uspolitics",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://www.rnz.co.nz/news/election-2026-results",
+    "https://www.abc.net.au/news/2026-11-07/nz-election-2026-live-blog/107355448",
+    "https://www.euronews.com/video/2026/11/07/latest-news-bulletin-november-7th-2026-midday",
+    "https://meduza.io/en/news/2026/11/03/trilateral-talks-between-russia-ukraine-and-us-set-for-november-10-11-in-abu-dhabi",
+    "https://www.wionews.com/world/zelensky-announces-ukraine-russia-and-us-to-hold-first-trilateral-talks-since-february-in-abu-dhabi-rules-out-inviting-putin-to-kyiv-1793718814985",
+    "https://www.pbs.org/newshour/politics/democrats-win-control-of-the-u-s-house",
+    "https://www.cbsnews.com/live-updates/house-election-results-2026/",
+    "https://www.npr.org/2026/11/06/nx-s1-6032760/the-news-roundup-for-november-6-2026",
+    "https://www.abc.net.au/news/2026-11-07/nz-election-2026-live-blog/107355448",
+    "https://theconversation.com/nzs-next-government-hangs-in-the-balance-2026-election-results-at-a-glance-295556",
+    "https://theconversation.com/nzs-next-government-hangs-in-the-balance-2026-election-results-at-a-glance-295556",
+    "https://www.rnz.co.nz/news/election-2026-results"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 07 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "New Zealand parliament Beehive",
+  "image_prompt": "A sealed ballot box on a table beside a perfectly balanced brass scale, a folded New Zealand flag nearby, soft dawn light",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261107-1334/img_cover.jpg",
+  "cover_credit": "Donaldytong (CC BY-SA 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🇳🇿 New Zealand's election is too close to call: wait for special votes before trusting any winner claims.\n🕊️ Ukraine, Russia and the US hold three-way talks in Abu Dhabi on 10–11 November.\n🏛️ Democrats won both the House and Senate in the US midterms.\n🤝 NZ's two big parties may need smaller ones to govern.\n🪑 Fun fact: NZ's parliament can grow beyond 120 seats.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "blur",
+      "scale",
+      "blur",
+      "right",
+      "left",
+      "rise",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "glitch",
+      "cut",
+      "punch",
+      "flash"
+    ]
+  },
+  "music_used": "lofi"
+}
