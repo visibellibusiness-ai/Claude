@@ -814,5 +814,21 @@
       "palette": 3
     },
     "media_id": "18001011357041336"
+  },
+  {
+    "date": "20261107-1814",
+    "series": "facts",
+    "topic": "Daily height loss: spinal disc compression, overnight recovery, astronaut growth",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "You're shorter tonight than this morning",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "18249761770310871"
   }
 ]
