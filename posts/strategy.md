@@ -1,52 +1,59 @@
-# Strategy: "You Did Not Know" (v1, 31 Oct 2026)
+# Strategy: "You Did Not Know" (v2, 7 Nov 2026)
 
 ## Data status
-- **Every post has reached fewer than 10 accounts, so no post supports a conclusion.** The 100% saves/reach figures come from posts reaching 1 account and carry no meaning.
-- 0 followers so far. Posts from 29–30 Oct are under 48h old or have no data yet.
-- **Growth signal:** daily account reach rose from 8 (27 Oct) and 3 (28 Oct) to 26 (29 Oct) and 28 (30 Oct). 100% of reach and views came from non-followers. Distribution is starting, but no follows yet.
+- **7 posts now have reach ≥10.** All are niche Reels (body, psychology, space).
+- **No carousel or news post has passed reach 5.**
+- **Followers are still 0** after about 800 accounts reached since 27 Oct.
+- **100% of reach and views came from non-followers.** Distribution works; conversion does not.
+- Daily reach rose from 3–30 (27–30 Oct) to 61–118 (31 Oct–5 Nov). The 6 Nov figure (11) and the four 5–6 Nov posts are under 48h old and may be incomplete.
 
-## What the numbers show (not conclusions)
-- **Reach by format:**
-  - Reels reached 1–5 accounts each.
-  - Carousels reached 1–2.
-  - Hypothesis to test: Reels get more non-follower distribution.
-- **Reels watch behavior:**
-  - Skip rates were 60–100.
-  - Avg watch time ranged from 4563 (Spain train) to 13046 (octopus, reach 1).
-  - Units are unconfirmed and samples are tiny, so these cannot be ranked.
-- **Engagement:** shares, likes, comments, profile visits and follows are all 0%. Nothing has earned engagement yet.
+## What is working
+- **Niche Reels get distribution.** Reach: sleep 104, cold water 96, memories 94, tickle 61, fear 53, brain lies 30, space 24.
+- **Best watch behavior:** "5 ways your brain lies to you daily" had a 51.7 skip rate and 6977 avg watch time. This is one post, so it is a hypothesis only.
+- Every other Reel with reach ≥10 sat at 70–79 skip and 3610–5636 watch time.
 
-## Direction (baseline until data exists)
-- **Topics:**
-  - The core niche is science, body, animals, space, history, psychology and oceans.
-  - News posts (elections, train crashes, Binance) are about 50% of output but sit outside the "surprising verified facts" promise.
-  - Hypothesis: off-niche news may confuse the account's identity for the algorithm and for new viewers.
-  - Cut news to at most 1 in 5 posts. Use it only when it carries a timeless "did you know" angle.
-- **Hooks:**
-  - Keep short, specific and counterintuitive (e.g. "One spin of Venus takes longer than its year").
-  - Prefer one concrete claim over vague lists like "Timelines that will break your brain."
-- **Length:**
-  - Carousels: 5–7 slides.
-  - Reels: 5 slides. Put the hook as on-screen text in the first second.
-- **Design:**
-  - Keep rotating mystery palettes 0–4 and the template style so they can be compared later.
-  - No color conclusions yet.
-- **Captions:**
-  - Open with the fact restated.
-  - Add one extra detail, then a save/share prompt ("Send this to someone who'd argue").
-  - End with a source mention for credibility.
+## What is not
+- **Engagement is near zero:**
+  - Shares appeared only on sleep (1.9%).
+  - Likes ranged 0–6.7%.
+  - Saves were 0% on every post since 30 Oct.
+  - Follows are 0.
+- **Same format, very different reach:** sneeze reached 4 and breath reached 9. The cause is unknown.
+- **Carousels:** 9 posts reached 0–2 each.
+- **News:** 12 posts reached 0–5 each. These were mostly early posts, so timing is a confound.
+
+## Direction
 - **Format split:**
-  - About 60% Reels, 40% carousels.
-  - Keep posting the same topic in both formats occasionally so they can be compared.
-  - No trial-reel data yet. Add trial reels when available.
+  - About 90% Reels.
+  - At most 1 carousel per week, as a test of whether carousels distribute now.
+  - Add trial reels once available.
+- **Topics:**
+  - Focus on human body and psychology.
+  - Rotate in animals, space and oceans so they get compared.
+  - **Pause news.**
+- **Hooks:**
+  - Keep them specific and counterintuitive.
+  - "What happens to your body…" reached 4–104, so it is not reliable alone.
+  - Test list hooks and direct-claim hooks (see Experiments).
+- **Length:**
+  - Keep Reels at 5 slides, with the hook as on-screen text in the first second.
+  - No length comparison exists yet.
+- **Colors and music:**
+  - Keep rotating palettes 0–4 and the lofi, documentary and mystery tracks.
+  - No pattern is visible yet.
+- **Captions:**
+  - Keep the current format: fact restated, one extra detail, save/share prompt, source mention.
+  - **Add a follow reason**, e.g. "Follow for one fact your brain won't believe, daily." This is a hypothesis aimed at the 0-follow problem.
 
-## Experiments (judge at 48h+ and only on posts with reach ≥10)
-1. **Niche vs news:**
-   - Run 2 weeks with evergreen niche content only, except 1 news post per week.
-   - Compare non-follower reach, shares/reach and profile visits/reach between the two groups.
-2. **Reel hook test:**
-   - Pair Reels on similar topics. Version A opens with a bold question; version B opens with the shocking number or claim stated directly.
-   - Compare skip rate and avg watch time between Reels only.
+## Experiments (judge at 48h+, reach ≥10 only)
+1. **Hook type (Reels only):**
+   - Alternate three hook styles: numbered list ("5 ways your brain…"), direct claim ("Your memories change every time you recall them") and "What X does to your body."
+   - Run at least 3 Reels per type.
+   - Compare skip rate, avg watch time and likes/shares per reach.
+2. **Follow conversion:**
+   - On alternate Reels, end with a final slide that teases the next fact and asks for a follow ("Part 2 tomorrow, follow so you don't miss it").
+   - Compare against Reels without it.
+   - Measure follows, profile visits/reach and shares/reach.
 
 ## Next review
-Revise only when at least 5 posts have reach ≥10. Until then, keep this plan mostly unchanged.
+After at least 6 more Reels reach ≥10, or the first follows arrive.

@@ -1,0 +1,124 @@
+{
+  "reasoning": "Strategy calls for about 90% Reels and alternating hook types. The last four Reels used a challenge hook, two 'Why' hooks and a 'What X does' hook. The numbered-list style ('5 ways your brain lies') had the best skip rate (51.7) and watch time but has only one data point, so this is list hook #2. The topic is human body, our strongest-reaching niche, and it is new: hidden senses beyond the classic five. It is counterintuitive and specific, and it carries a 'tell a friend' angle that could drive shares. It runs at 5 slides with short texts. It is published as a Trial Reel to start testing trials now that they are available; with 0 followers, reach is non-followers anyway, so the risk is low. It is also in the follow-conversion experiment: the last slide teases Part 2 tomorrow and asks for a follow, and the caption adds a follow reason. Mystery music matches the best-retention post. Palette 3 continues the rotation.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": true,
+  "category": "human body",
+  "topic": "Hidden senses beyond the five: proprioception, balance, temperature, pain, interoception",
+  "hook": "5 senses nobody taught you in school",
+  "slides": [
+    {
+      "title": "Proprioception",
+      "body": "Sensors in your muscles and joints track your limbs. It's why you can touch your nose with your eyes closed.",
+      "highlight": "",
+      "image_query": "",
+      "image_prompt": "Wooden artist mannequin balancing gracefully on one leg on a dark tabletop, soft dramatic side light, minimal background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-0017/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Balance",
+      "body": "Fluid in tiny canals in your inner ear moves as you move. Spin, then stop: it keeps sloshing. That's dizziness.",
+      "highlight": "3",
+      "image_query": "inner ear anatomy model",
+      "image_prompt": "Three glowing curved glass tubes filled with blue liquid, arranged like inner ear canals, floating in darkness, scientific illustration style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-0017/img_02.jpg",
+      "credit": "unknown (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Temperature",
+      "body": "You have separate sensors for cold and heat. Menthol triggers your cold sensors, which is why mint feels cool.",
+      "highlight": "Mint",
+      "image_query": "fresh mint leaves",
+      "image_prompt": "Fresh mint leaves covered in frost crystals on a dark slate surface, cold blue light, macro photography",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-0017/img_03.jpg",
+      "credit": "Mangosapiens (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Pain",
+      "body": "Pain has its own sensors, separate from touch. Your brain tissue has none, so surgeons can operate while you're awake.",
+      "highlight": "0",
+      "image_query": "",
+      "image_prompt": "Anatomical brain model made of soft pink glass on a dark pedestal, surgical instruments resting beside it, clinical cool lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-0017/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Interoception",
+      "body": "Your sense of inside signals: hunger, thirst, a full bladder, even your own heartbeat.",
+      "highlight": "",
+      "image_query": "anatomical heart model",
+      "image_prompt": "Glowing red anatomical heart model suspended in darkness, faint pulse rings radiating outward, empty glass of water and bowl nearby",
+      "image": "/home/runner/work/Claude/Claude/posts/20261107-0017/img_05.jpg",
+      "credit": "Dguendel (CC BY 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow, don't miss it",
+  "caption": "Sight, hearing, smell, taste, touch. That list leaves out the sense that lets you touch your nose with your eyes closed, and the one that makes mint feel cold.\n\nDepending on how you define a sense, scientists count far more than five. Part 2 drops tomorrow, so follow for one fact your brain won't believe, daily. Save this for the next time someone says 'sixth sense.'\n\nWhich of these would you least want to lose?\n\n📷 unknown (CC BY 4.0) via wikimedia · Mangosapiens (CC BY-SA 4.0) via wikimedia · Dguendel (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "humanbody",
+    "senses",
+    "neuroscience",
+    "sciencefacts",
+    "didyouknow",
+    "brainfacts",
+    "biology",
+    "funfacts",
+    "learnontiktok",
+    "mindblown",
+    "factsdaily",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Proske U, Gandevia SC. The proprioceptive senses. Physiological Reviews, 2012",
+    "NIDCD (NIH): Balance disorders and the vestibular system",
+    "Bautista DM et al. The menthol receptor TRPM8 is the principal detector of environmental cold. Nature, 2007",
+    "Craig AD. How do you feel? Interoception. Nature Reviews Neuroscience, 2002",
+    "Johns Hopkins Medicine: Awake craniotomy (brain has no pain receptors)"
+  ],
+  "image_query": "",
+  "image_prompt": "Five antique glass jars on a shelf, each holding a glowing abstract shape, a sixth empty jar lit mysteriously, dark moody background",
+  "design": {
+    "palette": 3,
+    "cover_label": "Human body",
+    "swipe_text": "Wait for #5",
+    "follow_line": "One fact your brain won't believe, daily"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261107-0017/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "Sight, hearing, smell, taste, touch. That list leaves out the sense that lets you touch your nose with your eyes closed, and the one that makes mint feel cold.\n\nDepending on how you define a sense, scientists count far more than five. Part 2 drops tomorrow, so follow for one fact your brain won't believe, daily. Save this for the next time someone says 'sixth sense.'\n\nWhich of these would you least want to lose?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "scale",
+      "blur",
+      "right",
+      "blur",
+      "right",
+      "left",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "cut",
+      "punch",
+      "cut",
+      "flash",
+      "cut"
+    ]
+  },
+  "music_used": "mystery"
+}
