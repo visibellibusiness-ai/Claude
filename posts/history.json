@@ -786,5 +786,21 @@
       "palette": 0
     },
     "media_id": "17928229872433287"
+  },
+  {
+    "date": "20261107-0017",
+    "series": "facts",
+    "topic": "Hidden senses beyond the five: proprioception, balance, temperature, pain, interoception",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "5 senses nobody taught you in school",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "18001011357041336"
   }
 ]
