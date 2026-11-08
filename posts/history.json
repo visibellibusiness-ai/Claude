@@ -842,5 +842,21 @@
       "palette": 4
     },
     "media_id": "18249761770310871"
+  },
+  {
+    "date": "20261108-0014",
+    "series": "facts",
+    "topic": "Déjà vu: prevalence, age, layout familiarity, memory checking, epilepsy link",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "psychology",
+    "hook": "Déjà vu is your brain checking itself",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "18106897991198721"
   }
 ]
