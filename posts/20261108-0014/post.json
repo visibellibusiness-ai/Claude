@@ -1,0 +1,121 @@
+{
+  "reasoning": "Strategy says about 90% Reels, focused on body and psychology. Psychology posts reached 30–94 and got the best watch behavior (brain lies: 51.7 skip). Déjà vu is relatable, under-explained and not yet covered. For the hook-type experiment, recent posts used 'why', 'what X does', a list and one direct claim, so this one adds another direct claim: 'Déjà vu is your brain checking itself'. For the follow-conversion experiment, this Reel ends on a concrete next-topic teaser plus a follow ask, which I will deliver as the next post (time speeding up with age). Trial Reels are now available. With 0 followers, a Trial Reel costs nothing, so I am testing whether the trial path changes reach. It stays at 5 short slides. Palette 0 and mystery music continue the rotation, and mystery fits the eerie topic.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": true,
+  "category": "psychology",
+  "topic": "Déjà vu: prevalence, age, layout familiarity, memory checking, epilepsy link",
+  "hook": "Déjà vu is your brain checking itself",
+  "slides": [
+    {
+      "title": "Almost everyone gets it",
+      "body": "About two in three people say they've had déjà vu at least once. It's one of the most common odd feelings.",
+      "highlight": "2 in 3",
+      "image_query": "empty hallway doors",
+      "image_prompt": "A long empty hallway of identical doors fading into soft fog, one door slightly glowing, eerie calm mood",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-0014/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "It fades with age",
+      "body": "It's most frequent in teens and young adults, then shows up less and less as we get older.",
+      "highlight": "15-25",
+      "image_query": "old clock dark",
+      "image_prompt": "An antique clock and a stack of faded photo frames without faces on a wooden table, warm dim light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-0014/img_02.jpg",
+      "credit": "Richard Rogerson (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A layout you forgot",
+      "body": "Lab studies show it can appear when a new place has the same layout as one you've seen but can't recall.",
+      "highlight": "",
+      "image_query": "empty room furniture",
+      "image_prompt": "Two nearly identical empty rooms side by side with the same furniture layout, one in color, one in faded grey",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-0014/img_03.jpg",
+      "credit": "AnemoneProjectors (talk) (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your brain fact-checking",
+      "body": "One leading theory: your brain's memory checker spots a false 'I've seen this' signal and flags it.",
+      "highlight": "",
+      "image_query": "brain model",
+      "image_prompt": "A glowing brain model with a small magnifying glass hovering over it, dark background, soft blue light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-0014/img_04.jpg",
+      "credit": "John Campbell (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A seizure warning sign",
+      "body": "In temporal lobe epilepsy, déjà vu can come just before a seizure. That helped scientists trace where it starts.",
+      "highlight": "",
+      "image_query": "brain scan lobe",
+      "image_prompt": "A translucent brain model with one side lobe glowing amber, surrounded by darkness and faint electrical sparks",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-0014/img_05.jpg",
+      "credit": "Oliver Taubmann, Martin Berger, Marco Bögel, Yan Xia, Michael Balda, and Andreas (CC BY 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Next: why time speeds up as you age",
+  "caption": "That eerie feeling of 'I've lived this before' happens to about two in three people. It's most common in your teens and twenties and fades with age.\n\nOne lab finding: déjà vu can appear when a new room shares the layout of a place you've forgotten. Your brain senses the match but can't find the memory. Sources: Brown (2003, Psychological Bulletin) and Cleary et al. (2012).\n\nFollow for one fact your brain won't believe, daily. Tomorrow: why time speeds up as you get older.\n\nWhen did you last get déjà vu, and where were you?\n\n📷 mypubliclands (Public domain) via wikimedia · Richard Rogerson (CC BY-SA 2.0) via wikimedia · AnemoneProjectors (talk) (CC BY-SA 2.0) via wikimedia · John Campbell (CC BY 2.0) via wikimedia · Oliver Taubmann, Martin Berger, Marco Bögel, Yan Xia, Michael Balda, and Andreas (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "dejavu",
+    "psychology",
+    "brainfacts",
+    "didyouknow",
+    "memory",
+    "neuroscience",
+    "sciencefacts",
+    "mindblown",
+    "funfacts",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "Brown, A. S. (2003). A review of the déjà vu experience. Psychological Bulletin, 129(3), 394-413",
+    "Cleary, A. M. et al. (2012). Familiarity from the configuration of objects in 3-dimensional space and its relation to déjà vu. Consciousness and Cognition, 21(2), 969-975",
+    "Urquhart, J. A., O'Connor, A. R. et al. (2021). A role for frontal cortex in the experience of déjà vu. Cortex / University of St Andrews research",
+    "Bancaud, J. et al. (1994). Anatomical origin of déjà vu and vivid 'memories' in human temporal lobe epilepsy. Brain, 117(1), 71-90"
+  ],
+  "image_query": "foggy corridor",
+  "image_prompt": "An endless corridor of identical doors reflected in a mirror, repeating into fog, soft mysterious violet light",
+  "design": {
+    "palette": 0,
+    "cover_label": "Psychology",
+    "swipe_text": "Watch this",
+    "follow_line": "One fact your brain won't believe, daily"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261108-0014/img_cover.jpg",
+  "cover_credit": "mypubliclands (Public domain) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "That eerie feeling of 'I've lived this before' happens to about two in three people. It's most common in your teens and twenties and fades with age.\n\nOne lab finding: déjà vu can appear when a new room shares the layout of a place you've forgotten. Your brain senses the match but can't find the memory. Sources: Brown (2003, Psychological Bulletin) and Cleary et al. (2012).\n\nFollow for one fact your brain won't believe, daily. Tomorrow: why time speeds up as you get older.\n\nWhen did you last get déjà vu, and where were you?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "right",
+      "rise",
+      "left",
+      "blur",
+      "rise",
+      "left",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "punch",
+      "cut",
+      "punch",
+      "glitch",
+      "punch"
+    ]
+  },
+  "music_used": "documentary"
+}
