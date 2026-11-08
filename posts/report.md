@@ -1,6 +1,6 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 08/11/2026 alle 13:29 UTC. Follower: 0.
+Aggiornato il 08/11/2026 alle 18:13 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
@@ -9,7 +9,7 @@ Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 o
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 08/11/2026 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 08/11/2026 | 1 | 1 | 1 | 1 | 2 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
 | 06/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
 | 05/11/2026 | 118 | 118 | 140 | 140 | 0 | 0 |
@@ -71,7 +71,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 31/10/2026 00:14 | A shrimp that punches 2,500x its body we | 5.194 | 85.7 |
 | 01/11/2026 00:11 | What happens to your body without sleep | 5.024 | 74 |
 | 02/11/2026 00:11 | Your memories change every time you reca | 5.501 | 70.1 |
-| 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.610 | 75.8 |
+| 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.577 | 75.8 |
 | 03/11/2026 00:14 | What holding your breath really does | 3.351 | 77.8 |
 | 03/11/2026 18:26 | What fear does to your body in seconds | 5.519 | 76 |
 | 04/11/2026 00:17 | What happens to your body when you sneez | 1.628 | 100 |

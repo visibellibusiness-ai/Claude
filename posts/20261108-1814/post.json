@@ -1,0 +1,122 @@
+{
+  "reasoning": "Reels remain the only format that distributes (reach 24-104), so this is a 5-slide Reel on the human body, the strongest category. For the hook-type experiment, numbered-list hooks have only 2 runs (brain lies, 5 senses), against 5 or more direct-claim and 'What X does' runs. This one is a list hook. 'Brain lies' had the best skip rate (51.7), and that also used a list. The topic is new and interactive: viewers can check their own wrist tendon and ear muscles. That should raise likes and comments, which have been near zero. This Reel also runs the follow-conversion experiment, with a 'Part 2 tomorrow' teaser on the last slide. The caption adds a follow reason. Trial is off so the hook and CTA tests stay clean. With 0 followers, a trial adds little and may hide the post from profile visitors. Palette 1 and mystery music continue the rotation.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Vestigial body parts: palmaris longus, ear muscles, plica semilunaris, tailbone, wisdom teeth",
+  "hook": "5 body parts evolution forgot to delete",
+  "slides": [
+    {
+      "title": "The wrist tendon",
+      "body": "Touch thumb to pinky and flex your wrist. No raised tendon? In many studies, about 15% of people lack it.",
+      "highlight": "15%",
+      "image_query": "wrist tendon anatomy",
+      "image_prompt": "Anatomical model of a forearm and wrist with one glowing tendon highlighted, soft studio lighting, clean dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1814/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Ear muscles",
+      "body": "Our ancestors swiveled their ears. A 2020 study found yours still twitch toward sounds, just too weakly to move.",
+      "highlight": "",
+      "image_query": "human ear anatomy model",
+      "image_prompt": "Plaster anatomical model of a human ear with tiny muscles highlighted in red, sound waves drawn as glowing rings around it",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1814/img_02.jpg",
+      "credit": "RWhitwam (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A third eyelid",
+      "body": "The small pink fold in your eye's inner corner is thought to be a leftover of the third eyelid birds still use.",
+      "highlight": "",
+      "image_query": "bird nictitating membrane",
+      "image_prompt": "Close-up of an owl eye with a translucent third eyelid half closed, dramatic macro lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1814/img_03.jpg",
+      "credit": "Alpsdake (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your tailbone",
+      "body": "Every human embryo has a tail for a few weeks. It shrinks before birth, leaving the coccyx at your spine's base.",
+      "highlight": "Tail",
+      "image_query": "coccyx skeleton",
+      "image_prompt": "Anatomical skeleton model of a lower spine with the tailbone glowing softly, museum lighting, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1814/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Wisdom teeth",
+      "body": "Our jaws shrank, so they often don't fit. About 22% of people are missing at least one entirely.",
+      "highlight": "22%",
+      "image_query": "wisdom tooth x-ray",
+      "image_prompt": "Dental model of a human jaw with crowded wisdom teeth highlighted in gold, clean clinical lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1814/img_05.jpg",
+      "credit": "Nizil Shah (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow to catch it",
+  "caption": "Your body still carries parts from ancestors who lived very differently. Some people have a wrist tendon that others simply don't. And the muscles behind your ears still fire when a sound grabs your attention, even though they can no longer move your ears.\n\nEvolution doesn't delete what isn't harmful. It just lets it fade. Part 2 drops tomorrow, so follow @you.didnot.know for one fact a day your body won't believe.\n\nTry the thumb-to-pinky test right now: do you have the tendon? 👇\n\n📷 unknown (CC0 / public domain) via openverse · RWhitwam (CC BY-SA 4.0) via wikimedia · Alpsdake (CC BY-SA 4.0) via wikimedia · Nizil Shah (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "evolution",
+    "humanbody",
+    "anatomy",
+    "didyouknow",
+    "sciencefacts",
+    "biology",
+    "funfacts",
+    "wisdomteeth",
+    "learnsomethingnew",
+    "factsdaily"
+  ],
+  "sources": [
+    "Strauss et al. (2020), 'Vestigial auriculomotor activity indicates the direction of auditory attention in humans', eLife",
+    "Carter & Worthington (2015), 'Morphologic and demographic predictors of third molar agenesis: a systematic review and meta-analysis', Journal of Dental Research",
+    "Thompson, Mockford & Cunningham (2001), 'Absence of the palmaris longus muscle: a population study', Ulster Medical Journal",
+    "Encyclopaedia Britannica: Vestigial organ",
+    "Smithsonian Magazine: human embryonic tail and coccyx development"
+  ],
+  "image_query": "human skeleton anatomy model",
+  "image_prompt": "Anatomical skeleton model in a dim museum, with a tailbone, ear and wrist tendon glowing softly as forgotten leftovers, dramatic spotlight",
+  "design": {
+    "palette": 1,
+    "cover_label": "Leftovers in your body",
+    "swipe_text": "Check yours",
+    "follow_line": "One fact your body won't believe, daily"
+  },
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261108-1814/img_cover.jpg",
+  "cover_credit": "unknown (CC0 / public domain) via openverse",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Your body still carries parts from ancestors who lived very differently. Some people have a wrist tendon that others simply don't. And the muscles behind your ears still fire when a sound grabs your attention, even though they can no longer move your ears.\n\nEvolution doesn't delete what isn't harmful. It just lets it fade. Part 2 drops tomorrow, so follow @you.didnot.know for one fact a day your body won't believe.\n\nTry the thumb-to-pinky test right now: do you have the tendon? 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "rise",
+      "left",
+      "rise",
+      "left",
+      "right",
+      "rise",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "glitch",
+      "punch",
+      "flash",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "mystery"
+}
