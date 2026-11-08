@@ -1,0 +1,209 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-08",
+  "hook": "Iron Gate: US targets Iran's land routes",
+  "reel_hook": "Iran's land routes are now a target.",
+  "slides": [
+    {
+      "title": "US targets Iran's land routes",
+      "highlight": "$25bn",
+      "image_query": "",
+      "image_prompt": "A heavy iron gate closing across a dusty desert road at dusk, a lone cargo truck stopped before it, an oil tanker on the distant sea",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "CENTCOM launched Iron Gate to disrupt Iran's land routes."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It widens a sea blockade CENTCOM says stopped ~$25bn of oil."
+        ],
+        [
+          "FOR YOU",
+          "Iran also lifted its 2,000 km missile limit as peace talks continue."
+        ]
+      ],
+      "body": "CENTCOM launched Iron Gate to disrupt Iran's land routes. It widens a sea blockade CENTCOM says stopped ~$25bn of oil. Iran also lifted its 2,000 km missile limit as peace talks continue.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1332/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Six killed in Kraków square",
+      "highlight": "6",
+      "image_query": "Krakow Main Market Square",
+      "image_prompt": "Rows of lit memorial candles on old cobblestones at dusk, the arcades of a historic European square softly blurred in the background",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A gunman killed six in Kraków's Main Market Square."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Poland's PM called it terrorism; an investigation is open."
+        ],
+        [
+          "FOR YOU",
+          "About 15 were injured and one victim was British. Poland is in mourning."
+        ]
+      ],
+      "body": "A gunman killed six in Kraków's Main Market Square. Poland's PM called it terrorism; an investigation is open. About 15 were injured and one victim was British. Poland is in mourning.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1332/img_02.jpg",
+      "credit": "Krzysztof Zgłobicki (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Eisenkot tapped over Netanyahu",
+      "highlight": "67",
+      "image_query": "Knesset building Jerusalem",
+      "image_prompt": "An empty leather chair at the head of a long wooden table in a stately hall, morning light, a single folded document waiting on it",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Herzog chose Gadi Eisenkot to try to form Israel's government."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Parties with 67 of 120 Knesset seats recommended him."
+        ],
+        [
+          "FOR YOU",
+          "He has 28 days, which can be extended, to build a 61-seat majority."
+        ]
+      ],
+      "body": "Herzog chose Gadi Eisenkot to try to form Israel's government. Parties with 67 of 120 Knesset seats recommended him. He has 28 days, which can be extended, to build a 61-seat majority.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1332/img_03.jpg",
+      "credit": "Clema12 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "New Zealand vote: too close",
+      "highlight": "1 seat",
+      "image_query": "New Zealand Parliament Beehive",
+      "image_prompt": "A ballot box on a wooden table beside a perfectly balanced brass scale, green fern leaves in soft morning light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "New Zealand's election has no clear winner yet."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Labour narrowly leads the vote; the ruling bloc has a one-seat majority."
+        ],
+        [
+          "FOR YOU",
+          "Special votes still need counting, which could take up to about three weeks."
+        ]
+      ],
+      "body": "New Zealand's election has no clear winner yet. Labour narrowly leads the vote; the ruling bloc has a one-seat majority. Special votes still need counting, which could take up to about three weeks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1332/img_04.jpg",
+      "credit": "Donaldytong (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "NZ parliament grows to 131",
+      "highlight": "131",
+      "image_query": "parliament chamber seats",
+      "image_prompt": "A semicircle of green parliament benches with eleven extra chairs squeezed in at the edges, warm light, empty chamber",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "New Zealand's parliament is set for a record 131 seats."
+        ],
+        [
+          "WHY IT MATTERS",
+          "A party won more local seats than its vote share earned."
+        ],
+        [
+          "FOR YOU",
+          "Normally 120 seats; now 66 are needed for a majority, not 61."
+        ]
+      ],
+      "body": "New Zealand's parliament is set for a record 131 seats. A party won more local seats than its vote share earned. Normally 120 seats; now 66 are needed for a majority, not 61.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261108-1332/img_05.jpg",
+      "credit": "Jiaqian AirplaneFan (CC BY 3.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow @you.didnot.know for your daily brief",
+  "caption": "🚧 The US launched 'Iron Gate' to target Iran's land routes, and Iran dropped its 2,000 km missile limit.\n🕯️ Six killed in a shooting in Kraków's Main Market Square. Poland is in mourning.\n🏛️ Herzog picked Gadi Eisenkot, not Netanyahu, to form a government: 28 days, which can be extended.\n🗳️ New Zealand's election is too close to call. Special votes could take about three weeks.\n🪑 Curious: NZ's parliament is set for a record 131 seats, so 66 now make a majority.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Krzysztof Zgłobicki (CC BY-SA 4.0) via wikimedia · Clema12 (CC BY-SA 4.0) via wikimedia · Donaldytong (CC BY-SA 3.0) via wikimedia · Jiaqian AirplaneFan (CC BY 3.0) via wikimedia",
+  "hashtags": [
+    "news",
+    "dailynews",
+    "worldnews",
+    "iran",
+    "krakow",
+    "poland",
+    "israel",
+    "newzealand",
+    "nzelection",
+    "youdidnotknow"
+  ],
+  "sources": [
+    "https://english.aawsat.com/world/5338867-us-launches-task-force-disrupt-land-transit-routes-iran",
+    "https://www.washingtonpost.com/national-security/2026/11/07/us-military-seeks-disrupt-irans-land-routes-expanding-naval-blockade/",
+    "https://www.wral.com/news/ap/c2675-iran-says-it-has-lifted-its-self-imposed-limit-on-missile-ranges-and-other-mideast-news/",
+    "https://abc.net.au/news/2026-11-08/iran-strait-of-hormuz-update-explosions-talks/107360730",
+    "https://www.npr.org/2026/11/07/g-s1-152532/gunman-opens-fire-in-polish-city-of-krakow-killing-6-people-and-injuring-15",
+    "https://www.cnn.com/2026/11/07/europe/krakow-shooting-poland-killed-intl",
+    "https://www.euronews.com/2026/11/08/what-we-know-about-the-krakow-shooting-that-left-six-people-dead",
+    "https://www.aljazeera.com/news/2026/11/7/israels-president-picks-eisenkot-over-netanyahu-to-form-next-government",
+    "https://www.cnn.com/2026/11/07/middleeast/eisenkot-israel-government-latam-intl",
+    "https://www.timesofisrael.com/president-herzog-taps-eisenkot-to-form-coalition-but-path-remains-fraught/",
+    "https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results",
+    "https://www.bostonglobe.com/2026/11/07/world/conservative-bloc-takes-slim-lead-new-zealand-election-thats-still-too-close-call/",
+    "https://www.cnn.com/2026/11/07/world/new-zealand-election-result-uncertain-intl-hnk",
+    "https://www.rnz.co.nz/news/election-2026-results",
+    "https://theprint.in/world/new-zealand-election-throws-up-cliffhanger-as-voters-punish-major-parties/3093529/",
+    "https://elections.nz/media-and-news/2026/2026-general-election-preliminary-results"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 08 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "",
+  "image_prompt": "A massive iron gate closing across a desert road at dusk, a cargo truck halted before it, an oil tanker silhouetted on the sea behind",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261108-1332/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🚧 The US launched 'Iron Gate' to target Iran's land routes, and Iran dropped its 2,000 km missile limit.\n🕯️ Six killed in a shooting in Kraków's Main Market Square. Poland is in mourning.\n🏛️ Herzog picked Gadi Eisenkot, not Netanyahu, to form a government: 28 days, which can be extended.\n🗳️ New Zealand's election is too close to call. Special votes could take about three weeks.\n🪑 Curious: NZ's parliament is set for a record 131 seats, so 66 now make a majority.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "rise",
+      "left",
+      "rise",
+      "left",
+      "right",
+      "rise",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "glitch",
+      "punch",
+      "flash",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "mystery"
+}

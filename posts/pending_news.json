@@ -1,39 +1,39 @@
 {
-  "date": "20261107-1334",
+  "date": "20261108-1332",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "lofi",
-  "theme_index": 31,
-  "topic": "Daily news 2026-11-07",
+  "music": "mystery",
+  "theme_index": 33,
+  "topic": "Daily news 2026-11-08",
   "category": "news",
-  "hook": "New Zealand still doesn't know who won",
+  "hook": "Iron Gate: US targets Iran's land routes",
   "slides": 5,
   "design": {
     "style": "mystery",
     "palette": 2
   },
   "images": [
-    "posts/20261107-1334/slide_01.jpg",
-    "posts/20261107-1334/slide_02.jpg",
-    "posts/20261107-1334/slide_03.jpg",
-    "posts/20261107-1334/slide_04.jpg",
-    "posts/20261107-1334/slide_05.jpg",
-    "posts/20261107-1334/slide_06.jpg",
-    "posts/20261107-1334/slide_07.jpg"
+    "posts/20261108-1332/slide_01.jpg",
+    "posts/20261108-1332/slide_02.jpg",
+    "posts/20261108-1332/slide_03.jpg",
+    "posts/20261108-1332/slide_04.jpg",
+    "posts/20261108-1332/slide_05.jpg",
+    "posts/20261108-1332/slide_06.jpg",
+    "posts/20261108-1332/slide_07.jpg"
   ],
-  "story": "posts/20261107-1334/story.jpg",
+  "story": "posts/20261108-1332/story.jpg",
   "ai": true,
-  "story_ai": false,
-  "caption": "🇳🇿 New Zealand's election is too close to call: wait for special votes before trusting any winner claims.\n🕊️ Ukraine, Russia and the US hold three-way talks in Abu Dhabi on 10–11 November.\n🏛️ Democrats won both the House and Senate in the US midterms.\n🤝 NZ's two big parties may need smaller ones to govern.\n🪑 Fun fact: NZ's parliament can grow beyond 120 seats.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia · Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n#news #dailynews #worldnews #newzealand #nzelection #ukraine #abudhabi #midterms #uspolitics #youdidnotknow",
-  "carousel_caption": "🇳🇿 New Zealand's election is too close to call: wait for special votes before trusting any winner claims.\n🕊️ Ukraine, Russia and the US hold three-way talks in Abu Dhabi on 10–11 November.\n🏛️ Democrats won both the House and Senate in the US midterms.\n🤝 NZ's two big parties may need smaller ones to govern.\n🪑 Fun fact: NZ's parliament can grow beyond 120 seats.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\nCover: New Zealand still doesn't know who won\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia\n\n1/5 NZ vote: too close to call (99.7%)\nNew Zealand's 7 November election is still too close to call. Now everyone waits for the special votes to be counted.\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia\n\n2/5 Ukraine talks set for Abu Dhabi (3-way)\nUkraine, Russia and US talk in Abu Dhabi, 10–11 November. First direct three-way talks since February, on ending the war.\n📷 Clint Ian Pinto (CC BY-SA 4.0) via wikimedia\n\n3/5 Democrats take both chambers (Both)\nDemocrats won the House and Senate in the 3 November midterms. It means a Democratic Congress facing a Republican president.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia\n\n4/5 NZ's big two may need help\nNational and Labour may struggle to govern without smaller parties. Coalition talks could decide who governs, not just the count.\n🎨 AI-generated image\n\n5/5 A parliament that can grow (120+)\nNZ's parliament has 120 seats, plus extra 'overhang' seats. So the majority line can shift with each election.\n🎨 AI-generated image\n\n#news #dailynews #worldnews #newzealand #nzelection #ukraine #abudhabi #midterms #uspolitics #youdidnotknow",
+  "story_ai": true,
+  "caption": "🚧 The US launched 'Iron Gate' to target Iran's land routes, and Iran dropped its 2,000 km missile limit.\n🕯️ Six killed in a shooting in Kraków's Main Market Square. Poland is in mourning.\n🏛️ Herzog picked Gadi Eisenkot, not Netanyahu, to form a government: 28 days, which can be extended.\n🗳️ New Zealand's election is too close to call. Special votes could take about three weeks.\n🪑 Curious: NZ's parliament is set for a record 131 seats, so 66 now make a majority.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\n📷 Krzysztof Zgłobicki (CC BY-SA 4.0) via wikimedia · Clema12 (CC BY-SA 4.0) via wikimedia · Donaldytong (CC BY-SA 3.0) via wikimedia · Jiaqian AirplaneFan (CC BY 3.0) via wikimedia\n\n#news #dailynews #worldnews #iran #krakow #poland #israel #newzealand #nzelection #youdidnotknow",
+  "carousel_caption": "🚧 The US launched 'Iron Gate' to target Iran's land routes, and Iran dropped its 2,000 km missile limit.\n🕯️ Six killed in a shooting in Kraków's Main Market Square. Poland is in mourning.\n🏛️ Herzog picked Gadi Eisenkot, not Netanyahu, to form a government: 28 days, which can be extended.\n🗳️ New Zealand's election is too close to call. Special votes could take about three weeks.\n🪑 Curious: NZ's parliament is set for a record 131 seats, so 66 now make a majority.\nWhich story surprised you most?\nFollow @you.didnot.know for the daily brief.\n\nCover: Iron Gate: US targets Iran's land routes\n🎨 AI-generated image\n\n1/5 US targets Iran's land routes ($25bn)\nCENTCOM launched Iron Gate to disrupt Iran's land routes. It widens a sea blockade CENTCOM says stopped ~$25bn of oil.\n🎨 AI-generated image\n\n2/5 Six killed in Kraków square (6)\nA gunman killed six in Kraków's Main Market Square. Poland's PM called it terrorism; an investigation is open.\n📷 Krzysztof Zgłobicki (CC BY-SA 4.0) via wikimedia\n\n3/5 Eisenkot tapped over Netanyahu (67)\nHerzog chose Gadi Eisenkot to try to form Israel's government. Parties with 67 of 120 Knesset seats recommended him.\n📷 Clema12 (CC BY-SA 4.0) via wikimedia\n\n4/5 New Zealand vote: too close (1 seat)\nNew Zealand's election has no clear winner yet. Labour narrowly leads the vote; the ruling bloc has a one-seat majority.\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia\n\n5/5 NZ parliament grows to 131 (131)\nNew Zealand's parliament is set for a record 131 seats. A party won more local seats than its vote share earned.\n📷 Jiaqian AirplaneFan (CC BY 3.0) via wikimedia\n\n#news #dailynews #worldnews #iran #krakow #poland #israel #newzealand #nzelection #youdidnotknow",
   "slide_captions": [
-    "New Zealand still doesn't know who won\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia",
-    "1/5 NZ vote: too close to call (99.7%)\nNew Zealand's 7 November election is still too close to call. Now everyone waits for the special votes to be counted.\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia",
-    "2/5 Ukraine talks set for Abu Dhabi (3-way)\nUkraine, Russia and US talk in Abu Dhabi, 10–11 November. First direct three-way talks since February, on ending the war.\n📷 Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
-    "3/5 Democrats take both chambers (Both)\nDemocrats won the House and Senate in the 3 November midterms. It means a Democratic Congress facing a Republican president.\n📷 Martin Falbisoner (CC BY-SA 3.0) via wikimedia",
-    "4/5 NZ's big two may need help\nNational and Labour may struggle to govern without smaller parties. Coalition talks could decide who governs, not just the count.\n🎨 AI-generated image",
-    "5/5 A parliament that can grow (120+)\nNZ's parliament has 120 seats, plus extra 'overhang' seats. So the majority line can shift with each election.\n🎨 AI-generated image",
-    "Follow for your daily news brief"
+    "Iron Gate: US targets Iran's land routes\n🎨 AI-generated image",
+    "1/5 US targets Iran's land routes ($25bn)\nCENTCOM launched Iron Gate to disrupt Iran's land routes. It widens a sea blockade CENTCOM says stopped ~$25bn of oil.\n🎨 AI-generated image",
+    "2/5 Six killed in Kraków square (6)\nA gunman killed six in Kraków's Main Market Square. Poland's PM called it terrorism; an investigation is open.\n📷 Krzysztof Zgłobicki (CC BY-SA 4.0) via wikimedia",
+    "3/5 Eisenkot tapped over Netanyahu (67)\nHerzog chose Gadi Eisenkot to try to form Israel's government. Parties with 67 of 120 Knesset seats recommended him.\n📷 Clema12 (CC BY-SA 4.0) via wikimedia",
+    "4/5 New Zealand vote: too close (1 seat)\nNew Zealand's election has no clear winner yet. Labour narrowly leads the vote; the ruling bloc has a one-seat majority.\n📷 Donaldytong (CC BY-SA 3.0) via wikimedia",
+    "5/5 NZ parliament grows to 131 (131)\nNew Zealand's parliament is set for a record 131 seats. A party won more local seats than its vote share earned.\n📷 Jiaqian AirplaneFan (CC BY 3.0) via wikimedia",
+    "Follow @you.didnot.know for your daily brief"
   ]
 }
