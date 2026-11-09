@@ -898,5 +898,21 @@
       "palette": 1
     },
     "media_id": "17995428816065712"
+  },
+  {
+    "date": "20261109-0015",
+    "series": "facts",
+    "topic": "Everest death zone: low oxygen, no acclimatization, thick blood, brain swelling, record-low blood oxygen",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "What the death zone does to your body",
+    "slides": 5,
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18114902531150248"
   }
 ]
