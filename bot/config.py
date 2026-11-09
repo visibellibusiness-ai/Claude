@@ -34,6 +34,12 @@ BRAND_STYLE = "mystery"
 # Esperimento sui Reel (9/11/2026): tre versioni a rotazione per capire cosa abbassa il tasso di salto.
 # Il Trial Reel non è disponibile (Instagram: "Trial Reel Not Enough Followers"), quindi escono come Reel normali.
 # Per spegnere l'esperimento basta mettere VARIANT_EXPERIMENT = False.
+import json as _json
+from pathlib import Path as _Path
+
+# Account che il bot può taggare: solo quelli di questa lista, verificati a mano sulla pagina pubblica
+# di Instagram il 09/11/2026 (con Instagram Login l'API non permette di verificarli: il campo business_discovery non esiste).
+TAG_ACCOUNTS: dict = _json.loads((_Path(__file__).parent / "tag_accounts.json").read_text())
 TAGS_ENABLED = True  # tag di account verificati (9/11/2026); False per spegnerli
 MAX_HASHTAGS = 5  # limite dell'app Instagram, regola di Andrea del 9/11/2026
 VARIANT_EXPERIMENT = True

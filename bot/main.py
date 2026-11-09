@@ -283,10 +283,8 @@ def _cover_url(video: Path) -> str | None:
 
 
 def choose_tags(pending: dict, history: list[dict]) -> list[str]:
-    """Tag davvero ammessi: verificati con Business Discovery (esistono, pubblici, professionali), non il
+    """Tag davvero ammessi: solo account della lista approvata (config.TAG_ACCOUNTS), non il
     nostro account, al massimo un post taggato al giorno e lo stesso account non più di una volta ogni 7 giorni."""
-    from bot.publish import lookup_account
-
     wanted = [t for t in pending.get("tags", []) if t]
     if not wanted or not config.TAGS_ENABLED:
         return []
@@ -307,13 +305,11 @@ def choose_tags(pending: dict, history: list[dict]) -> list[str]:
         if name.lower() == own or name.lower() in blocked:
             print(f"Tag @{name}: saltato (è il nostro account o già taggato negli ultimi 7 giorni)")
             continue
-        info = lookup_account(name)
-        if not info:
-            print(f"Tag @{name}: scartato, account non verificato")
+        if name.lower() not in config.TAG_ACCOUNTS:
+            print(f"Tag @{name}: scartato, non è nella lista degli account approvati")
             continue
-        print(f"Tag @{info['username']}: verificato ({info.get('name')}, {info.get('followers_count')} follower). "
-              f"Motivo dichiarato: {pending.get('tag_reason') or 'n/d'}")
-        approved.append(info["username"])
+        print(f"Tag @{name.lower()}: approvato ({config.TAG_ACCOUNTS[name.lower()]}). Motivo dichiarato: {pending.get('tag_reason') or 'n/d'}")
+        approved.append(name.lower())
     return approved
 
 

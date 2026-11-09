@@ -94,7 +94,7 @@ topic, an opinion, a nudge to save or share), so the stats can show which one wo
 Tags: fill tag_accounts only when the main fact comes from, or is about, an organisation or institution
 (a space agency, a university, a journal, a museum) with an Instagram account whose exact handle you are
 certain of. Never tag individuals, never guess a handle, never tag to get attention. Most posts have no tags:
-when in doubt leave the array empty. Tagged accounts are checked before publishing and unknown ones are dropped.
+when in doubt leave the array empty. The only accounts you may tag are listed with each post request.
 
 Goal: grow the page fast. Maximize reach, saves, shares, comments and follows.
 
@@ -147,6 +147,11 @@ VARIANT_RULES = {
 
 
 def generate_post(history: list[dict], strategy: str, variant: str | None = None) -> dict:
+    import copy
+
+    schema = copy.deepcopy(SCHEMA)
+    if config.TAGS_ENABLED and config.TAG_ACCOUNTS:
+        schema["properties"]["tag_accounts"]["items"] = {"type": "string", "enum": sorted(config.TAG_ACCOUNTS)}
     client = anthropic.Anthropic()
     avoid = "\n".join(f"- {h['topic']}" for h in history[-80:]) or "(none)"
     prompt = (
@@ -156,6 +161,9 @@ def generate_post(history: list[dict], strategy: str, variant: str | None = None
         f"## Topics already published, do NOT repeat\n{avoid}\n\n"
         "Create the next post."
     )
+    if config.TAGS_ENABLED and config.TAG_ACCOUNTS:
+        allowed = "\n".join(f"- {h}: {d}" for h, d in config.TAG_ACCOUNTS.items())
+        prompt += f"\n\n## Accounts you may tag (only these, only if the main fact comes from or is about them)\n{allowed}"
     if variant:
         prompt += (
             f"\n\n## Experiment for this post (mandatory, overrides the strategy where they differ)\n"
@@ -168,7 +176,7 @@ def generate_post(history: list[dict], strategy: str, variant: str | None = None
         fallbacks="default",
         output_config={
             "effort": "high",
-            "format": {"type": "json_schema", "schema": SCHEMA},
+            "format": {"type": "json_schema", "schema": schema},
         },
         system=SYSTEM,
         messages=[{"role": "user", "content": prompt}],

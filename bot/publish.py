@@ -8,7 +8,6 @@ in .github/workflows/post.yml).
 
 import json
 import os
-import re
 import time
 
 import requests
@@ -17,29 +16,6 @@ GRAPH = "https://graph.instagram.com/v26.0"
 
 # Account taggati nell'ultimo Reel pubblicato (letto da main.publish per lo storico).
 TAGS_USED: list[str] = []
-
-
-def lookup_account(username: str) -> dict | None:
-    """Verifica con la Business Discovery API che l'account esista, sia pubblico e professionale.
-    Restituisce {"username", "name", "followers_count"} oppure None (non trovato, privato, personale
-    o errore: nel dubbio non si tagga)."""
-    name = username.lstrip("@").strip()
-    if not re.fullmatch(r"[A-Za-z0-9._]{1,30}", name):
-        return None
-    try:
-        r = requests.get(
-            f"{GRAPH}/{os.environ['IG_USER_ID']}",
-            params={"fields": f"business_discovery.username({name}){{username,name,followers_count}}",
-                    "access_token": os.environ["IG_ACCESS_TOKEN"]},
-            timeout=30,
-        )
-    except requests.RequestException as e:
-        print(f"Verifica account @{name} non riuscita: {e}")
-        return None
-    if not r.ok:
-        print(f"Verifica account @{name}: non trovato o non verificabile ({r.status_code})")
-        return None
-    return r.json().get("business_discovery") or None
 
 
 def _post(path: str, **params) -> dict:
