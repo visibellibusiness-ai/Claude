@@ -802,8 +802,8 @@
       "shares": 0,
       "saved": 0,
       "total_interactions": 0,
-      "ig_reels_avg_watch_time": 3062,
-      "ig_reels_video_view_total_time": 104117,
+      "ig_reels_avg_watch_time": 2985,
+      "ig_reels_video_view_total_time": 104488,
       "reels_skip_rate": 72.7
     }
   },
@@ -849,7 +849,19 @@
       "style": "mystery",
       "palette": 3
     },
-    "media_id": "18001011357041336"
+    "media_id": "18001011357041336",
+    "metrics": {
+      "reach": 4,
+      "views": 7,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 3650,
+      "ig_reels_video_view_total_time": 14603,
+      "reels_skip_rate": 100
+    }
   },
   {
     "date": "20261107-1814",

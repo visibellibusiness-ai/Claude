@@ -1,0 +1,206 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-09",
+  "hook": "Qatar brings Iran's 2-day plan to Trump",
+  "reel_hook": "Iran's peace plan just got shorter",
+  "slides": [
+    {
+      "title": "Trump hosts Iran mediator",
+      "highlight": "2 days",
+      "image_query": "white house washington",
+      "image_prompt": "Two empty leather chairs facing each other across a long wooden table, a sealed envelope in the middle, warm lamp light, dusk through tall windows",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Qatar's PM meets Trump today about Iran's two-day proposal."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Qatar is the main go-between in US-Iran talks."
+        ],
+        [
+          "FOR YOU",
+          "Trump: more strikes 'highly unlikely' with a deal. Rubio: no progress yet."
+        ]
+      ],
+      "body": "Qatar's PM meets Trump today about Iran's two-day proposal. Qatar is the main go-between in US-Iran talks. Trump: more strikes 'highly unlikely' with a deal. Rubio: no progress yet.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261109-1352/img_01.jpg",
+      "credit": "Ad Meskens (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Ukraine peace talks restart",
+      "highlight": "3-way",
+      "image_query": "abu dhabi skyline",
+      "image_prompt": "Three empty chairs around a round table in a bright modern hall, three glasses of water, desert city skyline visible through a glass wall",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russia, Ukraine and the US meet in Abu Dhabi Tue-Wed."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First such talks since February, stalled by the war with Iran."
+        ],
+        [
+          "FOR YOU",
+          "Kremlin rejects an EU role; Euronews says an EU team will attend."
+        ]
+      ],
+      "body": "Russia, Ukraine and the US meet in Abu Dhabi Tue-Wed. First such talks since February, stalled by the war with Iran. Kremlin rejects an EU role; Euronews says an EU team will attend.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261109-1352/img_02.jpg",
+      "credit": "Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Nvidia probes its own CEO",
+      "highlight": "-5%",
+      "image_query": "computer chip closeup",
+      "image_prompt": "A computer chip on a dark desk under a large magnifying glass, cold blue light, the long shadow of a keyhole falling across it",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Nvidia's board opened an independent probe into CEO Jensen Huang."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Reports say a foreign intelligence effort targeted him."
+        ],
+        [
+          "FOR YOU",
+          "Nvidia shares dropped about 5% pre-market; Huang admitted an affair and apologised."
+        ]
+      ],
+      "body": "Nvidia's board opened an independent probe into CEO Jensen Huang. Reports say a foreign intelligence effort targeted him. Nvidia shares dropped about 5% pre-market; Huang admitted an affair and apologised.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261109-1352/img_03.jpg",
+      "credit": "Derrick Coetzee (User:Dcoetzee) (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Eisenkot tasked with coalition",
+      "highlight": "67",
+      "image_query": "knesset jerusalem",
+      "image_prompt": "A large semicircle of empty parliament seats in soft morning light, a single wooden gavel resting on a desk in the foreground",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Herzog tasked ex-army chief Gadi Eisenkot with forming a government."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Parties holding 67 of 120 seats backed him."
+        ],
+        [
+          "FOR YOU",
+          "He has 28 days, plus up to 14; if he fails, likely Netanyahu's turn."
+        ]
+      ],
+      "body": "Herzog tasked ex-army chief Gadi Eisenkot with forming a government. Parties holding 67 of 120 seats backed him. He has 28 days, plus up to 14; if he fails, likely Netanyahu's turn.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261109-1352/img_04.jpg",
+      "credit": "Ana Paula Hirama (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "NASA is hiring Moon astronauts",
+      "highlight": "Dec 3",
+      "image_query": "moon surface",
+      "image_prompt": "An empty white spacesuit helmet resting on grey lunar dust, Earth rising over the horizon in a black starry sky",
+      "label": "SCIENCE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "NASA is recruiting astronauts who could live on the Moon."
+        ],
+        [
+          "WHY IT MATTERS",
+          "NASA aims for a 2028 landing, first since 1972."
+        ],
+        [
+          "FOR YOU",
+          "US citizens with a STEM master's, nursing included, can apply until 3 December."
+        ]
+      ],
+      "body": "NASA is recruiting astronauts who could live on the Moon. NASA aims for a 2028 landing, first since 1972. US citizens with a STEM master's, nursing included, can apply until 3 December.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261109-1352/img_05.jpg",
+      "credit": "Neil A. Armstrong (Public domain) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow @you.didnot.know for daily news",
+  "caption": "🕊️ Qatar's PM meets Trump today on Iran's new two-day proposal. Trump calls more strikes 'highly unlikely' with a deal; Rubio says no progress.\n🇺🇦 Russia, Ukraine and the US resume talks in Abu Dhabi on 10-11 Nov, the first since February.\n💻 Nvidia's board is investigating CEO Jensen Huang. Hold Nvidia or index funds? Shares fell about 5% pre-market.\n🇮🇱 Gadi Eisenkot has 28 days to form Israel's next government.\n🌕 NASA is hiring astronauts for a future Moon base. US citizens with a STEM master's can apply until 3 December.\n\nWhich story will you be watching this week?\nFollow @you.didnot.know for your daily brief.\n\n📷 Ad Meskens (CC BY-SA 3.0) via wikimedia · Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Derrick Coetzee (User:Dcoetzee) (CC0) via wikimedia · Ana Paula Hirama (CC BY-SA 2.0) via wikimedia · Neil A. Armstrong (Public domain) via wikimedia",
+  "hashtags": [
+    "iran",
+    "nvidia",
+    "ukraine",
+    "nasa",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.aljazeera.com/news/2026/11/9/qatar-pm-to-meet-trump-whats-the-latest-on-us-iran-negotiations",
+    "https://www.nbcnews.com/world/iran/iran-defends-2-day-proposal-peace-talks-us-rejects-outrageous-conditio-rcna608263",
+    "https://www.newarab.com/news/trump-meet-qatari-pm-doha-pushes-us-iran-deal",
+    "https://www.usnews.com/news/top-news/articles/2026-11-07/russian-aide-and-military-intelligence-chief-to-attend-talks-with-us-and-ukraine-kremlin-says",
+    "https://www.euronews.com/2026/11/09/eu-to-send-joint-team-to-ukraine-russia-peace-talks-in-abu-dhabi",
+    "https://www.themoscowtimes.com/2026/11/09/kremlin-rejects-european-role-in-upcoming-abu-dhabi-talks-a94207",
+    "https://www.kyivpost.com/post/89466",
+    "https://www.bloomberg.com/news/articles/2026-11-08/nvidia-board-to-probe-spying-case-after-ceo-jensen-huang-admits-infidelity",
+    "https://www.cnbc.com/2026/11/08/nvidia-jensen-huang-investigation-china-spy.html",
+    "https://www.cnbc.com/2026/11/09/nvidia-jensen-huang-chinese-spy-investigation.html",
+    "https://www.nbcnews.com/tech/tech-news/nvidia-ceo-jensen-huang-investigation-rcna608148",
+    "https://abcnews.com/Technology/nvidia-announces-investigation-ceo-amid-foreign-intelligence-target/story?id=137959091",
+    "https://www.jta.org/2026/11/08/israel/president-herzog-tasks-gadi-eisenkot-with-forming-israels-next-government",
+    "https://www.timesofisrael.com/president-herzog-taps-eisenkot-to-form-coalition-but-path-remains-fraught/",
+    "https://www.washingtonpost.com/world/2026/11/07/israeli-president-taps-ex-general-eisenkot-opponent-netanyahu-form-government/",
+    "https://www.npr.org/2026/11/08/nx-s1-6034002/nasa-astronaut-class-applications-2026",
+    "https://ktla.com/news/nationworld/want-to-go-to-the-moon-nasa-is-hiring-astronauts-for-its-artemis-program/",
+    "https://gizmodo.com/nasa-is-looking-for-astronauts-to-live-and-work-on-the-moon-2000836753"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 09 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "white house washington",
+  "image_prompt": "An empty wooden negotiating table in a dim room, a single sealed envelope at its centre, a two-day desk calendar beside it, warm lamp light",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261109-1352/img_cover.jpg",
+  "cover_credit": "Ad Meskens (CC BY-SA 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "🕊️ Qatar's PM meets Trump today on Iran's new two-day proposal. Trump calls more strikes 'highly unlikely' with a deal; Rubio says no progress.\n🇺🇦 Russia, Ukraine and the US resume talks in Abu Dhabi on 10-11 Nov, the first since February.\n💻 Nvidia's board is investigating CEO Jensen Huang. Hold Nvidia or index funds? Shares fell about 5% pre-market.\n🇮🇱 Gadi Eisenkot has 28 days to form Israel's next government.\n🌕 NASA is hiring astronauts for a future Moon base. US citizens with a STEM master's can apply until 3 December.\n\nWhich story will you be watching this week?\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "scale",
+      "right",
+      "rise",
+      "right",
+      "left",
+      "right",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "punch",
+      "cut",
+      "flash",
+      "cut",
+      "flash"
+    ]
+  },
+  "music_used": "documentary"
+}
