@@ -22,7 +22,12 @@ jobs:
           IG_USER_ID: ${{ secrets.IG_USER_ID }}
         run: |
           python - <<'PY'
-          from bot.publish import lookup_account
-          for n in ["nasa", "natgeo", "pickleball.spot", "account_che_non_esiste_xq9z7"]:
-              print("RISULTATO", n, "->", lookup_account(n))
+          import os, requests
+          uid, tok = os.environ["IG_USER_ID"], os.environ["IG_ACCESS_TOKEN"]
+          for ver in ["v26.0", "v23.0"]:
+              for host in ["graph.instagram.com", "graph.facebook.com"]:
+                  r = requests.get(f"https://{host}/{ver}/{uid}", params={"fields": "business_discovery.username(nasa){username,name,followers_count}", "access_token": tok}, timeout=30)
+                  print("RISULTATO", host, ver, r.status_code, r.text[:400])
+          r = requests.get(f"https://graph.instagram.com/v26.0/{uid}", params={"fields": "username,account_type", "access_token": tok}, timeout=30)
+          print("RISULTATO me", r.status_code, r.text[:300])
           PY
