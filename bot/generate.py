@@ -109,13 +109,37 @@ def _performance_table(history: list[dict]) -> str:
         kind = h.get("format", "carousel") + (" (trial)" if h.get("trial") else "")
         if h.get("music"):
             kind += f", music={h['music']}"
+        if h.get("variant"):
+            kind += f", variant={h['variant']}"
         if h.get("design"):
             kind += f", palette={h['design'].get('palette')}"
         rows.append(f"- {h['date']} | {kind} | {h.get('category', '?')} | \"{h.get('hook', h['topic'])}\" | {stats}")
     return "\n".join(rows) or "(no posts yet)"
 
 
-def generate_post(history: list[dict], strategy: str) -> dict:
+VARIANT_RULES = {
+    "short": (
+        "SHORT REEL. Exactly 3 content slides. Cover hook 7 words at most. Slide title 2 to 4 words. "
+        "Slide body 12 words at most, one idea only, no filler. The whole Reel should last about 20 to 25 seconds. "
+        "The last slide still invites people to follow."
+    ),
+    "answer": (
+        "ANSWER-FIRST HOOK. The cover hook must already state the strongest, most surprising verified fact, "
+        "with a concrete number or claim, in 8 words at most. Do NOT use the shapes 'What X does to your body', "
+        "'What X really does' or 'Here is what happens when'. Example of the idea: 'Above 8,000 m, nobody can fully "
+        "adapt.' The slides then explain it. Use 4 content slides."
+    ),
+    "direct": (
+        "DIRECT OPEN. The Reel has no separate cover scene: the video starts straight on slide 1 and the cover hook "
+        "is shown as slide 1's big title, so the hook must be the single strongest sentence of the whole post "
+        "(8 words at most, complete in itself). Slide 1's body then adds the key detail in 18 words at most, "
+        "and slide 1 has an empty highlight so the number is not repeated. "
+        "Use 4 content slides."
+    ),
+}
+
+
+def generate_post(history: list[dict], strategy: str, variant: str | None = None) -> dict:
     client = anthropic.Anthropic()
     avoid = "\n".join(f"- {h['topic']}" for h in history[-80:]) or "(none)"
     prompt = (
@@ -125,6 +149,11 @@ def generate_post(history: list[dict], strategy: str) -> dict:
         f"## Topics already published, do NOT repeat\n{avoid}\n\n"
         "Create the next post."
     )
+    if variant:
+        prompt += (
+            f"\n\n## Experiment for this post (mandatory, overrides the strategy where they differ)\n"
+            f"{VARIANT_RULES[variant]}\nSet format to \"reel\" and trial to false."
+        )
     response = client.beta.messages.create(
         model=config.MODEL,
         max_tokens=16000,

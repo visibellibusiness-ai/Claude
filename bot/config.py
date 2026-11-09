@@ -31,6 +31,19 @@ WIDTH, HEIGHT = 1080, 1350
 # Claude sceglie solo la palette (5 varianti) dentro lo stile.
 BRAND_STYLE = "mystery"
 # Generi musicali dei Reel (bot/music.py): ogni Reel ne usa uno diverso dagli ultimi due (vedi main.pick_music)
+# Esperimento sui Reel (9/11/2026): tre versioni a rotazione per capire cosa abbassa il tasso di salto.
+# Il Trial Reel non è disponibile (Instagram: "Trial Reel Not Enough Followers"), quindi escono come Reel normali.
+# Per spegnere l'esperimento basta mettere VARIANT_EXPERIMENT = False.
+VARIANT_EXPERIMENT = True
+VARIANTS = ["short", "answer", "direct"]
+
+
+def next_variant(history: list) -> str:
+    """La versione che tocca al prossimo Reel: si ruota tra quelle già usate (campo "variant" nello storico)."""
+    used = sum(1 for h in history if h.get("variant"))
+    return VARIANTS[used % len(VARIANTS)]
+
+
 MUSIC_PRESETS = ["mystery", "lofi", "documentary"]  # curious_pop e chill_house esistono in music.py ma Andrea li ha bocciati (30/10/2026)
 # Immagine di copertina generata con un modello open source (bot/imagegen.py)
 COVER_ART = True

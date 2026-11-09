@@ -225,8 +225,13 @@ def _cut_effect(frame: Image.Image, kind: str, f: int, seed: int) -> Image.Image
 def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
     style = make_style(post, theme_index)
     items = slide_data(post, theme_index)
-    items[0][1]["swipe"] = "Keep watching"  # un video non si scorre
     news = post.get("series") == "news"
+    if post.get("variant") == "direct" and not news:
+        # apertura diretta: niente copertina separata, il gancio diventa il titolo della prima scheda
+        items = items[1:]
+        items[0][1]["title"] = post["hook"]
+    else:
+        items[0][1]["swipe"] = "Keep watching"  # un video non si scorre
     if news:
         # Reel news: apertura di 2 secondi e, per ogni notizia, solo "cosa è successo"
         items[0][1]["hook"] = post.get("reel_hook") or post["hook"]

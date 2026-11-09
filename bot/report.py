@@ -173,6 +173,20 @@ def build_report(history: list[dict], state: dict, now: datetime | None = None) 
             reach = sum(_num(m.get("reach")) or 0 for m in ms)
             lines.append(f"| {fmt} | {len(ms)} | {reach} | {pct(rate(sum(_num(m.get('saved')) or 0 for m in ms), reach))} | "
                          f"{pct(rate(sum(_num(m.get('shares')) or 0 for m in ms), reach))} |")
+        by_variant: dict[str, list] = {}
+        for h, r, _ in rows:
+            if h.get("variant") and h.get("format") == "reel":
+                by_variant.setdefault(h["variant"], []).append(h["metrics"])
+        if by_variant:
+            lines += ["", "### Esperimento Reel: tre versioni a confronto", "",
+                      "short = 3 schede brevi, answer = gancio con il dato forte, direct = niente copertina. "
+                      "Medie semplici dei Reel misurati; con pochi Reel e copertura sotto la soglia non si concludono.", "",
+                      "| Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |", "|---|---|---|---|---|"]
+            for name, ms in sorted(by_variant.items()):
+                def avg(key):
+                    vals = [_num(m.get(key)) for m in ms if _num(m.get(key)) is not None]
+                    return it_int(sum(vals) / len(vals)) if vals else "n/d"
+                lines.append(f"| {name} | {len(ms)} | {avg('reach')} | {avg('ig_reels_avg_watch_time')} | {avg('reels_skip_rate')} |")
         lines += ["", f"Un tasso con una copertura sotto {MIN_REACH} account non permette conclusioni: è una soglia di prudenza nostra, "
                       "non un numero di Instagram."]
     return "\n".join(lines) + "\n"

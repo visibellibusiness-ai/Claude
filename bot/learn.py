@@ -170,7 +170,7 @@ def reflect(history: list[dict], strategy: str, followers_log: list[dict], accou
     for h in history[-60:]:
         lines.append(
             f"- {h['date']} | {h.get('format', 'carousel')}{' (trial)' if h.get('trial') else ''} | {h.get('category', '?')} | hook: \"{h.get('hook', h['topic'])}\" | "
-            f"slides: {h.get('slides', '?')} | design: {h.get('design', {})} | music: {h.get('music') or '-'} | results: {rates_text(h.get('metrics'))}"
+            f"slides: {h.get('slides', '?')} | design: {h.get('design', {})} | music: {h.get('music') or '-'} | variant: {h.get('variant') or '-'} | results: {rates_text(h.get('metrics'))}"
         )
     account = []
     for e in (account_log or [])[-28:]:
@@ -189,7 +189,9 @@ def reflect(history: list[dict], strategy: str, followers_log: list[dict], accou
         "Write the new strategy in Markdown (max 400 words): what is working (with numbers), "
         "what is not, which formats (carousel vs reel vs trial reel), topics, hooks, lengths, colors "
         "and captions to use more or less, how to split formats, and 1-2 "
-        "experiments to run next.\n"
+        "experiments to run next. Posts with a variant are the 'short / answer / direct' Reel experiment "
+        "(short = 3 slides, answer = hook states the strongest fact, direct = no cover scene); compare them "
+        "with each other on skip rate and average watch time, never on raw totals.\n"
         "How to judge: use RATES, never raw totals. Compare saves, shares, likes and profile visits per account "
         "reached, and for Reels the skip rate and average watch time (their units are not confirmed, so compare "
         "only between Reels). While the page has fewer than 100 followers, the share of reach and views that "

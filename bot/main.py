@@ -163,7 +163,13 @@ def create(post_file: str | None, series: str = "facts") -> None:
         post = json.loads(queued[0].read_text())
         queued[0].unlink()
     else:
-        post = generate_post(history, strategy)
+        variant = config.next_variant(history) if config.VARIANT_EXPERIMENT else None
+        post = generate_post(history, strategy, variant)
+        if variant:
+            post["variant"] = variant
+            post["format"] = "reel"  # l'esperimento riguarda solo i Reel
+            post["trial"] = False  # il Trial non è disponibile a questo numero di follower
+            print(f"Esperimento Reel: versione {variant}")
 
     stamp = datetime.now(timezone.utc).strftime("%Y%m%d-%H%M")
     rel_dir = Path("posts") / stamp
@@ -222,6 +228,7 @@ def create(post_file: str | None, series: str = "facts") -> None:
         "category": post.get("category", "?"),
         "hook": post["hook"],
         "slides": len(post["slides"]),
+        "variant": post.get("variant"),
         "design": post.get("design_used") or post.get("design", {}),
         "images": [f"{rel_dir.as_posix()}/{p.name}" for p in paths],
         "story": f"{rel_dir.as_posix()}/{story.name}" if story else None,
@@ -303,6 +310,7 @@ def publish(series: str = "facts") -> None:
             "category": pending["category"],
             "hook": pending["hook"],
             "slides": pending["slides"],
+            "variant": pending.get("variant") if kind == "reel" else None,
             "design": pending["design"],
             "media_id": media_id,
         })
