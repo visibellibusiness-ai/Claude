@@ -63,8 +63,18 @@ def learn() -> None:
     STATE.write_text(json.dumps(state, ensure_ascii=False, indent=2))
 
 
+def hashtag_line(post: dict) -> str:
+    """Al massimo config.MAX_HASHTAGS hashtag, senza doppioni, nell'ordine scelto (i più specifici per primi)."""
+    seen: list[str] = []
+    for t in post["hashtags"]:
+        tag = "#" + t.lstrip("#").replace(" ", "")
+        if len(tag) > 1 and tag.lower() not in [s.lower() for s in seen]:
+            seen.append(tag)
+    return " ".join(seen[: config.MAX_HASHTAGS])
+
+
 def build_caption(post: dict) -> str:
-    tags = " ".join("#" + t.lstrip("#").replace(" ", "") for t in post["hashtags"])
+    tags = hashtag_line(post)
     return f"{post['caption']}\n\n{tags}"
 
 
@@ -82,7 +92,7 @@ def build_carousel_caption(post: dict) -> str | None:
     """Per il carosello: il testo di ogni slide con i crediti della sua foto (il Reel tiene la didascalia breve)."""
     from bot.captions import build
 
-    tags = " ".join("#" + t.lstrip("#").replace(" ", "") for t in post["hashtags"])
+    tags = hashtag_line(post)
     return build(post, tags)
 
 
@@ -229,6 +239,8 @@ def create(post_file: str | None, series: str = "facts") -> None:
         "hook": post["hook"],
         "slides": len(post["slides"]),
         "variant": post.get("variant"),
+        "tags": [t.lstrip("@") for t in post.get("tag_accounts", [])][:2],
+        "tag_reason": post.get("tag_reason", ""),
         "design": post.get("design_used") or post.get("design", {}),
         "images": [f"{rel_dir.as_posix()}/{p.name}" for p in paths],
         "story": f"{rel_dir.as_posix()}/{story.name}" if story else None,
@@ -270,7 +282,43 @@ def _cover_url(video: Path) -> str | None:
     return f"{base}/{cover.relative_to(ROOT).as_posix()}"
 
 
+def choose_tags(pending: dict, history: list[dict]) -> list[str]:
+    """Tag davvero ammessi: verificati con Business Discovery (esistono, pubblici, professionali), non il
+    nostro account, al massimo un post taggato al giorno e lo stesso account non più di una volta ogni 7 giorni."""
+    from bot.publish import lookup_account
+
+    wanted = [t for t in pending.get("tags", []) if t]
+    if not wanted or not config.TAGS_ENABLED:
+        return []
+    now = datetime.now(timezone.utc)
+    recent = []
+    for h in history:
+        if h.get("tags"):
+            when = datetime.strptime(h["date"], "%Y%m%d-%H%M").replace(tzinfo=timezone.utc)
+            recent.append((when, [t.lower() for t in h["tags"]]))
+    if any(w.date() == now.date() for w, _ in recent):
+        print("Tag: oggi c'è già un post con tag, questo esce senza")
+        return []
+    blocked = {t for w, ts in recent if now - w < timedelta(days=7) for t in ts}
+    own = config.PAGE_HANDLE.lstrip("@").lower()
+    approved = []
+    for t in wanted:
+        name = t.lstrip("@")
+        if name.lower() == own or name.lower() in blocked:
+            print(f"Tag @{name}: saltato (è il nostro account o già taggato negli ultimi 7 giorni)")
+            continue
+        info = lookup_account(name)
+        if not info:
+            print(f"Tag @{name}: scartato, account non verificato")
+            continue
+        print(f"Tag @{info['username']}: verificato ({info.get('name')}, {info.get('followers_count')} follower). "
+              f"Motivo dichiarato: {pending.get('tag_reason') or 'n/d'}")
+        approved.append(info["username"])
+    return approved
+
+
 def publish(series: str = "facts") -> None:
+    from bot import publish as publish_mod
     from bot.publish import publish_carousel, publish_reel, publish_story
 
     path = pending_path(series)
@@ -282,7 +330,12 @@ def publish(series: str = "facts") -> None:
     entries = []
     if fmt == "reel":
         reel = _video(pending)
-        media_id, trial = publish_reel(_video_url(reel), pending["caption"], pending.get("trial", False), pending.get("ai", False), _cover_url(reel))
+        try:
+            tags = choose_tags(pending, load_history())
+        except Exception as e:  # i tag sono un extra: un errore qui non deve fermare il Reel
+            print(f"::warning::Tag non preparati, pubblico senza: {e}")
+            tags = []
+        media_id, trial = publish_reel(_video_url(reel), pending["caption"], pending.get("trial", False), pending.get("ai", False), _cover_url(reel), tags)
         entries.append(("reel", media_id, trial))
     else:
         # Le immagini devono essere raggiungibili pubblicamente: il workflow le
@@ -311,6 +364,7 @@ def publish(series: str = "facts") -> None:
             "hook": pending["hook"],
             "slides": pending["slides"],
             "variant": pending.get("variant") if kind == "reel" else None,
+            "tags": list(publish_mod.TAGS_USED) if kind == "reel" and fmt == "reel" else [],
             "design": pending["design"],
             "media_id": media_id,
         })

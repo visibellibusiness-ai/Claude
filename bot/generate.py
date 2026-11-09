@@ -34,7 +34,9 @@ SCHEMA = {
         },
         "cta": {"type": "string", "description": "Last slide text, max 8 words and about 40 characters, invites to follow so people never miss the next one"},
         "caption": {"type": "string", "description": "Instagram caption: 2 or 3 short paragraphs, ending with one short question for the audience"},
-        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "Hashtags without #"},
+        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "At most 5 hashtags without #, the most specific first (Instagram allows only 5)"},
+        "tag_accounts": {"type": "array", "items": {"type": "string"}, "description": "Instagram handles to tag, 0 to 2, without @. Only an organisation or institution that is the real source of, or the subject of, the main fact and whose exact handle you are certain of. Empty array in most posts."},
+        "tag_reason": {"type": "string", "description": "One short phrase saying why each tagged account is the source or subject; empty string when there are no tags"},
         "sources": {"type": "array", "items": {"type": "string"}, "description": "Authoritative sources backing the facts"},
         "image_query": {"type": "string", "description": "2-4 English words to search a real, freely licensed photo for the cover; empty string if abstract"},
         "image_prompt": {"type": "string", "description": "Cover image for an AI image model: one concrete scene of symbolic objects or a visual metaphor for the topic, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
@@ -50,7 +52,7 @@ SCHEMA = {
             "additionalProperties": False,
         },
     },
-    "required": ["reasoning", "format", "music", "trial", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "sources", "design", "image_query", "image_prompt"],
+    "required": ["reasoning", "format", "music", "trial", "category", "topic", "hook", "slides", "cta", "caption", "hashtags", "tag_accounts", "tag_reason", "sources", "design", "image_query", "image_prompt"],
     "additionalProperties": False,
 }
 
@@ -88,6 +90,11 @@ Structure that suits saves and shares:
 Caption: 2 or 3 short paragraphs that introduce the topic with one concrete detail, then
 one short question for the audience. Vary the kind of question between posts (about the
 topic, an opinion, a nudge to save or share), so the stats can show which one works.
+
+Tags: fill tag_accounts only when the main fact comes from, or is about, an organisation or institution
+(a space agency, a university, a journal, a museum) with an Instagram account whose exact handle you are
+certain of. Never tag individuals, never guess a handle, never tag to get attention. Most posts have no tags:
+when in doubt leave the array empty. Tagged accounts are checked before publishing and unknown ones are dropped.
 
 Goal: grow the page fast. Maximize reach, saves, shares, comments and follows.
 

@@ -8,11 +8,38 @@ in .github/workflows/post.yml).
 
 import json
 import os
+import re
 import time
 
 import requests
 
 GRAPH = "https://graph.instagram.com/v26.0"
+
+# Account taggati nell'ultimo Reel pubblicato (letto da main.publish per lo storico).
+TAGS_USED: list[str] = []
+
+
+def lookup_account(username: str) -> dict | None:
+    """Verifica con la Business Discovery API che l'account esista, sia pubblico e professionale.
+    Restituisce {"username", "name", "followers_count"} oppure None (non trovato, privato, personale
+    o errore: nel dubbio non si tagga)."""
+    name = username.lstrip("@").strip()
+    if not re.fullmatch(r"[A-Za-z0-9._]{1,30}", name):
+        return None
+    try:
+        r = requests.get(
+            f"{GRAPH}/{os.environ['IG_USER_ID']}",
+            params={"fields": f"business_discovery.username({name}){{username,name,followers_count}}",
+                    "access_token": os.environ["IG_ACCESS_TOKEN"]},
+            timeout=30,
+        )
+    except requests.RequestException as e:
+        print(f"Verifica account @{name} non riuscita: {e}")
+        return None
+    if not r.ok:
+        print(f"Verifica account @{name}: non trovato o non verificabile ({r.status_code})")
+        return None
+    return r.json().get("business_discovery") or None
 
 
 def _post(path: str, **params) -> dict:
@@ -91,7 +118,23 @@ def publish_carousel(image_urls: list[str], caption: str, ai: bool = False, slid
     return result["id"]
 
 
-def publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False, cover_url: str | None = None) -> tuple[str, bool]:
+def publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False, cover_url: str | None = None,
+                 tags: list[str] | None = None) -> tuple[str, bool]:
+    """Come _publish_reel, con i tag (user_tags) già verificati. Se Instagram rifiuta il container
+    con i tag, si riprova senza e il Reel esce lo stesso, con un avviso nel log."""
+    TAGS_USED.clear()
+    if tags:
+        try:
+            result = _publish_reel(video_url, caption, trial, ai, cover_url, tags)
+            TAGS_USED.extend(tags)
+            return result
+        except RuntimeError as e:
+            print(f"::warning::Tag non accettati da Instagram, pubblico senza: {e}")
+    return _publish_reel(video_url, caption, trial, ai, cover_url, None)
+
+
+def _publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False, cover_url: str | None = None,
+                  tags: list[str] | None = None) -> tuple[str, bool]:
     """Pubblica un Reel dal suo indirizzo pubblico. Con trial=True è un Trial Reel: lo vede
     prima solo chi non ti segue e Instagram lo condivide con i follower se va bene.
     Con cover_url la copertina è l'immagine data (cover_url dell'API) invece di un fotogramma
@@ -100,6 +143,8 @@ def publish_reel(video_url: str, caption: str, trial: bool, ai: bool = False, co
     params = {"media_type": "REELS", "video_url": video_url, "caption": caption}
     if cover_url:
         params["cover_url"] = cover_url
+    if tags:
+        params["user_tags"] = json.dumps([{"username": t} for t in tags])
     if trial:
         params["trial_params"] = json.dumps({"graduation_strategy": "SS_PERFORMANCE"})
     else:

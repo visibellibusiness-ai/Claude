@@ -54,7 +54,7 @@ SCHEMA = {
         "reel_hook": {"type": "string", "description": "2-second reel opening, max 7 words"},
         "cta": {"type": "string", "description": "Last slide, max 8 words and about 40 characters, invites to follow for the daily brief"},
         "caption": {"type": "string", "description": "3-6 short lines summing up the stories with one emoji each and, for the most useful stories, what it means for the reader; then one short question for comments; then a call to follow for the daily brief"},
-        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "8-12 hashtags, lowercase, without #"},
+        "hashtags": {"type": "array", "items": {"type": "string"}, "description": "At most 5 hashtags, lowercase, without #, the most specific first (Instagram allows only 5)"},
         "image_prompt": {"type": "string", "description": "Cover image for an AI image model: one concrete scene of symbolic objects or a visual metaphor for story 1, max 30 words. Never people, faces or hands, no text, no logos, no screens with writing"},
         "palette": {"type": "integer", "description": "Color variant of the brand style, 0 to 4"},
     },

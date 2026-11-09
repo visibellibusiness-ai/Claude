@@ -34,6 +34,8 @@ BRAND_STYLE = "mystery"
 # Esperimento sui Reel (9/11/2026): tre versioni a rotazione per capire cosa abbassa il tasso di salto.
 # Il Trial Reel non è disponibile (Instagram: "Trial Reel Not Enough Followers"), quindi escono come Reel normali.
 # Per spegnere l'esperimento basta mettere VARIANT_EXPERIMENT = False.
+TAGS_ENABLED = True  # tag di account verificati (9/11/2026); False per spegnerli
+MAX_HASHTAGS = 5  # limite dell'app Instagram, regola di Andrea del 9/11/2026
 VARIANT_EXPERIMENT = True
 VARIANTS = ["short", "answer", "direct"]
 

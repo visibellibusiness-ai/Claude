@@ -1,0 +1,28 @@
+name: Prova verifica account da taggare
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Verifica alcuni account (solo lettura)
+        env:
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_USER_ID: ${{ secrets.IG_USER_ID }}
+        run: |
+          python - <<'PY'
+          from bot.publish import lookup_account
+          for n in ["nasa", "natgeo", "pickleball.spot", "account_che_non_esiste_xq9z7"]:
+              print("RISULTATO", n, "->", lookup_account(n))
+          PY
