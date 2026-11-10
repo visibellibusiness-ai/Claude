@@ -1,0 +1,106 @@
+{
+  "reasoning": "Mandatory answer-first hook test. Direct-claim hooks with a concrete number have been our best reach: 'You're shorter tonight than this morning' reached 108 and 'Why your voice sounds weird' reached 98. So the hook states the fact itself: the brain burns 20% of your energy. Brain energy use is new, well documented, and fits our strongest body and psychology lane. Each slide carries a striking number to hold watch time. The format is a 4-slide reel. Lofi music has been behind 3 of our top 4 reach posts. Palette 4 was used on our two recent near-100 posts. The caption adds a follow reason to target the 0-follow problem, and asks a comparison question.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Brain energy use: 20% of resting energy, 20 watts, child brain glucose",
+  "hook": "Your brain burns 20% of your energy",
+  "slides": [
+    {
+      "title": "Only 2% of your weight",
+      "body": "An adult brain weighs about 1.4 kg, roughly 2% of your body, yet uses about 20% of your resting energy.",
+      "highlight": "20%",
+      "image_query": "human brain model",
+      "image_prompt": "A small glowing brain sculpture on a scale, outweighed by a large stack of stones, warm energy light flowing into the brain",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1824/img_01.jpg",
+      "credit": "John Campbell (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Runs on about 20 watts",
+      "body": "That's roughly the power of a dim light bulb, running nonstop, even while you sleep.",
+      "highlight": "20 W",
+      "image_query": "dim light bulb",
+      "image_prompt": "A single dim glowing light bulb in a dark room, its filament shaped like a tiny brain, soft amber glow",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1824/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Hard thinking barely adds",
+      "body": "A tough problem raises brain energy use only slightly. Most fuel goes to keeping neurons ready to fire.",
+      "highlight": "<5%",
+      "image_query": "neurons microscope",
+      "image_prompt": "A dense network of glowing neurons in deep blue, a few brighter sparks among a constantly humming web of light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1824/img_03.jpg",
+      "credit": "ZEISS Microscopy from Germany (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Kids burn even more",
+      "body": "Around age 5, the brain uses about two-thirds of the body's resting glucose, which may slow body growth.",
+      "highlight": "66%",
+      "image_query": "child toy blocks",
+      "image_prompt": "Colorful wooden toy blocks stacked beside a glowing oversized brain shape, a small measuring tape lying unused on the floor",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1824/img_04.jpg",
+      "credit": "Shixart1985 (CC BY 2.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new brain fact daily",
+  "caption": "Your brain is only about 2% of your body weight, but at rest it uses about 20% of your energy. That works out to roughly 20 watts, all day and all night.\n\nThe twist: thinking hard barely changes that number. Most of the energy goes to keeping billions of neurons ready to fire. In young children it gets even more extreme. Around age 5, the brain takes about two-thirds of the body's resting glucose (Kuzawa et al., PNAS 2014).\n\nFollow for one fact about your body your brain won't believe, every day. Which surprised you more: the 20 watts or the 66%?\n\n📷 Alenoach (Public domain) via wikimedia · John Campbell (CC BY 2.0) via wikimedia · ZEISS Microscopy from Germany (CC BY 2.0) via wikimedia · Shixart1985 (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "brainfacts",
+    "neuroscience",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Raichle ME, Gusnard DA. Appraising the brain's energy budget. PNAS, 2002",
+    "Kuzawa CW et al. Metabolic costs and evolutionary implications of human brain development. PNAS, 2014",
+    "Scientific American: Does Thinking Really Hard Burn More Calories? (2012)"
+  ],
+  "image_query": "human brain glowing",
+  "image_prompt": "A glowing brain made of light sitting on a dark table, drawing bright energy streams from a large battery beside it, cinematic lighting",
+  "design": {
+    "palette": 4,
+    "cover_label": "Your hungry brain",
+    "swipe_text": "Watch this",
+    "follow_line": "One fact your brain won't believe, daily"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261110-1824/img_cover.jpg",
+  "cover_credit": "Alenoach (Public domain) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Your brain is only about 2% of your body weight, but at rest it uses about 20% of your energy. That works out to roughly 20 watts, all day and all night.\n\nThe twist: thinking hard barely changes that number. Most of the energy goes to keeping billions of neurons ready to fire. In young children it gets even more extreme. Around age 5, the brain takes about two-thirds of the body's resting glucose (Kuzawa et al., PNAS 2014).\n\nFollow for one fact about your body your brain won't believe, every day. Which surprised you more: the 20 watts or the 66%?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "blur",
+      "left",
+      "right",
+      "left",
+      "right",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "glitch",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "mystery"
+}

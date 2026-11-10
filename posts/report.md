@@ -1,15 +1,15 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 10/11/2026 alle 13:42 UTC. Follower: 0.
+Aggiornato il 10/11/2026 alle 18:23 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 531, di cui da non follower 531 (100%).
+- Visualizzazioni: 533, di cui da non follower 533 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 10/11/2026 | 2 | 2 | 3 | 3 | 0 | 0 |
+| 10/11/2026 | 4 | 4 | 5 | 5 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
@@ -23,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 08/11/2026 18:14 | reel | 5 body parts evolution forgot to delete | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 108 | 119 | 0,0% | 0,0% | 0,9% | n/d |  |
 | 07/11/2026 00:17 | reel | 5 senses nobody taught you in school | 4 | 7 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -50,7 +51,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 28/10/2026 13:40 | carousel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 13:40 | reel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 28/10/2026 00:09 | carousel | Your body rebuilds itself, except these  | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
-| 27/10/2026 18:21 | reel | 5 things octopuses do that seem impossib | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -58,7 +58,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 27/10/2026 18:21 | 5 things octopuses do that seem impossib | 13.046 | 100 |
 | 28/10/2026 13:40 | Spain's second deadly train crash this y | 4.563 | 100 |
 | 29/10/2026 13:44 | Why was this train allowed to move? | 2.387 | 100 |
 | 29/10/2026 18:24 | What happens to your body in space | 4.568 | 79.2 |
@@ -80,12 +79,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 07/11/2026 00:17 | 5 senses nobody taught you in school | 3.650 | 100 |
 | 07/11/2026 18:14 | You're shorter tonight than this morning | 4.002 | 65.1 |
 | 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
+| 08/11/2026 18:14 | 5 body parts evolution forgot to delete | 10.815 | 66.7 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 6 | 6 | 83,3% | 0,0% |
-| reel | 22 | 734 | 0,5% | 0,3% |
+| reel | 22 | 742 | 0,4% | 0,3% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

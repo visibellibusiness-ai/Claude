@@ -1,0 +1,35 @@
+{
+  "date": "20261110-1824",
+  "series": "facts",
+  "format": "reel",
+  "trial": false,
+  "music": "mystery",
+  "theme_index": 36,
+  "topic": "Brain energy use: 20% of resting energy, 20 watts, child brain glucose",
+  "category": "human body",
+  "hook": "Your brain burns 20% of your energy",
+  "slides": 4,
+  "variant": "answer",
+  "tags": [],
+  "tag_reason": "",
+  "design": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "images": [
+    "posts/20261110-1824/cover.jpg"
+  ],
+  "story": "posts/20261110-1824/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "Your brain is only about 2% of your body weight, but at rest it uses about 20% of your energy. That works out to roughly 20 watts, all day and all night.\n\nThe twist: thinking hard barely changes that number. Most of the energy goes to keeping billions of neurons ready to fire. In young children it gets even more extreme. Around age 5, the brain takes about two-thirds of the body's resting glucose (Kuzawa et al., PNAS 2014).\n\nFollow for one fact about your body your brain won't believe, every day. Which surprised you more: the 20 watts or the 66%?\n\n📷 Alenoach (Public domain) via wikimedia · John Campbell (CC BY 2.0) via wikimedia · ZEISS Microscopy from Germany (CC BY 2.0) via wikimedia · Shixart1985 (CC BY 2.0) via wikimedia\n\n#brainfacts #neuroscience #humanbody #sciencefacts #didyouknow",
+  "carousel_caption": "Your brain is only about 2% of your body weight, but at rest it uses about 20% of your energy. That works out to roughly 20 watts, all day and all night.\n\nThe twist: thinking hard barely changes that number. Most of the energy goes to keeping billions of neurons ready to fire. In young children it gets even more extreme. Around age 5, the brain takes about two-thirds of the body's resting glucose (Kuzawa et al., PNAS 2014).\n\nFollow for one fact about your body your brain won't believe, every day. Which surprised you more: the 20 watts or the 66%?\n\nCover: Your brain burns 20% of your energy\n📷 Alenoach (Public domain) via wikimedia\n\n1/4 Only 2% of your weight (20%)\nAn adult brain weighs about 1.4 kg, roughly 2% of your body, yet uses about 20% of your resting energy.\n📷 John Campbell (CC BY 2.0) via wikimedia\n\n2/4 Runs on about 20 watts (20 W)\nThat's roughly the power of a dim light bulb, running nonstop, even while you sleep.\n🎨 AI-generated image\n\n3/4 Hard thinking barely adds (<5%)\nA tough problem raises brain energy use only slightly. Most fuel goes to keeping neurons ready to fire.\n📷 ZEISS Microscopy from Germany (CC BY 2.0) via wikimedia\n\n4/4 Kids burn even more (66%)\nAround age 5, the brain uses about two-thirds of the body's resting glucose, which may slow body growth.\n📷 Shixart1985 (CC BY 2.0) via wikimedia\n\n#brainfacts #neuroscience #humanbody #sciencefacts #didyouknow",
+  "slide_captions": [
+    "Your brain burns 20% of your energy\n📷 Alenoach (Public domain) via wikimedia",
+    "1/4 Only 2% of your weight (20%)\nAn adult brain weighs about 1.4 kg, roughly 2% of your body, yet uses about 20% of your resting energy.\n📷 John Campbell (CC BY 2.0) via wikimedia",
+    "2/4 Runs on about 20 watts (20 W)\nThat's roughly the power of a dim light bulb, running nonstop, even while you sleep.\n🎨 AI-generated image",
+    "3/4 Hard thinking barely adds (<5%)\nA tough problem raises brain energy use only slightly. Most fuel goes to keeping neurons ready to fire.\n📷 ZEISS Microscopy from Germany (CC BY 2.0) via wikimedia",
+    "4/4 Kids burn even more (66%)\nAround age 5, the brain uses about two-thirds of the body's resting glucose, which may slow body growth.\n📷 Shixart1985 (CC BY 2.0) via wikimedia",
+    "Follow for a new brain fact daily"
+  ]
+}
