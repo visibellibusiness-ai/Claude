@@ -950,5 +950,23 @@
       "palette": 2
     },
     "media_id": "18114902531150248"
+  },
+  {
+    "date": "20261110-0015",
+    "series": "facts",
+    "topic": "Nasal cycle: alternating nostril dominance",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "You breathe mostly through one nostril",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "18130289071872305"
   }
 ]
