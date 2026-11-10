@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 09/11/2026 alle 13:49 UTC. Follower: 0.
+Aggiornato il 10/11/2026 alle 00:15 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 574, di cui da non follower 574 (100%).
+- Visualizzazioni: 514, di cui da non follower 514 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 09/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 09/11/2026 | 2 | 2 | 2 | 2 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
 | 06/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
 | 05/11/2026 | 118 | 118 | 140 | 140 | 0 | 0 |
 | 04/11/2026 | 106 | 106 | 117 | 117 | 0 | 0 |
-| 03/11/2026 | 61 | 61 | 62 | 62 | 1 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,8 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
+| 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 108 | 119 | 0,0% | 0,0% | 0,9% | n/d |  |
 | 07/11/2026 00:17 | reel | 5 senses nobody taught you in school | 4 | 7 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 06/11/2026 18:30 | reel | What coffee really does to your brain | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 06/11/2026 00:19 | reel | Why you can't remember being a baby | 33 | 36 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -83,12 +84,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 06/11/2026 00:19 | Why you can't remember being a baby | 2.985 | 72.7 |
 | 06/11/2026 18:30 | What coffee really does to your brain | 50.999 | 0 |
 | 07/11/2026 00:17 | 5 senses nobody taught you in school | 3.650 | 100 |
+| 07/11/2026 18:14 | You're shorter tonight than this morning | 4.002 | 65.1 |
+| 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 9 | 9 | 88,9% | 0,0% |
-| reel | 22 | 634 | 0,9% | 0,3% |
+| reel | 24 | 743 | 0,8% | 0,3% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

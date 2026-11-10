@@ -1,0 +1,94 @@
+{
+  "reasoning": "This post runs the mandatory short-reel experiment: 3 content slides, a 7-word-max hook and bodies of 12 words or fewer, for about 20-25 seconds. Human body is our strongest distributing category. The top reach came from counterintuitive direct claims about your own body, such as 'You're shorter tonight than this morning' (108 reach, 65.1 skip) and 'recorded voice' (98, 66.7 skip). The nasal cycle has not been covered and fits that pattern: it is a direct-claim hook the viewer can test on the spot. That invites comments and rewatches. Documentary music and palette 3 continue the rotation. The caption adds a follow reason for the 0-follow problem, and the question asks viewers to test the fact themselves.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Nasal cycle: alternating nostril dominance",
+  "hook": "You breathe mostly through one nostril",
+  "slides": [
+    {
+      "title": "The nasal cycle",
+      "body": "Tissue inside one nostril swells while the other opens up.",
+      "highlight": "1 side",
+      "image_query": "nose close up",
+      "image_prompt": "Two small open doorways side by side carved in pale stone, one half blocked by soft swelling cushion, the other open with mist flowing through, soft light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-0015/img_01.jpg",
+      "credit": "Pittigrilli (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "They swap shifts",
+      "body": "Every few hours, your nervous system switches which nostril works harder.",
+      "highlight": "SWAP",
+      "image_query": "hourglass sand",
+      "image_prompt": "An hourglass beside two glass tubes, air bubbles flowing strongly through one tube and faintly through the other, calm blue studio lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-0015/img_02.jpg",
+      "credit": "User:S Sepp (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Try it now",
+      "body": "Breathe out onto a cold mirror: one fog patch is usually bigger.",
+      "highlight": "",
+      "image_query": "fogged mirror",
+      "image_prompt": "A small round mirror on a table with two foggy breath marks, one clearly larger than the other, soft morning light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-0015/img_03.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for a new body fact daily",
+  "caption": "Right now, one of your nostrils is doing most of the breathing. Tissue inside your nose swells on one side and shrinks on the other, and the roles swap every few hours. It's called the nasal cycle, and most people never notice it.\n\nYour autonomic nervous system runs it automatically, the same system that controls your heartbeat. Lying on your side also tends to congest the lower nostril. Follow for one body fact your brain won't believe, every day.\n\nCover one nostril, then the other: which one is winning right now?\n\n📷 TheNoseKnows2Much (CC BY-SA 4.0) via wikimedia · Pittigrilli (CC BY-SA 4.0) via wikimedia · User:S Sepp (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "nasalcycle",
+    "humanbody",
+    "bodyfacts",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Pendolino AL et al. (2018). The nasal cycle: a comprehensive review. Rhinology Online 1:67-76",
+    "Kahana-Zweig R et al. (2016). Measuring and Characterizing the Human Nasal Cycle. PLoS ONE 11(10): e0162918",
+    "Eccles R. (1996). A role for the nasal cycle in respiratory defence. European Respiratory Journal 9:371-376"
+  ],
+  "image_query": "human nose profile",
+  "image_prompt": "Two glowing air streams flowing into a sculpted stone nose shape, one stream bright and strong, the other thin and faint, dark minimal background",
+  "design": {
+    "palette": 3,
+    "cover_label": "Check right now",
+    "swipe_text": "Watch this",
+    "follow_line": "One body fact you'll test yourself"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261110-0015/img_cover.jpg",
+  "cover_credit": "TheNoseKnows2Much (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Right now, one of your nostrils is doing most of the breathing. Tissue inside your nose swells on one side and shrinks on the other, and the roles swap every few hours. It's called the nasal cycle, and most people never notice it.\n\nYour autonomic nervous system runs it automatically, the same system that controls your heartbeat. Lying on your side also tends to congest the lower nostril. Follow for one body fact your brain won't believe, every day.\n\nCover one nostril, then the other: which one is winning right now?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "scale",
+      "blur",
+      "left",
+      "scale",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "flash",
+      "dip",
+      "flash",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}
