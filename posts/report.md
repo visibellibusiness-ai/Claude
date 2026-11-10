@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 10/11/2026 alle 00:15 UTC. Follower: 0.
+Aggiornato il 10/11/2026 alle 13:42 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 514, di cui da non follower 514 (100%).
+- Visualizzazioni: 531, di cui da non follower 531 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 09/11/2026 | 2 | 2 | 2 | 2 | 0 | 0 |
+| 10/11/2026 | 2 | 2 | 3 | 3 | 0 | 0 |
+| 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
 | 06/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
@@ -50,11 +51,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 28/10/2026 13:40 | reel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 28/10/2026 00:09 | carousel | Your body rebuilds itself, except these  | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 27/10/2026 18:21 | reel | 5 things octopuses do that seem impossib | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 27/10/2026 13:32 | carousel | Netanyahu or Eisenkot? Polls can't tell | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
-| 27/10/2026 13:32 | reel | Netanyahu or Eisenkot? Polls can't tell | 5 | 6 | 20,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 27/10/2026 12:55 | carousel | Israel's busiest election morning since  | 1 | 3 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
-| 27/10/2026 12:55 | reel | Israel's busiest election morning since  | 4 | 8 | 25,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 27/10/2026 12:42 | carousel | One spin of Venus takes longer than its  | 1 | 4 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 
 ### Reel
 
@@ -62,8 +58,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 27/10/2026 12:55 | Israel's busiest election morning since  | 8.179 | 100 |
-| 27/10/2026 13:32 | Netanyahu or Eisenkot? Polls can't tell | 7.159 | 60 |
 | 27/10/2026 18:21 | 5 things octopuses do that seem impossib | 13.046 | 100 |
 | 28/10/2026 13:40 | Spain's second deadly train crash this y | 4.563 | 100 |
 | 29/10/2026 13:44 | Why was this train allowed to move? | 2.387 | 100 |
@@ -91,7 +85,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 9 | 9 | 88,9% | 0,0% |
-| reel | 24 | 743 | 0,8% | 0,3% |
+| carousel | 6 | 6 | 83,3% | 0,0% |
+| reel | 22 | 734 | 0,5% | 0,3% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

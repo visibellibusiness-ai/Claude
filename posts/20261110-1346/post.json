@@ -1,0 +1,207 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-10",
+  "hook": "Russia and Ukraine: back at the table",
+  "reel_hook": "Russia, Ukraine, US: same room again",
+  "slides": [
+    {
+      "title": "Peace talks in Abu Dhabi",
+      "highlight": "1,721",
+      "image_query": "abu dhabi skyline",
+      "image_prompt": "Three empty chairs around a round wooden table with water glasses and closed folders, Abu Dhabi skyline glowing through a large window at dusk",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russia, Ukraine and the US started two-day talks."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Day 1,721 of war, and the sides remain far apart."
+        ],
+        [
+          "FOR YOU",
+          "No deal yet: first three-way meeting since February, focused on security guarantees."
+        ]
+      ],
+      "body": "Russia, Ukraine and the US started two-day talks. Day 1,721 of war, and the sides remain far apart. No deal yet: first three-way meeting since February, focused on security guarantees.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1346/img_01.jpg",
+      "credit": "Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Iran war: Trump sees momentum",
+      "highlight": "Qatar",
+      "image_query": "refuelling tanker aircraft",
+      "image_prompt": "Military refuelling tanker plane on a misty airfield runway at dawn, empty tarmac and runway lights fading into fog",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Trump met Qatar's PM and saw momentum to end war."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Iran calls it 'fake news'; new strikes not ruled out."
+        ],
+        [
+          "FOR YOU",
+          "No deal yet, and the US moved 10 tankers out of an English base."
+        ]
+      ],
+      "body": "Trump met Qatar's PM and saw momentum to end war. Iran calls it 'fake news'; new strikes not ruled out. No deal yet, and the US moved 10 tankers out of an English base.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1346/img_02.jpg",
+      "credit": "Senior Airman Keith James (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "COP31 opens in Türkiye",
+      "highlight": "COP31",
+      "image_query": "antalya coast",
+      "image_prompt": "Cracked dry earth meeting a turquoise Mediterranean shoreline, a melting ice cube on a hot stone under a hazy sun",
+      "label": "SCIENCE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "UN climate summit COP31 opened in Antalya, Türkiye."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Guterres warns of 'a new age of climate extremes.'"
+        ],
+        [
+          "FOR YOU",
+          "It runs to 20 November; expect work on old promises, few big breakthroughs."
+        ]
+      ],
+      "body": "UN climate summit COP31 opened in Antalya, Türkiye. Guterres warns of 'a new age of climate extremes.' It runs to 20 November; expect work on old promises, few big breakthroughs.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1346/img_03.jpg",
+      "credit": "Dosseman (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Russell Brand gets 10.5 years",
+      "highlight": "10y 6m",
+      "image_query": "",
+      "image_prompt": "Wooden gavel resting on a courtroom bench beside an empty judge's chair, soft grey window light",
+      "label": "CULTURE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russell Brand, 51, sentenced to 10 years, six months."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Convicted of rape and sexual assaults involving four women."
+        ],
+        [
+          "FOR YOU",
+          "He denies all charges and stays on the sex offenders' register for life."
+        ]
+      ],
+      "body": "Russell Brand, 51, sentenced to 10 years, six months. Convicted of rape and sexual assaults involving four women. He denies all charges and stays on the sex offenders' register for life.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1346/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Congress back for final weeks",
+      "highlight": "Jan",
+      "image_query": "us capitol building",
+      "image_prompt": "US Capitol dome at sunset with autumn leaves scattered on the empty marble steps",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "US Congress returned for its final weeks this term."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Democrats take control of both chambers in January."
+        ],
+        [
+          "FOR YOU",
+          "Anything passed now comes before the January power shift in Washington."
+        ]
+      ],
+      "body": "US Congress returned for its final weeks this term. Democrats take control of both chambers in January. Anything passed now comes before the January power shift in Washington.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261110-1346/img_05.jpg",
+      "credit": "Diliff (CC BY 2.5) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow @you.didnot.know for daily news",
+  "caption": "🕊️ Russia, Ukraine and the US are talking again in Abu Dhabi, first time since February. No deal yet.\n✈️ Trump sees momentum on ending the Iran war; Iran says 'fake news', and US tankers left an English base.\n🌍 COP31 opened in Antalya: expect work on old promises, not big new deals.\n⚖️ Russell Brand sentenced to 10 years and six months.\n🏛️ US Congress is back for its last weeks before Democrats take over in January.\n\nDo you think these talks can end the war? Tell us below 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Senior Airman Keith James (Public domain) via wikimedia · Dosseman (CC BY-SA 4.0) via wikimedia · Diliff (CC BY 2.5) via wikimedia",
+  "hashtags": [
+    "ukrainepeacetalks",
+    "abudhabi",
+    "cop31",
+    "worldnews",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.usnews.com/news/world/articles/2026-11-10/us-brokered-talks-are-set-to-start-in-abu-dhabi-to-discuss-ukraine-russia-peace-deal",
+    "https://www.npr.org/2026/11/10/g-s1-152773/russia-ukraine-war-talks",
+    "https://www.cnn.com/2026/11/09/europe/russia-ukraine-us-peace-talks-preview-intl",
+    "https://abcnews.com/International/russia-ukraine-us-meet-abu-dhabi-talks-trump/story?id=137970621",
+    "https://aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm",
+    "https://www.al-monitor.com/originals/2026/11/trump-meets-qatar-pm-mediators-push-iran-deal",
+    "https://www.bloomberg.com/news/articles/2026-11-10/us-moves-aircraft-from-second-uk-base-over-iran-threat",
+    "https://www.nbcnews.com/world/europe/us-moves-military-aircraft-british-base-iran-threats-raf-mildenhall-rcna608501",
+    "https://edition.cnn.com/2026/11/10/world/us-moves-aircraft-british-military-base-intl",
+    "https://news.un.org/en/story/2026/11/1168763",
+    "https://www.rte.ie/news/world/2026/1109/1598483-turkey-cop31/",
+    "https://phys.org/news/2026-11-cop31-leaders-pressure-tackle-climate.html",
+    "https://www.turkishminute.com/2026/11/09/cop31-opens-in-antalya-with-early-dispute-over-climate-finance/",
+    "https://www.cnn.com/2026/11/09/entertainment/russell-brand-rape-sentence-prison-intl",
+    "https://www.nbcnews.com/world/united-kingdom/russell-brand-sentenced-years-british-jail-rcna607799",
+    "https://www.cbsnews.com/news/russell-brand-sentenced-prison-rape-sexual-assault/",
+    "https://www.courthousenews.com/russell-brand-sentenced-to-10-years-in-prison-for-rape-sexual-assaults/",
+    "https://www.cbsnews.com/news/midterm-elections-congress-returns-lame-duck/",
+    "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-2026-midterm-elections-senate-house-supreme-court-live-updates-rcna608235"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 10 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "abu dhabi skyline",
+  "image_prompt": "Round wooden table with three empty chairs and closed folders, water glasses catching light, Abu Dhabi desert skyline glowing through a tall window at dusk",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261110-1346/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🕊️ Russia, Ukraine and the US are talking again in Abu Dhabi, first time since February. No deal yet.\n✈️ Trump sees momentum on ending the Iran war; Iran says 'fake news', and US tankers left an English base.\n🌍 COP31 opened in Antalya: expect work on old promises, not big new deals.\n⚖️ Russell Brand sentenced to 10 years and six months.\n🏛️ US Congress is back for its last weeks before Democrats take over in January.\n\nDo you think these talks can end the war? Tell us below 👇\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "rise",
+      "scale",
+      "blur",
+      "right",
+      "blur",
+      "left",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "glitch",
+      "punch",
+      "glitch",
+      "cut",
+      "dip"
+    ]
+  },
+  "music_used": "mystery"
+}
