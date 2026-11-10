@@ -980,5 +980,23 @@
       "palette": 3
     },
     "media_id": "18130289071872305"
+  },
+  {
+    "date": "20261110-1824",
+    "series": "facts",
+    "topic": "Brain energy use: 20% of resting energy, 20 watts, child brain glucose",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "Your brain burns 20% of your energy",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "18117048422029158"
   }
 ]
