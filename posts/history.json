@@ -1028,5 +1028,23 @@
       "palette": 0
     },
     "media_id": "18121626278084661"
+  },
+  {
+    "date": "20261111-1831",
+    "series": "facts",
+    "topic": "Brain filtering out your own nose and blinks",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "You can see your nose right now",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "18106028831048727"
   }
 ]
