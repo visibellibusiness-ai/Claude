@@ -1,0 +1,94 @@
+{
+  "reasoning": "Body and perception Reels with short, direct-claim hooks reached about 100 accounts each ('You're shorter tonight', 'death zone', 'voice on recordings'). This post follows the mandatory short-Reel test: 3 slides, a hook of 7 words or fewer, and bodies of 12 words or fewer. The topic is new: your brain filters out your own nose and your blinks. It is relatable, and viewers can test it instantly, which may lift watch time and comments. I use mystery music and palette 1 to keep the rotation. The caption adds the follow reason from the strategy to work on the 0-follow problem. A save prompt varies the closing question.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Brain filtering out your own nose and blinks",
+  "hook": "You can see your nose right now",
+  "slides": [
+    {
+      "title": "It's always there",
+      "body": "Your nose sits in view of both eyes, every waking second.",
+      "highlight": "2 eyes",
+      "image_query": "human nose close up",
+      "image_prompt": "Soft blurred pale shape at the bottom edge of a view looking out over a sunlit landscape, as if seen from inside a face",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1831/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Your brain erases it",
+      "body": "Input that never changes gets filtered out, so you stop noticing it.",
+      "highlight": "",
+      "image_query": "brain illustration",
+      "image_prompt": "Glowing brain made of light with a small grey shape fading into transparency beside it, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1831/img_02.jpg",
+      "credit": "unknown (CC0 / public domain) via openverse",
+      "generated": false
+    },
+    {
+      "title": "Blinks vanish too",
+      "body": "You blink about 15 times a minute, yet never notice the darkness.",
+      "highlight": "15/min",
+      "image_query": "eye blinking close up",
+      "image_prompt": "Extreme close-up of an eyelid half closed over a bright eye, lashes catching warm light, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1831/img_03.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for one brain fact a day",
+  "caption": "Look down a little. Your nose has been in your field of view your entire life, seen by both eyes at once. Your brain simply edits it out, because a signal that never changes isn't worth your attention.\n\nIt does the same with blinking. You blink roughly 15 to 20 times a minute, and each blink briefly cuts your vision. Your brain dims your visual processing during the blink and fills the gap, so the world never goes dark.\n\nFollow for one fact your brain won't believe, daily. Save this and test it on a friend: did you just look at your nose?\n\n📷 incommunicado (CC BY-SA 2.0) via wikimedia · unknown (CC0 / public domain) via openverse",
+  "hashtags": [
+    "perception",
+    "brainfacts",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Scientific American, 'Why can't we see our own noses?' (sensory adaptation and unconscious filtering)",
+    "Volkmann FC, Riggs LA, Moore RK (1980). Eyeblinks and visual suppression. Science 207:900-902",
+    "Bentivoglio AR et al. (1997). Analysis of blink rate patterns in normal subjects. Movement Disorders 12(6):1028-1034"
+  ],
+  "image_query": "nose close up face",
+  "image_prompt": "Surreal view from inside a head looking out at a bright meadow, a soft blurred pale nose shape at the lower center of the frame",
+  "design": {
+    "palette": 1,
+    "cover_label": "Brain fact",
+    "swipe_text": "Look down",
+    "follow_line": "Daily facts your brain hides from you"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261111-1831/img_cover.jpg",
+  "cover_credit": "incommunicado (CC BY-SA 2.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Look down a little. Your nose has been in your field of view your entire life, seen by both eyes at once. Your brain simply edits it out, because a signal that never changes isn't worth your attention.\n\nIt does the same with blinking. You blink roughly 15 to 20 times a minute, and each blink briefly cuts your vision. Your brain dims your visual processing during the blink and fills the gap, so the world never goes dark.\n\nFollow for one fact your brain won't believe, daily. Save this and test it on a friend: did you just look at your nose?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "scale",
+      "rise",
+      "left",
+      "rise",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "cut",
+      "flash"
+    ]
+  },
+  "music_used": "documentary"
+}

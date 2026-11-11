@@ -1,15 +1,15 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 11/11/2026 alle 13:48 UTC. Follower: 0.
+Aggiornato il 11/11/2026 alle 18:31 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 454, di cui da non follower 454 (100%).
+- Visualizzazioni: 457, di cui da non follower 457 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 11/11/2026 | 7 | 7 | 7 | 7 | 0 | 0 |
+| 11/11/2026 | 11 | 11 | 10 | 10 | 0 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
@@ -23,7 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
-| 09/11/2026 00:15 | reel | What the death zone does to your body | 101 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
+| 09/11/2026 00:15 | reel | What the death zone does to your body | 102 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
 | 08/11/2026 18:14 | reel | 5 body parts evolution forgot to delete | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 109 | 120 | 0,0% | 0,0% | 0,9% | n/d |  |
@@ -48,7 +48,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 29/10/2026 13:44 | carousel | Why was this train allowed to move? | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 29/10/2026 13:44 | reel | Why was this train allowed to move? | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 29/10/2026 00:12 | carousel | Foods that are secretly not what you thi | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
-| 28/10/2026 18:23 | carousel | Timelines that will break your brain | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 
 ### Reel
 
@@ -83,7 +82,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 4 | 3 | 100,0% | 0,0% |
-| reel | 22 | 842 | 0,2% | 0,2% |
+| carousel | 3 | 2 | 100,0% | 0,0% |
+| reel | 22 | 843 | 0,2% | 0,2% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
