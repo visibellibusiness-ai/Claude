@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 10/11/2026 alle 18:23 UTC. Follower: 0.
+Aggiornato il 11/11/2026 alle 00:15 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 533, di cui da non follower 533 (100%).
+- Visualizzazioni: 425, di cui da non follower 425 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 10/11/2026 | 4 | 4 | 5 | 5 | 0 | 0 |
+| 10/11/2026 | 13 | 13 | 14 | 14 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
 | 06/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
 | 05/11/2026 | 118 | 118 | 140 | 140 | 0 | 0 |
-| 04/11/2026 | 106 | 106 | 117 | 117 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,9 +22,10 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 09/11/2026 00:15 | reel | What the death zone does to your body | 101 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
 | 08/11/2026 18:14 | reel | 5 body parts evolution forgot to delete | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 108 | 119 | 0,0% | 0,0% | 0,9% | n/d |  |
+| 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 109 | 120 | 0,0% | 0,0% | 0,9% | n/d |  |
 | 07/11/2026 00:17 | reel | 5 senses nobody taught you in school | 4 | 7 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 06/11/2026 18:30 | reel | What coffee really does to your brain | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 06/11/2026 00:19 | reel | Why you can't remember being a baby | 33 | 36 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -50,7 +50,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 28/10/2026 18:23 | carousel | Timelines that will break your brain | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 13:40 | carousel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 13:40 | reel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 28/10/2026 00:09 | carousel | Your body rebuilds itself, except these  | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 
 ### Reel
 
@@ -77,15 +76,16 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 06/11/2026 00:19 | Why you can't remember being a baby | 2.985 | 72.7 |
 | 06/11/2026 18:30 | What coffee really does to your brain | 50.999 | 0 |
 | 07/11/2026 00:17 | 5 senses nobody taught you in school | 3.650 | 100 |
-| 07/11/2026 18:14 | You're shorter tonight than this morning | 4.002 | 65.1 |
+| 07/11/2026 18:14 | You're shorter tonight than this morning | 3.968 | 65.5 |
 | 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
 | 08/11/2026 18:14 | 5 body parts evolution forgot to delete | 10.815 | 66.7 |
+| 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 6 | 6 | 83,3% | 0,0% |
-| reel | 22 | 742 | 0,4% | 0,3% |
+| carousel | 5 | 5 | 80,0% | 0,0% |
+| reel | 23 | 844 | 0,4% | 0,2% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

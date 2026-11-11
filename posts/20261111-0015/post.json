@@ -1,0 +1,103 @@
+{
+  "reasoning": "Direct-claim human-body hooks are my strongest performers: 'You're shorter tonight than this morning' reached 109 with a 65.5 skip rate, and the death zone reached 101. This post tests the mandatory DIRECT OPEN with 4 content slides. Human bioluminescence is a fresh, counterintuitive, well-documented claim from a 2009 PLoS ONE imaging study, and the hook is complete in itself. I use mystery music to suit the 'invisible glow' theme. Palette 0 keeps the rotation going after 4. The CTA and caption give a clear follow reason to tackle the 0-follow problem.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "human body",
+  "topic": "Human bioluminescence: ultraweak light emitted by the body",
+  "hook": "Your body glows in the dark",
+  "slides": [
+    {
+      "title": "Your body glows in the dark",
+      "body": "A 2009 Japanese study filmed people in total darkness and caught faint visible light coming from their skin.",
+      "highlight": "",
+      "image_query": "glowing silhouette darkness",
+      "image_prompt": "A faint soft golden glow radiating from a smooth abstract human-shaped sculpture in a pitch-black room, subtle light particles drifting around it",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-0015/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Too faint to see",
+      "body": "The glow is about 1,000 times weaker than what human eyes can detect. Only ultra-sensitive cameras saw it.",
+      "highlight": "1000x",
+      "image_query": "scientific camera dark room",
+      "image_prompt": "A large ultra-sensitive scientific camera on a tripod in a completely dark laboratory, a tiny blue indicator light, faint dust in the air",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-0015/img_02.jpg",
+      "credit": "DOE/FNAL/DECam/R. Hahn/CTIO/NOIRLab/NSF/AURA (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Made by your cells",
+      "body": "Chemical reactions involving free radicals in your metabolism release tiny bursts of light particles called photons.",
+      "highlight": "",
+      "image_query": "cells microscope glowing",
+      "image_prompt": "Microscopic view of living cells glowing softly from within, tiny sparks of light escaping from their membranes, deep dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-0015/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Brightest at 4 PM",
+      "body": "Your glow follows a daily rhythm: dimmest around 10 a.m., brightest around 4 p.m. Your cheeks shine the most.",
+      "highlight": "4 PM",
+      "image_query": "afternoon clock shadow",
+      "image_prompt": "A vintage wall clock showing four o'clock in a dark room, surrounded by a faint warm halo of light, moody atmosphere",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-0015/img_04.jpg",
+      "credit": "Thomas Steiner, many thanks to helpers on the sundial mailinglist: Gianni Ferrar (CC BY-SA 2.5) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for one wild body fact daily",
+  "caption": "Right now, your body is giving off visible light. In 2009, researchers in Japan used ultra-sensitive cameras in total darkness and filmed people glowing, mostly from the face and neck.\n\nThe light is about 1,000 times too weak for your eyes. It rises and falls during the day and peaks in the late afternoon. Source: Kobayashi et al., PLoS ONE (2009).\n\nFollow for one body fact your brain won't believe, every day. Did you know humans glow, or is this new to you?\n\n📷 PattayaPatrol (CC BY-SA 4.0) via wikimedia · DOE/FNAL/DECam/R. Hahn/CTIO/NOIRLab/NSF/AURA (CC BY 4.0) via wikimedia · Thomas Steiner, many thanks to helpers on the sundial mailinglist: Gianni Ferrar (CC BY-SA 2.5) via wikimedia",
+  "hashtags": [
+    "bioluminescence",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow",
+    "biology"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Kobayashi M, Kikuchi D, Okamura H. Imaging of Ultraweak Spontaneous Photon Emission from Human Body Displaying Diurnal Rhythm. PLoS ONE 4(7): e6256 (2009)",
+    "Cifra M, Pospíšil P. Ultra-weak photon emission from biological samples: definition, mechanisms, properties, detection and applications. J Photochem Photobiol B (2014)"
+  ],
+  "image_query": "glowing silhouette darkness",
+  "image_prompt": "An abstract human-shaped sculpture emitting a faint golden glow in total darkness, soft light particles floating around it, cinematic and mysterious",
+  "design": {
+    "palette": 0,
+    "cover_label": "Human body",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts your brain won't believe"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261111-0015/img_cover.jpg",
+  "cover_credit": "PattayaPatrol (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Right now, your body is giving off visible light. In 2009, researchers in Japan used ultra-sensitive cameras in total darkness and filmed people glowing, mostly from the face and neck.\n\nThe light is about 1,000 times too weak for your eyes. It rises and falls during the day and peaks in the late afternoon. Source: Kobayashi et al., PLoS ONE (2009).\n\nFollow for one body fact your brain won't believe, every day. Did you know humans glow, or is this new to you?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "left",
+      "scale",
+      "right",
+      "rise",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "glitch",
+      "dip",
+      "punch"
+    ]
+  },
+  "music_used": "lofi"
+}
