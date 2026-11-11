@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 11/11/2026 alle 00:15 UTC. Follower: 0.
+Aggiornato il 11/11/2026 alle 13:48 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 425, di cui da non follower 425 (100%).
+- Visualizzazioni: 454, di cui da non follower 454 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 10/11/2026 | 13 | 13 | 14 | 14 | 0 | 0 |
+| 11/11/2026 | 7 | 7 | 7 | 7 | 0 | 0 |
+| 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
@@ -48,8 +49,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 29/10/2026 13:44 | reel | Why was this train allowed to move? | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 29/10/2026 00:12 | carousel | Foods that are secretly not what you thi | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 28/10/2026 18:23 | carousel | Timelines that will break your brain | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
-| 28/10/2026 13:40 | carousel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
-| 28/10/2026 13:40 | reel | Spain's second deadly train crash this y | 2 | 3 | 50,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -57,7 +56,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 28/10/2026 13:40 | Spain's second deadly train crash this y | 4.563 | 100 |
 | 29/10/2026 13:44 | Why was this train allowed to move? | 2.387 | 100 |
 | 29/10/2026 18:24 | What happens to your body in space | 4.568 | 79.2 |
 | 30/10/2026 00:13 | 5 ways your brain lies to you daily | 6.977 | 51.7 |
@@ -85,7 +83,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 5 | 5 | 80,0% | 0,0% |
-| reel | 23 | 844 | 0,4% | 0,2% |
+| carousel | 4 | 3 | 100,0% | 0,0% |
+| reel | 22 | 842 | 0,2% | 0,2% |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

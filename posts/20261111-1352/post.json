@@ -1,0 +1,204 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-11",
+  "hook": "Russia and Ukraine agree on one thing",
+  "reel_hook": "Russia and Ukraine just agreed on something",
+  "slides": [
+    {
+      "title": "Russia-Ukraine prisoner swap",
+      "highlight": "2 days",
+      "image_query": "abu dhabi skyline",
+      "image_prompt": "Two empty chairs facing each other across a long polished table in a bright conference room, an open door between them, soft morning light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Abu Dhabi talks ended with a deal to swap prisoners."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First talks in nine months; no ceasefire breakthrough."
+        ],
+        [
+          "FOR YOU",
+          "Prisoner numbers get set Thursday, when US envoys also meet Putin in Moscow."
+        ]
+      ],
+      "body": "Abu Dhabi talks ended with a deal to swap prisoners. First talks in nine months; no ceasefire breakthrough. Prisoner numbers get set Thursday, when US envoys also meet Putin in Moscow.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1352/img_01.jpg",
+      "credit": "Wadiia (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Rubio: no major Iran combat",
+      "highlight": "G7",
+      "image_query": "oil tanker sea",
+      "image_prompt": "A chessboard with pieces paused mid-game on a wooden table, an oil barrel and a sealed envelope beside it, dim neutral light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Rubio: economic pressure works, so no major Iran combat."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Iran says no talks with the US are happening."
+        ],
+        [
+          "FOR YOU",
+          "No major US combat planned for now, but Rubio says the military stands ready."
+        ]
+      ],
+      "body": "Rubio: economic pressure works, so no major Iran combat. Iran says no talks with the US are happening. No major US combat planned for now, but Rubio says the military stands ready.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1352/img_02.jpg",
+      "credit": "Frans Berkelaar (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Spain strikes over housing",
+      "highlight": "14 yrs",
+      "image_query": "madrid apartment buildings",
+      "image_prompt": "A row of Spanish apartment balconies with closed shutters above an empty bus stop on a quiet street, soft morning light",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Spain's biggest unions called a 24-hour nationwide strike."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First in 14 years, weeks before the 29 November election."
+        ],
+        [
+          "FOR YOU",
+          "In Spain today? Expect disrupted public transport. Housing is now a key election issue."
+        ]
+      ],
+      "body": "Spain's biggest unions called a 24-hour nationwide strike. First in 14 years, weeks before the 29 November election. In Spain today? Expect disrupted public transport. Housing is now a key election issue.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1352/img_03.jpg",
+      "credit": "Tamorlan (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "US inflation beats forecasts",
+      "highlight": "+0.4%",
+      "image_query": "federal reserve building",
+      "image_prompt": "A shopping basket full of groceries beside a stack of coins and a red paper arrow pointing upward on a kitchen counter",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "US prices rose 0.4% in October, above the 0.3% forecast."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Markets now see a December rate hike as almost certain."
+        ],
+        [
+          "FOR YOU",
+          "If the Fed hikes on 8–9 December, US borrowing will likely get pricier."
+        ]
+      ],
+      "body": "US prices rose 0.4% in October, above the 0.3% forecast. Markets now see a December rate hike as almost certain. If the Fed hikes on 8–9 December, US borrowing will likely get pricier.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1352/img_04.jpg",
+      "credit": "Federalreserve (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Climate summit hits Antalya",
+      "highlight": "90,000",
+      "image_query": "antalya coast",
+      "image_prompt": "A sunny Mediterranean coastline with wind turbines and solar panels on green hills above a calm turquoise sea",
+      "label": "SCIENCE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The COP31 UN climate summit is under way in Antalya."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The UN expects over 90,000 attendees through 20 November."
+        ],
+        [
+          "FOR YOU",
+          "Erdoğan hopes it will be a 'COP of implementation'. Watch what actually gets delivered."
+        ]
+      ],
+      "body": "The COP31 UN climate summit is under way in Antalya. The UN expects over 90,000 attendees through 20 November. Erdoğan hopes it will be a 'COP of implementation'. Watch what actually gets delivered.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261111-1352/img_05.jpg",
+      "credit": "Tugceeakgunn91 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🤝 Russia and Ukraine agree a large prisoner swap in Abu Dhabi, but no ceasefire breakthrough.\n🇮🇷 Rubio says no need for major combat against Iran; Iran says no talks are happening.\n🏠 Spain's first general strike in 14 years, over housing. In Spain? Expect transport disruption.\n📈 US prices rose 0.4% in October. A December Fed hike now looks almost certain, so US borrowing may cost more.\n🌍 COP31 climate summit under way in Antalya, with 90,000+ expected.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Wadiia (CC BY-SA 4.0) via wikimedia · Frans Berkelaar (CC BY 2.0) via wikimedia · Tamorlan (CC BY-SA 3.0) via wikimedia · Federalreserve (Public domain) via wikimedia · Tugceeakgunn91 (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "russiaukraine",
+    "prisonerswap",
+    "spainstrike",
+    "inflation",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.local10.com/news/2026/11/11/russia-and-ukraine-agree-to-a-large-exchange-of-prisoners-of-war-officials-at-abu-dhabi-talks-say/",
+    "https://aljazeera.com/news/2026/11/11/russia-ukraine-talks-in-abu-dhabi-end-with-prisoner-exchange-agreement",
+    "https://www.euronews.com/2026/11/11/abu-dhabi-peace-talks-end-with-prisoner-exchange-agreement-as-us-envoys-prepare-to-meet-pu",
+    "https://meduza.io/en/feature/2026/11/11/russia-ukraine-peace-talks-conclude-in-abu-dhabi-with-prisoner-exchange-agreement-but-no-breakthrough-on-territory",
+    "https://www.al-monitor.com/originals/2026/11/rubio-says-no-need-major-combat-operations-against-iran-given-us-economic",
+    "https://www.france24.com/en/live-news/20261110-rubio-sees-no-need-for-major-combat-operations-against-iran",
+    "https://www.usnews.com/news/world/articles/2026-11-10/irans-top-security-official-says-no-talks-underway-with-us",
+    "https://www.aljazeera.com/news/2026/11/9/trump-calls-iran-war-effectively-over-after-talks-with-qatar-pm",
+    "https://www.npr.org/2026/11/11/nx-s1-6037314/spain-general-strike",
+    "https://www.aljazeera.com/news/2026/11/11/spains-first-general-strike-in-14-years-begins",
+    "https://www.france24.com/en/europe/20261111-spain-general-strike-puts-housing-crisis-centre-upcoming-elections",
+    "https://www.cnbc.com/2026/11/10/cpi-inflation-report-october-2026.html",
+    "https://www.cbsnews.com/news/october-cpi-report-elevated-inflation/",
+    "https://www.housingwire.com/articles/october-cpi-fed-hike/",
+    "https://news.un.org/en/story/2026/11/1168763",
+    "https://www.bta.bg/en/news/balkans/1244641-erdogan-hopes-cop31-conference-in-antalya-will-focus-on-climate-action"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 11 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "abu dhabi skyline",
+  "image_prompt": "Two empty chairs facing each other across a long polished table in a bright Gulf conference room, an open door between them, soft morning light",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261111-1352/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🤝 Russia and Ukraine agree a large prisoner swap in Abu Dhabi, but no ceasefire breakthrough.\n🇮🇷 Rubio says no need for major combat against Iran; Iran says no talks are happening.\n🏠 Spain's first general strike in 14 years, over housing. In Spain? Expect transport disruption.\n📈 US prices rose 0.4% in October. A December Fed hike now looks almost certain, so US borrowing may cost more.\n🌍 COP31 climate summit under way in Antalya, with 90,000+ expected.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "right",
+      "left",
+      "scale",
+      "left",
+      "blur",
+      "right",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "flash",
+      "glitch",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}
