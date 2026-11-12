@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 12/11/2026 alle 00:32 UTC. Follower: 0.
+Aggiornato il 12/11/2026 alle 13:50 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 381, di cui da non follower 381 (100%).
+- Visualizzazioni: 419, di cui da non follower 419 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 11/11/2026 | 70 | 70 | 74 | 74 | 0 | 0 |
+| 12/11/2026 | 10 | 10 | 14 | 14 | 0 | 0 |
+| 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
@@ -45,8 +46,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 30/10/2026 13:41 | reel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 30/10/2026 00:13 | reel | 5 ways your brain lies to you daily | 30 | 31 | 0,0% | 0,0% | 6,7% | n/d |  |
 | 29/10/2026 18:24 | reel | What happens to your body in space | 24 | 25 | 4,2% | 0,0% | 0,0% | n/d |  |
-| 29/10/2026 13:44 | carousel | Why was this train allowed to move? | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
-| 29/10/2026 13:44 | reel | Why was this train allowed to move? | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -54,7 +53,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 29/10/2026 13:44 | Why was this train allowed to move? | 2.387 | 100 |
 | 29/10/2026 18:24 | What happens to your body in space | 4.568 | 79.2 |
 | 30/10/2026 00:13 | 5 ways your brain lies to you daily | 6.977 | 51.7 |
 | 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
@@ -82,8 +80,8 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 2 | 1 | 100,0% | 0,0% |
-| reel | 23 | 859 | 0,2% | 0,2% |
+| carousel | 1 | 0 | n/d | n/d |
+| reel | 22 | 858 | 0,1% | 0,2% |
 
 ### Esperimento Reel: tre versioni a confronto
 

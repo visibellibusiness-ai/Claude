@@ -1,0 +1,203 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-12",
+  "hook": "Why are tankers burning at Hormuz?",
+  "reel_hook": "Tankers on fire in a closed strait",
+  "slides": [
+    {
+      "title": "Tankers ablaze near Hormuz",
+      "highlight": "3",
+      "image_query": "oil tanker sea",
+      "image_prompt": "Oil tanker burning at sea at dawn, black smoke rising over calm water, rocky coastline in the distance",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran says at least three tankers hit mines near Hormuz."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Iran keeps the strait shut until US meets 7 conditions."
+        ],
+        [
+          "FOR YOU",
+          "Oil prices edged up; Iran's mine claim hasn't been independently verified."
+        ]
+      ],
+      "body": "Iran says at least three tankers hit mines near Hormuz. Iran keeps the strait shut until US meets 7 conditions. Oil prices edged up; Iran's mine claim hasn't been independently verified.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1353/img_01.jpg",
+      "credit": "ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "US envoys land in Moscow",
+      "highlight": "Putin",
+      "image_query": "Moscow Kremlin",
+      "image_prompt": "Two empty chairs facing each other across a long polished table in an ornate hall, snowy Kremlin towers through the window",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Witkoff and Kushner landed in Moscow to meet Putin."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It follows two days of US-mediated talks in Abu Dhabi."
+        ],
+        [
+          "FOR YOU",
+          "What Putin tells them could shape the next peace steps; talks were ongoing."
+        ]
+      ],
+      "body": "Witkoff and Kushner landed in Moscow to meet Putin. It follows two days of US-mediated talks in Abu Dhabi. What Putin tells them could shape the next peace steps; talks were ongoing.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1353/img_02.jpg",
+      "credit": "Diego Delso (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Land still blocks peace",
+      "highlight": "Land",
+      "image_query": "Abu Dhabi skyline",
+      "image_prompt": "Torn paper map split into two pieces on a wooden table, a pen resting between them, soft window light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Abu Dhabi talks ended without a major breakthrough."
+        ],
+        [
+          "WHY IT MATTERS",
+          "US mediators say the sides still disagree on territory."
+        ],
+        [
+          "FOR YOU",
+          "Both sides talk of momentum toward peace, but there is no deal yet."
+        ]
+      ],
+      "body": "Abu Dhabi talks ended without a major breakthrough. US mediators say the sides still disagree on territory. Both sides talk of momentum toward peace, but there is no deal yet.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1353/img_03.jpg",
+      "credit": "Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Europe at the table? Russia: no",
+      "highlight": "Europe",
+      "image_query": "European Union flags",
+      "image_prompt": "An empty chair pulled slightly away from a round negotiating table, a small blue flag with gold stars lying folded on the seat",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Ukraine and the US want Europe in the peace talks."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Russia opposes it, adding another open dispute."
+        ],
+        [
+          "FOR YOU",
+          "Whether Europe joins decides who gets a say in ending the war."
+        ]
+      ],
+      "body": "Ukraine and the US want Europe in the peace talks. Russia opposes it, adding another open dispute. Whether Europe joins decides who gets a say in ending the war.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1353/img_04.jpg",
+      "credit": "Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A big prisoner swap is agreed",
+      "highlight": "1,000+",
+      "image_query": "",
+      "image_prompt": "An open iron gate on a quiet country road at sunrise, two empty benches facing each other on either side, warm golden light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russia and Ukraine agreed a large prisoner-of-war exchange."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Russia says over 1,000 each side; past swaps were smaller."
+        ],
+        [
+          "FOR YOU",
+          "Final numbers aren't confirmed yet; Kushner says it will reunite families."
+        ]
+      ],
+      "body": "Russia and Ukraine agreed a large prisoner-of-war exchange. Russia says over 1,000 each side; past swaps were smaller. Final numbers aren't confirmed yet; Kushner says it will reunite families.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1353/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow @you.didnot.know for daily news",
+  "caption": "🔥 Iran says at least three tankers hit mines near Hormuz; oil prices edged up, but the mine claim isn't independently verified.\n🚧 Iran says the strait stays shut until the US meets 7 conditions.\n✈️ US envoys Witkoff and Kushner landed in Moscow to meet Putin.\n🗺️ Abu Dhabi talks ended with no breakthrough: territory is still the sticking point.\n🇪🇺 Ukraine and the US want Europe in the talks; Russia says no.\n🤝 Good news: a large prisoner swap is agreed, possibly over 1,000 on each side, according to Russia.\n\nShould Europe have a seat at the table? Tell us below 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia · Diego Delso (CC BY-SA 4.0) via wikimedia · Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "straitofhormuz",
+    "prisonerswap",
+    "ukraine",
+    "russia",
+    "dailynews"
+  ],
+  "sources": [
+    "https://english.alarabiya.net/News/gulf/2026/11/11/oil-tanker-on-fire-in-strait-of-hormuz-after-hitting-mine-iran-s-army-says",
+    "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-army-says-oil-tanker-ablaze-hormuz-strait-after-hitting-mine",
+    "https://iranwire.com/en/news/160108-irgc-says-two-more-tankers-exploded-in-the-strait-of-hormuz/",
+    "https://www.yahoo.com/news/politics/articles/iran-denies-talks-us-says-082156247.html",
+    "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin",
+    "https://www.euronews.com/2026/11/12/witkoff-and-kushner-arrive-in-moscow-seeking-putins-blessing-to-bring-europe-into-ukraine-",
+    "https://www.pbs.org/newshour/world/russia-and-ukraine-agree-to-a-large-prisoner-exchange-as-talks-end-with-no-major-breakthrough",
+    "https://www.yahoo.com/news/articles/us-russia-ukraine-start-second-101205618.html",
+    "https://www.cbc.ca/news/world/us-russia-ukraine-abu-dhabi-peace-talks-9.7417687",
+    "https://www.pbs.org/newshour/world/russia-and-ukraine-agree-to-a-large-prisoner-exchange-as-talks-end-with-no-major-breakthrough",
+    "https://www.aljazeera.com/news/2026/11/12/us-envoys-arrive-in-moscow-for-russia-ukraine-talks-with-putin",
+    "https://www.euronews.com/2026/11/12/witkoff-and-kushner-arrive-in-moscow-seeking-putins-blessing-to-bring-europe-into-ukraine-",
+    "https://www.cbc.ca/news/world/us-russia-ukraine-abu-dhabi-peace-talks-9.7417687",
+    "https://kyivindependent.com/ukraine-war-latest-large-scale-prisoner-exchange-agreed-as-2nd-day-of-abu-dhabi-talks-concludes-umerov-says/",
+    "https://www.pbs.org/newshour/world/russia-and-ukraine-agree-to-a-large-prisoner-exchange-as-talks-end-with-no-major-breakthrough"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 12 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "oil tanker sea",
+  "image_prompt": "Oil tanker on fire at night in a narrow sea strait, orange flames reflecting on dark water, rocky cliffs on both sides",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261112-1353/img_cover.jpg",
+  "cover_credit": "ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🔥 Iran says at least three tankers hit mines near Hormuz; oil prices edged up, but the mine claim isn't independently verified.\n🚧 Iran says the strait stays shut until the US meets 7 conditions.\n✈️ US envoys Witkoff and Kushner landed in Moscow to meet Putin.\n🗺️ Abu Dhabi talks ended with no breakthrough: territory is still the sticking point.\n🇪🇺 Ukraine and the US want Europe in the talks; Russia says no.\n🤝 Good news: a large prisoner swap is agreed, possibly over 1,000 on each side, according to Russia.\n\nShould Europe have a seat at the table? Tell us below 👇\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "scale",
+      "rise",
+      "right",
+      "left",
+      "scale",
+      "blur",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "flash",
+      "cut",
+      "flash",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "lofi"
+}
