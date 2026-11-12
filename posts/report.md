@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 11/11/2026 alle 18:31 UTC. Follower: 0.
+Aggiornato il 12/11/2026 alle 00:32 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 457, di cui da non follower 457 (100%).
+- Visualizzazioni: 381, di cui da non follower 381 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 11/11/2026 | 11 | 11 | 10 | 10 | 0 | 0 |
+| 11/11/2026 | 70 | 70 | 74 | 74 | 0 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
 | 06/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
-| 05/11/2026 | 118 | 118 | 140 | 140 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 10/11/2026 00:15 | reel | You breathe mostly through one nostril | 16 | 19 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 09/11/2026 00:15 | reel | What the death zone does to your body | 102 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
 | 08/11/2026 18:14 | reel | 5 body parts evolution forgot to delete | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -47,7 +47,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 29/10/2026 18:24 | reel | What happens to your body in space | 24 | 25 | 4,2% | 0,0% | 0,0% | n/d |  |
 | 29/10/2026 13:44 | carousel | Why was this train allowed to move? | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 | 29/10/2026 13:44 | reel | Why was this train allowed to move? | 1 | 1 | 100,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 29/10/2026 00:12 | carousel | Foods that are secretly not what you thi | 1 | 2 | 100,0% | 0,0% | 0,0% | 0,0% | copertura sotto 10 |
 
 ### Reel
 
@@ -77,12 +76,21 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
 | 08/11/2026 18:14 | 5 body parts evolution forgot to delete | 10.815 | 66.7 |
 | 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
+| 10/11/2026 00:15 | You breathe mostly through one nostril | 3.151 | 66.7 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 3 | 2 | 100,0% | 0,0% |
-| reel | 22 | 843 | 0,2% | 0,2% |
+| carousel | 2 | 1 | 100,0% | 0,0% |
+| reel | 23 | 859 | 0,2% | 0,2% |
+
+### Esperimento Reel: tre versioni a confronto
+
+short = 3 schede brevi, answer = gancio con il dato forte, direct = niente copertina. Medie semplici dei Reel misurati; con pochi Reel e copertura sotto la soglia non si concludono.
+
+| Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
+|---|---|---|---|---|
+| short | 1 | 16.0 | 3151.0 | 66.7 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

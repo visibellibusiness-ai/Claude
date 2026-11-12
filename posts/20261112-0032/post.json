@@ -1,0 +1,107 @@
+{
+  "reasoning": "Mandatory answer-first hook test on a reel with 4 content slides. Human body is our most consistent reach driver, and direct-claim hooks with a concrete claim ('You're shorter tonight than this morning', 109 reach, 65.5 skip) did well. Bone count, roughly 300 at birth versus 206 in adults, is a fresh, well-documented, number-led surprise that fits the hook in 8 words. The slides explain the fusion: cartilage, skull soft spots, sacrum, and where most bones end up. Palette 2 and mystery music keep the rotation going. The caption adds a follow reason to tackle the 0-follow problem, and the question asks the audience to tag a parent so it can drive shares.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Bone fusion: babies have about 300 bones, adults 206",
+  "hook": "Babies have about 300 bones. You have 206.",
+  "slides": [
+    {
+      "title": "Built to fuse",
+      "body": "Many baby bones start as separate pieces of cartilage. As you grow, they harden and fuse into fewer, bigger bones.",
+      "highlight": "300",
+      "image_query": "newborn baby feet",
+      "image_prompt": "Small soft cartilage pieces slowly merging into one solid white bone, on a dark background with soft studio light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-0032/img_01.jpg",
+      "credit": "Evan-Amos (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The soft spot",
+      "body": "A newborn's skull is several plates with gaps between them. The big soft spot on top usually closes by 18 to 24 months.",
+      "highlight": "24 mo",
+      "image_query": "infant skull anatomy",
+      "image_prompt": "Anatomical model of a tiny infant skull with visible gaps between bone plates, museum lighting, dark backdrop",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-0032/img_02.jpg",
+      "credit": "BruceBlaus (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Five become one",
+      "body": "Your sacrum, at the base of the spine, starts as five separate vertebrae. They fuse into a single bone by adulthood.",
+      "highlight": "5→1",
+      "image_query": "human sacrum bone",
+      "image_prompt": "Five small vertebrae lined up merging into one triangular sacrum bone, anatomical model on dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-0032/img_03.jpg",
+      "credit": "Wasiul Bahar (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Most hide in hands, feet",
+      "body": "Your hands and feet hold 106 of your 206 bones. That's more than half your entire skeleton.",
+      "highlight": "106",
+      "image_query": "hand x-ray bones",
+      "image_prompt": "Glowing x-ray style skeleton of a hand and foot side by side, blue tones, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-0032/img_04.jpg",
+      "credit": "Mikael Häggström (CC0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new body fact every day",
+  "caption": "You were born with roughly 300 bones, and you've lost about 94 since. Nothing went missing, though. They fused together as you grew.\n\nYour skull started as several plates with soft gaps, so you could fit through the birth canal and your brain could grow. Some bones keep fusing into your twenties.\n\nFollow for one body fact your brain won't believe, every day. Tag someone who just had a baby 👶\n\n📷 Evan-Amos (Public domain) via wikimedia · BruceBlaus (CC BY-SA 4.0) via wikimedia · Wasiul Bahar (CC BY-SA 4.0) via wikimedia · Mikael Häggström (CC0) via wikimedia",
+  "hashtags": [
+    "humanbody",
+    "anatomy",
+    "skeleton",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Cleveland Clinic: Skeletal System, How many bones are in the human body",
+    "Encyclopaedia Britannica: Human skeleton and ossification",
+    "MedlinePlus (NIH): Fontanelles, bulging and sunken",
+    "Encyclopaedia Britannica: Sacrum"
+  ],
+  "image_query": "human skeleton anatomy",
+  "image_prompt": "Tiny baby skeleton model beside a full adult skeleton model, soft dramatic museum lighting, dark background",
+  "design": {
+    "palette": 2,
+    "cover_label": "Your skeleton",
+    "swipe_text": "Watch this",
+    "follow_line": "One body fact a day you'll never forget"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261112-0032/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "You were born with roughly 300 bones, and you've lost about 94 since. Nothing went missing, though. They fused together as you grew.\n\nYour skull started as several plates with soft gaps, so you could fit through the birth canal and your brain could grow. Some bones keep fusing into your twenties.\n\nFollow for one body fact your brain won't believe, every day. Tag someone who just had a baby 👶",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "scale",
+      "blur",
+      "left",
+      "rise",
+      "right",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "flash",
+      "punch",
+      "cut",
+      "dip"
+    ]
+  },
+  "music_used": "mystery"
+}
