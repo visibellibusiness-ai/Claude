@@ -1058,5 +1058,23 @@
       "palette": 1
     },
     "media_id": "18106028831048727"
+  },
+  {
+    "date": "20261112-0032",
+    "series": "facts",
+    "topic": "Bone fusion: babies have about 300 bones, adults 206",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "Babies have about 300 bones. You have 206.",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18134517316665875"
   }
 ]
