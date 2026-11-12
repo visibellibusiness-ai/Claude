@@ -1,15 +1,15 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 12/11/2026 alle 13:50 UTC. Follower: 0.
+Aggiornato il 12/11/2026 alle 18:31 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 419, di cui da non follower 419 (100%).
+- Visualizzazioni: 426, di cui da non follower 426 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 12/11/2026 | 10 | 10 | 14 | 14 | 0 | 0 |
+| 12/11/2026 | 16 | 16 | 21 | 21 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
@@ -23,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 10/11/2026 18:24 | reel | Your brain burns 20% of your energy | 30 | 32 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 10/11/2026 00:15 | reel | You breathe mostly through one nostril | 16 | 19 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 09/11/2026 00:15 | reel | What the death zone does to your body | 102 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
 | 08/11/2026 18:14 | reel | 5 body parts evolution forgot to delete | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -45,7 +46,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 30/10/2026 13:41 | carousel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 30/10/2026 13:41 | reel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 30/10/2026 00:13 | reel | 5 ways your brain lies to you daily | 30 | 31 | 0,0% | 0,0% | 6,7% | n/d |  |
-| 29/10/2026 18:24 | reel | What happens to your body in space | 24 | 25 | 4,2% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -53,7 +53,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 29/10/2026 18:24 | What happens to your body in space | 4.568 | 79.2 |
 | 30/10/2026 00:13 | 5 ways your brain lies to you daily | 6.977 | 51.7 |
 | 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
 | 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
@@ -75,13 +74,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 08/11/2026 18:14 | 5 body parts evolution forgot to delete | 10.815 | 66.7 |
 | 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
 | 10/11/2026 00:15 | You breathe mostly through one nostril | 3.151 | 66.7 |
+| 10/11/2026 18:24 | Your brain burns 20% of your energy | 5.769 | 66.7 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 1 | 0 | n/d | n/d |
-| reel | 22 | 858 | 0,1% | 0,2% |
+| reel | 22 | 864 | 0,0% | 0,2% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -89,6 +89,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
+| answer | 1 | 30.0 | 5769.0 | 66.7 |
 | short | 1 | 16.0 | 3151.0 | 66.7 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

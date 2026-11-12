@@ -1,0 +1,105 @@
+{
+  "reasoning": "Mandatory DIRECT OPEN test with 4 slides and lofi music. Lofi backed several of the top reaches: sleep 104, cold water 96, height 109 and death zone 102. Human body has the most reliable distribution, and short counterintuitive direct claims ('You're shorter tonight', 66 skip) beat generic 'what happens' hooks. 'Your fingers have zero muscles' is a fresh, verifiable, surprising one-line claim that is complete in itself. Slide 3 is an interactive try-it test (ring finger trick) to raise watch time and comments. Palette 3 continues the rotation. The caption adds a follow reason to address the 0-follow problem.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "human body",
+  "topic": "Fingers have no muscles: tendons, forearm muscles, ring finger trick, carpal tunnel",
+  "hook": "Your fingers have zero muscles",
+  "slides": [
+    {
+      "title": "Your fingers have zero muscles",
+      "body": "Every finger movement is pulled by muscles in your palm and forearm, through long tendons.",
+      "highlight": "",
+      "image_query": "hand anatomy tendons",
+      "image_prompt": "Anatomical model of a human hand skeleton with thin white cords running from the fingertip bones down toward the wrist, soft studio light, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1831/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Puppet strings",
+      "body": "Tendons run like strings from forearm muscles to your fingertips. Wiggle your fingers and watch your forearm move.",
+      "highlight": "",
+      "image_query": "marionette strings",
+      "image_prompt": "Wooden marionette hand hanging from taut strings attached to a wooden control bar, warm light, dark minimal background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1831/img_02.jpg",
+      "credit": "Foto:Karl Heinz Hernried. (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The ring finger trap",
+      "body": "Fold your middle finger under, fingertips flat on a table. Your ring finger barely lifts: it shares tendons with its neighbors.",
+      "highlight": "Try it",
+      "image_query": "hand on wooden table",
+      "image_prompt": "Wooden artist mannequin hand resting flat on a wooden table, middle finger folded under, soft side lighting, shallow depth of field",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1831/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "9 tendons, one tunnel",
+      "body": "Nine finger tendons and a nerve squeeze through one narrow wrist channel. Swelling there causes carpal tunnel syndrome.",
+      "highlight": "9",
+      "image_query": "wrist bones x-ray",
+      "image_prompt": "Nine glowing threads and one yellow cord passing through a narrow stone archway shaped like a wrist bone, dramatic light, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261112-1831/img_04.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for a new body fact daily",
+  "caption": "Your fingers have no muscles inside them. Every grip, tap and typed word is powered by muscles in your palm and forearm that pull on long tendons, like strings on a puppet.\n\nThat is why your forearm moves when you wiggle your fingers, and why one swollen spot in your wrist, the carpal tunnel, can numb your whole hand. Follow for one body fact your brain won't believe, every day.\n\nDid you try the ring finger trick? Could you lift it?\n\n📷 unknown (CC BY 4.0) via wikimedia · Foto:Karl Heinz Hernried. (Public domain) via wikimedia",
+  "hashtags": [
+    "humananatomy",
+    "humanbody",
+    "anatomyfacts",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Encyclopaedia Britannica: Hand (anatomy), extrinsic and intrinsic hand muscles",
+    "StatPearls (NCBI): Anatomy, Shoulder and Upper Limb, Hand Flexor Tendons",
+    "StatPearls (NCBI): Anatomy, Shoulder and Upper Limb, Forearm Extensor Muscles (juncturae tendinum)",
+    "National Institute of Neurological Disorders and Stroke: Carpal Tunnel Syndrome"
+  ],
+  "image_query": "hand anatomy tendons",
+  "image_prompt": "Wooden marionette hand suspended by taut strings from above, strings disappearing into darkness, warm spotlight, dark minimal background",
+  "design": {
+    "palette": 3,
+    "cover_label": "Body secrets",
+    "swipe_text": "Watch this",
+    "follow_line": "One body fact you won't believe, daily"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261112-1831/img_cover.jpg",
+  "cover_credit": "unknown (CC BY 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Your fingers have no muscles inside them. Every grip, tap and typed word is powered by muscles in your palm and forearm that pull on long tendons, like strings on a puppet.\n\nThat is why your forearm moves when you wiggle your fingers, and why one swollen spot in your wrist, the carpal tunnel, can numb your whole hand. Follow for one body fact your brain won't believe, every day.\n\nDid you try the ring finger trick? Could you lift it?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "rise",
+      "right",
+      "scale",
+      "rise",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "flash",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}
