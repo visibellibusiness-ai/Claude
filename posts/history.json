@@ -1088,5 +1088,23 @@
       "palette": 2
     },
     "media_id": "18134517316665875"
+  },
+  {
+    "date": "20261112-1831",
+    "series": "facts",
+    "topic": "Fingers have no muscles: tendons, forearm muscles, ring finger trick, carpal tunnel",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "Your fingers have zero muscles",
+    "slides": 4,
+    "variant": "direct",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "17913183696309010"
   }
 ]
