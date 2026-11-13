@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 12/11/2026 alle 18:31 UTC. Follower: 0.
+Aggiornato il 13/11/2026 alle 00:24 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 426, di cui da non follower 426 (100%).
+- Visualizzazioni: 417, di cui da non follower 417 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 12/11/2026 | 16 | 16 | 21 | 21 | 0 | 0 |
+| 12/11/2026 | 22 | 22 | 29 | 29 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 | 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 | 07/11/2026 | 108 | 108 | 119 | 119 | 1 | 0 |
-| 06/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 11/11/2026 00:15 | reel | Your body glows in the dark | 13 | 12 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 10/11/2026 18:24 | reel | Your brain burns 20% of your energy | 30 | 32 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 10/11/2026 00:15 | reel | You breathe mostly through one nostril | 16 | 19 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 09/11/2026 00:15 | reel | What the death zone does to your body | 102 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
@@ -45,7 +45,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 30/10/2026 18:19 | reel | Ocean facts that sound made up | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 30/10/2026 13:41 | carousel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 30/10/2026 13:41 | reel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
-| 30/10/2026 00:13 | reel | 5 ways your brain lies to you daily | 30 | 31 | 0,0% | 0,0% | 6,7% | n/d |  |
 
 ### Reel
 
@@ -53,7 +52,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 30/10/2026 00:13 | 5 ways your brain lies to you daily | 6.977 | 51.7 |
 | 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
 | 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
 | 31/10/2026 00:14 | A shrimp that punches 2,500x its body we | 5.194 | 85.7 |
@@ -75,13 +73,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
 | 10/11/2026 00:15 | You breathe mostly through one nostril | 3.151 | 66.7 |
 | 10/11/2026 18:24 | Your brain burns 20% of your energy | 5.769 | 66.7 |
+| 11/11/2026 00:15 | Your body glows in the dark | 6.308 | 33.3 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 1 | 0 | n/d | n/d |
-| reel | 22 | 864 | 0,0% | 0,2% |
+| reel | 22 | 847 | 0,0% | 0,2% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -90,6 +89,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
 | answer | 1 | 30.0 | 5769.0 | 66.7 |
+| direct | 1 | 13.0 | 6308.0 | 33.3 |
 | short | 1 | 16.0 | 3151.0 | 66.7 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

@@ -1,0 +1,97 @@
+{
+  "reasoning": "Extreme-environment body Reels have been my most reliable reach: death zone reached 102 and cold water 96, both 'What X does to your body.' Extreme heat is the natural sibling, is timely for a global audience and is not yet covered. This post follows the mandatory short-Reel experiment: 3 slides, a 6-word hook, titles of 2 to 4 words and bodies of 12 words or fewer. It runs as one escalating story: blood shifts, then sweating, then cooling fails. Lofi music has backed several of my top-reach Reels, so I reuse it. I chose palette 4 to continue the rotation. The caption adds a follow reason to tackle the 0-follow problem, and the question is an opinion question, a type I have not used recently. I tag Mayo Clinic because its heatstroke definition is the source of the key 40°C threshold.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Extreme heat effects: skin blood flow, sweat rate, heatstroke threshold",
+  "hook": "What extreme heat does to your body",
+  "slides": [
+    {
+      "title": "Blood rushes outward",
+      "body": "Vessels near your skin widen to dump heat, so your heart works harder.",
+      "highlight": "",
+      "image_query": "thermal image heat",
+      "image_prompt": "Glowing red network of blood vessels under a desert sun, heat waves rippling over cracked earth, warm orange tones",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-0024/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Sweat pours out",
+      "body": "You can sweat out more than a liter every hour.",
+      "highlight": "1 L/h",
+      "image_query": "water droplets glass",
+      "image_prompt": "Large glass jug of water slowly draining onto hot sand, droplets evaporating into steam under harsh sunlight",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-0024/img_02.jpg",
+      "credit": "Justin417 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Then cooling fails",
+      "body": "At 40°C core temperature, heatstroke can damage your brain and organs.",
+      "highlight": "40°C",
+      "image_query": "thermometer heat sun",
+      "image_prompt": "Mercury thermometer glowing red-hot against a blazing sun, shimmering heat haze, empty scorched landscape",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-0024/img_03.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for one wild body fact daily",
+  "caption": "In extreme heat, your body fights hard to stay near 37°C. It pushes blood toward your skin and pours out sweat, sometimes more than a liter an hour.\n\nWhen that system can't keep up and your core reaches 40°C (104°F), doctors call it heatstroke. It is a medical emergency (source: Mayo Clinic).\n\nFollow for one body fact a day that your brain won't believe. Which would you rather survive: extreme heat or extreme cold?\n\n📷 Giles Laurent (CC BY-SA 4.0) via wikimedia · Justin417 (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "heatstroke",
+    "humanbody",
+    "bodyfacts",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [
+    "mayoclinic"
+  ],
+  "tag_reason": "Mayo Clinic is the source of the heatstroke definition (core temperature of 40°C / 104°F or higher)",
+  "sources": [
+    "Mayo Clinic: Heatstroke, symptoms and causes (mayoclinic.org)",
+    "CDC/NIOSH: Heat stress, heat-related illness",
+    "Sawka et al., ACSM position stand: Exercise and fluid replacement (sweat rates commonly exceed 1 L/h)",
+    "Cleveland Clinic: Vasodilation and thermoregulation"
+  ],
+  "image_query": "desert heat sun",
+  "image_prompt": "Blazing sun over a cracked desert floor, heat haze rippling, a lone thermometer stuck in the sand glowing red",
+  "design": {
+    "palette": 4,
+    "cover_label": "Your body vs heat",
+    "swipe_text": "Watch this",
+    "follow_line": "One wild body fact, every day"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261113-0024/img_cover.jpg",
+  "cover_credit": "Giles Laurent (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "In extreme heat, your body fights hard to stay near 37°C. It pushes blood toward your skin and pours out sweat, sometimes more than a liter an hour.\n\nWhen that system can't keep up and your core reaches 40°C (104°F), doctors call it heatstroke. It is a medical emergency (source: Mayo Clinic).\n\nFollow for one body fact a day that your brain won't believe. Which would you rather survive: extreme heat or extreme cold?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "blur",
+      "rise",
+      "right",
+      "blur",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "glitch",
+      "punch",
+      "glitch"
+    ]
+  },
+  "music_used": "documentary"
+}
