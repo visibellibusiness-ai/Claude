@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 13/11/2026 alle 00:24 UTC. Follower: 0.
+Aggiornato il 13/11/2026 alle 13:47 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 417, di cui da non follower 417 (100%).
+- Visualizzazioni: 421, di cui da non follower 421 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 12/11/2026 | 22 | 22 | 29 | 29 | 0 | 0 |
+| 13/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
@@ -43,8 +44,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 01/11/2026 00:11 | reel | What happens to your body without sleep | 104 | 119 | 0,0% | 1,9% | 1,9% | n/d |  |
 | 31/10/2026 00:14 | reel | A shrimp that punches 2,500x its body we | 7 | 7 | 0,0% | 0,0% | 28,6% | n/d | copertura sotto 10 |
 | 30/10/2026 18:19 | reel | Ocean facts that sound made up | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 30/10/2026 13:41 | carousel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
-| 30/10/2026 13:41 | reel | Who took $6.3 billion from Binance? | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -52,7 +51,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 30/10/2026 13:41 | Who took $6.3 billion from Binance? | 9.450 | 0 |
 | 30/10/2026 18:19 | Ocean facts that sound made up | 5.788 | 100 |
 | 31/10/2026 00:14 | A shrimp that punches 2,500x its body we | 5.194 | 85.7 |
 | 01/11/2026 00:11 | What happens to your body without sleep | 5.024 | 74 |
@@ -79,8 +77,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| carousel | 1 | 0 | n/d | n/d |
-| reel | 22 | 847 | 0,0% | 0,2% |
+| reel | 21 | 847 | 0,0% | 0,2% |
 
 ### Esperimento Reel: tre versioni a confronto
 

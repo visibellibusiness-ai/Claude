@@ -1,0 +1,145 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-13",
+  "hook": "Nvidia's founder quit after 33 years",
+  "reel_hook": "Nvidia just lost its founder CEO.",
+  "slides": [
+    {
+      "title": "Nvidia's Huang steps down",
+      "highlight": "33 yrs",
+      "image_query": "nvidia headquarters building",
+      "image_prompt": "Empty leather executive chair at the head of a long dark boardroom table, a glowing green microchip resting on the table, dramatic side light",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Jensen Huang resigned as Nvidia CEO, effective immediately."
+        ],
+        [
+          "WHY IT MATTERS",
+          "CFO Colette Kress is interim CEO; no reason was given."
+        ],
+        [
+          "FOR YOU",
+          "Hold Nvidia or AI funds? Watch its quarterly results on Tuesday 17 Nov."
+        ]
+      ],
+      "body": "Jensen Huang resigned as Nvidia CEO, effective immediately. CFO Colette Kress is interim CEO; no reason was given. Hold Nvidia or AI funds? Watch its quarterly results on Tuesday 17 Nov.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-1350/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Iran, US clash over Bahrain",
+      "highlight": "Radar",
+      "image_query": "military radar dome",
+      "image_prompt": "Military radar dish on a desert coastline at dusk, two small unmarked drone silhouettes in an orange sky over calm sea",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran says it destroyed a US radar in Bahrain."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The US says it shot down two drones, no damage."
+        ],
+        [
+          "FOR YOU",
+          "Neither account is independently verified, so treat early war claims with care."
+        ]
+      ],
+      "body": "Iran says it destroyed a US radar in Bahrain. The US says it shot down two drones, no damage. Neither account is independently verified, so treat early war claims with care.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-1350/img_02.jpg",
+      "credit": "Peter Moore (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Tanker blasts in Hormuz",
+      "highlight": "LNG",
+      "image_query": "lng tanker ship",
+      "image_prompt": "Large gas tanker ship on a dark sea with a plume of smoke rising, a spherical naval mine floating in the foreground waves",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran says an LNG tanker hit a mine near Hormuz."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Iranian media say four oil tankers were also hit."
+        ],
+        [
+          "FOR YOU",
+          "More risk on this shipping route can push up energy prices; watch fuel bills."
+        ]
+      ],
+      "body": "Iran says an LNG tanker hit a mine near Hormuz. Iranian media say four oil tankers were also hit. More risk on this shipping route can push up energy prices; watch fuel bills.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-1350/img_03.jpg",
+      "credit": "Gordon Leggett (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "💻 Jensen Huang resigned as Nvidia CEO after 33 years; CFO Colette Kress steps in. Own Nvidia or AI funds? Results land Tuesday 17 Nov.\n📡 Iran says it destroyed a US radar in Bahrain; the US says it downed two drones. Neither claim is verified.\n🚢 Iran says an LNG tanker hit a mine near Hormuz. Energy prices are worth watching.\n\nWho should lead Nvidia next: insider or outsider?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Peter Moore (CC BY-SA 2.0) via wikimedia · Gordon Leggett (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "nvidia",
+    "jensenhuang",
+    "straitofhormuz",
+    "iran",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000082/nvidiaannouncesceotransiti.htm",
+    "https://www.cnbc.com/2026/11/12/nvidia-nvda-jensen-huang-second-affair.html",
+    "https://www.aljazeera.com/news/2026/11/12/why-did-nvidia-ceo-jensen-huang-resign-and-who-is-colette-kress",
+    "https://www.npr.org/2026/11/12/nx-s1-6037833/jensen-huang-nvidia-stepped-down",
+    "https://abcnews.com/International/wireStory/irans-revolutionary-guard-destroyed-us-radar-bahrain-mideast-138102943",
+    "https://www.aa.com.tr/en/americas/centcom-denies-iranian-claim-of-attack-on-us-radar-in-bahrain-says-2-drones-shot-down/4124158",
+    "https://www.euronews.com/2026/11/13/irgc-says-it-destroyed-us-radar-in-bahrain-after-attack-on-southern-iran",
+    "https://www.rferl.org/a/iran-us-sirik-bahrain-war-nuclear-talks/33897951.html",
+    "https://www.yahoo.com/news/world/articles/iran-says-tanker-carrying-lng-070126090.html",
+    "https://cbsnews.com/live-updates/iran-war-us-nuclear-strait-of-hormuz",
+    "https://abcnews.com/International/wireStory/irans-revolutionary-guard-destroyed-us-radar-bahrain-mideast-138102943"
+  ],
+  "design": {
+    "palette": 0,
+    "cover_label": "Today's file · 13 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "nvidia headquarters building",
+  "image_prompt": "Empty leather executive chair at the head of a long dark boardroom table, a glowing green microchip on the table, single spotlight from above",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261113-1350/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "💻 Jensen Huang resigned as Nvidia CEO after 33 years; CFO Colette Kress steps in. Own Nvidia or AI funds? Results land Tuesday 17 Nov.\n📡 Iran says it destroyed a US radar in Bahrain; the US says it downed two drones. Neither claim is verified.\n🚢 Iran says an LNG tanker hit a mine near Hormuz. Energy prices are worth watching.\n\nWho should lead Nvidia next: insider or outsider?\n\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "right",
+      "left",
+      "right",
+      "blur",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "flash",
+      "punch",
+      "glitch"
+    ]
+  },
+  "music_used": "mystery"
+}

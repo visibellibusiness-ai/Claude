@@ -1,42 +1,38 @@
 {
-  "date": "20261112-1353",
+  "date": "20261113-1350",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "lofi",
-  "theme_index": 40,
-  "topic": "Daily news 2026-11-12",
+  "music": "mystery",
+  "theme_index": 42,
+  "topic": "Daily news 2026-11-13",
   "category": "news",
-  "hook": "Why are tankers burning at Hormuz?",
-  "slides": 5,
+  "hook": "Nvidia's founder quit after 33 years",
+  "slides": 3,
   "variant": null,
   "tags": [],
   "tag_reason": "",
   "design": {
     "style": "mystery",
-    "palette": 2
+    "palette": 0
   },
   "images": [
-    "posts/20261112-1353/slide_01.jpg",
-    "posts/20261112-1353/slide_02.jpg",
-    "posts/20261112-1353/slide_03.jpg",
-    "posts/20261112-1353/slide_04.jpg",
-    "posts/20261112-1353/slide_05.jpg",
-    "posts/20261112-1353/slide_06.jpg",
-    "posts/20261112-1353/slide_07.jpg"
+    "posts/20261113-1350/slide_01.jpg",
+    "posts/20261113-1350/slide_02.jpg",
+    "posts/20261113-1350/slide_03.jpg",
+    "posts/20261113-1350/slide_04.jpg",
+    "posts/20261113-1350/slide_05.jpg"
   ],
-  "story": "posts/20261112-1353/story.jpg",
+  "story": "posts/20261113-1350/story.jpg",
   "ai": true,
-  "story_ai": false,
-  "caption": "🔥 Iran says at least three tankers hit mines near Hormuz; oil prices edged up, but the mine claim isn't independently verified.\n🚧 Iran says the strait stays shut until the US meets 7 conditions.\n✈️ US envoys Witkoff and Kushner landed in Moscow to meet Putin.\n🗺️ Abu Dhabi talks ended with no breakthrough: territory is still the sticking point.\n🇪🇺 Ukraine and the US want Europe in the talks; Russia says no.\n🤝 Good news: a large prisoner swap is agreed, possibly over 1,000 on each side, according to Russia.\n\nShould Europe have a seat at the table? Tell us below 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia · Diego Delso (CC BY-SA 4.0) via wikimedia · Clint Ian Pinto (CC BY-SA 4.0) via wikimedia · Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia\n\n#straitofhormuz #prisonerswap #ukraine #russia #dailynews",
-  "carousel_caption": "🔥 Iran says at least three tankers hit mines near Hormuz; oil prices edged up, but the mine claim isn't independently verified.\n🚧 Iran says the strait stays shut until the US meets 7 conditions.\n✈️ US envoys Witkoff and Kushner landed in Moscow to meet Putin.\n🗺️ Abu Dhabi talks ended with no breakthrough: territory is still the sticking point.\n🇪🇺 Ukraine and the US want Europe in the talks; Russia says no.\n🤝 Good news: a large prisoner swap is agreed, possibly over 1,000 on each side, according to Russia.\n\nShould Europe have a seat at the table? Tell us below 👇\nFollow @you.didnot.know for your daily brief.\n\nCover: Why are tankers burning at Hormuz?\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia\n\n1/5 Tankers ablaze near Hormuz (3)\nIran says at least three tankers hit mines near Hormuz. Iran keeps the strait shut until US meets 7 conditions.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia\n\n2/5 US envoys land in Moscow (Putin)\nWitkoff and Kushner landed in Moscow to meet Putin. It follows two days of US-mediated talks in Abu Dhabi.\n📷 Diego Delso (CC BY-SA 4.0) via wikimedia\n\n3/5 Land still blocks peace (Land)\nAbu Dhabi talks ended without a major breakthrough. US mediators say the sides still disagree on territory.\n📷 Clint Ian Pinto (CC BY-SA 4.0) via wikimedia\n\n4/5 Europe at the table? Russia: no (Europe)\nUkraine and the US want Europe in the peace talks. Russia opposes it, adding another open dispute.\n📷 Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia\n\n5/5 A big prisoner swap is agreed (1,000+)\nRussia and Ukraine agreed a large prisoner-of-war exchange. Russia says over 1,000 each side; past swaps were smaller.\n🎨 AI-generated image\n\n#straitofhormuz #prisonerswap #ukraine #russia #dailynews",
+  "story_ai": true,
+  "caption": "💻 Jensen Huang resigned as Nvidia CEO after 33 years; CFO Colette Kress steps in. Own Nvidia or AI funds? Results land Tuesday 17 Nov.\n📡 Iran says it destroyed a US radar in Bahrain; the US says it downed two drones. Neither claim is verified.\n🚢 Iran says an LNG tanker hit a mine near Hormuz. Energy prices are worth watching.\n\nWho should lead Nvidia next: insider or outsider?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Peter Moore (CC BY-SA 2.0) via wikimedia · Gordon Leggett (CC BY-SA 4.0) via wikimedia\n\n#nvidia #jensenhuang #straitofhormuz #iran #dailynews",
+  "carousel_caption": "💻 Jensen Huang resigned as Nvidia CEO after 33 years; CFO Colette Kress steps in. Own Nvidia or AI funds? Results land Tuesday 17 Nov.\n📡 Iran says it destroyed a US radar in Bahrain; the US says it downed two drones. Neither claim is verified.\n🚢 Iran says an LNG tanker hit a mine near Hormuz. Energy prices are worth watching.\n\nWho should lead Nvidia next: insider or outsider?\n\nFollow @you.didnot.know for the daily brief.\n\nCover: Nvidia's founder quit after 33 years\n🎨 AI-generated image\n\n1/3 Nvidia's Huang steps down (33 yrs)\nJensen Huang resigned as Nvidia CEO, effective immediately. CFO Colette Kress is interim CEO; no reason was given.\n🎨 AI-generated image\n\n2/3 Iran, US clash over Bahrain (Radar)\nIran says it destroyed a US radar in Bahrain. The US says it shot down two drones, no damage.\n📷 Peter Moore (CC BY-SA 2.0) via wikimedia\n\n3/3 Tanker blasts in Hormuz (LNG)\nIran says an LNG tanker hit a mine near Hormuz. Iranian media say four oil tankers were also hit.\n📷 Gordon Leggett (CC BY-SA 4.0) via wikimedia\n\n#nvidia #jensenhuang #straitofhormuz #iran #dailynews",
   "slide_captions": [
-    "Why are tankers burning at Hormuz?\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
-    "1/5 Tankers ablaze near Hormuz (3)\nIran says at least three tankers hit mines near Hormuz. Iran keeps the strait shut until US meets 7 conditions.\n📷 ITookSomePhotos (CC BY-SA 4.0) via wikimedia",
-    "2/5 US envoys land in Moscow (Putin)\nWitkoff and Kushner landed in Moscow to meet Putin. It follows two days of US-mediated talks in Abu Dhabi.\n📷 Diego Delso (CC BY-SA 4.0) via wikimedia",
-    "3/5 Land still blocks peace (Land)\nAbu Dhabi talks ended without a major breakthrough. US mediators say the sides still disagree on territory.\n📷 Clint Ian Pinto (CC BY-SA 4.0) via wikimedia",
-    "4/5 Europe at the table? Russia: no (Europe)\nUkraine and the US want Europe in the peace talks. Russia opposes it, adding another open dispute.\n📷 Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia",
-    "5/5 A big prisoner swap is agreed (1,000+)\nRussia and Ukraine agreed a large prisoner-of-war exchange. Russia says over 1,000 each side; past swaps were smaller.\n🎨 AI-generated image",
-    "Follow @you.didnot.know for daily news"
+    "Nvidia's founder quit after 33 years\n🎨 AI-generated image",
+    "1/3 Nvidia's Huang steps down (33 yrs)\nJensen Huang resigned as Nvidia CEO, effective immediately. CFO Colette Kress is interim CEO; no reason was given.\n🎨 AI-generated image",
+    "2/3 Iran, US clash over Bahrain (Radar)\nIran says it destroyed a US radar in Bahrain. The US says it shot down two drones, no damage.\n📷 Peter Moore (CC BY-SA 2.0) via wikimedia",
+    "3/3 Tanker blasts in Hormuz (LNG)\nIran says an LNG tanker hit a mine near Hormuz. Iranian media say four oil tankers were also hit.\n📷 Gordon Leggett (CC BY-SA 4.0) via wikimedia",
+    "Follow for your daily news brief"
   ]
 }
