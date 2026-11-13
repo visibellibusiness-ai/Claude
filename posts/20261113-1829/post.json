@@ -1,0 +1,107 @@
+{
+  "reasoning": "Mandatory answer-first experiment: the hook states the fact itself with a concrete claim and avoids the 'What X does' shapes. I chose the human body because body Reels get the most distribution (about 100 reach on sleep, cold water, voice, height and death zone). Blood vessel length is new, visual and easy to verify. Four short slides keep the Reel tight, and every slide carries a number in the highlight to make it hit harder. Music and palette rotate (mystery, palette 0). The CTA teases a daily fact to test follow conversion, and the caption adds a follow reason as the strategy asks.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Length of blood vessels: 100,000 km, capillaries, circulation time, heart output",
+  "hook": "Your blood vessels could circle Earth twice",
+  "slides": [
+    {
+      "title": "Longer than you think",
+      "body": "Laid end to end, an adult's blood vessels stretch about 100,000 km. Earth's equator is about 40,000 km.",
+      "highlight": "2.5x",
+      "image_query": "blood vessels network",
+      "image_prompt": "Glowing red branching vessel network wrapped around a small globe of Earth, dark background, cinematic lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-1829/img_01.jpg",
+      "credit": "Courtesy of NIAID\n\nRyan Kissinger (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Mostly tiny capillaries",
+      "body": "Most of that length is capillaries, so narrow that red blood cells squeeze through in single file.",
+      "highlight": "single",
+      "image_query": "red blood cells capillary",
+      "image_prompt": "Microscopic view of red blood cells lined up one by one inside a narrow translucent tube, soft red glow",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-1829/img_02.jpg",
+      "credit": "Elsnicová (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "One lap per minute",
+      "body": "At rest, your blood makes a full trip around your body in about one minute.",
+      "highlight": "1 min",
+      "image_query": "stopwatch red",
+      "image_prompt": "Stopwatch made of glass filled with flowing red liquid circling inside it, dark moody background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-1829/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "A tireless pump",
+      "body": "Your heart pushes about 7,500 liters of blood through this network every single day.",
+      "highlight": "7,500L",
+      "image_query": "anatomical heart model",
+      "image_prompt": "Anatomical heart model beside dozens of large glass bottles of red liquid, dramatic side lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261113-1829/img_04.jpg",
+      "credit": "Dguendel (CC BY 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for tomorrow's body fact",
+  "caption": "An adult's blood vessels add up to roughly 100,000 km. That is about two and a half times around Earth's equator, packed inside one body.\n\nMost of that length is capillaries, which are thinner than a hair. Your heart still pushes around 7,500 liters of blood through them every day. Source: Cleveland Clinic, NIH NHLBI.\n\nFollow for one body fact your brain won't believe, every day. Which number surprised you most: 100,000 km or 7,500 liters?\n\n📷 unknown (CC BY 4.0) via wikimedia · Courtesy of NIAID\n\nRyan Kissinger (Public domain) via wikimedia · Elsnicová (CC BY-SA 4.0) via wikimedia · Dguendel (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "bloodvessels",
+    "humanbody",
+    "anatomyfacts",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Cleveland Clinic: Blood Vessels (about 60,000 miles of vessels in an adult)",
+    "The Franklin Institute: The Heart - Blood Vessels",
+    "NIH NHLBI: How the Heart Works (heart pumps about 2,000 gallons of blood daily)",
+    "Guyton and Hall Textbook of Medical Physiology (circulation time and capillary size)"
+  ],
+  "image_query": "blood vessels anatomy",
+  "image_prompt": "Glowing red network of branching blood vessels forming a ring around planet Earth in dark space, cinematic and detailed",
+  "design": {
+    "palette": 0,
+    "cover_label": "Human body",
+    "swipe_text": "Watch this",
+    "follow_line": "One body fact you won't believe, daily"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261113-1829/img_cover.jpg",
+  "cover_credit": "unknown (CC BY 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "An adult's blood vessels add up to roughly 100,000 km. That is about two and a half times around Earth's equator, packed inside one body.\n\nMost of that length is capillaries, which are thinner than a hair. Your heart still pushes around 7,500 liters of blood through them every day. Source: Cleveland Clinic, NIH NHLBI.\n\nFollow for one body fact your brain won't believe, every day. Which number surprised you most: 100,000 km or 7,500 liters?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "blur",
+      "right",
+      "left",
+      "scale",
+      "rise",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "dip",
+      "cut",
+      "flash",
+      "cut"
+    ]
+  },
+  "music_used": "mystery"
+}
