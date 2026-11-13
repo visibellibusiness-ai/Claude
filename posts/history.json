@@ -1118,5 +1118,23 @@
       "palette": 3
     },
     "media_id": "17913183696309010"
+  },
+  {
+    "date": "20261113-0024",
+    "series": "facts",
+    "topic": "Extreme heat effects: skin blood flow, sweat rate, heatstroke threshold",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "What extreme heat does to your body",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "18114921662188709"
   }
 ]
