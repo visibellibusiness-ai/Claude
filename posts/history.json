@@ -1136,5 +1136,23 @@
       "palette": 4
     },
     "media_id": "18114921662188709"
+  },
+  {
+    "date": "20261113-1829",
+    "series": "facts",
+    "topic": "Length of blood vessels: 100,000 km, capillaries, circulation time, heart output",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "Your blood vessels could circle Earth twice",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "18135162637702990"
   }
 ]
