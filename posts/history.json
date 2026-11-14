@@ -1196,5 +1196,23 @@
       "palette": 1
     },
     "media_id": "17898938700421116"
+  },
+  {
+    "date": "20261114-1816",
+    "series": "facts",
+    "topic": "Inverted retinal image: eye lens flips the image, brain reads it upright, inverting-goggle adaptation",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "Your eyes see everything upside down",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18110661530629151"
   }
 ]
