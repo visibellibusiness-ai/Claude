@@ -1166,5 +1166,23 @@
       "palette": 0
     },
     "media_id": "18135162637702990"
+  },
+  {
+    "date": "20261114-0019",
+    "series": "facts",
+    "topic": "Neutron stars: density, spin speed, tiny mountains, gold from collisions",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "space",
+    "hook": "A teaspoon of neutron star weighs a billion tons",
+    "slides": 4,
+    "variant": "direct",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "17898938700421116"
   }
 ]
