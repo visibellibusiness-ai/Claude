@@ -1,0 +1,94 @@
+{
+  "reasoning": "Mandatory short Reel test: exactly 3 slides, a hook of 7 words or fewer, and bodies of 12 words or fewer. The strategy keeps human body as the core. Specific, counterintuitive direct claims have produced our best reach ('shorter tonight' 109, 'see your nose' 83 with 48.8 skip). Vision fits the brain-filters-reality theme that held attention, without repeating the nose or blind-spot topics. This Reel also runs the follow-conversion experiment: the final slide promises Part 2 tomorrow, which will be another eye fact. Palette 2 and documentary music continue the rotation. No tags, because the main fact comes from a historic psychology study, not from a listed institution.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Inverted retinal image: eye lens flips the image, brain reads it upright, inverting-goggle adaptation",
+  "hook": "Your eyes see everything upside down",
+  "slides": [
+    {
+      "title": "The lens flips it",
+      "body": "Your eye's lens projects an upside-down image onto your retina.",
+      "highlight": "180°",
+      "image_query": "human eye close up",
+      "image_prompt": "Glass lens projecting an inverted image of a tree onto a curved surface, like a camera obscura, soft dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1816/img_01.jpg",
+      "credit": "Basile Morin (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Your brain fixes it",
+      "body": "Your brain reads that flipped image as upright, without you noticing.",
+      "highlight": "",
+      "image_query": "human brain model",
+      "image_prompt": "Anatomical brain model glowing softly, with a small upside-down landscape turning upright beside it, dark moody background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1816/img_02.jpg",
+      "credit": "John Campbell (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "It can relearn",
+      "body": "Wear upside-down goggles, and your brain starts adapting within days.",
+      "highlight": "Days",
+      "image_query": "vintage goggles",
+      "image_prompt": "Old brass goggles with prism lenses resting on a wooden desk, reflecting an upside-down room, warm vintage light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1816/img_03.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow to catch it.",
+  "caption": "The image on the back of your eye is upside down. Your eye's lens bends light like a camera lens, so the world lands on your retina flipped. Your brain simply reads it as upright.\n\nIn 1896, psychologist George Stratton wore lenses that flipped his view for days. At first he kept reaching the wrong way. Over time his brain adapted, and the world started to feel normal again.\n\nWe post one fact a day about how your body quietly tricks you. Follow so you don't miss Part 2 tomorrow. Would you try wearing upside-down goggles for a week?\n\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia · John Campbell (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "visionscience",
+    "humaneye",
+    "brainfacts",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Stratton, G. M. (1897). Vision without inversion of the retinal image. Psychological Review, 4(4), 341-360",
+    "National Eye Institute: How the Eyes Work (nei.nih.gov)",
+    "Purves D. et al., Neuroscience, Sinauer Associates: formation of the retinal image"
+  ],
+  "image_query": "human eye macro",
+  "image_prompt": "Giant realistic eyeball reflecting an upside-down city skyline in its glossy surface, dramatic dark background, cinematic lighting",
+  "design": {
+    "palette": 2,
+    "cover_label": "Your brain's trick",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts your body hides from you"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261114-1816/img_cover.jpg",
+  "cover_credit": "Basile Morin (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "The image on the back of your eye is upside down. Your eye's lens bends light like a camera lens, so the world lands on your retina flipped. Your brain simply reads it as upright.\n\nIn 1896, psychologist George Stratton wore lenses that flipped his view for days. At first he kept reaching the wrong way. Over time his brain adapted, and the world started to feel normal again.\n\nWe post one fact a day about how your body quietly tricks you. Follow so you don't miss Part 2 tomorrow. Would you try wearing upside-down goggles for a week?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "scale",
+      "rise",
+      "left",
+      "blur",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "documentary"
+}
