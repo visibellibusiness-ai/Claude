@@ -1,59 +1,64 @@
-# Strategy: "You Did Not Know" (v2, 7 Nov 2026)
+# Strategy: "You Did Not Know" (v3, 14 Nov 2026)
 
 ## Data status
-- **7 posts now have reach ≥10.** All are niche Reels (body, psychology, space).
-- **No carousel or news post has passed reach 5.**
-- **Followers are still 0** after about 800 accounts reached since 27 Oct.
-- **100% of reach and views came from non-followers.** Distribution works; conversion does not.
-- Daily reach rose from 3–30 (27–30 Oct) to 61–118 (31 Oct–5 Nov). The 6 Nov figure (11) and the four 5–6 Nov posts are under 48h old and may be incomplete.
+- **15 Reels now have reach ≥10.** All are body, psychology or space. No carousel or news post has reached 10.
+- **Followers: still 0** after about 1,000 daily accounts reached since 27 Oct.
+- **Non-followers: 100% of reach and views.** Distribution works, conversion does not.
+- **12–13 Nov:** daily reach (24, 0) and the four posts from those days are under 48h old. They are not judged here.
 
 ## What is working
-- **Niche Reels get distribution.** Reach: sleep 104, cold water 96, memories 94, tickle 61, fear 53, brain lies 30, space 24.
-- **Best watch behavior:** "5 ways your brain lies to you daily" had a 51.7 skip rate and 6977 avg watch time. This is one post, so it is a hypothesis only.
-- Every other Reel with reach ≥10 sat at 70–79 skip and 3610–5636 watch time.
+- **Reels distribute, but unevenly.** Nine Reels reached 53–109 (shorter tonight 109, sleep 104, death zone 102, voice 98, cold water 96). Ten Reels since 3 Nov reached 0–9.
+- **Posting time (hypothesis only):** since 2 Nov, 18:xx posts had a median reach of about 60, and 00:xx posts about 11. Topic and hook are confounded.
+- **Short/answer/direct variants vs 5-slide Reels:**
+  - Variant Reels with reach ≥10 had skip rates of 33.3–66.7.
+  - Most 5-slide Reels had 65.5–79.2.
+  - Two variants stand out: "nose" (short) at 48.8 skip and 7334 watch, and "glows" (direct) at 33.3 skip and 6308 watch.
+  - This is only 4 posts (short 2, answer 1, direct 1), so it is not a conclusion.
 
 ## What is not
-- **Engagement is near zero:**
-  - Shares appeared only on sleep (1.9%).
-  - Likes ranged 0–6.7%.
-  - Saves were 0% on every post since 30 Oct.
-  - Follows are 0.
-- **Same format, very different reach:** sneeze reached 4 and breath reached 9. The cause is unknown.
-- **Carousels:** 9 posts reached 0–2 each.
-- **News:** 12 posts reached 0–5 each. These were mostly early posts, so timing is a confound.
+- **Saves:** 0% on every post since 30 Oct.
+- **Shares:** only sleep (1.9%).
+- **Likes:** 0–6.7% of reach.
+- **Follows:** 0.
+- **Hook type does not predict reach.** Each style has both hits and misses:
+  - "What X does…": 0–104.
+  - Direct claims: 13–109.
+  - Lists: 1–30 (only "brain lies" reached 10).
+- **No visible pattern** for palettes or music. Every palette and track appears among both high- and low-reach posts.
+- **Untested items from v2:**
+  - The follow-CTA slide was not recorded as tested.
+  - No carousel has been posted since 30 Oct.
+  - Topic rotation stalled: no animals, space or oceans posts since 31 Oct.
 
 ## Direction
 - **Format split:**
   - About 90% Reels.
-  - At most 1 carousel per week, as a test of whether carousels distribute now.
-  - Add trial reels once available.
+  - 1 carousel per week as a distribution check.
+  - Trial reels when available.
 - **Topics:**
-  - Focus on human body and psychology.
-  - Rotate in animals, space and oceans so they get compared.
-  - **Pause news.**
+  - Keep human body and psychology as the core.
+  - Make 1 in 4 Reels animals, space or oceans so they can be compared.
+  - Keep news paused.
 - **Hooks:**
-  - Keep them specific and counterintuitive.
-  - "What happens to your body…" reached 4–104, so it is not reliable alone.
-  - Test list hooks and direct-claim hooks (see Experiments).
-- **Length:**
-  - Keep Reels at 5 slides, with the hook as on-screen text in the first second.
-  - No length comparison exists yet.
-- **Colors and music:**
-  - Keep rotating palettes 0–4 and the lofi, documentary and mystery tracks.
-  - No pattern is visible yet.
+  - Use specific, counterintuitive direct claims ("You're shorter tonight…").
+  - Use fewer list hooks, since 3 of 4 reached under 10.
+- **Length:** default to 3–4 slides while the variant test runs. Keep one 5-slide control Reel every 3 days.
+- **Colors and music:** keep rotating palettes 0–4 and the lofi, documentary and mystery tracks.
+- **Posting times:** keep both slots so the timing observation can be checked.
 - **Captions:**
-  - Keep the current format: fact restated, one extra detail, save/share prompt, source mention.
-  - **Add a follow reason**, e.g. "Follow for one fact your brain won't believe, daily." This is a hypothesis aimed at the 0-follow problem.
+  - Keep: fact, extra detail, save/share prompt, source.
+  - Add a one-line follow reason.
 
 ## Experiments (judge at 48h+, reach ≥10 only)
-1. **Hook type (Reels only):**
-   - Alternate three hook styles: numbered list ("5 ways your brain…"), direct claim ("Your memories change every time you recall them") and "What X does to your body."
-   - Run at least 3 Reels per type.
-   - Compare skip rate, avg watch time and likes/shares per reach.
-2. **Follow conversion:**
-   - On alternate Reels, end with a final slide that teases the next fact and asks for a follow ("Part 2 tomorrow, follow so you don't miss it").
-   - Compare against Reels without it.
-   - Measure follows, profile visits/reach and shares/reach.
+1. **Variant test (continue):**
+   - Rotate short, answer and direct variants, plus the 5-slide control.
+   - Run until each has at least 3 Reels with reach ≥10.
+   - Compare skip rate and avg watch time between Reels only, never raw reach.
+2. **Follow conversion (run this time):**
+   - On alternate Reels, add a final slide: "Part 2 tomorrow, follow so you don't miss it."
+   - Post Part 2 the next day.
+   - Log which Reels carry the slide.
+   - Compare follows, profile visits/reach and shares/reach against Reels without the slide.
 
 ## Next review
-After at least 6 more Reels reach ≥10, or the first follows arrive.
+After 6 more Reels reach ≥10, or the first follow arrives.

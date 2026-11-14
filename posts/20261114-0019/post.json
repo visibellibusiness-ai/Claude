@@ -1,0 +1,108 @@
+{
+  "reasoning": "The last eight posts were all human body, and the strategy asks for 1 in 4 Reels to be animals, space or oceans, so this one is space. It uses the direct-claim style that drove the top Reels ('You're shorter tonight' 109, 'nose' 83). The hook rests on a sourced NASA figure: a teaspoon of neutron star would weigh about a billion tons. The mandatory DIRECT OPEN experiment is applied. Slide 1's title is the full hook, its body adds the size detail in 14 words, its highlight is empty, and there are 4 content slides in total. The other three slides each carry one striking number (716/s, <1 mm, 2017) to hold watch time. This Reel also runs the follow-conversion test: the last slide promises Part 2 (magnetars) tomorrow. Mystery music suits space. Palette 1 continues the rotation after palette 0. NASA is tagged because the headline figure comes from NASA's material on neutron stars.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "space",
+  "topic": "Neutron stars: density, spin speed, tiny mountains, gold from collisions",
+  "hook": "A teaspoon of neutron star weighs a billion tons",
+  "slides": [
+    {
+      "title": "A teaspoon of neutron star weighs a billion tons",
+      "body": "Neutron stars squeeze more than our Sun's mass into a ball only about 20 km wide.",
+      "highlight": "",
+      "image_query": "neutron star illustration",
+      "image_prompt": "A tiny glowing silver teaspoon holding a blazing blue-white star fragment, floating in deep space above a small city skyline for scale",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-0019/img_01.jpg",
+      "credit": "Credit: X-ray: NASA/CXC/Southampton/W. Ho et al.; Illustration: NASA/CXC/M.Weiss (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "They spin insanely fast",
+      "body": "The fastest one known turns 716 times every second, faster than a kitchen blender.",
+      "highlight": "716/s",
+      "image_query": "pulsar neutron star",
+      "image_prompt": "A dense glowing sphere spinning rapidly in space, twin beams of light sweeping out from its poles like a cosmic lighthouse",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-0019/img_02.jpg",
+      "credit": "NASA/MSFC (public domain (NASA)) via nasa",
+      "generated": false
+    },
+    {
+      "title": "Mountains under 1 mm",
+      "body": "Their gravity is so extreme that the tallest bumps on the crust are likely less than a millimeter high.",
+      "highlight": "<1 mm",
+      "image_query": "neutron star surface",
+      "image_prompt": "An extremely smooth, perfectly polished metallic sphere glowing faintly blue in black space, its surface almost flawless",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-0019/img_03.jpg",
+      "credit": "NASA/GSFC (public domain (NASA)) via nasa",
+      "generated": false
+    },
+    {
+      "title": "Crashes that forge gold",
+      "body": "In 2017, telescopes watched two neutron stars collide and create heavy elements like gold and platinum.",
+      "highlight": "2017",
+      "image_query": "kilonova neutron star merger",
+      "image_prompt": "Two bright stars spiraling into each other in space, exploding in a golden flash with glittering gold dust spraying outward",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-0019/img_04.jpg",
+      "credit": "University of Warwick/Mark Garlick (CC BY 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow to catch it.",
+  "caption": "A single teaspoon of neutron star material would weigh about a billion tons on Earth. That is more than every car on the planet put together. These dead stars pack more than the Sun's mass into a city-sized ball.\n\nPart 2 drops tomorrow: magnetars, the strongest magnets in the universe. Follow so the next weird fact finds you. Source: NASA.\n\nWhich of these four facts would you tell a friend first?\n\n📷 Credit: X-ray: NASA/CXC/Southampton/W. Ho et al.; Illustration: NASA/CXC/M.Weiss (Public domain) via wikimedia · NASA/MSFC (public domain (NASA)) via nasa · NASA/GSFC (public domain (NASA)) via nasa · University of Warwick/Mark Garlick (CC BY 4.0) via wikimedia",
+  "hashtags": [
+    "neutronstar",
+    "astronomy",
+    "spacefacts",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [
+    "nasa"
+  ],
+  "tag_reason": "NASA is the source of the teaspoon-weighs-a-billion-tons figure",
+  "sources": [
+    "NASA Imagine the Universe: Neutron Stars (imagine.gsfc.nasa.gov)",
+    "NASA Goddard: NICER mission and neutron star size and density",
+    "Hessels et al. 2006, Science: A Radio Pulsar Spinning at 716 Hz (PSR J1748-2446ad)",
+    "Gittins, Andersson & Jones 2021, MNRAS: Modelling neutron star mountains",
+    "NASA / LIGO: GW170817 neutron star merger and kilonova, 2017"
+  ],
+  "image_query": "neutron star",
+  "image_prompt": "A small silver teaspoon holding a blazing fragment of a blue-white star, floating in dark space with a glowing collapsed star behind it",
+  "design": {
+    "palette": 1,
+    "cover_label": "Space",
+    "swipe_text": "Watch to end",
+    "follow_line": "Daily facts your brain won't forget"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261114-0019/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "A single teaspoon of neutron star material would weigh about a billion tons on Earth. That is more than every car on the planet put together. These dead stars pack more than the Sun's mass into a city-sized ball.\n\nPart 2 drops tomorrow: magnetars, the strongest magnets in the universe. Follow so the next weird fact finds you. Source: NASA.\n\nWhich of these four facts would you tell a friend first?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "rise",
+      "scale",
+      "blur",
+      "right",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "glitch",
+      "punch"
+    ]
+  },
+  "music_used": "lofi"
+}
