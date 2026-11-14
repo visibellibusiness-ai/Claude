@@ -1,38 +1,42 @@
 {
-  "date": "20261113-1350",
+  "date": "20261114-1333",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "mystery",
-  "theme_index": 42,
-  "topic": "Daily news 2026-11-13",
+  "music": "documentary",
+  "theme_index": 44,
+  "topic": "Daily news 2026-11-14",
   "category": "news",
-  "hook": "Nvidia's founder quit after 33 years",
-  "slides": 3,
+  "hook": "Overloaded routers grounded US flights",
+  "slides": 5,
   "variant": null,
   "tags": [],
   "tag_reason": "",
   "design": {
     "style": "mystery",
-    "palette": 0
+    "palette": 2
   },
   "images": [
-    "posts/20261113-1350/slide_01.jpg",
-    "posts/20261113-1350/slide_02.jpg",
-    "posts/20261113-1350/slide_03.jpg",
-    "posts/20261113-1350/slide_04.jpg",
-    "posts/20261113-1350/slide_05.jpg"
+    "posts/20261114-1333/slide_01.jpg",
+    "posts/20261114-1333/slide_02.jpg",
+    "posts/20261114-1333/slide_03.jpg",
+    "posts/20261114-1333/slide_04.jpg",
+    "posts/20261114-1333/slide_05.jpg",
+    "posts/20261114-1333/slide_06.jpg",
+    "posts/20261114-1333/slide_07.jpg"
   ],
-  "story": "posts/20261113-1350/story.jpg",
+  "story": "posts/20261114-1333/story.jpg",
   "ai": true,
   "story_ai": true,
-  "caption": "💻 Jensen Huang resigned as Nvidia CEO after 33 years; CFO Colette Kress steps in. Own Nvidia or AI funds? Results land Tuesday 17 Nov.\n📡 Iran says it destroyed a US radar in Bahrain; the US says it downed two drones. Neither claim is verified.\n🚢 Iran says an LNG tanker hit a mine near Hormuz. Energy prices are worth watching.\n\nWho should lead Nvidia next: insider or outsider?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Peter Moore (CC BY-SA 2.0) via wikimedia · Gordon Leggett (CC BY-SA 4.0) via wikimedia\n\n#nvidia #jensenhuang #straitofhormuz #iran #dailynews",
-  "carousel_caption": "💻 Jensen Huang resigned as Nvidia CEO after 33 years; CFO Colette Kress steps in. Own Nvidia or AI funds? Results land Tuesday 17 Nov.\n📡 Iran says it destroyed a US radar in Bahrain; the US says it downed two drones. Neither claim is verified.\n🚢 Iran says an LNG tanker hit a mine near Hormuz. Energy prices are worth watching.\n\nWho should lead Nvidia next: insider or outsider?\n\nFollow @you.didnot.know for the daily brief.\n\nCover: Nvidia's founder quit after 33 years\n🎨 AI-generated image\n\n1/3 Nvidia's Huang steps down (33 yrs)\nJensen Huang resigned as Nvidia CEO, effective immediately. CFO Colette Kress is interim CEO; no reason was given.\n🎨 AI-generated image\n\n2/3 Iran, US clash over Bahrain (Radar)\nIran says it destroyed a US radar in Bahrain. The US says it shot down two drones, no damage.\n📷 Peter Moore (CC BY-SA 2.0) via wikimedia\n\n3/3 Tanker blasts in Hormuz (LNG)\nIran says an LNG tanker hit a mine near Hormuz. Iranian media say four oil tankers were also hit.\n📷 Gordon Leggett (CC BY-SA 4.0) via wikimedia\n\n#nvidia #jensenhuang #straitofhormuz #iran #dailynews",
+  "caption": "✈️ The FAA stopped all US departures for over four hours. Flying this weekend? Check your flight, delays continued Saturday.\n📧 Outlook, Teams and Copilot went down worldwide for two workdays. Missing emails should be arriving now.\n⚖️ The Supreme Court will rule on Trump's asylum restrictions, decision expected by summer 2027.\n🌧️ Floods in Gaza's tent camps: WHO reports rising respiratory infections.\n🇵🇪 Pope Leo XIV made an emotional return to Peru.\n\nWere you hit by the flight stop or the Outlook outage? 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 AnonymousUnknown author (CC0) via wikimedia · Joe Ravi (CC BY-SA 3.0) via wikimedia · Ceterni Perú (CC BY-SA 4.0) via wikimedia\n\n#faa #groundstop #microsoftoutage #supremecourt #dailynews",
+  "carousel_caption": "✈️ The FAA stopped all US departures for over four hours. Flying this weekend? Check your flight, delays continued Saturday.\n📧 Outlook, Teams and Copilot went down worldwide for two workdays. Missing emails should be arriving now.\n⚖️ The Supreme Court will rule on Trump's asylum restrictions, decision expected by summer 2027.\n🌧️ Floods in Gaza's tent camps: WHO reports rising respiratory infections.\n🇵🇪 Pope Leo XIV made an emotional return to Peru.\n\nWere you hit by the flight stop or the Outlook outage? 👇\nFollow @you.didnot.know for your daily brief.\n\nCover: Overloaded routers grounded US flights\n🎨 AI-generated image\n\n1/5 US flights grounded for hours (4h 21m)\nThe FAA halted all US departures for over four hours Friday. Overloaded, old network gear knocked out radar and communications.\n🎨 AI-generated image\n\n2/5 Outlook down for two workdays (130K)\nOutlook, Teams and Copilot went down worldwide from Thursday. Businesses and governments around the world lost access to email.\n📷 AnonymousUnknown author (CC0) via wikimedia\n\n3/5 Supreme Court takes asylum case (2027)\nThe Supreme Court will hear Trump's border asylum restrictions case. Lower courts ruled it unlawful, yet it stays enforced.\n📷 Joe Ravi (CC BY-SA 3.0) via wikimedia\n\n4/5 Floods hit Gaza's tent camps (90)\nHeavy rain has flooded Gaza tents since 6 November. WHO says respiratory infections are rising among the displaced.\n🎨 AI-generated image\n\n5/5 Pope Leo returns to Peru (Peru)\nPope Leo XIV celebrated Mass in Pimentel, near Chiclayo, Peru. He once served as bishop there; crowds cheered his return.\n📷 Ceterni Perú (CC BY-SA 4.0) via wikimedia\n\n#faa #groundstop #microsoftoutage #supremecourt #dailynews",
   "slide_captions": [
-    "Nvidia's founder quit after 33 years\n🎨 AI-generated image",
-    "1/3 Nvidia's Huang steps down (33 yrs)\nJensen Huang resigned as Nvidia CEO, effective immediately. CFO Colette Kress is interim CEO; no reason was given.\n🎨 AI-generated image",
-    "2/3 Iran, US clash over Bahrain (Radar)\nIran says it destroyed a US radar in Bahrain. The US says it shot down two drones, no damage.\n📷 Peter Moore (CC BY-SA 2.0) via wikimedia",
-    "3/3 Tanker blasts in Hormuz (LNG)\nIran says an LNG tanker hit a mine near Hormuz. Iranian media say four oil tankers were also hit.\n📷 Gordon Leggett (CC BY-SA 4.0) via wikimedia",
-    "Follow for your daily news brief"
+    "Overloaded routers grounded US flights\n🎨 AI-generated image",
+    "1/5 US flights grounded for hours (4h 21m)\nThe FAA halted all US departures for over four hours Friday. Overloaded, old network gear knocked out radar and communications.\n🎨 AI-generated image",
+    "2/5 Outlook down for two workdays (130K)\nOutlook, Teams and Copilot went down worldwide from Thursday. Businesses and governments around the world lost access to email.\n📷 AnonymousUnknown author (CC0) via wikimedia",
+    "3/5 Supreme Court takes asylum case (2027)\nThe Supreme Court will hear Trump's border asylum restrictions case. Lower courts ruled it unlawful, yet it stays enforced.\n📷 Joe Ravi (CC BY-SA 3.0) via wikimedia",
+    "4/5 Floods hit Gaza's tent camps (90)\nHeavy rain has flooded Gaza tents since 6 November. WHO says respiratory infections are rising among the displaced.\n🎨 AI-generated image",
+    "5/5 Pope Leo returns to Peru (Peru)\nPope Leo XIV celebrated Mass in Pimentel, near Chiclayo, Peru. He once served as bishop there; crowds cheered his return.\n📷 Ceterni Perú (CC BY-SA 4.0) via wikimedia",
+    "Follow for your daily 5-story brief"
   ]
 }

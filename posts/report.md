@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 14/11/2026 alle 00:17 UTC. Follower: 0.
+Aggiornato il 14/11/2026 alle 13:30 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 302, di cui da non follower 302 (100%).
+- Visualizzazioni: 405, di cui da non follower 405 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 13/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14/11/2026 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
 | 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
@@ -22,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 12/11/2026 00:32 | reel | Babies have about 300 bones. You have 20 | 14 | 14 | 0,0% | 0,0% | 7,1% | n/d |  |
 | 11/11/2026 18:31 | reel | You can see your nose right now | 83 | 94 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 11/11/2026 00:15 | reel | Your body glows in the dark | 13 | 12 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 10/11/2026 18:24 | reel | Your brain burns 20% of your energy | 30 | 32 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -69,12 +71,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 10/11/2026 18:24 | Your brain burns 20% of your energy | 5.769 | 66.7 |
 | 11/11/2026 00:15 | Your body glows in the dark | 6.308 | 33.3 |
 | 11/11/2026 18:31 | You can see your nose right now | 7.334 | 48.8 |
+| 12/11/2026 00:32 | Babies have about 300 bones. You have 20 | 3.984 | 57.1 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 20 | 921 | 0,0% | 0,2% |
+| reel | 21 | 935 | 0,0% | 0,2% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -82,7 +85,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 1 | 30.0 | 5769.0 | 66.7 |
+| answer | 2 | 22.0 | 4876.5 | 61.900000000000006 |
 | direct | 1 | 13.0 | 6308.0 | 33.3 |
 | short | 2 | 49.5 | 5242.5 | 57.75 |
 

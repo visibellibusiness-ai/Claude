@@ -1,0 +1,205 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-14",
+  "hook": "Overloaded routers grounded US flights",
+  "reel_hook": "Every US flight stopped. Here's why.",
+  "slides": [
+    {
+      "title": "US flights grounded for hours",
+      "highlight": "4h 21m",
+      "image_query": "airplanes parked tarmac",
+      "image_prompt": "Rows of parked passenger jets on a dark airport tarmac at night, a tangle of glowing overheated network cables and routers in the foreground",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The FAA halted all US departures for over four hours Friday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Overloaded, old network gear knocked out radar and communications."
+        ],
+        [
+          "FOR YOU",
+          "Flying this weekend? Check your flight status; delays continued Saturday morning."
+        ]
+      ],
+      "body": "The FAA halted all US departures for over four hours Friday. Overloaded, old network gear knocked out radar and communications. Flying this weekend? Check your flight status; delays continued Saturday morning.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1333/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Outlook down for two workdays",
+      "highlight": "130K",
+      "image_query": "office laptop desk",
+      "image_prompt": "An empty office desk with a closed laptop, a paper envelope caught in a tangle of unplugged cables, cold blue light",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Outlook, Teams and Copilot went down worldwide from Thursday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Businesses and governments around the world lost access to email."
+        ],
+        [
+          "FOR YOU",
+          "Missing emails from Thursday or Friday? Microsoft says queues are nearly back to normal."
+        ]
+      ],
+      "body": "Outlook, Teams and Copilot went down worldwide from Thursday. Businesses and governments around the world lost access to email. Missing emails from Thursday or Friday? Microsoft says queues are nearly back to normal.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1333/img_02.jpg",
+      "credit": "AnonymousUnknown author (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Supreme Court takes asylum case",
+      "highlight": "2027",
+      "image_query": "supreme court building",
+      "image_prompt": "Marble courthouse columns at dawn with a wooden gavel resting on a stone step, a desert border fence faint in the background",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The Supreme Court will hear Trump's border asylum restrictions case."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Lower courts ruled it unlawful, yet it stays enforced."
+        ],
+        [
+          "FOR YOU",
+          "Nothing changes yet: the policy stays until a ruling, expected by summer 2027."
+        ]
+      ],
+      "body": "The Supreme Court will hear Trump's border asylum restrictions case. Lower courts ruled it unlawful, yet it stays enforced. Nothing changes yet: the policy stays until a ruling, expected by summer 2027.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1333/img_03.jpg",
+      "credit": "Joe Ravi (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Floods hit Gaza's tent camps",
+      "highlight": "90",
+      "image_query": "flooded tent camp",
+      "image_prompt": "Rows of white tents standing in muddy floodwater under heavy grey rain clouds, puddles reflecting the sky",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Heavy rain has flooded Gaza tents since 6 November."
+        ],
+        [
+          "WHY IT MATTERS",
+          "WHO says respiratory infections are rising among the displaced."
+        ],
+        [
+          "FOR YOU",
+          "Not directly. The UN expects more waterborne disease and hypothermia this winter."
+        ]
+      ],
+      "body": "Heavy rain has flooded Gaza tents since 6 November. WHO says respiratory infections are rising among the displaced. Not directly. The UN expects more waterborne disease and hypothermia this winter.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1333/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Pope Leo returns to Peru",
+      "highlight": "Peru",
+      "image_query": "Chiclayo cathedral Peru",
+      "image_prompt": "A white papal skullcap resting on an open-air altar under a bright Peruvian sky, flower petals scattered across the ground",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Pope Leo XIV celebrated Mass in Pimentel, near Chiclayo, Peru."
+        ],
+        [
+          "WHY IT MATTERS",
+          "He once served as bishop there; crowds cheered his return."
+        ],
+        [
+          "FOR YOU",
+          "Nothing practical, just a warm moment: a pope cheered back in his old diocese."
+        ]
+      ],
+      "body": "Pope Leo XIV celebrated Mass in Pimentel, near Chiclayo, Peru. He once served as bishop there; crowds cheered his return. Nothing practical, just a warm moment: a pope cheered back in his old diocese.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261114-1333/img_05.jpg",
+      "credit": "Ceterni Perú (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily 5-story brief",
+  "caption": "✈️ The FAA stopped all US departures for over four hours. Flying this weekend? Check your flight, delays continued Saturday.\n📧 Outlook, Teams and Copilot went down worldwide for two workdays. Missing emails should be arriving now.\n⚖️ The Supreme Court will rule on Trump's asylum restrictions, decision expected by summer 2027.\n🌧️ Floods in Gaza's tent camps: WHO reports rising respiratory infections.\n🇵🇪 Pope Leo XIV made an emotional return to Peru.\n\nWere you hit by the flight stop or the Outlook outage? 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 AnonymousUnknown author (CC0) via wikimedia · Joe Ravi (CC BY-SA 3.0) via wikimedia · Ceterni Perú (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "faa",
+    "groundstop",
+    "microsoftoutage",
+    "supremecourt",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.bloomberg.com/news/articles/2026-11-14/faa-lifts-ground-stop-allowing-flights-to-resume-after-outage",
+    "https://www.cbsnews.com/news/faa-issues-nationwide-ground-stop/",
+    "https://www.flightradar24.com/blog/live/nationwide-ground-stop-issued-for-united-states/",
+    "https://abc7.com/live-updates/faa-ground-stop-live-updates-what-know-nationwide-flights-are-grounded/20038887/",
+    "https://time.com/article/2026/11/13/microsoft-outage-worldwide-disruption-teams-outlook-emails/",
+    "https://www.nbcnews.com/tech/tech-news/live-blog/microsoft-outage-outlook-teams-updates-fix-rcna609118",
+    "https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203",
+    "https://techcrunch.com/2026/11/12/microsofts-outlook-email-hit-by-new-outage/",
+    "https://www.yahoo.com/news/politics/articles/supreme-court-weigh-trumps-asylum-185204970.html",
+    "https://www.yahoo.com/news/politics/articles/supreme-court-consider-trump-executive-185415043.html",
+    "https://www.cbsnews.com/news/supreme-court-trump-asylum-u-s-mexico-border/",
+    "https://thehill.com/regulation/court-battles/6219384-supreme-court-trump-asylum-restrictions/",
+    "https://www.ochaopt.org/content/humanitarian-situation-report-13-november-2026",
+    "https://www.wbur.org/hereandnow/2026/11/13/gaza-winter-flood",
+    "https://www.timesofisrael.com/liveblog-november-13-2026/",
+    "https://www.aljazeera.com/news/",
+    "https://www.nbcnews.com/nightly-news"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 14 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "airplanes parked tarmac",
+  "image_prompt": "Rows of parked passenger jets on a night tarmac, a giant tangle of overheated glowing routers and network cables looming over them like a storm cloud",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261114-1333/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "✈️ The FAA stopped all US departures for over four hours. Flying this weekend? Check your flight, delays continued Saturday.\n📧 Outlook, Teams and Copilot went down worldwide for two workdays. Missing emails should be arriving now.\n⚖️ The Supreme Court will rule on Trump's asylum restrictions, decision expected by summer 2027.\n🌧️ Floods in Gaza's tent camps: WHO reports rising respiratory infections.\n🇵🇪 Pope Leo XIV made an emotional return to Peru.\n\nWere you hit by the flight stop or the Outlook outage? 👇\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "rise",
+      "right",
+      "rise",
+      "right",
+      "blur",
+      "scale",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "cut",
+      "punch",
+      "flash",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}
