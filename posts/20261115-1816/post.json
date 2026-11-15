@@ -1,0 +1,104 @@
+{
+  "reasoning": "Animals is due under the 1-in-4 rotation; the last non-body post was space on 14 Nov. Crows recognising faces is a well-documented, counterintuitive claim from the University of Washington mask studies, and it fits the direct-claim hooks that gave our best skip rates. For the DIRECT OPEN test, slide 1's title is the strongest sentence on its own. Its body gives the key proof in 15 words with no highlight. There are 4 content slides with short text. This Reel also runs the follow-conversion experiment: the CTA promises Part 2, which will be crow intelligence (tools, counting, funerals) posted tomorrow. It should be logged as carrying the Part 2 slide. Lofi music and palette 4 continue the rotation. No tags, because the source (University of Washington) is not on the allowed list.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "animals",
+  "topic": "Crows recognize human faces and hold grudges (UW mask study)",
+  "hook": "Crows remember your face for years",
+  "slides": [
+    {
+      "title": "Crows remember your face for years",
+      "body": "In Seattle, scientists in masks trapped crows. Years later, crows still scolded that exact mask.",
+      "highlight": "",
+      "image_query": "american crow close up",
+      "image_prompt": "Black crow perched on a branch staring directly forward, sharp eye in focus, soft morning light, dark green background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1816/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "They pass on the grudge",
+      "body": "Crows that were never trapped learned to scold the mask too, by copying the others.",
+      "highlight": "Shared",
+      "image_query": "crows on wire",
+      "image_prompt": "Group of black crows on a power line, several turned toward the same point, overcast sky",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1816/img_02.jpg",
+      "credit": "Sardaka (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "They judge the face",
+      "body": "A neutral mask worn on the same walks got almost no scolding. Only the 'dangerous' face mattered.",
+      "highlight": "Face",
+      "image_query": "crow perched branch",
+      "image_prompt": "Two plain masks hanging on a tree branch, one dark and one pale, a crow perched nearby watching them",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1816/img_03.jpg",
+      "credit": "Alexis Lours (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Brain scans agree",
+      "body": "Seeing the threatening face lit up crow brain areas linked to fear and learning, much like ours.",
+      "highlight": "Fear",
+      "image_query": "crow head profile",
+      "image_prompt": "Glowing stylised bird brain floating above a crow silhouette, warm orange light inside, dark blue background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1816/img_04.jpg",
+      "credit": "Mindaugas Urbonas  from Lithuanian wikipedia (Profile, Advento kalendoriai, Kalė (CC BY-SA 2.5) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow: follow to catch it",
+  "caption": "In 2006, researchers at the University of Washington wore a caveman mask while trapping a few wild crows. Years later, crows on campus still dive-bombed and scolded anyone wearing that mask, even birds that were never caught.\n\nCrows learn faces, share warnings with each other and remember for years. Tomorrow's Part 2 covers what else these birds can do. Follow so you don't miss it.\n\nHave you ever had a bird that seemed to recognise you?\n\n📷 cuatrok77 (CC BY 2.0) via wikimedia · Sardaka (CC BY-SA 4.0) via wikimedia · Alexis Lours (CC BY 4.0) via wikimedia · Mindaugas Urbonas  from Lithuanian wikipedia (Profile, Advento kalendoriai, Kalė (CC BY-SA 2.5) via wikimedia",
+  "hashtags": [
+    "crows",
+    "animalintelligence",
+    "birdfacts",
+    "animalfacts",
+    "sciencefacts"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Marzluff J.M. et al. (2010) Lasting recognition of threatening people by wild American crows. Animal Behaviour 79(3): 699-707",
+    "Marzluff J.M. et al. (2012) Brain imaging reveals neuronal circuitry underlying the crow's perception of human faces. PNAS 109(39): 15912-15917",
+    "University of Washington News: Crows remember human faces and share the warning"
+  ],
+  "image_query": "american crow portrait",
+  "image_prompt": "Close-up of a black crow with glossy feathers looking straight ahead, intense eye, dramatic side light, dark moody background",
+  "design": {
+    "palette": 4,
+    "cover_label": "Animal minds",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts you won't believe are true"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261115-1816/img_cover.jpg",
+  "cover_credit": "cuatrok77 (CC BY 2.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "In 2006, researchers at the University of Washington wore a caveman mask while trapping a few wild crows. Years later, crows on campus still dive-bombed and scolded anyone wearing that mask, even birds that were never caught.\n\nCrows learn faces, share warnings with each other and remember for years. Tomorrow's Part 2 covers what else these birds can do. Follow so you don't miss it.\n\nHave you ever had a bird that seemed to recognise you?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "rise",
+      "blur",
+      "rise",
+      "right",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "dip",
+      "punch"
+    ]
+  },
+  "music_used": "lofi"
+}
