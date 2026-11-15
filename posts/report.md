@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 14/11/2026 alle 18:16 UTC. Follower: 0.
+Aggiornato il 15/11/2026 alle 00:13 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 405, di cui da non follower 405 (100%).
+- Visualizzazioni: 293, di cui da non follower 293 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 14/11/2026 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 14/11/2026 | 7 | 7 | 8 | 8 | 0 | 0 |
 | 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
 | 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 | 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
-| 08/11/2026 | 109 | 109 | 119 | 119 | 3 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 12/11/2026 18:31 | reel | Your fingers have zero muscles | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 12/11/2026 00:32 | reel | Babies have about 300 bones. You have 20 | 14 | 14 | 0,0% | 0,0% | 7,1% | n/d |  |
 | 11/11/2026 18:31 | reel | You can see your nose right now | 83 | 94 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 11/11/2026 00:15 | reel | Your body glows in the dark | 13 | 12 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -43,7 +43,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 03/11/2026 00:14 | reel | What holding your breath really does | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 02/11/2026 18:32 | reel | Your brain won't let you tickle yourself | 61 | 71 | 0,0% | 0,0% | 1,6% | n/d |  |
 | 02/11/2026 00:11 | reel | Your memories change every time you reca | 94 | 105 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 01/11/2026 00:11 | reel | What happens to your body without sleep | 104 | 119 | 0,0% | 1,9% | 1,9% | n/d |  |
 
 ### Reel
 
@@ -51,7 +50,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 01/11/2026 00:11 | What happens to your body without sleep | 5.024 | 74 |
 | 02/11/2026 00:11 | Your memories change every time you reca | 5.501 | 70.1 |
 | 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.577 | 75.8 |
 | 03/11/2026 00:14 | What holding your breath really does | 3.351 | 77.8 |
@@ -63,7 +61,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 06/11/2026 00:19 | Why you can't remember being a baby | 2.985 | 72.7 |
 | 06/11/2026 18:30 | What coffee really does to your brain | 50.999 | 0 |
 | 07/11/2026 00:17 | 5 senses nobody taught you in school | 3.650 | 100 |
-| 07/11/2026 18:14 | You're shorter tonight than this morning | 3.968 | 65.5 |
+| 07/11/2026 18:14 | You're shorter tonight than this morning | 3.936 | 65.5 |
 | 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
 | 08/11/2026 18:14 | 5 body parts evolution forgot to delete | 10.815 | 66.7 |
 | 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
@@ -72,12 +70,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 11/11/2026 00:15 | Your body glows in the dark | 6.308 | 33.3 |
 | 11/11/2026 18:31 | You can see your nose right now | 7.334 | 48.8 |
 | 12/11/2026 00:32 | Babies have about 300 bones. You have 20 | 3.984 | 57.1 |
+| 12/11/2026 18:31 | Your fingers have zero muscles | 2.671 | 80 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 21 | 935 | 0,0% | 0,2% |
+| reel | 21 | 836 | 0,0% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -86,7 +85,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
 | answer | 2 | 22.0 | 4876.5 | 61.900000000000006 |
-| direct | 1 | 13.0 | 6308.0 | 33.3 |
+| direct | 2 | 9.0 | 4489.5 | 56.65 |
 | short | 2 | 49.5 | 5242.5 | 57.75 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
