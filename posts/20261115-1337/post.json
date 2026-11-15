@@ -1,0 +1,203 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-15",
+  "hook": "Six drones, two very different stories",
+  "reel_hook": "Six drones. Two very different stories.",
+  "slides": [
+    {
+      "title": "Iran drones target US-used base",
+      "highlight": "6",
+      "image_query": "Bahrain skyline",
+      "image_prompt": "Small military drones crossing a dusky sky over calm Gulf water, a radar dish on a desert shoreline, two searchlight beams crossing",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran says it struck Riffa base; Bahrain says it intercepted."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Second claimed Iranian attack on US assets in days."
+        ],
+        [
+          "FOR YOU",
+          "Gulf tensions rise, though Iran says a path to a US deal remains open."
+        ]
+      ],
+      "body": "Iran says it struck Riffa base; Bahrain says it intercepted. Second claimed Iranian attack on US assets in days. Gulf tensions rise, though Iran says a path to a US deal remains open.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1337/img_01.jpg",
+      "credit": "Zairon (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Trump, Xi, Putin: first trio",
+      "highlight": "Nov 19",
+      "image_query": "Shenzhen skyline night",
+      "image_prompt": "Three empty chairs around a round table in a grand hall, city skyline glowing through tall windows behind",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Trump, Xi and Putin meet Nov 19 in Shenzhen at APEC."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First formal three-way US-China-Russia leaders' meeting."
+        ],
+        [
+          "FOR YOU",
+          "Nuclear arsenal cuts and Iran are on the table; Ukraine isn't, US officials say."
+        ]
+      ],
+      "body": "Trump, Xi and Putin meet Nov 19 in Shenzhen at APEC. First formal three-way US-China-Russia leaders' meeting. Nuclear arsenal cuts and Iran are on the table; Ukraine isn't, US officials say.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1337/img_02.jpg",
+      "credit": "Vikarna (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "One router grounded US flights",
+      "highlight": "20,000",
+      "image_query": "network router cables",
+      "image_prompt": "A single network router with tangled glowing fiber cables, tiny parked airplanes lined up beside it on a dark runway",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A router swap overloaded FAA systems, halting US flights."
+        ],
+        [
+          "WHY IT MATTERS",
+          "More than 20,000 flights disrupted since Friday."
+        ],
+        [
+          "FOR YOU",
+          "Crews are out of position, so check your flight status before heading out."
+        ]
+      ],
+      "body": "A router swap overloaded FAA systems, halting US flights. More than 20,000 flights disrupted since Friday. Crews are out of position, so check your flight status before heading out.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1337/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "US pushes Europe–Russia talks",
+      "highlight": "",
+      "image_query": "European Union flags",
+      "image_prompt": "Two empty chairs facing each other across a long negotiating table, a paper map of Europe spread between them, soft daylight",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Kushner says the US is setting up Europe–Russia talks."
+        ],
+        [
+          "WHY IT MATTERS",
+          "He says no Ukraine peace deal works without Europe."
+        ],
+        [
+          "FOR YOU",
+          "No deal yet: the last round only planned a prisoner swap and more talks."
+        ]
+      ],
+      "body": "Kushner says the US is setting up Europe–Russia talks. He says no Ukraine peace deal works without Europe. No deal yet: the last round only planned a prisoner swap and more talks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1337/img_04.jpg",
+      "credit": "Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Last time before 2023? 9/11",
+      "highlight": "9/11",
+      "image_query": "empty airport runway",
+      "image_prompt": "A quiet empty runway at dawn with rows of parked airplanes, runway lights glowing, calm pastel sky",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Friday's halt was the first US nationwide stop since 2023."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The one before that came after 9/11."
+        ],
+        [
+          "FOR YOU",
+          "Good news: the FAA expects flights back to normal by Sunday night."
+        ]
+      ],
+      "body": "Friday's halt was the first US nationwide stop since 2023. The one before that came after 9/11. Good news: the FAA expects flights back to normal by Sunday night.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261115-1337/img_05.jpg",
+      "credit": "Stinger20 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for the news you did not know",
+  "caption": "🛩️ Iran says it hit a US-used base in Bahrain; Bahrain says it intercepted the attack.\n🤝 Trump, Xi and Putin meet Nov 19 in Shenzhen, a first.\n📡 One router swap disrupted 20,000+ US flights. Flying soon? Check your status.\n🕊️ The US wants direct Europe–Russia talks on Ukraine.\n✈️ The FAA expects flights normal by Sunday night.\n\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.\n\n📷 Zairon (CC BY-SA 4.0) via wikimedia · Vikarna (CC BY-SA 4.0) via wikimedia · Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia · Stinger20 (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "iran",
+    "bahrain",
+    "apec",
+    "faa",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.bloomberg.com/news/articles/2026-11-15/iran-strikes-bahrain-base-repeats-path-to-us-deal-remains-open",
+    "https://www.aljazeera.com/news/2026/11/15/bahrain-accuses-iran-of-attacking-its-territory-to-settle-score-with-us",
+    "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know",
+    "https://www.bloomberg.com/news/articles/2026-11-13/trump-to-meet-with-xi-putin-nov-19-in-china-white-house-says",
+    "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/",
+    "https://www.aa.com.tr/en/eurasia/kremlin-says-putin-xi-trump-to-hold-trilateral-meeting-in-shenzhen-on-nov-19/4125290",
+    "https://www.investing.com/news/stock-market-news/us-aviation-shutdown-blamed-on-l3-harris-installed-router-5027495",
+    "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/",
+    "https://www.aljazeera.com/news/2026/11/15/what-forced-the-us-to-ground-all-planes-a-router-switch-we-now-know",
+    "https://www.axios.com/2026/11/14/faa-ground-stop-outage-update",
+    "https://www.cbsnews.com/news/us-europe-russia-engagement-ukraine-war/",
+    "https://www.spokesman.com/stories/2026/nov/14/kushner-wants-direct-russia-europe-talks-in-ukrain/",
+    "https://aljazeera.com/news/2026/11/14/us-envoy-kushner-says-he-aims-to-broker-europe-russia-talks-on-ukraine",
+    "https://www.investing.com/news/stock-market-news/us-aviation-shutdown-blamed-on-l3-harris-installed-router-5027495",
+    "https://www.cbsnews.com/news/faa-ground-stop-canceled-flights-travelers-what-we-know/"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 15 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "Bahrain skyline",
+  "image_prompt": "Six small drones crossing a dusky sky above calm Gulf water, a lone radar dish on a desert shore, two searchlight beams crossing in opposite directions",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261115-1337/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🛩️ Iran says it hit a US-used base in Bahrain; Bahrain says it intercepted the attack.\n🤝 Trump, Xi and Putin meet Nov 19 in Shenzhen, a first.\n📡 One router swap disrupted 20,000+ US flights. Flying soon? Check your status.\n🕊️ The US wants direct Europe–Russia talks on Ukraine.\n✈️ The FAA expects flights normal by Sunday night.\n\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "rise",
+      "scale",
+      "rise",
+      "scale",
+      "rise",
+      "blur",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "dip",
+      "punch",
+      "glitch",
+      "flash"
+    ]
+  },
+  "music_used": "lofi"
+}

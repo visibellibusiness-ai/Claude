@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 15/11/2026 alle 00:13 UTC. Follower: 0.
+Aggiornato il 15/11/2026 alle 13:31 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 293, di cui da non follower 293 (100%).
+- Visualizzazioni: 409, di cui da non follower 409 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 14/11/2026 | 7 | 7 | 8 | 8 | 0 | 0 |
+| 15/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 14/11/2026 | 113 | 113 | 124 | 124 | 0 | 0 |
 | 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
 | 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
@@ -22,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 13/11/2026 00:24 | reel | What extreme heat does to your body | 2 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 12/11/2026 18:31 | reel | Your fingers have zero muscles | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 12/11/2026 00:32 | reel | Babies have about 300 bones. You have 20 | 14 | 14 | 0,0% | 0,0% | 7,1% | n/d |  |
 | 11/11/2026 18:31 | reel | You can see your nose right now | 83 | 94 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -71,12 +73,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 11/11/2026 18:31 | You can see your nose right now | 7.334 | 48.8 |
 | 12/11/2026 00:32 | Babies have about 300 bones. You have 20 | 3.984 | 57.1 |
 | 12/11/2026 18:31 | Your fingers have zero muscles | 2.671 | 80 |
+| 13/11/2026 00:24 | What extreme heat does to your body | 1.035 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 21 | 836 | 0,0% | 0,0% |
+| reel | 22 | 838 | 0,0% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -86,6 +89,6 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 |---|---|---|---|---|
 | answer | 2 | 22.0 | 4876.5 | 61.900000000000006 |
 | direct | 2 | 9.0 | 4489.5 | 56.65 |
-| short | 2 | 49.5 | 5242.5 | 57.75 |
+| short | 3 | 33.666666666666664 | 3840.0 | 71.83333333333333 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

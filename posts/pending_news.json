@@ -1,13 +1,13 @@
 {
-  "date": "20261114-1333",
+  "date": "20261115-1337",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "documentary",
-  "theme_index": 44,
-  "topic": "Daily news 2026-11-14",
+  "music": "lofi",
+  "theme_index": 46,
+  "topic": "Daily news 2026-11-15",
   "category": "news",
-  "hook": "Overloaded routers grounded US flights",
+  "hook": "Six drones, two very different stories",
   "slides": 5,
   "variant": null,
   "tags": [],
@@ -17,26 +17,26 @@
     "palette": 2
   },
   "images": [
-    "posts/20261114-1333/slide_01.jpg",
-    "posts/20261114-1333/slide_02.jpg",
-    "posts/20261114-1333/slide_03.jpg",
-    "posts/20261114-1333/slide_04.jpg",
-    "posts/20261114-1333/slide_05.jpg",
-    "posts/20261114-1333/slide_06.jpg",
-    "posts/20261114-1333/slide_07.jpg"
+    "posts/20261115-1337/slide_01.jpg",
+    "posts/20261115-1337/slide_02.jpg",
+    "posts/20261115-1337/slide_03.jpg",
+    "posts/20261115-1337/slide_04.jpg",
+    "posts/20261115-1337/slide_05.jpg",
+    "posts/20261115-1337/slide_06.jpg",
+    "posts/20261115-1337/slide_07.jpg"
   ],
-  "story": "posts/20261114-1333/story.jpg",
+  "story": "posts/20261115-1337/story.jpg",
   "ai": true,
   "story_ai": true,
-  "caption": "✈️ The FAA stopped all US departures for over four hours. Flying this weekend? Check your flight, delays continued Saturday.\n📧 Outlook, Teams and Copilot went down worldwide for two workdays. Missing emails should be arriving now.\n⚖️ The Supreme Court will rule on Trump's asylum restrictions, decision expected by summer 2027.\n🌧️ Floods in Gaza's tent camps: WHO reports rising respiratory infections.\n🇵🇪 Pope Leo XIV made an emotional return to Peru.\n\nWere you hit by the flight stop or the Outlook outage? 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 AnonymousUnknown author (CC0) via wikimedia · Joe Ravi (CC BY-SA 3.0) via wikimedia · Ceterni Perú (CC BY-SA 4.0) via wikimedia\n\n#faa #groundstop #microsoftoutage #supremecourt #dailynews",
-  "carousel_caption": "✈️ The FAA stopped all US departures for over four hours. Flying this weekend? Check your flight, delays continued Saturday.\n📧 Outlook, Teams and Copilot went down worldwide for two workdays. Missing emails should be arriving now.\n⚖️ The Supreme Court will rule on Trump's asylum restrictions, decision expected by summer 2027.\n🌧️ Floods in Gaza's tent camps: WHO reports rising respiratory infections.\n🇵🇪 Pope Leo XIV made an emotional return to Peru.\n\nWere you hit by the flight stop or the Outlook outage? 👇\nFollow @you.didnot.know for your daily brief.\n\nCover: Overloaded routers grounded US flights\n🎨 AI-generated image\n\n1/5 US flights grounded for hours (4h 21m)\nThe FAA halted all US departures for over four hours Friday. Overloaded, old network gear knocked out radar and communications.\n🎨 AI-generated image\n\n2/5 Outlook down for two workdays (130K)\nOutlook, Teams and Copilot went down worldwide from Thursday. Businesses and governments around the world lost access to email.\n📷 AnonymousUnknown author (CC0) via wikimedia\n\n3/5 Supreme Court takes asylum case (2027)\nThe Supreme Court will hear Trump's border asylum restrictions case. Lower courts ruled it unlawful, yet it stays enforced.\n📷 Joe Ravi (CC BY-SA 3.0) via wikimedia\n\n4/5 Floods hit Gaza's tent camps (90)\nHeavy rain has flooded Gaza tents since 6 November. WHO says respiratory infections are rising among the displaced.\n🎨 AI-generated image\n\n5/5 Pope Leo returns to Peru (Peru)\nPope Leo XIV celebrated Mass in Pimentel, near Chiclayo, Peru. He once served as bishop there; crowds cheered his return.\n📷 Ceterni Perú (CC BY-SA 4.0) via wikimedia\n\n#faa #groundstop #microsoftoutage #supremecourt #dailynews",
+  "caption": "🛩️ Iran says it hit a US-used base in Bahrain; Bahrain says it intercepted the attack.\n🤝 Trump, Xi and Putin meet Nov 19 in Shenzhen, a first.\n📡 One router swap disrupted 20,000+ US flights. Flying soon? Check your status.\n🕊️ The US wants direct Europe–Russia talks on Ukraine.\n✈️ The FAA expects flights normal by Sunday night.\n\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.\n\n📷 Zairon (CC BY-SA 4.0) via wikimedia · Vikarna (CC BY-SA 4.0) via wikimedia · Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia · Stinger20 (CC BY-SA 4.0) via wikimedia\n\n#iran #bahrain #apec #faa #dailynews",
+  "carousel_caption": "🛩️ Iran says it hit a US-used base in Bahrain; Bahrain says it intercepted the attack.\n🤝 Trump, Xi and Putin meet Nov 19 in Shenzhen, a first.\n📡 One router swap disrupted 20,000+ US flights. Flying soon? Check your status.\n🕊️ The US wants direct Europe–Russia talks on Ukraine.\n✈️ The FAA expects flights normal by Sunday night.\n\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.\n\nCover: Six drones, two very different stories\n🎨 AI-generated image\n\n1/5 Iran drones target US-used base (6)\nIran says it struck Riffa base; Bahrain says it intercepted. Second claimed Iranian attack on US assets in days.\n📷 Zairon (CC BY-SA 4.0) via wikimedia\n\n2/5 Trump, Xi, Putin: first trio (Nov 19)\nTrump, Xi and Putin meet Nov 19 in Shenzhen at APEC. First formal three-way US-China-Russia leaders' meeting.\n📷 Vikarna (CC BY-SA 4.0) via wikimedia\n\n3/5 One router grounded US flights (20,000)\nA router swap overloaded FAA systems, halting US flights. More than 20,000 flights disrupted since Friday.\n🎨 AI-generated image\n\n4/5 US pushes Europe–Russia talks\nKushner says the US is setting up Europe–Russia talks. He says no Ukraine peace deal works without Europe.\n📷 Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia\n\n5/5 Last time before 2023? 9/11 (9/11)\nFriday's halt was the first US nationwide stop since 2023. The one before that came after 9/11.\n📷 Stinger20 (CC BY-SA 4.0) via wikimedia\n\n#iran #bahrain #apec #faa #dailynews",
   "slide_captions": [
-    "Overloaded routers grounded US flights\n🎨 AI-generated image",
-    "1/5 US flights grounded for hours (4h 21m)\nThe FAA halted all US departures for over four hours Friday. Overloaded, old network gear knocked out radar and communications.\n🎨 AI-generated image",
-    "2/5 Outlook down for two workdays (130K)\nOutlook, Teams and Copilot went down worldwide from Thursday. Businesses and governments around the world lost access to email.\n📷 AnonymousUnknown author (CC0) via wikimedia",
-    "3/5 Supreme Court takes asylum case (2027)\nThe Supreme Court will hear Trump's border asylum restrictions case. Lower courts ruled it unlawful, yet it stays enforced.\n📷 Joe Ravi (CC BY-SA 3.0) via wikimedia",
-    "4/5 Floods hit Gaza's tent camps (90)\nHeavy rain has flooded Gaza tents since 6 November. WHO says respiratory infections are rising among the displaced.\n🎨 AI-generated image",
-    "5/5 Pope Leo returns to Peru (Peru)\nPope Leo XIV celebrated Mass in Pimentel, near Chiclayo, Peru. He once served as bishop there; crowds cheered his return.\n📷 Ceterni Perú (CC BY-SA 4.0) via wikimedia",
-    "Follow for your daily 5-story brief"
+    "Six drones, two very different stories\n🎨 AI-generated image",
+    "1/5 Iran drones target US-used base (6)\nIran says it struck Riffa base; Bahrain says it intercepted. Second claimed Iranian attack on US assets in days.\n📷 Zairon (CC BY-SA 4.0) via wikimedia",
+    "2/5 Trump, Xi, Putin: first trio (Nov 19)\nTrump, Xi and Putin meet Nov 19 in Shenzhen at APEC. First formal three-way US-China-Russia leaders' meeting.\n📷 Vikarna (CC BY-SA 4.0) via wikimedia",
+    "3/5 One router grounded US flights (20,000)\nA router swap overloaded FAA systems, halting US flights. More than 20,000 flights disrupted since Friday.\n🎨 AI-generated image",
+    "4/5 US pushes Europe–Russia talks\nKushner says the US is setting up Europe–Russia talks. He says no Ukraine peace deal works without Europe.\n📷 Håkan Dahlström from Malmö, Sweden (CC BY 2.0) via wikimedia",
+    "5/5 Last time before 2023? 9/11 (9/11)\nFriday's halt was the first US nationwide stop since 2023. The one before that came after 9/11.\n📷 Stinger20 (CC BY-SA 4.0) via wikimedia",
+    "Follow for the news you did not know"
   ]
 }
