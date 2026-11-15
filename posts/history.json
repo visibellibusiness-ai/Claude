@@ -1226,5 +1226,23 @@
       "palette": 2
     },
     "media_id": "18110661530629151"
+  },
+  {
+    "date": "20261115-0014",
+    "series": "facts",
+    "topic": "Red blood cell production: 2 million per second, no nucleus, 84% of cells, 120-day lifespan",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "You make 2 million blood cells every second",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "17964597465253234"
   }
 ]
