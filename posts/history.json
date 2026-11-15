@@ -1256,5 +1256,23 @@
       "palette": 3
     },
     "media_id": "17964597465253234"
+  },
+  {
+    "date": "20261115-1816",
+    "series": "facts",
+    "topic": "Crows recognize human faces and hold grudges (UW mask study)",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "animals",
+    "hook": "Crows remember your face for years",
+    "slides": 4,
+    "variant": "direct",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "18224240692352819"
   }
 ]
