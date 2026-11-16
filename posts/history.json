@@ -1328,5 +1328,23 @@
       "palette": 0
     },
     "media_id": "18648980098039052"
+  },
+  {
+    "date": "20261116-1832",
+    "series": "facts",
+    "topic": "Blue whale heart: 2 bpm on dives, surface racing, 180 kg heart, size limit",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "oceans",
+    "hook": "Blue whale hearts can beat twice a minute",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "18000358815041791"
   }
 ]
