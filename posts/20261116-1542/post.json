@@ -1,0 +1,203 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-16",
+  "hook": "Iran aims 6 drones at a US radar",
+  "reel_hook": "6 Iranian drones. 1 US radar.",
+  "slides": [
+    {
+      "title": "Iran targets Bahrain again",
+      "highlight": "6",
+      "image_query": "aircraft carrier at sea",
+      "image_prompt": "Radar dish on a desert air base at dusk, small drone silhouettes in an orange sky, a grey aircraft carrier on the sea horizon",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran aimed 6 drones at a US radar; Bahrain intercepted."
+        ],
+        [
+          "WHY IT MATTERS",
+          "2nd attack in 3 days; 3rd US carrier reportedly arrives."
+        ],
+        [
+          "FOR YOU",
+          "Tension is rising again in the Gulf, a key route for the world's oil."
+        ]
+      ],
+      "body": "Iran aimed 6 drones at a US radar; Bahrain intercepted. 2nd attack in 3 days; 3rd US carrier reportedly arrives. Tension is rising again in the Gulf, a key route for the world's oil.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1542/img_01.jpg",
+      "credit": "Mass Communication Specialist Seaman Ricardo R. Guzman/U.S. Navy (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Trump, Xi and Putin to meet",
+      "highlight": "19 Nov",
+      "image_query": "shenzhen skyline",
+      "image_prompt": "Three empty chairs around a round table in a modern conference hall, a city skyline glowing through tall windows",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The three leaders meet Thursday in Shenzhen, China, at APEC."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First-ever three-way talks; Trump wants nuclear arsenal cuts."
+        ],
+        [
+          "FOR YOU",
+          "Talks on cutting nuclear weapons could follow, but nothing is agreed yet."
+        ]
+      ],
+      "body": "The three leaders meet Thursday in Shenzhen, China, at APEC. First-ever three-way talks; Trump wants nuclear arsenal cuts. Talks on cutting nuclear weapons could follow, but nothing is agreed yet.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1542/img_02.jpg",
+      "credit": "Dinkun Chen (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Ukraine's record drone attack",
+      "highlight": "1,336",
+      "image_query": "crimean bridge",
+      "image_prompt": "Long road and rail bridge over a dark sea at night, a swarm of small drone silhouettes crossing the sky",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russia says it downed 1,336 Ukrainian drones overnight."
+        ],
+        [
+          "WHY IT MATTERS",
+          "By Russia's count, the war's biggest Ukrainian drone attack."
+        ],
+        [
+          "FOR YOU",
+          "Nothing changes for you directly, but the drone war keeps escalating."
+        ]
+      ],
+      "body": "Russia says it downed 1,336 Ukrainian drones overnight. By Russia's count, the war's biggest Ukrainian drone attack. Nothing changes for you directly, but the drone war keeps escalating.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1542/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "COP31 drafts a climate deal",
+      "highlight": "35%",
+      "image_query": "wind turbines solar panels",
+      "image_prompt": "A globe on a negotiating table beside a power plug and a lump of coal, Mediterranean coastline in the background",
+      "label": "SCIENCE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "COP31 in Turkey published its first draft deal on Monday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Nearly 200 nations must sign off; fossil fuels still divide."
+        ],
+        [
+          "FOR YOU",
+          "It includes a goal: electricity at 35% of energy use by 2035."
+        ]
+      ],
+      "body": "COP31 in Turkey published its first draft deal on Monday. Nearly 200 nations must sign off; fossil fuels still divide. It includes a goal: electricity at 35% of energy use by 2035.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1542/img_04.jpg",
+      "credit": "Geographer (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "England stun Spain 3-2",
+      "highlight": "43",
+      "image_query": "football stadium night",
+      "image_prompt": "A football resting in a bulging goal net inside a floodlit stadium at night, green grass glowing under the lights",
+      "label": "SPORT",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "England beat world champions Spain 3-2 in Madrid."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It ended Spain's record 43-match unbeaten run."
+        ],
+        [
+          "FOR YOU",
+          "England top their Nations League group; Kane, Konsa and White scored."
+        ]
+      ],
+      "body": "England beat world champions Spain 3-2 in Madrid. It ended Spain's record 43-match unbeaten run. England top their Nations League group; Kane, Konsa and White scored.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1542/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow @you.didnot.know for daily news",
+  "caption": "🇧🇭 Iran says it aimed 6 drones at a US radar in Bahrain; a 3rd US carrier reportedly arrived.\n🤝 Trump, Xi and Putin meet Thursday in Shenzhen, with nuclear arms cuts on Trump's list.\n🛸 Russia says it downed 1,336 Ukrainian drones overnight, a war record by its count.\n🌍 COP31's first draft deal is out: it could shape energy rules, including 35% electricity by 2035.\n⚽ England beat Spain 3-2, ending their 43-match unbeaten run.\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.\n\n📷 Mass Communication Specialist Seaman Ricardo R. Guzman/U.S. Navy (Public domain) via wikimedia · Dinkun Chen (CC BY-SA 4.0) via wikimedia · Geographer (CC BY-SA 2.0) via wikimedia",
+  "hashtags": [
+    "iran",
+    "bahrain",
+    "cop31",
+    "worldnews",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.france24.com/en/middle-east/20261115-iran-claims-attack-on-us-military-airbase-in-bahrain",
+    "https://www.aljazeera.com/news/2026/11/15/iran-says-it-targets-us-radar-in-bahrain-what-do-we-know",
+    "https://www.stripes.com/branches/navy/2026-11-16/roosevelt-middle-east-iran-attacks-bahrain-23481485.html",
+    "https://www.timesofisrael.com/third-us-aircraft-carrier-arrives-in-mideast-as-iran-rules-out-nuclear-inspections/",
+    "https://www.aljazeera.com/news/2026/11/14/trump-xi-and-putin-to-hold-first-three-way-summit-in-china",
+    "https://www.cbsnews.com/news/trump-putin-xi-jinping-meeting-china-us-russia-talks/",
+    "https://www.aa.com.tr/en/eurasia/kremlin-says-putin-xi-trump-to-hold-trilateral-meeting-in-shenzhen-on-nov-19/4125290",
+    "https://www.yahoo.com/news/world/articles/ukraine-launches-biggest-drone-attack-103332284.html",
+    "https://www.cbc.ca/news/world/ukraine-russia-drone-attacks-9.7423256",
+    "https://www.nbcnews.com/world/ukraine/ukraine-launches-biggest-drone-attack-russia-war-began-rcna609555",
+    "https://www.yahoo.com/news/articles/first-draft-cop31-deal-signals-140910867.html",
+    "https://www.france24.com/en/live-news/20261116-cop31-draft-deal-calls-for-accelerated-action-to-exit-fossil-fuels",
+    "https://uefa.com/uefanationsleague/news/02ab-22146db70e40-12d581ab82a9-1000--uefa-nations-league-matchday-6-highlights-belgium-france",
+    "https://sports.yahoo.com/articles/england-beat-spain-nations-league-220146383.html",
+    "https://uk.news.yahoo.com/england-hold-victory-over-spain-230046264.html"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 16 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "aircraft carrier at sea",
+  "image_prompt": "Radar dish on a desert air base at dusk, six small drone silhouettes approaching in an orange sky, a grey aircraft carrier on the horizon",
+  "music": "mystery",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261116-1542/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🇧🇭 Iran says it aimed 6 drones at a US radar in Bahrain; a 3rd US carrier reportedly arrived.\n🤝 Trump, Xi and Putin meet Thursday in Shenzhen, with nuclear arms cuts on Trump's list.\n🛸 Russia says it downed 1,336 Ukrainian drones overnight, a war record by its count.\n🌍 COP31's first draft deal is out: it could shape energy rules, including 35% electricity by 2035.\n⚽ England beat Spain 3-2, ending their 43-match unbeaten run.\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "left",
+      "rise",
+      "left",
+      "rise",
+      "scale",
+      "right",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "flash",
+      "glitch",
+      "dip",
+      "flash"
+    ]
+  },
+  "music_used": "mystery"
+}
