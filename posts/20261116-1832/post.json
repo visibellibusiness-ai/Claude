@@ -1,0 +1,106 @@
+{
+  "reasoning": "The mandatory experiment calls for an answer-first hook with 4 content slides. The strategy asks for 1 in 4 Reels to cover animals, space or oceans, and there has been no ocean post since 31 Oct. Our only non-body Reel at 98 reach, the neutron star, was a striking number stated directly, so a blue whale heartbeat of 2 bpm fits both goals. Each slide carries a hard number from the 2019 PNAS Stanford study or the Royal Ontario Museum heart. I chose documentary music to suit an ocean subject and palette 1, rotating on from palette 0 on the last post. The caption tests a save-style question plus a one-line follow reason.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "oceans",
+  "topic": "Blue whale heart: 2 bpm on dives, surface racing, 180 kg heart, size limit",
+  "hook": "Blue whale hearts can beat twice a minute",
+  "slides": [
+    {
+      "title": "2 beats per minute",
+      "body": "Scientists suction-cupped a sensor to a wild blue whale. On deep dives, its heart dropped to just 2 beats a minute.",
+      "highlight": "2 bpm",
+      "image_query": "blue whale underwater",
+      "image_prompt": "A huge blue whale diving into dark deep ocean water, faint sunbeams fading above, calm and silent atmosphere",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1832/img_01.jpg",
+      "credit": "AWeith (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Then it races",
+      "body": "Back at the surface, it jumped to 25–37 beats a minute to reload oxygen fast, close to its maximum.",
+      "highlight": "37",
+      "image_query": "blue whale surfacing",
+      "image_prompt": "A blue whale breaking the ocean surface, spray of breath rising into bright air, waves around its back",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1832/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "A 180 kg heart",
+      "body": "A blue whale heart preserved in Canada weighs about 180 kg, roughly as much as two adult men.",
+      "highlight": "180kg",
+      "image_query": "blue whale heart",
+      "image_prompt": "A giant preserved red whale heart displayed in a museum case, dramatic lighting, scale shown by a small chair beside it",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1832/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Too big to grow?",
+      "body": "Researchers think its heart already works near its limits, which may help explain why no animal has grown bigger.",
+      "highlight": "limit",
+      "image_query": "blue whale aerial",
+      "image_prompt": "Aerial view of an enormous blue whale in deep blue ocean, tiny boat far away for scale",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-1832/img_04.jpg",
+      "credit": "Don Ramey Logan (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for more facts that sound fake",
+  "caption": "In 2018, Stanford researchers stuck a sensor on a wild blue whale in Monterey Bay. While it dove for food, its heart slowed to just 2 beats a minute. Back at the surface, it raced to 37.\n\nThe study suggests the biggest animal ever may already be pushing its heart to the limit. That could be one reason nothing alive has grown larger. Source: Goldbogen et al., PNAS 2019.\n\nWe post a fact like this every day, so follow if you like being surprised. Save this one for your next trivia night. Which fact got you most, the 2 beats or the 180 kg heart?\n\n📷 AWeith (CC BY-SA 4.0) via wikimedia · Don Ramey Logan (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "bluewhale",
+    "marinebiology",
+    "oceanfacts",
+    "animalfacts",
+    "sciencefacts"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Goldbogen J.A. et al. (2019) Extreme bradycardia and tachycardia in the world's largest animal. PNAS 116(50):25329-25332",
+    "Stanford News (25 Nov 2019): First-ever recording of a blue whale's heart rate",
+    "Royal Ontario Museum: preserved blue whale heart (2015)"
+  ],
+  "image_query": "blue whale ocean",
+  "image_prompt": "A colossal blue whale gliding through deep blue ocean light, its huge silhouette dwarfing small fish, quiet and mysterious mood",
+  "design": {
+    "palette": 1,
+    "cover_label": "Ocean giants",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts that sound made up"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261116-1832/img_cover.jpg",
+  "cover_credit": "AWeith (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "In 2018, Stanford researchers stuck a sensor on a wild blue whale in Monterey Bay. While it dove for food, its heart slowed to just 2 beats a minute. Back at the surface, it raced to 37.\n\nThe study suggests the biggest animal ever may already be pushing its heart to the limit. That could be one reason nothing alive has grown larger. Source: Goldbogen et al., PNAS 2019.\n\nWe post a fact like this every day, so follow if you like being surprised. Save this one for your next trivia night. Which fact got you most, the 2 beats or the 180 kg heart?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "scale",
+      "blur",
+      "scale",
+      "rise",
+      "scale",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "glitch",
+      "flash",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "mystery"
+}
