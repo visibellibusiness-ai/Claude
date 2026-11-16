@@ -1298,5 +1298,23 @@
       "palette": 4
     },
     "media_id": "18224240692352819"
+  },
+  {
+    "date": "20261116-0030",
+    "series": "facts",
+    "topic": "Brain has no pain receptors: awake brain surgery, headache origin",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "Your brain can't feel pain",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "18648980098039052"
   }
 ]
