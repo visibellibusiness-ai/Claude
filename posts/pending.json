@@ -1,0 +1,34 @@
+{
+  "date": "20261116-0030",
+  "series": "facts",
+  "format": "reel",
+  "trial": false,
+  "music": "documentary",
+  "theme_index": 47,
+  "topic": "Brain has no pain receptors: awake brain surgery, headache origin",
+  "category": "human body",
+  "hook": "Your brain can't feel pain",
+  "slides": 3,
+  "variant": "short",
+  "tags": [],
+  "tag_reason": "",
+  "design": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "images": [
+    "posts/20261116-0030/cover.jpg"
+  ],
+  "story": "posts/20261116-0030/story.jpg",
+  "ai": false,
+  "story_ai": false,
+  "caption": "Your brain processes every pain signal in your body, yet it can't feel pain itself. Brain tissue has no pain receptors, which is why some patients stay awake and talk during brain surgery so surgeons can map speech areas.\n\nThe headache you feel comes from the tissue around your brain, not the brain itself. Part 2 tomorrow: where headache pain really starts. Follow so you don't miss it.\n\nWould you agree to stay awake during brain surgery?\n\n📷 John Campbell (CC BY 2.0) via wikimedia · Ruhrfisch (CC BY-SA 2.0) via wikimedia · Antonino Paolo Di Giovanna (CC BY-SA 4.0) via wikimedia\n\n#brainfacts #neuroscience #humanbody #sciencefacts #didyouknow",
+  "carousel_caption": "Your brain processes every pain signal in your body, yet it can't feel pain itself. Brain tissue has no pain receptors, which is why some patients stay awake and talk during brain surgery so surgeons can map speech areas.\n\nThe headache you feel comes from the tissue around your brain, not the brain itself. Part 2 tomorrow: where headache pain really starts. Follow so you don't miss it.\n\nWould you agree to stay awake during brain surgery?\n\nCover: Your brain can't feel pain\n📷 John Campbell (CC BY 2.0) via wikimedia\n\n1/3 No pain sensors (0)\nBrain tissue has no nociceptors, the nerve endings that detect pain.\n📷 John Campbell (CC BY 2.0) via wikimedia\n\n2/3 Awake brain surgery (Awake)\nSo surgeons can operate while patients stay awake and talk.\n📷 Ruhrfisch (CC BY-SA 2.0) via wikimedia\n\n3/3 So why headaches?\nThat pain comes from membranes, blood vessels and nerves around the brain.\n📷 Antonino Paolo Di Giovanna (CC BY-SA 4.0) via wikimedia\n\n#brainfacts #neuroscience #humanbody #sciencefacts #didyouknow",
+  "slide_captions": [
+    "Your brain can't feel pain\n📷 John Campbell (CC BY 2.0) via wikimedia",
+    "1/3 No pain sensors (0)\nBrain tissue has no nociceptors, the nerve endings that detect pain.\n📷 John Campbell (CC BY 2.0) via wikimedia",
+    "2/3 Awake brain surgery (Awake)\nSo surgeons can operate while patients stay awake and talk.\n📷 Ruhrfisch (CC BY-SA 2.0) via wikimedia",
+    "3/3 So why headaches?\nThat pain comes from membranes, blood vessels and nerves around the brain.\n📷 Antonino Paolo Di Giovanna (CC BY-SA 4.0) via wikimedia",
+    "Part 2 tomorrow. Follow to catch it."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "reasoning": "Mandatory short-Reel test: 3 content slides, 7-word hook max, bodies of 12 words max. The last post was animals, so this one returns to the human-body core. It uses the strategy's best hook type, a specific counterintuitive direct claim (shorter tonight 109, neutron star 98). 'Your brain can't feel pain' is verifiable and surprising, and the headache slide answers the obvious objection. Rotation continues with documentary music and palette 0. This Reel also runs the follow-conversion experiment with a 'Part 2 tomorrow' CTA, so log it as carrying the slide. Part 2 (where headache pain really comes from, or phantom limb pain) should be posted next.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Brain has no pain receptors: awake brain surgery, headache origin",
+  "hook": "Your brain can't feel pain",
+  "slides": [
+    {
+      "title": "No pain sensors",
+      "body": "Brain tissue has no nociceptors, the nerve endings that detect pain.",
+      "highlight": "0",
+      "image_query": "human brain model",
+      "image_prompt": "A glossy anatomical brain model on a dark surface, soft blue rim light, small red warning lights around it all switched off",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-0030/img_01.jpg",
+      "credit": "John Campbell (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Awake brain surgery",
+      "body": "So surgeons can operate while patients stay awake and talk.",
+      "highlight": "Awake",
+      "image_query": "operating room lights",
+      "image_prompt": "Empty surgical operating room under bright round surgical lamps, sterile instruments neatly laid on a steel tray, cool clinical tones",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-0030/img_02.jpg",
+      "credit": "Ruhrfisch (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "So why headaches?",
+      "body": "That pain comes from membranes, blood vessels and nerves around the brain.",
+      "highlight": "",
+      "image_query": "brain blood vessels",
+      "image_prompt": "Glowing red network of blood vessels and thin nerve fibers wrapped around a translucent brain shape, dark background, medical illustration style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261116-0030/img_03.jpg",
+      "credit": "Antonino Paolo Di Giovanna (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow to catch it.",
+  "caption": "Your brain processes every pain signal in your body, yet it can't feel pain itself. Brain tissue has no pain receptors, which is why some patients stay awake and talk during brain surgery so surgeons can map speech areas.\n\nThe headache you feel comes from the tissue around your brain, not the brain itself. Part 2 tomorrow: where headache pain really starts. Follow so you don't miss it.\n\nWould you agree to stay awake during brain surgery?\n\n📷 John Campbell (CC BY 2.0) via wikimedia · Ruhrfisch (CC BY-SA 2.0) via wikimedia · Antonino Paolo Di Giovanna (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "brainfacts",
+    "neuroscience",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Mayo Clinic: Awake brain surgery (mayoclinic.org/tests-procedures/awake-brain-surgery)",
+    "Cleveland Clinic: Headaches, causes and types (my.clevelandclinic.org/health/diseases/9639-headaches)",
+    "Purves D. et al., Neuroscience (Sinauer), brain parenchyma lacks nociceptors; meninges and vessels are pain-sensitive"
+  ],
+  "image_query": "human brain model",
+  "image_prompt": "A pink anatomical brain model resting on a velvet cushion beside a sharp pin that has no effect, dramatic dark background, soft spotlight",
+  "design": {
+    "palette": 0,
+    "cover_label": "Body fact",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts your brain will love"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261116-0030/img_cover.jpg",
+  "cover_credit": "John Campbell (CC BY 2.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "Your brain processes every pain signal in your body, yet it can't feel pain itself. Brain tissue has no pain receptors, which is why some patients stay awake and talk during brain surgery so surgeons can map speech areas.\n\nThe headache you feel comes from the tissue around your brain, not the brain itself. Part 2 tomorrow: where headache pain really starts. Follow so you don't miss it.\n\nWould you agree to stay awake during brain surgery?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "left",
+      "scale",
+      "right",
+      "left",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "punch",
+      "cut",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}

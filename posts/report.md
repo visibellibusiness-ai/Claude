@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 15/11/2026 alle 18:16 UTC. Follower: 0.
+Aggiornato il 16/11/2026 alle 00:30 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 409, di cui da non follower 409 (100%).
+- Visualizzazioni: 410, di cui da non follower 410 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 15/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 15/11/2026 | 14 | 14 | 17 | 17 | 0 | 0 |
 | 14/11/2026 | 113 | 113 | 124 | 124 | 0 | 0 |
 | 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
 | 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 | 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
-| 09/11/2026 | 14 | 14 | 16 | 16 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,8 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 14/11/2026 00:19 | reel | A teaspoon of neutron star weighs a bill | 98 | 103 | 0,0% | 0,0% | 0,0% | n/d |  |
+| 13/11/2026 18:29 | reel | Your blood vessels could circle Earth tw | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 13/11/2026 00:24 | reel | What extreme heat does to your body | 2 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 12/11/2026 18:31 | reel | Your fingers have zero muscles | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 12/11/2026 00:32 | reel | Babies have about 300 bones. You have 20 | 14 | 14 | 0,0% | 0,0% | 7,1% | n/d |  |
@@ -44,7 +45,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 03/11/2026 18:26 | reel | What fear does to your body in seconds | 53 | 54 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 03/11/2026 00:14 | reel | What holding your breath really does | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 02/11/2026 18:32 | reel | Your brain won't let you tickle yourself | 61 | 71 | 0,0% | 0,0% | 1,6% | n/d |  |
-| 02/11/2026 00:11 | reel | Your memories change every time you reca | 94 | 105 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -52,7 +52,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 02/11/2026 00:11 | Your memories change every time you reca | 5.501 | 70.1 |
 | 02/11/2026 18:32 | Your brain won't let you tickle yourself | 3.577 | 75.8 |
 | 03/11/2026 00:14 | What holding your breath really does | 3.351 | 77.8 |
 | 03/11/2026 18:26 | What fear does to your body in seconds | 5.519 | 76 |
@@ -74,12 +73,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 12/11/2026 00:32 | Babies have about 300 bones. You have 20 | 3.984 | 57.1 |
 | 12/11/2026 18:31 | Your fingers have zero muscles | 2.671 | 80 |
 | 13/11/2026 00:24 | What extreme heat does to your body | 1.035 | 100 |
+| 13/11/2026 18:29 | Your blood vessels could circle Earth tw | 872 | 100 |
+| 14/11/2026 00:19 | A teaspoon of neutron star weighs a bill | 3.467 | 75.8 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 22 | 838 | 0,0% | 0,0% |
+| reel | 23 | 843 | 0,0% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -87,8 +88,8 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 2 | 22.0 | 4876.5 | 61.900000000000006 |
-| direct | 2 | 9.0 | 4489.5 | 56.65 |
+| answer | 3 | 15.0 | 3541.6666666666665 | 74.60000000000001 |
+| direct | 3 | 38.666666666666664 | 4148.666666666667 | 63.03333333333333 |
 | short | 3 | 33.666666666666664 | 3840.0 | 71.83333333333333 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
