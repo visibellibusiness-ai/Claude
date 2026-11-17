@@ -255,6 +255,10 @@
     {
       "date": "20261117-0024",
       "followers": 0
+    },
+    {
+      "date": "20261117-1349",
+      "followers": 0
     }
   ],
   "account_log": [
@@ -1109,20 +1113,57 @@
     {
       "date": "2026-11-16",
       "reach": {
-        "total": 5,
-        "NON_FOLLOWER": 5
+        "total": 6,
+        "NON_FOLLOWER": 6
       },
       "reach_by_product": {
-        "total": 5,
-        "REEL": 5
+        "total": 6,
+        "REEL": 6
       },
       "views": {
-        "total": 8,
-        "NON_FOLLOWER": 8
+        "total": 9,
+        "NON_FOLLOWER": 9
       },
       "views_by_product": {
-        "total": 8,
-        "REEL": 8
+        "total": 9,
+        "REEL": 9
+      },
+      "accounts_engaged": {
+        "total": 0
+      },
+      "total_interactions": {
+        "total": 0
+      },
+      "likes": {
+        "total": 0
+      },
+      "comments": {
+        "total": 0
+      },
+      "saves": {
+        "total": 0
+      },
+      "shares": {
+        "total": 0
+      }
+    },
+    {
+      "date": "2026-11-17",
+      "reach": {
+        "total": 1,
+        "NON_FOLLOWER": 1
+      },
+      "reach_by_product": {
+        "total": 1,
+        "REEL": 1
+      },
+      "views": {
+        "total": 1,
+        "NON_FOLLOWER": 1
+      },
+      "views_by_product": {
+        "total": 1,
+        "REEL": 1
       },
       "accounts_engaged": {
         "total": 0

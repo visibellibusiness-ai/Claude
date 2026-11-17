@@ -1,13 +1,13 @@
 {
-  "date": "20261116-1542",
+  "date": "20261117-1352",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "mystery",
-  "theme_index": 48,
-  "topic": "Daily news 2026-11-16",
+  "music": "documentary",
+  "theme_index": 50,
+  "topic": "Daily news 2026-11-17",
   "category": "news",
-  "hook": "Iran aims 6 drones at a US radar",
+  "hook": "Nothing can drive across the Crimean Bridge",
   "slides": 5,
   "variant": null,
   "tags": [],
@@ -17,26 +17,26 @@
     "palette": 2
   },
   "images": [
-    "posts/20261116-1542/slide_01.jpg",
-    "posts/20261116-1542/slide_02.jpg",
-    "posts/20261116-1542/slide_03.jpg",
-    "posts/20261116-1542/slide_04.jpg",
-    "posts/20261116-1542/slide_05.jpg",
-    "posts/20261116-1542/slide_06.jpg",
-    "posts/20261116-1542/slide_07.jpg"
+    "posts/20261117-1352/slide_01.jpg",
+    "posts/20261117-1352/slide_02.jpg",
+    "posts/20261117-1352/slide_03.jpg",
+    "posts/20261117-1352/slide_04.jpg",
+    "posts/20261117-1352/slide_05.jpg",
+    "posts/20261117-1352/slide_06.jpg",
+    "posts/20261117-1352/slide_07.jpg"
   ],
-  "story": "posts/20261116-1542/story.jpg",
+  "story": "posts/20261117-1352/story.jpg",
   "ai": true,
-  "story_ai": true,
-  "caption": "🇧🇭 Iran says it aimed 6 drones at a US radar in Bahrain; a 3rd US carrier reportedly arrived.\n🤝 Trump, Xi and Putin meet Thursday in Shenzhen, with nuclear arms cuts on Trump's list.\n🛸 Russia says it downed 1,336 Ukrainian drones overnight, a war record by its count.\n🌍 COP31's first draft deal is out: it could shape energy rules, including 35% electricity by 2035.\n⚽ England beat Spain 3-2, ending their 43-match unbeaten run.\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.\n\n📷 Mass Communication Specialist Seaman Ricardo R. Guzman/U.S. Navy (Public domain) via wikimedia · Dinkun Chen (CC BY-SA 4.0) via wikimedia · Geographer (CC BY-SA 2.0) via wikimedia\n\n#iran #bahrain #cop31 #worldnews #dailynews",
-  "carousel_caption": "🇧🇭 Iran says it aimed 6 drones at a US radar in Bahrain; a 3rd US carrier reportedly arrived.\n🤝 Trump, Xi and Putin meet Thursday in Shenzhen, with nuclear arms cuts on Trump's list.\n🛸 Russia says it downed 1,336 Ukrainian drones overnight, a war record by its count.\n🌍 COP31's first draft deal is out: it could shape energy rules, including 35% electricity by 2035.\n⚽ England beat Spain 3-2, ending their 43-match unbeaten run.\nWhich story surprised you most?\nFollow @you.didnot.know for your daily brief.\n\nCover: Iran aims 6 drones at a US radar\n🎨 AI-generated image\n\n1/5 Iran targets Bahrain again (6)\nIran aimed 6 drones at a US radar; Bahrain intercepted. 2nd attack in 3 days; 3rd US carrier reportedly arrives.\n📷 Mass Communication Specialist Seaman Ricardo R. Guzman/U.S. Navy (Public domain) via wikimedia\n\n2/5 Trump, Xi and Putin to meet (19 Nov)\nThe three leaders meet Thursday in Shenzhen, China, at APEC. First-ever three-way talks; Trump wants nuclear arsenal cuts.\n📷 Dinkun Chen (CC BY-SA 4.0) via wikimedia\n\n3/5 Ukraine's record drone attack (1,336)\nRussia says it downed 1,336 Ukrainian drones overnight. By Russia's count, the war's biggest Ukrainian drone attack.\n🎨 AI-generated image\n\n4/5 COP31 drafts a climate deal (35%)\nCOP31 in Turkey published its first draft deal on Monday. Nearly 200 nations must sign off; fossil fuels still divide.\n📷 Geographer (CC BY-SA 2.0) via wikimedia\n\n5/5 England stun Spain 3-2 (43)\nEngland beat world champions Spain 3-2 in Madrid. It ended Spain's record 43-match unbeaten run.\n🎨 AI-generated image\n\n#iran #bahrain #cop31 #worldnews #dailynews",
+  "story_ai": false,
+  "caption": "🌉 Ukraine hit the Crimean Bridge two nights in a row; the road section is out of use.\n🤝 Trump meets Xi and Putin together Thursday, a first-ever three-way meeting.\n🛰️ Iran fired drones at a US radar in Bahrain; intercepted, no damage.\n💻 New US limits on AI chip exports hit tech stocks. Hold tech funds? Expect swings around Nvidia's earnings this week.\n🦀 Millions of red crabs are on the move on Christmas Island.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia · Vikarna (CC BY-SA 4.0) via wikimedia · Steve Jurvetson (CC BY 2.0) via wikimedia · ChrisBrayPhotography (CC BY-SA 4.0) via wikimedia\n\n#crimeanbridge #aichips #worldnews #dailynews #newsbrief",
+  "carousel_caption": "🌉 Ukraine hit the Crimean Bridge two nights in a row; the road section is out of use.\n🤝 Trump meets Xi and Putin together Thursday, a first-ever three-way meeting.\n🛰️ Iran fired drones at a US radar in Bahrain; intercepted, no damage.\n💻 New US limits on AI chip exports hit tech stocks. Hold tech funds? Expect swings around Nvidia's earnings this week.\n🦀 Millions of red crabs are on the move on Christmas Island.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\nCover: Nothing can drive across the Crimean Bridge\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia\n\n1/5 Crimean Bridge road cut (19 km)\nUkraine struck the Crimean Bridge two nights in a row. Kyiv says no car can cross; traffic is suspended.\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia\n\n2/5 Trump, Xi, Putin: one table (1st)\nTrump meets Xi and Putin together Thursday in Shenzhen. First-ever three-way talks; nukes and Iran on the agenda.\n📷 Vikarna (CC BY-SA 4.0) via wikimedia\n\n3/5 Iran drones target US radar (0 hurt)\nIran fired drones at a US radar base in Bahrain. Intercepted, no damage, amid talks via Oman and Qatar.\n🎨 AI-generated image\n\n4/5 US tightens AI chip exports (-2.49%)\nUS now needs licences for AI chips to 5 more countries. It targets China renting compute abroad; Nasdaq fell 2.49%.\n📷 Steve Jurvetson (CC BY 2.0) via wikimedia\n\n5/5 Christmas Island turns red (Crabs)\nMillions of red crabs began their annual migration. It sweeps across Australia's Christmas Island every year.\n📷 ChrisBrayPhotography (CC BY-SA 4.0) via wikimedia\n\n#crimeanbridge #aichips #worldnews #dailynews #newsbrief",
   "slide_captions": [
-    "Iran aims 6 drones at a US radar\n🎨 AI-generated image",
-    "1/5 Iran targets Bahrain again (6)\nIran aimed 6 drones at a US radar; Bahrain intercepted. 2nd attack in 3 days; 3rd US carrier reportedly arrives.\n📷 Mass Communication Specialist Seaman Ricardo R. Guzman/U.S. Navy (Public domain) via wikimedia",
-    "2/5 Trump, Xi and Putin to meet (19 Nov)\nThe three leaders meet Thursday in Shenzhen, China, at APEC. First-ever three-way talks; Trump wants nuclear arsenal cuts.\n📷 Dinkun Chen (CC BY-SA 4.0) via wikimedia",
-    "3/5 Ukraine's record drone attack (1,336)\nRussia says it downed 1,336 Ukrainian drones overnight. By Russia's count, the war's biggest Ukrainian drone attack.\n🎨 AI-generated image",
-    "4/5 COP31 drafts a climate deal (35%)\nCOP31 in Turkey published its first draft deal on Monday. Nearly 200 nations must sign off; fossil fuels still divide.\n📷 Geographer (CC BY-SA 2.0) via wikimedia",
-    "5/5 England stun Spain 3-2 (43)\nEngland beat world champions Spain 3-2 in Madrid. It ended Spain's record 43-match unbeaten run.\n🎨 AI-generated image",
-    "Follow @you.didnot.know for daily news"
+    "Nothing can drive across the Crimean Bridge\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia",
+    "1/5 Crimean Bridge road cut (19 km)\nUkraine struck the Crimean Bridge two nights in a row. Kyiv says no car can cross; traffic is suspended.\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia",
+    "2/5 Trump, Xi, Putin: one table (1st)\nTrump meets Xi and Putin together Thursday in Shenzhen. First-ever three-way talks; nukes and Iran on the agenda.\n📷 Vikarna (CC BY-SA 4.0) via wikimedia",
+    "3/5 Iran drones target US radar (0 hurt)\nIran fired drones at a US radar base in Bahrain. Intercepted, no damage, amid talks via Oman and Qatar.\n🎨 AI-generated image",
+    "4/5 US tightens AI chip exports (-2.49%)\nUS now needs licences for AI chips to 5 more countries. It targets China renting compute abroad; Nasdaq fell 2.49%.\n📷 Steve Jurvetson (CC BY 2.0) via wikimedia",
+    "5/5 Christmas Island turns red (Crabs)\nMillions of red crabs began their annual migration. It sweeps across Australia's Christmas Island every year.\n📷 ChrisBrayPhotography (CC BY-SA 4.0) via wikimedia",
+    "Follow for your 1-minute daily brief"
   ]
 }

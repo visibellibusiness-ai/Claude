@@ -1,0 +1,206 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-17",
+  "hook": "Nothing can drive across the Crimean Bridge",
+  "reel_hook": "A key bridge to Crimea is cut",
+  "slides": [
+    {
+      "title": "Crimean Bridge road cut",
+      "highlight": "19 km",
+      "image_query": "Crimean Bridge Kerch",
+      "image_prompt": "A long road bridge over a dark sea at dusk, a broken gap in the roadway, smoke drifting, empty lanes and a rail arch nearby",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Ukraine struck the Crimean Bridge two nights in a row."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Kyiv says no car can cross; traffic is suspended."
+        ],
+        [
+          "FOR YOU",
+          "Little changes for you directly, but a key Russia–Crimea road link is cut."
+        ]
+      ],
+      "body": "Ukraine struck the Crimean Bridge two nights in a row. Kyiv says no car can cross; traffic is suspended. Little changes for you directly, but a key Russia–Crimea road link is cut.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-1352/img_01.jpg",
+      "credit": "Alexxx1979 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Trump, Xi, Putin: one table",
+      "highlight": "1st",
+      "image_query": "Shenzhen skyline night",
+      "image_prompt": "Three empty chairs around a round wooden table with three teacups, a city skyline glowing through a large window at dusk",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Trump meets Xi and Putin together Thursday in Shenzhen."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First-ever three-way talks; nukes and Iran on the agenda."
+        ],
+        [
+          "FOR YOU",
+          "Watch Thursday: Trump also floated meeting Kim, not confirmed by the White House."
+        ]
+      ],
+      "body": "Trump meets Xi and Putin together Thursday in Shenzhen. First-ever three-way talks; nukes and Iran on the agenda. Watch Thursday: Trump also floated meeting Kim, not confirmed by the White House.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-1352/img_02.jpg",
+      "credit": "Vikarna (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Iran drones target US radar",
+      "highlight": "0 hurt",
+      "image_query": "military radar dome desert",
+      "image_prompt": "A white military radar dome on a desert base at night, bright streaks of intercepted drones fading in the dark sky",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Iran fired drones at a US radar base in Bahrain."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Intercepted, no damage, amid talks via Oman and Qatar."
+        ],
+        [
+          "FOR YOU",
+          "The nearly nine-month US-Iran war keeps Gulf shipping and oil routes tense."
+        ]
+      ],
+      "body": "Iran fired drones at a US radar base in Bahrain. Intercepted, no damage, amid talks via Oman and Qatar. The nearly nine-month US-Iran war keeps Gulf shipping and oil routes tense.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-1352/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "US tightens AI chip exports",
+      "highlight": "-2.49%",
+      "image_query": "computer chip wafer",
+      "image_prompt": "A shiny silicon chip locked inside a glass box with a heavy padlock, a falling red arrow made of light behind it",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "US now needs licences for AI chips to 5 more countries."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It targets China renting compute abroad; Nasdaq fell 2.49%."
+        ],
+        [
+          "FOR YOU",
+          "If you hold tech funds, expect swings: Nvidia reports earnings this week."
+        ]
+      ],
+      "body": "US now needs licences for AI chips to 5 more countries. It targets China renting compute abroad; Nasdaq fell 2.49%. If you hold tech funds, expect swings: Nvidia reports earnings this week.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-1352/img_04.jpg",
+      "credit": "Steve Jurvetson (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Christmas Island turns red",
+      "highlight": "Crabs",
+      "image_query": "Christmas Island red crab",
+      "image_prompt": "Thousands of bright red crabs crossing a tropical road and forest floor toward the sea, morning light",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Millions of red crabs began their annual migration."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It sweeps across Australia's Christmas Island every year."
+        ],
+        [
+          "FOR YOU",
+          "Nothing to do but enjoy it: nature's red carpet is back for another year."
+        ]
+      ],
+      "body": "Millions of red crabs began their annual migration. It sweeps across Australia's Christmas Island every year. Nothing to do but enjoy it: nature's red carpet is back for another year.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-1352/img_05.jpg",
+      "credit": "ChrisBrayPhotography (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your 1-minute daily brief",
+  "caption": "🌉 Ukraine hit the Crimean Bridge two nights in a row; the road section is out of use.\n🤝 Trump meets Xi and Putin together Thursday, a first-ever three-way meeting.\n🛰️ Iran fired drones at a US radar in Bahrain; intercepted, no damage.\n💻 New US limits on AI chip exports hit tech stocks. Hold tech funds? Expect swings around Nvidia's earnings this week.\n🦀 Millions of red crabs are on the move on Christmas Island.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.\n\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia · Vikarna (CC BY-SA 4.0) via wikimedia · Steve Jurvetson (CC BY 2.0) via wikimedia · ChrisBrayPhotography (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "crimeanbridge",
+    "aichips",
+    "worldnews",
+    "dailynews",
+    "newsbrief"
+  ],
+  "sources": [
+    "https://abcnews.com/International/ukraine-attacks-crimean-bridge-2nd-consecutive-night-officials/story?id=138201512",
+    "https://kyivindependent.com/ukrainian-forces-reportedly-strike-crimean-bridge-after-russian-missiles-hit-kyiv-bridges/",
+    "https://www.twz.com/news-features/kerch-bridge-struck-for-the-second-time-in-less-than-24-hours-russia",
+    "https://www.kyivpost.com/post/90298",
+    "https://www.cbsnews.com/news/trump-asia-trip-trilateral-summit-putin-xi/",
+    "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-xi-putin-asia-congress-2026-election-iran-live-updates-rcna609499",
+    "https://abcnews.com/Politics/trump-heads-asia-2nd-high-stakes-meeting-chinese/story?id=138059807",
+    "https://www.cbsnews.com/news/trump-says-may-meet-kim-jong-un-china/",
+    "https://www.cbc.ca/news/world/iran-us-war-bahrain-drones-dirty-bomb-report-9.7424686",
+    "https://www.washingtontimes.com/news/2026/nov/17/iran-fires-drones-us-radar-bahrain-third-time-5-days/",
+    "https://www.usnews.com/news/world/articles/2026-11-17/oman-iran-foreign-ministers-discuss-safeguarding-maritime-corridors",
+    "https://abcnews.com/International/live-updates/iran-live-updates-tanker-attacked-strait-hormuz-ukmto/?id=138171071",
+    "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/",
+    "https://www.cnbc.com/2026/11/15/stock-market-today-live-updates.html",
+    "https://au.investing.com/news/commodities-news/morning-bid-chip-wreck-4776619",
+    "https://www.yahoo.com/news/politics/articles/us-tightens-ai-chip-export-024836635.html",
+    "https://www.yahoo.com/news/videos/ap-top-stories-november-16-121115520.html",
+    "https://www.euronews.com/video/2026/11/17/latest-news-bulletin-november-17th-2026-midday"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 17 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "Crimean Bridge Kerch",
+  "image_prompt": "A long road bridge over a dark strait at night with a missing span, the broken roadway dipping into the water, faint smoke and still sea",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261117-1352/img_cover.jpg",
+  "cover_credit": "Alexxx1979 (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🌉 Ukraine hit the Crimean Bridge two nights in a row; the road section is out of use.\n🤝 Trump meets Xi and Putin together Thursday, a first-ever three-way meeting.\n🛰️ Iran fired drones at a US radar in Bahrain; intercepted, no damage.\n💻 New US limits on AI chip exports hit tech stocks. Hold tech funds? Expect swings around Nvidia's earnings this week.\n🦀 Millions of red crabs are on the move on Christmas Island.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "left",
+      "rise",
+      "scale",
+      "blur",
+      "rise",
+      "scale",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "punch",
+      "glitch",
+      "punch",
+      "flash"
+    ]
+  },
+  "music_used": "documentary"
+}
