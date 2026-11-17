@@ -1291,7 +1291,19 @@
       "style": "mystery",
       "palette": 3
     },
-    "media_id": "17964597465253234"
+    "media_id": "17964597465253234",
+    "metrics": {
+      "reach": 103,
+      "views": 113,
+      "likes": 0,
+      "comments": 0,
+      "shares": 0,
+      "saved": 0,
+      "total_interactions": 0,
+      "ig_reels_avg_watch_time": 3470,
+      "ig_reels_video_view_total_time": 364351,
+      "reels_skip_rate": 67.3
+    }
   },
   {
     "date": "20261115-1816",

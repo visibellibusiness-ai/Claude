@@ -1,0 +1,104 @@
+{
+  "reasoning": "Human body Reels are the core and reached about 100 when the hook was relatable and counterintuitive (shorter tonight, voice, sleep, blood cells). Stomach growling is something everyone hears, and 'it's a cleaning cycle, not hunger' is a clean direct claim that fits the Direct Open test: the hook works as slide 1's title, and three short slides deliver the payoff. The last three posts were animals, body and oceans, so this returns to the body core. Palette 2 and lofi continue the rotation. No Part 2 slide here because the experiment fixes 4 content slides. The follow reason goes in the caption instead.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "human body",
+  "topic": "Stomach growling: migrating motor complex cleaning wave, borborygmi, food switches it off",
+  "hook": "Your gut growls to clean itself",
+  "slides": [
+    {
+      "title": "Your gut growls to clean itself",
+      "body": "Between meals, waves of muscle sweep leftover food and bacteria out of your stomach and gut.",
+      "highlight": "",
+      "image_query": "empty plate fork",
+      "image_prompt": "Glowing pink tunnel of smooth muscle with a gentle wave rippling through it, tiny crumbs swept along, soft warm light, macro style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-0025/img_01.jpg",
+      "credit": "Acabashi (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "It runs on a timer",
+      "body": "Called the migrating motor complex, it repeats roughly every 90 to 120 minutes while you haven't eaten.",
+      "highlight": "90 min",
+      "image_query": "vintage alarm clock",
+      "image_prompt": "Vintage alarm clock beside an empty white plate on a kitchen table, soft morning light, minimal composition",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-0025/img_02.jpg",
+      "credit": "Shixart1985 (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The noise is gas",
+      "body": "The rumble is gas and fluid being squeezed through your intestines. Doctors call it borborygmi.",
+      "highlight": "",
+      "image_query": "water bubbles closeup",
+      "image_prompt": "Air bubbles squeezing through a curved transparent tube filled with liquid, dramatic side lighting, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-0025/img_03.jpg",
+      "credit": "Matthew Bellemare (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Eating switches it off",
+      "body": "Food stops the cleaning wave almost at once. A growl means your gut is empty, not that you're starving.",
+      "highlight": "OFF",
+      "image_query": "bowl of soup",
+      "image_prompt": "Steaming bowl of soup on a wooden table next to a light switch turned off, cozy warm light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261117-0025/img_04.jpg",
+      "credit": "Mobius6 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new body fact daily",
+  "caption": "That rumble in a quiet meeting isn't your stomach begging for food. It's a cleaning cycle called the migrating motor complex: every 90 to 120 minutes on an empty stomach, muscle waves sweep leftovers and bacteria down your gut.\n\nThe sound itself comes from gas and fluid being pushed along, and the first bite of food switches the whole cycle off. Follow @you.didnot.know for a new body fact every day.\n\nWhat's the most embarrassing place your stomach has ever growled?\n\n📷 SWT666 (CC BY 4.0) via wikimedia · Acabashi (CC BY-SA 4.0) via wikimedia · Shixart1985 (CC BY 2.0) via wikimedia · Matthew Bellemare (CC BY-SA 3.0) via wikimedia · Mobius6 (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "stomachgrowling",
+    "guthealth",
+    "digestion",
+    "humanbody",
+    "sciencefacts"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Deloose E. et al., 'The migrating motor complex: control mechanisms and its role in health and disease', Nature Reviews Gastroenterology & Hepatology, 2012",
+    "Takahashi T., 'Interdigestive migrating motor complex: its mechanism and clinical importance', Journal of Smooth Muscle Research, 2013",
+    "Cleveland Clinic: Stomach growling (borborygmi)"
+  ],
+  "image_query": "empty plate fork",
+  "image_prompt": "Empty white plate with fork and knife on a dark table, faint sound-wave ripples spreading across the surface, moody light",
+  "design": {
+    "palette": 2,
+    "cover_label": "Body secrets",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts your body never told you"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261117-0025/img_cover.jpg",
+  "cover_credit": "SWT666 (CC BY 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "That rumble in a quiet meeting isn't your stomach begging for food. It's a cleaning cycle called the migrating motor complex: every 90 to 120 minutes on an empty stomach, muscle waves sweep leftovers and bacteria down your gut.\n\nThe sound itself comes from gas and fluid being pushed along, and the first bite of food switches the whole cycle off. Follow @you.didnot.know for a new body fact every day.\n\nWhat's the most embarrassing place your stomach has ever growled?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "blur",
+      "rise",
+      "right",
+      "rise",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "glitch",
+      "flash",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}

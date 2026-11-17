@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 16/11/2026 alle 18:32 UTC. Follower: 0.
+Aggiornato il 17/11/2026 alle 00:24 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 417, di cui da non follower 417 (100%).
+- Visualizzazioni: 386, di cui da non follower 386 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 16/11/2026 | 2 | 2 | 3 | 3 | 0 | 0 |
+| 16/11/2026 | 5 | 5 | 8 | 8 | 0 | 0 |
 | 15/11/2026 | 17 | 17 | 21 | 21 | 0 | 0 |
 | 14/11/2026 | 113 | 113 | 124 | 124 | 0 | 0 |
 | 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
 | 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
 | 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
-| 10/11/2026 | 34 | 34 | 36 | 36 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 15/11/2026 00:14 | reel | You make 2 million blood cells every sec | 103 | 113 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 14/11/2026 18:16 | reel | Your eyes see everything upside down | 9 | 11 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 14/11/2026 00:19 | reel | A teaspoon of neutron star weighs a bill | 98 | 103 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 13/11/2026 18:29 | reel | Your blood vessels could circle Earth tw | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -45,7 +45,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 04/11/2026 18:32 | reel | What cold water does to you in 60 second | 96 | 106 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 04/11/2026 00:17 | reel | What happens to your body when you sneez | 4 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 03/11/2026 18:26 | reel | What fear does to your body in seconds | 53 | 54 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 03/11/2026 00:14 | reel | What holding your breath really does | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -53,7 +52,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 03/11/2026 00:14 | What holding your breath really does | 3.351 | 77.8 |
 | 03/11/2026 18:26 | What fear does to your body in seconds | 5.519 | 76 |
 | 04/11/2026 00:17 | What happens to your body when you sneez | 1.628 | 100 |
 | 04/11/2026 18:32 | What cold water does to you in 60 second | 5.636 | 78.6 |
@@ -76,12 +74,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 13/11/2026 18:29 | Your blood vessels could circle Earth tw | 872 | 100 |
 | 14/11/2026 00:19 | A teaspoon of neutron star weighs a bill | 3.467 | 75.8 |
 | 14/11/2026 18:16 | Your eyes see everything upside down | 2.469 | 66.7 |
+| 15/11/2026 00:14 | You make 2 million blood cells every sec | 3.470 | 67.3 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 791 | 0,0% | 0,0% |
+| reel | 23 | 885 | 0,0% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -89,7 +88,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 3 | 15.0 | 3541.6666666666665 | 74.60000000000001 |
+| answer | 4 | 37.0 | 3523.75 | 72.775 |
 | direct | 3 | 38.666666666666664 | 4148.666666666667 | 63.03333333333333 |
 | short | 4 | 27.5 | 3497.25 | 70.55 |
 
