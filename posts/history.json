@@ -1358,5 +1358,23 @@
       "palette": 1
     },
     "media_id": "18000358815041791"
+  },
+  {
+    "date": "20261117-0025",
+    "series": "facts",
+    "topic": "Stomach growling: migrating motor complex cleaning wave, borborygmi, food switches it off",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "Your gut growls to clean itself",
+    "slides": 4,
+    "variant": "direct",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "17978464122161729"
   }
 ]
