@@ -1,6 +1,6 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 17/11/2026 alle 13:49 UTC. Follower: 0.
+Aggiornato il 17/11/2026 alle 18:32 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
@@ -23,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 15/11/2026 18:16 | reel | Crows remember your face for years | 17 | 22 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 15/11/2026 00:14 | reel | You make 2 million blood cells every sec | 103 | 113 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 14/11/2026 18:16 | reel | Your eyes see everything upside down | 9 | 11 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 14/11/2026 00:19 | reel | A teaspoon of neutron star weighs a bill | 98 | 103 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -45,7 +46,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 05/11/2026 00:22 | reel | Try not to yawn before the end | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 04/11/2026 18:32 | reel | What cold water does to you in 60 second | 96 | 106 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 04/11/2026 00:17 | reel | What happens to your body when you sneez | 4 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 03/11/2026 18:26 | reel | What fear does to your body in seconds | 53 | 54 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -53,7 +53,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 03/11/2026 18:26 | What fear does to your body in seconds | 5.519 | 76 |
 | 04/11/2026 00:17 | What happens to your body when you sneez | 1.628 | 100 |
 | 04/11/2026 18:32 | What cold water does to you in 60 second | 5.636 | 78.6 |
 | 05/11/2026 00:22 | Try not to yawn before the end | 5.359 | 100 |
@@ -76,12 +75,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 14/11/2026 00:19 | A teaspoon of neutron star weighs a bill | 3.467 | 75.8 |
 | 14/11/2026 18:16 | Your eyes see everything upside down | 2.469 | 66.7 |
 | 15/11/2026 00:14 | You make 2 million blood cells every sec | 3.470 | 67.3 |
+| 15/11/2026 18:16 | Crows remember your face for years | 1.870 | 94.4 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 885 | 0,0% | 0,0% |
+| reel | 23 | 849 | 0,0% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -90,7 +90,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
 | answer | 4 | 37.0 | 3523.75 | 72.775 |
-| direct | 3 | 38.666666666666664 | 4148.666666666667 | 63.03333333333333 |
+| direct | 4 | 33.25 | 3579.0 | 70.875 |
 | short | 4 | 27.5 | 3497.25 | 70.55 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

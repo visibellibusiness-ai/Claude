@@ -1,0 +1,34 @@
+{
+  "date": "20261117-1832",
+  "series": "facts",
+  "format": "reel",
+  "trial": false,
+  "music": "documentary",
+  "theme_index": 50,
+  "topic": "Microsaccades: constant tiny eye movements stop vision from fading",
+  "category": "human body",
+  "hook": "Your eyes never stop moving",
+  "slides": 3,
+  "variant": "short",
+  "tags": [],
+  "tag_reason": "",
+  "design": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "images": [
+    "posts/20261117-1832/cover.jpg"
+  ],
+  "story": "posts/20261117-1832/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "Right now, while you read this, your eyes are jumping about once or twice a second. These tiny jumps are called microsaccades, and you never notice them.\n\nThey're not a glitch. In lab experiments where an image was locked perfectly still on the retina, people saw it fade away within seconds. Your vision depends on constant motion.\n\nPart 2 tomorrow: an illusion that lets you see this fading for yourself. Follow so you don't miss it. Source: Martinez-Conde et al., Nature Reviews Neuroscience (2004).\n\nDid you know your eyes were moving all the time?\n\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia · Richard Masoner / Cyclelicious (CC BY-SA 2.0) via wikimedia\n\n#microsaccades #eyefacts #humanbody #sciencefacts #didyouknow",
+  "carousel_caption": "Right now, while you read this, your eyes are jumping about once or twice a second. These tiny jumps are called microsaccades, and you never notice them.\n\nThey're not a glitch. In lab experiments where an image was locked perfectly still on the retina, people saw it fade away within seconds. Your vision depends on constant motion.\n\nPart 2 tomorrow: an illusion that lets you see this fading for yourself. Follow so you don't miss it. Source: Martinez-Conde et al., Nature Reviews Neuroscience (2004).\n\nDid you know your eyes were moving all the time?\n\nCover: Your eyes never stop moving\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia\n\n1/3 Tiny constant jumps (1-2/s)\nEven when you stare, your eyes make tiny jumps called microsaccades.\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia\n\n2/3 Freeze them, lose sight (Fade)\nIn lab tests, images held perfectly still on the retina fade away.\n📷 Richard Masoner / Cyclelicious (CC BY-SA 2.0) via wikimedia\n\n3/3 Built for change (0)\nYour eye's nerve cells respond to change. No change, and they go quiet.\n🎨 AI-generated image\n\n#microsaccades #eyefacts #humanbody #sciencefacts #didyouknow",
+  "slide_captions": [
+    "Your eyes never stop moving\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia",
+    "1/3 Tiny constant jumps (1-2/s)\nEven when you stare, your eyes make tiny jumps called microsaccades.\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia",
+    "2/3 Freeze them, lose sight (Fade)\nIn lab tests, images held perfectly still on the retina fade away.\n📷 Richard Masoner / Cyclelicious (CC BY-SA 2.0) via wikimedia",
+    "3/3 Built for change (0)\nYour eye's nerve cells respond to change. No change, and they go quiet.\n🎨 AI-generated image",
+    "Part 2 tomorrow. Follow to catch it"
+  ]
+}
