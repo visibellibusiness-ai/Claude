@@ -1418,5 +1418,23 @@
       "palette": 3
     },
     "media_id": "17912292321664520"
+  },
+  {
+    "date": "20261118-0031",
+    "series": "facts",
+    "topic": "Blue sunsets on Mars: dust scattering, butterscotch daytime sky, Curiosity 2015 image",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "space",
+    "hook": "Sunsets on Mars are blue, not red.",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "18437710249151030"
   }
 ]
