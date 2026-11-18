@@ -1,0 +1,105 @@
+{
+  "reasoning": "Mandatory DIRECT OPEN test: no cover scene, so the hook doubles as slide 1's title and must be complete and under 32 characters. The topic is human body, which is the core of the page, and tooth enamel has not been covered yet. Teeth are universal and personal, and the fact is useful: acid and saliva are things people can act on. That could finally earn saves and shares. The claim is specific and counterintuitive: 'Your enamel never grows back', since every other tissue seems to heal. The post uses 4 short slides. Music and palette continue the rotation: lofi after mystery, and palette 0 after 4. There are no tags, because no listed account is the source.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "human body",
+  "topic": "Tooth enamel: cannot regrow, 96% mineral, critical pH 5.5, saliva remineralization",
+  "hook": "Your enamel never grows back",
+  "slides": [
+    {
+      "title": "Your enamel never grows back",
+      "body": "The cells that build it are gone once your tooth breaks through the gum.",
+      "highlight": "",
+      "image_query": "tooth enamel closeup",
+      "image_prompt": "Single glossy white molar on dark velvet, dramatic side light showing its hard shiny surface, macro photography",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-1831/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Harder than your bones",
+      "body": "Enamel is about 96% mineral, the hardest substance in the human body.",
+      "highlight": "96%",
+      "image_query": "teeth dental x-ray",
+      "image_prompt": "Polished white tooth beside a cracked bone fragment on a dark stone surface, crisp studio light, macro",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-1831/img_02.jpg",
+      "credit": "Pearson Scott Foresman (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "But acid beats it",
+      "body": "Below a pH of about 5.5, acid starts dissolving enamel. Soda and fruit juice are well below that.",
+      "highlight": "pH 5.5",
+      "image_query": "soda glass bubbles",
+      "image_prompt": "Glass of fizzy cola with rising bubbles next to a sliced lemon on a dark table, moody lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-1831/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Saliva is the repair crew",
+      "body": "Saliva and fluoride can re-harden early weak spots. Once a cavity forms, only a dentist can fix it.",
+      "highlight": "",
+      "image_query": "toothbrush fluoride toothpaste",
+      "image_prompt": "Toothbrush with a fresh line of toothpaste resting on a glass, droplets of water, soft morning light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-1831/img_04.jpg",
+      "credit": "Thegreenj (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new fact every day",
+  "caption": "Skin heals. Bones knit back together. Even your liver regrows. But tooth enamel never grows back, because the cells that make it are gone by the time your tooth appears.\n\nIt is about 96% mineral, harder than bone, yet acid below pH 5.5 slowly dissolves it. Saliva and fluoride can repair early weak spots, but not a real cavity. Save this for the next time you sip soda all afternoon. Sources: NIDCR and the American Dental Association.\n\nFollow for one surprising body fact every day. Did you know enamel couldn't heal itself?\n\n📷 Pearson Scott Foresman (Public domain) via wikimedia · Thegreenj (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "toothenamel",
+    "dentalhealth",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "NIDCR (National Institute of Dental and Craniofacial Research): The Tooth Decay Process",
+    "American Dental Association, MouthHealthy: Tooth Erosion and Enamel",
+    "Lussi A. et al., Dental Erosion, Monographs in Oral Science (Karger)",
+    "Featherstone JDB, Dental caries: a dynamic disease process, Australian Dental Journal 2008"
+  ],
+  "image_query": "tooth enamel closeup",
+  "image_prompt": "Single glossy white tooth on a dark background with a hairline crack catching the light, macro photography",
+  "design": {
+    "palette": 0,
+    "cover_label": "Human body",
+    "swipe_text": "Watch this",
+    "follow_line": "One fact a day about your body"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261118-1831/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "Skin heals. Bones knit back together. Even your liver regrows. But tooth enamel never grows back, because the cells that make it are gone by the time your tooth appears.\n\nIt is about 96% mineral, harder than bone, yet acid below pH 5.5 slowly dissolves it. Saliva and fluoride can repair early weak spots, but not a real cavity. Save this for the next time you sip soda all afternoon. Sources: NIDCR and the American Dental Association.\n\nFollow for one surprising body fact every day. Did you know enamel couldn't heal itself?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "rise",
+      "right",
+      "scale",
+      "right",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}
