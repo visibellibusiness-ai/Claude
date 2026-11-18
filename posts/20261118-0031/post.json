@@ -1,0 +1,108 @@
+{
+  "reasoning": "Mandatory answer-first test: the hook states the full surprising fact in 7 words. I picked space because space and oceans are due in the 1-in-4 rotation, and the neutron star Reel (space) reached 98. The fact is concrete, visual and NASA-verified (Curiosity, April 2015), so a NASA tag is justified. The Reel has 4 short content slides. Music and palette continue the rotation (mystery, palette 4). The caption keeps fact, extra detail, follow reason, source and an opinion question, a kind of question not used recently.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "space",
+  "topic": "Blue sunsets on Mars: dust scattering, butterscotch daytime sky, Curiosity 2015 image",
+  "hook": "Sunsets on Mars are blue, not red.",
+  "slides": [
+    {
+      "title": "A reversed sky",
+      "body": "By day, the Martian sky looks butterscotch. At sunset, a cold blue glow forms around the sun.",
+      "highlight": "Blue",
+      "image_query": "mars sunset",
+      "image_prompt": "A small pale sun setting over a rocky reddish desert, surrounded by a cold blue halo fading into a dusty butterscotch sky",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-0031/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Blame the dust",
+      "body": "Fine Martian dust is just the right size to let blue light pass through slightly more easily near the sun.",
+      "highlight": "",
+      "image_query": "mars dust surface",
+      "image_prompt": "Fine red dust drifting in the air above a cracked Martian surface, a faint blue light passing through the haze",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-0031/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Earth does the opposite",
+      "body": "Our air scatters blue across the whole sky. At sunset, light travels so far that mostly reds and oranges remain.",
+      "highlight": "",
+      "image_query": "orange sunset sky",
+      "image_prompt": "A vivid orange and red sunset over a calm ocean horizon, deep blue sky fading at the top",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-0031/img_03.jpg",
+      "credit": "Rick Curran (CC0 / public domain) via openverse",
+      "generated": false
+    },
+    {
+      "title": "Caught on camera",
+      "body": "NASA's Curiosity rover photographed a blue sunset in Gale Crater in April 2015.",
+      "highlight": "2015",
+      "image_query": "curiosity rover mars",
+      "image_prompt": "A six-wheeled rover on a rocky Martian crater floor at dusk, a small blue-tinted sun sinking behind distant crater rim",
+      "image": "/home/runner/work/Claude/Claude/posts/20261118-0031/img_04.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "On Mars, the colors of the sky are flipped. Daytime looks hazy butterscotch, but as the sun goes down, a blue glow gathers around it.\n\nNASA's Curiosity rover captured this in Gale Crater in April 2015. Fine dust in the thin Martian air lets blue light through near the sun's direction. Follow for one surprising, verified fact every day. Source: NASA/JPL.\n\nWould you rather watch a sunset on Mars or on Earth?\n\n📷 Rick Curran (CC0 / public domain) via openverse",
+  "hashtags": [
+    "marssunset",
+    "curiosityrover",
+    "mars",
+    "spacefacts",
+    "astronomy"
+  ],
+  "tag_accounts": [
+    "nasa"
+  ],
+  "tag_reason": "NASA's Curiosity rover captured the blue Martian sunset",
+  "sources": [
+    "NASA/JPL, 'Sunset in Mars' Gale Crater' (PIA19400), May 2015",
+    "NASA Science, 'Curiosity Rover's Blue Sunset on Mars', 2015",
+    "NASA, 'Why is the sky blue?' (Rayleigh scattering), spaceplace.nasa.gov"
+  ],
+  "image_query": "mars blue sunset",
+  "image_prompt": "A small white sun sinking behind a rocky crater rim on Mars, wrapped in an eerie blue glow against a dusty reddish sky",
+  "design": {
+    "palette": 4,
+    "cover_label": "Space fact",
+    "swipe_text": "Watch why",
+    "follow_line": "One surprising fact, every single day"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261118-0031/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "On Mars, the colors of the sky are flipped. Daytime looks hazy butterscotch, but as the sun goes down, a blue glow gathers around it.\n\nNASA's Curiosity rover captured this in Gale Crater in April 2015. Fine dust in the thin Martian air lets blue light through near the sun's direction. Follow for one surprising, verified fact every day. Source: NASA/JPL.\n\nWould you rather watch a sunset on Mars or on Earth?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "rise",
+      "right",
+      "blur",
+      "rise",
+      "left",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "flash",
+      "glitch",
+      "punch"
+    ]
+  },
+  "music_used": "mystery"
+}

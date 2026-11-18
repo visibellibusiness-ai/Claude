@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 17/11/2026 alle 18:32 UTC. Follower: 0.
+Aggiornato il 18/11/2026 alle 00:30 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 388, di cui da non follower 388 (100%).
+- Visualizzazioni: 398, di cui da non follower 398 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 17/11/2026 | 1 | 1 | 1 | 1 | 0 | 0 |
+| 17/11/2026 | 95 | 95 | 109 | 109 | 1 | 1 |
 | 16/11/2026 | 6 | 6 | 9 | 9 | 0 | 0 |
 | 15/11/2026 | 17 | 17 | 21 | 21 | 0 | 0 |
 | 14/11/2026 | 113 | 113 | 124 | 124 | 0 | 0 |
 | 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
 | 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
-| 11/11/2026 | 94 | 94 | 98 | 98 | 1 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 16/11/2026 00:30 | reel | Your brain can't feel pain | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 15/11/2026 18:16 | reel | Crows remember your face for years | 17 | 22 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 15/11/2026 00:14 | reel | You make 2 million blood cells every sec | 103 | 113 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 14/11/2026 18:16 | reel | Your eyes see everything upside down | 9 | 11 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -45,7 +45,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 05/11/2026 18:23 | reel | Why your voice sounds weird on recording | 98 | 117 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 05/11/2026 00:22 | reel | Try not to yawn before the end | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 04/11/2026 18:32 | reel | What cold water does to you in 60 second | 96 | 106 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 04/11/2026 00:17 | reel | What happens to your body when you sneez | 4 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -53,7 +52,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 04/11/2026 00:17 | What happens to your body when you sneez | 1.628 | 100 |
 | 04/11/2026 18:32 | What cold water does to you in 60 second | 5.636 | 78.6 |
 | 05/11/2026 00:22 | Try not to yawn before the end | 5.359 | 100 |
 | 05/11/2026 18:23 | Why your voice sounds weird on recording | 5.569 | 66.7 |
@@ -76,12 +74,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 14/11/2026 18:16 | Your eyes see everything upside down | 2.469 | 66.7 |
 | 15/11/2026 00:14 | You make 2 million blood cells every sec | 3.470 | 67.3 |
 | 15/11/2026 18:16 | Crows remember your face for years | 1.870 | 94.4 |
+| 16/11/2026 00:30 | Your brain can't feel pain | 1.360 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 849 | 0,0% | 0,0% |
+| reel | 23 | 847 | 0,0% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -91,6 +90,6 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 |---|---|---|---|---|
 | answer | 4 | 37.0 | 3523.75 | 72.775 |
 | direct | 4 | 33.25 | 3579.0 | 70.875 |
-| short | 4 | 27.5 | 3497.25 | 70.55 |
+| short | 5 | 22.4 | 3069.8 | 76.44 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
