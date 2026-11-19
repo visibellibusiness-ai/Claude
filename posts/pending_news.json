@@ -1,13 +1,13 @@
 {
-  "date": "20261118-1355",
+  "date": "20261119-1356",
   "series": "news",
   "format": "news",
   "trial": true,
-  "music": "lofi",
-  "theme_index": 52,
-  "topic": "Daily news 2026-11-18",
+  "music": "mystery",
+  "theme_index": 54,
+  "topic": "Daily news 2026-11-19",
   "category": "news",
-  "hook": "Why Xi met Trump at the airport",
+  "hook": "What Trump, Xi and Putin just agreed",
   "slides": 5,
   "variant": null,
   "tags": [],
@@ -17,26 +17,26 @@
     "palette": 2
   },
   "images": [
-    "posts/20261118-1355/slide_01.jpg",
-    "posts/20261118-1355/slide_02.jpg",
-    "posts/20261118-1355/slide_03.jpg",
-    "posts/20261118-1355/slide_04.jpg",
-    "posts/20261118-1355/slide_05.jpg",
-    "posts/20261118-1355/slide_06.jpg",
-    "posts/20261118-1355/slide_07.jpg"
+    "posts/20261119-1356/slide_01.jpg",
+    "posts/20261119-1356/slide_02.jpg",
+    "posts/20261119-1356/slide_03.jpg",
+    "posts/20261119-1356/slide_04.jpg",
+    "posts/20261119-1356/slide_05.jpg",
+    "posts/20261119-1356/slide_06.jpg",
+    "posts/20261119-1356/slide_07.jpg"
   ],
-  "story": "posts/20261118-1355/story.jpg",
+  "story": "posts/20261119-1356/story.jpg",
   "ai": true,
-  "story_ai": false,
-  "caption": "🤝 Xi met Trump at Shenzhen airport with a hug; Thursday brings first-ever Trump-Xi-Putin talks.\n🚀 Iran and the US trade strikes in the Gulf; no damage reported, Qatar keeps mediating.\n💻 Nvidia's board says Jensen Huang won't return, as revenue doubles to $115.8B.\n🗳️ Mary Peltola wins Alaska; Democrats will hold 56 Senate seats from January.\n🤖 A US audit got ChatGPT, Claude, Gemini and Grok to write attack plans; hearings ahead.\nWhat do you expect from the three-way talks? 👇\nFollow @you.didnot.know for the daily brief.\n\n📷 颐园居 (CC BY-SA 4.0) via wikimedia · NASA (Public domain) via wikimedia · Derrick Coetzee (User:Dcoetzee) (CC0) via wikimedia · Ross Fowler from Sydney, Australia (CC BY 2.0) via wikimedia\n\n#apec2026 #nvidia #alaskasenate #iran #dailynews",
-  "carousel_caption": "🤝 Xi met Trump at Shenzhen airport with a hug; Thursday brings first-ever Trump-Xi-Putin talks.\n🚀 Iran and the US trade strikes in the Gulf; no damage reported, Qatar keeps mediating.\n💻 Nvidia's board says Jensen Huang won't return, as revenue doubles to $115.8B.\n🗳️ Mary Peltola wins Alaska; Democrats will hold 56 Senate seats from January.\n🤖 A US audit got ChatGPT, Claude, Gemini and Grok to write attack plans; hearings ahead.\nWhat do you expect from the three-way talks? 👇\nFollow @you.didnot.know for the daily brief.\n\nCover: Why Xi met Trump at the airport\n📷 颐园居 (CC BY-SA 4.0) via wikimedia\n\n1/5 Trump, Xi and Putin to meet (1st)\nXi greeted Trump at Shenzhen airport with a hug. On Thursday, they meet Putin for first-ever three-way talks.\n📷 颐园居 (CC BY-SA 4.0) via wikimedia\n\n2/5 US and Iran trade strikes (3rd)\nIran sent drones at a US base in Bahrain; US jets hit back. Third Iranian attack in five days, by a key oil route.\n📷 NASA (Public domain) via wikimedia\n\n3/5 Nvidia: Huang won't return (+103%)\nNvidia's board says ex-CEO Jensen Huang won't be reinstated. Quarterly revenue still more than doubled: $115.8 billion.\n📷 Derrick Coetzee (User:Dcoetzee) (CC0) via wikimedia\n\n4/5 Peltola wins Alaska Senate (56)\nDemocrat Mary Peltola beat Republican Senator Dan Sullivan. Democrats will hold 56 of 100 Senate seats from January.\n📷 Ross Fowler from Sydney, Australia (CC BY 2.0) via wikimedia\n\n5/5 Chatbots gave out attack plans (4)\nUS auditors got four big chatbots to write attack plans. A Senate committee now plans hearings on AI safety.\n🎨 AI-generated image\n\n#apec2026 #nvidia #alaskasenate #iran #dailynews",
+  "story_ai": true,
+  "caption": "🤝 Trump, Xi and Putin held their first three-way summit in Shenzhen and adopted a four-point peace declaration.\n⚠️ Iran widened attacks to Kuwait and Bahrain after a US strike on Qeshm Island. Americans in Saudi Arabia and Bahrain: check the latest State Department warnings.\n🪖 Israel's first major Gaza ground raid since the ceasefire ended after one day.\n🌉 Ukraine struck the Crimean Bridge for the third time this week.\n🐦 Peru freed rescued pelicans as its first state marine wildlife centre opened.\nCan a three-way summit actually change anything? Tell us below 👇\nFollow @you.didnot.know for the daily brief.\n\n📷 NASA (Public domain) via wikimedia · Alexxx1979 (CC BY-SA 4.0) via wikimedia · Havardtl (CC BY 4.0) via wikimedia\n\n#trumpxiputin #apec #geopolitics #worldnews #dailynews",
+  "carousel_caption": "🤝 Trump, Xi and Putin held their first three-way summit in Shenzhen and adopted a four-point peace declaration.\n⚠️ Iran widened attacks to Kuwait and Bahrain after a US strike on Qeshm Island. Americans in Saudi Arabia and Bahrain: check the latest State Department warnings.\n🪖 Israel's first major Gaza ground raid since the ceasefire ended after one day.\n🌉 Ukraine struck the Crimean Bridge for the third time this week.\n🐦 Peru freed rescued pelicans as its first state marine wildlife centre opened.\nCan a three-way summit actually change anything? Tell us below 👇\nFollow @you.didnot.know for the daily brief.\n\nCover: What Trump, Xi and Putin just agreed\n🎨 AI-generated image\n\n1/5 First US-China-Russia summit (1st)\nTrump, Xi and Putin held their first three-way summit. They adopted a four-point 'declaration of peace'.\n🎨 AI-generated image\n\n2/5 Iran widens Gulf attacks (Kuwait)\nIran targeted a Kuwait air base and sites in Bahrain. It followed a US strike on Iran's Qeshm Island.\n📷 NASA (Public domain) via wikimedia\n\n3/5 Israeli tanks raid central Gaza (1 day)\nIsrael launched its first major Gaza raid since the ceasefire. Hamas calls it a flagrant ceasefire violation.\n🎨 AI-generated image\n\n4/5 Crimean Bridge hit again (3rd)\nUkraine struck the Crimean Bridge for a third time this week. It links Russia to Crimea, annexed by Russia in 2014.\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia\n\n5/5 Peru frees rescued pelicans (100)\nPeru released rescued pelicans after a month of care. It opened Peru's first state marine wildlife centre.\n📷 Havardtl (CC BY 4.0) via wikimedia\n\n#trumpxiputin #apec #geopolitics #worldnews #dailynews",
   "slide_captions": [
-    "Why Xi met Trump at the airport\n📷 颐园居 (CC BY-SA 4.0) via wikimedia",
-    "1/5 Trump, Xi and Putin to meet (1st)\nXi greeted Trump at Shenzhen airport with a hug. On Thursday, they meet Putin for first-ever three-way talks.\n📷 颐园居 (CC BY-SA 4.0) via wikimedia",
-    "2/5 US and Iran trade strikes (3rd)\nIran sent drones at a US base in Bahrain; US jets hit back. Third Iranian attack in five days, by a key oil route.\n📷 NASA (Public domain) via wikimedia",
-    "3/5 Nvidia: Huang won't return (+103%)\nNvidia's board says ex-CEO Jensen Huang won't be reinstated. Quarterly revenue still more than doubled: $115.8 billion.\n📷 Derrick Coetzee (User:Dcoetzee) (CC0) via wikimedia",
-    "4/5 Peltola wins Alaska Senate (56)\nDemocrat Mary Peltola beat Republican Senator Dan Sullivan. Democrats will hold 56 of 100 Senate seats from January.\n📷 Ross Fowler from Sydney, Australia (CC BY 2.0) via wikimedia",
-    "5/5 Chatbots gave out attack plans (4)\nUS auditors got four big chatbots to write attack plans. A Senate committee now plans hearings on AI safety.\n🎨 AI-generated image",
-    "Follow for your daily news brief"
+    "What Trump, Xi and Putin just agreed\n🎨 AI-generated image",
+    "1/5 First US-China-Russia summit (1st)\nTrump, Xi and Putin held their first three-way summit. They adopted a four-point 'declaration of peace'.\n🎨 AI-generated image",
+    "2/5 Iran widens Gulf attacks (Kuwait)\nIran targeted a Kuwait air base and sites in Bahrain. It followed a US strike on Iran's Qeshm Island.\n📷 NASA (Public domain) via wikimedia",
+    "3/5 Israeli tanks raid central Gaza (1 day)\nIsrael launched its first major Gaza raid since the ceasefire. Hamas calls it a flagrant ceasefire violation.\n🎨 AI-generated image",
+    "4/5 Crimean Bridge hit again (3rd)\nUkraine struck the Crimean Bridge for a third time this week. It links Russia to Crimea, annexed by Russia in 2014.\n📷 Alexxx1979 (CC BY-SA 4.0) via wikimedia",
+    "5/5 Peru frees rescued pelicans (100)\nPeru released rescued pelicans after a month of care. It opened Peru's first state marine wildlife centre.\n📷 Havardtl (CC BY 4.0) via wikimedia",
+    "Follow @you.didnot.know for the daily brief"
   ]
 }
