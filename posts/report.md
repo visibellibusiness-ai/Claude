@@ -1,15 +1,15 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 19/11/2026 alle 13:52 UTC. Follower: 0.
+Aggiornato il 19/11/2026 alle 18:35 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 409, di cui da non follower 409 (100%).
+- Visualizzazioni: 410, di cui da non follower 410 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 19/11/2026 | 2 | 2 | 2 | 2 | 0 | 0 |
+| 19/11/2026 | 3 | 3 | 3 | 3 | 0 | 0 |
 | 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
 | 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
 | 16/11/2026 | 6 | 6 | 9 | 9 | 0 | 0 |
@@ -23,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 17/11/2026 18:32 | reel | Your eyes never stop moving | 98 | 112 | 1,0% | 0,0% | 0,0% | n/d |  |
 | 17/11/2026 00:25 | reel | Your gut growls to clean itself | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 16/11/2026 18:32 | reel | Blue whale hearts can beat twice a minut | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 16/11/2026 00:30 | reel | Your brain can't feel pain | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -45,7 +46,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 07/11/2026 00:17 | reel | 5 senses nobody taught you in school | 4 | 7 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 06/11/2026 18:30 | reel | What coffee really does to your brain | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 06/11/2026 00:19 | reel | Why you can't remember being a baby | 33 | 36 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 05/11/2026 18:23 | reel | Why your voice sounds weird on recording | 98 | 117 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -53,7 +53,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 05/11/2026 18:23 | Why your voice sounds weird on recording | 5.569 | 66.7 |
 | 06/11/2026 00:19 | Why you can't remember being a baby | 2.985 | 72.7 |
 | 06/11/2026 18:30 | What coffee really does to your brain | 50.999 | 0 |
 | 07/11/2026 00:17 | 5 senses nobody taught you in school | 3.650 | 100 |
@@ -76,12 +75,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 16/11/2026 00:30 | Your brain can't feel pain | 1.360 | 100 |
 | 16/11/2026 18:32 | Blue whale hearts can beat twice a minut | 2.048 | 80 |
 | 17/11/2026 00:25 | Your gut growls to clean itself | 2.074 | 100 |
+| 17/11/2026 18:32 | Your eyes never stop moving | 4.120 | 70 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 755 | 0,0% | 0,0% |
+| reel | 23 | 755 | 0,1% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -91,6 +91,6 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 |---|---|---|---|---|
 | answer | 5 | 30.6 | 3228.6 | 74.22 |
 | direct | 5 | 26.8 | 3278.0 | 76.7 |
-| short | 5 | 22.4 | 3069.8 | 76.44 |
+| short | 6 | 35.0 | 3244.8333333333335 | 75.36666666666666 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

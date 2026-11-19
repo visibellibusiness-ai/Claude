@@ -1,0 +1,108 @@
+{
+  "reasoning": "Mandatory answer-first test: the cover states the full fact (tardigrades survived 10 days in open space), and 4 slides explain it. This is an animal topic for the 1-in-4 rotation. It also suits a space-curious audience, since our space Reels (neutron star 98) distributed well. The fact is well documented: ESA's 2007 FOTON-M3 flight was published in Current Biology. Mystery music and palette 2 follow the rotation. I left out the Part 2 slide because I can't guarantee a sequel. Instead the CTA and caption state a clear follow reason.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "animals",
+  "topic": "Tardigrades surviving open space (ESA FOTON-M3 2007) and 30-year freeze revival",
+  "hook": "Tardigrades survived 10 days in open space",
+  "slides": [
+    {
+      "title": "The 2007 space test",
+      "body": "In 2007, ESA flew dried tardigrades outside a capsule in orbit, exposed to space vacuum and cosmic radiation.",
+      "highlight": "10 d",
+      "image_query": "tardigrade microscope",
+      "image_prompt": "Tiny translucent tardigrade floating against black space with Earth's curved blue horizon glowing below, cinematic lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261119-1836/img_01.jpg",
+      "credit": "Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012) (CC BY 2.5) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Dried into a 'tun'",
+      "body": "They survive by losing almost all their body water and curling into a 'tun'. Their metabolism nearly stops.",
+      "highlight": "tun",
+      "image_query": "tardigrade tun state",
+      "image_prompt": "A shriveled, curled-up microscopic creature like a dry barrel on a moss leaf, macro view, soft green light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261119-1836/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Some survived raw sunlight",
+      "body": "Most died under full solar UV, over 1,000 times Earth's surface level. A few survived and later laid eggs.",
+      "highlight": "1000x",
+      "image_query": "sun ultraviolet space",
+      "image_prompt": "Intense white ultraviolet sunlight blasting across dark space onto a tiny metal capsule in orbit",
+      "image": "/home/runner/work/Claude/Claude/posts/20261119-1836/img_03.jpg",
+      "credit": "European Space Agency (CC BY-SA 3.0 igo) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Back after 30 years",
+      "body": "Tardigrades frozen in Antarctic moss since 1983 woke up in 2014 and went on to reproduce.",
+      "highlight": "30 yr",
+      "image_query": "antarctic moss ice",
+      "image_prompt": "Frosted clump of green moss inside a frozen ice block, cold blue light, tiny creature visible inside",
+      "image": "/home/runner/work/Claude/Claude/posts/20261119-1836/img_04.jpg",
+      "credit": "NOAA Photo Library (Public domain) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new wild fact every day",
+  "caption": "In 2007, tiny animals called tardigrades rode on the outside of an ESA spacecraft for 10 days, exposed to vacuum and cosmic radiation. Many came home alive, and some even laid eggs.\n\nTheir trick is drying out almost completely. Others frozen in Antarctic moss for 30 years woke up and had babies. Follow @you.didnot.know for one verified fact you can't unlearn, every day.\n\nWould you rather be able to survive space or survive 30 years frozen?\n\n📷 DSparrow14 (CC BY-SA 4.0) via wikimedia · Schokraie E, Warnken U, Hotz-Wagenblatt A, Grohme MA, Hengherr S, et al. (2012) (CC BY 2.5) via wikimedia · European Space Agency (CC BY-SA 3.0 igo) via wikimedia · NOAA Photo Library (Public domain) via wikimedia",
+  "hashtags": [
+    "tardigrades",
+    "waterbear",
+    "animalfacts",
+    "spacefacts",
+    "sciencefacts"
+  ],
+  "tag_accounts": [
+    "europeanspaceagency"
+  ],
+  "tag_reason": "ESA flew the tardigrades on its FOTON-M3 mission",
+  "sources": [
+    "Jönsson KI et al. (2008) Tardigrades survive exposure to space in low Earth orbit. Current Biology 18(17): R729-R731",
+    "Tsujimoto M et al. (2016) Recovery and reproduction of an Antarctic tardigrade retrieved from a moss sample frozen for over 30 years. Cryobiology 72(1): 78-81",
+    "ESA: Tardigrades / FOTON-M3 TARDIS experiment"
+  ],
+  "image_query": "tardigrade water bear",
+  "image_prompt": "A tiny chubby eight-legged tardigrade drifting in open space above Earth, stars behind, dramatic rim light, photorealistic macro style",
+  "design": {
+    "palette": 2,
+    "cover_label": "Animal superpowers",
+    "swipe_text": "Watch this",
+    "follow_line": "One verified wild fact, every day"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261119-1836/img_cover.jpg",
+  "cover_credit": "DSparrow14 (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "In 2007, tiny animals called tardigrades rode on the outside of an ESA spacecraft for 10 days, exposed to vacuum and cosmic radiation. Many came home alive, and some even laid eggs.\n\nTheir trick is drying out almost completely. Others frozen in Antarctic moss for 30 years woke up and had babies. Follow @you.didnot.know for one verified fact you can't unlearn, every day.\n\nWould you rather be able to survive space or survive 30 years frozen?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "right",
+      "blur",
+      "right",
+      "left",
+      "rise",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "flash",
+      "glitch",
+      "punch"
+    ]
+  },
+  "music_used": "mystery"
+}
