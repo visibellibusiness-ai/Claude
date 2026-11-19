@@ -1478,5 +1478,23 @@
       "palette": 0
     },
     "media_id": "18173198791467620"
+  },
+  {
+    "date": "20261119-0033",
+    "series": "facts",
+    "topic": "Liver regeneration: regrows after partial removal, living donation",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "Lose half your liver. It grows back.",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "17913741612310404"
   }
 ]
