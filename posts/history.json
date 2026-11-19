@@ -1508,5 +1508,23 @@
       "palette": 1
     },
     "media_id": "17913741612310404"
+  },
+  {
+    "date": "20261119-1836",
+    "series": "facts",
+    "topic": "Tardigrades surviving open space (ESA FOTON-M3 2007) and 30-year freeze revival",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "animals",
+    "hook": "Tardigrades survived 10 days in open space",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "18119315645080934"
   }
 ]
