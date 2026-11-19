@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 18/11/2026 alle 18:30 UTC. Follower: 0.
+Aggiornato il 19/11/2026 alle 00:33 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 402, di cui da non follower 402 (100%).
+- Visualizzazioni: 398, di cui da non follower 398 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 18/11/2026 | 3 | 3 | 2 | 2 | 0 | 0 |
+| 18/11/2026 | 29 | 29 | 31 | 31 | 1 | 0 |
 | 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
 | 16/11/2026 | 6 | 6 | 9 | 9 | 0 | 0 |
 | 15/11/2026 | 17 | 17 | 21 | 21 | 0 | 0 |
 | 14/11/2026 | 113 | 113 | 124 | 124 | 0 | 0 |
 | 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
-| 12/11/2026 | 24 | 24 | 33 | 33 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,8 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 17/11/2026 00:25 | reel | Your gut growls to clean itself | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
+| 16/11/2026 18:32 | reel | Blue whale hearts can beat twice a minut | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 16/11/2026 00:30 | reel | Your brain can't feel pain | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 15/11/2026 18:16 | reel | Crows remember your face for years | 17 | 22 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 15/11/2026 00:14 | reel | You make 2 million blood cells every sec | 103 | 113 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -44,8 +45,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 06/11/2026 18:30 | reel | What coffee really does to your brain | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 06/11/2026 00:19 | reel | Why you can't remember being a baby | 33 | 36 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 05/11/2026 18:23 | reel | Why your voice sounds weird on recording | 98 | 117 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 05/11/2026 00:22 | reel | Try not to yawn before the end | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 04/11/2026 18:32 | reel | What cold water does to you in 60 second | 96 | 106 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -53,8 +52,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 04/11/2026 18:32 | What cold water does to you in 60 second | 5.636 | 78.6 |
-| 05/11/2026 00:22 | Try not to yawn before the end | 5.359 | 100 |
 | 05/11/2026 18:23 | Why your voice sounds weird on recording | 5.569 | 66.7 |
 | 06/11/2026 00:19 | Why you can't remember being a baby | 2.985 | 72.7 |
 | 06/11/2026 18:30 | What coffee really does to your brain | 50.999 | 0 |
@@ -76,12 +73,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 15/11/2026 00:14 | You make 2 million blood cells every sec | 3.470 | 67.3 |
 | 15/11/2026 18:16 | Crows remember your face for years | 1.870 | 94.4 |
 | 16/11/2026 00:30 | Your brain can't feel pain | 1.360 | 100 |
+| 16/11/2026 18:32 | Blue whale hearts can beat twice a minut | 2.048 | 80 |
+| 17/11/2026 00:25 | Your gut growls to clean itself | 2.074 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 847 | 0,0% | 0,0% |
+| reel | 23 | 755 | 0,0% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -89,8 +88,8 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 4 | 37.0 | 3523.75 | 72.775 |
-| direct | 4 | 33.25 | 3579.0 | 70.875 |
+| answer | 5 | 30.6 | 3228.6 | 74.22 |
+| direct | 5 | 26.8 | 3278.0 | 76.7 |
 | short | 5 | 22.4 | 3069.8 | 76.44 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

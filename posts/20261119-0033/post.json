@@ -1,0 +1,94 @@
+{
+  "reasoning": "Mandatory short-reel experiment: 3 slides with very short text. The topic stays in the human body core, which drives most of the Reels that reached 53-109. It uses the strategy's preferred hook: a specific, counterintuitive direct claim. Liver regeneration is new, well documented and easy to grasp in about 20 seconds. Rotation continues with documentary music and palette 1. Trial is off, as required. No tags, because no listed account is the direct source of the fact.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Liver regeneration: regrows after partial removal, living donation",
+  "hook": "Lose half your liver. It grows back.",
+  "slides": [
+    {
+      "title": "Most of it can go",
+      "body": "Surgeons can remove up to about 70% of a healthy liver.",
+      "highlight": "70%",
+      "image_query": "human liver anatomy",
+      "image_prompt": "Anatomical model of a human liver on a dark surgical tray, a large section missing, soft clinical light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261119-0033/img_01.jpg",
+      "credit": "Courtesy of NIAID\n\nRyan Kissinger (Public domain) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Back in weeks",
+      "body": "The rest regrows to near full size in about two months.",
+      "highlight": "2 mo",
+      "image_query": "liver model",
+      "image_prompt": "Reddish-brown liver-shaped sculpture regrowing from small pieces like a sprouting plant, time-lapse feel, dark background, warm glow",
+      "image": "/home/runner/work/Claude/Claude/posts/20261119-0033/img_02.jpg",
+      "credit": "Jan Witowski (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Why donors exist",
+      "body": "That's why living people can donate part of their liver.",
+      "highlight": "",
+      "image_query": "organ transplant cooler",
+      "image_prompt": "Medical organ transport cooler on a hospital trolley in a calm corridor, blue clinical light, no labels or text",
+      "image": "/home/runner/work/Claude/Claude/posts/20261119-0033/img_03.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for more body facts like this",
+  "caption": "Your liver is the only organ in your body that can regrow lost mass. After surgeons remove a large part of a healthy liver, the remaining cells start dividing and rebuild it to near full size within weeks.\n\nThis is why living liver donation works. Both the donor's piece and the part left behind grow to fit the body they're in. Source: Mayo Clinic and NIH research on liver regeneration.\n\nWe post one body fact like this every day, so follow and you won't miss the next one. Which organ did you think could regrow before this?\n\n📷 Courtesy of NIAID\n\nRyan Kissinger (Public domain) via wikimedia · Jan Witowski (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "liverhealth",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow",
+    "biology"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Mayo Clinic: Living-donor transplant (liver regenerates in donor and recipient)",
+    "Michalopoulos GK. Liver regeneration. J Cell Physiol / Hepatology reviews (NIH PubMed Central)",
+    "NIDDK (NIH): Liver transplant overview"
+  ],
+  "image_query": "human liver anatomy",
+  "image_prompt": "Glossy anatomical liver model on a dark background, half of it made of fresh glowing new tissue growing back like branching roots",
+  "design": {
+    "palette": 1,
+    "cover_label": "Your body can do this",
+    "swipe_text": "Watch this",
+    "follow_line": "One body fact you didn't know, daily"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261119-0033/img_cover.jpg",
+  "cover_credit": "Courtesy of NIAID\n\nRyan Kissinger (Public domain) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Your liver is the only organ in your body that can regrow lost mass. After surgeons remove a large part of a healthy liver, the remaining cells start dividing and rebuild it to near full size within weeks.\n\nThis is why living liver donation works. Both the donor's piece and the part left behind grow to fit the body they're in. Source: Mayo Clinic and NIH research on liver regeneration.\n\nWe post one body fact like this every day, so follow and you won't miss the next one. Which organ did you think could regrow before this?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "right",
+      "rise",
+      "scale",
+      "right",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "documentary"
+}
