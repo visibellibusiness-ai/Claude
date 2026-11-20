@@ -1,0 +1,203 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-20",
+  "hook": "Trump, Xi, Putin: one table, first time",
+  "reel_hook": "Three superpowers, one table. What happened?",
+  "slides": [
+    {
+      "title": "Trump, Xi, Putin: one table",
+      "highlight": "90 min",
+      "image_query": "",
+      "image_prompt": "Three empty ornate chairs around a round wooden table in an elegant Chinese villa hall, three teacups, soft evening light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Trump, Xi and Putin met together for the first time."
+        ],
+        [
+          "WHY IT MATTERS",
+          "After about 90 minutes, no major breakthroughs were announced."
+        ],
+        [
+          "FOR YOU",
+          "No deal yet, so nothing changes today. Their joint statement sets the agenda."
+        ]
+      ],
+      "body": "Trump, Xi and Putin met together for the first time. After about 90 minutes, no major breakthroughs were announced. No deal yet, so nothing changes today. Their joint statement sets the agenda.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1352/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "A pledge for more oil",
+      "highlight": "Oil",
+      "image_query": "oil refinery",
+      "image_prompt": "Three oil barrels side by side on a dock at sunset, a pipeline stretching toward the horizon",
+      "label": "ECONOMY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "The three pledged more production and supply of oil products."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The goal is to keep the world's energy flowing steadily."
+        ],
+        [
+          "FOR YOU",
+          "It's a pledge, not a price cut. Watch whether fuel supply actually grows."
+        ]
+      ],
+      "body": "The three pledged more production and supply of oil products. The goal is to keep the world's energy flowing steadily. It's a pledge, not a price cut. Watch whether fuel supply actually grows.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1352/img_02.jpg",
+      "credit": "Walter Siegmund (talk) (CC BY 2.5) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Talks to cut nuclear risks",
+      "highlight": "Nukes",
+      "image_query": "",
+      "image_prompt": "An old brass padlock resting on a cracked concrete slab beside a rusted chain, dramatic low light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "They backed talks on nuclear risks and weapons spreading."
+        ],
+        [
+          "WHY IT MATTERS",
+          "New START, the last US-Russia arms treaty, expired in February."
+        ],
+        [
+          "FOR YOU",
+          "Right now no treaty limits US and Russian arsenals. Talks could change that."
+        ]
+      ],
+      "body": "They backed talks on nuclear risks and weapons spreading. New START, the last US-Russia arms treaty, expired in February. Right now no treaty limits US and Russian arsenals. Talks could change that.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1352/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "A warning to world courts",
+      "highlight": "ICC",
+      "image_query": "judge gavel",
+      "image_prompt": "A wooden gavel on a marble desk beside a tilted brass scale of justice, cool morning light",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "They warned bodies like the ICC not to \"abuse their jurisdiction.\""
+        ],
+        [
+          "WHY IT MATTERS",
+          "Their statement also calls for reform of the UN."
+        ],
+        [
+          "FOR YOU",
+          "Expect a bigger debate on how much power global courts and the UN hold."
+        ]
+      ],
+      "body": "They warned bodies like the ICC not to \"abuse their jurisdiction.\" Their statement also calls for reform of the UN. Expect a bigger debate on how much power global courts and the UN hold.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1352/img_04.jpg",
+      "credit": "Chris Potter (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The warhead gap",
+      "highlight": "600+",
+      "image_query": "",
+      "image_prompt": "Three rows of small metal chess pawns on a dark table: one short row and two very long rows, spotlight from above",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "China has more than 600 nuclear warheads."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The US and Russia are each believed to have over 5,000."
+        ],
+        [
+          "FOR YOU",
+          "Now you know the numbers behind every headline about nuclear arms talks."
+        ]
+      ],
+      "body": "China has more than 600 nuclear warheads. The US and Russia are each believed to have over 5,000. Now you know the numbers behind every headline about nuclear arms talks.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1352/img_05.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for the news, explained daily",
+  "caption": "🤝 Trump, Xi and Putin met at one table for the first time, in Shenzhen at APEC. No major breakthroughs.\n🛢️ They pledged more oil products to keep energy flowing. A promise for now, so watch fuel supply.\n☢️ They backed talks on nuclear risks. The last US-Russia arms treaty expired in February.\n⚖️ They warned bodies like the ICC not to \"abuse their jurisdiction\" and called for UN reform.\n🔢 Warheads: China 600+, the US and Russia over 5,000 each.\n\nCan three rivals at one table actually cut nuclear risk? Tell us below 👇\nFollow @you.didnot.know for your daily brief.\n\n📷 Walter Siegmund (talk) (CC BY 2.5) via wikimedia · Chris Potter (CC BY 2.0) via wikimedia",
+  "hashtags": [
+    "apec2026",
+    "trumpxiputin",
+    "nuclearweapons",
+    "worldnews",
+    "dailybrief"
+  ],
+  "sources": [
+    "https://www.pbs.org/newshour/world/no-breakthroughs-from-trump-xi-and-putins-3-way-talks-on-nuclear-risks",
+    "https://www.aljazeera.com/news/2026/11/19/trump-meets-putin-and-xi-ahead-of-us-russia-china-trilateral-talks",
+    "https://www.npr.org/2026/11/18/nx-s1-6040432/trump-xi-and-putin-shenzhen-china-russia-usa",
+    "https://www.cnn.com/2026/11/19/politics/trump-putin-xi-meeting-takeaways",
+    "https://www.aljazeera.com/news/2026/11/20/trump-putin-xi-pledge-to-increase-global-petrol-supplies-but-how",
+    "https://www.pbs.org/newshour/world/no-breakthroughs-from-trump-xi-and-putins-3-way-talks-on-nuclear-risks",
+    "https://www.cbc.ca/news/world/trump-xi-putin-apec-meeting-9.7427718",
+    "https://www.pbs.org/newshour/world/no-breakthroughs-from-trump-xi-and-putins-3-way-talks-on-nuclear-risks",
+    "https://www.huffpost.com/entry/trump-xi-putin-apec-summit_n_6afe93d4e4b0976dc49f8cc5",
+    "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-xi-putin-nuclear-ukraine-congress-2026-live-updates-rcna610150",
+    "https://www.pbs.org/newshour/world/no-breakthroughs-from-trump-xi-and-putins-3-way-talks-on-nuclear-risks",
+    "https://www.cbc.ca/news/world/trump-xi-putin-apec-meeting-9.7427718",
+    "https://www.nbcnews.com/politics/trump-administration/live-blog/trump-xi-putin-nuclear-ukraine-congress-2026-live-updates-rcna610150",
+    "https://www.pbs.org/newshour/world/no-breakthroughs-from-trump-xi-and-putins-3-way-talks-on-nuclear-risks",
+    "https://www.huffpost.com/entry/trump-xi-putin-apec-summit_n_6afe93d4e4b0976dc49f8cc5"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 20 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "",
+  "image_prompt": "Three empty ornate chairs around a round table in a lavish Chinese villa, a single blank sheet of paper at the center, warm evening light",
+  "music": "documentary",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261120-1352/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🤝 Trump, Xi and Putin met at one table for the first time, in Shenzhen at APEC. No major breakthroughs.\n🛢️ They pledged more oil products to keep energy flowing. A promise for now, so watch fuel supply.\n☢️ They backed talks on nuclear risks. The last US-Russia arms treaty expired in February.\n⚖️ They warned bodies like the ICC not to \"abuse their jurisdiction\" and called for UN reform.\n🔢 Warheads: China 600+, the US and Russia over 5,000 each.\n\nCan three rivals at one table actually cut nuclear risk? Tell us below 👇\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "pan_r",
+    "entrances": [
+      "scale",
+      "left",
+      "rise",
+      "right",
+      "blur",
+      "left",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "flash",
+      "dip",
+      "glitch",
+      "dip",
+      "cut"
+    ]
+  },
+  "music_used": "documentary"
+}

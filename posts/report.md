@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 20/11/2026 alle 00:26 UTC. Follower: 0.
+Aggiornato il 20/11/2026 alle 13:49 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 308, di cui da non follower 308 (100%).
+- Visualizzazioni: 331, di cui da non follower 331 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 19/11/2026 | 3 | 3 | 3 | 3 | 0 | 0 |
+| 20/11/2026 | 2 | 2 | 2 | 2 | 0 | 0 |
+| 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
 | 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
 | 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
 | 16/11/2026 | 6 | 6 | 9 | 9 | 0 | 0 |
@@ -22,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 18/11/2026 00:31 | reel | Sunsets on Mars are blue, not red. | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 17/11/2026 18:32 | reel | Your eyes never stop moving | 98 | 112 | 1,0% | 0,0% | 0,0% | n/d |  |
 | 17/11/2026 00:25 | reel | Your gut growls to clean itself | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 16/11/2026 18:32 | reel | Blue whale hearts can beat twice a minut | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -73,12 +75,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 16/11/2026 18:32 | Blue whale hearts can beat twice a minut | 2.048 | 80 |
 | 17/11/2026 00:25 | Your gut growls to clean itself | 2.074 | 100 |
 | 17/11/2026 18:32 | Your eyes never stop moving | 4.120 | 70 |
+| 18/11/2026 00:31 | Sunsets on Mars are blue, not red. | 2.554 | 50 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 22 | 722 | 0,1% | 0,0% |
+| reel | 23 | 724 | 0,1% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -86,7 +89,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 5 | 30.6 | 3228.6 | 74.22 |
+| answer | 6 | 25.833333333333332 | 3116.1666666666665 | 70.18333333333334 |
 | direct | 5 | 26.8 | 3278.0 | 76.7 |
 | short | 6 | 35.0 | 3244.8333333333335 | 75.36666666666666 |
 
