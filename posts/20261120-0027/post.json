@@ -1,0 +1,105 @@
+{
+  "reasoning": "Mandatory DIRECT OPEN test: 4 content slides, and the hook doubles as slide 1's title. To fit the 32-character title box, the hook is kept to 31 characters while staying a complete, counterintuitive claim. Human body remains our strongest core topic: 7 of 9 Reels that reached 80+ are body facts. Heart autonomy is new, specific and well documented. In the variant rotation (short, answer, direct), 'direct' is next, so this uses lofi and palette 3, continuing the music and palette rotation. No tags, because no listed institution is the source. I skipped the Part 2 slide so the direct-open test stays clean. The caption adds the follow reason and a save prompt, and asks an opinion question.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "human body",
+  "topic": "Heart autorhythmicity: SA node pacemaker, beating outside the body, denervated transplant heart rate",
+  "hook": "Your heart doesn't need a brain",
+  "slides": [
+    {
+      "title": "Your heart doesn't need a brain",
+      "body": "A tiny patch of cells called the sinoatrial node fires its own electrical spark every beat.",
+      "highlight": "",
+      "image_query": "human heart anatomy",
+      "image_prompt": "Anatomical model of a human heart glowing with a small bright electrical spark at its top, dark background, cinematic lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-0027/img_01.jpg",
+      "credit": "Patrick J. Lynch, medical illustrator (CC BY 2.5) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "It beats outside the body",
+      "body": "Donor hearts can be kept warm and beating in a machine during transport, with no body attached.",
+      "highlight": "",
+      "image_query": "organ transplant box",
+      "image_prompt": "A red heart beating inside a clear sealed medical box with tubes, on a steel hospital cart, soft blue light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-0027/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Your brain only sets the pace",
+      "body": "Nerves just speed it up or slow it down. Transplanted hearts have no nerve links and still beat.",
+      "highlight": "",
+      "image_query": "vagus nerve illustration",
+      "image_prompt": "A glowing nerve fiber like a dimmer switch connected to a heart model, one cable cut, dark moody background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-0027/img_03.jpg",
+      "credit": "Manu5 (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Faster without the brake",
+      "body": "With no vagus nerve to slow it, a transplanted heart often rests at about 90 to 110 beats a minute.",
+      "highlight": "~100",
+      "image_query": "heart rate monitor",
+      "image_prompt": "A metronome swinging fast beside an anatomical heart model, motion blur, warm red light, minimal dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-0027/img_04.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "Your heartbeat starts in the heart itself. A tiny cluster of cells called the sinoatrial node fires an electrical signal about 60 to 100 times a minute at rest, and your brain only nudges the speed.\n\nThat is why donor hearts can keep beating in a machine on the way to surgery. Transplanted hearts, cut off from their nerves, often rest faster, at around 90 to 110 bpm. Save this for the next time someone says the brain runs everything. Follow for a new body fact you didn't know, every day.\n\nWould you rather have a heart run by your brain, or one that runs itself?\n\n📷 Patrick J. Lynch, medical illustrator (CC BY 2.5) via wikimedia · Manu5 (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "hearthealth",
+    "humanbody",
+    "anatomy",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Cleveland Clinic: Sinoatrial (SA) Node, https://my.clevelandclinic.org/health/body/23177-sinoatrial-node",
+    "OpenStax Anatomy & Physiology 19.2: Cardiac Muscle and Electrical Activity",
+    "US FDA approval of the TransMedics Organ Care System (OCS) Heart, 2021",
+    "Awad M. et al., 'Early denervation and later reinnervation of the heart following cardiac transplantation', Journal of the American Heart Association, 2016"
+  ],
+  "image_query": "human heart anatomy",
+  "image_prompt": "Anatomical human heart floating alone in darkness, a small bright electrical spark lighting it from within, cinematic red glow",
+  "design": {
+    "palette": 3,
+    "cover_label": "Human body",
+    "swipe_text": "Watch this",
+    "follow_line": "One fact you didn't know, every day"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261120-0027/img_cover.jpg",
+  "cover_credit": "Patrick J. Lynch, medical illustrator (CC BY 2.5) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Your heartbeat starts in the heart itself. A tiny cluster of cells called the sinoatrial node fires an electrical signal about 60 to 100 times a minute at rest, and your brain only nudges the speed.\n\nThat is why donor hearts can keep beating in a machine on the way to surgery. Transplanted hearts, cut off from their nerves, often rest faster, at around 90 to 110 bpm. Save this for the next time someone says the brain runs everything. Follow for a new body fact you didn't know, every day.\n\nWould you rather have a heart run by your brain, or one that runs itself?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "blur",
+      "rise",
+      "scale",
+      "left",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "dip",
+      "punch",
+      "dip"
+    ]
+  },
+  "music_used": "lofi"
+}

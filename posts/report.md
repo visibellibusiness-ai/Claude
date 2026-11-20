@@ -1,11 +1,11 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 19/11/2026 alle 18:35 UTC. Follower: 0.
+Aggiornato il 20/11/2026 alle 00:26 UTC. Follower: 0.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 410, di cui da non follower 410 (100%).
+- Visualizzazioni: 308, di cui da non follower 308 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
@@ -15,7 +15,6 @@ Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 o
 | 16/11/2026 | 6 | 6 | 9 | 9 | 0 | 0 |
 | 15/11/2026 | 17 | 17 | 21 | 21 | 0 | 0 |
 | 14/11/2026 | 113 | 113 | 124 | 124 | 0 | 0 |
-| 13/11/2026 | 98 | 98 | 102 | 102 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -45,7 +44,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 109 | 120 | 0,0% | 0,0% | 0,9% | n/d |  |
 | 07/11/2026 00:17 | reel | 5 senses nobody taught you in school | 4 | 7 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 06/11/2026 18:30 | reel | What coffee really does to your brain | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
-| 06/11/2026 00:19 | reel | Why you can't remember being a baby | 33 | 36 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -53,7 +51,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 06/11/2026 00:19 | Why you can't remember being a baby | 2.985 | 72.7 |
 | 06/11/2026 18:30 | What coffee really does to your brain | 50.999 | 0 |
 | 07/11/2026 00:17 | 5 senses nobody taught you in school | 3.650 | 100 |
 | 07/11/2026 18:14 | You're shorter tonight than this morning | 3.936 | 65.5 |
@@ -81,7 +78,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 755 | 0,1% | 0,0% |
+| reel | 22 | 722 | 0,1% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
