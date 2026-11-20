@@ -1568,5 +1568,23 @@
       "palette": 3
     },
     "media_id": "18125562226933545"
+  },
+  {
+    "date": "20261120-1839",
+    "series": "facts",
+    "topic": "Bacteria vs human cell count: 38 trillion vs 30 trillion, colon, 200 g",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "Bacteria outnumber your own body's cells",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 4
+    },
+    "media_id": "18104132009383647"
   }
 ]
