@@ -1,15 +1,15 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 20/11/2026 alle 13:49 UTC. Follower: 1.
+Aggiornato il 20/11/2026 alle 18:39 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 331, di cui da non follower 331 (100%).
+- Visualizzazioni: 332, di cui da non follower 332 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 20/11/2026 | 2 | 2 | 2 | 2 | 0 | 0 |
+| 20/11/2026 | 3 | 3 | 3 | 3 | 0 | 0 |
 | 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
 | 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
 | 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
@@ -23,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 18/11/2026 18:31 | reel | Your enamel never grows back | 35 | 37 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 18/11/2026 00:31 | reel | Sunsets on Mars are blue, not red. | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 17/11/2026 18:32 | reel | Your eyes never stop moving | 98 | 112 | 1,0% | 0,0% | 0,0% | n/d |  |
 | 17/11/2026 00:25 | reel | Your gut growls to clean itself | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -45,7 +46,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 109 | 120 | 0,0% | 0,0% | 0,9% | n/d |  |
 | 07/11/2026 00:17 | reel | 5 senses nobody taught you in school | 4 | 7 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 06/11/2026 18:30 | reel | What coffee really does to your brain | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -53,7 +53,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 06/11/2026 18:30 | What coffee really does to your brain | 50.999 | 0 |
 | 07/11/2026 00:17 | 5 senses nobody taught you in school | 3.650 | 100 |
 | 07/11/2026 18:14 | You're shorter tonight than this morning | 3.936 | 65.5 |
 | 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
@@ -76,12 +75,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 17/11/2026 00:25 | Your gut growls to clean itself | 2.074 | 100 |
 | 17/11/2026 18:32 | Your eyes never stop moving | 4.120 | 70 |
 | 18/11/2026 00:31 | Sunsets on Mars are blue, not red. | 2.554 | 50 |
+| 18/11/2026 18:31 | Your enamel never grows back | 2.752 | 77.1 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 724 | 0,1% | 0,0% |
+| reel | 23 | 759 | 0,1% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -90,7 +90,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
 | answer | 6 | 25.833333333333332 | 3116.1666666666665 | 70.18333333333334 |
-| direct | 5 | 26.8 | 3278.0 | 76.7 |
+| direct | 6 | 28.166666666666668 | 3190.3333333333335 | 76.76666666666667 |
 | short | 6 | 35.0 | 3244.8333333333335 | 75.36666666666666 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

@@ -1,0 +1,34 @@
+{
+  "date": "20261120-1839",
+  "series": "facts",
+  "format": "reel",
+  "trial": false,
+  "music": "documentary",
+  "theme_index": 56,
+  "topic": "Bacteria vs human cell count: 38 trillion vs 30 trillion, colon, 200 g",
+  "category": "human body",
+  "hook": "Bacteria outnumber your own body's cells",
+  "slides": 3,
+  "variant": "short",
+  "tags": [],
+  "tag_reason": "",
+  "design": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "images": [
+    "posts/20261120-1839/cover.jpg"
+  ],
+  "story": "posts/20261120-1839/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "You may have heard that bacteria outnumber your cells 10 to 1. That old number was a rough guess from the 1970s. A 2016 recount found about 38 trillion bacteria and 30 trillion human cells, so it's closer to 1.3 to 1.\n\nAlmost all of them live in your colon, and together they weigh only about 200 grams. Part 2 tomorrow: what those bacteria actually do for you. Follow so you don't miss it.\n\nDid you grow up hearing the 10 to 1 myth? 👇\n\n📷 ArmanTaev (CC0) via wikimedia · Korinna (CC BY 4.0) via wikimedia · Photo by Unknown, USDA Natural Resources Conservation Service. (Public domain) via wikimedia\n\n#microbiome #gutbacteria #humanbody #sciencefacts #didyouknow",
+  "carousel_caption": "You may have heard that bacteria outnumber your cells 10 to 1. That old number was a rough guess from the 1970s. A 2016 recount found about 38 trillion bacteria and 30 trillion human cells, so it's closer to 1.3 to 1.\n\nAlmost all of them live in your colon, and together they weigh only about 200 grams. Part 2 tomorrow: what those bacteria actually do for you. Follow so you don't miss it.\n\nDid you grow up hearing the 10 to 1 myth? 👇\n\nCover: Bacteria outnumber your own body's cells\n📷 ArmanTaev (CC0) via wikimedia\n\n1/3 Outnumbered, barely (38T)\nYour body holds about 38 trillion bacteria and 30 trillion human cells.\n📷 Korinna (CC BY 4.0) via wikimedia\n\n2/3 Mostly in your colon (Gut)\nNearly all of them live in your large intestine.\n🎨 AI-generated image\n\n3/3 Only 200 grams (200 g)\nAll of them together weigh about 200 grams, like a small apple.\n📷 Photo by Unknown, USDA Natural Resources Conservation Service. (Public domain) via wikimedia\n\n#microbiome #gutbacteria #humanbody #sciencefacts #didyouknow",
+  "slide_captions": [
+    "Bacteria outnumber your own body's cells\n📷 ArmanTaev (CC0) via wikimedia",
+    "1/3 Outnumbered, barely (38T)\nYour body holds about 38 trillion bacteria and 30 trillion human cells.\n📷 Korinna (CC BY 4.0) via wikimedia",
+    "2/3 Mostly in your colon (Gut)\nNearly all of them live in your large intestine.\n🎨 AI-generated image",
+    "3/3 Only 200 grams (200 g)\nAll of them together weigh about 200 grams, like a small apple.\n📷 Photo by Unknown, USDA Natural Resources Conservation Service. (Public domain) via wikimedia",
+    "Part 2 tomorrow. Follow to catch it."
+  ]
+}

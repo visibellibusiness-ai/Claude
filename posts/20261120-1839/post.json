@@ -1,0 +1,93 @@
+{
+  "reasoning": "This is a mandatory SHORT Reel test: 3 slides, a hook of 7 words or fewer, and bodies of 12 words or fewer. It continues the rotation (documentary music, short variant, palette 4 next after palette 3). Human body stays the core topic because it produces most of our 98-109 reach hits. The angle is a specific, counterintuitive direct claim with a myth-busting twist, close to the 'shorter tonight' and '2 million blood cells' hooks that worked. It comes from one solid peer-reviewed source (Sender, Fuchs & Milo 2016), so every number is verifiable. This Reel also runs the follow-conversion experiment with a 'Part 2 tomorrow' last slide. Part 2 will cover other microbiome facts, and the post should be logged as carrying the slide. No tags, because the source journal is not on the allowed list.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Bacteria vs human cell count: 38 trillion vs 30 trillion, colon, 200 g",
+  "hook": "Bacteria outnumber your own body's cells",
+  "slides": [
+    {
+      "title": "Outnumbered, barely",
+      "body": "Your body holds about 38 trillion bacteria and 30 trillion human cells.",
+      "highlight": "38T",
+      "image_query": "bacteria microscope",
+      "image_prompt": "Glowing rod-shaped bacteria floating in deep blue liquid, macro view, soft light, scientific style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1839/img_01.jpg",
+      "credit": "Korinna (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Mostly in your colon",
+      "body": "Nearly all of them live in your large intestine.",
+      "highlight": "Gut",
+      "image_query": "gut bacteria microscope",
+      "image_prompt": "Dense colorful colony of microscopic bacteria clustered along a soft pink tissue surface, macro scientific illustration",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1839/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Only 200 grams",
+      "body": "All of them together weigh about 200 grams, like a small apple.",
+      "highlight": "200 g",
+      "image_query": "red apple on scale",
+      "image_prompt": "A small red apple resting on a kitchen scale beside a petri dish of bacteria colonies, clean studio light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261120-1839/img_03.jpg",
+      "credit": "Photo by Unknown, USDA Natural Resources Conservation Service. (Public domain) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow to catch it.",
+  "caption": "You may have heard that bacteria outnumber your cells 10 to 1. That old number was a rough guess from the 1970s. A 2016 recount found about 38 trillion bacteria and 30 trillion human cells, so it's closer to 1.3 to 1.\n\nAlmost all of them live in your colon, and together they weigh only about 200 grams. Part 2 tomorrow: what those bacteria actually do for you. Follow so you don't miss it.\n\nDid you grow up hearing the 10 to 1 myth? 👇\n\n📷 ArmanTaev (CC0) via wikimedia · Korinna (CC BY 4.0) via wikimedia · Photo by Unknown, USDA Natural Resources Conservation Service. (Public domain) via wikimedia",
+  "hashtags": [
+    "microbiome",
+    "gutbacteria",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Sender R, Fuchs S, Milo R (2016). Revised Estimates for the Number of Human and Bacteria Cells in the Body. PLoS Biology 14(8): e1002533",
+    "Sender R, Fuchs S, Milo R (2016). Are We Really Vastly Outnumbered? Revisiting the Ratio of Bacterial to Host Cells in Humans. Cell 164(3): 337-340"
+  ],
+  "image_query": "bacteria colony petri dish",
+  "image_prompt": "Petri dish filled with colorful glowing bacteria colonies on a dark lab bench, dramatic side light, macro detail",
+  "design": {
+    "palette": 4,
+    "cover_label": "Human body",
+    "swipe_text": "Watch this",
+    "follow_line": "One fact your body hid from you, daily"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261120-1839/img_cover.jpg",
+  "cover_credit": "ArmanTaev (CC0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "You may have heard that bacteria outnumber your cells 10 to 1. That old number was a rough guess from the 1970s. A 2016 recount found about 38 trillion bacteria and 30 trillion human cells, so it's closer to 1.3 to 1.\n\nAlmost all of them live in your colon, and together they weigh only about 200 grams. Part 2 tomorrow: what those bacteria actually do for you. Follow so you don't miss it.\n\nDid you grow up hearing the 10 to 1 myth? 👇",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "right",
+      "blur",
+      "left",
+      "rise",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "glitch",
+      "cut"
+    ]
+  },
+  "music_used": "documentary"
+}
