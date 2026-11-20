@@ -1526,5 +1526,23 @@
       "palette": 2
     },
     "media_id": "18119315645080934"
+  },
+  {
+    "date": "20261120-0027",
+    "series": "facts",
+    "topic": "Heart autorhythmicity: SA node pacemaker, beating outside the body, denervated transplant heart rate",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "Your heart doesn't need a brain",
+    "slides": 4,
+    "variant": "direct",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "18125562226933545"
   }
 ]
