@@ -1,15 +1,16 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 21/11/2026 alle 04:18 UTC. Follower: 1.
+Aggiornato il 21/11/2026 alle 19:45 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 230, di cui da non follower 230 (100%).
+- Visualizzazioni: 318, di cui da non follower 318 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 20/11/2026 | 22 | 22 | 25 | 25 | 1 | 1 |
+| 21/11/2026 | 28 | 28 | 33 | 33 | 0 | 0 |
+| 20/11/2026 | 75 | 75 | 80 | 80 | 1 | 1 |
 | 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
 | 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
 | 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
@@ -22,6 +23,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 19/11/2026 18:36 | reel | Tardigrades survived 10 days in open spa | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 19/11/2026 00:33 | reel | Lose half your liver. It grows back. | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 18/11/2026 18:31 | reel | Your enamel never grows back | 35 | 37 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 18/11/2026 00:31 | reel | Sunsets on Mars are blue, not red. | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -44,7 +46,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 09/11/2026 00:15 | reel | What the death zone does to your body | 102 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
 | 08/11/2026 18:14 | reel | 5 body parts evolution forgot to delete | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 07/11/2026 18:14 | reel | You're shorter tonight than this morning | 109 | 120 | 0,0% | 0,0% | 0,9% | n/d |  |
 
 ### Reel
 
@@ -52,7 +53,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 07/11/2026 18:14 | You're shorter tonight than this morning | 3.936 | 65.5 |
 | 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
 | 08/11/2026 18:14 | 5 body parts evolution forgot to delete | 10.815 | 66.7 |
 | 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
@@ -75,12 +75,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 18/11/2026 00:31 | Sunsets on Mars are blue, not red. | 2.554 | 50 |
 | 18/11/2026 18:31 | Your enamel never grows back | 2.752 | 77.1 |
 | 19/11/2026 00:33 | Lose half your liver. It grows back. | 829 | 100 |
+| 19/11/2026 18:36 | Tardigrades survived 10 days in open spa | 6.852 | 0 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 757 | 0,1% | 0,0% |
+| reel | 23 | 648 | 0,2% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -88,7 +89,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 6 | 25.833333333333332 | 3116.1666666666665 | 70.18333333333334 |
+| answer | 7 | 22.142857142857142 | 3649.8571428571427 | 60.15714285714286 |
 | direct | 6 | 28.166666666666668 | 3190.3333333333335 | 76.76666666666667 |
 | short | 7 | 30.285714285714285 | 2899.714285714286 | 78.88571428571429 |
 

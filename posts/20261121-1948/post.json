@@ -1,0 +1,205 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-21",
+  "hook": "Mexico just caught an FBI top-10 fugitive",
+  "reel_hook": "FBI's top-10 fugitive caught in Mexico",
+  "slides": [
+    {
+      "title": "Mexico nabs El Chapo Isidro",
+      "highlight": "Top 10",
+      "image_query": "",
+      "image_prompt": "Open steel handcuffs on a dark wooden table beside a folded Mexican flag, harsh spotlight from above, red and blue light reflections on the metal",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Mexico detained alleged cartel boss Fausto Isidro Meza Flores."
+        ],
+        [
+          "WHY IT MATTERS",
+          "He's on the FBI's Ten Most Wanted Fugitives list."
+        ],
+        [
+          "FOR YOU",
+          "Violence broke out in Sinaloa after the arrest; check travel advice before going."
+        ]
+      ],
+      "body": "Mexico detained alleged cartel boss Fausto Isidro Meza Flores. He's on the FBI's Ten Most Wanted Fugitives list. Violence broke out in Sinaloa after the arrest; check travel advice before going.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-1948/img_01.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Denmark expels Russian attaché",
+      "highlight": "Rapper",
+      "image_query": "Copenhagen Denmark flag",
+      "image_prompt": "Danish and Russian flags on separate poles drifting apart in cold wind, grey Copenhagen sky, a closed wooden embassy-style door below",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Denmark expelled Russia's defence attaché."
+        ],
+        [
+          "WHY IT MATTERS",
+          "It cites an alleged plot to kill Ukrainian rapper Kyivstoner."
+        ],
+        [
+          "FOR YOU",
+          "Nothing changes day to day; watch whether Moscow expels Danish diplomats in return."
+        ]
+      ],
+      "body": "Denmark expelled Russia's defence attaché. It cites an alleged plot to kill Ukrainian rapper Kyivstoner. Nothing changes day to day; watch whether Moscow expels Danish diplomats in return.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-1948/img_02.jpg",
+      "credit": "Jebulon (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Russian ship hit in Baltic",
+      "highlight": "Drone",
+      "image_query": "cargo ship Baltic Sea",
+      "image_prompt": "Cargo ship on cold grey sea with dark smoke rising from its deck, small drone silhouette in the overcast sky above",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A drone attack set a Russian cargo ship on fire."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Finland says it happened in the Gulf of Finland."
+        ],
+        [
+          "FOR YOU",
+          "Details are thin: who did it and crew status remain unconfirmed."
+        ]
+      ],
+      "body": "A drone attack set a Russian cargo ship on fire. Finland says it happened in the Gulf of Finland. Details are thin: who did it and crew status remain unconfirmed.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-1948/img_03.jpg",
+      "credit": "Ad Meskens (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Trump warns Iran over plot",
+      "highlight": "Iran",
+      "image_query": "",
+      "image_prompt": "Two chess kings facing each other on a board under dramatic side light, long shadows, empty squares between them, dark background",
+      "label": "POLITICS",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Trump threatened force over a reported Iranian 'dirty bomb' plot."
+        ],
+        [
+          "WHY IT MATTERS",
+          "The plot itself remains unconfirmed."
+        ],
+        [
+          "FOR YOU",
+          "Nothing changes yet; treat viral claims about the plot with caution."
+        ]
+      ],
+      "body": "Trump threatened force over a reported Iranian 'dirty bomb' plot. The plot itself remains unconfirmed. Nothing changes yet; treat viral claims about the plot with caution.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-1948/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Climate talks go to overtime",
+      "highlight": "COP31",
+      "image_query": "Antalya Turkey coast",
+      "image_prompt": "Wall clock past midnight above an empty conference table with scattered papers, water glasses and a small globe, Mediterranean night beyond the window",
+      "label": "SCIENCE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "COP31 in Antalya, Türkiye, ran past its scheduled end."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Countries still disagree on the final climate deal."
+        ],
+        [
+          "FOR YOU",
+          "No deal yet; the final text decides how hard countries push on climate."
+        ]
+      ],
+      "body": "COP31 in Antalya, Türkiye, ran past its scheduled end. Countries still disagree on the final climate deal. No deal yet; the final text decides how hard countries push on climate.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-1948/img_05.jpg",
+      "credit": "Mahir Uysal mahiruysal (CC0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow @you.didnot.know for daily news",
+  "caption": "🚨 Mexico detained alleged cartel boss \"El Chapo Isidro\", on the FBI's Ten Most Wanted list. Violence followed in Sinaloa, so check travel advice.\n🇩🇰 Denmark expelled Russia's defence attaché over an alleged plot to kill Ukrainian rapper Kyivstoner.\n🚢 A drone attack set a Russian cargo ship on fire in the Gulf of Finland. Details still thin.\n⚠️ Trump threatened force over a reported Iranian \"dirty bomb\" plot. The plot is unconfirmed.\n🌍 COP31 climate talks in Antalya ran into overtime with no final deal yet.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for your daily brief.\n\n📷 Jebulon (CC0) via wikimedia · Ad Meskens (CC BY-SA 4.0) via wikimedia · Mahir Uysal mahiruysal (CC0) via wikimedia",
+  "hashtags": [
+    "elchapoisidro",
+    "cop31",
+    "denmark",
+    "worldnews",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.nbcnews.com/world/mexico/mexico-detains-top-cartel-boss-el-chapo-isidro-rcna610559",
+    "https://abcnews.com/International/wireStory/mexico-detains-top-cartel-boss-el-chapo-isidro-138341584",
+    "https://www.npr.org/2026/11/21/nx-s1-6049672/cartel-boss-el-chapo-isidro-detained",
+    "https://www.cbsnews.com/news/mexico-drug-kingpin-arrest-fausto-isidro-meza-flores-sinaloa/",
+    "https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico",
+    "https://www.thelocal.dk/20261121/denmark-expels-russian-diplomat-over-attempt-to-kill-ukrainian-rapper",
+    "https://cphpost.dk/2026-11-21/news/round-up/denmark-expels-russian-diplomat-over-alleged-assassination-plot-targeting-ukrainian-rapper/",
+    "https://united24media.com/world/denmark-expels-russian-defense-attache-over-alleged-plot-to-kill-ukrainian-rapper-kyivstoner-24583",
+    "https://aa.com.tr/en/world/morning-briefing-nov-21-2026/4132676",
+    "https://www.france24.com/en/europe/20261121-drone-attack-sets-russian-cargo-ship-ablaze-in-gulf-of-finland",
+    "https://www.yahoo.com/news/world/articles/russian-cargo-ship-hit-drone-154642990.html",
+    "https://www.pbs.org/newshour/politics/watch-we-will-not-allow-that-to-happen-trump-says-of-reported-iran-dirty-bomb-threat",
+    "https://aa.com.tr/en/world/morning-briefing-nov-21-2026/4132676",
+    "https://news.un.org/en/story/2026/11/1168845",
+    "https://www.thenationalnews.com/news/mena/2026/11/21/cop31-climate-talks-overrun-in-dispute-over-final-deal/",
+    "https://www.hurriyetdailynews.com/cop31-concludes-in-antalya-after-two-weeks-of-climate-talks-229651",
+    "https://www.al-monitor.com/originals/2026/11/cop31-delivers-deals-host-turkey-climate-diplomacy-stalls"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 21 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "",
+  "image_prompt": "Open steel handcuffs on a dark wooden table beside a folded Mexican flag, harsh spotlight, red and blue police light reflections glowing on the metal",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261121-1948/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "🚨 Mexico detained alleged cartel boss \"El Chapo Isidro\", on the FBI's Ten Most Wanted list. Violence followed in Sinaloa, so check travel advice.\n🇩🇰 Denmark expelled Russia's defence attaché over an alleged plot to kill Ukrainian rapper Kyivstoner.\n🚢 A drone attack set a Russian cargo ship on fire in the Gulf of Finland. Details still thin.\n⚠️ Trump threatened force over a reported Iranian \"dirty bomb\" plot. The plot is unconfirmed.\n🌍 COP31 climate talks in Antalya ran into overtime with no final deal yet.\n\nWhich story surprised you most?\n\nFollow @you.didnot.know for your daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "rise",
+      "blur",
+      "right",
+      "scale",
+      "right",
+      "left",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "glitch",
+      "punch",
+      "cut",
+      "dip",
+      "punch"
+    ]
+  },
+  "music_used": "lofi"
+}
