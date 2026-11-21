@@ -1598,5 +1598,23 @@
       "palette": 4
     },
     "media_id": "18104132009383647"
+  },
+  {
+    "date": "20261121-0419",
+    "series": "facts",
+    "topic": "Cornea gets oxygen directly from the air: avascular cornea, tear film, overnight swelling, sleeping in contacts",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "Your eyes take oxygen straight from the air",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "17918363484521732"
   }
 ]
