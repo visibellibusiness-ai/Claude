@@ -1628,5 +1628,41 @@
       "palette": 0
     },
     "media_id": "17918363484521732"
+  },
+  {
+    "date": "20261121-1948",
+    "series": "news",
+    "topic": "Daily news 2026-11-21",
+    "format": "carousel",
+    "trial": false,
+    "music": null,
+    "category": "news",
+    "hook": "Mexico just caught an FBI top-10 fugitive",
+    "slides": 5,
+    "variant": null,
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "17907110730672290"
+  },
+  {
+    "date": "20261121-1948",
+    "series": "news",
+    "topic": "Daily news 2026-11-21",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "news",
+    "hook": "Mexico just caught an FBI top-10 fugitive",
+    "slides": 5,
+    "variant": null,
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 2
+    },
+    "media_id": "17973516413961903"
   }
 ]
