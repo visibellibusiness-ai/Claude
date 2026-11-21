@@ -1,0 +1,105 @@
+{
+  "reasoning": "Body remains the core, and hiccups are untouched. The mandatory direct-open experiment needs one strong, complete line. 'A man hiccuped for 68 years' is concrete and record-based, and it fits the 32-character title box. It uses 4 content slides with short texts and documentary music to keep the rotation. Palette 1 continues the rotation. There are no tags because the main fact is a Guinness record and no allowed org is the source. I am skipping the 'Part 2' CTA because I cannot guarantee a follow-up post, so this Reel acts as a non-CTA comparison.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human body",
+  "topic": "Hiccups: 68-year record, glottis snap, fetal hiccups, gill reflex theory",
+  "hook": "A man hiccuped for 68 years",
+  "slides": [
+    {
+      "title": "A man hiccuped for 68 years",
+      "body": "Charles Osborne started in 1922 after lifting a hog. They stopped in 1990, a year before he died.",
+      "highlight": "",
+      "image_query": "pig farm",
+      "image_prompt": "Old wooden farm barn at dusk with a large pig in straw, vintage 1920s atmosphere, warm light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-2225/img_01.jpg",
+      "credit": "Sumitsurai (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "What a hiccup is",
+      "body": "Your diaphragm spasms and pulls in air. Your vocal cords slam shut a split second later. That's the 'hic'.",
+      "highlight": "35 ms",
+      "image_query": "diaphragm anatomy model",
+      "image_prompt": "Anatomical model of human lungs and diaphragm muscle on a dark background, dramatic lighting, medical illustration style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-2225/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "It starts in the womb",
+      "body": "Ultrasounds show babies hiccuping long before birth. Newborns hiccup far more often than adults do.",
+      "highlight": "",
+      "image_query": "pregnancy ultrasound",
+      "image_prompt": "Glowing abstract ultrasound-style image of a curled fetus silhouette in soft blue tones, no text",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-2225/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Nobody knows why",
+      "body": "One theory: it's a leftover reflex from amphibian ancestors, who pumped water over gills with their airways shut.",
+      "highlight": "Gills",
+      "image_query": "tadpole underwater",
+      "image_prompt": "Close-up of a tadpole swimming in clear green pond water, sunlight rays, visible gills",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-2225/img_04.jpg",
+      "credit": "User:Ruhrfisch (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a weird fact every day",
+  "caption": "Charles Osborne got the hiccups in 1922 while lifting a hog and didn't stop until 1990. Guinness World Records counts it as the longest attack ever, an estimated 430 million hics.\n\nEvery hiccup is a diaphragm spasm followed by your vocal cords snapping shut. You even did it in the womb. Scientists still aren't sure why, and one theory traces it back to gill breathing. Hiccups lasting over 48 hours are worth a doctor's visit. Sources: Guinness World Records, Mayo Clinic, Straus et al. (BioEssays, 2003).\n\nWhat's your go-to hiccup cure, and does it actually work?\n\n📷 Shixart1985 (CC BY 2.0) via wikimedia · Sumitsurai (CC BY-SA 4.0) via wikimedia · User:Ruhrfisch (CC BY-SA 3.0) via wikimedia",
+  "hashtags": [
+    "hiccups",
+    "humanbody",
+    "weirdfacts",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Guinness World Records: Longest attack of hiccups, Charles Osborne (1922-1990)",
+    "Mayo Clinic: Hiccups, symptoms and causes",
+    "Straus C. et al. (2003) A phylogenetic hypothesis for the origin of hiccough. BioEssays 25(2):182-188",
+    "Kahrilas PJ, Shi G. (1997) Why do we hiccup? Gut 41:712-713"
+  ],
+  "image_query": "glass of water",
+  "image_prompt": "A single glass of water on a dark table with tiny ripples on the surface, as if jolted, moody cinematic light",
+  "design": {
+    "palette": 1,
+    "cover_label": "Human body",
+    "swipe_text": "Watch this",
+    "follow_line": "Strange, true facts every single day"
+  },
+  "variant": "direct",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261121-2225/img_cover.jpg",
+  "cover_credit": "Shixart1985 (CC BY 2.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Charles Osborne got the hiccups in 1922 while lifting a hog and didn't stop until 1990. Guinness World Records counts it as the longest attack ever, an estimated 430 million hics.\n\nEvery hiccup is a diaphragm spasm followed by your vocal cords snapping shut. You even did it in the womb. Scientists still aren't sure why, and one theory traces it back to gill breathing. Hiccups lasting over 48 hours are worth a doctor's visit. Sources: Guinness World Records, Mayo Clinic, Straus et al. (BioEssays, 2003).\n\nWhat's your go-to hiccup cure, and does it actually work?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 1
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "left",
+      "rise",
+      "scale",
+      "right",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "glitch",
+      "cut",
+      "glitch",
+      "flash"
+    ]
+  },
+  "music_used": "documentary"
+}
