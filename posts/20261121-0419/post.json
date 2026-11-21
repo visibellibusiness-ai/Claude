@@ -1,0 +1,107 @@
+{
+  "reasoning": "Mandatory answer-first test: the hook states the claim outright (corneas get oxygen straight from the air), with 4 content slides that explain it. Human body stays the core topic. Eye facts have done well for us: 'your eyes never stop moving' reached 98 and 'you can see your nose' reached 83. Corneal oxygen is a new angle with no overlap with earlier eye posts. Mystery music and palette 0 keep the rotation going. Trial is set to false as the experiment requires. No tag, because the CDC is not on the allowed list. I use a plain follow CTA rather than a 'Part 2' promise, so I don't commit to a follow-up I can't guarantee.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Cornea gets oxygen directly from the air: avascular cornea, tear film, overnight swelling, sleeping in contacts",
+  "hook": "Your eyes take oxygen straight from the air",
+  "slides": [
+    {
+      "title": "Zero blood vessels",
+      "body": "Your cornea has no blood vessels at all. That's why it's clear enough for light to pass through.",
+      "highlight": "0",
+      "image_query": "human eye macro",
+      "image_prompt": "Extreme close-up of a clear glass dome lens catching light, crystal transparent, soft blue background, scientific macro style",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-0419/img_01.jpg",
+      "credit": "Basile Morin (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Fed by your tears",
+      "body": "Oxygen from the air dissolves into your tear film, then seeps straight into the cornea's cells.",
+      "highlight": "",
+      "image_query": "tear drop macro",
+      "image_prompt": "A single glistening water droplet on a curved transparent surface with tiny oxygen bubbles drifting into it, soft morning light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-0419/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Eyes closed at night",
+      "body": "Asleep, it gets oxygen from vessels in your eyelids instead. It runs so low the cornea swells about 4% by morning.",
+      "highlight": "4%",
+      "image_query": "bedroom night moonlight",
+      "image_prompt": "Dark bedroom at night, moonlight on a pillow, a faint glowing blue dome suggesting a resting eye, calm and quiet mood",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-0419/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Why contacts matter",
+      "body": "Sleeping in contact lenses cuts that supply further. The CDC says it raises eye infection risk up to 8 times.",
+      "highlight": "8x",
+      "image_query": "contact lens case",
+      "image_prompt": "A contact lens resting on a fingertip-free glass surface beside an open lens case and bedside lamp, night setting, soft shadows",
+      "image": "/home/runner/work/Claude/Claude/posts/20261121-0419/img_04.jpg",
+      "credit": "Multicherry (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow so you never miss the next one",
+  "caption": "Your cornea, the clear front window of your eye, has no blood vessels. Instead, it pulls oxygen directly from the air through the thin layer of tears covering it.\n\nAt night, with your eyes shut, it has to rely on vessels in your eyelids, and it swells slightly until you wake up. That's also why sleeping in contact lenses is a bad idea: the CDC says it raises your risk of eye infection 6 to 8 times. Sources: CDC, American Academy of Ophthalmology.\n\nBe honest: have you ever fallen asleep with your contacts in? 👀\n\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia · Multicherry (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "cornea",
+    "eyefacts",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "CDC – Healthy Contact Lens Wear and Care: sleeping in contacts raises infection risk 6-8 times (cdc.gov/contact-lenses)",
+    "American Academy of Ophthalmology – Cornea anatomy (aao.org)",
+    "Mertz GW (1980) Overnight swelling of the living human cornea, J Am Optom Assoc",
+    "Cleveland Clinic – Cornea: anatomy and function"
+  ],
+  "image_query": "human eye close up",
+  "image_prompt": "Macro view of a transparent glass dome lens with tiny glowing oxygen bubbles flowing into it from the surrounding air, deep blue background, scientific style",
+  "design": {
+    "palette": 0,
+    "cover_label": "Your eyes, explained",
+    "swipe_text": "Watch this",
+    "follow_line": "Body facts you were never taught"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261121-0419/img_cover.jpg",
+  "cover_credit": "Basile Morin (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Your cornea, the clear front window of your eye, has no blood vessels. Instead, it pulls oxygen directly from the air through the thin layer of tears covering it.\n\nAt night, with your eyes shut, it has to rely on vessels in your eyelids, and it swells slightly until you wake up. That's also why sleeping in contact lenses is a bad idea: the CDC says it raises your risk of eye infection 6 to 8 times. Sources: CDC, American Academy of Ophthalmology.\n\nBe honest: have you ever fallen asleep with your contacts in? 👀",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "scale",
+      "rise",
+      "left",
+      "right",
+      "rise",
+      "left"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "cut",
+      "punch",
+      "flash",
+      "punch"
+    ]
+  },
+  "music_used": "mystery"
+}

@@ -1,0 +1,35 @@
+{
+  "date": "20261121-0419",
+  "series": "facts",
+  "format": "reel",
+  "trial": false,
+  "music": "mystery",
+  "theme_index": 57,
+  "topic": "Cornea gets oxygen directly from the air: avascular cornea, tear film, overnight swelling, sleeping in contacts",
+  "category": "human body",
+  "hook": "Your eyes take oxygen straight from the air",
+  "slides": 4,
+  "variant": "answer",
+  "tags": [],
+  "tag_reason": "",
+  "design": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "images": [
+    "posts/20261121-0419/cover.jpg"
+  ],
+  "story": "posts/20261121-0419/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "Your cornea, the clear front window of your eye, has no blood vessels. Instead, it pulls oxygen directly from the air through the thin layer of tears covering it.\n\nAt night, with your eyes shut, it has to rely on vessels in your eyelids, and it swells slightly until you wake up. That's also why sleeping in contact lenses is a bad idea: the CDC says it raises your risk of eye infection 6 to 8 times. Sources: CDC, American Academy of Ophthalmology.\n\nBe honest: have you ever fallen asleep with your contacts in? 👀\n\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia · Multicherry (CC BY-SA 4.0) via wikimedia\n\n#cornea #eyefacts #humanbody #sciencefacts #didyouknow",
+  "carousel_caption": "Your cornea, the clear front window of your eye, has no blood vessels. Instead, it pulls oxygen directly from the air through the thin layer of tears covering it.\n\nAt night, with your eyes shut, it has to rely on vessels in your eyelids, and it swells slightly until you wake up. That's also why sleeping in contact lenses is a bad idea: the CDC says it raises your risk of eye infection 6 to 8 times. Sources: CDC, American Academy of Ophthalmology.\n\nBe honest: have you ever fallen asleep with your contacts in? 👀\n\nCover: Your eyes take oxygen straight from the air\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia\n\n1/4 Zero blood vessels (0)\nYour cornea has no blood vessels at all. That's why it's clear enough for light to pass through.\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia\n\n2/4 Fed by your tears\nOxygen from the air dissolves into your tear film, then seeps straight into the cornea's cells.\n🎨 AI-generated image\n\n3/4 Eyes closed at night (4%)\nAsleep, it gets oxygen from vessels in your eyelids instead. It runs so low the cornea swells about 4% by morning.\n🎨 AI-generated image\n\n4/4 Why contacts matter (8x)\nSleeping in contact lenses cuts that supply further. The CDC says it raises eye infection risk up to 8 times.\n📷 Multicherry (CC BY-SA 4.0) via wikimedia\n\n#cornea #eyefacts #humanbody #sciencefacts #didyouknow",
+  "slide_captions": [
+    "Your eyes take oxygen straight from the air\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia",
+    "1/4 Zero blood vessels (0)\nYour cornea has no blood vessels at all. That's why it's clear enough for light to pass through.\n📷 Basile Morin (CC BY-SA 4.0) via wikimedia",
+    "2/4 Fed by your tears\nOxygen from the air dissolves into your tear film, then seeps straight into the cornea's cells.\n🎨 AI-generated image",
+    "3/4 Eyes closed at night (4%)\nAsleep, it gets oxygen from vessels in your eyelids instead. It runs so low the cornea swells about 4% by morning.\n🎨 AI-generated image",
+    "4/4 Why contacts matter (8x)\nSleeping in contact lenses cuts that supply further. The CDC says it raises eye infection risk up to 8 times.\n📷 Multicherry (CC BY-SA 4.0) via wikimedia",
+    "Follow so you never miss the next one"
+  ]
+}
