@@ -1664,5 +1664,23 @@
       "palette": 2
     },
     "media_id": "17973516413961903"
+  },
+  {
+    "date": "20261121-2225",
+    "series": "facts",
+    "topic": "Hiccups: 68-year record, glottis snap, fetal hiccups, gill reflex theory",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human body",
+    "hook": "A man hiccuped for 68 years",
+    "slides": 4,
+    "variant": "direct",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 1
+    },
+    "media_id": "18021289079966809"
   }
 ]
