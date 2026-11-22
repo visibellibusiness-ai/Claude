@@ -1,0 +1,106 @@
+{
+  "reasoning": "Mandatory answer-first experiment: the hook states the full claim with a concrete number. Last 5 Reels were all body topics, and the strategy asks for 1 in 4 to be space, animals or oceans, so this one is space. The fact is well documented (NASA planetary diameters sum to about 380,000 km against a 384,400 km average Earth-Moon distance). Slide 4 adds an honest twist (it fails at perigee) that rewards watching to the end. Four short slides keep the Reel brief. I also run the follow-CTA experiment with a 'Part 2 tomorrow' ending and log it here; Part 2 should cover the Sun's scale. Rotation: palette 4 and lofi music.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "space",
+  "topic": "All planets fit between Earth and Moon (Part 1, follow-CTA logged)",
+  "hook": "All 7 planets fit between Earth and Moon",
+  "slides": [
+    {
+      "title": "The average gap",
+      "body": "The Moon sits about 384,400 km from Earth on average. Light crosses that gap in roughly 1.3 seconds.",
+      "highlight": "384k",
+      "image_query": "full moon night sky",
+      "image_prompt": "Earth and a small Moon floating far apart in black space, a thin glowing line stretching between them, cinematic lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2249/img_01.jpg",
+      "credit": "NASA/KSC (public domain (NASA)) via nasa",
+      "generated": false
+    },
+    {
+      "title": "Line up the planets",
+      "body": "Put Jupiter, Saturn, Uranus, Neptune, Venus, Mars and Mercury side by side. Together they span about 380,000 km.",
+      "highlight": "380k",
+      "image_query": "jupiter saturn planets",
+      "image_prompt": "Seven planets lined up edge to edge in a row across dark space, Jupiter and Saturn largest, tiny Mercury at the end",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2249/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Only just",
+      "body": "That leaves about 4,400 km of space. Not even Mars, 6,779 km wide, would fit in the leftover gap.",
+      "highlight": "4,400",
+      "image_query": "mars planet",
+      "image_prompt": "A small red planet squeezed into a narrow gap between a row of planets and the Moon, dramatic tight fit in space",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2249/img_03.jpg",
+      "credit": "NASA/JSC (public domain (NASA)) via nasa",
+      "generated": false
+    },
+    {
+      "title": "Not every night",
+      "body": "The Moon's orbit is an ellipse. At its closest, about 363,000 km away, the planets no longer fit.",
+      "highlight": "363k",
+      "image_query": "moon orbit earth",
+      "image_prompt": "Elliptical orbit path drawn as a glowing ring around Earth, the Moon at its closest point, deep space background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2249/img_04.jpg",
+      "credit": "NASA/JSC (public domain (NASA)) via nasa",
+      "generated": false
+    }
+  ],
+  "cta": "Part 2 tomorrow. Follow to catch it",
+  "caption": "Line up every other planet in our solar system, side by side, and they fill about 380,000 km. The average distance to the Moon is 384,400 km. So they fit, with roughly 4,400 km to spare.\n\nThe catch: the Moon's orbit is not a perfect circle. At its closest point it is about 363,000 km away, and then the planets no longer fit. Source: NASA planetary fact sheets. Part 2 tomorrow is about how big the Sun really is, so follow if you want it.\n\nBe honest: did you think they would fit?\n\n📷 NASA/JSC (public domain (NASA)) via nasa · NASA/KSC (public domain (NASA)) via nasa",
+  "hashtags": [
+    "solarsystem",
+    "moon",
+    "planets",
+    "astronomy",
+    "spacefacts"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "NASA Planetary Fact Sheet (NSSDCA): equatorial diameters of planets",
+    "NASA Moon Fact Sheet: mean Earth-Moon distance 384,400 km, perigee about 363,300 km",
+    "NASA Science: Moon distance and orbit overview"
+  ],
+  "image_query": "earth and moon space",
+  "image_prompt": "Earth and the Moon far apart in black space with a neat row of planets lined up edge to edge filling the gap between them",
+  "design": {
+    "palette": 4,
+    "cover_label": "Space scale",
+    "swipe_text": "Watch this",
+    "follow_line": "Mind-bending facts, every single day"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261122-2249/img_cover.jpg",
+  "cover_credit": "NASA/JSC (public domain (NASA)) via nasa",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "Line up every other planet in our solar system, side by side, and they fill about 380,000 km. The average distance to the Moon is 384,400 km. So they fit, with roughly 4,400 km to spare.\n\nThe catch: the Moon's orbit is not a perfect circle. At its closest point it is about 363,000 km away, and then the planets no longer fit. Source: NASA planetary fact sheets. Part 2 tomorrow is about how big the Sun really is, so follow if you want it.\n\nBe honest: did you think they would fit?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 4
+  },
+  "reel_fx": {
+    "motion": "pan_l",
+    "entrances": [
+      "blur",
+      "rise",
+      "left",
+      "right",
+      "scale",
+      "right"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "cut",
+      "dip",
+      "flash",
+      "glitch"
+    ]
+  },
+  "music_used": "lofi"
+}
