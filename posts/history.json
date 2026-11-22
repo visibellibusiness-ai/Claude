@@ -1694,5 +1694,23 @@
       "palette": 1
     },
     "media_id": "18021289079966809"
+  },
+  {
+    "date": "20261122-0331",
+    "series": "facts",
+    "topic": "Brain freeze: cold palate, brain artery blood surge, tongue fix",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "Why ice cream gives you brain freeze",
+    "slides": 3,
+    "variant": "short",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 3
+    },
+    "media_id": "18159998074518688"
   }
 ]
