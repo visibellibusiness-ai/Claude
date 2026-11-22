@@ -1,0 +1,208 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-22",
+  "hook": "Climate talks just failed. First since 2009",
+  "reel_hook": "Climate talks collapsed. First time since 2009",
+  "slides": [
+    {
+      "title": "COP31 ends with no deal",
+      "highlight": "2009",
+      "image_query": "coal power plant",
+      "image_prompt": "An empty negotiating table with a small globe and an unsigned document under a single lamp, oil barrels stacked in the dim background",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "COP31 in Turkey ended Sunday without any final agreement."
+        ],
+        [
+          "WHY IT MATTERS",
+          "First failed UN climate deal since Copenhagen in 2009."
+        ],
+        [
+          "FOR YOU",
+          "Paris Agreement and past pledges still stand; no new fossil fuel plan."
+        ]
+      ],
+      "body": "COP31 in Turkey ended Sunday without any final agreement. First failed UN climate deal since Copenhagen in 2009. Paris Agreement and past pledges still stand; no new fossil fuel plan.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2002/img_01.jpg",
+      "credit": "Joel200716 (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "NATO meets over Poland missiles",
+      "highlight": "Kh-101",
+      "image_query": "f-35 fighter jet",
+      "image_prompt": "A military radar dish on a frosty field at dusk, a twisted piece of missile debris lying in the grass under cold blue light",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "NATO's top body meets Monday over Russian missiles in Poland."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Rutte pledged in Warsaw to defend Polish territory."
+        ],
+        [
+          "FOR YOU",
+          "Poland asked for more F-35s and early-warning jets; nothing announced yet."
+        ]
+      ],
+      "body": "NATO's top body meets Monday over Russian missiles in Poland. Rutte pledged in Warsaw to defend Polish territory. Poland asked for more F-35s and early-warning jets; nothing announced yet.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2002/img_02.jpg",
+      "credit": "Major Ofer, Israeli Air Force רס\"ן עופר, חיל האוויר הישראלי (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Iran strikes Bahrain site",
+      "highlight": "2 hurt",
+      "image_query": "",
+      "image_prompt": "Smoke rising from an industrial plant on a desert coastline at night, an air-defence radar silhouetted in the foreground",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "An Iranian attack hit an industrial site in Bahrain's Sitra."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Bahrain hosts the US Navy's Fifth Fleet."
+        ],
+        [
+          "FOR YOU",
+          "Talks to reopen the Strait of Hormuz remain stalled, with Qatar mediating."
+        ]
+      ],
+      "body": "An Iranian attack hit an industrial site in Bahrain's Sitra. Bahrain hosts the US Navy's Fifth Fleet. Talks to reopen the Strait of Hormuz remain stalled, with Qatar mediating.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2002/img_03.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "11 dead in cartel boss arrest",
+      "highlight": "11",
+      "image_query": "",
+      "image_prompt": "A military helicopter on a dusty airstrip at dawn, a pair of open handcuffs resting on a wooden crate in the foreground",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "At least 11 died in El Chapo Isidro's arrest and aftermath."
+        ],
+        [
+          "WHY IT MATTERS",
+          "US charged him in 2012 over fentanyl, cocaine, heroin."
+        ],
+        [
+          "FOR YOU",
+          "A second alleged leader, El Serafin, was also arrested; the US helped."
+        ]
+      ],
+      "body": "At least 11 died in El Chapo Isidro's arrest and aftermath. US charged him in 2012 over fentanyl, cocaine, heroin. A second alleged leader, El Serafin, was also arrested; the US helped.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2002/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Probe reaches Mercury orbit",
+      "highlight": "8 yrs",
+      "image_query": "planet mercury",
+      "image_prompt": "A small spacecraft with solar panels glinting beside a grey cratered planet, the huge blazing Sun behind it against black space",
+      "label": "SCIENCE",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "BepiColombo entered orbit around Mercury after an eight-year trip."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Only the second mission ever to orbit Mercury."
+        ],
+        [
+          "FOR YOU",
+          "Two orbiters will study Mercury's interior, magnetism and surface for at least a year."
+        ]
+      ],
+      "body": "BepiColombo entered orbit around Mercury after an eight-year trip. Only the second mission ever to orbit Mercury. Two orbiters will study Mercury's interior, magnetism and surface for at least a year.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-2002/img_05.jpg",
+      "credit": "NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State Universit (Public domain) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "🌍 COP31 ended with no deal, a first since 2009. Paris Agreement and past pledges still stand.\n🛡️ NATO's top body meets Monday after Russian missiles landed in Poland.\n🔥 Iranian attack hit an industrial site in Bahrain; two people hurt. Hormuz talks still stalled.\n🚔 At least 11 dead around the arrest of cartel boss El Chapo Isidro in Mexico.\n🪐 BepiColombo is now orbiting Mercury after an eight-year trip.\nShould climate summits keep going without a deal? Tell us below 👇\nFollow @you.didnot.know for the daily brief.\n\n📷 Mussi Katz from Israel (CC0) via wikimedia · Joel200716 (CC BY 4.0) via wikimedia · Major Ofer, Israeli Air Force רס\"ן עופר, חיל האוויר הישראלי (CC BY 4.0) via wikimedia · NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State Universit (Public domain) via wikimedia",
+  "hashtags": [
+    "cop31",
+    "climatechange",
+    "nato",
+    "bepicolombo",
+    "dailynews"
+  ],
+  "sources": [
+    "https://www.cbc.ca/news/world/cop31-talks-collapse-fossil-fuel-9.7431847",
+    "https://www.cnbc.com/amp/2026/11/22/cop31-climate-talks-break-down-as-eu-and-others-reject-deal.html",
+    "https://www.cbsnews.com/news/un-cop31-climate-conference-ends-no-agreement-fossil-fuel-debate-standstill/",
+    "https://www.cnn.com/2026/11/22/climate/cop31-summit-collapses-in-fossil-fuel-failure",
+    "https://www.stripes.com/theaters/europe/2026-11-22/poland-russia-nato-missiles-23541547.html",
+    "https://www.pbs.org/newshour/world/nato-calls-russian-missiles-landing-in-poland-a-grave-violation-of-airspace",
+    "https://www.cp24.com/news/world/2026/11/21/nato-chief-pledges-to-defend-poland-after-russian-missile-incursion/",
+    "https://english.aawsat.com/world/5344085-nato-chief-pledges-defend-poland-after-russian-missile-incursion",
+    "https://www.al-monitor.com/originals/2026/11/bahrain-says-iran-strikes-industrial-facility-air-defences-intercept-attacks",
+    "https://www.thenationalnews.com/news/gulf/2026/11/22/two-injured-one-critically-in-iranian-attack-on-industrial-plant-in-bahrain/",
+    "https://www.aljazeera.com/news/2026/11/21/bahrain-says-iranian-attack-causes-fire-at-industrial-facility",
+    "https://www.dawn.com/news/2046200/trump-intends-to-secure-permanent-deal-with-iran",
+    "https://www.nbcnews.com/world/mexico/mexico-detains-top-cartel-boss-el-chapo-isidro-rcna610559",
+    "https://aa.com.tr/en/anadolu-post/morning-briefing-nov-22-2026/4133301",
+    "https://www.justice.gov/opa/pr/senior-leader-sinaloa-cartel-and-one-fbis-ten-most-wanted-fugitives-arrested-mexico",
+    "https://www.aljazeera.com/news/2026/11/21/who-is-el-chapo-isidro-the-alleged-cartel-boss-arrested-in-mexico",
+    "https://www.space.com/space-exploration/missions/esa-jaxa-bepicolomobo-mission-mercury-orbit-arrival",
+    "https://www.manilatimes.net/2026/11/23/world/americas-emea/bepicolombo-spacecraft-reaches-planet-mercury/2475673",
+    "https://earthsky.org/space/bepicolombo-mission-mercury/",
+    "https://www.wral.com/weather/bepicolombo-nov-2026/"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 22 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "coal power plant",
+  "image_prompt": "An empty summit table with a cracked glass globe and an unsigned agreement under a lamp, an oil barrel and a small wind turbine model at each end",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261122-2002/img_cover.jpg",
+  "cover_credit": "Mussi Katz from Israel (CC0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": true,
+  "cover_ai_generated": false,
+  "caption_plain": "🌍 COP31 ended with no deal, a first since 2009. Paris Agreement and past pledges still stand.\n🛡️ NATO's top body meets Monday after Russian missiles landed in Poland.\n🔥 Iranian attack hit an industrial site in Bahrain; two people hurt. Hormuz talks still stalled.\n🚔 At least 11 dead around the arrest of cartel boss El Chapo Isidro in Mexico.\n🪐 BepiColombo is now orbiting Mercury after an eight-year trip.\nShould climate summits keep going without a deal? Tell us below 👇\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "left",
+      "scale",
+      "left",
+      "right",
+      "blur",
+      "right",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "cut",
+      "glitch",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}

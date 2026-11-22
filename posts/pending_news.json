@@ -1,0 +1,42 @@
+{
+  "date": "20261122-2002",
+  "series": "news",
+  "format": "news",
+  "trial": true,
+  "music": "lofi",
+  "theme_index": 62,
+  "topic": "Daily news 2026-11-22",
+  "category": "news",
+  "hook": "Climate talks just failed. First since 2009",
+  "slides": 5,
+  "variant": null,
+  "tags": [],
+  "tag_reason": "",
+  "design": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "images": [
+    "posts/20261122-2002/slide_01.jpg",
+    "posts/20261122-2002/slide_02.jpg",
+    "posts/20261122-2002/slide_03.jpg",
+    "posts/20261122-2002/slide_04.jpg",
+    "posts/20261122-2002/slide_05.jpg",
+    "posts/20261122-2002/slide_06.jpg",
+    "posts/20261122-2002/slide_07.jpg"
+  ],
+  "story": "posts/20261122-2002/story.jpg",
+  "ai": true,
+  "story_ai": false,
+  "caption": "🌍 COP31 ended with no deal, a first since 2009. Paris Agreement and past pledges still stand.\n🛡️ NATO's top body meets Monday after Russian missiles landed in Poland.\n🔥 Iranian attack hit an industrial site in Bahrain; two people hurt. Hormuz talks still stalled.\n🚔 At least 11 dead around the arrest of cartel boss El Chapo Isidro in Mexico.\n🪐 BepiColombo is now orbiting Mercury after an eight-year trip.\nShould climate summits keep going without a deal? Tell us below 👇\nFollow @you.didnot.know for the daily brief.\n\n📷 Mussi Katz from Israel (CC0) via wikimedia · Joel200716 (CC BY 4.0) via wikimedia · Major Ofer, Israeli Air Force רס\"ן עופר, חיל האוויר הישראלי (CC BY 4.0) via wikimedia · NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State Universit (Public domain) via wikimedia\n\n#cop31 #climatechange #nato #bepicolombo #dailynews",
+  "carousel_caption": "🌍 COP31 ended with no deal, a first since 2009. Paris Agreement and past pledges still stand.\n🛡️ NATO's top body meets Monday after Russian missiles landed in Poland.\n🔥 Iranian attack hit an industrial site in Bahrain; two people hurt. Hormuz talks still stalled.\n🚔 At least 11 dead around the arrest of cartel boss El Chapo Isidro in Mexico.\n🪐 BepiColombo is now orbiting Mercury after an eight-year trip.\nShould climate summits keep going without a deal? Tell us below 👇\nFollow @you.didnot.know for the daily brief.\n\nCover: Climate talks just failed. First since 2009\n📷 Mussi Katz from Israel (CC0) via wikimedia\n\n1/5 COP31 ends with no deal (2009)\nCOP31 in Turkey ended Sunday without any final agreement. First failed UN climate deal since Copenhagen in 2009.\n📷 Joel200716 (CC BY 4.0) via wikimedia\n\n2/5 NATO meets over Poland missiles (Kh-101)\nNATO's top body meets Monday over Russian missiles in Poland. Rutte pledged in Warsaw to defend Polish territory.\n📷 Major Ofer, Israeli Air Force רס\"ן עופר, חיל האוויר הישראלי (CC BY 4.0) via wikimedia\n\n3/5 Iran strikes Bahrain site (2 hurt)\nAn Iranian attack hit an industrial site in Bahrain's Sitra. Bahrain hosts the US Navy's Fifth Fleet.\n🎨 AI-generated image\n\n4/5 11 dead in cartel boss arrest (11)\nAt least 11 died in El Chapo Isidro's arrest and aftermath. US charged him in 2012 over fentanyl, cocaine, heroin.\n🎨 AI-generated image\n\n5/5 Probe reaches Mercury orbit (8 yrs)\nBepiColombo entered orbit around Mercury after an eight-year trip. Only the second mission ever to orbit Mercury.\n📷 NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State Universit (Public domain) via wikimedia\n\n#cop31 #climatechange #nato #bepicolombo #dailynews",
+  "slide_captions": [
+    "Climate talks just failed. First since 2009\n📷 Mussi Katz from Israel (CC0) via wikimedia",
+    "1/5 COP31 ends with no deal (2009)\nCOP31 in Turkey ended Sunday without any final agreement. First failed UN climate deal since Copenhagen in 2009.\n📷 Joel200716 (CC BY 4.0) via wikimedia",
+    "2/5 NATO meets over Poland missiles (Kh-101)\nNATO's top body meets Monday over Russian missiles in Poland. Rutte pledged in Warsaw to defend Polish territory.\n📷 Major Ofer, Israeli Air Force רס\"ן עופר, חיל האוויר הישראלי (CC BY 4.0) via wikimedia",
+    "3/5 Iran strikes Bahrain site (2 hurt)\nAn Iranian attack hit an industrial site in Bahrain's Sitra. Bahrain hosts the US Navy's Fifth Fleet.\n🎨 AI-generated image",
+    "4/5 11 dead in cartel boss arrest (11)\nAt least 11 died in El Chapo Isidro's arrest and aftermath. US charged him in 2012 over fentanyl, cocaine, heroin.\n🎨 AI-generated image",
+    "5/5 Probe reaches Mercury orbit (8 yrs)\nBepiColombo entered orbit around Mercury after an eight-year trip. Only the second mission ever to orbit Mercury.\n📷 NASA/Johns Hopkins University Applied Physics Laboratory/Arizona State Universit (Public domain) via wikimedia",
+    "Follow for your daily news brief"
+  ]
+}
