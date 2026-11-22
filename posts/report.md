@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 21/11/2026 alle 22:24 UTC. Follower: 1.
+Aggiornato il 22/11/2026 alle 03:31 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 330, di cui da non follower 330 (100%).
+- Visualizzazioni: 319, di cui da non follower 319 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 21/11/2026 | 39 | 39 | 45 | 45 | 0 | 0 |
+| 21/11/2026 | 48 | 48 | 55 | 55 | 0 | 0 |
 | 20/11/2026 | 75 | 75 | 80 | 80 | 1 | 1 |
 | 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
 | 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
 | 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
 | 16/11/2026 | 6 | 6 | 9 | 9 | 0 | 0 |
-| 15/11/2026 | 17 | 17 | 21 | 21 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -23,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 20/11/2026 00:27 | reel | Your heart doesn't need a brain | 24 | 26 | 0,0% | 0,0% | 4,2% | n/d |  |
 | 19/11/2026 18:36 | reel | Tardigrades survived 10 days in open spa | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 19/11/2026 00:33 | reel | Lose half your liver. It grows back. | 2 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 18/11/2026 18:31 | reel | Your enamel never grows back | 35 | 37 | 0,0% | 0,0% | 0,0% | n/d |  |
@@ -45,7 +45,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 10/11/2026 00:15 | reel | You breathe mostly through one nostril | 16 | 19 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 09/11/2026 00:15 | reel | What the death zone does to your body | 102 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
 | 08/11/2026 18:14 | reel | 5 body parts evolution forgot to delete | 9 | 9 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 08/11/2026 00:14 | reel | Déjà vu is your brain checking itself | 1 | 2 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -53,7 +52,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 08/11/2026 00:14 | Déjà vu is your brain checking itself | 2.068 | 100 |
 | 08/11/2026 18:14 | 5 body parts evolution forgot to delete | 10.815 | 66.7 |
 | 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
 | 10/11/2026 00:15 | You breathe mostly through one nostril | 3.151 | 66.7 |
@@ -76,12 +74,13 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 18/11/2026 18:31 | Your enamel never grows back | 2.752 | 77.1 |
 | 19/11/2026 00:33 | Lose half your liver. It grows back. | 829 | 100 |
 | 19/11/2026 18:36 | Tardigrades survived 10 days in open spa | 6.852 | 0 |
+| 20/11/2026 00:27 | Your heart doesn't need a brain | 4.425 | 79.2 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 648 | 0,2% | 0,0% |
+| reel | 23 | 671 | 0,1% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -90,7 +89,7 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
 | answer | 7 | 22.142857142857142 | 3649.8571428571427 | 60.15714285714286 |
-| direct | 6 | 28.166666666666668 | 3190.3333333333335 | 76.76666666666667 |
+| direct | 7 | 27.571428571428573 | 3366.714285714286 | 77.11428571428571 |
 | short | 7 | 30.285714285714285 | 2899.714285714286 | 78.88571428571429 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

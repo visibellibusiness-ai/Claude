@@ -1,0 +1,94 @@
+{
+  "reasoning": "Mandatory short-Reel experiment: 3 slides, a hook of 7 words or fewer, and bodies of 12 words or fewer. Human body remains the core topic because 8 of the 10 Reels that reached about 100 accounts were body facts. Brain freeze is a universal, relatable sensation with a clear why-and-fix arc that fits in 3 beats. The question-shaped hook targets curiosity, and the slide 3 tip gives viewers a reason to save. Mystery music and palette 3 continue the rotation (last two were lofi and documentary, palette 1). The CTA is a simple daily-follow invite, so no Part 2 is promised.",
+  "format": "reel",
+  "music": "mystery",
+  "trial": false,
+  "category": "human body",
+  "topic": "Brain freeze: cold palate, brain artery blood surge, tongue fix",
+  "hook": "Why ice cream gives you brain freeze",
+  "slides": [
+    {
+      "title": "Cold hits your palate",
+      "body": "Cold food on the roof of your mouth chills nearby blood vessels.",
+      "highlight": "",
+      "image_query": "ice cream cone",
+      "image_prompt": "Melting scoop of blue ice cream in a cone with frost crystals forming around it, cold mist, dark moody background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-0331/img_01.jpg",
+      "credit": "Andy Li (CC0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A brain artery swells",
+      "body": "Blood rushes into a brain artery, and you feel it as pain.",
+      "highlight": "ouch",
+      "image_query": "brain blood vessels",
+      "image_prompt": "Glowing red network of blood vessels inside a translucent glass brain model, one artery swelling brighter, dark background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-0331/img_02.jpg",
+      "credit": "Antonino Paolo Di Giovanna (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "The quick fix",
+      "body": "Press your tongue to the roof of your mouth to warm it.",
+      "highlight": "fix",
+      "image_query": "frozen slushie drink",
+      "image_prompt": "Icy slushie cup beside a small warm glowing ember on a dark table, contrast of cold blue and warm orange light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261122-0331/img_03.jpg",
+      "credit": "Lemsipmatt (CC BY-SA 2.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for a new body fact daily",
+  "caption": "That stabbing pain after a fast bite of ice cream has a name: sphenopalatine ganglioneuralgia. In a 2012 study, researchers watched blood flow through a brain artery surge during brain freeze, and the pain faded as the artery narrowed again.\n\nThe fix is simple: slow down, or warm the roof of your mouth with your tongue. Save this for your next slushie.\n\nWhat gives you the worst brain freeze: ice cream, slushies or cold water?\n\n📷 Andy Li (CC0) via wikimedia · Antonino Paolo Di Giovanna (CC BY-SA 4.0) via wikimedia · Lemsipmatt (CC BY-SA 2.0) via wikimedia",
+  "hashtags": [
+    "brainfreeze",
+    "icecream",
+    "humanbody",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Serrador JM et al., 'Cerebral vascular response to cold palate stimulation (brain freeze)', FASEB Journal / Experimental Biology 2012",
+    "Hulihan J., 'Ice cream headache', BMJ 1997;314:1364",
+    "Kaczorowski M, Kaczorowski J., 'Ice cream evoked headaches (ICE-H) study', BMJ 2002;325:1445"
+  ],
+  "image_query": "ice cream cone close up",
+  "image_prompt": "Giant frosty ice cream scoop with icy crystals and cold vapor, beside a glowing translucent brain sculpture, dramatic blue lighting",
+  "design": {
+    "palette": 3,
+    "cover_label": "Body explained",
+    "swipe_text": "Watch why",
+    "follow_line": "Weird body facts, every single day"
+  },
+  "variant": "short",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261122-0331/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "That stabbing pain after a fast bite of ice cream has a name: sphenopalatine ganglioneuralgia. In a 2012 study, researchers watched blood flow through a brain artery surge during brain freeze, and the pain faded as the artery narrowed again.\n\nThe fix is simple: slow down, or warm the roof of your mouth with your tongue. Save this for your next slushie.\n\nWhat gives you the worst brain freeze: ice cream, slushies or cold water?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 3
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "blur",
+      "scale",
+      "blur",
+      "left",
+      "scale"
+    ],
+    "cuts": [
+      "cut",
+      "cut",
+      "punch",
+      "flash",
+      "dip"
+    ]
+  },
+  "music_used": "mystery"
+}
