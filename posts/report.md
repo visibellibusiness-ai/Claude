@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 22/11/2026 alle 22:48 UTC. Follower: 1.
+Aggiornato il 23/11/2026 alle 04:01 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 413, di cui da non follower 413 (100%).
+- Visualizzazioni: 405, di cui da non follower 405 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 22/11/2026 | 16 | 16 | 15 | 15 | 1 | 0 |
+| 22/11/2026 | 17 | 17 | 16 | 16 | 1 | 0 |
 | 21/11/2026 | 119 | 119 | 134 | 134 | 0 | 0 |
 | 20/11/2026 | 75 | 75 | 80 | 80 | 1 | 1 |
 | 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
 | 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
 | 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
-| 16/11/2026 | 6 | 6 | 9 | 9 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -45,7 +44,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 11/11/2026 00:15 | reel | Your body glows in the dark | 13 | 12 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 10/11/2026 18:24 | reel | Your brain burns 20% of your energy | 30 | 32 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 10/11/2026 00:15 | reel | You breathe mostly through one nostril | 16 | 19 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 09/11/2026 00:15 | reel | What the death zone does to your body | 102 | 109 | 0,0% | 0,0% | 1,0% | n/d |  |
 
 ### Reel
 
@@ -53,7 +51,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 09/11/2026 00:15 | What the death zone does to your body | 6.186 | 68.3 |
 | 10/11/2026 00:15 | You breathe mostly through one nostril | 3.151 | 66.7 |
 | 10/11/2026 18:24 | Your brain burns 20% of your energy | 5.769 | 66.7 |
 | 11/11/2026 00:15 | Your body glows in the dark | 6.308 | 33.3 |
@@ -81,7 +78,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 23 | 684 | 0,3% | 0,0% |
+| reel | 22 | 582 | 0,3% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
