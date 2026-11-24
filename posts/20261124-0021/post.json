@@ -1,0 +1,206 @@
+{
+  "series": "news",
+  "format": "carousel",
+  "category": "news",
+  "topic": "Daily news 2026-11-24",
+  "hook": "Jensen Huang quit Nvidia. Now he's back.",
+  "reel_hook": "He quit Nvidia. Then came back.",
+  "slides": [
+    {
+      "title": "Huang returns to Nvidia",
+      "highlight": "+31%",
+      "image_query": "nvidia headquarters",
+      "image_prompt": "A black leather jacket draped back over an empty executive chair beside a glowing green computer chip, dramatic spotlight in a dark office",
+      "label": "TECHNOLOGY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Nvidia's board unanimously reinstated Jensen Huang as CEO."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Board consulted US officials, found no national security risk."
+        ],
+        [
+          "FOR YOU",
+          "If you hold tech or index funds, Nvidia's 31% jump likely lifted them."
+        ]
+      ],
+      "body": "Nvidia's board unanimously reinstated Jensen Huang as CEO. Board consulted US officials, found no national security risk. If you hold tech or index funds, Nvidia's 31% jump likely lifted them.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261124-0021/img_01.jpg",
+      "credit": "Coolcaesar (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "At least 15 killed near Kyiv",
+      "highlight": "15",
+      "image_query": "damaged apartment building ukraine",
+      "image_prompt": "A partly collapsed apartment block at dusk, rubble in the foreground and a single flashlight beam cutting through dust, muted colors",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Russian strikes on the Kyiv region killed at least 15."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Homes, a supermarket and energy facilities were hit."
+        ],
+        [
+          "FOR YOU",
+          "Officials say 11 died in Dymer alone; the toll may still change."
+        ]
+      ],
+      "body": "Russian strikes on the Kyiv region killed at least 15. Homes, a supermarket and energy facilities were hit. Officials say 11 died in Dymer alone; the toll may still change.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261124-0021/img_02.jpg",
+      "credit": "Kharkivian (Сергій Петров)If you have any questions please contact with me. Othe (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "COP31 ends without a deal",
+      "highlight": "COP31",
+      "image_query": "smokestack emissions",
+      "image_prompt": "An unsigned blank document on a long empty conference table, a melting globe-shaped ice sculpture beside it, factory smokestacks visible through the window",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "UN climate talks in Antalya collapsed Sunday without a deal."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Countries couldn't agree on moving away from fossil fuels."
+        ],
+        [
+          "FOR YOU",
+          "No new global fossil fuel deal for now; what comes next is unclear."
+        ]
+      ],
+      "body": "UN climate talks in Antalya collapsed Sunday without a deal. Countries couldn't agree on moving away from fossil fuels. No new global fossil fuel deal for now; what comes next is unclear.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261124-0021/img_03.jpg",
+      "credit": "Aciarium (CC BY 4.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Candy factory fire in Indonesia",
+      "highlight": "",
+      "image_query": "factory fire smoke",
+      "image_prompt": "Thick black smoke rising from an industrial building at night, scattered colorful wrapped candies on wet pavement in the foreground",
+      "label": "WORLD",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "A fire tore through a candy factory in Banten, Indonesia."
+        ],
+        [
+          "WHY IT MATTERS",
+          "Dozens are feared dead and the search continues."
+        ],
+        [
+          "FOR YOU",
+          "Officials first reported 3 dead and 36 missing; the toll may rise."
+        ]
+      ],
+      "body": "A fire tore through a candy factory in Banten, Indonesia. Dozens are feared dead and the search continues. Officials first reported 3 dead and 36 missing; the toll may rise.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261124-0021/img_04.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "$900 billion in one day",
+      "highlight": "$900B",
+      "image_query": "stock market chart",
+      "image_prompt": "A towering stack of gold coins beside a giant green upward arrow built from glowing computer chips, against a dark background",
+      "label": "CURIOSITY",
+      "points": [
+        [
+          "WHAT HAPPENED",
+          "Nvidia shares closed up about 31% on Monday."
+        ],
+        [
+          "WHY IT MATTERS",
+          "CNN called it the stock's third-best day on record."
+        ],
+        [
+          "FOR YOU",
+          "Reuters says the jump adds over US$900 billion in market value."
+        ]
+      ],
+      "body": "Nvidia shares closed up about 31% on Monday. CNN called it the stock's third-best day on record. Reuters says the jump adds over US$900 billion in market value.",
+      "image": "/home/runner/work/Claude/Claude/posts/20261124-0021/img_05.jpg",
+      "credit": "Unknown authorUnknown author (CC0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for your daily news brief",
+  "caption": "💻 Nvidia's board unanimously brought back Jensen Huang as CEO, 11 days after he resigned. Own tech or index funds? You likely felt it.\n🇺🇦 Russian strikes killed at least 15 in Ukraine's Kyiv region.\n🌍 COP31 in Antalya collapsed without a deal over fossil fuels.\n🔥 A candy factory fire in Indonesia: dozens feared dead, search continues.\n📈 Nvidia shares closed up about 31%, the stock's third-best day on record.\nShould a company rehire a CEO who just stepped down? 👇\nFollow @you.didnot.know for the daily brief.\n\n📷 Coolcaesar (CC BY-SA 4.0) via wikimedia · Kharkivian (Сергій Петров)If you have any questions please contact with me. Othe (CC BY-SA 4.0) via wikimedia · Aciarium (CC BY 4.0) via wikimedia · Unknown authorUnknown author (CC0) via wikimedia",
+  "hashtags": [
+    "nvidia",
+    "jensenhuang",
+    "cop31",
+    "ukraine",
+    "dailynews"
+  ],
+  "sources": [
+    "https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director",
+    "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000090/nov23pressrelease.htm",
+    "https://www.pbs.org/newshour/nation/nvidia-board-unanimously-reinstates-jensen-huang-as-ceo-and-chairman",
+    "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+    "https://www.washingtonpost.com/technology/2026/11/23/nvidia-board-reinstates-jensen-huang-after-us-government-input/",
+    "https://www.aljazeera.com/news/2026/11/23/death-toll-rises-after-deadly-russian-attacks-on-ukraine",
+    "https://www.dailymaverick.co.za/article/2026-11-23-russian-attack-on-ukraines-dymer-in-kyiv-region-kills-11-official-says/",
+    "https://www.kyivpost.com/post/90880",
+    "https://www.usnews.com/news/world/articles/2026-11-21/cop31-climate-talks-collapse-as-eu-and-others-reject-deal",
+    "https://www.aljazeera.com/news/2026/11/23/cop31-what-next-after-un-climate-talks-collapse",
+    "https://www.cnn.com/2026/11/22/climate/cop31-summit-collapses-in-fossil-fuel-failure",
+    "https://www.cbc.ca/news/world/cop31-talks-collapse-fossil-fuel-9.7431847",
+    "https://www.abc.net.au/news/2026-11-22/bodies-recovered-after-indonesian-factory-fire/107414720",
+    "https://uk.news.yahoo.com/least-24-people-killed-indonesia-143922229.html",
+    "https://www.foxnews.com/world/indonesia-candy-factory-fire-leaves-multiple-dead-dozens-missing",
+    "https://www.cnbc.com/2026/11/23/nvidia-jensen-huang-ceo.html",
+    "https://www.cnn.com/2026/11/23/markets/us-stocks-rebound-intl",
+    "https://www.investing.com/news/stock-market-news/nvidia-reinstates-jensen-huang-as-ceo-5045809"
+  ],
+  "design": {
+    "palette": 2,
+    "cover_label": "Today's file · 24 NOV 2026",
+    "swipe_text": "Swipe",
+    "follow_line": "the news in one minute, every day"
+  },
+  "image_query": "nvidia headquarters",
+  "image_prompt": "An empty executive chair with a black leather jacket draped over it, spotlit in a dark room, glowing green circuit-board patterns spreading across the floor",
+  "music": "lofi",
+  "trial": true,
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261124-0021/img_cover.jpg",
+  "cover_credit": null,
+  "cover_generated": true,
+  "ai_generated": true,
+  "cover_ai_generated": true,
+  "caption_plain": "💻 Nvidia's board unanimously brought back Jensen Huang as CEO, 11 days after he resigned. Own tech or index funds? You likely felt it.\n🇺🇦 Russian strikes killed at least 15 in Ukraine's Kyiv region.\n🌍 COP31 in Antalya collapsed without a deal over fossil fuels.\n🔥 A candy factory fire in Indonesia: dozens feared dead, search continues.\n📈 Nvidia shares closed up about 31%, the stock's third-best day on record.\nShould a company rehire a CEO who just stepped down? 👇\nFollow @you.didnot.know for the daily brief.",
+  "design_used": {
+    "style": "mystery",
+    "palette": 2
+  },
+  "reel_fx": {
+    "motion": "in",
+    "entrances": [
+      "left",
+      "scale",
+      "left",
+      "right",
+      "blur",
+      "right",
+      "rise"
+    ],
+    "cuts": [
+      "cut",
+      "dip",
+      "punch",
+      "cut",
+      "glitch",
+      "punch",
+      "cut"
+    ]
+  },
+  "music_used": "lofi"
+}

@@ -1,20 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 23/11/2026 alle 04:01 UTC. Follower: 1.
+Aggiornato il 24/11/2026 alle 00:18 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 405, di cui da non follower 405 (100%).
+- Visualizzazioni: 294, di cui da non follower 294 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
+| 23/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 22/11/2026 | 17 | 17 | 16 | 16 | 1 | 0 |
 | 21/11/2026 | 119 | 119 | 134 | 134 | 0 | 0 |
 | 20/11/2026 | 75 | 75 | 80 | 80 | 1 | 1 |
 | 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
 | 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
-| 17/11/2026 | 97 | 97 | 111 | 111 | 1 | 1 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -22,6 +22,10 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 21/11/2026 22:25 | reel | A man hiccuped for 68 years | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
+| 21/11/2026 19:48 | carousel | Mexico just caught an FBI top-10 fugitiv | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
+| 21/11/2026 19:48 | reel | Mexico just caught an FBI top-10 fugitiv | 3 | 3 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
+| 21/11/2026 04:19 | reel | Your eyes take oxygen straight from the  | 96 | 105 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 20/11/2026 18:39 | reel | Bacteria outnumber your own body's cells | 22 | 23 | 4,5% | 0,0% | 0,0% | n/d |  |
 | 20/11/2026 00:27 | reel | Your heart doesn't need a brain | 24 | 26 | 0,0% | 0,0% | 4,2% | n/d |  |
 | 19/11/2026 18:36 | reel | Tardigrades survived 10 days in open spa | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
@@ -43,7 +47,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 11/11/2026 18:31 | reel | You can see your nose right now | 83 | 94 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 11/11/2026 00:15 | reel | Your body glows in the dark | 13 | 12 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 10/11/2026 18:24 | reel | Your brain burns 20% of your energy | 30 | 32 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 10/11/2026 00:15 | reel | You breathe mostly through one nostril | 16 | 19 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -51,7 +54,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 10/11/2026 00:15 | You breathe mostly through one nostril | 3.151 | 66.7 |
 | 10/11/2026 18:24 | Your brain burns 20% of your energy | 5.769 | 66.7 |
 | 11/11/2026 00:15 | Your body glows in the dark | 6.308 | 33.3 |
 | 11/11/2026 18:31 | You can see your nose right now | 7.334 | 48.8 |
@@ -73,12 +75,16 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 19/11/2026 18:36 | Tardigrades survived 10 days in open spa | 6.852 | 0 |
 | 20/11/2026 00:27 | Your heart doesn't need a brain | 4.425 | 79.2 |
 | 20/11/2026 18:39 | Bacteria outnumber your own body's cells | 2.577 | 81.8 |
+| 21/11/2026 04:19 | Your eyes take oxygen straight from the  | 3.397 | 73 |
+| 21/11/2026 19:48 | Mexico just caught an FBI top-10 fugitiv | 1.259 | 100 |
+| 21/11/2026 22:25 | A man hiccuped for 68 years | 1.204 | 100 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
-| reel | 22 | 582 | 0,3% | 0,0% |
+| carousel | 1 | 0 | n/d | n/d |
+| reel | 24 | 666 | 0,3% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -86,8 +92,8 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 7 | 22.142857142857142 | 3649.8571428571427 | 60.15714285714286 |
-| direct | 7 | 27.571428571428573 | 3366.714285714286 | 77.11428571428571 |
-| short | 8 | 29.25 | 2859.375 | 79.25 |
+| answer | 8 | 31.375 | 3618.25 | 61.7625 |
+| direct | 8 | 24.25 | 3096.375 | 79.975 |
+| short | 7 | 31.142857142857142 | 2817.714285714286 | 81.04285714285713 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
