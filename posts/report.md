@@ -1,6 +1,6 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 24/11/2026 alle 03:30 UTC. Follower: 1.
+Aggiornato il 24/11/2026 alle 07:08 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
@@ -22,6 +22,7 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 
 | Data | Tipo | Titolo | Copertura | Visual. | Salvat./cop. | Condiv./cop. | Like/cop. | Visite profilo/cop. | Note |
 |---|---|---|---|---|---|---|---|---|---|
+| 22/11/2026 03:31 | reel | Why ice cream gives you brain freeze | 87 | 95 | 0,0% | 0,0% | 1,1% | n/d |  |
 | 21/11/2026 22:25 | reel | A man hiccuped for 68 years | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 21/11/2026 19:48 | carousel | Mexico just caught an FBI top-10 fugitiv | 0 | 0 | n/d | n/d | n/d | n/d | copertura sotto 10 |
 | 21/11/2026 19:48 | reel | Mexico just caught an FBI top-10 fugitiv | 3 | 3 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
@@ -78,13 +79,14 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 21/11/2026 04:19 | Your eyes take oxygen straight from the  | 3.397 | 73 |
 | 21/11/2026 19:48 | Mexico just caught an FBI top-10 fugitiv | 1.259 | 100 |
 | 21/11/2026 22:25 | A man hiccuped for 68 years | 1.204 | 100 |
+| 22/11/2026 03:31 | Why ice cream gives you brain freeze | 2.458 | 83 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 1 | 0 | n/d | n/d |
-| reel | 24 | 666 | 0,3% | 0,0% |
+| reel | 25 | 753 | 0,3% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -94,6 +96,6 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 |---|---|---|---|---|
 | answer | 8 | 31.375 | 3618.25 | 61.7625 |
 | direct | 8 | 24.25 | 3096.375 | 79.975 |
-| short | 7 | 31.142857142857142 | 2817.714285714286 | 81.04285714285713 |
+| short | 8 | 38.125 | 2772.75 | 81.2875 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
