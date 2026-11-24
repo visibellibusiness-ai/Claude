@@ -2,8 +2,9 @@ name: Pubblica post Instagram
 
 on:
   schedule:
-    # 12:35 UTC: rubrica news (mattina negli USA, primo pomeriggio in Europa)
-    - cron: "35 12 * * *"
+    # Rubrica news (12:35 UTC) sospesa il 24/11/2026: ogni giorno dall'11/11 falliva alla
+    # pubblicazione ("We restrict certain activity", Graph API 2207051) e dava 1-5 visualizzazioni.
+    # Resta lanciabile a mano (series: news). Per riattivarla rimettere: - cron: "35 12 * * *"
     # 17:40 e 23:40 UTC: curiosità (sera in Europa, pomeriggio e sera negli USA)
     - cron: "40 17 * * *"
     - cron: "40 23 * * *"
