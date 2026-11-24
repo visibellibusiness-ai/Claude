@@ -1,6 +1,6 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 24/11/2026 alle 00:18 UTC. Follower: 1.
+Aggiornato il 24/11/2026 alle 03:30 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
