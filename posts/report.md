@@ -1,20 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 24/11/2026 alle 07:08 UTC. Follower: 1.
+Aggiornato il 25/11/2026 alle 01:38 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 294, di cui da non follower 294 (100%).
+- Visualizzazioni: 254, di cui da non follower 254 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
+| 24/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 23/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 22/11/2026 | 17 | 17 | 16 | 16 | 1 | 0 |
 | 21/11/2026 | 119 | 119 | 134 | 134 | 0 | 0 |
 | 20/11/2026 | 75 | 75 | 80 | 80 | 1 | 1 |
 | 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
-| 18/11/2026 | 36 | 36 | 40 | 40 | 1 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -46,8 +46,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 12/11/2026 18:31 | reel | Your fingers have zero muscles | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 12/11/2026 00:32 | reel | Babies have about 300 bones. You have 20 | 14 | 14 | 0,0% | 0,0% | 7,1% | n/d |  |
 | 11/11/2026 18:31 | reel | You can see your nose right now | 83 | 94 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 11/11/2026 00:15 | reel | Your body glows in the dark | 13 | 12 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 10/11/2026 18:24 | reel | Your brain burns 20% of your energy | 30 | 32 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -55,8 +53,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 10/11/2026 18:24 | Your brain burns 20% of your energy | 5.769 | 66.7 |
-| 11/11/2026 00:15 | Your body glows in the dark | 6.308 | 33.3 |
 | 11/11/2026 18:31 | You can see your nose right now | 7.334 | 48.8 |
 | 12/11/2026 00:32 | Babies have about 300 bones. You have 20 | 3.984 | 57.1 |
 | 12/11/2026 18:31 | Your fingers have zero muscles | 2.671 | 80 |
@@ -77,7 +73,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 20/11/2026 00:27 | Your heart doesn't need a brain | 4.425 | 79.2 |
 | 20/11/2026 18:39 | Bacteria outnumber your own body's cells | 2.577 | 81.8 |
 | 21/11/2026 04:19 | Your eyes take oxygen straight from the  | 3.397 | 73 |
-| 21/11/2026 19:48 | Mexico just caught an FBI top-10 fugitiv | 1.259 | 100 |
+| 21/11/2026 19:48 | Mexico just caught an FBI top-10 fugitiv | 1.053 | 100 |
 | 21/11/2026 22:25 | A man hiccuped for 68 years | 1.204 | 100 |
 | 22/11/2026 03:31 | Why ice cream gives you brain freeze | 2.458 | 83 |
 
@@ -86,7 +82,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 1 | 0 | n/d | n/d |
-| reel | 25 | 753 | 0,3% | 0,0% |
+| reel | 23 | 710 | 0,3% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -94,8 +90,8 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 8 | 31.375 | 3618.25 | 61.7625 |
-| direct | 8 | 24.25 | 3096.375 | 79.975 |
+| answer | 7 | 31.571428571428573 | 3311.0 | 61.05714285714286 |
+| direct | 7 | 25.857142857142858 | 2637.5714285714284 | 86.64285714285714 |
 | short | 8 | 38.125 | 2772.75 | 81.2875 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.

@@ -339,6 +339,10 @@
     {
       "date": "20261124-0708",
       "followers": 1
+    },
+    {
+      "date": "20261125-0137",
+      "followers": 1
     }
   ],
   "account_log": [
@@ -1454,6 +1458,39 @@
     },
     {
       "date": "2026-11-23",
+      "reach": {
+        "total": 0
+      },
+      "reach_by_product": {
+        "total": 0
+      },
+      "views": {
+        "total": 0
+      },
+      "views_by_product": {
+        "total": 0
+      },
+      "accounts_engaged": {
+        "total": 0
+      },
+      "total_interactions": {
+        "total": 0
+      },
+      "likes": {
+        "total": 0
+      },
+      "comments": {
+        "total": 0
+      },
+      "saves": {
+        "total": 0
+      },
+      "shares": {
+        "total": 0
+      }
+    },
+    {
+      "date": "2026-11-24",
       "reach": {
         "total": 0
       },
