@@ -1,20 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 25/11/2026 alle 05:42 UTC. Follower: 1.
+Aggiornato il 26/11/2026 alle 01:11 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 254, di cui da non follower 254 (100%).
+- Visualizzazioni: 230, di cui da non follower 230 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
+| 25/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 24/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 23/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 22/11/2026 | 17 | 17 | 16 | 16 | 1 | 0 |
 | 21/11/2026 | 119 | 119 | 134 | 134 | 0 | 0 |
 | 20/11/2026 | 75 | 75 | 80 | 80 | 1 | 1 |
-| 19/11/2026 | 23 | 22 | 24 | 24 | 1 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -44,8 +44,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 13/11/2026 18:29 | reel | Your blood vessels could circle Earth tw | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 13/11/2026 00:24 | reel | What extreme heat does to your body | 2 | 4 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 | 12/11/2026 18:31 | reel | Your fingers have zero muscles | 5 | 6 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 12/11/2026 00:32 | reel | Babies have about 300 bones. You have 20 | 14 | 14 | 0,0% | 0,0% | 7,1% | n/d |  |
-| 11/11/2026 18:31 | reel | You can see your nose right now | 83 | 94 | 0,0% | 0,0% | 0,0% | n/d |  |
 
 ### Reel
 
@@ -53,14 +51,12 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 11/11/2026 18:31 | You can see your nose right now | 7.334 | 48.8 |
-| 12/11/2026 00:32 | Babies have about 300 bones. You have 20 | 3.984 | 57.1 |
 | 12/11/2026 18:31 | Your fingers have zero muscles | 2.671 | 80 |
 | 13/11/2026 00:24 | What extreme heat does to your body | 1.035 | 100 |
 | 13/11/2026 18:29 | Your blood vessels could circle Earth tw | 872 | 100 |
 | 14/11/2026 00:19 | A teaspoon of neutron star weighs a bill | 3.467 | 75.8 |
 | 14/11/2026 18:16 | Your eyes see everything upside down | 2.469 | 66.7 |
-| 15/11/2026 00:14 | You make 2 million blood cells every sec | 3.470 | 67.3 |
+| 15/11/2026 00:14 | You make 2 million blood cells every sec | 3.674 | 67.3 |
 | 15/11/2026 18:16 | Crows remember your face for years | 1.870 | 94.4 |
 | 16/11/2026 00:30 | Your brain can't feel pain | 1.360 | 100 |
 | 16/11/2026 18:32 | Blue whale hearts can beat twice a minut | 2.048 | 80 |
@@ -71,18 +67,18 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | 19/11/2026 00:33 | Lose half your liver. It grows back. | 829 | 100 |
 | 19/11/2026 18:36 | Tardigrades survived 10 days in open spa | 6.852 | 0 |
 | 20/11/2026 00:27 | Your heart doesn't need a brain | 4.425 | 79.2 |
-| 20/11/2026 18:39 | Bacteria outnumber your own body's cells | 2.577 | 81.8 |
-| 21/11/2026 04:19 | Your eyes take oxygen straight from the  | 3.397 | 73 |
-| 21/11/2026 19:48 | Mexico just caught an FBI top-10 fugitiv | 1.053 | 100 |
-| 21/11/2026 22:25 | A man hiccuped for 68 years | 1.204 | 100 |
-| 22/11/2026 03:31 | Why ice cream gives you brain freeze | 2.458 | 83 |
+| 20/11/2026 18:39 | Bacteria outnumber your own body's cells | 2.546 | 81.8 |
+| 21/11/2026 04:19 | Your eyes take oxygen straight from the  | 3.374 | 73 |
+| 21/11/2026 19:48 | Mexico just caught an FBI top-10 fugitiv | 2.028 | 100 |
+| 21/11/2026 22:25 | A man hiccuped for 68 years | 1.385 | 100 |
+| 22/11/2026 03:31 | Why ice cream gives you brain freeze | 2.452 | 83 |
 
 ### Per formato
 
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 1 | 0 | n/d | n/d |
-| reel | 23 | 710 | 0,3% | 0,0% |
+| reel | 21 | 613 | 0,3% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -90,8 +86,8 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 7 | 31.571428571428573 | 3311.0 | 61.05714285714286 |
-| direct | 7 | 25.857142857142858 | 2637.5714285714284 | 86.64285714285714 |
-| short | 8 | 38.125 | 2772.75 | 81.2875 |
+| answer | 6 | 34.5 | 3229.0 | 61.71666666666667 |
+| direct | 7 | 25.857142857142858 | 2663.4285714285716 | 86.64285714285714 |
+| short | 7 | 31.714285714285715 | 2115.8571428571427 | 85.92857142857143 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
