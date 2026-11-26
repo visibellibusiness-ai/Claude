@@ -146,15 +146,57 @@ def pending_path(series: str) -> Path:
     return PENDING if series == "facts" else ROOT / "posts" / f"pending_{series}.json"
 
 
+DISCARDED = ROOT / "posts" / "discarded.json"
+# Un post in attesa che fallisce la pubblicazione questo numero di volte si scarta e se ne crea
+# uno nuovo (26/11/2026: un Reel bloccato dal 22/11 veniva riproposto a ogni giro, all'infinito).
+MAX_PUBLISH_ATTEMPTS = 2
+
+
+def _discard(pending: Path, reason: str) -> None:
+    """Toglie il post in attesa e lo annota in posts/discarded.json, così il giro ne crea uno nuovo."""
+    data = json.loads(pending.read_text())
+    log = json.loads(DISCARDED.read_text()) if DISCARDED.exists() else []
+    log.append({
+        "date": data.get("date"),
+        "series": data.get("series"),
+        "topic": data.get("topic"),
+        "hook": data.get("hook"),
+        "attempts": data.get("attempts", 0),
+        "errors": data.get("errors", []),
+        "reason": reason,
+        "discarded_at": datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+    })
+    DISCARDED.write_text(json.dumps(log, ensure_ascii=False, indent=2))
+    pending.unlink()
+
+
+def _prepare_video(data: dict) -> None:
+    """Il video non è nel repo (.gitignore): se il post in attesa è un Reel lo si ridisegna QUI,
+    nel passo create, così il passo "Metti online i video" del workflow lo trova e lo carica.
+    Prima veniva ridisegnato solo in publish, dopo il caricamento: Instagram riceveva un link 404."""
+    fmt = data.get("format")
+    if fmt == "reel":
+        _video(data)
+    elif fmt == "news":
+        _video(data, "reel")
+
+
 def create(post_file: str | None, series: str = "facts") -> None:
     pending = pending_path(series)
     if pending.exists():
-        age = datetime.now(timezone.utc) - datetime.strptime(json.loads(pending.read_text())["date"], "%Y%m%d-%H%M").replace(tzinfo=timezone.utc)
+        data = json.loads(pending.read_text())
+        age = datetime.now(timezone.utc) - datetime.strptime(data["date"], "%Y%m%d-%H%M").replace(tzinfo=timezone.utc)
         if series == "news" and age > timedelta(hours=12):
             print("Rubrica news in attesa da troppo tempo: la sostituisco con quella di oggi")
-            pending.unlink()
+            _discard(pending, "rubrica news più vecchia di 12 ore")
+        elif data.get("attempts", 0) >= MAX_PUBLISH_ATTEMPTS:
+            print(f"::warning::Post in attesa scartato dopo {data['attempts']} pubblicazioni fallite "
+                  f"({data.get('hook')}): ne creo uno nuovo. Dettagli in posts/discarded.json")
+            _discard(pending, f"{data['attempts']} pubblicazioni fallite")
         else:
-            print(f"C'è già un post in attesa ({pending.name}): lo pubblico invece di crearne uno nuovo")
+            print(f"C'è già un post in attesa ({pending.name}, tentativi falliti: {data.get('attempts', 0)}): "
+                  "lo pubblico invece di crearne uno nuovo")
+            _prepare_video(data)
             return
 
     history = load_history()
@@ -260,16 +302,53 @@ def _video(pending: dict, sub: str = "") -> Path:
     out_dir = ROOT / Path(pending["images"][0]).parent
     video = out_dir / sub / "reel.mp4"
     if not video.exists():
-        post = json.loads((out_dir / "post.json").read_text())
+        post = _relocate(json.loads((out_dir / "post.json").read_text()))
         render_reel(post, video.parent, theme_index=pending.get("theme_index", 0))
     return video
 
 
+def _relocate(obj):
+    """post.json salva percorsi assoluti della macchina che l'ha creato (/home/runner/...):
+    li riporta alla cartella posts di questa copia del repo, se il file esiste qui."""
+    if isinstance(obj, dict):
+        return {k: _relocate(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [_relocate(v) for v in obj]
+    if isinstance(obj, str) and obj.startswith("/") and "/posts/" in obj and not Path(obj).exists():
+        local = ROOT / "posts" / obj.split("/posts/", 1)[1]
+        return str(local) if local.exists() else obj
+    return obj
+
+
 def _video_url(video: Path) -> str:
     """Indirizzo pubblico del video: con l'accesso Instagram il video non si carica a pezzi,
-    lo scarica Instagram. Il workflow lo mette sul branch "media" (VIDEO_BASE_URL)."""
+    lo scarica Instagram. Il workflow lo mette sul branch "media" (VIDEO_BASE_URL).
+    Prima di darlo a Instagram si controlla che risponda davvero: un link 404 fa finire il
+    container in ERROR senza spiegazione."""
     base = os.environ["VIDEO_BASE_URL"].rstrip("/")
-    return f"{base}/{video.relative_to(ROOT).as_posix()}"
+    url = f"{base}/{video.relative_to(ROOT).as_posix()}"
+    _check_public(url)
+    return url
+
+
+def _check_public(url: str, tries: int = 6, wait: int = 10) -> None:
+    import time
+
+    import requests
+
+    status = None
+    for i in range(tries):
+        try:
+            r = requests.head(url, timeout=30, allow_redirects=True)
+            status = r.status_code
+            if status == 200:
+                print(f"Video raggiungibile: {url}")
+                return
+        except requests.RequestException as e:
+            status = str(e)
+        if i < tries - 1:
+            time.sleep(wait)
+    raise RuntimeError(f"Video non raggiungibile ({status}): {url}. Non lo mando a Instagram.")
 
 
 def _cover_url(video: Path) -> str | None:
@@ -314,13 +393,29 @@ def choose_tags(pending: dict, history: list[dict]) -> list[str]:
 
 
 def publish(series: str = "facts") -> None:
-    from bot import publish as publish_mod
-    from bot.publish import publish_carousel, publish_reel, publish_story
-
     path = pending_path(series)
     if not path.exists():
         print("Nessun post in attesa")
         return
+    try:
+        _publish(path)
+    except Exception as e:
+        # Si conta il tentativo fallito nel post in attesa (il workflow lo committa sempre):
+        # dopo MAX_PUBLISH_ATTEMPTS il prossimo create lo scarta e ne crea uno nuovo.
+        if path.exists():
+            data = json.loads(path.read_text())
+            data["attempts"] = data.get("attempts", 0) + 1
+            data.setdefault("errors", []).append(
+                f"{datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')}: {str(e)[:300]}")
+            path.write_text(json.dumps(data, ensure_ascii=False, indent=2))
+            print(f"::error::Pubblicazione fallita (tentativo {data['attempts']} di {MAX_PUBLISH_ATTEMPTS}): {e}")
+        raise
+
+
+def _publish(path: Path) -> None:
+    from bot import publish as publish_mod
+    from bot.publish import publish_carousel, publish_reel, publish_story
+
     pending = json.loads(path.read_text())
     fmt = pending.get("format", "carousel")
     entries = []
