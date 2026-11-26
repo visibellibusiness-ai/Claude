@@ -115,6 +115,10 @@ testing something new now and then so you keep discovering what works best.
 Hard rules:
 - English only, simple and natural.
 - Only real, well-documented, verifiable facts. No myths or invented numbers.
+- State as fact only what at least two independent authoritative sources say (medical institution,
+  peer-reviewed paper, official classification or agency). Never present as fact a claim that only a
+  press release, a news story or a single small or conference study makes: leave it out or attribute it
+  ("a small 2012 study suggests..."). When sources say "can" or "may", write "can" or "may".
 """
 
 
