@@ -223,6 +223,14 @@ def _cut_effect(frame: Image.Image, kind: str, f: int, seed: int) -> Image.Image
 # ---------------------------------------------------------------- Reel
 
 def render_reel(post: dict, out_dir: Path, theme_index: int) -> Path:
+    if post.get("variant") == "flash" and post.get("series") != "news":
+        from bot.flash import render_flash
+
+        try:
+            return render_flash(post, out_dir, theme_index)
+        except Exception as e:  # il Reel esce lo stesso, nel formato a schede
+            print(f"::warning::Formato risposta lampo non disegnato, uso le schede: {e}")
+            post["variant"] = None
     style = make_style(post, theme_index)
     items = slide_data(post, theme_index)
     news = post.get("series") == "news"

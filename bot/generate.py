@@ -153,6 +153,33 @@ VARIANT_RULES = {
         "and slide 1 has an empty highlight so the number is not repeated. "
         "Use 4 content slides."
     ),
+    "flash": (
+        "FLASH ANSWER REEL. The video is a 13-second loop with three texts only, written in the 'flash' field: "
+        "1) question: the exact question a curious viewer would ask, about the viewer's own body, brain or senses, "
+        "plain words, 8 words at most, ending with '?'; it is shown huge on frame 1 and is the cover. "
+        "2) answer: one sentence that answers it, 11 words at most, concrete and plain. "
+        "3) detail: one practical tip or surprising extra, 11 words at most, that still makes sense on its own "
+        "(never 'it' or 'this' pointing back to the answer). "
+        "Strict fact rule for these three texts: state as fact only what at least two independent authoritative "
+        "sources say (medical institution, peer-reviewed paper, official classification). Never present as fact "
+        "something that only a press release, a news story or a single small or conference study claims; "
+        "when sources say 'can' or 'may', say 'can' or 'may'. "
+        "Still write 3 content slides that expand the same answer (used for the caption and the photo): "
+        "slide 1's image_query must name a concrete, photographable subject of the question (e.g. 'ice cream cone'), "
+        "never something abstract."
+    ),
+}
+
+FLASH_SCHEMA = {
+    "type": "object",
+    "description": "Texts of the flash answer Reel (see the experiment rules)",
+    "properties": {
+        "question": {"type": "string", "description": "8 words at most, ends with '?'"},
+        "answer": {"type": "string", "description": "11 words at most, one sentence"},
+        "detail": {"type": "string", "description": "11 words at most, makes sense on its own"},
+    },
+    "required": ["question", "answer", "detail"],
+    "additionalProperties": False,
 }
 
 
@@ -162,6 +189,9 @@ def generate_post(history: list[dict], strategy: str, variant: str | None = None
     schema = copy.deepcopy(SCHEMA)
     if config.TAGS_ENABLED and config.TAG_ACCOUNTS:
         schema["properties"]["tag_accounts"]["items"] = {"type": "string", "enum": sorted(config.TAG_ACCOUNTS)}
+    if variant == "flash":
+        schema["properties"]["flash"] = copy.deepcopy(FLASH_SCHEMA)
+        schema["required"] = schema["required"] + ["flash"]
     client = anthropic.Anthropic()
     avoid = "\n".join(f"- {h['topic']}" for h in history[-80:]) or "(none)"
     prompt = (

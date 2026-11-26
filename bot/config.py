@@ -46,9 +46,18 @@ VARIANT_EXPERIMENT = True
 VARIANTS = ["short", "answer", "direct"]
 
 
+# Formato "risposta lampo" (bot/flash.py), scelto da Andrea il 26/11/2026: un Reel sì e uno no,
+# alternato alle versioni a schede, per confrontare il tasso di salto. False per spegnerlo.
+FLASH_EVERY_OTHER = True
+
+
 def next_variant(history: list) -> str:
-    """La versione che tocca al prossimo Reel: si ruota tra quelle già usate (campo "variant" nello storico)."""
-    used = sum(1 for h in history if h.get("variant"))
+    """La versione che tocca al prossimo Reel. Con FLASH_EVERY_OTHER un Reel su due è "flash";
+    gli altri ruotano tra le versioni a schede già usate (campo "variant" nello storico)."""
+    reels = [h for h in history if h.get("format") == "reel" and h.get("series", "facts") != "news"]
+    if FLASH_EVERY_OTHER and (not reels or reels[-1].get("variant") != "flash"):
+        return "flash"
+    used = sum(1 for h in history if h.get("variant") in VARIANTS)
     return VARIANTS[used % len(VARIANTS)]
 
 
