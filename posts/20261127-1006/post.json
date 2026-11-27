@@ -1,0 +1,85 @@
+{
+  "reasoning": "Mandatory flash answer Reel, so the format is reel with trial set to false. The topic stays inside the core body niche, which is the only area that has reached about 100 non-followers. Pruney fingers is an everyday experience almost everyone has noticed, and it has not been covered before. The counterintuitive answer is that the nervous system causes the wrinkles, not water soaking in. Peer-reviewed work and clinical sources (Lewis & Pickering 1935; Wilder-Smith 2003) back this up, and the nerve test is used clinically. The grip theory is disputed, so it is worded with 'may' and kept out of the flash texts. Slide 1 uses a concrete, photographable subject (wrinkled fingers in water). Mystery music fits the 'why' question. Palette 4 continues the rotation.",
+  "format": "reel",
+  "music": "lofi",
+  "trial": false,
+  "category": "human body",
+  "topic": "Water-wrinkled fingers: nerve-driven vasoconstriction, nerve test, grip theory",
+  "hook": "Why do your fingers wrinkle in water?",
+  "slides": [
+    {
+      "title": "Not water soaking in",
+      "body": "Pruney fingers aren't just soggy skin. Your nervous system triggers them after about 5 minutes in warm water.",
+      "highlight": "5 min",
+      "image_query": "wrinkled fingers water",
+      "image_prompt": "Close-up of wrinkled fingertip skin texture beside rippling bathwater and soap bubbles, soft warm light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261127-1006/img_01.jpg",
+      "credit": "Sebastian Wallroth (CC BY 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Cut nerves, no wrinkles",
+      "body": "Doctors noticed in the 1930s that fingers with severed nerves stay smooth in water. Nerves tighten the vessels below.",
+      "highlight": "1935",
+      "image_query": "bathtub water ripples",
+      "image_prompt": "Glowing branching nerve-like threads under a translucent wrinkled surface, resting in shallow clear water",
+      "image": "/home/runner/work/Claude/Claude/posts/20261127-1006/img_02.jpg",
+      "credit": null,
+      "generated": true
+    },
+    {
+      "title": "Tread for wet grip?",
+      "body": "One theory says wrinkles may work like tire treads on wet objects. Studies testing it disagree so far.",
+      "highlight": "?",
+      "image_query": "wet pebbles in water",
+      "image_prompt": "Rubber tire tread pattern beside wet smooth pebbles in a stream, macro detail, natural light",
+      "image": "/home/runner/work/Claude/Claude/posts/20261127-1006/img_03.jpg",
+      "credit": null,
+      "generated": true
+    }
+  ],
+  "cta": "Follow for a new body fact daily",
+  "caption": "Ten minutes in the bath and your fingertips look like raisins. Most people think it's water soaking into the skin. In fact, your nerves tell the blood vessels under your fingertips to tighten. The skin then pulls into folds.\n\nThe proof: fingers with cut nerves stay smooth in water. That's why doctors can use water-wrinkling as a simple test for nerve damage. Why we evolved it is still debated. One idea is better grip on wet things, but studies disagree.\n\nSend this to someone who stays in the shower way too long. Did you know your nerves did this?\n\n📷 Sebastian Wallroth (CC BY 3.0) via wikimedia",
+  "hashtags": [
+    "prunefingers",
+    "humanbody",
+    "nervoussystem",
+    "sciencefacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Lewis T, Pickering GW (1935). Circulatory changes in the fingers in some diseases of the nervous system. Clinical Science 2:149-175",
+    "Wilder-Smith EP, Chow A (2003). Water-immersion wrinkling is due to vasoconstriction. Muscle & Nerve 27(3):307-311",
+    "Kareklas K et al. (2013). Water-induced finger wrinkles improve handling of wet objects. Biology Letters 9:20120999",
+    "Haseleu J et al. (2014). Water-induced finger wrinkles do not affect touch acuity or dexterity in handling wet objects. PLoS ONE 9(1):e84949",
+    "Cleveland Clinic Health Essentials: Why do your fingers get wrinkly in water?"
+  ],
+  "image_query": "wrinkled fingers water",
+  "image_prompt": "Macro view of deeply wrinkled fingertip-like skin texture floating in clear bathwater with small bubbles, soft blue light",
+  "design": {
+    "palette": 4,
+    "cover_label": "Your body, explained",
+    "swipe_text": "Watch till end",
+    "follow_line": "One surprising body fact every day"
+  },
+  "flash": {
+    "question": "Why do your fingers wrinkle in water?",
+    "answer": "Nerves tighten blood vessels under your skin, pulling it into folds.",
+    "detail": "Doctors can use water-wrinkling to test nerve damage in your hands."
+  },
+  "variant": "flash",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261127-1006/img_cover.jpg",
+  "cover_credit": "Sebastian Wallroth (CC BY 3.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "Ten minutes in the bath and your fingertips look like raisins. Most people think it's water soaking into the skin. In fact, your nerves tell the blood vessels under your fingertips to tighten. The skin then pulls into folds.\n\nThe proof: fingers with cut nerves stay smooth in water. That's why doctors can use water-wrinkling as a simple test for nerve damage. Why we evolved it is still debated. One idea is better grip on wet things, but studies disagree.\n\nSend this to someone who stays in the shower way too long. Did you know your nerves did this?",
+  "music_used": "lofi",
+  "reel_fx": {
+    "format": "flash",
+    "seconds": 13.36,
+    "question_size": 144
+  }
+}

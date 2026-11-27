@@ -1,0 +1,14 @@
+[
+  {
+    "date": "20261122-2249",
+    "series": "facts",
+    "topic": "All planets fit between Earth and Moon (Part 1, follow-CTA logged)",
+    "hook": "All 7 planets fit between Earth and Moon",
+    "attempts": 10,
+    "errors": [
+      "2026-11-26: 10 giri falliti dal 22/11 22:46 al 26/11 05:26 UTC (2207050 fino al 24/11, poi link video 404 per il video ridisegnato dopo il caricamento); scartato per far ripartire contenuti nuovi"
+    ],
+    "reason": "10 pubblicazioni fallite",
+    "discarded_at": "2026-11-27 10:06 UTC"
+  }
+]
