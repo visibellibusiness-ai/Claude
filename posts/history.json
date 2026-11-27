@@ -1784,5 +1784,25 @@
       "ig_reels_video_view_total_time": 218311,
       "reels_skip_rate": 83
     }
+  },
+  {
+    "date": "20261127-1006",
+    "series": "facts",
+    "topic": "Water-wrinkled fingers: nerve-driven vasoconstriction, nerve test, grip theory",
+    "format": "reel",
+    "trial": false,
+    "music": "lofi",
+    "category": "human body",
+    "hook": "Why do your fingers wrinkle in water?",
+    "slides": 3,
+    "variant": "flash",
+    "tags": [],
+    "design": {
+      "palette": 4,
+      "cover_label": "Your body, explained",
+      "swipe_text": "Watch till end",
+      "follow_line": "One surprising body fact every day"
+    },
+    "media_id": "18355735594265704"
   }
 ]
