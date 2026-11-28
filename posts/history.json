@@ -1804,5 +1804,23 @@
       "follow_line": "One surprising body fact every day"
     },
     "media_id": "18355735594265704"
+  },
+  {
+    "date": "20261128-0044",
+    "series": "facts",
+    "topic": "Task-evoked pupil dilation: pupils widen with mental effort, memory load, locus coeruleus, emotion",
+    "format": "reel",
+    "trial": false,
+    "music": "documentary",
+    "category": "human brain",
+    "hook": "Your pupils grow when you think hard",
+    "slides": 4,
+    "variant": "answer",
+    "tags": [],
+    "design": {
+      "style": "mystery",
+      "palette": 0
+    },
+    "media_id": "18348285550254639"
   }
 ]
