@@ -1,72 +1,71 @@
-# Strategy: "You Did Not Know" (v4, 21 Nov 2026)
+# Strategy: "You Did Not Know" (v5, 28 Nov 2026)
 
 ## Data status
-- **First follower arrived 20 Nov**, after about 1,400 accounts reached since 27 Oct (sum of daily reach). No Reel was logged with the follow-CTA slide, so the follow cannot be attributed to any post.
-- **Non-followers: 100% of reach** every day except 19 Nov (22 of 23).
-- **21 Reels now have reach ≥10** (6 new since v3).
-- **Not judged:** posts from 19 Nov 18:36 onward have no data yet.
+- **Followers:** still 1, unchanged since 20 Nov. Non-followers made up 100% of reach every day except 19 Nov.
+- **Reels with reach ≥10:** 24, which is 3 new since v4.
+- **Not judged yet:** the flash Reel (27 Nov) and the 28 Nov answer Reel have no post data and are under 48h old.
+  - Account reach on 27 Nov was 123 with 2 saves, the best day so far.
+  - Flash was the only post that day, but the reach cannot be attributed to it until post data arrives.
 
 ## What is working
-- **Reels distribute bimodally.** Ten Reels reached 83–109 and the rest reached 0–61. None has exceeded 109. *Hypothesis:* each post gets a first test pool of about 100 non-followers, and none has expanded past it.
-- **Variant test hit its target** of at least 3 Reels with reach ≥10 per variant:
+- **Bimodal reach holds.** 12 Reels reached 83–109, and none has exceeded 109. *Hypothesis:* each post gets a test pool of about 100 accounts, and no post has broken out of it.
+- **Slide variants (reach ≥10 only):**
 
-| Variant | n | Skip range | Skip median | Watch median |
-|---|---|---|---|---|
-| Short | 3 | 48.8–70 | 66.7 | 4120 |
-| Answer | 3 | 57.1–67.3 | 66.7 | 3984 |
-| Direct | 4 | 33.3–94.4 | 76.5 | 3110 |
-| 5-slide (all pre-10 Nov) | 11 | 51.7–79.2 | 72.7 | 5519 |
+| Variant | n | Skip median (range) | Watch median |
+|---|---|---|---|
+| Answer | 4 | 67.0 (57.1–73) | 3829 |
+| Short | 5 | 70 (48.8–83) | 3151 |
+| 5-slide (pre-10 Nov) | 11 | 72.7 (51.7–79.2) | ~5500* |
+| Direct | 5 | 77.1 (33.3–94.4) | 3467 |
 
-  - Short and answer lean slightly better on skip rate.
-  - The ranges overlap and the samples are tiny, so this is a lean, not a conclusion.
-  - 5-slide watch time is not comparable because those Reels are longer, and the controls are older.
+\*5-slide watch time is not comparable because those Reels are longer.
+
+- **What the table shows:**
+  - Answer now has the lowest skip median and the tightest range.
+  - Short's two newest Reels skipped 81.8 and 83.
+  - Direct is the worst for the second review running.
+  - The ranges overlap, so this is a lean, not a conclusion.
 
 ## What is not
-- **Engagement is near zero:**
-  - Saves: only "eyes moving" (1.0%) since 30 Oct.
-  - Shares: 0% since sleep.
+- **Posting gap:** nothing was posted from 22 Nov 03:31 to 27 Nov 10:06, and reach was 0 on 23–26 Nov. Older posts produced no residual reach.
+- **Engagement remains near zero:**
+  - Shares: 0% since 1 Nov.
+  - Saves: only "eyes moving" (1.0%) and "bacteria" (4.5%, which is 1 save).
   - Likes: 0–7.1%.
-- **Execution gaps from v3:**
-  - No 5-slide control since 9 Nov.
-  - No carousel posted.
-  - CTA slide not logged.
-  - Trial reels not recorded.
-- **Non-body topics (too few to judge):**
-  - Neutron star: 98 (skip 75.8).
-  - Crows: 17 (skip 94.4, the worst of any Reel ≥10).
-  - Blue whale: 5. Mars: 2.
-- **Timing:** v3's 18:xx edge is unclear.
-  - Since 12 Nov, the median reach was 9 at 18:xx and 2 at 00:xx.
-  - However, two 00:xx posts reached about 100.
-  - The variant rotation is confounded with posting slot.
+- **v4 execution gaps repeated:**
+  - No 5-slide control.
+  - No non-news carousel.
+  - CTA not logged.
+  - News posted despite the pause: "fugitive" reached 3 as a Reel and 0 as a carousel.
+  - Posting times drifted between 03:31 and 22:25.
+- **Non-body topics:** tardigrades reached 0. There is still too little data to judge.
 
 ## Direction
 - **Formats:**
-  - About 90% Reels.
-  - Post 1 carousel this week.
+  - About 90% Reels, alternating flash and slide Reels.
+  - Post 1 body-topic carousel this week.
   - Use trial reels if available, and log them.
+- **Cadence:** 2 Reels a day at fixed slots (about 00:15 and 18:30), with no gaps.
+- **Slide Reels:**
+  - Default to answer, with short second.
+  - Post a 5-slide control every 3rd day.
+  - Pause direct.
 - **Topics:**
   - Keep body and psychology as the core.
   - Make 1 in 4 Reels animals, space or oceans.
-  - Keep news paused.
-- **Hooks:** specific, counterintuitive claims. Avoid lists.
-- **Length:**
-  - Default to short and answer variants, split evenly.
-  - Reduce direct to 1 in 5 Reels.
-  - Reinstate a 5-slide control every 3 days.
+  - Remove news from the queue.
+- **Hooks:** specific, counterintuitive, with the strongest fact up front. No lists.
 - **Colors and music:** keep rotating. No pattern has been found.
 - **Captions:** fact, extra detail, save/share prompt, source, and a one-line follow reason.
 
 ## Experiments (judge at 48h+, reach ≥10 only)
-1. **Follow CTA (run and log):**
-   - On alternate Reels, end with "Part 2 tomorrow, follow so you don't miss it," then post Part 2.
-   - Record the CTA in the post log.
-   - Compare follows/reach, likes/reach and skip rate against non-CTA Reels.
-2. **Concurrent length test:**
-   - Run short vs answer vs a fresh 5-slide control.
-   - Balance each variant across both slots to remove the timing confound.
-   - Compare skip rate and watch time between Reels only, never raw reach.
-   - Run until each arm has 3 Reels with reach ≥10.
+1. **Flash vs slide Reels:**
+   - Alternate the two, balanced across both slots.
+   - Compare skip rate first, then watch time, between Reels only.
+   - Judge when flash has 3 Reels with reach ≥10.
+2. **Follow line:**
+   - Log on every Reel whether it carries the follow_line or CTA.
+   - Compare follows/reach and profile visits/reach for Reels with and without it.
 
 ## Next review
-After 6 more Reels reach ≥10, or followers reach 5.
+When flash has 3 Reels with reach ≥10, or followers reach 5.

@@ -363,6 +363,10 @@
     {
       "date": "20261128-0043",
       "followers": 1
+    },
+    {
+      "date": "20261128-0458",
+      "followers": 1
     }
   ],
   "account_log": [
@@ -1611,26 +1615,26 @@
     {
       "date": "2026-11-27",
       "reach": {
-        "total": 104,
-        "NON_FOLLOWER": 104
+        "total": 123,
+        "NON_FOLLOWER": 123
       },
       "reach_by_product": {
-        "total": 104,
-        "REEL": 104
+        "total": 123,
+        "REEL": 123
       },
       "views": {
-        "total": 118,
-        "NON_FOLLOWER": 118
+        "total": 140,
+        "NON_FOLLOWER": 140
       },
       "views_by_product": {
-        "total": 118,
-        "REEL": 118
+        "total": 140,
+        "REEL": 140
       },
       "accounts_engaged": {
-        "total": 1
+        "total": 2
       },
       "total_interactions": {
-        "total": 1
+        "total": 2
       },
       "likes": {
         "total": 0
@@ -1639,12 +1643,12 @@
         "total": 0
       },
       "saves": {
-        "total": 1
+        "total": 2
       },
       "shares": {
         "total": 0
       }
     }
   ],
-  "last_reflection": "20261121-0418"
+  "last_reflection": "20261128-0458"
 }

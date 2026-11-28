@@ -1,0 +1,36 @@
+{
+  "date": "20261128-0500",
+  "series": "facts",
+  "format": "reel",
+  "trial": false,
+  "music": "mystery",
+  "theme_index": 64,
+  "topic": "Why onions make you cry: tear gas from cut cells, eye nerves, chilling tip",
+  "category": "human body",
+  "hook": "Why onions make you cry",
+  "slides": 3,
+  "variant": "flash",
+  "tags": [],
+  "tag_reason": "",
+  "design": {
+    "palette": 1,
+    "cover_label": "Flash answer",
+    "swipe_text": "Watch this",
+    "follow_line": "Everyday body mysteries, answered fast"
+  },
+  "images": [
+    "posts/20261128-0500/cover.jpg"
+  ],
+  "story": "posts/20261128-0500/story.jpg",
+  "ai": false,
+  "story_ai": false,
+  "caption": "That sting is not the smell. Cutting an onion breaks its cells and starts a chemical reaction. It makes a sulfur gas that reaches your eyes, so your tear glands flush it away.\n\nScientists only identified the enzyme behind it in 2002. Tip: a chilled onion can release less gas, and a sharp knife crushes fewer cells.\n\nSend this to the friend who always cries over the cutting board. What is your own trick to stop onion tears?\n\n📷 phil_g (CC BY-SA 2.0) via openverse · Tiia Monto (CC BY-SA 3.0) via wikimedia\n\n#onionfacts #kitchenscience #humanbody #sciencefacts #didyouknow",
+  "carousel_caption": "That sting is not the smell. Cutting an onion breaks its cells and starts a chemical reaction. It makes a sulfur gas that reaches your eyes, so your tear glands flush it away.\n\nScientists only identified the enzyme behind it in 2002. Tip: a chilled onion can release less gas, and a sharp knife crushes fewer cells.\n\nSend this to the friend who always cries over the cutting board. What is your own trick to stop onion tears?\n\nCover: Why onions make you cry\n📷 phil_g (CC BY-SA 2.0) via openverse\n\n1/3 Cutting starts it\nSlicing breaks onion cells. Their enzymes mix and make a sulfur gas that drifts up toward your face.\n📷 Tiia Monto (CC BY-SA 3.0) via wikimedia\n\n2/3 Your eyes fight back\nThe gas hits the surface of your eyes. Nerves sense the irritation and your tear glands flush it away.\n🎨 AI-generated image\n\n3/3 How to cry less (COLD)\nA chilled onion can release less gas. A sharp knife crushes fewer cells, so it can mean fewer tears.\n🎨 AI-generated image\n\n#onionfacts #kitchenscience #humanbody #sciencefacts #didyouknow",
+  "slide_captions": [
+    "Why onions make you cry\n📷 phil_g (CC BY-SA 2.0) via openverse",
+    "1/3 Cutting starts it\nSlicing breaks onion cells. Their enzymes mix and make a sulfur gas that drifts up toward your face.\n📷 Tiia Monto (CC BY-SA 3.0) via wikimedia",
+    "2/3 Your eyes fight back\nThe gas hits the surface of your eyes. Nerves sense the irritation and your tear glands flush it away.\n🎨 AI-generated image",
+    "3/3 How to cry less (COLD)\nA chilled onion can release less gas. A sharp knife crushes fewer cells, so it can mean fewer tears.\n🎨 AI-generated image",
+    "Follow for a new body fact every day"
+  ]
+}
