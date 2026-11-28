@@ -1822,5 +1822,25 @@
       "palette": 0
     },
     "media_id": "18348285550254639"
+  },
+  {
+    "date": "20261128-0500",
+    "series": "facts",
+    "topic": "Why onions make you cry: tear gas from cut cells, eye nerves, chilling tip",
+    "format": "reel",
+    "trial": false,
+    "music": "mystery",
+    "category": "human body",
+    "hook": "Why onions make you cry",
+    "slides": 3,
+    "variant": "flash",
+    "tags": [],
+    "design": {
+      "palette": 1,
+      "cover_label": "Flash answer",
+      "swipe_text": "Watch this",
+      "follow_line": "Everyday body mysteries, answered fast"
+    },
+    "media_id": "18126844705933043"
   }
 ]
