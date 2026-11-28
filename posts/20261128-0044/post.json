@@ -1,0 +1,108 @@
+{
+  "reasoning": "Mandatory experiment: answer-first hook, 4 slides, a reel with trial set to false. Body and brain topics are our only reliable source of reach, so I picked a new brain-and-senses fact that puts the viewer in the sentence. Your pupils widen when you think hard, a well-replicated effect backed by Kahneman & Beatty 1966, Beatty 1982, Joshi 2016 and Bradley 2008. The hook states the full claim up front, and each slide explains one piece. Music continues the rotation (documentary after lofi), and so does the palette (0 after 4). The caption ends with a share prompt and an opinion-style question, so we can compare question types.",
+  "format": "reel",
+  "music": "documentary",
+  "trial": false,
+  "category": "human brain",
+  "topic": "Task-evoked pupil dilation: pupils widen with mental effort, memory load, locus coeruleus, emotion",
+  "hook": "Your pupils grow when you think hard",
+  "slides": [
+    {
+      "title": "Effort shows in your eyes",
+      "body": "Mental math or memorizing a list makes your pupils widen, even when the light around you doesn't change.",
+      "highlight": "Wider",
+      "image_query": "human eye pupil macro",
+      "image_prompt": "Extreme close-up of a glossy eye-like glass sphere with a widening dark center, soft studio light, deep blue background",
+      "image": "/home/runner/work/Claude/Claude/posts/20261128-0044/img_01.jpg",
+      "credit": "Jan Bambach (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Harder task, bigger pupils",
+      "body": "In a 1966 study, pupils grew with each extra digit people held in memory, then shrank as they said them back.",
+      "highlight": "1966",
+      "image_query": "pupil dilation eye",
+      "image_prompt": "Row of glass marbles with dark centers growing larger from left to right, numbers carved as small wooden blocks beside them, clean minimal backdrop",
+      "image": "/home/runner/work/Claude/Claude/posts/20261128-0044/img_02.jpg",
+      "credit": "Nutschig at English Wikipedia (CC BY-SA 3.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "A brain alertness hub",
+      "body": "A tiny brainstem area called the locus coeruleus, which drives alertness, is linked to these pupil changes.",
+      "highlight": "",
+      "image_query": "brain model anatomy",
+      "image_prompt": "Anatomical brain model on a dark table with a single small glowing point in the brainstem, thin light threads reaching toward a glass eye",
+      "image": "/home/runner/work/Claude/Claude/posts/20261128-0044/img_03.jpg",
+      "credit": "YVC Biology Department (CC BY 2.0) via wikimedia",
+      "generated": false
+    },
+    {
+      "title": "Feelings do it too",
+      "body": "Emotional sounds and images, pleasant or unpleasant, can widen your pupils more than neutral ones.",
+      "highlight": "",
+      "image_query": "eye iris close up",
+      "image_prompt": "Glass eye sphere reflecting warm red and cool blue light from two sides, dark center enlarged, moody cinematic lighting",
+      "image": "/home/runner/work/Claude/Claude/posts/20261128-0044/img_04.jpg",
+      "credit": "Lucashawranke (CC BY-SA 4.0) via wikimedia",
+      "generated": false
+    }
+  ],
+  "cta": "Follow for facts your body hides",
+  "caption": "Next time you do mental math, your pupils will quietly get bigger. In a classic 1966 study, they widened with every extra number people tried to hold in memory, then shrank as they recalled them.\n\nThe same response shows up with emotional sounds and images. Researchers now use pupil size as a window into how hard your brain is working.\n\nSend this to the friend who says they're 'not even trying'. Do you think you could hide how hard you're thinking?\n\n📷 Rapidreflex (CC BY-SA 4.0) via wikimedia · Jan Bambach (CC BY-SA 3.0) via wikimedia · Nutschig at English Wikipedia (CC BY-SA 3.0) via wikimedia · YVC Biology Department (CC BY 2.0) via wikimedia · Lucashawranke (CC BY-SA 4.0) via wikimedia",
+  "hashtags": [
+    "pupils",
+    "neuroscience",
+    "brainfacts",
+    "psychologyfacts",
+    "didyouknow"
+  ],
+  "tag_accounts": [],
+  "tag_reason": "",
+  "sources": [
+    "Kahneman D, Beatty J (1966). Pupil diameter and load on memory. Science 154:1583-1585",
+    "Beatty J (1982). Task-evoked pupillary responses, processing load, and the structure of processing resources. Psychological Bulletin 91:276-292",
+    "Joshi S, Li Y, Kalwani RM, Gold JI (2016). Relationships between pupil diameter and neuronal activity in the locus coeruleus, colliculi, and cingulate cortex. Neuron 89:221-234",
+    "Bradley MM, Miccoli L, Escrig MA, Lang PJ (2008). The pupil as a measure of emotional arousal and autonomic activation. Psychophysiology 45:602-607",
+    "Partala T, Surakka V (2003). Pupil size variation as an indication of affective processing. Int J Human-Computer Studies 59:185-198"
+  ],
+  "image_query": "human eye pupil close up",
+  "image_prompt": "Macro of a glossy glass eye sphere whose dark center is expanding, tiny floating numbers dissolving into it, deep blue background, cinematic light",
+  "design": {
+    "palette": 0,
+    "cover_label": "Your brain, exposed",
+    "swipe_text": "Watch this",
+    "follow_line": "Daily facts about your body and brain"
+  },
+  "variant": "answer",
+  "cover_image": "/home/runner/work/Claude/Claude/posts/20261128-0044/img_cover.jpg",
+  "cover_credit": "Rapidreflex (CC BY-SA 4.0) via wikimedia",
+  "cover_generated": false,
+  "ai_generated": false,
+  "cover_ai_generated": false,
+  "caption_plain": "Next time you do mental math, your pupils will quietly get bigger. In a classic 1966 study, they widened with every extra number people tried to hold in memory, then shrank as they recalled them.\n\nThe same response shows up with emotional sounds and images. Researchers now use pupil size as a window into how hard your brain is working.\n\nSend this to the friend who says they're 'not even trying'. Do you think you could hide how hard you're thinking?",
+  "design_used": {
+    "style": "mystery",
+    "palette": 0
+  },
+  "reel_fx": {
+    "motion": "out",
+    "entrances": [
+      "rise",
+      "left",
+      "scale",
+      "left",
+      "rise",
+      "blur"
+    ],
+    "cuts": [
+      "cut",
+      "punch",
+      "flash",
+      "punch",
+      "cut",
+      "punch"
+    ]
+  },
+  "music_used": "documentary"
+}

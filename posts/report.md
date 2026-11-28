@@ -1,21 +1,20 @@
 # Rapporto statistiche @you.didnot.know
 
-Aggiornato il 27/11/2026 alle 10:06 UTC. Follower: 1.
+Aggiornato il 28/11/2026 alle 00:43 UTC. Follower: 1.
 Solo numeri letti dall'API di Instagram. I dati possono arrivare con fino a 48 ore di ritardo e alcune metriche sono ancora "in sviluppo" per Instagram.
 
 ## Account, ultimi 7 giorni
 
-- Visualizzazioni: 150, di cui da non follower 150 (100%).
+- Visualizzazioni: 134, di cui da non follower 134 (100%).
 
 | Giorno | Copertura | Non follower | Visualizzazioni | Non follower | Interazioni | Salvataggi |
 |---|---|---|---|---|---|---|
-| 27/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 27/11/2026 | 104 | 104 | 118 | 118 | 1 | 1 |
 | 26/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 25/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 24/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 23/11/2026 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 22/11/2026 | 17 | 17 | 16 | 16 | 1 | 0 |
-| 21/11/2026 | 119 | 119 | 134 | 134 | 0 | 0 |
 
 La copertura di giorni diversi non si somma: lo stesso account può essere contato più volte.
 
@@ -41,8 +40,6 @@ La copertura di giorni diversi non si somma: lo stesso account può essere conta
 | 15/11/2026 18:16 | reel | Crows remember your face for years | 17 | 22 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 15/11/2026 00:14 | reel | You make 2 million blood cells every sec | 103 | 113 | 0,0% | 0,0% | 0,0% | n/d |  |
 | 14/11/2026 18:16 | reel | Your eyes see everything upside down | 9 | 11 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
-| 14/11/2026 00:19 | reel | A teaspoon of neutron star weighs a bill | 98 | 103 | 0,0% | 0,0% | 0,0% | n/d |  |
-| 13/11/2026 18:29 | reel | Your blood vessels could circle Earth tw | 1 | 1 | 0,0% | 0,0% | 0,0% | n/d | copertura sotto 10 |
 
 ### Reel
 
@@ -50,8 +47,6 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 
 | Data | Titolo | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|
-| 13/11/2026 18:29 | Your blood vessels could circle Earth tw | 872 | 100 |
-| 14/11/2026 00:19 | A teaspoon of neutron star weighs a bill | 3.467 | 75.8 |
 | 14/11/2026 18:16 | Your eyes see everything upside down | 2.469 | 66.7 |
 | 15/11/2026 00:14 | You make 2 million blood cells every sec | 3.674 | 67.3 |
 | 15/11/2026 18:16 | Crows remember your face for years | 1.870 | 94.4 |
@@ -75,7 +70,7 @@ Tempo medio di visione e tasso di salto sono mostrati come li dà l'API: le unit
 | Formato | Post | Copertura totale | Salvat./cop. | Condiv./cop. |
 |---|---|---|---|---|
 | carousel | 1 | 0 | n/d | n/d |
-| reel | 19 | 606 | 0,3% | 0,0% |
+| reel | 17 | 507 | 0,4% | 0,0% |
 
 ### Esperimento Reel: tre versioni a confronto
 
@@ -83,8 +78,8 @@ short = 3 schede brevi, answer = gancio con il dato forte, direct = niente coper
 
 | Versione | Reel | Copertura media | Tempo medio di visione | Tasso di salto |
 |---|---|---|---|---|
-| answer | 6 | 34.5 | 3229.0 | 61.71666666666667 |
-| direct | 6 | 29.333333333333332 | 2662.1666666666665 | 87.75 |
+| answer | 5 | 41.2 | 3700.4 | 54.06 |
+| direct | 5 | 15.6 | 2501.2 | 90.14 |
 | short | 6 | 36.666666666666664 | 2296.0 | 83.58333333333333 |
 
 Un tasso con una copertura sotto 10 account non permette conclusioni: è una soglia di prudenza nostra, non un numero di Instagram.
